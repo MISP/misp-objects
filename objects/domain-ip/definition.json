@@ -1,0 +1,27 @@
+{
+        "name": "domain|ip",
+        "description": "A domain and IP address seen as a tuple in a specific time frame.",
+        "version": 1,
+        "properties" :
+        {
+                "ip": {
+                        "misp-object": "ip-dst",
+                        "misp-usage-frequency": 1
+                },
+                "domain": {
+                        "misp-object": "domain",
+                        "misp-usage-frequency": 1
+                },
+                "first-seen": {
+                        "misp-object": "datetime",
+                        "misp-usage-frequency": 0
+                },
+                "last-seen": {
+                        "misp-object": "datetime",
+                        "misp-usage-frequency": 0
+                }
+
+        },
+        "default-logical-operator": "AND"
+
+}
