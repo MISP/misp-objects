@@ -6,21 +6,21 @@
         "attributes" :
         {
                 "ip": {
-                        "misp-object": "ip-dst",
+                        "misp-attribute": "ip-dst",
                         "misp-usage-frequency": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "domain": {
-                        "misp-object": "domain",
+                        "misp-attribute": "domain",
                         "misp-usage-frequency": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "first-seen": {
-                        "misp-object": "datetime",
+                        "misp-attribute": "datetime",
                         "misp-usage-frequency": 0
                 },
                 "last-seen": {
-                        "misp-object": "datetime",
+                        "misp-attribute": "datetime",
                         "misp-usage-frequency": 0
                 }
 
