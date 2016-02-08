@@ -17,21 +17,21 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
         "attributes" :
         {
                 "ip": {
-                        "misp-object": "ip-dst",
+                        "misp-attribute": "ip-dst",
                         "misp-usage-frequency": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "domain": {
-                        "misp-object": "domain",
+                        "misp-attribute": "domain",
                         "misp-usage-frequency": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "first-seen": {
-                        "misp-object": "datetime",
+                        "misp-attribute": "datetime",
                         "misp-usage-frequency": 0
                 },
                 "last-seen": {
-                        "misp-object": "datetime",
+                        "misp-attribute": "datetime",
                         "misp-usage-frequency": 0
                 }
 
@@ -46,6 +46,13 @@ A MISP object is described in a simple JSON file containing the following elemen
 * **meta-category** is the category where the object falls into. (file, network, financial)
 * **description** is a summary of the object description.
 * **version** is the version number as a decimal value.
+* **required** is an array containing the minimal required attributes to describe the object.
+* **attributes** contains another JSON object listing all the attributes composing the object.
+
+Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP.
+An array **categories** must be used to described in which categories the attribute is. The **misp-usage-frequency**
+is describing the usage frequency of an attribute. This helps to display only the most frequently used attributes and
+allowing advanced users to show all the attributes depending of their configuration.
 
 ## Existing MISP objects
 
