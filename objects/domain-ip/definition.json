@@ -2,15 +2,17 @@
         "name": "domain|ip",
         "description": "A domain and IP address seen as a tuple in a specific time frame.",
         "version": 1,
-        "properties" :
+        "attributes" :
         {
                 "ip": {
                         "misp-object": "ip-dst",
-                        "misp-usage-frequency": 1
+                        "misp-usage-frequency": 1,
+                        "categories": ["Network activity","External analysis"]
                 },
                 "domain": {
                         "misp-object": "domain",
-                        "misp-usage-frequency": 1
+                        "misp-usage-frequency": 1,
+                        "categories": ["Network activity","External analysis"]
                 },
                 "first-seen": {
                         "misp-object": "datetime",
