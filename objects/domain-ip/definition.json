@@ -1,6 +1,6 @@
 {
         "name": "domain|ip",
-        "category": "network",
+        "meta-category": "network",
         "description": "A domain and IP address seen as a tuple in a specific time frame.",
         "version": 1,
         "attributes" :
