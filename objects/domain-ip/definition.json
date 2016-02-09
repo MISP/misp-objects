@@ -22,6 +22,10 @@
                 "last-seen": {
                         "misp-attribute": "datetime",
                         "misp-usage-frequency": 0
+                },
+                 "text": {
+                        "misp-attribute": "text",
+                        "misp-usage-frequency": 1,
                 }
 
         },

@@ -70,6 +70,10 @@
                         "misp-attribute": "pattern-in-file",
                         "misp-usage-frequency": 1,
                         "categories": ["Artifacts dropped","Payload installation","External analysis"]
+                },
+                "text": {
+                        "misp-attribute": "text",
+                        "misp-usage-frequency": 1,
                 }
 
         },

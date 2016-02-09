@@ -29,7 +29,12 @@
                 "registar": {
                         "misp-attribute": "whois-registar",
                         "misp-usage-frequency": 0
+                },
+                 "text": {
+                        "misp-attribute": "text",
+                        "misp-usage-frequency": 1,
                 }
+
 
         },
         "required": ["domain"],
