@@ -58,6 +58,7 @@ allowing advanced users to show all the attributes depending of their configurat
 ## Existing MISP objects
 
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
+* [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 
 ## License
