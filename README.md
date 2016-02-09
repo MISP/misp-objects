@@ -47,6 +47,7 @@ A MISP object is described in a simple JSON file containing the following elemen
 * **description** is a summary of the object description.
 * **version** is the version number as a decimal value.
 * **required** is an array containing the minimal required attributes to describe the object.
+* **requiredOneOf** is an array containing the attributes where at least one need to be present to describe the object.
 * **attributes** contains another JSON object listing all the attributes composing the object.
 
 Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP.
@@ -57,6 +58,7 @@ allowing advanced users to show all the attributes depending of their configurat
 ## Existing MISP objects
 
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
+* [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 
 ## License
 
