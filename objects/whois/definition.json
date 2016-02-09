@@ -1,0 +1,37 @@
+{
+        "name": "whois",
+        "meta-category": "network",
+        "description": "Whois records information for a domain name.",
+        "version": 1,
+        "attributes" :
+        {
+                "domain": {
+                        "misp-attribute": "domain",
+                        "misp-usage-frequency": 1,
+                        "categories": ["Network activity","External analysis"]
+                },
+                "creation-date": {
+                        "misp-attribute": "datetime",
+                        "misp-usage-frequency": 0
+                },
+                "registrant-email": {
+                        "misp-attribute": "whois-registrant-email",
+                        "misp-usage-frequency": 1
+                },
+                "registrant-phone": {
+                        "misp-attribute": "whois-registrant-phone",
+                        "misp-usage-frequency": 0
+                },
+                "registrant-name": {
+                        "misp-attribute": "whois-registrant-name",
+                        "misp-usage-frequency": 0
+                },
+                "registar": {
+                        "misp-attribute": "whois-registar",
+                        "misp-usage-frequency": 0
+                }
+
+        },
+        "required": ["domain"],
+        "requiredOneOf": ["registrant-email", "registrant-phone", "creation-date", "registrant-name", "registar"]
+}
