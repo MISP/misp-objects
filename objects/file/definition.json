@@ -65,8 +65,13 @@
                 "sha256": {
                         "misp-attribute": "sha256",
                         "misp-usage-frequency": 1
-                } 
+                },
+                "pattern-in-file": {
+                        "misp-attribute": "pattern-in-file",
+                        "misp-usage-frequency": 1,
+                        "categories": ["Artifacts dropped","Payload installation","External analysis"]
+                }
 
         },
-        "requiredOneOf": ["filename", "size-in-bytes", "authentihash", "ssdeep", "imphash", "pehash", "sha-224", "sha-384", "sha-512", "sha-512/224", "sha-512/256", "tlsh", "md5", "sha1", "sha256"]
+        "requiredOneOf": ["filename", "size-in-bytes", "authentihash", "ssdeep", "imphash", "pehash", "sha-224", "sha-384", "sha-512", "sha-512/224", "sha-512/256", "tlsh", "md5", "sha1", "sha256", "pattern-in-file"]
 }
