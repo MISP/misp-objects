@@ -52,7 +52,7 @@ A MISP object is described in a simple JSON file containing the following elemen
 
 Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP.
 An array **categories** must be used to described in which categories the attribute is. The **misp-usage-frequency**
-is describing the usage frequency of an attribute. This helps to display only the most frequently used attributes and
+is describing the usage frequency of an attribute. This helps to only display the most frequently used attributes and
 allowing advanced users to show all the attributes depending of their configuration.
 
 ## Existing MISP objects
@@ -60,6 +60,23 @@ allowing advanced users to show all the attributes depending of their configurat
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
+
+## How to contribute MISP objects?
+
+Fork the project, create a new directory in the [objects directory](objects/) matching your object name. Objects must be composed
+of existing MISP attributes. If you are missing a specific attributes, feel free to open an issue in the [MISP project](https://www.github.com/MISP/MISP).
+
+We recommend to add a text attribute in a object to allow users to add comments or correlating text.
+
+When the object is created, pull a request on this project. We usually merge the objects if it fits existing use-cases.
+
+## What are the advantages of MISP objects versus existing standards?
+
+MISP objects are dynamically used objects that are contributed by users of MISP (the threat sharing platform) or other information sharing platforms.
+
+The aim is to allow a dynamic update of objects definition in operational distributed sharing systems like MISP. Security threats and their related indicators are quite dynamic, standardized formats are quite static and new indicators require a significant time before being standardized.
+
+The MISP objects model allows to add new combined indicators format based on their usage without changing the underlying code base of MISP or other threat sharing platform using it. The definition of the objects is then propagated along with the indicators itself.
 
 ## License
 
