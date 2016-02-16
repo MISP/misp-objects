@@ -62,6 +62,7 @@ allowing advanced users to show all the attributes depending of their configurat
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/passive-dns](objects/file/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
+* [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
 
 ## How to contribute MISP objects?
 
