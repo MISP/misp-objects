@@ -69,7 +69,9 @@ allowing advanced users to show all the attributes depending of their configurat
 Fork the project, create a new directory in the [objects directory](objects/) matching your object name. Objects must be composed
 of existing MISP attributes. If you are missing a specific attributes, feel free to open an issue in the [MISP project](https://www.github.com/MISP/MISP).
 
-We recommend to add a text attribute in a object to allow users to add comments or correlating text.
+We recommend to add a **text** attribute in a object to allow users to add comments or correlating text.
+
+If the unparsed object can be included, a **raw-base64** attribute can be used in the object to import the whole object.
 
 When the object is created, pull a request on this project. We usually merge the objects if it fits existing use-cases.
 
