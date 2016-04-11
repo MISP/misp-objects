@@ -73,7 +73,7 @@
                 },
                 "text": {
                         "misp-attribute": "text",
-                        "misp-usage-frequency": 1,
+                        "misp-usage-frequency": 1
                 }
 
         },
