@@ -53,9 +53,10 @@ A MISP object is described in a simple JSON file containing the following elemen
 * **attributes** contains another JSON object listing all the attributes composing the object.
 
 Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP.
-An array **categories** must be used to described in which categories the attribute is. The **misp-usage-frequency**
-is describing the usage frequency of an attribute. This helps to only display the most frequently used attributes and
-allowing advanced users to show all the attributes depending of their configuration.
+An array **categories** shall be used to described in which categories the attribute is. The **misp-usage-frequency**
+describes the usage frequency of an attribute. This helps to only display the most frequently used attributes and
+allowing advanced users to show all the attributes depending of their configuration. An optional **multiple** field
+shall be set to true if multiple elements of the same key can be used in the object.
 
 ## Existing MISP objects
 
@@ -63,6 +64,7 @@ allowing advanced users to show all the attributes depending of their configurat
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/passive-dns](objects/file/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
+* [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
 
