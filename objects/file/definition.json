@@ -74,6 +74,14 @@
                 "text": {
                         "misp-attribute": "text",
                         "misp-usage-frequency": 1
+                },
+                "original-filename": {
+                        "misp-attribute": "original-filename",
+                        "misp-usage-frequency": 0
+                },
+                "compilation-timestamp": {
+                        "misp-attribute": "compilation-timestamp",
+                        "misp-usage-frequency": 0
                 }
 
         },
