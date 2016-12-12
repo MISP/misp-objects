@@ -1,0 +1,40 @@
+{
+        "name": "registry-key",
+        "meta-category": "file",
+        "description": "Registry key object describing a Windows registry key with value and last-modified timestamp",
+        "version": 1,
+        "attributes" :
+        {
+		"hive": {
+			"misp-attribute": "reg-hive",
+			"misp-usage-frequency": 1,
+			"categories": ["Persistence mechanism"]
+		},
+		"key": {
+			"misp-attribute": "reg-key",
+			"misp-usage-frequency": 1,
+			"categories": ["Persistence mechanism"]
+		},
+		"name": {
+			"misp-attribute": "reg-name",
+			"misp-usage-frequency": 1,
+			"categories": ["Persistence mechanism"]
+		},
+		"data": {
+			"misp-attribute": "reg-data",
+			"misp-usage-frequency": 1,
+			"categories": ["Persistence mechanism"]
+		},
+		"data-type": {
+			"misp-attribute": "reg-datatype",
+			"misp-usage-frequency": 0,
+			"categories": ["Persistence mechanism"]
+		},
+		"last-modified": {
+			"misp-attribute": "datetime",
+			"misp-usage-frequency": 0,
+			"categories": ["Other"]
+		}
+        },
+	"required": ["key", "name"]
+}
