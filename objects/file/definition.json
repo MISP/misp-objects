@@ -1,89 +1,113 @@
 {
-        "name": "file",
-        "meta-category": "file",
-        "description": "File object describing a file with meta-information",
-        "version": 1,
-        "attributes" :
-        {
-                "filename": {
-                        "misp-attribute": "filename",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Payload delivery","Artifacts dropped","Payload installation","External analysis"]
-                },
-                "size-in-bytes": {
-                        "misp-attribute": "size-in-bytes",
-                        "misp-usage-frequency": 0
-                },
-                "authentihash": {
-                        "misp-attribute": "authentihash",
-                        "misp-usage-frequency": 0
-                },
-                "ssdeep": {
-                        "misp-attribute": "ssdeep",
-                        "misp-usage-frequency": 0
-                },
-                "imphash": {
-                        "misp-attribute": "imphash",
-                        "misp-usage-frequency": 0
-                },
-                "pehash": {
-                        "misp-attribute": "pehash",
-                        "misp-usage-frequency": 0
-                },
-                "sha-224": {
-                        "misp-attribute": "sha-224",
-                        "misp-usage-frequency": 0
-                },
-                "sha-384": {
-                        "misp-attribute": "sha-384",
-                        "misp-usage-frequency": 0
-                },
-                "sha-512": {
-                        "misp-attribute": "sha-512",
-                        "misp-usage-frequency": 0
-                },
-                "sha-512/224": {
-                        "misp-attribute": "sha-512/224",
-                        "misp-usage-frequency": 0
-                },
-                "sha-512/256": {
-                        "misp-attribute": "sha-512/256",
-                        "misp-usage-frequency": 0
-                },
-                "tlsh": {
-                        "misp-attribute": "tlsh",
-                        "misp-usage-frequency": 0
-                },
-                "md5": {
-                        "misp-attribute": "md5",
-                        "misp-usage-frequency": 1
-                },
-                "sha1": {
-                        "misp-attribute": "sha1",
-                        "misp-usage-frequency": 1
-                },
-                "sha256": {
-                        "misp-attribute": "sha256",
-                        "misp-usage-frequency": 1
-                },
-                "pattern-in-file": {
-                        "misp-attribute": "pattern-in-file",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Artifacts dropped","Payload installation","External analysis"]
-                },
-                "text": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 1
-                },
-                "original-filename": {
-                        "misp-attribute": "original-filename",
-                        "misp-usage-frequency": 0
-                },
-                "compilation-timestamp": {
-                        "misp-attribute": "compilation-timestamp",
-                        "misp-usage-frequency": 0
-                }
-
-        },
-        "requiredOneOf": ["filename", "size-in-bytes", "authentihash", "ssdeep", "imphash", "pehash", "sha-224", "sha-384", "sha-512", "sha-512/224", "sha-512/256", "tlsh", "md5", "sha1", "sha256", "pattern-in-file"]
+  "name": "file",
+  "meta-category": "file",
+  "description": "File object describing a file with meta-information",
+  "version": 1,
+  "attributes": {
+    "filename": {
+      "misp-attribute": "filename",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Payload delivery",
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ]
+    },
+    "size-in-bytes": {
+      "misp-attribute": "size-in-bytes",
+      "misp-usage-frequency": 0
+    },
+    "authentihash": {
+      "misp-attribute": "authentihash",
+      "misp-usage-frequency": 0
+    },
+    "ssdeep": {
+      "misp-attribute": "ssdeep",
+      "misp-usage-frequency": 0
+    },
+    "imphash": {
+      "misp-attribute": "imphash",
+      "misp-usage-frequency": 0
+    },
+    "pehash": {
+      "misp-attribute": "pehash",
+      "misp-usage-frequency": 0
+    },
+    "sha-224": {
+      "misp-attribute": "sha-224",
+      "misp-usage-frequency": 0
+    },
+    "sha-384": {
+      "misp-attribute": "sha-384",
+      "misp-usage-frequency": 0
+    },
+    "sha-512": {
+      "misp-attribute": "sha-512",
+      "misp-usage-frequency": 0
+    },
+    "sha-512/224": {
+      "misp-attribute": "sha-512/224",
+      "misp-usage-frequency": 0
+    },
+    "sha-512/256": {
+      "misp-attribute": "sha-512/256",
+      "misp-usage-frequency": 0
+    },
+    "tlsh": {
+      "misp-attribute": "tlsh",
+      "misp-usage-frequency": 0
+    },
+    "md5": {
+      "misp-attribute": "md5",
+      "misp-usage-frequency": 1
+    },
+    "sha1": {
+      "misp-attribute": "sha1",
+      "misp-usage-frequency": 1
+    },
+    "sha256": {
+      "misp-attribute": "sha256",
+      "misp-usage-frequency": 1
+    },
+    "pattern-in-file": {
+      "misp-attribute": "pattern-in-file",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ]
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1
+    },
+    "original-filename": {
+      "misp-attribute": "original-filename",
+      "misp-usage-frequency": 0
+    },
+    "compilation-timestamp": {
+      "misp-attribute": "compilation-timestamp",
+      "misp-usage-frequency": 0
+    }
+  },
+  "requiredOneOf": [
+    "filename",
+    "size-in-bytes",
+    "authentihash",
+    "ssdeep",
+    "imphash",
+    "pehash",
+    "sha-224",
+    "sha-384",
+    "sha-512",
+    "sha-512/224",
+    "sha-512/256",
+    "tlsh",
+    "md5",
+    "sha1",
+    "sha256",
+    "pattern-in-file"
+  ]
 }

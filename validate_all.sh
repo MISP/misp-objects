@@ -7,12 +7,12 @@ set -x
 
 diffs=`git status --porcelain | wc -l`
 
-if ![ $diffs -eq 0 ]; then
+if ! [ $diffs -eq 0 ]; then
 	echo "Please make sure you run ./jq_all_the_things.sh before commiting."
 	exit 1
 fi
 
-for dir in objects/*/list.json
+for dir in objects/*/definition.json
 do
   echo -n "${dir}: "
   jsonschema -i ${dir} schema.json

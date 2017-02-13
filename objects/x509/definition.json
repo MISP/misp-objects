@@ -1,63 +1,63 @@
 {
-        "name": "x509",
-        "meta-category": "network",
-        "description": "x509 object describing a X.509 certificate",
-        "version": 1,
-        "attributes" :
-        {
-                "version": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "serial-number": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "issuer": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "validity-not-before": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "validity-not-after": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "subject": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 1
-                },
-                "pubkey-info-algorithm": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "pubkey-info-seize": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "pubkey-info-modulus": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "pubkey-info-exponent": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "x509-fingerprint-sha1": {
-                        "misp-attribute": "sha1",
-                        "misp-usage-frequency": 1
-                },
-                "raw-base64": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "text": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 1
-                }
-
-        },
-        "required": ["x509-fingerprint-sha1"]
+  "name": "x509",
+  "meta-category": "network",
+  "description": "x509 object describing a X.509 certificate",
+  "version": 1,
+  "attributes": {
+    "version": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "serial-number": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "issuer": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "validity-not-before": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "validity-not-after": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "subject": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1
+    },
+    "pubkey-info-algorithm": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "pubkey-info-seize": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "pubkey-info-modulus": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "pubkey-info-exponent": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "x509-fingerprint-sha1": {
+      "misp-attribute": "sha1",
+      "misp-usage-frequency": 1
+    },
+    "raw-base64": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1
+    }
+  },
+  "required": [
+    "x509-fingerprint-sha1"
+  ]
 }

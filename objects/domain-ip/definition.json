@@ -1,33 +1,40 @@
 {
-        "name": "domain|ip",
-        "meta-category": "network",
-        "description": "A domain and IP address seen as a tuple in a specific time frame.",
-        "version": 1,
-        "attributes" :
-        {
-                "ip": {
-                        "misp-attribute": "ip-dst",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "domain": {
-                        "misp-attribute": "domain",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "first-seen": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "last-seen": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                 "text": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 1
-                }
-
-        },
-        "required": ["ip","domain"]
+  "name": "domain|ip",
+  "meta-category": "network",
+  "description": "A domain and IP address seen as a tuple in a specific time frame.",
+  "version": 1,
+  "attributes": {
+    "ip": {
+      "misp-attribute": "ip-dst",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "domain": {
+      "misp-attribute": "domain",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "first-seen": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "last-seen": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1
+    }
+  },
+  "required": [
+    "ip",
+    "domain"
+  ]
 }

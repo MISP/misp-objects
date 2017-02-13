@@ -1,56 +1,64 @@
 {
-        "name": "passive-dns",
-        "meta-category": "network",
-        "description": "Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-01",
-        "version": 1,
-        "attributes" :
-        {
-                "rrtype": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "rrname": {
-                        "misp-attribute": "hostname",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "time_first": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "time_last": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "origin": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "count": {
-                        "misp-attribute": "counter",
-                        "misp-usage-frequency": 0
-                },
-                "sensor_id": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "bailiwick": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                },
-                "zone_time_first": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "zone_time_last": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "text": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                }
-        },
-        "required": ["rrtype","rrname"]
+  "name": "passive-dns",
+  "meta-category": "network",
+  "description": "Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-01",
+  "version": 1,
+  "attributes": {
+    "rrtype": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "rrname": {
+      "misp-attribute": "hostname",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "time_first": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "time_last": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "origin": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "count": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0
+    },
+    "sensor_id": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "bailiwick": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "zone_time_first": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "zone_time_last": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    }
+  },
+  "required": [
+    "rrtype",
+    "rrname"
+  ]
 }

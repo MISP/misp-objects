@@ -1,39 +1,51 @@
 {
-        "name": "ip|port",
-        "meta-category": "network",
-        "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
-        "version": 1,
-        "attributes" :
-        {
-                "ip": {
-                        "misp-attribute": "ip-dst",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "dst-port": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "src-port": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "first-seen": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                "last-seen": {
-                        "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
-                },
-                 "text": {
-                        "misp-attribute": "text",
-                        "misp-usage-frequency": 0
-                }
-
-        },
-        "required": ["ip"],
-        "requiredOneOf": ["dst-port", "src-port"]
+  "name": "ip|port",
+  "meta-category": "network",
+  "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+  "version": 1,
+  "attributes": {
+    "ip": {
+      "misp-attribute": "ip-dst",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "dst-port": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "src-port": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "first-seen": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "last-seen": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    }
+  },
+  "required": [
+    "ip"
+  ],
+  "requiredOneOf": [
+    "dst-port",
+    "src-port"
+  ]
 }
