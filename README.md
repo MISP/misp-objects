@@ -60,6 +60,7 @@ shall be set to true if multiple elements of the same key can be used in the obj
 
 ## Existing MISP objects
 
+* [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 * [objects/email](objects/email/definition.json) - An email object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
@@ -93,9 +94,9 @@ The MISP objects model allows to add new combined indicators format based on the
 
 ~~~~
 
-Copyright (C) 2016 Andras Iklody
-Copyright (C) 2016 Alexandre Dulaunoy
-Copyright (C) 2016 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2017 Andras Iklody
+Copyright (C) 2016-2017 Alexandre Dulaunoy
+Copyright (C) 2016-2017 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
