@@ -56,7 +56,9 @@ Each attribute must contain a reference **misp-attribute** to reference an exist
 An array **categories** shall be used to described in which categories the attribute is. The **misp-usage-frequency**
 describes the usage frequency of an attribute. This helps to only display the most frequently used attributes and
 allowing advanced users to show all the attributes depending of their configuration. An optional **multiple** field
-shall be set to true if multiple elements of the same key can be used in the object.
+shall be set to true if multiple elements of the same key can be used in the object. An optional **required_value**
+where this list of value can be selected as a value for an attribute. An optional **sane_default** where this list of value recommend
+potential a sane default for an attribute.
 
 ## Existing MISP objects
 
