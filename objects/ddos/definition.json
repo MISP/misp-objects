@@ -38,7 +38,8 @@
     },
     "protocol": {
       "misp-attribute": "text",
-      "misp-usage-frequency": 0
+      "misp-usage-frequency": 0,
+      "required_value": ["TCP", "UDP", "ICMP", "IP"]
     },
     "first-seen": {
       "misp-attribute": "datetime",
