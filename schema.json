@@ -2,7 +2,46 @@
   "$schema": "http://json-schema.org/schema#",
   "title": "Validator for misp-objects",
   "id": "https://www.github.com/MISP/misp-objects/schema.json",
+  "defs": {
+    "attribute": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "misp-attribute": {
+          "type": "string"
+        },
+        "misp-usage-frequency": {
+          "type": "number"
+        },
+        "categories": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_value": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "multiple": {
+          "type": "boolean"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "misp-attribute",
+        "misp-usage-frequency"
+      ]
+    }
+  },
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "meta-category": {
       "type": "string"
@@ -17,7 +56,25 @@
       "type": "integer"
     },
     "attributes": {
-      "type": "object"
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "$ref": "#/defs/attribute"
+      }
+    },
+    "requiredOneOf": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "required": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": [
