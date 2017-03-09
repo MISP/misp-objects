@@ -1,0 +1,65 @@
+{
+  "name": "pe",
+  "meta-category": "file",
+  "description": "Object describing a Portable Executable",
+  "version": 1,
+  "attributes": {
+    "imphash": {
+      "misp-attribute": "imphash",
+      "misp-usage-frequency": 0
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1
+    },
+    "original-filename": {
+      "misp-attribute": "original-filename",
+      "misp-usage-frequency": 1
+    },
+    "internal-filename": {
+      "misp-attribute": "original-filename",
+      "misp-usage-frequency": 0
+    },
+    "compilation-timestamp": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 1
+    },
+    "entropy": {
+      "misp-attribute": "float",
+      "misp-usage-frequency": 0
+    },
+    "entrypoint-section": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "entrypoint-address": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "file-description": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "file-version": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "lang-id": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "product-name": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "product-version": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    }
+  },
+  "requiredOneOf": [
+    "text",
+    "original-filename",
+    "internal-filename"
+  ]
+}
