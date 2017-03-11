@@ -68,6 +68,7 @@ potential a sane default for an attribute.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/passive-dns](objects/passive-dns/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
+* [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
