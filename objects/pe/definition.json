@@ -13,22 +13,18 @@
       "misp-usage-frequency": 1
     },
     "original-filename": {
-      "misp-attribute": "original-filename",
+      "misp-attribute": "text",
       "misp-usage-frequency": 1
     },
     "internal-filename": {
-      "misp-attribute": "original-filename",
+      "misp-attribute": "text",
       "misp-usage-frequency": 0
     },
     "compilation-timestamp": {
       "misp-attribute": "datetime",
       "misp-usage-frequency": 1
     },
-    "entropy": {
-      "misp-attribute": "float",
-      "misp-usage-frequency": 0
-    },
-    "entrypoint-section": {
+    "entrypoint-section|position": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0
     },
@@ -53,6 +49,18 @@
       "misp-usage-frequency": 0
     },
     "product-version": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "company-name": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "legal-copyright": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "pe-type": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0
     }

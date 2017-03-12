@@ -26,32 +26,28 @@
       "misp-attribute": "ssdeep",
       "misp-usage-frequency": 0
     },
-    "imphash": {
-      "misp-attribute": "imphash",
-      "misp-usage-frequency": 0
-    },
     "pehash": {
       "misp-attribute": "pehash",
       "misp-usage-frequency": 0
     },
-    "sha-224": {
-      "misp-attribute": "sha-224",
+    "sha224": {
+      "misp-attribute": "sha224",
       "misp-usage-frequency": 0
     },
-    "sha-384": {
-      "misp-attribute": "sha-384",
+    "sha384": {
+      "misp-attribute": "sha384",
       "misp-usage-frequency": 0
     },
-    "sha-512": {
-      "misp-attribute": "sha-512",
+    "sha512": {
+      "misp-attribute": "sha512",
       "misp-usage-frequency": 0
     },
-    "sha-512/224": {
-      "misp-attribute": "sha-512/224",
+    "sha512/224": {
+      "misp-attribute": "sha512/224",
       "misp-usage-frequency": 0
     },
-    "sha-512/256": {
-      "misp-attribute": "sha-512/256",
+    "sha512/256": {
+      "misp-attribute": "sha512/256",
       "misp-usage-frequency": 0
     },
     "tlsh": {
@@ -70,6 +66,10 @@
       "misp-attribute": "sha256",
       "misp-usage-frequency": 1
     },
+    "entropy": {
+      "misp-attribute": "float",
+      "misp-usage-frequency": 1
+    },
     "pattern-in-file": {
       "misp-attribute": "pattern-in-file",
       "misp-usage-frequency": 1,
@@ -82,14 +82,6 @@
     "text": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1
-    },
-    "original-filename": {
-      "misp-attribute": "original-filename",
-      "misp-usage-frequency": 0
-    },
-    "compilation-timestamp": {
-      "misp-attribute": "compilation-timestamp",
-      "misp-usage-frequency": 0
     }
   },
   "requiredOneOf": [
@@ -99,11 +91,11 @@
     "ssdeep",
     "imphash",
     "pehash",
-    "sha-224",
-    "sha-384",
-    "sha-512",
-    "sha-512/224",
-    "sha-512/256",
+    "sha224",
+    "sha384",
+    "sha512",
+    "sha512/224",
+    "sha512/256",
     "tlsh",
     "md5",
     "sha1",

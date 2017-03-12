@@ -1,0 +1,47 @@
+{
+  "name": "pe-section",
+  "meta-category": "file",
+  "description": "Object describing a section of a Portable Executable",
+  "version": 1,
+  "attributes": {
+    "name": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1
+    },
+    "size-in-bytes": {
+      "misp-attribute": "size-in-bytes",
+      "misp-usage-frequency": 1
+    },
+    "entropy": {
+      "misp-attribute": "float",
+      "misp-usage-frequency": 0
+    },
+    "md5": {
+      "misp-attribute": "md5",
+      "misp-usage-frequency": 1
+    },
+    "sha1": {
+      "misp-attribute": "sha1",
+      "misp-usage-frequency": 0
+    },
+    "sha256": {
+      "misp-attribute": "sha256",
+      "misp-usage-frequency": 0
+    },
+    "sha512": {
+      "misp-attribute": "sha512",
+      "misp-usage-frequency": 0
+    }
+  },
+  "requiredOneOf": [
+    "text",
+    "name",
+    "sha1",
+    "sha256",
+    "sha512"
+  ]
+}
