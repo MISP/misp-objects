@@ -37,6 +37,9 @@
         "multiple": {
           "type": "boolean"
         },
+        "disable_correlation": {
+          "type": "boolean"
+        },
         "description": {
           "type": "string"
         }
