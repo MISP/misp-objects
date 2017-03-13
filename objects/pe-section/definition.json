@@ -6,19 +6,30 @@
   "attributes": {
     "name": {
       "misp-attribute": "text",
-      "misp-usage-frequency": 1
+      "misp-usage-frequency": 1,
+      "sane_default": [
+        ".rsrc",
+        ".reloc",
+        ".rdata",
+        ".data",
+        ".text"
+      ],
+      "disable_correlation": true
     },
     "text": {
       "misp-attribute": "text",
-      "misp-usage-frequency": 1
+      "misp-usage-frequency": 1,
+      "disable_correlation": true
     },
     "size-in-bytes": {
       "misp-attribute": "size-in-bytes",
-      "misp-usage-frequency": 1
+      "misp-usage-frequency": 1,
+      "disable_correlation": true
     },
     "entropy": {
       "misp-attribute": "float",
-      "misp-usage-frequency": 0
+      "misp-usage-frequency": 0,
+      "disable_correlation": true
     },
     "md5": {
       "misp-attribute": "md5",

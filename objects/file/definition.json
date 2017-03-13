@@ -16,7 +16,8 @@
     },
     "size-in-bytes": {
       "misp-attribute": "size-in-bytes",
-      "misp-usage-frequency": 0
+      "misp-usage-frequency": 0,
+      "disable_correlation": true
     },
     "authentihash": {
       "misp-attribute": "authentihash",
@@ -68,7 +69,8 @@
     },
     "entropy": {
       "misp-attribute": "float",
-      "misp-usage-frequency": 1
+      "misp-usage-frequency": 1,
+      "disable_correlation": true
     },
     "pattern-in-file": {
       "misp-attribute": "pattern-in-file",
@@ -81,7 +83,8 @@
     },
     "text": {
       "misp-attribute": "text",
-      "misp-usage-frequency": 1
+      "misp-usage-frequency": 1,
+      "disable_correlation": true
     }
   },
   "requiredOneOf": [
