@@ -16,6 +16,15 @@
       ],
       "disable_correlation": true
     },
+    "characteristics": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "sane_default": [
+        "read",
+        "write",
+        "executable"
+      ]
+    },
     "text": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1,
@@ -45,6 +54,10 @@
     },
     "sha512": {
       "misp-attribute": "sha512",
+      "misp-usage-frequency": 0
+    },
+    "ssdeep": {
+      "misp-attribute": "ssdeep",
       "misp-usage-frequency": 0
     }
   },
