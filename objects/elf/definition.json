@@ -13,10 +13,6 @@
       "misp-attribute": "filename",
       "misp-usage-frequency": 1
     },
-    "internal-filename": {
-      "misp-attribute": "filename",
-      "misp-usage-frequency": 0
-    },
     "entrypoint-address": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
