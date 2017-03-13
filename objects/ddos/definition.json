@@ -4,29 +4,13 @@
   "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy",
   "version": 1,
   "attributes": {
-    "total-pps": {
+    "total-bps": {
       "misp-attribute": "counter",
-      "misp-usage-frequency": 0
-    },
-    "last-seen": {
-      "misp-attribute": "datetime",
       "misp-usage-frequency": 0
     },
     "text": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0
-    },
-    "total-bps": {
-      "misp-attribute": "counter",
-      "misp-usage-frequency": 0
-    },
-    "ip-src": {
-      "misp-attribute": "ip-src",
-      "misp-usage-frequency": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ]
     },
     "ip-dst": {
       "misp-attribute": "ip-dst",
@@ -36,9 +20,9 @@
         "External analysis"
       ]
     },
-    "src-port": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
+    "ip-src": {
+      "misp-attribute": "ip-src",
+      "misp-usage-frequency": 1,
       "categories": [
         "Network activity",
         "External analysis"
@@ -52,6 +36,18 @@
         "External analysis"
       ]
     },
+    "src-port": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "first-seen": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
     "protocol": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
@@ -62,7 +58,11 @@
         "IP"
       ]
     },
-    "first-seen": {
+    "total-pps": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0
+    },
+    "last-seen": {
       "misp-attribute": "datetime",
       "misp-usage-frequency": 0
     }
