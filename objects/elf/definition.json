@@ -1,0 +1,46 @@
+{
+  "name": "elf",
+  "meta-category": "file",
+  "description": "Object describing a Executable and Linkable Format",
+  "version": 1,
+  "attributes": {
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1,
+      "disable_correlation": true
+    },
+    "original-filename": {
+      "misp-attribute": "filename",
+      "misp-usage-frequency": 1
+    },
+    "internal-filename": {
+      "misp-attribute": "filename",
+      "misp-usage-frequency": 0
+    },
+    "entrypoint-address": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true
+    },
+    "file-description": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true
+    },
+    "file-version": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true
+    },
+    "elf-type": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true
+    }
+  },
+  "requiredOneOf": [
+    "text",
+    "original-filename",
+    "internal-filename"
+  ]
+}
