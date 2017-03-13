@@ -4,23 +4,11 @@
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "version": 1,
   "attributes": {
-    "url": {
-      "misp-attribute": "url",
-      "misp-usage-frequency": 1
-    },
-    "last-seen": {
-      "misp-attribute": "datetime",
+    "host": {
+      "misp-attribute": "hostname",
       "misp-usage-frequency": 0
     },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    },
-    "credential": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    },
-    "subdomain": {
+    "domain_without_tld": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0
     },
@@ -28,20 +16,36 @@
       "misp-attribute": "domain",
       "misp-usage-frequency": 0
     },
-    "domain_without_tld": {
+    "subdomain": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0
     },
-    "host": {
-      "misp-attribute": "hostname",
-      "misp-usage-frequency": 0
-    },
-    "tld": {
-      "misp-attribute": "tld",
-      "misp-usage-frequency": 0
-    },
-    "port": {
+    "credential": {
       "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "last-seen": {
+      "misp-attribute": "datetime",
+      "misp-usage-frequency": 0
+    },
+    "fragment": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "query_string": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "resource_path": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "first-seen": {
+      "misp-attribute": "datetime",
       "misp-usage-frequency": 0
     },
     "scheme": {
@@ -55,21 +59,17 @@
         "sip"
       ]
     },
-    "first-seen": {
-      "misp-attribute": "datetime",
-      "misp-usage-frequency": 0
-    },
-    "resource_path": {
+    "port": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0
     },
-    "query_string": {
-      "misp-attribute": "text",
+    "tld": {
+      "misp-attribute": "tld",
       "misp-usage-frequency": 0
     },
-    "fragment": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
+    "url": {
+      "misp-attribute": "url",
+      "misp-usage-frequency": 1
     }
   },
   "requiredOneOf": [
