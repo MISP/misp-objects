@@ -13,7 +13,7 @@
       "misp-attribute": "filename",
       "misp-usage-frequency": 1
     },
-    "entrypoint-address": {
+    "e_entry": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
       "disable_correlation": true
@@ -23,17 +23,61 @@
       "misp-usage-frequency": 0,
       "disable_correlation": true
     },
-    "file-version": {
+    "e_version": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
       "disable_correlation": true
     },
-    "elf-type": {
+    "e_type":{
       "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    }
+    "misp-usage-frequency": 0,
+    "sane_default":[
+      "relocatable",
+      "executable",
+      "shared",
+      "core"
+      ]
+    },
+    "e_ident_abi":{
+    "misp-attribute": "text",
+    "misp-usage-frequency": 0,
+    "sane_default":[
+     "System V",
+      "HP_UX",
+      "NetBSD",
+      "Linux",
+      "Solaris",
+      "AIX",
+      "IRIX",
+      "FreeBSD",
+      "True64",
+      "Novell Modesto",
+      "OpenBSD",
+      "OpenVMS",
+      "NonStop Kernel",
+      "AROS",
+      "Fenis OS",
+      "CloudABI",
+      "Sortix"
+    ]},
+    "e_machine":{
+    "misp-attribute": "text",
+    "misp-usage-frequency": 0,
+    "sane_default":[
+     "No specific instruction set",
+      "SPARC",
+      "X86",
+      "MISP",
+      "PowerPC",
+      "ARM",
+      "SuperH",
+      "IA-64",
+      "x86-64",
+      "AArch64",
+      "RISC-V"
+    ]}
   },
+
   "requiredOneOf": [
     "text",
     "original-filename",

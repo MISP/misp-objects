@@ -4,12 +4,12 @@
   "description": "Object describing a section of an Executable and Linkable Format",
   "version": 1,
   "attributes": {
-    "name": {
+    "sh_name": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1,
       "disable_correlation": true
     },
-    "Flags": {
+    "sh_flags": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
       "sane_default": [
@@ -36,7 +36,7 @@
       "misp-usage-frequency": 1,
       "disable_correlation": true
     },
-    "size-in-bytes": {
+    "sh_size": {
       "misp-attribute": "size-in-bytes",
       "misp-usage-frequency": 1,
       "disable_correlation": true
