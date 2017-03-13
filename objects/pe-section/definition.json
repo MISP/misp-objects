@@ -16,16 +16,15 @@
       ],
       "disable_correlation": true
     },
-    "characteristics":{
+    "characteristics": {
       "misp-attributes": "text",
       "misp-usage-frequency": 0,
-      "sane_default":[
+      "sane_default": [
         "read",
         "write",
         "executable"
       ]
-    }
-    ,
+    },
     "text": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1,
