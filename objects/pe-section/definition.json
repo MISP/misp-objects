@@ -17,7 +17,7 @@
       "disable_correlation": true
     },
     "characteristics": {
-      "misp-attributes": "text",
+      "misp-attribute": "text",
       "misp-usage-frequency": 0,
       "sane_default": [
         "read",
