@@ -27,6 +27,13 @@
             "type": "string"
           }
         },
+        "sane_default": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
         "multiple": {
           "type": "boolean"
         },
