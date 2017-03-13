@@ -18,6 +18,7 @@
     },
     "characteristics":{
       "misp-attributes": "text",
+      "misp-usage-frequency": 0,
       "sane_default":[
         "read",
         "write",
