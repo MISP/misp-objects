@@ -27,10 +27,6 @@
       "misp-attribute": "ssdeep",
       "misp-usage-frequency": 0
     },
-    "pehash": {
-      "misp-attribute": "pehash",
-      "misp-usage-frequency": 0
-    },
     "sha224": {
       "misp-attribute": "sha224",
       "misp-usage-frequency": 0

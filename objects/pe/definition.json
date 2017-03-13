@@ -8,10 +8,18 @@
       "misp-attribute": "imphash",
       "misp-usage-frequency": 0
     },
+    "pehash": {
+      "misp-attribute": "pehash",
+      "misp-usage-frequency": 0
+    },
     "text": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1,
       "disable_correlation": true
+    },
+    "number of sections": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
     },
     "original-filename": {
       "misp-attribute": "filename",
