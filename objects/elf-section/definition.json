@@ -9,7 +9,7 @@
       "misp-usage-frequency": 1,
       "disable_correlation": true
     },
-    "sh_type":{
+    "sh_type": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
       "sane_default": [
@@ -33,9 +33,7 @@
         "SHT_NUM",
         "SHT_LOOS"
       ]
-
-    }
-    ,
+    },
     "sh_flags": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
