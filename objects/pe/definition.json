@@ -12,14 +12,26 @@
       "misp-attribute": "pehash",
       "misp-usage-frequency": 0
     },
+    "type": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1,
+      "disable_correlation": true,
+      "sane_default": [
+        "exe",
+        "dll",
+        "driver",
+        "unknown"
+      ]
+    },
     "text": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1,
       "disable_correlation": true
     },
-    "number of sections": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
+    "number-sections": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true
     },
     "original-filename": {
       "misp-attribute": "filename",
