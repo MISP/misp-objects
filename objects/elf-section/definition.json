@@ -4,12 +4,37 @@
   "description": "Object describing a section of an Executable and Linkable Format",
   "version": 1,
   "attributes": {
-    "name": {
+    "sh_name": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1,
       "disable_correlation": true
     },
-    "Flags": {
+    "sh_type": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0,
+      "sane_default": [
+        "SHT_NULL",
+        "SHT_PROGBITS",
+        "SHT_SYMTAB",
+        "SHT_STRTAB",
+        "SHT_RELA",
+        "SHT_HASH",
+        "SHT_DYNAMIC",
+        "SHT_NOTE",
+        "SHT_NOBITS",
+        "SHT_REL",
+        "SHT_SHLIB",
+        "SHT_DYNSYM",
+        "SHT_INIT_ARRAY",
+        "SHT_FINI_ARRAY",
+        "SHT_PREINIT_ARRAY",
+        "SHT_GROUP",
+        "SHT_SYMTAB_SHNDX",
+        "SHT_NUM",
+        "SHT_LOOS"
+      ]
+    },
+    "sh_flags": {
       "misp-attribute": "text",
       "misp-usage-frequency": 0,
       "sane_default": [
@@ -36,7 +61,7 @@
       "misp-usage-frequency": 1,
       "disable_correlation": true
     },
-    "size-in-bytes": {
+    "sh_size": {
       "misp-attribute": "size-in-bytes",
       "misp-usage-frequency": 1,
       "disable_correlation": true
