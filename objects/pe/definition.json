@@ -12,6 +12,12 @@
       "misp-attribute": "pehash",
       "misp-usage-frequency": 0
     },
+    "impfuzzy":
+     {
+      "misp-attribute": "impfuzzy",
+      "misp-usage-frequency": 0
+    }
+    ,
     "type": {
       "misp-attribute": "text",
       "misp-usage-frequency": 1,
