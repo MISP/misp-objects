@@ -4,15 +4,10 @@
   "description": "File object describing a file with meta-information",
   "version": 1,
   "attributes": {
-    "filename": {
-      "misp-attribute": "filename",
+    "text": {
+      "misp-attribute": "text",
       "misp-usage-frequency": 1,
-      "categories": [
-        "Payload delivery",
-        "Artifacts dropped",
-        "Payload installation",
-        "External analysis"
-      ]
+      "disable_correlation": true
     },
     "size-in-bytes": {
       "misp-attribute": "size-in-bytes",
@@ -42,6 +37,20 @@
     "sha512/224": {
       "misp-attribute": "sha512/224",
       "misp-usage-frequency": 0
+    },
+    "malware-sample": {
+      "misp-attribute": "malware-sample",
+      "misp-usage-frequency": 1
+    },
+    "filename": {
+      "misp-attribute": "filename",
+      "misp-usage-frequency": 1,
+      "categories": [
+        "Payload delivery",
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ]
     },
     "sha512/256": {
       "misp-attribute": "sha512/256",
@@ -76,15 +85,6 @@
         "Payload installation",
         "External analysis"
       ]
-    },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "malware-sample": {
-        "misp-attribute": "malware-sample",
-        "misp-usage-frequency": 1
     }
   },
   "requiredOneOf": [
