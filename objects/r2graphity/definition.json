@@ -1,0 +1,130 @@
+{
+  "name": "r2graphity",
+  "uuid": "b6abe0e0-52ea-4424-ba42-761c2e027b76",
+  "meta-category": "file",
+  "description": "Indicators extracted from files using radare2 and graphml",
+  "version": 1,
+  "attributes": {
+    "total-functions": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Total amount of functions in the file."
+    },
+    "local-references": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of API calls inside a code section"
+    },
+    "refsglobalvar": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of API calls outside of code section (glob var, dynamic API)"
+    },
+    "unknown-references": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of API calls not ending in a function (Radare2 bug, probalby)"
+    },
+    "total-api": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Total amount of API calls"
+    },
+    "miss-api": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of API call reference that does not resolve to a function offset"
+    },
+    "referenced-strings": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of referenced strings"
+    },
+    "dangling-strings": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of dangling strings (string with a code cross reference, that is not within a function. Radare2 failed to detect that function.)"
+    },
+    "not-referenced-strings": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of not referenced strings"
+    },
+    "ratio-functions": {
+      "misp-attribute": "float",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Ratio: amount of functions per kilobyte of code section"
+    },
+    "ratio-api": {
+      "misp-attribute": "float",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Ratio: amount of API calls per kilobyte of code section"
+    },
+    "ratio-string": {
+      "misp-attribute": "float",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Ratio: amount of referenced strings per kilobyte of code section"
+    },
+    "get-proc": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of calls to GetProcAddress"
+    },
+    "create-thread": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of calls to CreateThread"
+    },
+    "memory-allocations": {
+      "misp-attribute": "counter",
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Amount of memory allocations"
+    },
+    "graphml": {
+      "misp-attribute": "attachment",
+      "misp-usage-frequency": 0
+    },
+    "r2-commit-version": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 0
+    },
+    "text": {
+      "misp-attribute": "text",
+      "misp-usage-frequency": 1,
+      "disable_correlation": true
+    }
+  },
+  "requiredOneOf": [
+    "filename",
+    "size-in-bytes",
+    "authentihash",
+    "ssdeep",
+    "imphash",
+    "pehash",
+    "sha224",
+    "sha384",
+    "sha512",
+    "sha512/224",
+    "sha512/256",
+    "tlsh",
+    "md5",
+    "sha1",
+    "sha256",
+    "pattern-in-file"
+  ]
+}
