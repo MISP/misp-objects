@@ -40,6 +40,9 @@
         "disable_correlation": {
           "type": "boolean"
         },
+        "to_ids": {
+          "type": "boolean"
+        },
         "description": {
           "type": "string"
         }
@@ -64,6 +67,9 @@
     },
     "version": {
       "type": "integer"
+    },
+    "uuid": {
+      "type": "string"
     },
     "attributes": {
       "type": "object",
@@ -92,6 +98,7 @@
     "version",
     "description",
     "meta-category",
-    "name"
+    "name",
+    "uuid"
   ]
 }

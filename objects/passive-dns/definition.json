@@ -1,5 +1,6 @@
 {
   "name": "passive-dns",
+  "uuid": "b77b7b1c-66ab-4a41-8da4-83810f6d2d6c",
   "meta-category": "network",
   "description": "Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-01",
   "version": 1,

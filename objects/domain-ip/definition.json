@@ -1,5 +1,6 @@
 {
   "name": "domain|ip",
+  "uuid": "43b3b146-77eb-4931-b4cc-b66c60f28734",
   "meta-category": "network",
   "description": "A domain and IP address seen as a tuple in a specific time frame.",
   "version": 1,

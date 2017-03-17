@@ -19,3 +19,4 @@ do
   echo ''
 done
 
+./unique_uuid.py

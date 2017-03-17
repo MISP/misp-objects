@@ -1,5 +1,6 @@
 {
   "name": "x509",
+  "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
   "meta-category": "network",
   "description": "x509 object describing a X.509 certificate",
   "version": 1,

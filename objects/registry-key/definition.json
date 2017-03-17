@@ -1,5 +1,6 @@
 {
   "name": "registry-key",
+  "uuid": "8b3228ad-6d82-4fe6-b2ae-05426308f1d5",
   "meta-category": "file",
   "description": "Registry key object describing a Windows registry key with value and last-modified timestamp",
   "version": 1,

@@ -1,5 +1,6 @@
 {
   "name": "whois",
+  "uuid": "429faea1-34ff-47af-8a00-7c62d3be5a6a",
   "meta-category": "network",
   "description": "Whois records information for a domain name.",
   "version": 1,

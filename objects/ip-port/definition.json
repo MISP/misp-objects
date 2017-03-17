@@ -1,5 +1,6 @@
 {
   "name": "ip|port",
+  "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
   "meta-category": "network",
   "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
   "version": 1,

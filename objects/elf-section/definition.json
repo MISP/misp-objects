@@ -1,5 +1,6 @@
 {
   "name": "elf-section",
+  "uuid": "ca271f32-1234-4e87-b240-6b6e882de5de",
   "meta-category": "file",
   "description": "Object describing a section of an Executable and Linkable Format",
   "version": 1,

@@ -1,5 +1,6 @@
 {
   "name": "pe",
+  "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
   "meta-category": "file",
   "description": "Object describing a Portable Executable",
   "version": 1,

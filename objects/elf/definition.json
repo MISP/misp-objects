@@ -1,5 +1,6 @@
 {
   "name": "elf",
+  "uuid": "fa6534ae-ad74-4ce0-8f23-15a66c82c7fa",
   "meta-category": "file",
   "description": "Object describing a Executable and Linkable Format",
   "version": 1,
