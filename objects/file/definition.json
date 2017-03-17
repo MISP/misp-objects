@@ -86,15 +86,6 @@
         "Payload installation",
         "External analysis"
       ]
-    },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "malware-sample": {
-      "misp-attribute": "malware-sample",
-      "misp-usage-frequency": 1
     }
   },
   "requiredOneOf": [
