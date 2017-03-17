@@ -5,16 +5,16 @@
   "description": "Email object describing an email with meta-information",
   "version": 1,
   "attributes": {
-    "from": {
-      "misp-attribute": "email-src",
+    "reply-to": {
+      "misp-attribute": "email-reply-to",
       "misp-usage-frequency": 1,
       "categories": [
         "Payload delivery"
       ]
     },
-    "from-display-name": {
-      "misp-attribute": "email-src-display-name",
-      "misp-usage-frequency": 1,
+    "message-id": {
+      "misp-attribute": "email-message-id",
+      "misp-usage-frequency": 0,
       "categories": [
         "Payload delivery"
       ]
@@ -50,23 +50,25 @@
       ],
       "multiple": true
     },
-    "message-id": {
-      "misp-attribute": "email-message-id",
+    "x-mailer": {
+      "misp-attribute": "email-xmailer",
       "misp-usage-frequency": 0,
       "categories": [
         "Payload delivery"
       ]
     },
-    "reply-to": {
-      "misp-attribute": "email-reply-to",
-      "misp-usage-frequency": 1,
+    "header": {
+      "misp-attribute": "email-header",
+      "misp-usage-frequency": 0,
       "categories": [
         "Payload delivery"
-      ]
+      ],
+      "multiple": true
     },
     "send-date": {
       "misp-attribute": "datetime",
       "misp-usage-frequency": 0,
+      "disable_correlation": true,
       "categories": [
         "Other"
       ]
@@ -93,17 +95,16 @@
         "Payload delivery"
       ]
     },
-    "header": {
-      "misp-attribute": "email-header",
-      "misp-usage-frequency": 0,
+    "from": {
+      "misp-attribute": "email-src",
+      "misp-usage-frequency": 1,
       "categories": [
         "Payload delivery"
-      ],
-      "multiple": true
+      ]
     },
-    "x-mailer": {
-      "misp-attribute": "email-xmailer",
-      "misp-usage-frequency": 0,
+    "from-display-name": {
+      "misp-attribute": "email-src-display-name",
+      "misp-usage-frequency": 1,
       "categories": [
         "Payload delivery"
       ]
