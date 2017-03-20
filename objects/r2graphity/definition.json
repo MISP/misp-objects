@@ -95,13 +95,17 @@
       "disable_correlation": true,
       "description": "Amount of memory allocations"
     },
-    "graphml": {
+    "gml": {
       "misp-attribute": "attachment",
-      "misp-usage-frequency": 0
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Graph export in G>raph Modelling Language format"
     },
     "r2-commit-version": {
       "misp-attribute": "text",
-      "misp-usage-frequency": 0
+      "misp-usage-frequency": 0,
+      "disable_correlation": true,
+      "description": "Radare2 commit ID used to generate this object"
     },
     "text": {
       "misp-attribute": "text",
