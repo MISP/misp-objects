@@ -63,8 +63,11 @@ for a specific attribute.
 
 ## Existing MISP objects
 
+* [objects/ail-leak](objects/ail-leak/definition.json) -  information leak object as defined by the [AIL Analysis Information Leak framework](https://www.github.com/CIRCL/AIL-framework).
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
+* [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
+* [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
 * [objects/email](objects/email/definition.json) - An email object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
@@ -72,6 +75,7 @@ for a specific attribute.
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
+* [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
