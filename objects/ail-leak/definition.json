@@ -1,26 +1,38 @@
 {
-  "name": "ail-leak",
-  "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
-  "meta-category": "information leak",
-  "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
-  "version": 1,
+  "requiredOneOf": [
+    "type",
+    "text",
+    "first-seen",
+    "last-seen",
+    "origin"
+  ],
+  "required": [
+    "type"
+  ],
   "attributes": {
-    "first-seen": {
-      "misp-attribute": "datetime",
+    "sensor": {
+      "description": "The AIL sensor uuid where the leak was processed and analysed.",
       "misp-usage-frequency": 0,
-      "disable_correlation": true,
-      "description": "When the leak has been accessible or seen for the first time."
+      "misp-attribute": "text"
     },
-    "last-seen": {
-      "misp-attribute": "datetime",
-      "misp-usage-frequency": 0,
+    "origin": {
+      "description": "The link where the leak is (or was) accessible at first-seen.",
+      "misp-usage-frequency": 1,
+      "misp-attribute": "url"
+    },
+    "text": {
+      "description": "A description of the leak which could include the potential victim(s) or description of the leak.",
       "disable_correlation": true,
-      "description": "When the leak has been accessible or seen for the last time."
+      "misp-usage-frequency": 1,
+      "misp-attribute": "text"
+    },
+    "original-date": {
+      "description": "When the information available in the leak was created. It's usually before the first-seen.",
+      "disable_correlation": true,
+      "misp-usage-frequency": 0,
+      "misp-attribute": "datetime"
     },
     "type": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "description": "Type of information leak as discovered and classified by an AIL module.",
       "sane_default": [
         "Credential",
         "CreditCards",
@@ -28,39 +40,27 @@
         "Onion",
         "Phone",
         "Keys"
-      ]
-    },
-    "original-date": {
-      "misp-attribute": "datetime",
+      ],
+      "description": "Type of information leak as discovered and classified by an AIL module.",
       "misp-usage-frequency": 0,
+      "misp-attribute": "text"
+    },
+    "last-seen": {
+      "description": "When the leak has been accessible or seen for the last time.",
       "disable_correlation": true,
-      "description": "When the information available in the leak was created. It's usually before the first-seen."
-    },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true,
-      "description": "A description of the leak which could include the potential victim(s) or description of the leak."
-    },
-    "origin": {
-      "misp-attribute": "url",
-      "misp-usage-frequency": 1,
-      "description": "The link where the leak is (or was) accessible at first-seen."
-    },
-    "sensor": {
-      "misp-attribute": "text",
       "misp-usage-frequency": 0,
-      "description": "The AIL sensor uuid where the leak was processed and analysed."
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "description": "When the leak has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "misp-usage-frequency": 0,
+      "misp-attribute": "datetime"
     }
   },
-  "required": [
-    "type"
-  ],
-  "requiredOneOf": [
-    "type",
-    "text",
-    "first-seen",
-    "last-seen",
-    "origin"
-  ]
+  "version": 1,
+  "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
+  "meta-category": "information leak",
+  "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
+  "name": "ail-leak"
 }
