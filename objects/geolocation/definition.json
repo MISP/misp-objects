@@ -2,9 +2,23 @@
   "requiredOneOf": [
     "latitude",
     "longitude",
+    "city",
+    "region",
     "country"
   ],
   "attributes": {
+    "first-seen": {
+      "description": "When the location was seen for the first time.",
+      "disable_correlation": true,
+      "misp-usage-frequency": 0,
+      "misp-attribute": "datetime"
+    },
+    "last-seen": {
+      "description": "When the location was seen for the last time.",
+      "disable_correlation": true,
+      "misp-usage-frequency": 0,
+      "misp-attribute": "datetime"
+    },
     "text": {
       "description": "A generic description of the location.",
       "disable_correlation": true,
@@ -37,23 +51,11 @@
       "description": "Region.",
       "misp-attribute": "text",
       "misp-usage-frequency": 1
-     },
+    },
     "country": {
       "description": "Country.",
       "misp-attribute": "text",
       "misp-usage-frequency": 1
-    },
-    "first-seen": {
-      "description": "When the location was seen for the first time.",
-      "disable_correlation": true,
-      "misp-usage-frequency": 0,
-      "misp-attribute": "datetime"
-    },
-    "last-seen": {
-      "description": "When the location was seen for the last time.",
-      "disable_correlation": true,
-      "misp-usage-frequency": 0,
-      "misp-attribute": "datetime"
     }
   },
   "version": 1,
