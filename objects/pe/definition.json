@@ -104,6 +104,9 @@
   "requiredOneOf": [
     "text",
     "original-filename",
-    "internal-filename"
+    "internal-filename",
+    "imphash",
+    "pehash",
+    "impfuzzy"
   ]
 }
