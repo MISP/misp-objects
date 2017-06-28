@@ -60,7 +60,7 @@
   },
   "version": 1,
   "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
-  "meta-category": "information leak",
+  "meta-category": "misc",
   "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
   "name": "ail-leak"
 }
