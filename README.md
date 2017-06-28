@@ -45,7 +45,7 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
 A MISP object is described in a simple JSON file containing the following element.
 
 * **name** is the name of the your object.
-* **meta-category** is the category where the object falls into. (file, network, financial)
+* **meta-category** is the category where the object falls into. (file, network, financial, misc, internal)
 * **description** is a summary of the object description.
 * **version** is the version number as a decimal value.
 * **required** is an array containing the minimal required attributes to describe the object.
