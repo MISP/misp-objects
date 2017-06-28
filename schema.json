@@ -57,7 +57,14 @@
   "additionalProperties": false,
   "properties": {
     "meta-category": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "file",
+        "network",
+        "financial",
+        "misc",
+        "internal"
+      ]
     },
     "name": {
       "type": "string"

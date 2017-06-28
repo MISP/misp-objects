@@ -60,7 +60,7 @@
   },
   "version": 1,
   "description": "An object to describe a geographic location.",
-  "meta-category": "location",
+  "meta-category": "misc",
   "uuid": "fdd30d5f-6752-45ed-bef2-25e8ce4d8a3",
   "name": "geolocation"
 }
