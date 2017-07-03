@@ -1,79 +1,79 @@
 {
-  "name": "url",
-  "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
-  "meta-category": "network",
-  "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
-  "version": 1,
+  "requiredOneOf": [
+    "url"
+  ],
   "attributes": {
-    "host": {
-      "misp-attribute": "hostname",
-      "misp-usage-frequency": 0
-    },
-    "domain_without_tld": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    },
-    "domain": {
-      "misp-attribute": "domain",
-      "misp-usage-frequency": 0
-    },
-    "subdomain": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    },
-    "credential": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    },
-    "last-seen": {
-      "misp-attribute": "datetime",
-      "misp-usage-frequency": 0
-    },
     "fragment": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
-    "query_string": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
+    "tld": {
+      "ui-frequency": 0,
+      "misp-attribute": "tld"
     },
-    "resource_path": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    },
-    "first-seen": {
-      "misp-attribute": "datetime",
-      "misp-usage-frequency": 0
+    "port": {
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "scheme": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
       "sane_default": [
         "http",
         "https",
         "ftp",
         "gopher",
         "sip"
-      ]
+      ],
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
-    "port": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
+    "first-seen": {
+      "ui-frequency": 0,
+      "misp-attribute": "datetime"
     },
-    "tld": {
-      "misp-attribute": "tld",
-      "misp-usage-frequency": 0
+    "resource_path": {
+      "ui-frequency": 0,
+      "misp-attribute": "text"
+    },
+    "query_string": {
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "url": {
-      "misp-attribute": "url",
-      "misp-usage-frequency": 1
+      "ui-frequency": 1,
+      "misp-attribute": "url"
+    },
+    "domain_without_tld": {
+      "ui-frequency": 0,
+      "misp-attribute": "text"
+    },
+    "domain": {
+      "ui-frequency": 0,
+      "misp-attribute": "domain"
+    },
+    "subdomain": {
+      "ui-frequency": 0,
+      "misp-attribute": "text"
+    },
+    "credential": {
+      "ui-frequency": 0,
+      "misp-attribute": "text"
+    },
+    "text": {
+      "ui-frequency": 0,
+      "misp-attribute": "text"
+    },
+    "last-seen": {
+      "ui-frequency": 0,
+      "misp-attribute": "datetime"
+    },
+    "host": {
+      "ui-frequency": 0,
+      "misp-attribute": "hostname"
     }
   },
-  "requiredOneOf": [
-    "url"
-  ]
+  "version": 1,
+  "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+  "meta-category": "network",
+  "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
+  "name": "url"
 }
