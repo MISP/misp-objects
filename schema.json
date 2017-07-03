@@ -10,7 +10,7 @@
         "misp-attribute": {
           "type": "string"
         },
-        "misp-usage-frequency": {
+        "ui-priority": {
           "type": "number"
         },
         "categories": {
@@ -49,7 +49,7 @@
       },
       "required": [
         "misp-attribute",
-        "misp-usage-frequency"
+        "ui-priority"
       ]
     }
   },
