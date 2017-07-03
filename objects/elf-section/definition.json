@@ -8,16 +8,16 @@
   ],
   "attributes": {
     "sha512": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha512"
     },
     "ssdeep": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "ssdeep"
     },
     "entropy": {
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "float"
     },
     "sh_type": {
@@ -42,26 +42,26 @@
         "SHT_NUM",
         "SHT_LOOS"
       ],
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "sh_name": {
       "disable_correlation": true,
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "sha256": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha256"
     },
     "sh_size": {
       "disable_correlation": true,
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "size-in-bytes"
     },
     "text": {
       "disable_correlation": true,
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "sh_flags": {
@@ -83,15 +83,15 @@
         "l (large)",
         "p (processor specific)"
       ],
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "sha1": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha1"
     },
     "md5": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "md5"
     }
   },
