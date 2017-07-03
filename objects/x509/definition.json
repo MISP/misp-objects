@@ -4,55 +4,55 @@
   ],
   "attributes": {
     "subject": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "pubkey-info-algorithm": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "pubkey-info-seize": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "pubkey-info-exponent": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "pubkey-info-modulus": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "x509-fingerprint-sha1": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "sha1"
     },
     "raw-base64": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "text": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "validity-not-before": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "validity-not-after": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "issuer": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "serial-number": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "version": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     }
   },
