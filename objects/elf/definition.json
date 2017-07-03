@@ -19,7 +19,7 @@
         "AArch64",
         "RISC-V"
       ],
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "e_ident_abi": {
@@ -42,7 +42,7 @@
         "CloudABI",
         "Sortix"
       ],
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "e_type": {
@@ -52,31 +52,31 @@
         "shared",
         "core"
       ],
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "e_version": {
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "file-description": {
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "e_entry": {
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "original-filename": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "filename"
     },
     "text": {
       "disable_correlation": true,
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     }
   },
