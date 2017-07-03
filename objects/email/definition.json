@@ -51,7 +51,7 @@
       "multiple": true
     },
     "x-mailer": {
-      "misp-attribute": "email-xmailer",
+      "misp-attribute": "email-x-mailer",
       "misp-usage-frequency": 0,
       "categories": [
         "Payload delivery"
