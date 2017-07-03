@@ -8,42 +8,42 @@
       "categories": [
         "Other"
       ],
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "data-type": {
       "categories": [
         "Persistence mechanism"
       ],
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "reg-datatype"
     },
     "data": {
       "categories": [
         "Persistence mechanism"
       ],
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "reg-data"
     },
     "name": {
       "categories": [
         "Persistence mechanism"
       ],
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "reg-name"
     },
     "key": {
       "categories": [
         "Persistence mechanism"
       ],
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "reg-key"
     },
     "hive": {
       "categories": [
         "Persistence mechanism"
       ],
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "reg-hive"
     }
   },
