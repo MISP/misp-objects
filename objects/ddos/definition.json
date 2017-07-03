@@ -3,7 +3,7 @@
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
   "meta-category": "network",
   "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy",
-  "version": 1,
+  "version": 2,
   "attributes": {
     "total-bps": {
       "misp-attribute": "counter",
@@ -30,7 +30,7 @@
       ]
     },
     "dst-port": {
-      "misp-attribute": "text",
+      "misp-attribute": "port",
       "misp-usage-frequency": 0,
       "categories": [
         "Network activity",
@@ -38,7 +38,7 @@
       ]
     },
     "src-port": {
-      "misp-attribute": "text",
+      "misp-attribute": "port",
       "misp-usage-frequency": 0,
       "categories": [
         "Network activity",
