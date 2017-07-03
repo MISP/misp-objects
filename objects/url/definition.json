@@ -4,15 +4,15 @@
   ],
   "attributes": {
     "fragment": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "tld": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "tld"
     },
     "port": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "scheme": {
@@ -23,51 +23,51 @@
         "gopher",
         "sip"
       ],
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "first-seen": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "resource_path": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "query_string": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "url": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "url"
     },
     "domain_without_tld": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "domain": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "domain"
     },
     "subdomain": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "credential": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "text": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "last-seen": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "host": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "hostname"
     }
   },
