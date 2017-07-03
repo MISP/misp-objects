@@ -12,24 +12,24 @@
   "attributes": {
     "sensor": {
       "description": "The AIL sensor uuid where the leak was processed and analysed.",
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "origin": {
       "description": "The link where the leak is (or was) accessible at first-seen.",
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "url"
     },
     "text": {
       "description": "A description of the leak which could include the potential victim(s) or description of the leak.",
       "disable_correlation": true,
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "original-date": {
       "description": "When the information available in the leak was created. It's usually before the first-seen.",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "type": {
@@ -42,19 +42,19 @@
         "Keys"
       ],
       "description": "Type of information leak as discovered and classified by an AIL module.",
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "last-seen": {
       "description": "When the leak has been accessible or seen for the last time.",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "first-seen": {
       "description": "When the leak has been accessible or seen for the first time.",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     }
   },
