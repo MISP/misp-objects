@@ -21,132 +21,132 @@
     "callback-average": {
       "description": "Average size of a callback",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "callbacks": {
       "description": "Amount of callbacks (functions started as thread)",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "shortest-path-to-create-thread": {
       "description": "Shortest path to the first time the binary calls CreateThread",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "create-thread": {
       "description": "Amount of calls to CreateThread",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "memory-allocations": {
       "description": "Amount of memory allocations",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "get-proc-address": {
       "description": "Amount of calls to GetProcAddress",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "dangling-strings": {
       "description": "Amount of dangling strings (string with a code cross reference, that is not within a function. Radare2 failed to detect that function.)",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "referenced-strings": {
       "description": "Amount of referenced strings",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "callback-largest": {
       "description": "Largest callback",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "gml": {
       "description": "Graph export in G>raph Modelling Language format",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "attachment"
     },
     "r2-commit-version": {
       "description": "Radare2 commit ID used to generate this object",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "text": {
       "disable_correlation": true,
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "miss-api": {
       "description": "Amount of API call reference that does not resolve to a function offset",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "total-api": {
       "description": "Total amount of API calls",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "unknown-references": {
       "description": "Amount of API calls not ending in a function (Radare2 bug, probalby)",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "refsglobalvar": {
       "description": "Amount of API calls outside of code section (glob var, dynamic API)",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "local-references": {
       "description": "Amount of API calls inside a code section",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "total-functions": {
       "description": "Total amount of functions in the file.",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "not-referenced-strings": {
       "description": "Amount of not referenced strings",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "ratio-functions": {
       "description": "Ratio: amount of functions per kilobyte of code section",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "float"
     },
     "ratio-api": {
       "description": "Ratio: amount of API calls per kilobyte of code section",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "float"
     },
     "ratio-string": {
       "description": "Ratio: amount of referenced strings per kilobyte of code section",
       "disable_correlation": true,
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "float"
     }
   },
