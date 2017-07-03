@@ -5,15 +5,15 @@
   ],
   "attributes": {
     "zone_time_last": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "text": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "count": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "rrname": {
@@ -21,7 +21,7 @@
         "Network activity",
         "External analysis"
       ],
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "hostname"
     },
     "rrtype": {
@@ -29,31 +29,31 @@
         "Network activity",
         "External analysis"
       ],
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "zone_time_first": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "origin": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "time_last": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "time_first": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "bailiwick": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "sensor_id": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     }
   },
