@@ -13,7 +13,7 @@
         "write",
         "executable"
       ],
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "text"
     },
     "name": {
@@ -25,42 +25,42 @@
         ".data",
         ".text"
       ],
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "size-in-bytes": {
       "disable_correlation": true,
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "size-in-bytes"
     },
     "text": {
       "disable_correlation": true,
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "md5": {
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "md5"
     },
     "entropy": {
       "disable_correlation": true,
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "float"
     },
     "sha256": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha256"
     },
     "sha1": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha1"
     },
     "ssdeep": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "ssdeep"
     },
     "sha512": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha512"
     }
   },
