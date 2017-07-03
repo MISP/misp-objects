@@ -5,15 +5,15 @@
   ],
   "attributes": {
     "text": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "last-seen": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "first-seen": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "domain": {
@@ -21,7 +21,7 @@
         "Network activity",
         "External analysis"
       ],
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "domain"
     },
     "ip": {
@@ -29,7 +29,7 @@
         "Network activity",
         "External analysis"
       ],
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "ip-dst"
     }
   },
