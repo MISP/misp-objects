@@ -11,27 +11,27 @@
   ],
   "attributes": {
     "text": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "registar": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "whois-registar"
     },
     "registrant-name": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "whois-registrant-name"
     },
     "registrant-phone": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "whois-registrant-phone"
     },
     "registrant-email": {
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "whois-registrant-email"
     },
     "creation-date": {
-      "ui-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "domain": {
@@ -39,7 +39,7 @@
         "Network activity",
         "External analysis"
       ],
-      "ui-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "domain"
     }
   },
