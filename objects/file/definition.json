@@ -19,49 +19,49 @@
   ],
   "attributes": {
     "md5": {
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "md5"
     },
     "sha512/224": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha512/224"
     },
     "sha512": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha512"
     },
     "sha384": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha384"
     },
     "sha224": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha224"
     },
     "ssdeep": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "ssdeep"
     },
     "authentihash": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "authentihash"
     },
     "size-in-bytes": {
       "disable_correlation": true,
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "size-in-bytes"
     },
     "sha1": {
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "sha1"
     },
     "sha256": {
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "sha256"
     },
     "entropy": {
       "disable_correlation": true,
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "float"
     },
     "pattern-in-file": {
@@ -70,16 +70,16 @@
         "Payload installation",
         "External analysis"
       ],
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "pattern-in-file"
     },
     "text": {
       "disable_correlation": true,
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "text"
     },
     "malware-sample": {
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "malware-sample"
     },
     "filename": {
@@ -89,15 +89,15 @@
         "Payload installation",
         "External analysis"
       ],
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "misp-attribute": "filename"
     },
     "sha512/256": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "sha512/256"
     },
     "tlsh": {
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "misp-attribute": "tlsh"
     }
   },
