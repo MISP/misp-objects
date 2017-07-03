@@ -1,93 +1,4 @@
 {
-  "name": "file",
-  "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
-  "meta-category": "file",
-  "description": "File object describing a file with meta-information",
-  "version": 1,
-  "attributes": {
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "size-in-bytes": {
-      "misp-attribute": "size-in-bytes",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    },
-    "authentihash": {
-      "misp-attribute": "authentihash",
-      "misp-usage-frequency": 0
-    },
-    "ssdeep": {
-      "misp-attribute": "ssdeep",
-      "misp-usage-frequency": 0
-    },
-    "sha224": {
-      "misp-attribute": "sha224",
-      "misp-usage-frequency": 0
-    },
-    "sha384": {
-      "misp-attribute": "sha384",
-      "misp-usage-frequency": 0
-    },
-    "sha512": {
-      "misp-attribute": "sha512",
-      "misp-usage-frequency": 0
-    },
-    "sha512/224": {
-      "misp-attribute": "sha512/224",
-      "misp-usage-frequency": 0
-    },
-    "malware-sample": {
-      "misp-attribute": "malware-sample",
-      "misp-usage-frequency": 1
-    },
-    "filename": {
-      "misp-attribute": "filename",
-      "misp-usage-frequency": 1,
-      "categories": [
-        "Payload delivery",
-        "Artifacts dropped",
-        "Payload installation",
-        "External analysis"
-      ]
-    },
-    "sha512/256": {
-      "misp-attribute": "sha512/256",
-      "misp-usage-frequency": 0
-    },
-    "tlsh": {
-      "misp-attribute": "tlsh",
-      "misp-usage-frequency": 0
-    },
-    "md5": {
-      "misp-attribute": "md5",
-      "misp-usage-frequency": 1
-    },
-    "sha1": {
-      "misp-attribute": "sha1",
-      "misp-usage-frequency": 1
-    },
-    "sha256": {
-      "misp-attribute": "sha256",
-      "misp-usage-frequency": 1
-    },
-    "entropy": {
-      "misp-attribute": "float",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "pattern-in-file": {
-      "misp-attribute": "pattern-in-file",
-      "misp-usage-frequency": 1,
-      "categories": [
-        "Artifacts dropped",
-        "Payload installation",
-        "External analysis"
-      ]
-    }
-  },
   "requiredOneOf": [
     "filename",
     "size-in-bytes",
@@ -105,5 +16,94 @@
     "sha1",
     "sha256",
     "pattern-in-file"
-  ]
+  ],
+  "attributes": {
+    "md5": {
+      "misp-usage-frequency": 1,
+      "misp-attribute": "md5"
+    },
+    "sha512/224": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "sha512/224"
+    },
+    "sha512": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "sha512"
+    },
+    "sha384": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "sha384"
+    },
+    "sha224": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "sha224"
+    },
+    "ssdeep": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "ssdeep"
+    },
+    "authentihash": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "authentihash"
+    },
+    "size-in-bytes": {
+      "disable_correlation": true,
+      "misp-usage-frequency": 0,
+      "misp-attribute": "size-in-bytes"
+    },
+    "sha1": {
+      "misp-usage-frequency": 1,
+      "misp-attribute": "sha1"
+    },
+    "sha256": {
+      "misp-usage-frequency": 1,
+      "misp-attribute": "sha256"
+    },
+    "entropy": {
+      "disable_correlation": true,
+      "misp-usage-frequency": 1,
+      "misp-attribute": "float"
+    },
+    "pattern-in-file": {
+      "categories": [
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ],
+      "misp-usage-frequency": 1,
+      "misp-attribute": "pattern-in-file"
+    },
+    "text": {
+      "disable_correlation": true,
+      "misp-usage-frequency": 1,
+      "misp-attribute": "text"
+    },
+    "malware-sample": {
+      "misp-usage-frequency": 1,
+      "misp-attribute": "malware-sample"
+    },
+    "filename": {
+      "categories": [
+        "Payload delivery",
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ],
+      "misp-usage-frequency": 1,
+      "misp-attribute": "filename"
+    },
+    "sha512/256": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "sha512/256"
+    },
+    "tlsh": {
+      "misp-usage-frequency": 0,
+      "misp-attribute": "tlsh"
+    }
+  },
+  "version": 1,
+  "description": "File object describing a file with meta-information",
+  "meta-category": "file",
+  "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
+  "name": "file"
 }
