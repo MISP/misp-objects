@@ -1,109 +1,109 @@
 {
-  "name": "pe",
-  "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
-  "meta-category": "file",
-  "description": "Object describing a Portable Executable",
-  "version": 1,
+  "requiredOneOf": [
+    "text",
+    "original-filename",
+    "internal-filename"
+  ],
   "attributes": {
-    "imphash": {
-      "misp-attribute": "imphash",
-      "misp-usage-frequency": 0
-    },
     "pehash": {
-      "misp-attribute": "pehash",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0,
+      "misp-attribute": "pehash"
     },
     "impfuzzy": {
-      "misp-attribute": "impfuzzy",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0,
+      "misp-attribute": "impfuzzy"
+    },
+    "pe-type": {
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
+    },
+    "internal-filename": {
+      "ui-frequency": 0,
+      "misp-attribute": "filename"
+    },
+    "original-filename": {
+      "ui-frequency": 1,
+      "misp-attribute": "filename"
+    },
+    "number-sections": {
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "counter"
+    },
+    "text": {
+      "disable_correlation": true,
+      "ui-frequency": 1,
+      "misp-attribute": "text"
     },
     "type": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true,
       "sane_default": [
         "exe",
         "dll",
         "driver",
         "unknown"
-      ]
+      ],
+      "disable_correlation": true,
+      "ui-frequency": 1,
+      "misp-attribute": "text"
     },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "number-sections": {
-      "misp-attribute": "counter",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    },
-    "original-filename": {
-      "misp-attribute": "filename",
-      "misp-usage-frequency": 1
-    },
-    "internal-filename": {
-      "misp-attribute": "filename",
-      "misp-usage-frequency": 0
+    "imphash": {
+      "ui-frequency": 0,
+      "misp-attribute": "imphash"
     },
     "compilation-timestamp": {
-      "misp-attribute": "datetime",
-      "misp-usage-frequency": 1
+      "ui-frequency": 1,
+      "misp-attribute": "datetime"
     },
     "entrypoint-section|position": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "entrypoint-address": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "file-description": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "file-version": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "lang-id": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "product-name": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "product-version": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "company-name": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     },
     "legal-copyright": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    },
-    "pe-type": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-frequency": 0,
+      "misp-attribute": "text"
     }
   },
-  "requiredOneOf": [
-    "text",
-    "original-filename",
-    "internal-filename"
-  ]
+  "version": 1,
+  "description": "Object describing a Portable Executable",
+  "meta-category": "file",
+  "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
+  "name": "pe"
 }
