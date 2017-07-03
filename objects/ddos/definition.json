@@ -7,15 +7,15 @@
   "attributes": {
     "total-bps": {
       "misp-attribute": "counter",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0
     },
     "text": {
       "misp-attribute": "text",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0
     },
     "ip-dst": {
       "misp-attribute": "ip-dst",
-      "misp-usage-frequency": 1,
+      "ui-frequency": 1,
       "categories": [
         "Network activity",
         "External analysis"
@@ -23,7 +23,7 @@
     },
     "ip-src": {
       "misp-attribute": "ip-src",
-      "misp-usage-frequency": 1,
+      "ui-frequency": 1,
       "categories": [
         "Network activity",
         "External analysis"
@@ -31,7 +31,7 @@
     },
     "dst-port": {
       "misp-attribute": "port",
-      "misp-usage-frequency": 0,
+      "ui-frequency": 0,
       "categories": [
         "Network activity",
         "External analysis"
@@ -39,7 +39,7 @@
     },
     "src-port": {
       "misp-attribute": "port",
-      "misp-usage-frequency": 0,
+      "ui-frequency": 0,
       "categories": [
         "Network activity",
         "External analysis"
@@ -47,11 +47,11 @@
     },
     "first-seen": {
       "misp-attribute": "datetime",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0
     },
     "protocol": {
       "misp-attribute": "text",
-      "misp-usage-frequency": 0,
+      "ui-frequency": 0,
       "required_value": [
         "TCP",
         "UDP",
@@ -61,11 +61,11 @@
     },
     "total-pps": {
       "misp-attribute": "counter",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0
     },
     "last-seen": {
       "misp-attribute": "datetime",
-      "misp-usage-frequency": 0
+      "ui-frequency": 0
     }
   },
   "requiredOneOf": [
