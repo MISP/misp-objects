@@ -20,21 +20,21 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
         {
                 "ip": {
                         "misp-attribute": "ip-dst",
-                        "misp-usage-frequency": 1,
+                        "ui-priority": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "domain": {
                         "misp-attribute": "domain",
-                        "misp-usage-frequency": 1,
+                        "ui-priority": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "first-seen": {
                         "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
+                        "ui-priority": 0
                 },
                 "last-seen": {
                         "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
+                        "ui-priority": 0
                 }
 
         },
@@ -53,7 +53,7 @@ A MISP object is described in a simple JSON file containing the following elemen
 * **attributes** contains another JSON object listing all the attributes composing the object.
 
 Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP.
-An array **categories** shall be used to described in which categories the attribute is. The **misp-usage-frequency**
+An array **categories** shall be used to described in which categories the attribute is. The **ui-priority**
 describes the usage frequency of an attribute. This helps to only display the most frequently used attributes and
 allowing advanced users to show all the attributes depending of their configuration. An optional **multiple** field
 shall be set to true if multiple elements of the same key can be used in the object. An optional **required_value**
