@@ -77,6 +77,7 @@ for a specific attribute.
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
+* [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time. 
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.

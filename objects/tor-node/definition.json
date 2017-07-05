@@ -1,0 +1,41 @@
+{
+  "requiredOneOf": [
+    "address",
+    "first-seen",
+    "last-seen",
+    "text"
+  ],
+  "required": [
+    "address"
+  ],
+  "attributes": {
+    "text": {
+      "description": "Tor node description.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "address": {
+      "description": "IP address of the Tor node seen.",
+      "ui-priority": 1,
+      "misp-attribute": "ip-src"
+    },
+    "last-seen": {
+      "description": "When the Tor node designed by the IP address has been seen for the last time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "description": "When the Tor node designed by the IP address has been seen for the first time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "Tor node (which protects your privacy on the internet by hiding the connection between users Internet address and the services used by the users) description which are part of the Tor network at a time.",
+  "meta-category": "misc",
+  "uuid": "a5fde1c8-318e-4658-a3ea-85ea000bdd33",
+  "name": "tor-node"
+}
