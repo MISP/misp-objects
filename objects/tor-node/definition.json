@@ -16,8 +16,20 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
+    "nickname": {
+      "description": "router's nickname.",
+      "disable_correlation": false,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "fingerprint": {
+      "description": "router's fingerprint.",
+      "disable_correlation": false,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
     "text": {
-      "description": "Tor node comment",
+      "description": "Tor node comment.",
       "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "text"
@@ -26,6 +38,27 @@
       "description": "IP address of the Tor node seen.",
       "ui-priority": 1,
       "misp-attribute": "ip-src"
+    },
+    "flags": {
+      "description": "list of flag associated with the node.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "version": {
+      "description": "parsed version of tor, this is None if the relay's using a new versioning scheme.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "version_line": {
+      "description": "versioning information reported by the node.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "published": {
+      "description": "router's publication time. This can be different from first-seen and last-seen.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
     },
     "last-seen": {
       "description": "When the Tor node designed by the IP address has been seen for the last time.",
@@ -38,9 +71,15 @@
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
+    },
+    "document": {
+      "description": "Raw document from the consensus.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Tor node (which protects your privacy on the internet by hiding the connection between users Internet address and the services used by the users) description which are part of the Tor network at a time.",
   "meta-category": "misc",
   "uuid": "a5fde1c8-318e-4658-a3ea-85ea000bdd33",
