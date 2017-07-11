@@ -1,13 +1,23 @@
 {
-  "name": "pe-section",
-  "uuid": "198a17d2-a135-4b25-9a32-5aa4e632014a",
-  "meta-category": "file",
-  "description": "Object describing a section of a Portable Executable",
-  "version": 1,
+  "requiredOneOf": [
+    "text",
+    "name",
+    "sha1",
+    "sha256",
+    "sha512"
+  ],
   "attributes": {
+    "characteristics": {
+      "sane_default": [
+        "read",
+        "write",
+        "executable"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
     "name": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
+      "disable_correlation": true,
       "sane_default": [
         ".rsrc",
         ".reloc",
@@ -15,58 +25,48 @@
         ".data",
         ".text"
       ],
-      "disable_correlation": true
-    },
-    "characteristics": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "sane_default": [
-        "read",
-        "write",
-        "executable"
-      ]
-    },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
+      "ui-priority": 1,
+      "misp-attribute": "text"
     },
     "size-in-bytes": {
-      "misp-attribute": "size-in-bytes",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "size-in-bytes"
     },
-    "entropy": {
-      "misp-attribute": "float",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
+    "text": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
     },
     "md5": {
-      "misp-attribute": "md5",
-      "misp-usage-frequency": 1
+      "ui-priority": 1,
+      "misp-attribute": "md5"
     },
-    "sha1": {
-      "misp-attribute": "sha1",
-      "misp-usage-frequency": 0
+    "entropy": {
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "float"
     },
     "sha256": {
-      "misp-attribute": "sha256",
-      "misp-usage-frequency": 0
+      "ui-priority": 0,
+      "misp-attribute": "sha256"
     },
-    "sha512": {
-      "misp-attribute": "sha512",
-      "misp-usage-frequency": 0
+    "sha1": {
+      "ui-priority": 0,
+      "misp-attribute": "sha1"
     },
     "ssdeep": {
-      "misp-attribute": "ssdeep",
-      "misp-usage-frequency": 0
+      "ui-priority": 0,
+      "misp-attribute": "ssdeep"
+    },
+    "sha512": {
+      "ui-priority": 0,
+      "misp-attribute": "sha512"
     }
   },
-  "requiredOneOf": [
-    "text",
-    "name",
-    "sha1",
-    "sha256",
-    "sha512"
-  ]
+  "version": 1,
+  "description": "Object describing a section of a Portable Executable",
+  "meta-category": "file",
+  "uuid": "198a17d2-a135-4b25-9a32-5aa4e632014a",
+  "name": "pe-section"
 }

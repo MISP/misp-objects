@@ -10,7 +10,7 @@
         "misp-attribute": {
           "type": "string"
         },
-        "misp-usage-frequency": {
+        "ui-priority": {
           "type": "number"
         },
         "categories": {
@@ -49,7 +49,7 @@
       },
       "required": [
         "misp-attribute",
-        "misp-usage-frequency"
+        "ui-priority"
       ]
     }
   },
@@ -57,7 +57,14 @@
   "additionalProperties": false,
   "properties": {
     "meta-category": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "file",
+        "network",
+        "financial",
+        "misc",
+        "internal"
+      ]
     },
     "name": {
       "type": "string"

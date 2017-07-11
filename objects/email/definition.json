@@ -1,27 +1,27 @@
 {
   "name": "email",
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
-  "meta-category": "email",
+  "meta-category": "network",
   "description": "Email object describing an email with meta-information",
-  "version": 1,
+  "version": 2,
   "attributes": {
     "reply-to": {
       "misp-attribute": "email-reply-to",
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "categories": [
         "Payload delivery"
       ]
     },
     "message-id": {
       "misp-attribute": "email-message-id",
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "categories": [
         "Payload delivery"
       ]
     },
     "to": {
       "misp-attribute": "email-dst",
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "categories": [
         "Payload delivery"
       ],
@@ -29,7 +29,7 @@
     },
     "to-display-name": {
       "misp-attribute": "email-dst-display-name",
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "categories": [
         "Payload delivery"
       ],
@@ -37,29 +37,29 @@
     },
     "subject": {
       "misp-attribute": "email-subject",
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "categories": [
         "Payload delivery"
       ]
     },
     "attachment": {
       "misp-attribute": "email-attachment",
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "categories": [
         "Payload delivery"
       ],
       "multiple": true
     },
     "x-mailer": {
-      "misp-attribute": "email-xmailer",
-      "misp-usage-frequency": 0,
+      "misp-attribute": "email-x-mailer",
+      "ui-priority": 0,
       "categories": [
         "Payload delivery"
       ]
     },
     "header": {
       "misp-attribute": "email-header",
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "categories": [
         "Payload delivery"
       ],
@@ -67,7 +67,7 @@
     },
     "send-date": {
       "misp-attribute": "datetime",
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "disable_correlation": true,
       "categories": [
         "Other"
@@ -75,7 +75,7 @@
     },
     "url": {
       "misp-attribute": "url",
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "categories": [
         "Payload delivery"
       ],
@@ -83,28 +83,28 @@
     },
     "mime-boundary": {
       "misp-attribute": "email-mime-boundary",
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "categories": [
         "Payload delivery"
       ]
     },
     "thread-index": {
       "misp-attribute": "email-thread-index",
-      "misp-usage-frequency": 0,
+      "ui-priority": 0,
       "categories": [
         "Payload delivery"
       ]
     },
     "from": {
       "misp-attribute": "email-src",
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "categories": [
         "Payload delivery"
       ]
     },
     "from-display-name": {
       "misp-attribute": "email-src-display-name",
-      "misp-usage-frequency": 1,
+      "ui-priority": 1,
       "categories": [
         "Payload delivery"
       ]

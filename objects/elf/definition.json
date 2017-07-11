@@ -1,47 +1,28 @@
 {
-  "name": "elf",
-  "uuid": "fa6534ae-ad74-4ce0-8f23-15a66c82c7fa",
-  "meta-category": "file",
-  "description": "Object describing a Executable and Linkable Format",
-  "version": 1,
+  "requiredOneOf": [
+    "text",
+    "original-filename",
+    "internal-filename"
+  ],
   "attributes": {
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "original-filename": {
-      "misp-attribute": "filename",
-      "misp-usage-frequency": 1
-    },
-    "e_entry": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    },
-    "file-description": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    },
-    "e_version": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    },
-    "e_type": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
+    "e_machine": {
       "sane_default": [
-        "relocatable",
-        "executable",
-        "shared",
-        "core"
-      ]
+        "No specific instruction set",
+        "SPARC",
+        "X86",
+        "MISP",
+        "PowerPC",
+        "ARM",
+        "SuperH",
+        "IA-64",
+        "x86-64",
+        "AArch64",
+        "RISC-V"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
     },
     "e_ident_abi": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
       "sane_default": [
         "System V",
         "HP_UX",
@@ -60,29 +41,48 @@
         "Fenis OS",
         "CloudABI",
         "Sortix"
-      ]
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
     },
-    "e_machine": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
+    "e_type": {
       "sane_default": [
-        "No specific instruction set",
-        "SPARC",
-        "X86",
-        "MISP",
-        "PowerPC",
-        "ARM",
-        "SuperH",
-        "IA-64",
-        "x86-64",
-        "AArch64",
-        "RISC-V"
-      ]
+        "relocatable",
+        "executable",
+        "shared",
+        "core"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "e_version": {
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "file-description": {
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "e_entry": {
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "original-filename": {
+      "ui-priority": 1,
+      "misp-attribute": "filename"
+    },
+    "text": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
     }
   },
-  "requiredOneOf": [
-    "text",
-    "original-filename",
-    "internal-filename"
-  ]
+  "version": 1,
+  "description": "Object describing a Executable and Linkable Format",
+  "meta-category": "file",
+  "uuid": "fa6534ae-ad74-4ce0-8f23-15a66c82c7fa",
+  "name": "elf"
 }

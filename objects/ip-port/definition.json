@@ -1,52 +1,52 @@
 {
-  "name": "ip|port",
-  "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
-  "meta-category": "network",
-  "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
-  "version": 1,
-  "attributes": {
-    "ip": {
-      "misp-attribute": "ip-dst",
-      "misp-usage-frequency": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ]
-    },
-    "dst-port": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ]
-    },
-    "src-port": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ]
-    },
-    "first-seen": {
-      "misp-attribute": "datetime",
-      "misp-usage-frequency": 0
-    },
-    "last-seen": {
-      "misp-attribute": "datetime",
-      "misp-usage-frequency": 0
-    },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0
-    }
-  },
-  "required": [
-    "ip"
-  ],
   "requiredOneOf": [
     "dst-port",
     "src-port"
-  ]
+  ],
+  "required": [
+    "ip"
+  ],
+  "attributes": {
+    "text": {
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "last-seen": {
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "src-port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "dst-port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "ip": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "ip-dst"
+    }
+  },
+  "version": 1,
+  "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+  "meta-category": "network",
+  "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
+  "name": "ip|port"
 }

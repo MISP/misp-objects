@@ -1,0 +1,66 @@
+{
+  "requiredOneOf": [
+    "latitude",
+    "longitude",
+    "city",
+    "region",
+    "country"
+  ],
+  "attributes": {
+    "first-seen": {
+      "description": "When the location was seen for the first time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "last-seen": {
+      "description": "When the location was seen for the last time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "text": {
+      "description": "A generic description of the location.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "latitude": {
+      "description": "The latitude is the decimal value of the latitude in the World Geodetic System 84 (WGS84) reference.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "float"
+    },
+    "longitude": {
+      "description": "The longitude is the decimal value of the longitude in the World Geodetic System 84 (WGS84) reference",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "float"
+    },
+    "altitude": {
+      "description": "The altitude is the decimal value of the altitude in the World Geodetic System 84 (WGS84) reference.",
+      "ui-priority": 0,
+      "misp-attribute": "float"
+    },
+    "city": {
+      "description": "City.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "region": {
+      "description": "Region.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "country": {
+      "description": "Country.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "version": 2,
+  "description": "An object to describe a geographic location.",
+  "meta-category": "misc",
+  "uuid": "fdd30d5f-6752-45ed-bef2-25e8ce4d8a3",
+  "name": "geolocation"
+}

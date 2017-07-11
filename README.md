@@ -20,21 +20,21 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
         {
                 "ip": {
                         "misp-attribute": "ip-dst",
-                        "misp-usage-frequency": 1,
+                        "ui-priority": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "domain": {
                         "misp-attribute": "domain",
-                        "misp-usage-frequency": 1,
+                        "ui-priority": 1,
                         "categories": ["Network activity","External analysis"]
                 },
                 "first-seen": {
                         "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
+                        "ui-priority": 0
                 },
                 "last-seen": {
                         "misp-attribute": "datetime",
-                        "misp-usage-frequency": 0
+                        "ui-priority": 0
                 }
 
         },
@@ -45,7 +45,7 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
 A MISP object is described in a simple JSON file containing the following element.
 
 * **name** is the name of the your object.
-* **meta-category** is the category where the object falls into. (file, network, financial)
+* **meta-category** is the category where the object falls into. (file, network, financial, misc, internal)
 * **description** is a summary of the object description.
 * **version** is the version number as a decimal value.
 * **required** is an array containing the minimal required attributes to describe the object.
@@ -53,7 +53,7 @@ A MISP object is described in a simple JSON file containing the following elemen
 * **attributes** contains another JSON object listing all the attributes composing the object.
 
 Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP.
-An array **categories** shall be used to described in which categories the attribute is. The **misp-usage-frequency**
+An array **categories** shall be used to described in which categories the attribute is. The **ui-priority**
 describes the usage frequency of an attribute. This helps to only display the most frequently used attributes and
 allowing advanced users to show all the attributes depending of their configuration. An optional **multiple** field
 shall be set to true if multiple elements of the same key can be used in the object. An optional **required_value**
@@ -63,15 +63,21 @@ for a specific attribute.
 
 ## Existing MISP objects
 
+* [objects/ail-leak](objects/ail-leak/definition.json) -  information leak object as defined by the [AIL Analysis Information Leak framework](https://www.github.com/CIRCL/AIL-framework).
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
+* [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
+* [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
 * [objects/email](objects/email/definition.json) - An email object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
+* [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/passive-dns](objects/passive-dns/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
+* [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
+* [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time. 
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
@@ -94,7 +100,7 @@ MISP objects are dynamically used objects that are contributed by users of MISP 
 
 The aim is to allow a dynamic update of objects definition in operational distributed sharing systems like MISP. Security threats and their related indicators are quite dynamic, standardized formats are quite static and new indicators require a significant time before being standardized.
 
-The MISP objects model allows to add new combined indicators format based on their usage without changing the underlying code base of MISP or other threat sharing platform using it. The definition of the objects is then propagated along with the indicators itself.
+The MISP objects model allows to add new combined indicators format based on their usage without changing the underlying code base of MISP or other threat sharing platform using it. The definition of the objects can be then propagated along with the indicators itself.
 
 ## License
 

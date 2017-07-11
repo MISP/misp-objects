@@ -1,18 +1,26 @@
 {
-  "name": "elf-section",
-  "uuid": "ca271f32-1234-4e87-b240-6b6e882de5de",
-  "meta-category": "file",
-  "description": "Object describing a section of an Executable and Linkable Format",
-  "version": 1,
+  "requiredOneOf": [
+    "text",
+    "name",
+    "sha1",
+    "sha256",
+    "sha512"
+  ],
   "attributes": {
-    "sh_name": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
+    "sha512": {
+      "ui-priority": 0,
+      "misp-attribute": "sha512"
+    },
+    "ssdeep": {
+      "ui-priority": 0,
+      "misp-attribute": "ssdeep"
+    },
+    "entropy": {
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "float"
     },
     "sh_type": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
       "sane_default": [
         "SHT_NULL",
         "SHT_PROGBITS",
@@ -33,11 +41,30 @@
         "SHT_SYMTAB_SHNDX",
         "SHT_NUM",
         "SHT_LOOS"
-      ]
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "sh_name": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "sha256": {
+      "ui-priority": 0,
+      "misp-attribute": "sha256"
+    },
+    "sh_size": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "size-in-bytes"
+    },
+    "text": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
     },
     "sh_flags": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 0,
       "sane_default": [
         "W (write)",
         "A (alloc)",
@@ -55,49 +82,22 @@
         "E (exclude)",
         "l (large)",
         "p (processor specific)"
-      ]
-    },
-    "text": {
-      "misp-attribute": "text",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "sh_size": {
-      "misp-attribute": "size-in-bytes",
-      "misp-usage-frequency": 1,
-      "disable_correlation": true
-    },
-    "entropy": {
-      "misp-attribute": "float",
-      "misp-usage-frequency": 0,
-      "disable_correlation": true
-    },
-    "md5": {
-      "misp-attribute": "md5",
-      "misp-usage-frequency": 1
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
     },
     "sha1": {
-      "misp-attribute": "sha1",
-      "misp-usage-frequency": 0
+      "ui-priority": 0,
+      "misp-attribute": "sha1"
     },
-    "sha256": {
-      "misp-attribute": "sha256",
-      "misp-usage-frequency": 0
-    },
-    "sha512": {
-      "misp-attribute": "sha512",
-      "misp-usage-frequency": 0
-    },
-    "ssdeep": {
-      "misp-attribute": "ssdeep",
-      "misp-usage-frequency": 0
+    "md5": {
+      "ui-priority": 1,
+      "misp-attribute": "md5"
     }
   },
-  "requiredOneOf": [
-    "text",
-    "name",
-    "sha1",
-    "sha256",
-    "sha512"
-  ]
+  "version": 1,
+  "description": "Object describing a section of an Executable and Linkable Format",
+  "meta-category": "file",
+  "uuid": "ca271f32-1234-4e87-b240-6b6e882de5de",
+  "name": "elf-section"
 }
