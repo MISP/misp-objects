@@ -2,7 +2,8 @@
   "requiredOneOf": [
     "text",
     "original-filename",
-    "internal-filename"
+    "internal-filename",
+    "entrypoint-address"
   ],
   "attributes": {
     "pehash": {
