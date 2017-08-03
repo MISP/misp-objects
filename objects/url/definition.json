@@ -9,7 +9,7 @@
     },
     "tld": {
       "ui-priority": 0,
-      "misp-attribute": "tld"
+      "misp-attribute": "text"
     },
     "port": {
       "ui-priority": 0,
@@ -71,7 +71,7 @@
       "misp-attribute": "hostname"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "meta-category": "network",
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
