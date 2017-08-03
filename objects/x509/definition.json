@@ -11,7 +11,7 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
-    "pubkey-info-seize": {
+    "pubkey-info-size": {
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -56,7 +56,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "x509 object describing a X.509 certificate",
   "meta-category": "network",
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
