@@ -64,6 +64,7 @@ for a specific attribute.
 ## Existing MISP objects
 
 * [objects/ail-leak](objects/ail-leak/definition.json) -  information leak object as defined by the [AIL Analysis Information Leak framework](https://www.github.com/CIRCL/AIL-framework).
+* [objects/cookie](objects/cookie/definition.json) - A cookie object describes an HTTP cookie including its use in malicious cases.
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
