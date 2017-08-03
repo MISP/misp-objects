@@ -1,0 +1,119 @@
+{
+  "required": [
+    "method",
+    "uri"
+  ],
+  "attributes": {
+    "text": {
+      "description": "HTTP Request comment",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "basicauth-password": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP Basic Authentication Password",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "basicauth-user": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP Basic Authentication Username",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "content-type": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "The MIME type of the body of the request",
+      "ui-priority": 1,
+      "misp-attribute": "other"
+    },
+    "cookie": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "An HTTP cookie previously sent by the server with Set-Cookie",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "host": {
+      "categories": [
+        "Network activity",
+        "Payload delivery"
+      ],
+      "description": "The domain name of the server",
+      "ui-priority": 1,
+      "misp-attribute": "hostname"
+    },
+    "method": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP Method invoked (one of GET, POST, PUT, HEAD, DELETE, OPTIONS, CONNECT)",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "http-method"
+    },
+    "referer": {
+      "categories": [
+        "Network activity",
+        "Payload delivery"
+      ],
+      "description": "This is the address of the previous web page from which a link to the currently requested page was followed",
+      "ui-priority": 1,
+      "misp-attribute": "other"
+    },
+    "proxy-password": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP Proxy Password",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "proxy-user": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP Proxy Username",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "uri": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Request URI",
+      "ui-priority": 1,
+      "misp-attribute": "uri"
+    },
+    "url": {
+      "categories": [
+        "Network activity",
+        "Payload delivery"
+      ],
+      "description": "Full HTTP Request URL",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "user-agent": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "The user agent string of the user agent",
+      "ui-priority": 1,
+      "misp-attribute": "user-agent"
+    }
+  },
+  "version": 1,
+  "description": "A single HTTP request header",
+  "meta-category": "network",
+  "uuid": "b4a8d163-8110-4239-bfcf-e08f3a9fdf7b",
+  "name": "http-request"
+}
