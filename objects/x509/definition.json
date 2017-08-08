@@ -23,9 +23,17 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
+    "x509-fingerprint-md5": {
+      "ui-priority": 1,
+      "misp-attribute": "md5"
+    },
     "x509-fingerprint-sha1": {
       "ui-priority": 1,
       "misp-attribute": "sha1"
+    },
+    "x509-fingerprint-sha256": {
+      "ui-priority": 1,
+      "misp-attribute": "sha256"
     },
     "raw-base64": {
       "ui-priority": 0,
