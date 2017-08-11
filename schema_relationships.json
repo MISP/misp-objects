@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Validator for misp-objects",
+  "id": "https://www.github.com/MISP/misp-objects/schema.json",
+  "defs": {
+    "value": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "format": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "format"
+      ]
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "values": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/defs/value"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "values",
+    "description",
+    "uuid",
+    "name"
+  ]
+}

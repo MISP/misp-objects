@@ -10,4 +10,7 @@ do
     cat ${dir} | jq . | sponge ${dir}
 done
 
-cat schema.json | jq . | sponge schema.json
+cat relationships/definition.json | jq . | sponge relationships/definition.json
+
+cat schema_objects.json | jq . | sponge schema_objects.json
+cat schema_relationships.json | jq . | sponge schema_relationships.json

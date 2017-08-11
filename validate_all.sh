@@ -15,8 +15,10 @@ fi
 for dir in objects/*/definition.json
 do
   echo -n "${dir}: "
-  jsonschema -i ${dir} schema.json
+  jsonschema -i ${dir} schema_objects.json
   echo ''
 done
+
+jsonschema -i relationships/definition.json schema_relationships.json
 
 ./unique_uuid.py
