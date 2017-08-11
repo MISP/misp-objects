@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "values": [
+    {
+      "name": "derived-from",
+      "description": "STIX 2.0: The information in the target object is based on information from the source object."
+    },
+    {
+      "name": "duplicate-of",
+      "description": "STIX 2.0: The referenced source and target objects are semantically duplicates of each other."
+    },
+    {
+      "name": "related-to",
+      "description": "STIX 2.0: Asserts a non - specific relationship between two SDOs. This relationship ca n be used when none of the other predefined relationships are appropriate."
+    },
+    {
+      "name": "attributed-to",
+      "description": "STIX 2.0: This Relationship describes that the Intrusion Set or Threat Actor that is involved in carrying out the Campaign."
+    },
+    {
+      "name": "targets",
+      "description": "STIX 2.0: This Relationship describes that the Campaign uses exploits of the related Vulnerability or targets the type of victims described by the related Identity."
+    },
+    {
+      "name": "uses",
+      "description": "STIX 2.0: This Relationship describes that attacks carried out as part of the Campaign typically use the related Attack Pattern, Malware, or Tool."
+    },
+    {
+      "name": "indicates",
+      "description": "STIX 2.0: This Relationship describes that the Indicator can detect evidence of the related Campaign, Intrusion, or Threat Actor. This evidence may not be direct: for example, the Indicator may detect secondary evidence of the Campaign, such as malware or behavior commonly used by that Campaign."
+    },
+    {
+      "name": "mitigates",
+      "description": "STIX 2.0: This Relationship describes that the Course of Action can mitigate the related Attack Pattern, Malware, Vulnerability, or Tool."
+    },
+    {
+      "name": "variant-of",
+      "description": "STIX 2.0: This Relationship is used to document that one piece of Malware is a variant of another piece of Malware."
+    },
+    {
+      "name": "impersonates",
+      "description": "STIX 2.0: This Relationship describes that the actor is the real identity represented in the related Identity."
+    },
+    {
+      "name": "authored-by",
+      "description": "This relationship describes the author of a specific object."
+    },
+    {
+      "name": "located",
+      "description": "This relationship describes the location (of any type) of a specific object."
+    },
+    {
+      "name": "included-in",
+      "description": "This relationship describes an object included in another object."
+    },
+    {
+      "name": "analysed-with",
+      "description": "This relationship describes an object analysed by another object."
+    },
+    {
+      "name": "claimed-by",
+      "description": "This relationship describes an object claimed by another object."
+    }
+  ],
+  "description": "Default type of relationships in MISP objects.",
+  "uuid": "b002c0d6-320f-450d-82c4-b3aa15bbbd6c",
+  "name": "relationships"
+}
