@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "values": [
     {
       "name": "derived-from",
@@ -112,6 +112,13 @@
     {
       "name": "claimed-by",
       "description": "This relationship describes an object claimed by another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "communicate-with",
+      "description": "This relationship describes an object communicating with another object",
       "format": [
         "misp"
       ]
