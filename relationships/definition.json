@@ -117,7 +117,7 @@
       ]
     },
     {
-      "name": "communicate-with",
+      "name": "communicates-with",
       "description": "This relationship describes an object communicating with another object",
       "format": [
         "misp"
