@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "values": [
     {
       "name": "derived-from",
@@ -118,7 +118,21 @@
     },
     {
       "name": "communicates-with",
-      "description": "This relationship describes an object communicating with another object",
+      "description": "This relationship describes an object communicating with another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "dropped-by",
+      "description": "This relationship describes an object dropped by another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "executed-by",
+      "description": "This relationship describes an objected executed by another object.",
       "format": [
         "misp"
       ]
