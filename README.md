@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/MISP/misp-objects.svg?branch=master)](https://travis-ci.org/MISP/misp-objects)
 
-MISP objects to be used in MISP (3.0) system and can be used by other information sharing tool. MISP objects
+MISP objects to be used in MISP (2.4.80 (TBC)) system and can be used by other information sharing tool. MISP objects
 are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects
 and their associated attributes are based on real cyber security use-cases and existing practices in information sharing.
 
@@ -83,6 +83,12 @@ for a specific attribute.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
+
+## MISP objects relationships
+
+The MISP object model is open and allows user to use their own relationships. MISP provides a list of default relationships that can be used if you plan to share your events with other MISP communities.
+
+- [relationships](relationships/definition.json) - list of predefined default relationships which can be used to link MISP objects together and explain the context of the relationship.
 
 ## How to contribute MISP objects?
 
