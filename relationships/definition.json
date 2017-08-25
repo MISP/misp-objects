@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 6,
   "values": [
     {
       "name": "derived-from",
@@ -132,7 +132,49 @@
     },
     {
       "name": "executed-by",
-      "description": "This relationship describes an objected executed by another object.",
+      "description": "This relationship describes an object executed by another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "affects",
+      "description": "This relationship describes an object affected by another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "beacons_to",
+      "description": "This relationship describes an object beaconing to another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "abuses",
+      "description": "This relationship describes an object which abuses another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "exfiltrates_to",
+      "description": "This relationship describes an object exfiltrating to another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "identifies",
+      "description": "This relationship describes an object which identifies another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "intercepts",
+      "description": "This relationship describes an object which intercepts another object.",
       "format": [
         "misp"
       ]
