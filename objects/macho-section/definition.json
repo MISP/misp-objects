@@ -1,0 +1,56 @@
+{
+  "requiredOneOf": [
+    "text",
+    "name",
+    "sha1",
+    "sha256",
+    "sha512"
+  ],
+  "attributes": {
+    "sha512": {
+      "ui-priority": 0,
+      "misp-attribute": "sha512"
+    },
+    "ssdeep": {
+      "ui-priority": 0,
+      "misp-attribute": "ssdeep"
+    },
+    "entropy": {
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "float"
+    },
+    "name": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "sha256": {
+      "ui-priority": 0,
+      "misp-attribute": "sha256"
+    },
+    "size-in-bytes": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "size-in-bytes"
+    },
+    "text": {
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "sha1": {
+      "ui-priority": 0,
+      "misp-attribute": "sha1"
+    },
+    "md5": {
+      "ui-priority": 1,
+      "misp-attribute": "md5"
+    }
+  },
+  "version": 1,
+  "description": "Object describing a section of a file in Mach-O format.",
+  "meta-category": "file",
+  "uuid": "fca3c534-d188-4964-9c6e-9922e1dfe66e",
+  "name": "macho-section"
+}

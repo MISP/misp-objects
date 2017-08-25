@@ -20,32 +20,48 @@
       "ui-priority": 0,
       "misp-attribute": "float"
     },
-    "sh_type": {
+    "type": {
       "sane_default": [
-        "SHT_NULL",
-        "SHT_PROGBITS",
-        "SHT_SYMTAB",
-        "SHT_STRTAB",
-        "SHT_RELA",
-        "SHT_HASH",
-        "SHT_DYNAMIC",
-        "SHT_NOTE",
-        "SHT_NOBITS",
-        "SHT_REL",
-        "SHT_SHLIB",
-        "SHT_DYNSYM",
-        "SHT_INIT_ARRAY",
-        "SHT_FINI_ARRAY",
-        "SHT_PREINIT_ARRAY",
-        "SHT_GROUP",
-        "SHT_SYMTAB_SHNDX",
-        "SHT_NUM",
-        "SHT_LOOS"
+        "NULL",
+        "PROGBITS",
+        "SYMTAB",
+        "STRTAB",
+        "RELA",
+        "HASH",
+        "DYNAMIC",
+        "NOTE",
+        "NOBITS",
+        "REL",
+        "SHLIB",
+        "DYNSYM",
+        "INIT_ARRAY",
+        "FINI_ARRAY",
+        "PREINIT_ARRAY",
+        "GROUP",
+        "SYMTAB_SHNDX",
+        "LOOS",
+        "GNU_ATTRIBUTES",
+        "GNU_HASH",
+        "GNU_VERDEF",
+        "GNU_VERNEED",
+        "GNU_VERSYM",
+        "HIOS",
+        "LOPROC",
+        "ARM_EXIDX",
+        "ARM_PREEMPTMAP",
+        "HEX_ORDERED",
+        "X86_64_UNWIND",
+        "MIPS_REGINFO",
+        "MIPS_OPTIONS",
+        "MIPS_ABIFLAGS",
+        "HIPROC",
+        "LOUSER",
+        "HIUSER"
       ],
       "ui-priority": 0,
       "misp-attribute": "text"
     },
-    "sh_name": {
+    "name": {
       "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "text"
@@ -54,7 +70,7 @@
       "ui-priority": 0,
       "misp-attribute": "sha256"
     },
-    "sh_size": {
+    "size-in-bytes": {
       "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "size-in-bytes"
@@ -64,24 +80,30 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
-    "sh_flags": {
+    "flag": {
       "sane_default": [
-        "W (write)",
-        "A (alloc)",
-        "X (execute)",
-        "M (merge)",
-        "S (strings)",
-        "I (info)",
-        "L (link order)",
-        "O (extra OS processing required)",
-        "G (group)",
-        "T (TLS)",
-        "C (compressed)",
-        "x (unknown)",
-        "o (OS specific)",
-        "E (exclude)",
-        "l (large)",
-        "p (processor specific)"
+        "ALLOC",
+        "EXCLUDE",
+        "EXECINSTR",
+        "GROUP",
+        "HEX_GPREL",
+        "INFO_LINK",
+        "LINK_ORDER",
+        "MASKOS",
+        "MASKPROC",
+        "MERGE",
+        "MIPS_ADDR",
+        "MIPS_LOCAL",
+        "MIPS_MERGE",
+        "MIPS_NAMES",
+        "MIPS_NODUPES",
+        "MIPS_NOSTRIP",
+        "NONE",
+        "OS_NONCONFORMING",
+        "STRINGS",
+        "TLS",
+        "WRITE",
+        "XCORE_SHF_CP_SECTION"
       ],
       "ui-priority": 0,
       "misp-attribute": "text"
@@ -95,7 +117,7 @@
       "misp-attribute": "md5"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Object describing a section of an Executable and Linkable Format",
   "meta-category": "file",
   "uuid": "ca271f32-1234-4e87-b240-6b6e882de5de",
