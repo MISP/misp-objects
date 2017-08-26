@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "values": [
     {
       "name": "derived-from",
@@ -175,6 +175,13 @@
     {
       "name": "intercepts",
       "description": "This relationship describes an object which intercepts another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "calls",
+      "descriptipn": "This relationship describes an object which calls another objects.",
       "format": [
         "misp"
       ]
