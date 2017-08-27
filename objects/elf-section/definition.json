@@ -106,7 +106,8 @@
         "XCORE_SHF_CP_SECTION"
       ],
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "multiple": true
     },
     "sha1": {
       "ui-priority": 0,
@@ -117,7 +118,7 @@
       "misp-attribute": "md5"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "Object describing a section of an Executable and Linkable Format",
   "meta-category": "file",
   "uuid": "ca271f32-1234-4e87-b240-6b6e882de5de",
