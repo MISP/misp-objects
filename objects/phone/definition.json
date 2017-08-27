@@ -1,0 +1,64 @@
+{
+  "requiredOneOf": [
+    "text",
+    "first-seen",
+    "last-seen",
+    "imei",
+    "imsi",
+    "msisdn",
+    "tmsi",
+    "guti"
+  ],
+  "attributes": {
+    "imei": {
+      "description": "International Mobile Equipment Identity (IMEI) is a number, usually unique, to identify 3GPP and iDEN mobile phones, as well as some satellite phones.",
+      "misp-attribute": "text"
+    },
+    "imsi": {
+      "description": "A usually unique International Mobile Subscriber Identity (IMSI) is allocated to each mobile subscriber in the GSM/UMTS/EPS system. IMSI can also refer to International Mobile Station Identity in the ITU nomenclature.",
+      "misp-attribute": "text"
+    },
+    "msisdn": {
+      "description": "MSISDN (pronounced as /'em es ai es di en/ or misden) is a number uniquely identifying a subscription in a GSM or a UMTS mobile network. Simply put, it is the mapping of the telephone number to the SIM card in a mobile/cellular phone. This abbreviation has a several interpretations, the most common one being Mobile Station International Subscriber Directory Number.",
+      "misp-attribute": "text"
+    },
+    "tmsi": {
+      "description": "Temporary Mobile Subscriber Identities (TMSI) to visiting mobile subscribers can be allocated.",
+      "misp-attribute": "text"
+    },
+    "gummei": {
+      "description": "Globally Unique MME Identifier (GUMMEI) is composed from MCC, MNC and MME Identifier (MMEI)."
+    },
+    "guti": {
+      "description": "Globally Unique Temporary UE Identity (GUTI) is a temporary identification to not reveal the phone (user equipment in 3GPP jargon) composed of GUMMEI and the M-TMSI.",
+      "misp-attribute": "text"
+    },
+    "serial-number": {
+      "description": "Serial Number.",
+      "misp-attribute": "text"
+    },
+    "text": {
+      "description": "A description of the phone.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "last-seen": {
+      "description": "When the phone has been accessible or seen for the last time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "description": "When the phone has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "A phone or mobile phone object which describe a phone.",
+  "meta-category": "misc",
+  "uuid": "d7e4fbdd-b551-4862-bddb-a0b470a38509",
+  "name": "phone"
+}
