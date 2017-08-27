@@ -12,30 +12,38 @@
   "attributes": {
     "imei": {
       "description": "International Mobile Equipment Identity (IMEI) is a number, usually unique, to identify 3GPP and iDEN mobile phones, as well as some satellite phones.",
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "imsi": {
       "description": "A usually unique International Mobile Subscriber Identity (IMSI) is allocated to each mobile subscriber in the GSM/UMTS/EPS system. IMSI can also refer to International Mobile Station Identity in the ITU nomenclature.",
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "msisdn": {
       "description": "MSISDN (pronounced as /'em es ai es di en/ or misden) is a number uniquely identifying a subscription in a GSM or a UMTS mobile network. Simply put, it is the mapping of the telephone number to the SIM card in a mobile/cellular phone. This abbreviation has a several interpretations, the most common one being Mobile Station International Subscriber Directory Number.",
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "tmsi": {
       "description": "Temporary Mobile Subscriber Identities (TMSI) to visiting mobile subscribers can be allocated.",
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "gummei": {
-      "description": "Globally Unique MME Identifier (GUMMEI) is composed from MCC, MNC and MME Identifier (MMEI)."
+      "description": "Globally Unique MME Identifier (GUMMEI) is composed from MCC, MNC and MME Identifier (MMEI).",
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "guti": {
       "description": "Globally Unique Temporary UE Identity (GUTI) is a temporary identification to not reveal the phone (user equipment in 3GPP jargon) composed of GUMMEI and the M-TMSI.",
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "serial-number": {
       "description": "Serial Number.",
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "text": {
       "description": "A description of the phone.",
@@ -56,7 +64,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "A phone or mobile phone object which describe a phone.",
   "meta-category": "misc",
   "uuid": "d7e4fbdd-b551-4862-bddb-a0b470a38509",
