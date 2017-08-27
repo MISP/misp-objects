@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "values": [
     {
       "name": "derived-from",
@@ -181,7 +181,7 @@
     },
     {
       "name": "calls",
-      "descriptipn": "This relationship describes an object which calls another objects.",
+      "description": "This relationship describes an object which calls another objects.",
       "format": [
         "misp"
       ]
