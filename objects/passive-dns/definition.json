@@ -1,63 +1,95 @@
 {
   "required": [
     "rrtype",
-    "rrname"
+    "rrname",
+    "rdata"
   ],
   "attributes": {
     "zone_time_last": {
+      "description": "Last time that the unique tuple (rrname, rrtype, rdata) record has been seen via master file import",
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "text": {
+      "description": "",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "count": {
+      "description": "How many authoritative DNS answers were received at the Passive DNS Server's collectors with exactly the given set of values as answers",
       "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "rrname": {
+      "description": "Resource Record name of the queried resource",
       "categories": [
         "Network activity",
         "External analysis"
       ],
       "ui-priority": 1,
-      "misp-attribute": "hostname"
+      "misp-attribute": "text"
     },
     "rrtype": {
+      "description": "Resource Record type as seen by the passive DNS",
       "categories": [
         "Network activity",
         "External analysis"
       ],
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "sane_default": [
+        "A",
+        "AAAA",
+        "CNAME",
+        "PTR",
+        "SOA",
+        "TXT",
+        "DNAME",
+        "NS",
+        "SRV",
+        "RP",
+        "NAPTR",
+        "HINFO",
+        "A6"
+      ]
+    },
+    "rdata": {
+      "description": "Resource records of the queried resource",
       "ui-priority": 1,
       "misp-attribute": "text"
     },
     "zone_time_first": {
+      "description": "First time that the unique tuple (rrname, rrtype, rdata) record has been seen via master file import",
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "origin": {
+      "description": "Origin of the Passive DNS response",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "time_last": {
+      "description": "Last time that the unique tuple (rrname, rrtype, rdata) record has been seen by the passive DNS",
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "time_first": {
+      "description": "First time that the unique tuple (rrname, rrtype, rdata) has been seen by the passive DNS",
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "bailiwick": {
+      "description": "Best estimate of the apex of the zone where this data is authoritative",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "sensor_id": {
+      "description": "Sensor information where the record was seen",
       "ui-priority": 0,
       "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-01",
   "meta-category": "network",
   "uuid": "b77b7b1c-66ab-4a41-8da4-83810f6d2d6c",

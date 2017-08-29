@@ -49,7 +49,7 @@
       "recommended": false
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Object describing a file in Mach-O format.",
   "meta-category": "file",
   "uuid": "23fb8371-c7e3-45fe-b897-fdf074f95267",

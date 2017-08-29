@@ -248,7 +248,7 @@
       "recommended": false
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "Object describing a Executable and Linkable Format",
   "meta-category": "file",
   "uuid": "fa6534ae-ad74-4ce0-8f23-15a66c82c7fa",

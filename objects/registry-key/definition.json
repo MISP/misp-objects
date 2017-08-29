@@ -1,10 +1,12 @@
 {
-  "required": [
+  "requiredOneOf": [
     "key",
-    "name"
+    "name",
+    "data"
   ],
   "attributes": {
     "last-modified": {
+      "description": "Last time the registry key has been modified",
       "categories": [
         "Other"
       ],
@@ -12,13 +14,31 @@
       "misp-attribute": "datetime"
     },
     "data-type": {
+      "description": "Registry value type",
       "categories": [
         "Persistence mechanism"
+      ],
+      "sane_default": [
+        "REG_NONE",
+        "REG_SZ",
+        "REG_EXPAND_SZ",
+        "REG_BINARY",
+        "REG_DWORD",
+        "REG_DWORD_LITTLE_ENDIAN",
+        "REG_DWORD_BIG_ENDIAN",
+        "REG_LINK",
+        "REG_MULTI_SZ",
+        "REG_RESOURCE_LIST",
+        "REG_FULL_RESOURCE_DESCRIPTOR",
+        "REG_RESOURCE_REQUIREMENTS_LIST",
+        "REG_QWORD",
+        "REG_QWORD_LITTLE_ENDIAN"
       ],
       "ui-priority": 0,
       "misp-attribute": "reg-datatype"
     },
     "data": {
+      "description": "Data stored in the registry key",
       "categories": [
         "Persistence mechanism"
       ],
@@ -26,6 +46,7 @@
       "misp-attribute": "reg-data"
     },
     "name": {
+      "description": "Name of the registry key",
       "categories": [
         "Persistence mechanism"
       ],
@@ -33,6 +54,7 @@
       "misp-attribute": "reg-name"
     },
     "key": {
+      "description": "Full key path",
       "categories": [
         "Persistence mechanism"
       ],
@@ -40,6 +62,7 @@
       "misp-attribute": "reg-key"
     },
     "hive": {
+      "description": "Hive used to store the registry key (file on disk)",
       "categories": [
         "Persistence mechanism"
       ],
@@ -47,7 +70,7 @@
       "misp-attribute": "reg-hive"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Registry key object describing a Windows registry key with value and last-modified timestamp",
   "meta-category": "file",
   "uuid": "8b3228ad-6d82-4fe6-b2ae-05426308f1d5",

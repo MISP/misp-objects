@@ -85,6 +85,7 @@
       "misp-attribute": "text"
     },
     "text": {
+      "description": "Description of the r2graphity object",
       "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "text"
@@ -150,7 +151,7 @@
       "misp-attribute": "float"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Indicators extracted from files using radare2 and graphml",
   "meta-category": "file",
   "uuid": "b6abe0e0-52ea-4424-ba42-761c2e027b76",

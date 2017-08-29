@@ -3,17 +3,20 @@
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
   "meta-category": "network",
   "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy",
-  "version": 2,
+  "version": 3,
   "attributes": {
     "total-bps": {
+      "description": "Bits per second",
       "misp-attribute": "counter",
       "ui-priority": 0
     },
     "text": {
+      "description": "Description of the DDoS",
       "misp-attribute": "text",
       "ui-priority": 0
     },
     "ip-dst": {
+      "description": "Destination ID (victim)",
       "misp-attribute": "ip-dst",
       "ui-priority": 1,
       "categories": [
@@ -22,6 +25,7 @@
       ]
     },
     "ip-src": {
+      "description": "IP address originating the attack",
       "misp-attribute": "ip-src",
       "ui-priority": 1,
       "categories": [
@@ -30,6 +34,7 @@
       ]
     },
     "dst-port": {
+      "description": "Destination port of the attack",
       "misp-attribute": "port",
       "ui-priority": 0,
       "categories": [
@@ -38,6 +43,7 @@
       ]
     },
     "src-port": {
+      "description": "Port originating the attack",
       "misp-attribute": "port",
       "ui-priority": 0,
       "categories": [
@@ -46,10 +52,12 @@
       ]
     },
     "first-seen": {
+      "description": "Beginning of the attack",
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "protocol": {
+      "description": "Protocol used for the attack",
       "misp-attribute": "text",
       "ui-priority": 0,
       "required_value": [
@@ -60,10 +68,12 @@
       ]
     },
     "total-pps": {
+      "description": "Packets per second",
       "misp-attribute": "counter",
       "ui-priority": 0
     },
     "last-seen": {
+      "description": "End of the attack",
       "misp-attribute": "datetime",
       "ui-priority": 0
     }

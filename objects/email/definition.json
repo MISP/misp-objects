@@ -3,9 +3,10 @@
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
   "meta-category": "network",
   "description": "Email object describing an email with meta-information",
-  "version": 2,
+  "version": 3,
   "attributes": {
     "reply-to": {
+      "description": "Email address the reply will be sent to",
       "misp-attribute": "email-reply-to",
       "ui-priority": 1,
       "categories": [
@@ -13,6 +14,7 @@
       ]
     },
     "message-id": {
+      "description": "Message ID",
       "misp-attribute": "email-message-id",
       "ui-priority": 0,
       "categories": [
@@ -20,6 +22,7 @@
       ]
     },
     "to": {
+      "description": "Destination email address",
       "misp-attribute": "email-dst",
       "ui-priority": 1,
       "categories": [
@@ -28,6 +31,7 @@
       "multiple": true
     },
     "to-display-name": {
+      "description": "Display name of the receiver",
       "misp-attribute": "email-dst-display-name",
       "ui-priority": 1,
       "categories": [
@@ -36,6 +40,7 @@
       "multiple": true
     },
     "subject": {
+      "description": "Subject",
       "misp-attribute": "email-subject",
       "ui-priority": 1,
       "categories": [
@@ -43,6 +48,7 @@
       ]
     },
     "attachment": {
+      "description": "Attachment",
       "misp-attribute": "email-attachment",
       "ui-priority": 0,
       "categories": [
@@ -51,6 +57,7 @@
       "multiple": true
     },
     "x-mailer": {
+      "description": "X-Mailer generally tells the program that was used to draft and send the original email",
       "misp-attribute": "email-x-mailer",
       "ui-priority": 0,
       "categories": [
@@ -58,6 +65,7 @@
       ]
     },
     "header": {
+      "description": "Full headers",
       "misp-attribute": "email-header",
       "ui-priority": 0,
       "categories": [
@@ -66,6 +74,7 @@
       "multiple": true
     },
     "send-date": {
+      "description": "Date the email has been sent",
       "misp-attribute": "datetime",
       "ui-priority": 0,
       "disable_correlation": true,
@@ -73,15 +82,8 @@
         "Other"
       ]
     },
-    "url": {
-      "misp-attribute": "url",
-      "ui-priority": 0,
-      "categories": [
-        "Payload delivery"
-      ],
-      "multiple": true
-    },
     "mime-boundary": {
+      "description": "MIME Boundary",
       "misp-attribute": "email-mime-boundary",
       "ui-priority": 0,
       "categories": [
@@ -89,6 +91,7 @@
       ]
     },
     "thread-index": {
+      "description": "Identifies a particular conversation thread",
       "misp-attribute": "email-thread-index",
       "ui-priority": 0,
       "categories": [
@@ -96,6 +99,7 @@
       ]
     },
     "from": {
+      "description": "Sender email address",
       "misp-attribute": "email-src",
       "ui-priority": 1,
       "categories": [
@@ -103,6 +107,7 @@
       ]
     },
     "from-display-name": {
+      "description": "Display name of the sender",
       "misp-attribute": "email-src-display-name",
       "ui-priority": 1,
       "categories": [
