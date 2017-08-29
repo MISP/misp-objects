@@ -78,6 +78,7 @@ for a specific attribute.
 * [objects/passive-dns](objects/passive-dns/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
+* [objects/phone](objects/phone/definition.json) - A phone or mobile phone object.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time. 
