@@ -5,11 +5,13 @@
   ],
   "attributes": {
     "entrypoint-address": {
+      "description": "Address of the entry point",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "type": {
+      "description": "Type of ELF",
       "sane_default": [
         "CORE",
         "DYNAMIC",
@@ -23,11 +25,13 @@
       "misp-attribute": "text"
     },
     "number-sections": {
+      "description": "Number of sections",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "counter"
     },
     "arch": {
+      "description": "Architecture of the ELF file",
       "sane_default": [
         "None",
         "M32",
@@ -209,6 +213,7 @@
       "misp-attribute": "text"
     },
     "os_abi": {
+      "description": "Header operating system application binary interface (ABI)",
       "sane_default": [
         "AIX",
         "ARM",
@@ -236,9 +241,11 @@
       "misp-attribute": "text"
     },
     "text": {
+      "description": "Free text value to attach to the ELF",
       "disable_correlation": true,
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "recommended": false
     }
   },
   "version": 2,

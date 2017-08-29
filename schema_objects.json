@@ -43,13 +43,17 @@
         "to_ids": {
           "type": "boolean"
         },
+        "recommended": {
+          "type": "boolean"
+        },
         "description": {
           "type": "string"
         }
       },
       "required": [
         "misp-attribute",
-        "ui-priority"
+        "ui-priority",
+        "description"
       ]
     }
   },
