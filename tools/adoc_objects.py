@@ -44,6 +44,7 @@ def header(adoc=False):
         return False
     doc = adoc
     doc = doc + ":toc: right\n"
+#    doc = doc + ":doctype: book\n"
     doc = doc + ":toclevels: 1\n"
     doc = doc + ":toc-title: MISP Objects\n"
     doc = doc + ":icons: font\n"
@@ -104,5 +105,18 @@ for mispobject in objects:
     adoc = asciidoc(content=title, adoc=adoc, t='title')
     adoc = asciidoc(content=c['description'], adoc=adoc, t='info', title=title)
     adoc = asciidoc(content=c, adoc=adoc, t='attributes', title=title)
+
+with open('../relationships/definition.json') as filerelationships:
+    rel = json.load(filerelationships)
+
+    output = '== Relationships\n'
+    output = output + '\n{}\n'.format(rel['description'])
+    output = output + '\nRelationships are part of MISP object and available in JSON format at https://github.com/MISP/misp-object/blob/master/relationships/definition.json[this location]. The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP].\n'
+    output = output + '|===\n'
+    output = output + '|Name of relationship | Description | Format\n'
+    for relationship in rel['values']:
+        output = output + '\n| {} | {} | {}\n'.format(relationship['name'], relationship['description'], str(relationship['format']))
+    output = output + '\n|===\n'
+    adoc = adoc + output
 
 print (adoc)
