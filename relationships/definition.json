@@ -1,193 +1,207 @@
 {
-  "version": 8,
+  "name": "relationships",
+  "uuid": "b002c0d6-320f-450d-82c4-b3aa15bbbd6c",
+  "description": "Default type of relationships in MISP objects.",
   "values": [
     {
-      "name": "derived-from",
+      "format": [
+        "misp",
+        "stix-2.0"
+      ],
       "description": "The information in the target object is based on information from the source object.",
+      "name": "derived-from"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "duplicate-of",
+      ],
       "description": "The referenced source and target objects are semantically duplicates of each other.",
+      "name": "duplicate-of"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "related-to",
+      ],
       "description": "The referenced source is related to the target object.",
+      "name": "related-to"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "attributed-to",
+      ],
       "description": "This referenced source is attributed to the target object.",
+      "name": "attributed-to"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "targets",
+      ],
       "description": "This relationship describes that the source object targets the target object.",
+      "name": "targets"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "uses",
+      ],
       "description": "This relationship describes the use by the source object of the target object.",
+      "name": "uses"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "indicates",
+      ],
       "description": "This relationships describes that the source object indicates the target object.",
+      "name": "indicates"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "mitigates",
+      ],
       "description": "This relationship describes a source object which mitigates the target object.",
+      "name": "mitigates"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "variant-of",
+      ],
       "description": "This relationship describes a source object which is a variant of the target object",
+      "name": "variant-of"
+    },
+    {
       "format": [
         "misp",
         "stix-2.0"
-      ]
-    },
-    {
-      "name": "impersonates",
+      ],
       "description": "This relationship describe a source object which impersonates the target object",
-      "format": [
-        "misp",
-        "stix-2.0"
-      ]
+      "name": "impersonates"
     },
     {
-      "name": "authored-by",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes the author of a specific object.",
-      "format": [
-        "misp"
-      ]
+      "name": "authored-by"
     },
     {
-      "name": "located",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes the location (of any type) of a specific object.",
-      "format": [
-        "misp"
-      ]
+      "name": "located"
     },
     {
-      "name": "included-in",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object included in another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "included-in"
     },
     {
-      "name": "analysed-with",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object analysed by another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "analysed-with"
     },
     {
-      "name": "claimed-by",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object claimed by another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "claimed-by"
     },
     {
-      "name": "communicates-with",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object communicating with another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "communicates-with"
     },
     {
-      "name": "dropped-by",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object dropped by another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "dropped-by"
     },
     {
-      "name": "executed-by",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object executed by another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "executed-by"
     },
     {
-      "name": "affects",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object affected by another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "affects"
     },
     {
-      "name": "beacons_to",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object beaconing to another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "beacons_to"
     },
     {
-      "name": "abuses",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object which abuses another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "abuses"
     },
     {
-      "name": "exfiltrates_to",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object exfiltrating to another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "exfiltrates_to"
     },
     {
-      "name": "identifies",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object which identifies another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "identifies"
     },
     {
-      "name": "intercepts",
+      "format": [
+        "misp"
+      ],
       "description": "This relationship describes an object which intercepts another object.",
-      "format": [
-        "misp"
-      ]
+      "name": "intercepts"
     },
     {
-      "name": "calls",
-      "description": "This relationship describes an object which calls another objects.",
       "format": [
         "misp"
-      ]
+      ],
+      "description": "This relationship describes an object which calls another objects.",
+      "name": "calls"
+    },
+    {
+      "format": [
+        "misp"
+      ],
+      "description": "This relationship describes an object which is detected as another object.",
+      "name": "detected_as"
+    },
+    {
+      "format": [
+        "misp"
+      ],
+      "description": "This relationship describes an object which triggers another object.",
+      "name": "triggers"
     }
   ],
-  "description": "Default type of relationships in MISP objects.",
-  "uuid": "b002c0d6-320f-450d-82c4-b3aa15bbbd6c",
-  "name": "relationships"
+  "version": 9
 }
