@@ -127,6 +127,7 @@
         "LOUSER",
         "HIUSER"
       ],
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -156,6 +157,7 @@
         "WRITE",
         "XCORE_SHF_CP_SECTION"
       ],
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text",
       "multiple": true
