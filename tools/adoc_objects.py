@@ -66,7 +66,7 @@ def asciidoc(content=False, adoc=None, t='title',title=''):
     if t == 'title':
         output = '== ' + content
     elif t == 'info':
-        output = "\n{}.\n\n{} {} {}{}/definition.json[*this location*] {}.\n".format(content, 'NOTE: ', title, 'is a MISP object available in JSON format at https://github.com/MISP/misp-objects/blob/master/',title.lower(),' The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP]')
+        output = "\n{}.\n\n{} {} {}{}/definition.json[*this location*] {}.\n".format(content, 'NOTE: ', title, 'is a MISP object available in JSON format at https://github.com/MISP/misp-objects/blob/master/objects/',title.lower(),' The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP]')
     elif t == 'author':
         output = '\nauthors:: {}\n'.format(' - '.join(content))
     elif t == 'value':
