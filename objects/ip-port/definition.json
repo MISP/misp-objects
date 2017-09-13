@@ -29,7 +29,7 @@
         "External analysis"
       ],
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "port"
     },
     "dst-port": {
       "description": "Destination port",
@@ -38,7 +38,7 @@
         "External analysis"
       ],
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "port"
     },
     "ip": {
       "description": "IP Address",
@@ -50,7 +50,7 @@
       "misp-attribute": "ip-dst"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
   "meta-category": "network",
   "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
