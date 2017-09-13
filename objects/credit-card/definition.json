@@ -1,0 +1,47 @@
+{
+  "requiredOneOf": [
+    "cc-number"
+  ],
+  "attributes": {
+    "version": {
+      "description": "yabin.py and regex.txt version used for the generation of the yara rules.",
+      "ui-priority": 0,
+      "misp-attribute": "comment"
+    },
+    "comment": {
+      "description": "A description of the card.",
+      "ui-priority": 0,
+      "misp-attribute": "comment"
+    },
+    "card-security-code": {
+      "description": "Card security code as embossed or printed on the card.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "name": {
+      "description": "Name of the card owner.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "issued": {
+      "description": "Initial date of validity or issued date.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "expiration": {
+      "description": "Maximum date of validity",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "cc-number": {
+      "description": "credit-card number as encoded on the card.",
+      "ui-priority": 0,
+      "misp-attribute": "cc-number"
+    }
+  },
+  "version": 1,
+  "description": "A payment card like credit card, debit card or any similar cards which can be used for financial transactions.",
+  "meta-category": "financial",
+  "uuid": "2b9c57aa-daba-4330-a738-56f18743b0c7",
+  "name": "credit-card"
+}
