@@ -16,7 +16,7 @@
     "port": {
       "description": "Port number",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "port"
     },
     "scheme": {
       "description": "Scheme",
@@ -86,7 +86,7 @@
       "misp-attribute": "hostname"
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "meta-category": "network",
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
