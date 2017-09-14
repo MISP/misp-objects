@@ -1,0 +1,80 @@
+{
+  "requiredOneOf": [
+    "first-name",
+    "last-name"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the person or identity.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "last-name": {
+      "description": "Last name of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "last-name"
+    },
+    "middle-name": {
+      "description": "Middle name of a natural person",
+      "ui-priority": 0,
+      "misp-attribute": "middle-name"
+    },
+    "first-name": {
+      "description": "First name of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "first-name"
+    },
+    "date-of-birth": {
+      "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
+      "ui-priority": 0,
+      "misp-attribute": "date-of-birth"
+    },
+    "place-of-birth": {
+      "description": "Place of birth of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "place-of-birth"
+    },
+    "gender": {
+      "description": "The gender of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "gender",
+      "required_value": [
+        "Male",
+        "Female",
+        "Other",
+        "Prefer not to say"
+      ]
+    },
+    "passport-number": {
+      "description": "The passport number of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "passport-number"
+    },
+    "passport-country": {
+      "description": "The country in which the passport was issued.",
+      "ui-priority": 0,
+      "misp-attribute": "passport-country"
+    },
+    "passport-expiration": {
+      "description": "The expiration date of a passport.",
+      "ui-priority": 0,
+      "misp-attribute": "passport-expiration"
+    },
+    "redress-number": {
+      "description": "The Redress Control Number is the record identifier for people who apply for redress through the DHS Travel Redress Inquiry Program (DHS TRIP). DHS TRIP is for travelers who have been repeatedly identified for additional screening and who want to file an inquiry to have erroneous information corrected in DHS systems.",
+      "ui-priority": 0,
+      "misp-attribute": "redress-number"
+    },
+    "nationality": {
+      "description": "The nationality of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "nationality"
+    }
+  },
+  "version": 1,
+  "description": "An person which describes a person or an identity.",
+  "meta-category": "misc",
+  "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
+  "name": "person"
+}
