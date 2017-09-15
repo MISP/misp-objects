@@ -1,0 +1,34 @@
+{
+  "requiredOneOf": [
+    "regexp"
+  ],
+  "attributes": {
+    "comment": {
+      "description": "A description of the regular expression.",
+      "ui-priority": 0,
+      "misp-attribute": "comment"
+    },
+    "regexp-type": {
+      "description": "Type of the regular expression syntax.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "required_value": [
+        "PCRE",
+        "PCRE2",
+        "POSIX BRE",
+        "POSIX ERE"
+      ]
+    },
+    "regexp": {
+      "description": "regexp",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "An object describing a regular expression (regex or regexp). The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a regular expression.",
+  "meta-category": "misc",
+  "uuid": "ceffad66-71e5-4e20-9370-1b3fb694c648",
+  "name": "regexp"
+}
