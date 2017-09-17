@@ -60,7 +60,7 @@
       "description": "Protocol used for the attack",
       "misp-attribute": "text",
       "ui-priority": 0,
-      "required_valu": [
+      "values_list": [
         "TCP",
         "UDP",
         "ICMP",
