@@ -3,7 +3,7 @@
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
   "meta-category": "network",
   "description": "Email object describing an email with meta-information",
-  "version": 3,
+  "version": 4,
   "attributes": {
     "reply-to": {
       "description": "Email address the reply will be sent to",
@@ -116,19 +116,19 @@
     }
   },
   "requiredOneOf": [
-    "email-src",
-    "email-src-display-name",
-    "email-dst",
-    "email-dst-display-name",
-    "email-subject",
-    "email-attachment",
-    "email-message-id",
-    "email-reply-to",
+    "from",
+    "from-display-name",
+    "to",
+    "to-display-name",
+    "subject",
+    "attachment",
+    "message-id",
+    "reply-to",
     "send-date",
     "url",
-    "email-mime-boundary",
-    "email-thread-index",
-    "email-header",
+    "mime-boundary",
+    "thread-index",
+    "header",
     "x-mailer"
   ]
 }
