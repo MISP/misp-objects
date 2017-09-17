@@ -56,7 +56,7 @@ Each attribute must contain a reference **misp-attribute** to reference an exist
 An array **categories** shall be used to described in which categories the attribute is. The **ui-priority**
 describes the usage frequency of an attribute. This helps to only display the most frequently used attributes and
 allowing advanced users to show all the attributes depending of their configuration. An optional **multiple** field
-shall be set to true if multiple elements of the same key can be used in the object. An optional **required_value**
+shall be set to true if multiple elements of the same key can be used in the object. An optional **values_list**
 where this list of value can be selected as a value for an attribute. An optional **sane_default** where this list of value recommend
 potential a sane default for an attribute. An optional **disable_correlation** boolean field to suggest the disabling of correlation
 for a specific attribute.

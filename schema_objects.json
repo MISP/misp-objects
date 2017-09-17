@@ -20,7 +20,7 @@
             "type": "string"
           }
         },
-        "required_value": {
+        "values_list": {
           "type": "array",
           "uniqueItems": true,
           "items": {
