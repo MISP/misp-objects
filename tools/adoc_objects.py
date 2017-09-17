@@ -77,7 +77,7 @@ def asciidoc(content=False, adoc=None, t='title',title=''):
         #output = '\n{}\n'.format
         #output = '[cols=\",a\"]\n'
         output = output + '|===\n'
-        output = output + '|Object attribute | MISP attribute type | Description | Disable correlation\n' 
+        output = output + '|Object attribute | MISP attribute type | Description | Disable correlation\n'
         adoc = adoc + output
         for v in content['attributes']:
             disableCorrelation = 'icon:minus[] '
@@ -87,7 +87,10 @@ def asciidoc(content=False, adoc=None, t='title',title=''):
                     disableCorrelation = 'icon:check[] '
             if 'description' in content['attributes'][v]:
                 if content['attributes'][v]['description']:
-                    description = content['attributes'][v]['description']
+                    values = ''
+                if 'values_list' in content['attributes'][v]:
+                    values = content['attributes'][v]['values_list']
+                    description = '{} {}'.format(content['attributes'][v]['description'],values)
             output = '\n| {} | {} a| {} a| {}\n'.format(v, content['attributes'][v]['misp-attribute'], description ,disableCorrelation)
             adoc = adoc + output
         output = '\n|===\n'
