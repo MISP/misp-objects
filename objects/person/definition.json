@@ -39,7 +39,7 @@
       "description": "The gender of a natural person.",
       "ui-priority": 0,
       "misp-attribute": "gender",
-      "required_value": [
+      "values_list": [
         "Male",
         "Female",
         "Other",
@@ -72,7 +72,7 @@
       "misp-attribute": "nationality"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An person which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",

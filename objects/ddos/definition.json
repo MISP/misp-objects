@@ -3,7 +3,7 @@
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
   "meta-category": "network",
   "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy",
-  "version": 3,
+  "version": 4,
   "attributes": {
     "total-bps": {
       "description": "Bits per second",
@@ -60,7 +60,7 @@
       "description": "Protocol used for the attack",
       "misp-attribute": "text",
       "ui-priority": 0,
-      "required_value": [
+      "required_valu": [
         "TCP",
         "UDP",
         "ICMP",
