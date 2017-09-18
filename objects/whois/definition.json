@@ -4,7 +4,7 @@
     "registrant-phone",
     "creation-date",
     "registrant-name",
-    "registar"
+    "registrar"
   ],
   "required": [
     "domain"
@@ -60,7 +60,7 @@
       "misp-attribute": "domain"
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Whois records information for a domain name.",
   "meta-category": "network",
   "uuid": "429faea1-34ff-47af-8a00-7c62d3be5a6a",
