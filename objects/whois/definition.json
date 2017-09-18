@@ -16,9 +16,9 @@
       "misp-attribute": "text"
     },
     "registar": {
-      "description": "Registar of the whois entry",
+      "description": "Registrar of the whois entry",
       "ui-priority": 0,
-      "misp-attribute": "whois-registar"
+      "misp-attribute": "whois-registrar"
     },
     "registrant-name": {
       "description": "Registrant name",
@@ -60,7 +60,7 @@
       "misp-attribute": "domain"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "Whois records information for a domain name.",
   "meta-category": "network",
   "uuid": "429faea1-34ff-47af-8a00-7c62d3be5a6a",
