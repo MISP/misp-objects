@@ -91,6 +91,9 @@ def asciidoc(content=False, adoc=None, t='title',title=''):
                 if 'values_list' in content['attributes'][v]:
                     values = content['attributes'][v]['values_list']
                     description = '{} {}'.format(content['attributes'][v]['description'],values)
+                if 'sane_default' in content['attributes'][v]:
+                    values = content['attributes'][v]['sane_default']
+                    description = '{} {}'.format(content['attributes'][v]['description'],values)
             output = '\n| {} | {} a| {} a| {}\n'.format(v, content['attributes'][v]['misp-attribute'], description ,disableCorrelation)
             adoc = adoc + output
         output = '\n|===\n'
