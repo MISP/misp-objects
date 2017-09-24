@@ -54,7 +54,7 @@ def header(adoc=False):
     doc = doc + "\n= MISP Objects\n\n"
     doc = doc + "Generated from https://github.com/MISP/misp-objects.\n\n"
     doc = doc + "\nimage::{images-cdn}misp-logo.png[MISP logo]\n"
-    doc = "{}{}".format(doc, "\nMISP MISP objects to be used in MISP (2.4.80 (TBC)) system and can be used by other information sharing tool. MISP objects are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects and their associated attributes are based on real cyber security use-cases and existing practices in information sharing.\n")
+    doc = "{}{}".format(doc, "\nMISP MISP objects to be used in MISP (2.4.80) system and can be used by other information sharing tool. MISP objects are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects and their associated attributes are based on real cyber security use-cases and existing practices in information sharing.\n")
     doc = doc + "\n\n"
 
     return doc
