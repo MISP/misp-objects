@@ -1,0 +1,82 @@
+{
+  "requiredOneOf": [
+    "name"
+  ],
+  "attributes": {
+    "description": {
+      "description": "Description of the victim",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "name": {
+      "description": "The name of the victim targeted. The name can be an organisation or a group of organisations.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "classification": {
+      "description": "The type of entity being targeted.",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "sane_default": [
+        "individual",
+        "group",
+        "organization",
+        "class",
+        "unknown"
+      ]
+    },
+    "roles": {
+      "description": "The list of roles targeted within the victim.",
+      "multiple": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sectors": {
+      "description": "The list of sectors that the victim belong to",
+      "multiple": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "sane_default": [
+        "agriculture",
+        "aerospace",
+        "automotive",
+        "communications",
+        "construction",
+        "defence",
+        "education",
+        "energy",
+        "engineering",
+        "entertainment",
+        "financial­services",
+        "government­national",
+        "government­regional",
+        "government­local",
+        "government­public­services",
+        "healthcare",
+        "hospitality­leisure",
+        "infrastructure",
+        "insurance",
+        "manufacturing",
+        "mining",
+        "non­profit",
+        "pharmaceuticals",
+        "retail",
+        "technology",
+        "telecommunications",
+        "transportation",
+        "utilities"
+      ]
+    },
+    "regions": {
+      "description": "The list of regions or locations from the victim targeted. ISO 3166 should be used.",
+      "multiple": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "version": 1,
+  "description": "Victim object describes the target of an attack or abuse.",
+  "meta-category": "misc",
+  "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
+  "name": "victim"
+}
