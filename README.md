@@ -83,7 +83,7 @@ for a specific attribute.
 * [objects/phone](objects/phone/definition.json) - A phone or mobile phone object.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
-* [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time. 
+* [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
@@ -106,6 +106,12 @@ We recommend to add a **text** attribute in a object to allow users to add comme
 If the unparsed object can be included, a **raw-base64** attribute can be used in the object to import the whole object.
 
 When the object is created, pull a request on this project. We usually merge the objects if it fits existing use-cases.
+
+## MISP objects documentation
+
+The MISP objects are documented at the following location in [HTML](https://www.misp-project.org/objects.html) and [PDF](https://www.misp-project.org/objects.pdf).
+
+The documentation is automatically generated from the MISP objects template expressed in JSON.
 
 ## What are the advantages of MISP objects versus existing standards?
 
