@@ -1,0 +1,53 @@
+{
+  "requiredOneOf": [
+    "post"
+  ],
+  "attributes": {
+    "post": {
+      "description": "Raw post",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "url": {
+      "description": "Original URL location of the microblog post",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "type": {
+      "description": "Type of the microblog post",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Twitter",
+        "Facebook",
+        "Forum",
+        "Other"
+      ]
+    },
+    "username": {
+      "description": "Username who posted the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "creation-date": {
+      "description": "Initial creation of the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "modification-date": {
+      "description": "Last update of the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "removal-date": {
+      "description": "When the microblog post was removed",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
+  "meta-category": "misc",
+  "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
+  "name": "microblog"
+}
