@@ -20,6 +20,10 @@
       "sane_default": [
         "Twitter",
         "Facebook",
+        "LinkedIn",
+        "Reddit",
+        "Google+",
+        "Instagram",
         "Forum",
         "Other"
       ]
@@ -43,6 +47,11 @@
       "description": "When the microblog post was removed",
       "ui-priority": 0,
       "misp-attribute": "datetime"
+    },
+    "username-quoted":{
+      "description": "Username who are quoted into the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "text
     }
   },
   "version": 1,
