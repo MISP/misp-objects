@@ -48,7 +48,7 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
-    "username-quoted":{
+    "username-quoted": {
       "description": "Username who are quoted into the microblog post",
       "ui-priority": 0,
       "misp-attribute": "text"
