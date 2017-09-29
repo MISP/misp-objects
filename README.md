@@ -16,6 +16,7 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
         "meta-category": "network",
         "description": "A domain and IP address seen as a tuple in a specific time frame.",
         "version": 1,
+        "uuid": "f47559d7-6c16-40e8-a6b0-eda4a008376f",
         "attributes" :
         {
                 "ip": {
@@ -104,6 +105,8 @@ of existing MISP attributes. If you are missing a specific attributes, feel free
 We recommend to add a **text** attribute in a object to allow users to add comments or correlating text.
 
 If the unparsed object can be included, a **raw-base64** attribute can be used in the object to import the whole object.
+
+Every object needs a **uuid** which can be created using **uuidgen -r** on a linux command line.
 
 When the object is created, pull a request on this project. We usually merge the objects if it fits existing use-cases.
 
