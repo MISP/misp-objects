@@ -76,7 +76,8 @@ for a specific attribute.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/ja3](objects/ja3/definition.json) - A ja3 object which describes an SSL client fingerprint in an easy to produce and shareable way.
 * [objects/macho](objects/macho/definition.json) - Object describing a Mach object file format.
-* [objects/macho-section](objects/macho-section/definition.hson) - Object describing a section of a Mach object file format.
+* [objects/macho-section](objects/macho-section/definition.json) - Object describing a section of a Mach object file format.
+* [objects/microblog](objects/microblog/definition.json) - Object describing microblog post like Twitter or Facebook.
 * [objects/passive-dns](objects/passive-dns/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
