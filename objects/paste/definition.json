@@ -1,0 +1,50 @@
+{
+  "requiredOneOf": [
+    "origin",
+    "paste"
+  ],
+  "attributes": {
+    "paste": {
+      "description": "Raw text of the paste or post",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "origin": {
+      "values_list": [
+        "pastebin.com",
+        "pastebin.com_pro",
+        "pastie.org",
+        "slexy.org",
+        "gist.github.com",
+        "codepad.org",
+        "safebin.net",
+        "hastebin.com"
+      ],
+      "description": "Original source of the paste or post.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "url": {
+      "misp-attribute": "url",
+      "ui-priority": 0,
+      "description": "Link to the original source of the paste or post."
+    },
+    "last-seen": {
+      "description": "When the paste has been accessible or seen for the last time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "description": "When the paste has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "Paste or similar post from a website allowing to share privately or publicly posts.",
+  "meta-category": "misc",
+  "uuid": "cedc055c-78aa-49a4-bfd7-4cc30cecef12",
+  "name": "paste"
+}
