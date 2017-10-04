@@ -18,11 +18,17 @@
         "gist.github.com",
         "codepad.org",
         "safebin.net",
-        "hastebin.com"
+        "hastebin.com",
+        "ghostbin.com"
       ],
       "description": "Original source of the paste or post.",
       "ui-priority": 0,
       "misp-attribute": "text"
+    },
+    "title": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "Title of the paste or post."
     },
     "url": {
       "misp-attribute": "url",
@@ -42,7 +48,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Paste or similar post from a website allowing to share privately or publicly posts.",
   "meta-category": "misc",
   "uuid": "cedc055c-78aa-49a4-bfd7-4cc30cecef12",
