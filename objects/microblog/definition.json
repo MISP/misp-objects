@@ -46,7 +46,7 @@
     "link": {
       "description": "Link into the microblog post",
       "ui-priority": 0,
-      "misp-attribute": "text",
+      "misp-attribute": "url",
       "multiple": true
     },
     "removal-date": {
