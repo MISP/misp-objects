@@ -1,0 +1,63 @@
+{
+  "requiredOneOf": [
+    "ticket-number"
+  ],
+  "attributes": {
+    "classification": {
+      "description": "Classification of the RTIR ticket",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "ip": {
+      "description": "IPs automatically extracted from the RTIR ticket",
+      "ui-priority": 0,
+      "misp-attribute": "ip-dst",
+      "multiple": true
+    },
+    "constituency": {
+      "description": "Constituency of the RTIR ticket",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "queue": {
+      "description": "Queue of the RTIR ticket",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "incident",
+        "investigations",
+        "blocks",
+        "incident reports"
+      ]
+    },
+    "subject": {
+      "description": "Subject of the RTIR ticket",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "status": {
+      "description": "Status of the RTIR ticket",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "new",
+        "open",
+        "stalled",
+        "resolved",
+        "rejected",
+        "deleted"
+      ]
+    },
+    "ticket-number": {
+      "description": "ticket-number of the RTIR ticket",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "RTIR - Request Tracker for Incident Response",
+  "meta-category": "misc",
+  "uuid": "7534ee19-0a1f-4f46-a197-e6e73e457943",
+  "name": "rtir"
+}
