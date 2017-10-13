@@ -1,0 +1,135 @@
+{
+  "name": "netflow",
+  "uuid": "bf148c58-3e7e-414e-8de8-5d96379ca77e",
+  "meta-category": "network",
+  "description": "An object that encapsulates a netflow incicating or relating, for example, to an incident",
+  "version": 1,
+  "attributes": {
+    "ip-dst": {
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "ip-src": {
+      "misp-attribute": "ip-src",
+      "ui-priority": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "dst-port": {
+      "description": "Destination port of the netflow",
+      "misp-attribute": "port",
+      "ui-priority": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "src-port": {
+      "description": "Source port of the netflow",
+      "misp-attribute": "port",
+      "ui-priority": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "tcp-flags": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "icmp-type": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "ip-protocol-number": {
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "protocol": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "required_value": [
+        "TCP",
+        "UDP",
+        "ICMP",
+        "IP"
+      ]
+    },
+    "src-as": {
+      "misp-attribute": "AS",
+      "ui-priority": 0,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "dst-as": {
+      "misp-attribute": "AS",
+      "ui-priority": 0,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
+    "ip_version": {
+      "misp-attribute": "counter",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "direction": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "sane_default": [
+        "Ingress",
+        "Egress"
+      ]
+    },
+    "flow-count": {
+      "misp-attribute": "counter",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "packet-count": {
+      "misp-attribute": "counter",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "byte-count": {
+      "misp-attribute": "counter",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "first-packet-seen": {
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "last-packet-seen": {
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "requiredOneOf": [
+    "first-packet-seen",
+    "ip-src",
+    "ip-dst",
+    "dst-port"
+  ]
+}
