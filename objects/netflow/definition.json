@@ -110,7 +110,7 @@
         "Ingress",
         "Egress"
       ],
-      "direction": "Direction of this flow"
+      "description": "Direction of this flow"
     },
     "flow-count": {
       "misp-attribute": "counter",
