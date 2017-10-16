@@ -39,9 +39,9 @@
       "misp-attribute": "ip-dst"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "A domain and IP address seen as a tuple in a specific time frame.",
   "meta-category": "network",
   "uuid": "43b3b146-77eb-4931-b4cc-b66c60f28734",
-  "name": "domain|ip"
+  "name": "domain-ip"
 }
