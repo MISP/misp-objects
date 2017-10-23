@@ -133,6 +133,8 @@
     },
     "state": {
       "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "State of the file",
       "multiple": true,
       "values_list": [
         "Harmless",
