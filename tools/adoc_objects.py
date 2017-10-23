@@ -87,7 +87,7 @@ def asciidoc(content=False, adoc=None, t='title',title=''):
                     disableCorrelation = 'icon:check[] '
             if 'description' in content['attributes'][v]:
                 if content['attributes'][v]['description']:
-                    values = ''
+                    description = '{}'.format(content['attributes'][v]['description'])
                 if 'values_list' in content['attributes'][v]:
                     values = content['attributes'][v]['values_list']
                     description = '{} {}'.format(content['attributes'][v]['description'],values)
