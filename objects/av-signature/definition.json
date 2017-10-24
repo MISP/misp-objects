@@ -6,6 +6,7 @@
   "attributes": {
     "software": {
       "description": "Name of antivirus software",
+      "disable_correlation": true,
       "categories": [
         "Antivirus detection"
       ],
