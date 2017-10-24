@@ -1,0 +1,30 @@
+{
+  "required": [
+    "summary"
+  ],
+  "attributes": {
+    "summary": {
+      "description": "Free text summary of the report",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "categories": [
+        "Other",
+        "Internal reference"
+      ]
+    },
+    "case-number": {
+      "description": "Case number",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "categories": [
+        "Internal reference",
+        "Other"
+      ]
+    }
+  },
+  "version": 1,
+  "description": "Metadata used to generate an executive level report",
+  "meta-category": "misc",
+  "uuid": "70a68471-df22-4e3f-aa1a-5a3be19f82df",
+  "name": "report"
+}
