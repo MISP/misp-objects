@@ -199,6 +199,188 @@
       "format": [
         "misp"
       ]
+    },
+    {
+      "name": "vulnerability of",
+      "description": "This relationship describes an object which is a vulnerability of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "works like",
+      "description": "This relationship describes an object which works like another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "seller of",
+      "description": "This relationship describes an object which is selling another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "seller on",
+      "description": "This relationship describes an object which is selling on another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "trying to obtain the exploit",
+      "description": "This relationship describes an object which is trying to obtain the exploit described by another object",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "used by",
+      "description": "This relationship describes an object which is used by another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "affiliated",
+      "description": "This relationship describes an object which is affiliated with another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "alleged founder of",
+      "description": "This relationship describes an object which is the alleged founder of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "attacking other group",
+      "description": "This relationship describes an object which attacks another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "belongs to",
+      "description": "This relationship describes an object which belongs to another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "business relations?",
+      "description": "This relationship describes an object which may have business relations with another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "claims to be the founder of",
+      "description": "This relationship describes an object which claims to be the founder of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "cooperates with",
+      "description": "This relationship describes an object which cooperates with another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "former member of",
+      "description": "This relationship describes an object which is a former member of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "successor of",
+      "description": "This relationship describes an object which is a successor of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "has joined",
+      "description": "This relationship describes an object which has joined another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "member of",
+      "description": "This relationship describes an object which is a member of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "primary member of",
+      "description": "This relationship describes an object which is a primary member of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "administrator of",
+      "description": "This relationship describes an object which is an administrator of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "is in relation with?",
+      "description": "This relationship describes an object which may be in relation with another object,",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "provide support to",
+      "description": "This relationship describes an object which provides support to another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "regional branch",
+      "description": "This relationship describes an object which is a regional branch of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "similar?",
+      "description": "This relationship describes an object which may be similar to another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "subgroup",
+      "description": "This relationship describes an object which is a subgroup of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "suspected link",
+      "description": "This relationship describes an object which is suspected to be linked with another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "same as",
+      "description": "This relationship describes an object which is the same as another object.",
+      "format": [
+        "misp"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
