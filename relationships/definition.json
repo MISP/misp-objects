@@ -381,6 +381,76 @@
       "format": [
         "misp"
       ]
+    },
+    {
+      "name": "creator-of",
+      "description": "This relationship describes an object which is the creator of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "developer-of",
+      "description": "This relationship describes an object which is a developer of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "uses-for-recon",
+      "description": "This relationship describes an object which uses another object for recon.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "operator-of",
+      "description": "This relationship describes an object which is an operator of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "overlaps",
+      "description": "This relationship describes an object which overlaps another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "owner-of",
+      "description": "This relationship describes an object which owns another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "publishes-method-for",
+      "description": "This relationship describes an object which publishes method for another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "recommends-use-of",
+      "description": "This relationship describes an object which recommends the use of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "released-source-code",
+      "description": "This relationship describes an object which released source code of another object.",
+      "format": [
+        "cert-eu"
+      ]
+    },
+    {
+      "name": "released",
+      "description": "This relationship describes an object which release another object.",
+      "format": [
+        "cert-eu"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
