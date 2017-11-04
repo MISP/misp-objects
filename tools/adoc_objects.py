@@ -43,20 +43,27 @@ def header(adoc=False):
     if adoc is False:
         return False
     doc = adoc
+    dedication = "\n[dedication]\n== Funding and Support\nThe MISP project is financially and resource supported by https://www.circl.lu/[CIRCL Computer Incident Response Center Luxembourg ].\n\nimage:{images-misp}logo.png[CIRCL logo]\n\nA CEF (Connecting Europe Facility) funding under CEF-TC-2016-3 - Cyber Security has been granted from 1st September 2017 until 31th August 2019 as ***Improving MISP as building blocks for next-generation information sharing***.\n\nimage:{images-misp}en_cef.png[CEF funding]\n\nIf you are interested to co-fund projects around MISP, feel free to get in touch with us.\n\n"
     doc = doc + ":toc: right\n"
-#    doc = doc + ":doctype: book\n"
     doc = doc + ":toclevels: 1\n"
     doc = doc + ":toc-title: MISP Objects\n"
     doc = doc + ":icons: font\n"
     doc = doc + ":sectanchors:\n"
     doc = doc + ":sectlinks:\n"
     doc = doc + ":images-cdn: https://raw.githubusercontent.com/MISP/MISP/2.4/INSTALL/logos/\n"
+    doc = doc + ":images-misp: https://www.misp-project.org/assets/images/\n"
     doc = doc + "\n= MISP Objects\n\n"
-    doc = doc + "Generated from https://github.com/MISP/misp-objects.\n\n"
+    doc = doc + "= Introduction\n"
     doc = doc + "\nimage::{images-cdn}misp-logo.png[MISP logo]\n"
+    doc = doc + "The MISP threat sharing platform is a free and open source software helping information sharing of threat intelligence including cyber security indicators, financial fraud or counter-terrorism information. The MISP project includes multiple sub-projects to support the operational requirements of analysts and improve the overall quality of information shared.\n\n"
+    doc = doc + ""
     doc = "{}{}".format(doc, "\nMISP objects are used in MISP (starting from version 2.4.80) system and can be used by other information sharing tool.  MISP objects are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects and their associated attributes are based on real cyber security use-cases and existing practices in information sharing. The objects are just shared like any other attributes in MISP even if the other MISP instances don't have the template of the object.\n")
+    doc = doc + "The following document is generated from the machine-readable JSON describing the https://github.com/MISP/misp-objects[MISP objects]."
     doc = doc + "\n\n"
-
+    doc = doc + "<<<\n"
+    doc = doc + dedication
+    doc = doc + "<<<\n"
+    doc = doc + "= MISP objects\n"
     return doc
 
 def asciidoc(content=False, adoc=None, t='title',title=''):
