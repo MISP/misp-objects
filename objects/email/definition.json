@@ -3,7 +3,7 @@
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
   "meta-category": "network",
   "description": "Email object describing an email with meta-information",
-  "version": 6,
+  "version": 7,
   "attributes": {
     "reply-to": {
       "description": "Email address the reply will be sent to",
@@ -54,6 +54,14 @@
       "ui-priority": 1,
       "categories": [
         "Payload delivery"
+      ]
+    },
+    "screenshot": {
+      "description": "Screenshot of email",
+      "misp-attribute": "attachment",
+      "ui-priority": 1,
+      "categories": [
+        "External analysis"
       ]
     },
     "attachment": {
