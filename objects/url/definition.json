@@ -11,12 +11,14 @@
     "tld": {
       "description": "Top-Level Domain",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "port": {
       "description": "Port number",
       "ui-priority": 0,
-      "misp-attribute": "port"
+      "misp-attribute": "port",
+      "disable_correlation": true
     },
     "scheme": {
       "description": "Scheme",
@@ -28,7 +30,8 @@
         "sip"
       ],
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "first-seen": {
       "description": "First time this URL has been seen",
@@ -63,7 +66,8 @@
     "subdomain": {
       "description": "Subdomain",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "credential": {
       "description": "Credential (username, password)",
