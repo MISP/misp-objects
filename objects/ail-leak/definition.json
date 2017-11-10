@@ -1,6 +1,5 @@
 {
   "requiredOneOf": [
-    "type",
     "text",
     "first-seen",
     "last-seen",
@@ -18,7 +17,7 @@
     "origin": {
       "description": "The link where the leak is (or was) accessible at first-seen.",
       "ui-priority": 1,
-      "misp-attribute": "url"
+      "misp-attribute": "link"
     },
     "text": {
       "description": "A description of the leak which could include the potential victim(s) or description of the leak.",
@@ -58,7 +57,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
   "meta-category": "misc",
   "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
