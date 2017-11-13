@@ -1,0 +1,67 @@
+{
+  "requiredOneOf": [
+    "asn"
+  ],
+  "attributes": {
+    "asn": {
+      "description": "Autonomous System Number",
+      "ui-priority": 1,
+      "misp-attribute": "as"
+    },
+    "description": {
+      "description": "Description of the autonomous system",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "country": {
+      "description": "Country code of the main location of the autonomous system",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "subnet-announced": {
+      "description": "Subnet announced",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "first-seen": {
+      "description": "First time the ASN was seen",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "last-seen": {
+      "description": "Last time the ASN was seen",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "import": {
+      "description": "The inbound IPv4 routing policy of the AS in RFC 2622 – Routing Policy Specification Language (RPSL) format",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "export": {
+      "description": "The outbound routing policy of the AS in RFC 2622 – Routing Policy Specification Language (RPSL) format",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "mp-import": {
+      "description": "The inbound IPv4 or IPv6 routing policy of the AS in RFC 4012 – Routing Policy Specification Language next generation (RPSLng), section 4.5. format",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "mp-export": {
+      "description": "This attribute performs the same function as the export attribute above. The difference is that mp-export allows both IPv4 and IPv6 address families to be specified. The export is described in RFC 4012 – Routing Policy Specification Language next generation (RPSLng), section 4.5. format",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    }
+  },
+  "version": 1,
+  "description": "Autonomous system object describing an autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.",
+  "meta-category": "network",
+  "uuid": "4ec55cc6-9e49-4c64-b794-03c25c1a6587",
+  "name": "asn"
+}
