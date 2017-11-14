@@ -21,7 +21,7 @@
     "subnet-announced": {
       "description": "Subnet announced",
       "ui-priority": 0,
-      "misp-attribute": "text",
+      "misp-attribute": "ip-src",
       "multiple": true
     },
     "first-seen": {
@@ -59,7 +59,7 @@
       "multiple": true
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Autonomous system object describing an autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.",
   "meta-category": "network",
   "uuid": "4ec55cc6-9e49-4c64-b794-03c25c1a6587",
