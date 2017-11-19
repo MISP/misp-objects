@@ -53,7 +53,7 @@ A MISP object is described in a simple JSON file containing the following elemen
 * **requiredOneOf** is an array containing the attributes where at least one need to be present to describe the object.
 * **attributes** contains another JSON object listing all the attributes composing the object.
 
-Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP.
+Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP (MISP attributes types are case-sensitive).
 An array **categories** shall be used to described in which categories the attribute is. The **ui-priority**
 describes the usage frequency of an attribute. This helps to only display the most frequently used attributes and
 allowing advanced users to show all the attributes depending of their configuration. An optional **multiple** field
@@ -65,6 +65,7 @@ for a specific attribute.
 ## Existing MISP objects
 
 * [objects/ail-leak](objects/ail-leak/definition.json) -  information leak object as defined by the [AIL Analysis Information Leak framework](https://www.github.com/CIRCL/AIL-framework).
+* [objects/asn](objects/asn/definition.json) - Autonomous system object describing a BGP autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
 * [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 * [objects/cookie](objects/cookie/definition.json) - A cookie object describes an HTTP cookie including its use in malicious cases.
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
