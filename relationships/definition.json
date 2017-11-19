@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "values": [
     {
       "name": "derived-from",
@@ -189,6 +189,20 @@
     {
       "name": "detected-as",
       "description": "This relationship describes an object which is detected as another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "followed-by",
+      "description": "This relationship describes an object which is followed by another object. This can be used when a time reference is missing but a sequence is known.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "preceding-by",
+      "description": "This relationship describes an object which is preceded by another object. This can be used when a time reference is missing but a sequence is known.",
       "format": [
         "misp"
       ]
