@@ -71,10 +71,10 @@
       "description": "Raw data as received by the AIL sensor compressed and encoded in Base64.",
       "disable_correlation": true,
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "attachment"
     }
   },
-  "version": 6,
+  "version": 7,
   "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
   "meta-category": "misc",
   "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
