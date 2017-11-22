@@ -14,6 +14,17 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
+    "duplicate": {
+      "description": "Duplicate of the existing leaks.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "duplicate_number": {
+      "description": "Number of known duplicates.",
+      "ui-priority": 0,
+      "misp-attribute": "counter"
+    },
     "origin": {
       "description": "The link where the leak is (or was) accessible at first-seen.",
       "ui-priority": 1,
@@ -63,7 +74,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
   "meta-category": "misc",
   "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
