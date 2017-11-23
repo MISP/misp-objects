@@ -3,7 +3,7 @@
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
   "meta-category": "network",
   "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy",
-  "version": 4,
+  "version": 5,
   "attributes": {
     "total-bps": {
       "description": "Bits per second",
@@ -15,8 +15,17 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "domain-dst": {
+      "description": "Destination domain (victim)",
+      "misp-attribute": "domain",
+      "ui-priority": 1,
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ]
+    },
     "ip-dst": {
-      "description": "Destination ID (victim)",
+      "description": "Destination IP (victim)",
       "misp-attribute": "ip-dst",
       "ui-priority": 1,
       "categories": [
@@ -80,6 +89,7 @@
   },
   "requiredOneOf": [
     "ip-dst",
-    "ip-src"
+    "ip-src",
+    "domain-dst"
   ]
 }
