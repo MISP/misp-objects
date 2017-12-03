@@ -129,7 +129,7 @@
     },
     "certificate": {
       "description": "Certificate value if the binary is signed with another authentication scheme than authenticode",
-      "ui-prioriety": 0,
+      "ui-priority": 0,
       "misp-attribute": "x509-fingerprint-sha1"
     },
     "mimetype": {
