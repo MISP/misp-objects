@@ -15,7 +15,8 @@
     "sha512/224",
     "sha512/256",
     "tlsh",
-    "pattern-in-file"
+    "pattern-in-file",
+    "x509-fingerprint-sha1"
   ],
   "attributes": {
     "md5": {
@@ -126,6 +127,11 @@
       "ui-priority": 0,
       "misp-attribute": "tlsh"
     },
+    "certificate": {
+      "description": "Certificate value if the binary is signed with another authentication scheme than authenticode",
+      "ui-prioriety": 0,
+      "misp-attribute": "x509-fingerprint-sha1"
+    },
     "mimetype": {
       "description": "Mime type",
       "disable_correlation": true,
@@ -142,11 +148,12 @@
         "Signed",
         "Revoked",
         "Expired",
-        "Trusted"
+        "Trusted",
+        "Malicious"
       ]
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
