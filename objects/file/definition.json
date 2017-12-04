@@ -143,17 +143,18 @@
       "ui-priority": 0,
       "description": "State of the file",
       "multiple": true,
+      "disable_correlation": true,
       "values_list": [
+        "Malicious",
         "Harmless",
         "Signed",
         "Revoked",
         "Expired",
-        "Trusted",
-        "Malicious"
+        "Trusted"
       ]
     }
   },
-  "version": 6,
+  "version": 7,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
