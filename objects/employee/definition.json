@@ -38,6 +38,19 @@
       "description": "the organizational business unit associated with the employee",
       "ui-priority": 0,
       "misp-attribute": "target-org"
+    },
+    "employee-type": {
+      "description": "type of employee",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "values_list": [
+        "Mid-Level Manager",
+        "Senior Manager",
+        "Non-Manager",
+        "Supervisor",
+        "First-Line Manager",
+        "Director"
+      ]
     }
   },
   "version": 1,
