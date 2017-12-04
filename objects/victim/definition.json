@@ -9,9 +9,15 @@
       "misp-attribute": "text"
     },
     "name": {
-      "description": "The name of the victim targeted. The name can be an organisation or a group of organisations.",
+      "description": "The name of the department(s) or organisation(s) targeted.",
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "target-org",
+      "multiple": true
+    },
+    "external": {
+      "description": "External target organisations affected by this attack.",
+      "misp-attribute": "target-external",
+      "multiple": true
     },
     "classification": {
       "description": "The type of entity being targeted.",
@@ -71,11 +77,35 @@
     "regions": {
       "description": "The list of regions or locations from the victim targeted. ISO 3166 should be used.",
       "multiple": true,
-      "misp-attribute": "text",
+      "misp-attribute": "target-location",
       "ui-priority": 1
+    },
+    "user": {
+      "description": "The username(s) of the user targeted.",
+      "misp-attribute": "target-user",
+      "ui-priority": 1,
+      "multiple": true
+    },
+    "email": {
+      "description": "The email address(es) of the user targeted.",
+      "misp-attribute": "target-email",
+      "ui-priority": 1,
+      "multiple": true
+    },
+    "node": {
+      "description": "Name(s) of node that was targeted.",
+      "misp-attribute": "target-machine",
+      "ui-priority": 1,
+      "multiple": true
+    },
+    "ip-address": {
+      "description": "IP address(es) of the node targeted.",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1,
+      "multiple": true
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "Victim object describes the target of an attack or abuse.",
   "meta-category": "misc",
   "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
