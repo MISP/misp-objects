@@ -43,16 +43,25 @@
     },
     "last-seen": {
       "description": "Last time this payment destination address has been seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "first-seen": {
       "description": "First time this payment destination address has been seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
+    },
+    "text": {
+      "description": "Free text value",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "recommended": false
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An address used in a cryptocurrency",
   "meta-category": "financial",
   "uuid": "d0e6997e-78da-4815-a6a1-cfc1c1cb8a46",
