@@ -16,6 +16,7 @@
     },
     "external": {
       "description": "External target organisations affected by this attack.",
+      "ui-priority": 1,
       "misp-attribute": "target-external",
       "multiple": true
     },
