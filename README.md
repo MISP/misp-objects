@@ -31,10 +31,12 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
                 },
                 "first-seen": {
                         "misp-attribute": "datetime",
+                        "disable_correlation": true,
                         "ui-priority": 0
                 },
                 "last-seen": {
                         "misp-attribute": "datetime",
+                        "disable_correlation": true,
                         "ui-priority": 0
                 }
 

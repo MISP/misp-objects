@@ -3,7 +3,7 @@
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
   "meta-category": "network",
   "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy",
-  "version": 5,
+  "version": 6,
   "attributes": {
     "total-bps": {
       "description": "Bits per second",
@@ -12,6 +12,7 @@
     },
     "text": {
       "description": "Description of the DDoS",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -62,6 +63,7 @@
     },
     "first-seen": {
       "description": "Beginning of the attack",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
@@ -83,6 +85,7 @@
     },
     "last-seen": {
       "description": "End of the attack",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     }
