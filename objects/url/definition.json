@@ -35,6 +35,7 @@
     },
     "first-seen": {
       "description": "First time this URL has been seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
@@ -81,6 +82,7 @@
     },
     "last-seen": {
       "description": "Last time this URL has been seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
@@ -90,7 +92,7 @@
       "misp-attribute": "hostname"
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "meta-category": "network",
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",

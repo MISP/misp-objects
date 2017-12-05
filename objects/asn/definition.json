@@ -26,11 +26,13 @@
     },
     "first-seen": {
       "description": "First time the ASN was seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "last-seen": {
       "description": "Last time the ASN was seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
@@ -59,7 +61,7 @@
       "multiple": true
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Autonomous system object describing an autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.",
   "meta-category": "network",
   "uuid": "4ec55cc6-9e49-4c64-b794-03c25c1a6587",
