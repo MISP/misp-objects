@@ -39,7 +39,7 @@
         "uri",
         "filename",
         "windows-service-name",
-        "windows-scheduled-task"    
+        "windows-scheduled-task"
       ],
       "description": "Specify which type corresponds to this regex.",
       "ui-priority": 0,
