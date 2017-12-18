@@ -35,6 +35,11 @@
       "ui-priority": 1,
       "misp-attribute": "whois-registrant-email"
     },
+    "registrant-org": {
+      "description": "Registrant organisation",
+      "ui-priority": 1,
+      "misp-attribute": "whois-registrant-org"
+    },
     "creation-date": {
       "description": "Initial creation of the whois entry",
       "ui-priority": 0,
@@ -60,7 +65,7 @@
       "misp-attribute": "domain"
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "Whois records information for a domain name.",
   "meta-category": "network",
   "uuid": "429faea1-34ff-47af-8a00-7c62d3be5a6a",
