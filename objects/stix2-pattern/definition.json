@@ -1,0 +1,22 @@
+{
+  "requiredOneOf": [
+    "stix2-pattern"
+  ],
+  "attributes": {
+    "comment": {
+      "description": "A description of the stix2-pattern.",
+      "ui-priority": 0,
+      "misp-attribute": "comment"
+    },
+    "stix2-pattern": {
+      "description": "STIX 2 pattern",
+      "ui-priority": 0,
+      "misp-attribute": "stix2-pattern"
+    }
+  },
+  "version": 1,
+  "description": "An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.",
+  "meta-category": "misc",
+  "uuid": "0c5bd072-7c3e-4d45-86f7-a8104d9143b9",
+  "name": "stix2-pattern"
+}
