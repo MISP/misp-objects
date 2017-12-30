@@ -210,7 +210,8 @@
         "AMDGPU"
       ],
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "os_abi": {
       "description": "Header operating system application binary interface (ABI)",
@@ -238,7 +239,8 @@
         "TRU64"
       ],
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "text": {
       "description": "Free text value to attach to the ELF",
@@ -248,7 +250,7 @@
       "recommended": false
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Object describing a Executable and Linkable Format",
   "meta-category": "file",
   "uuid": "fa6534ae-ad74-4ce0-8f23-15a66c82c7fa",
