@@ -17,7 +17,8 @@
     "tlsh",
     "pattern-in-file",
     "x509-fingerprint-sha1",
-    "malware-sample"
+    "malware-sample",
+    "link"
   ],
   "attributes": {
     "md5": {
@@ -154,6 +155,12 @@
         "Expired",
         "Trusted"
       ]
+    },
+    "link": {
+      "misp-attribute": "link",
+      "description": "Link to external information",
+      "multiple": true,
+      "ui-priority": 0
     }
   },
   "version": 9,
