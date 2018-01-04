@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "values": [
     {
       "name": "derived-from",
@@ -126,6 +126,13 @@
     {
       "name": "dropped-by",
       "description": "This relationship describes an object dropped by another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "drops",
+      "description": "This relationship describes an object which drops another object",
       "format": [
         "misp"
       ]
