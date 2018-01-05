@@ -34,6 +34,7 @@
       ],
       "misp-attribute": "text",
       "disable_correlation": true,
+      "multiple": true,
       "ui-priority": 1
     },
     "GtpMessageType": {
@@ -88,7 +89,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "GTP attack object as seen on a GSM, UMTS or LTE network",
   "meta-category": "network",
   "uuid": "6b3c48d2-0ca6-4608-9c36-455105439145",
