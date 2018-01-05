@@ -30,7 +30,9 @@
         "S5",
         "S11",
         "S10",
-        "S8"
+        "S8",
+        "Gn",
+        "Gp"
       ],
       "misp-attribute": "text",
       "disable_correlation": true,
@@ -89,7 +91,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "GTP attack object as seen on a GSM, UMTS or LTE network",
   "meta-category": "network",
   "uuid": "6b3c48d2-0ca6-4608-9c36-455105439145",
