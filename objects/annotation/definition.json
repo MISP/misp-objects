@@ -1,6 +1,6 @@
 {
   "requiredOneOf": [
-    "post"
+    "text"
   ],
   "attributes": {
     "text": {
@@ -63,7 +63,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An annotation object allowing analysts to add annotations, comments, executive summary to a MISP event, objects or attributes.",
   "meta-category": "misc",
   "uuid": "5d8dc046-15a1-4ca3-a09f-ed4ede7c4487",
