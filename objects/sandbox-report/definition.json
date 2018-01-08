@@ -1,0 +1,100 @@
+{
+  "required": [
+    "sandbox-type"
+  ],
+  "requiredOneOf": [
+    "web-sandbox",
+    "on-premise-sandbox",
+    "saas-sandbox"
+  ],
+  "attributes": {
+    "permalink": {
+      "description": "Permalink reference",
+      "categories": [
+        "External analysis"
+      ],
+      "ui-priority": 2,
+      "misp-attribute": "link"
+    },
+    "score": {
+      "description": "Score",
+      "disable_correlation": true,
+      "categories": [
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "results": {
+      "description": "Freetext result values",
+      "disable_correlation": true,
+      "categories": [
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "raw-report": {
+      "description": "Raw report from sandbox",
+      "disable_correlation": true,
+      "categories": [
+        "External analysis"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "sandbox-type": {
+      "description": "The type of sandbox used",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "sane_default": [
+        "on-premise",
+        "web",
+        "saas"
+      ]
+    },
+    "on-premise-sandbox": {
+      "description": "The on-premise sandbox used",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "sane_default": [
+        "cuckoo",
+        "symantec-cas-on-premise",
+        "bluecoat-maa",
+        "trendmicro-deep-discovery-analyzer",
+        "fireeye-ax",
+        "vmray",
+        "joe-sandbox-on-premise"
+      ]
+    },
+    "web-sandbox": {
+      "description": "A web sandbox where results are publicly available via an URL",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "sane_default": [
+        "malwr",
+        "hybrid-analysis"
+      ]
+    },
+    "saas-sandbox": {
+      "description": "A non-on-premise sandbox, also results are not publicly available",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "sane_default": [
+        "forticloud-sandbox",
+        "joe-sandbox-cloud",
+        "symantec-cas-cloud"
+      ]
+    }
+  },
+  "version": 1,
+  "description": "Sandbox report",
+  "meta-category": "misc",
+  "uuid": "4d3fffd2-cd07-4357-96e0-a51c988faaef",
+  "name": "sandbox-report"
+}
