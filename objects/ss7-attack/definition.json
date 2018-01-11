@@ -111,10 +111,16 @@
     "MapSmscGT": {
       "description": "MAP SMSC. Phone number.",
       "ui-priority": 0,
+      "multiple": true,
       "misp-attribute": "text"
     },
     "MapSmsTP-OA": {
       "description": "MAP SMS TP-OA. Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapSmsText": {
+      "description": "MAP SMS Text. Important indicators in SMS text.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -151,6 +157,7 @@
       "description": "A description of the attack seen via SS7 logging.",
       "disable_correlation": true,
       "ui-priority": 0,
+      "multiple": true,
       "misp-attribute": "text"
     },
     "first-seen": {
