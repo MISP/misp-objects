@@ -34,6 +34,12 @@
       "ui-priority": 0,
       "misp-attribute": "counter"
     },
+    "mutex": {
+      "description": "Mutex(es) used by the PE",
+      "ui-priority": 0,
+      "misp-attribute": "mutex",
+      "multiple": true
+    },
     "text": {
       "description": "Free text value to attach to the PE",
       "disable_correlation": true,
@@ -118,7 +124,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Object describing a Portable Executable",
   "meta-category": "file",
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
