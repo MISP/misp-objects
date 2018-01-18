@@ -24,9 +24,29 @@
       "description": "regexp",
       "ui-priority": 0,
       "misp-attribute": "text"
+    },
+    "type": {
+      "sane_default": [
+        "hostname",
+        "domain",
+        "email-src",
+        "email-dst",
+        "email-subject",
+        "url",
+        "user-agent",
+        "regkey",
+        "cookie",
+        "uri",
+        "filename",
+        "windows-service-name",
+        "windows-scheduled-task"
+      ],
+      "description": "Specify which type corresponds to this regex.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "An object describing a regular expression (regex or regexp). The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a regular expression.",
   "meta-category": "misc",
   "uuid": "ceffad66-71e5-4e20-9370-1b3fb694c648",

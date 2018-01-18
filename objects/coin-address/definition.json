@@ -1,0 +1,69 @@
+{
+  "requiredOneOf": [
+    "address"
+  ],
+  "attributes": {
+    "address": {
+      "description": "Address used as a payment destination in a cryptocurrency",
+      "ui-priority": 1,
+      "misp-attribute": "btc"
+    },
+    "symbol": {
+      "description": "The (uppercase) symbol of the cryptocurrency used. Symbol should be from https://coinmarketcap.com/all/views/all/",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "sane_default": [
+        "BTC",
+        "ETH",
+        "BCH",
+        "XRP",
+        "MIOTA",
+        "DASH",
+        "BTG",
+        "LTC",
+        "ADA",
+        "XMR",
+        "ETC",
+        "NEO",
+        "NEM",
+        "EOS",
+        "XLM",
+        "BCC",
+        "LSK",
+        "OMG",
+        "QTUM",
+        "ZEC",
+        "USDT",
+        "HSR",
+        "STRAT",
+        "WAVES",
+        "PPT"
+      ]
+    },
+    "last-seen": {
+      "description": "Last time this payment destination address has been seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "description": "First time this payment destination address has been seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "text": {
+      "description": "Free text value",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "recommended": false
+    }
+  },
+  "version": 2,
+  "description": "An address used in a cryptocurrency",
+  "meta-category": "financial",
+  "uuid": "d0e6997e-78da-4815-a6a1-cfc1c1cb8a46",
+  "name": "coin-address"
+}

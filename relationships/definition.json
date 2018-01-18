@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 12,
   "values": [
     {
       "name": "derived-from",
@@ -131,6 +131,13 @@
       ]
     },
     {
+      "name": "drops",
+      "description": "This relationship describes an object which drops another object",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "executed-by",
       "description": "This relationship describes an object executed by another object.",
       "format": [
@@ -189,6 +196,20 @@
     {
       "name": "detected-as",
       "description": "This relationship describes an object which is detected as another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "followed-by",
+      "description": "This relationship describes an object which is followed by another object. This can be used when a time reference is missing but a sequence is known.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "preceding-by",
+      "description": "This relationship describes an object which is preceded by another object. This can be used when a time reference is missing but a sequence is known.",
       "format": [
         "misp"
       ]

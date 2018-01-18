@@ -17,6 +17,7 @@
       "description": "Type of the microblog post",
       "ui-priority": 1,
       "misp-attribute": "text",
+      "disable_correlation": true,
       "sane_default": [
         "Twitter",
         "Facebook",
@@ -61,7 +62,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",

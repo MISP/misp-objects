@@ -9,16 +9,19 @@
   "attributes": {
     "text": {
       "description": "Description of the tuple",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "last-seen": {
       "description": "Last time the tuple has been seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "first-seen": {
       "description": "First time the tuple has been seen",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
@@ -50,7 +53,7 @@
       "misp-attribute": "ip-dst"
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
   "meta-category": "network",
   "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
