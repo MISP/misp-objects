@@ -70,9 +70,31 @@
       "ui-priority": 1,
       "disable_correlation": true,
       "misp-attribute": "text"
+    },
+    "root-keys": {
+      "description": "Root key of the Windows registry (extracted from the key)",
+      "sane_default": [
+        "HKCC",
+        "HKCR",
+        "HKCU",
+        "HKDD",
+        "HKEY_CLASSES_ROOT",
+        "HKEY_CURRENT_CONFIG",
+        "HKEY_CURRENT_USER",
+        "HKEY_DYN_DATA",
+        "HKEY_LOCAL_MACHINE",
+        "HKEY_PERFORMANCE_DATA",
+        "HKEY_USERS",
+        "HKLM",
+        "HKPD",
+        "HKU"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Registry key object describing a Windows registry key with value and last-modified timestamp",
   "meta-category": "file",
   "uuid": "8b3228ad-6d82-4fe6-b2ae-05426308f1d5",
