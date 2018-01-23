@@ -14,8 +14,7 @@
       "misp-attribute": "text"
     },
     "signature": {
-      "description": "Name of detection signature",
-      "comment": "Description of detection signature",
+      "description": "Name of detection signature - set the description of the detection signature as a comment",
       "categories": [
         "Sandbox detection"
       ],
