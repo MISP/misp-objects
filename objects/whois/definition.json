@@ -12,6 +12,7 @@
   "attributes": {
     "text": {
       "description": "Full whois entry",
+      "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "text"
     },
@@ -35,20 +36,36 @@
       "ui-priority": 1,
       "misp-attribute": "whois-registrant-email"
     },
+    "registrant-org": {
+      "description": "Registrant organisation",
+      "ui-priority": 1,
+      "misp-attribute": "whois-registrant-org"
+    },
     "creation-date": {
       "description": "Initial creation of the whois entry",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "modification-date": {
       "description": "Last update of the whois entry",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "expiration-date": {
       "description": "Expiration of the whois entry",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
+    },
+    "nameserver": {
+      "description": "Nameserver",
+      "ui-priority": 0,
+      "misp-attribute": "hostname",
+      "disable_correlation": true,
+      "multiple": true,
+      "to_ids": false
     },
     "domain": {
       "description": "Domain of the whois entry",
@@ -60,7 +77,7 @@
       "misp-attribute": "domain"
     }
   },
-  "version": 5,
+  "version": 7,
   "description": "Whois records information for a domain name.",
   "meta-category": "network",
   "uuid": "429faea1-34ff-47af-8a00-7c62d3be5a6a",

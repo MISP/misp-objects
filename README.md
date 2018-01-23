@@ -139,9 +139,9 @@ The MISP objects model allows to add new combined indicators format based on the
 
 ~~~~
 
-Copyright (C) 2016-2017 Andras Iklody
-Copyright (C) 2016-2017 Alexandre Dulaunoy
-Copyright (C) 2016-2017 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2018 Andras Iklody
+Copyright (C) 2016-2018 Alexandre Dulaunoy
+Copyright (C) 2016-2018 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by

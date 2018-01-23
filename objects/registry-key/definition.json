@@ -35,7 +35,8 @@
         "REG_QWORD_LITTLE_ENDIAN"
       ],
       "ui-priority": 0,
-      "misp-attribute": "reg-datatype"
+      "disable_correlation": true,
+      "misp-attribute": "text"
     },
     "data": {
       "description": "Data stored in the registry key",
@@ -43,7 +44,7 @@
         "Persistence mechanism"
       ],
       "ui-priority": 1,
-      "misp-attribute": "reg-data"
+      "misp-attribute": "text"
     },
     "name": {
       "description": "Name of the registry key",
@@ -51,7 +52,7 @@
         "Persistence mechanism"
       ],
       "ui-priority": 1,
-      "misp-attribute": "reg-name"
+      "misp-attribute": "text"
     },
     "key": {
       "description": "Full key path",
@@ -59,7 +60,7 @@
         "Persistence mechanism"
       ],
       "ui-priority": 1,
-      "misp-attribute": "reg-key"
+      "misp-attribute": "regkey"
     },
     "hive": {
       "description": "Hive used to store the registry key (file on disk)",
@@ -67,10 +68,33 @@
         "Persistence mechanism"
       ],
       "ui-priority": 1,
-      "misp-attribute": "reg-hive"
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "root-keys": {
+      "description": "Root key of the Windows registry (extracted from the key)",
+      "sane_default": [
+        "HKCC",
+        "HKCR",
+        "HKCU",
+        "HKDD",
+        "HKEY_CLASSES_ROOT",
+        "HKEY_CURRENT_CONFIG",
+        "HKEY_CURRENT_USER",
+        "HKEY_DYN_DATA",
+        "HKEY_LOCAL_MACHINE",
+        "HKEY_PERFORMANCE_DATA",
+        "HKEY_USERS",
+        "HKLM",
+        "HKPD",
+        "HKU"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
     }
   },
-  "version": 2,
+  "version": 4,
   "description": "Registry key object describing a Windows registry key with value and last-modified timestamp",
   "meta-category": "file",
   "uuid": "8b3228ad-6d82-4fe6-b2ae-05426308f1d5",

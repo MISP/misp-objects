@@ -1,0 +1,175 @@
+{
+  "requiredOneOf": [
+    "text"
+  ],
+  "attributes": {
+    "Category": {
+      "description": "Category",
+      "sane_default": [
+        "Cat0",
+        "Cat1",
+        "Cat2.1",
+        "Cat2.2",
+        "Cat3.1",
+        "Cat3.2",
+        "Cat3.3",
+        "CatSMS",
+        "CatSpoofing"
+      ],
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "MapVersion": {
+      "description": "Map version.",
+      "sane_default": [
+        "1",
+        "2",
+        "3"
+      ],
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 0
+    },
+    "SccpCgGT": {
+      "description": "Signaling Connection Control Part (SCCP) CgGT - Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "SccpCdGT": {
+      "description": "Signaling Connection Control Part (SCCP) CdGT - Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "SccpCgPC": {
+      "description": "Signaling Connection Control Part (SCCP) CgPC - Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "SccpCdPC": {
+      "description": "Signaling Connection Control Part (SCCP) CdPC - Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "SccpCgSSN": {
+      "description": "Signaling Connection Control Part (SCCP) - Decimal value between 0-255.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "SccpCdSSN": {
+      "description": "Signaling Connection Control Part (SCCP) - Decimal value between 0-255.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "MapOpCode": {
+      "description": "MAP operation codes - Decimal value between 0-99.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "MapApplicationContext": {
+      "description": "MAP application context in OID format.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "MapImsi": {
+      "description": "MAP IMSI. Phone number starting with MCC/MNC.",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapMsisdn": {
+      "description": "MAP MSISDN. Phone number.",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapMscGT": {
+      "description": "MAP MSC GT. Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapGsmscfGT": {
+      "description": "MAP GSMSCF GT. Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapVlrGT": {
+      "description": "MAP VLR GT. Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapGmlc": {
+      "description": "MAP GMLC. Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapSmscGT": {
+      "description": "MAP SMSC. Phone number.",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "text"
+    },
+    "MapSmsTP-OA": {
+      "description": "MAP SMS TP-OA. Phone number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapSmsText": {
+      "description": "MAP SMS Text. Important indicators in SMS text.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapSmsTP-PID": {
+      "description": "MAP SMS TP-PID.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "MapSmsTP-DCS": {
+      "description": "MAP SMS TP-DCS.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "MapSmsTypeNumber": {
+      "description": "MAP SMS TypeNumber.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "MapUssdContent": {
+      "description": "MAP USSD Content.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "MapUssdCoding": {
+      "description": "MAP USSD Content.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "text": {
+      "description": "A description of the attack seen via SS7 logging.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "text"
+    },
+    "first-seen": {
+      "description": "When the attack has been seen for the first time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.",
+  "meta-category": "network",
+  "uuid": "f3493d8b-a7ab-48d0-a775-046c4d64d782",
+  "name": "ss7-attack"
+}
