@@ -11,11 +11,13 @@
     },
     "last-name": {
       "description": "Last name Employee",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "last-name"
     },
     "first-name": {
       "description": "First name of Employee",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "first-name"
     },
@@ -36,11 +38,13 @@
     },
     "business-unit": {
       "description": "the organizational business unit associated with the employee",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "target-org"
     },
     "employee-type": {
       "description": "type of employee",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text",
       "values_list": [
