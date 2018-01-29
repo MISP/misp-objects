@@ -96,6 +96,7 @@ for a specific attribute.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
 * [objects/rtir](objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 * [objects/sandbox](objects/sandbox/definition.json) - Sandbox report object.
+* [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
