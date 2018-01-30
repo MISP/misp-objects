@@ -3,7 +3,7 @@
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
   "meta-category": "network",
   "description": "Email object describing an email with meta-information",
-  "version": 7,
+  "version": 8,
   "attributes": {
     "reply-to": {
       "description": "Email address the reply will be sent to",
