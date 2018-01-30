@@ -138,6 +138,14 @@
       "categories": [
         "Payload delivery"
       ]
+    },
+    "email-body": {
+      "description": "Body of the email",
+      "misp-attribute": "email-body",
+      "ui-priority": 1,
+      "categories": [
+        "Payload delivery"
+      ]
     }
   },
   "requiredOneOf": [
