@@ -1,0 +1,38 @@
+{
+  "requiredOneOf": [
+    "name"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the entity.",
+      "disable-correlation": "true",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "name": {
+      "description": "Name of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "commercial-name": {
+      "description": "Commercial name of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "legal-form": {
+      "description": "Legal form of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "business": {
+      "description": "Business area of an entity",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "An object to describe a legal entity.",
+  "meta-category": "misc",
+  "uuid": "",
+  "name": "legal-entity"
+}
