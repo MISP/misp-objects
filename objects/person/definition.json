@@ -66,10 +66,10 @@
       ],
       "disable_correlation": true
     },
-    "id-card-number": {
+    "identity-card-number": {
       "description": "The identity card number of a natural person.",
       "ui-priority": 0,
-      "misp-attribute": "id-card-number"
+      "misp-attribute": "identity-card-number"
     },
     "passport-number": {
       "description": "The passport number of a natural person.",
