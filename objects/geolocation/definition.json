@@ -42,6 +42,16 @@
       "ui-priority": 0,
       "misp-attribute": "float"
     },
+    "address": {
+      "description": "Address.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "zipcode": {
+      "description": "Zip Code.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "city": {
       "description": "City.",
       "misp-attribute": "text",
