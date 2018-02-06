@@ -5,7 +5,7 @@
   "attributes": {
     "text": {
       "description": "A description of the entity.",
-      "disable-correlation": "true",
+      "disable_correlation": "true",
       "ui-priority": 1,
       "misp-attribute": "text"
     },
