@@ -24,10 +24,20 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
-    "business": {
-      "description": "Business area of an entity",
+    "registration-number": {
+      "description": "Registration number of an entity in the relevant authority.",
       "ui-priority": 0,
       "misp-attribute": "text"
+    },
+    "business": {
+      "description": "Business area of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "phone-number": {
+      "description": "Phone number of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "phone-number"
     }
   },
   "version": 1,
