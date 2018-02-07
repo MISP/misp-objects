@@ -101,7 +101,7 @@
     }
   },
   "version": 1,
-  "description": "Common Alerting Protocol Version (CAP) alert object.",
+  "description": "Common Alerting Protocol Version (CAP) alert object",
   "meta-category": "misc",
   "uuid": "03b107bb-133d-4180-87ff-e3dbe731f828",
   "name": "cap-alert"
