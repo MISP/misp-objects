@@ -1,0 +1,171 @@
+{
+  "requiredOneOf": [
+    "category"
+  ],
+  "attributes": {
+    "language": {
+      "description": "The code denoting the language of the info sub-element of the alert message. ",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "category": {
+      "description": "The code denoting the category of the subject event of the alert message.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Geo",
+        "Met",
+        "Safety",
+        "Security",
+        "Rescue",
+        "Fire",
+        "Health",
+        "Env",
+        "Transport",
+        "Infra",
+        "CBRNE",
+        "Other"
+      ],
+      "disable_correlation": true
+    },
+    "event": {
+      "description": "The text denoting the type of the subject event of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "responseType": {
+      "description": "The code denoting the type of action recommended for the target audience.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Shelter",
+        "Evacuate",
+        "Prepare",
+        "Execute",
+        "Avoid",
+        "Monitor",
+        "Assess",
+        "AllClear",
+        "None"
+      ]
+    },
+    "urgency": {
+      "description": "The code denoting the urgency of the subject event of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Immediate",
+        "Expected",
+        "Future",
+        "Past",
+        "Unknown"
+      ]
+    },
+    "severity": {
+      "description": "The code denoting the severity of the subject event of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Extreme",
+        "Severe",
+        "Moderate",
+        "Minor",
+        "Unknown"
+      ]
+    },
+    "certainty": {
+      "description": "The code denoting the certainty of the subject event of the alert message.  For backward compatibility with CAP 1.0, the deprecated value of “Very Likely” SHOULD be treated as equivalent to “Likely”.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Likely",
+        "Possible",
+        "Unlikely",
+        "Unknown"
+      ]
+    },
+    "audience": {
+      "description": "The text describing the intended audience of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "eventCode": {
+      "description": "A system-specific code identifying the event type of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "effective": {
+      "description": "The effective time of the information of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "datetime"
+    },
+    "onset": {
+      "description": "The expected time of the beginning of the subject event of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "datetime"
+    },
+    "expires": {
+      "description": "The expiry time of the information of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "datetime"
+    },
+    "senderName": {
+      "description": "The text naming the originator of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "headline": {
+      "description": "The text headline of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "description": {
+      "description": "The text describing the subject event of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "instruction": {
+      "description": "The text describing the recommended action to be taken by recipients of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "web": {
+      "description": "The identifier of the hyperlink associating additional information with the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "link"
+    },
+    "contact": {
+      "description": "The text describing the contact for follow-up and confirmation of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "parameter": {
+      "description": "A system-specific additional parameter associated with the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Common Alerting Protocol Version (CAP) info object",
+  "meta-category": "misc",
+  "uuid": "826c25e6-fdd5-4e4a-b081-be5ba3ac2c3d",
+  "name": "cap-info"
+}
