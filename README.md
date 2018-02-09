@@ -71,6 +71,9 @@ for a specific attribute.
 * [objects/asn](objects/asn/definition.json) - Autonomous system object describing a BGP autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
 * [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 * [objects/bank-account](objects/bank-account/definition.json) - Object describing bank account information based on account description from goAML 4.0.
+* [objects/cap-alert](objects/cap-alert/definition.json) - Common Alerting Protocol Version (CAP) alert object.
+* [objects/cap-info](objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
+* [objects/cap-resource](objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
 * [objects/coin-address](objects/coin-address/definition.json) - An address used in a cryptocurrency.
 * [objects/cookie](objects/cookie/definition.json) - A cookie object describes an HTTP cookie including its use in malicious cases.
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
