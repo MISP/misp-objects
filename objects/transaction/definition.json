@@ -32,6 +32,16 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
+    "teller": {
+      "description": "Person who conducted the transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "authorized": {
+      "description": "Person who autorized the transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
     "date": {
       "description": "Date and time of the transaction.",
       "ui-priority": 0,
