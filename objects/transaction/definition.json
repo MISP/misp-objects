@@ -56,6 +56,26 @@
       "description": "Date of posting, if different from date of transaction.",
       "ui-priority": 0,
       "misp-attribute": "datetime"
+    },
+    "from-funds-code": {
+      "description": "Type of funds used to initiate a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "to-funds-code": {
+      "description": "Type of funds used to finalize a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "from-country": {
+      "description": "Origin country of a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "to-country": {
+      "description": "Target country of a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
     }
   },
   "version": 1,
