@@ -60,12 +60,42 @@
     "from-funds-code": {
       "description": "Type of funds used to initiate a transaction.",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "A Deposit",
+        "C Currency exchange",
+        "D Casino chips",
+        "E Bank draft",
+        "F Money order",
+        "G Traveler’s cheques",
+        "H Life insurance policy",
+        "I Real estate",
+        "J Securities",
+        "K Cash",
+        "O Other",
+        "P Cheque"
+      ]
     },
     "to-funds-code": {
       "description": "Type of funds used to finalize a transaction.",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "A Deposit",
+        "C Currency exchange",
+        "D Casino chips",
+        "E Bank draft",
+        "F Money order",
+        "G Traveler’s cheques",
+        "H Life insurance policy",
+        "I Real estate",
+        "J Securities",
+        "K Cash",
+        "O Other",
+        "P Cheque"
+      ]
     },
     "from-country": {
       "description": "Origin country of a transaction.",
