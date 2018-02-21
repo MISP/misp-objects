@@ -110,7 +110,7 @@
   },
   "version": 1,
   "description": "An object to describe a financial transaction.",
-  "meta-category": "misc",
+  "meta-category": "financial",
   "uuid": "a47fa26a-01b6-4747-a394-5144e34456dc",
   "name": "transaction"
 }
