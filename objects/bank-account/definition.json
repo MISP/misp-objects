@@ -9,8 +9,14 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
-    "institution-code": {
+    "institution-name": {
       "description": "Name of the bank or financial organisation.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "institution-code": {
+      "description": "Institution code of the bank.",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
@@ -58,7 +64,7 @@
       "ui-priority": 0,
       "misp-attribute": "iban"
     },
-    "client-_number": {
+    "client-number": {
       "description": "Client number as seen by the bank.",
       "ui-priority": 0,
       "misp-attribute": "text"
