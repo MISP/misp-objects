@@ -54,6 +54,11 @@
       "disable_correlation": true,
       "misp-attribute": "text"
     },
+    "aba-rtn": {
+      "description": " ABA routing transit number",
+      "ui-priority": 0,
+      "misp-attribute": "aba-rtn"
+    },
     "account-name": {
       "description": "A field to freely describe the bank account details.",
       "ui-priority": 0,
