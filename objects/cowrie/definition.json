@@ -83,9 +83,41 @@
       "ui-priority": 1,
       "misp-attribute": "text",
       "disable_correlation": true
+    },
+    "input": {
+      "description": "Input of the session",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "macCS": {
+      "description": "SSH MAC supported in the sesssion",
+      "multiple": true,
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "keyAlgs": {
+      "description": "SSH public-key algorithm supported in the session",
+      "multiple": true,
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "encCS": {
+      "description": "SSH symmetric encryption algorithm supported in the session",
+      "multiple": true,
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "compCS": {
+      "description": "SSH compression algorithm supported in the session",
+      "multiple": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Cowrie honeypot object template",
   "meta-category": "network",
   "uuid": "ae085d32-6534-4d52-b3eb-063fccb753e7",
