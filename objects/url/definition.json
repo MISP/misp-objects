@@ -6,7 +6,8 @@
     "fragment": {
       "description": "Fragment identifier is a short string of characters that refers to a resource that is subordinate to another, primary resource.",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "multiple": true
     },
     "tld": {
       "description": "Top-Level Domain",
@@ -42,12 +43,14 @@
     "resource_path": {
       "description": "Path (between hostname:port and query)",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "multiple": true
     },
     "query_string": {
       "description": "Query (after path, preceded by '?')",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "multiple": true
     },
     "url": {
       "description": "Full URL",
@@ -92,7 +95,7 @@
       "misp-attribute": "hostname"
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "meta-category": "network",
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
