@@ -1,5 +1,5 @@
 {
-  "required":[
+  "required": [
     "banned-ip",
     "processing-timestamp",
     "attack-type"
