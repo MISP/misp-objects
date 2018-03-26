@@ -8,7 +8,7 @@
     "banned-ip": {
       "description": "IP Address banned by fail2ban",
       "ui-priority": 1,
-      "misp-attribute": "ipsrc"
+      "misp-attribute": "ip-src"
     },
     "timestamp": {
       "description": "Timestamp of the report",
@@ -32,6 +32,11 @@
     },
     "victim": {
       "description": "Identifier of the victim",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "logline": {
+      "description": "Example log line that caused the ban.",
       "ui-priority": 1,
       "misp-attribute": "text"
     }
