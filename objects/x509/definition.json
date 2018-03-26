@@ -2,7 +2,8 @@
   "requiredOneOf": [
     "x509-fingerprint-md5",
     "x509-fingerprint-sha1",
-    "x509-fingerprint-sha256"
+    "x509-fingerprint-sha256",
+    "serial-number"
   ],
   "attributes": {
     "subject": {
