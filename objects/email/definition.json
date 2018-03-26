@@ -3,7 +3,7 @@
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
   "meta-category": "network",
   "description": "Email object describing an email with meta-information",
-  "version": 7,
+  "version": 8,
   "attributes": {
     "reply-to": {
       "description": "Email address the reply will be sent to",
@@ -134,6 +134,14 @@
     "from-display-name": {
       "description": "Display name of the sender",
       "misp-attribute": "email-src-display-name",
+      "ui-priority": 1,
+      "categories": [
+        "Payload delivery"
+      ]
+    },
+    "email-body": {
+      "description": "Body of the email",
+      "misp-attribute": "email-body",
       "ui-priority": 1,
       "categories": [
         "Payload delivery"

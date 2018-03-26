@@ -70,8 +70,13 @@ for a specific attribute.
 * [objects/android-permission](objects/android-permission/definition.json) - A set of android permissions - one or more permission(s) which can be linked to other objects (e.g. file).
 * [objects/asn](objects/asn/definition.json) - Autonomous system object describing a BGP autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
 * [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
+* [objects/bank-account](objects/bank-account/definition.json) - Object describing bank account information based on account description from goAML 4.0.
+* [objects/cap-alert](objects/cap-alert/definition.json) - Common Alerting Protocol Version (CAP) alert object.
+* [objects/cap-info](objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
+* [objects/cap-resource](objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
 * [objects/coin-address](objects/coin-address/definition.json) - An address used in a cryptocurrency.
 * [objects/cookie](objects/cookie/definition.json) - A cookie object describes an HTTP cookie including its use in malicious cases.
+* [objects/cowrie](objects/cowrie/definition.json) - A cowrie object describes cowrie honeypot sessions.
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
@@ -81,6 +86,7 @@ for a specific attribute.
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/ja3](objects/ja3/definition.json) - A ja3 object which describes an SSL client fingerprint in an easy to produce and shareable way.
+* [objects/legal-entity](objects/legal-entity/definition.json) - Object describing a legal entity, such as an organisation.
 * [objects/macho](objects/macho/definition.json) - Object describing a Mach object file format.
 * [objects/macho-section](objects/macho-section/definition.json) - Object describing a section of a Mach object file format.
 * [objects/microblog](objects/microblog/definition.json) - Object describing microblog post like Twitter or Facebook.
@@ -94,7 +100,10 @@ for a specific attribute.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
 * [objects/rtir](objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
+* [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
+* [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
+* [objects/transaction](objects/transaction/definition.json) - Object describing a financial transaction.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.

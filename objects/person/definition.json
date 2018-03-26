@@ -66,6 +66,11 @@
       ],
       "disable_correlation": true
     },
+    "identity-card-number": {
+      "description": "The identity card number of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "identity-card-number"
+    },
     "passport-number": {
       "description": "The passport number of a natural person.",
       "ui-priority": 0,
@@ -102,7 +107,7 @@
     }
   },
   "version": 3,
-  "description": "An person which describes a person or an identity.",
+  "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
   "name": "person"

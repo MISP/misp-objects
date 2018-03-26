@@ -1,0 +1,108 @@
+{
+  "requiredOneOf": [
+    "msgType"
+  ],
+  "attributes": {
+    "identifier": {
+      "description": "The identifier of the alert message in a number or string uniquely identifying this message, assigned by the sender.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "sender": {
+      "description": "The identifier of the sender of the alert message which identifies the originator of this alert. Guaranteed by assigner to be unique globally; e.g., may be based on an Internet domain name.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "sent": {
+      "description": "The time and date of the origination of the alert message.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "status": {
+      "description": "The code denoting the appropriate handling of the alert message.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Actual",
+        "Exercise",
+        "System",
+        "Test",
+        "Draft"
+      ]
+    },
+    "msgType": {
+      "description": "The code denoting the nature of the alert message.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Alert",
+        "Update",
+        "Cancel",
+        "Ack",
+        "Error"
+      ]
+    },
+    "source": {
+      "description": "The text identifying the source of the alert message. The particular source of this alert; e.g., an operator or a specific device.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "scope": {
+      "description": "The code denoting the intended distribution of the alert message. ",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Public",
+        "Restricted",
+        "Private"
+      ]
+    },
+    "restriction": {
+      "description": "The text describing the rule for limiting distribution of the restricted alert message.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "addresses": {
+      "description": "The group listing of intended recipients of the alert message. (1)   Required when <scope> is “Private”, optional when <scope> is “Public” or “Restricted”.  (2)   Each recipient SHALL be identified by an identifier or an address.  (3)   Multiple space-delimited addresses MAY be included.  Addresses including whitespace MUST be enclosed in double-quotes. ",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "code": {
+      "description": "The code denoting the special handling of the alert message.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "note": {
+      "description": "The text describing the purpose or significance of the alert message.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "references": {
+      "description": "The group listing identifying earlier message(s) referenced by the alert message. (1)   The extended message identifier(s) (in the form sender,identifier,sent) of an earlier CAP message or messages referenced by this one.  (2)   If multiple messages are referenced, they SHALL be separated by whitespace.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "incident": {
+      "description": "The group listing naming the referent incident(s) of the alert message. (1)   Used to collate multiple messages referring to different aspects of the same incident.  (2)   If multiple incident identifiers are referenced, they SHALL be separated by whitespace.  Incident names including whitespace SHALL be surrounded by double-quotes.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "Common Alerting Protocol Version (CAP) alert object",
+  "meta-category": "misc",
+  "uuid": "03b107bb-133d-4180-87ff-e3dbe731f828",
+  "name": "cap-alert"
+}
