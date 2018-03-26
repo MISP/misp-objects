@@ -1,5 +1,5 @@
 {
-  "required":[
+  "required": [
     "banned-ip",
     "processing-timestamp",
     "attack-type"
@@ -41,7 +41,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Fail2ban event",
   "meta-category": "network",
   "uuid": "8be2271-7326-41a5-a0dd-9b4bec88e1ba",
