@@ -1,0 +1,44 @@
+{
+  "required":[
+    "banned-ip",
+    "processing-timestamp",
+    "attack-type"
+  ],
+  "attributes": {
+    "banned-ip": {
+      "description": "IP Address banned by fail2ban",
+      "ui-priority": 1,
+      "misp-attribute": "ipsrc"
+    },
+    "timestamp": {
+      "description": "Timestamp of the report",
+      "ui-priority": 1,
+      "misp-attribute": "datetime"
+    },
+    "attack-type": {
+      "description": "Type of the attack",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "failures": {
+      "description": "Amount of failures that lead to the ban.",
+      "ui-priority": 1,
+      "misp-attribute": "counter"
+    },
+    "sensor": {
+      "description": "Identifier of the sensor",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "victim": {
+      "description": "Identifier of the victim",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Fail2ban event",
+  "meta-category": "network",
+  "uuid": "8be2271-7326-41a5-a0dd-9b4bec88e1ba",
+  "name": "fail2ban"
+}
