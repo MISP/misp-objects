@@ -8,7 +8,7 @@
     "banned-ip": {
       "description": "IP Address banned by fail2ban",
       "ui-priority": 1,
-      "misp-attribute": "ipsrc"
+      "misp-attribute": "ip-src"
     },
     "timestamp": {
       "description": "Timestamp of the report",
@@ -36,7 +36,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Fail2ban event",
   "meta-category": "network",
   "uuid": "8be2271-7326-41a5-a0dd-9b4bec88e1ba",
