@@ -82,6 +82,7 @@ for a specific attribute.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
 * [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
 * [objects/email](objects/email/definition.json) - An email object.
+* [objects/fail2ban](objects/fail2ban/definition.json) - A fail2ban object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
@@ -110,6 +111,7 @@ for a specific attribute.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
+* [objects/yara](objects/yara/definition.json) - YARA object describing a YARA rule along with the version supported.
 
 ## MISP objects relationships
 
