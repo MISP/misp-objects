@@ -2,7 +2,8 @@
   "requiredOneOf": [
     "x509-fingerprint-md5",
     "x509-fingerprint-sha1",
-    "x509-fingerprint-sha256"
+    "x509-fingerprint-sha256",
+    "serial-number"
   ],
   "attributes": {
     "subject": {
@@ -83,7 +84,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "x509 object describing a X.509 certificate",
   "meta-category": "network",
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
