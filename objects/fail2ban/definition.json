@@ -45,9 +45,15 @@
       "ui-priority": 1,
       "misp-attribute": "text",
       "disable_correlation": true
+    },
+    "logfile": {
+      "description": "Full logfile related to the attack.",
+      "ui-priority": 1,
+      "misp-attribute": "attachment",
+      "disable_correlation": true
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "Fail2ban event",
   "meta-category": "network",
   "uuid": "8be2271-7326-41a5-a0dd-9b4bec88e1ba",
