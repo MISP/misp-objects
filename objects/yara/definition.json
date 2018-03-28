@@ -22,9 +22,9 @@
       "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An object describing a YARA rule along with its version.",
   "meta-category": "misc",
   "uuid": "b5acf82e-ecca-4868-82fe-9dbdf4d808c3",
-  "name": "misc"
+  "name": "yara"
 }
