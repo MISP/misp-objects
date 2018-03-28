@@ -1,0 +1,32 @@
+{
+  "requiredOneOf": [
+    "suricata"
+  ],
+  "attributes": {
+    "comment": {
+      "description": "A description of the Suricata rule.",
+      "ui-priority": 0,
+      "misp-attribute": "comment"
+    },
+    "suricata": {
+      "description": "Suricata rule.",
+      "ui-priority": 0,
+      "misp-attribute": "suricata"
+    },
+    "version": {
+      "description": "Version of the Suricata rule depending where the suricata rule is known to work as expected.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "ref": {
+      "description": "Reference to the Suricata rule such as origin of the rule or alike.",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    }
+  },
+  "version": 1,
+  "description": "An object describing a Suricata rule along with its version and context",
+  "meta-category": "network",
+  "uuid": "3c177337-fb80-405a-a6c1-1b2ddea8684a",
+  "name": "suricata"
+}
