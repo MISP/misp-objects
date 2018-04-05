@@ -2,7 +2,8 @@
   "requiredOneOf": [
     "x509-fingerprint-md5",
     "x509-fingerprint-sha1",
-    "x509-fingerprint-sha256"
+    "x509-fingerprint-sha256",
+    "serial-number"
   ],
   "attributes": {
     "subject": {
@@ -48,7 +49,12 @@
       "misp-attribute": "x509-fingerprint-sha256"
     },
     "raw-base64": {
-      "description": "Raw certificate base64 encoded",
+      "description": "Raw certificate base64 encoded (DER format)",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "pem": {
+      "description": "Raw certificate in PEM formati (Unix-like newlines)",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -81,9 +87,25 @@
       "description": "Version of the certificate",
       "ui-priority": 0,
       "misp-attribute": "text"
+    },
+    "self_signed": {
+      "description": "Self-signed certificate",
+      "ui-priority": 0,
+      "misp-attribute": "boolean"
+    },
+    "is_ca": {
+      "description": "CA certificate",
+      "ui-priority": 0,
+      "misp-attribute": "boolean"
+    },
+    "dns_names": {
+      "description": "DNS names",
+      "multiple": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
-  "version": 5,
+  "version": 7,
   "description": "x509 object describing a X.509 certificate",
   "meta-category": "network",
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",

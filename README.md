@@ -82,6 +82,7 @@ for a specific attribute.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
 * [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
 * [objects/email](objects/email/definition.json) - An email object.
+* [objects/fail2ban](objects/fail2ban/definition.json) - A fail2ban object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
@@ -102,6 +103,7 @@ for a specific attribute.
 * [objects/rtir](objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 * [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
+* [objects/suricata](objects/suricata/definition.json) - Suricata rule with context.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
 * [objects/transaction](objects/transaction/definition.json) - Object describing a financial transaction.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
@@ -110,6 +112,7 @@ for a specific attribute.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
+* [objects/yara](objects/yara/definition.json) - YARA object describing a YARA rule along with the version supported.
 
 ## MISP objects relationships
 

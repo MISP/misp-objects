@@ -26,6 +26,14 @@
       ]
     },
     {
+      "name": "connected-to",
+      "description": "The referenced source is connected to the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
       "name": "attributed-to",
       "description": "This referenced source is attributed to the target object.",
       "format": [
