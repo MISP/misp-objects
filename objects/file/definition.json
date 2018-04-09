@@ -17,7 +17,8 @@
     "tlsh",
     "pattern-in-file",
     "x509-fingerprint-sha1",
-    "malware-sample"
+    "malware-sample",
+    "path"
   ],
   "attributes": {
     "md5": {
@@ -124,6 +125,13 @@
       "ui-priority": 1,
       "misp-attribute": "filename"
     },
+    "path": {
+      "description": "Path of the filename complete or partial",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
     "tlsh": {
       "description": "Fuzzy hash by Trend Micro: Locality Sensitive Hash",
       "ui-priority": 0,
@@ -156,7 +164,7 @@
       ]
     }
   },
-  "version": 10,
+  "version": 11,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
