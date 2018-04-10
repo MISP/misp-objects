@@ -1,7 +1,7 @@
 {
   "name": "target-system",
   "uuid": "3110944f-eca0-4c94-9d61-a84d022228a4",
-  "meta-category": "Targeting data",
+  "meta-category": "internal",
   "description": "Description about an targeted system, this could potentially be a compromissed internal system",
   "version": 1,
   "attributes": {
