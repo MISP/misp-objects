@@ -1,0 +1,104 @@
+{
+  "requiredOneOf": [
+    "name",
+    "type"
+  ],
+  "attributes": {
+    "name": {
+      "description": "The name used to identify the course of action.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "type": {
+      "description": "The type of the course of action.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "sane_default": [
+        "Perimeter Blocking",
+        "Internal Blocking",
+        "Redirection",
+        "Redirection (Honey Pot)",
+        "Hardening",
+        "Patching",
+        "Eradication",
+        "Rebuilding",
+        "Training",
+        "Monitoring",
+        "Physical Access Restrictions",
+        "Logical Access Restrictions",
+        "Public Disclosure",
+        "Diplomatic Actions",
+        "Policy Actions",
+        "Other"
+      ]
+    },
+    "description": {
+      "description": "A description of the course of action.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "objective": {
+      "description": "The objective of the course of action.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "stage": {
+      "description": "The stage of the threat management lifecycle that the course of action is applicable to.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "sane_default": [
+        "Remedy",
+        "Response"
+      ]
+    },
+    "cost": {
+      "description": "The estimated cost of applying the course of action.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "sane_default": [
+        "High",
+        "Medium",
+        "Low",
+        "None",
+        "Unknown"
+      ]
+    },
+    "impact": {
+      "description": "The estimated impact of applying the course of action.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "sane_default": [
+        "High",
+        "Medium",
+        "Low",
+        "None",
+        "Unknown"
+      ]
+    },
+    "efficacy": {
+      "description": "The estimated efficacy of applying the course of action.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "sane_default": [
+        "High",
+        "Medium",
+        "Low",
+        "None",
+        "Unknown"
+      ]
+    }
+  },
+  "version": 1,
+  "description": "An object describing a specific measure taken to prevent or respond to an attack.",
+  "meta-category": "misc",
+  "uuid": "3d1c2c06-68a9-4394-8c8d-258d115f796f",
+  "name": "course-of-action"
+}
