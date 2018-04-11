@@ -76,6 +76,7 @@ for a specific attribute.
 * [objects/cap-resource](objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
 * [objects/coin-address](objects/coin-address/definition.json) - An address used in a cryptocurrency.
 * [objects/cookie](objects/cookie/definition.json) - A cookie object describes an HTTP cookie including its use in malicious cases.
+* [objects/course-of-action](objects/course-of-action/definition.json) - An object describing a Course of Action.
 * [objects/cowrie](objects/cowrie/definition.json) - A cowrie object describes cowrie honeypot sessions.
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
