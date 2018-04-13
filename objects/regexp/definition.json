@@ -42,6 +42,7 @@
         "windows-scheduled-task"
       ],
       "description": "Specify which type corresponds to this regex.",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     }
