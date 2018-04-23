@@ -44,6 +44,14 @@
       ],
       "ui-priority": 2,
       "misp-attribute": "link"
+    },
+    "comment": {
+      "description": "Comment related to this hash",
+      "categories": [
+        "Exernal analysis"
+      ],
+      "misp-attribute": "text",
+      "multiple": "true"
     }
   },
   "version": 1,
