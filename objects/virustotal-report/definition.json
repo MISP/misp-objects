@@ -51,6 +51,7 @@
         "Exernal analysis"
       ],
       "misp-attribute": "text",
+      "ui-priority": 2,
       "multiple": true
     }
   },
