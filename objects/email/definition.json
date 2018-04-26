@@ -163,6 +163,7 @@
     "thread-index",
     "header",
     "x-mailer",
-    "return-path"
+    "return-path",
+    "email-body"
   ]
 }
