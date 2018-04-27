@@ -74,6 +74,7 @@
         "External analysis"
       ],
       "ui-priority": 0,
+      "multiple": true,
       "misp-attribute": "domain"
     },
     "comment": {
@@ -84,10 +85,11 @@
     "ip-address": {
       "description": "IP address of the whois entry",
       "ui-priority": 0,
+      "multiple": true,
       "misp-attribute": "ip-src"
     }
   },
-  "version": 9,
+  "version": 10,
   "description": "Whois records information for a domain name or an IP address.",
   "meta-category": "network",
   "uuid": "429faea1-34ff-47af-8a00-7c62d3be5a6a",
