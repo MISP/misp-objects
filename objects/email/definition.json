@@ -3,7 +3,7 @@
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
   "meta-category": "network",
   "description": "Email object describing an email with meta-information",
-  "version": 9,
+  "version": 10,
   "attributes": {
     "reply-to": {
       "description": "Email address the reply will be sent to",
@@ -146,6 +146,11 @@
       "categories": [
         "Payload delivery"
       ]
+    },
+    "eml": {
+      "description": "Full EML",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
     }
   },
   "requiredOneOf": [
@@ -164,6 +169,7 @@
     "header",
     "x-mailer",
     "return-path",
-    "email-body"
+    "email-body",
+    "eml"
   ]
 }
