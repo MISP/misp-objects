@@ -76,7 +76,7 @@
       "description": "Datetime of the first packet seen."
     }
   },
-  "requireOneOf": [
+  "requiredOneOf": [
     "first-packet-seen",
     "ip-src",
     "ip-dst",
