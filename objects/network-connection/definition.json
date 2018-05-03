@@ -2,7 +2,7 @@
   "name": "network-connection",
   "uuid": "af16764b-f8e5-4603-9de1-de34d272f80b",
   "meta-category": "network",
-  "description": "",
+  "description": "A local or remote network connection.",
   "version": 1,
   "attributes":{
     "ip-src": {
