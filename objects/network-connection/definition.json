@@ -4,7 +4,7 @@
   "meta-category": "network",
   "description": "",
   "version": 1,
-  "attributes":{
+  "attributes": {
     "ip-src": {
       "description": "Source IP address of the nework connection.",
       "ui-priority": 1,
