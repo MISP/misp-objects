@@ -76,9 +76,11 @@ for a specific attribute.
 * [objects/cap-resource](objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
 * [objects/coin-address](objects/coin-address/definition.json) - An address used in a cryptocurrency.
 * [objects/cookie](objects/cookie/definition.json) - A cookie object describes an HTTP cookie including its use in malicious cases.
-* [objects/course-of-action](objects/course-of-action/definition.json) - An object describing a Course of Action.
+* [objects/course-of-action](objects/course-of-action/definition.json) - An object describing a Course of Action such as a specific measure taken to prevent or respond to an attack.
 * [objects/cowrie](objects/cowrie/definition.json) - A cowrie object describes cowrie honeypot sessions.
+* [objects/credential](objects/credential/definition.json) - A credential object describes one or more credential(s) including password(s), api key(s) or decryption key(s).
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
+* [objects/diameter-attack](objects/diameter-attack/definition.json) - Attack as seen on diameter authentication against a GSM, UMTS or LTE network.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
 * [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
@@ -86,25 +88,34 @@ for a specific attribute.
 * [objects/fail2ban](objects/fail2ban/definition.json) - A fail2ban object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
+* [objects/gtp-attack](objects/gtp-attack/definition.json) - GTP attack object as seen on a GSM, UMTS or LTE network.
+* [objects/http-request](objects/http-request/definition.json) - A single HTTP request header object.
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/ja3](objects/ja3/definition.json) - A ja3 object which describes an SSL client fingerprint in an easy to produce and shareable way.
 * [objects/legal-entity](objects/legal-entity/definition.json) - Object describing a legal entity, such as an organisation.
 * [objects/macho](objects/macho/definition.json) - Object describing a Mach object file format.
 * [objects/macho-section](objects/macho-section/definition.json) - Object describing a section of a Mach object file format.
 * [objects/microblog](objects/microblog/definition.json) - Object describing microblog post like Twitter or Facebook.
+* [objects/mutex](objects/mutex/definition.json) - Object to describe mutual exclusion locks (mutex) as seen in memory or computer program.
 * [objects/netflow](objects/netflow/definition.json) - Netflow object describes an network object based on the Netflowv5/v9 minimal definition.
+* [objects/network](objects/network/definition.json) - Network object describes a local or remote network connection.
 * [objects/passive-dns](objects/passive-dns/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
 * [objects/paste](objects/paste/definition.json) - Object describing a paste or similar post from a website allowing to share privately or publicly posts.
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
 * [objects/person](objects/person/definition.json) - A person object which describes a person or an identity.
 * [objects/phone](objects/phone/definition.json) - A phone or mobile phone object.
+* [objects/process](objects/process/definition.json) - A process object.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
 * [objects/rtir](objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 * [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
+* [objects/ss7-attack](objects/ss7-attack/definition.json) - SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.
+* [objects/stix2-pattern](objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
 * [objects/suricata](objects/suricata/definition.json) - Suricata rule with context.
+* [objects/target-system](objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromissed internal system.
+* [objects/timestamp](objects/timestamp/definition.json) - A generic timestamp object to represent time including first time and last time seen. Relationship will then define the kind of time relationship.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
 * [objects/transaction](objects/transaction/definition.json) - Object describing a financial transaction.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
@@ -113,7 +124,7 @@ for a specific attribute.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
-* [objects/yara](objects/yara/definition.json) - YARA object describing a YARA rule along with the version supported.
+* [objects/yara](objects/yara/definition.json) - YARA object describing a YARA rule along with the version supported and context (such as memory, network, disk).
 
 ## MISP objects relationships
 
