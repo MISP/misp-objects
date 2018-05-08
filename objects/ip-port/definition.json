@@ -1,9 +1,9 @@
 {
   "requiredOneOf": [
     "dst-port",
-    "src-port"
-  ],
-  "required": [
+    "src-port",
+    "domain",
+    "hostname",
     "ip"
   ],
   "attributes": {
@@ -41,7 +41,29 @@
         "External analysis"
       ],
       "ui-priority": 1,
-      "misp-attribute": "port"
+      "misp-attribute": "port",
+      "disable_correlation": true,
+      "multiple": true
+    },
+    "domain": {
+      "description": "Domain",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "domain",
+      "multiple": true
+    },
+    "hostname": {
+      "description": "Hostname",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "hostname",
+      "multiple": true
     },
     "ip": {
       "description": "IP Address",
@@ -50,11 +72,12 @@
         "External analysis"
       ],
       "ui-priority": 1,
-      "misp-attribute": "ip-dst"
+      "misp-attribute": "ip-dst",
+      "multiple": true
     }
   },
-  "version": 5,
-  "description": "An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+  "version": 7,
+  "description": "An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
   "meta-category": "network",
   "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
   "name": "ip-port"

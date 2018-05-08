@@ -1,0 +1,39 @@
+{
+  "name": "target-system",
+  "uuid": "3110944f-eca0-4c94-9d61-a84d022228a4",
+  "meta-category": "internal",
+  "description": "Description about an targeted system, this could potentially be a compromissed internal system",
+  "version": 1,
+  "attributes": {
+    "targeted_machine": {
+      "description": "Targeted system",
+      "ui-priority": 1,
+      "misp-attribute": "target-machine",
+      "disable_correlation": true,
+      "categories": [
+        "Targeting data"
+      ]
+    },
+    "targeted_ip_of_system": {
+      "description": "Targeted system IP address",
+      "ui-priority": 1,
+      "misp-attribute": "ip-src",
+      "disable_correlation": true,
+      "categories": [
+        "Network activity"
+      ]
+    },
+    "timestamp_seen": {
+      "description": "Registered date and time",
+      "ui-priority": 1,
+      "misp-attribute": "datetime",
+      "disable_correlation": true,
+      "categories": [
+        "Other"
+      ]
+    }
+  },
+  "requiredOneOf": [
+    "targeted_machine"
+  ]
+}

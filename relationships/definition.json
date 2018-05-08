@@ -26,6 +26,30 @@
       ]
     },
     {
+      "name": "connected-to",
+      "description": "The referenced source is connected to the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "contains",
+      "description": "The references source is containing the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "resolved-to",
+      "description": "The referenced source is resolved to the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
       "name": "attributed-to",
       "description": "This referenced source is attributed to the target object.",
       "format": [

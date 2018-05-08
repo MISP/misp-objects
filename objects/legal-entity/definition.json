@@ -1,0 +1,48 @@
+{
+  "requiredOneOf": [
+    "name"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the entity.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "name": {
+      "description": "Name of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "commercial-name": {
+      "description": "Commercial name of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "legal-form": {
+      "description": "Legal form of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "registration-number": {
+      "description": "Registration number of an entity in the relevant authority.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "business": {
+      "description": "Business area of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "phone-number": {
+      "description": "Phone number of an entity.",
+      "ui-priority": 0,
+      "misp-attribute": "phone-number"
+    }
+  },
+  "version": 1,
+  "description": "An object to describe a legal entity.",
+  "meta-category": "misc",
+  "uuid": "14f5688f-d89c-469f-9878-c48bf6c41c65",
+  "name": "legal-entity"
+}

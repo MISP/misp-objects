@@ -1,0 +1,116 @@
+{
+  "requiredOneOf": [
+    "transaction-number",
+    "date",
+    "amount",
+    "transmode-code"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the transaction.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "transaction-number": {
+      "description": "A unique number identifying a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "location": {
+      "description": "Location where the transaction took place.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "transmode-code": {
+      "description": "How the transaction was conducted.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "transmode-comment": {
+      "description": "Comment describing transmode-code, if needed.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "teller": {
+      "description": "Person who conducted the transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "authorized": {
+      "description": "Person who autorized the transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "date": {
+      "description": "Date and time of the transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "amount": {
+      "description": "The value of the transaction in local currency.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "date-posting": {
+      "description": "Date of posting, if different from date of transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "from-funds-code": {
+      "description": "Type of funds used to initiate a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "A Deposit",
+        "C Currency exchange",
+        "D Casino chips",
+        "E Bank draft",
+        "F Money order",
+        "G Traveler’s cheques",
+        "H Life insurance policy",
+        "I Real estate",
+        "J Securities",
+        "K Cash",
+        "O Other",
+        "P Cheque"
+      ]
+    },
+    "to-funds-code": {
+      "description": "Type of funds used to finalize a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "A Deposit",
+        "C Currency exchange",
+        "D Casino chips",
+        "E Bank draft",
+        "F Money order",
+        "G Traveler’s cheques",
+        "H Life insurance policy",
+        "I Real estate",
+        "J Securities",
+        "K Cash",
+        "O Other",
+        "P Cheque"
+      ]
+    },
+    "from-country": {
+      "description": "Origin country of a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "to-country": {
+      "description": "Target country of a transaction.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "An object to describe a financial transaction.",
+  "meta-category": "financial",
+  "uuid": "a47fa26a-01b6-4747-a394-5144e34456dc",
+  "name": "transaction"
+}

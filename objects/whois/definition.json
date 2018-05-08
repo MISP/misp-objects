@@ -4,10 +4,10 @@
     "registrant-phone",
     "creation-date",
     "registrant-name",
-    "registrar"
-  ],
-  "required": [
-    "domain"
+    "registrar",
+    "text",
+    "domain",
+    "ip-address"
   ],
   "attributes": {
     "text": {
@@ -73,12 +73,24 @@
         "Network activity",
         "External analysis"
       ],
-      "ui-priority": 1,
+      "ui-priority": 0,
+      "multiple": true,
       "misp-attribute": "domain"
+    },
+    "comment": {
+      "description": "Comment of the whois entry",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "ip-address": {
+      "description": "IP address of the whois entry",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "ip-src"
     }
   },
-  "version": 7,
-  "description": "Whois records information for a domain name.",
+  "version": 10,
+  "description": "Whois records information for a domain name or an IP address.",
   "meta-category": "network",
   "uuid": "429faea1-34ff-47af-8a00-7c62d3be5a6a",
   "name": "whois"

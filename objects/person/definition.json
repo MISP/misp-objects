@@ -16,14 +16,32 @@
       "misp-attribute": "last-name"
     },
     "middle-name": {
-      "description": "Middle name of a natural person",
+      "description": "Middle name of a natural person.",
       "ui-priority": 0,
       "misp-attribute": "middle-name"
     },
     "first-name": {
       "description": "First name of a natural person.",
       "ui-priority": 0,
-      "misp-attribute": "first-name"
+      "misp-attribute": "first-name",
+      "disable_correlation": true
+    },
+    "mothers-name": {
+      "description": "Mother name, father, second name or other names following country's regulation.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "title": {
+      "description": "Title of the natural person such as Dr. or equivalent.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "alias": {
+      "description": "Alias name or known as.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
     },
     "date-of-birth": {
       "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
@@ -33,7 +51,8 @@
     "place-of-birth": {
       "description": "Place of birth of a natural person.",
       "ui-priority": 0,
-      "misp-attribute": "place-of-birth"
+      "misp-attribute": "place-of-birth",
+      "disable_correlation": true
     },
     "gender": {
       "description": "The gender of a natural person.",
@@ -44,7 +63,13 @@
         "Female",
         "Other",
         "Prefer not to say"
-      ]
+      ],
+      "disable_correlation": true
+    },
+    "identity-card-number": {
+      "description": "The identity card number of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "identity-card-number"
     },
     "passport-number": {
       "description": "The passport number of a natural person.",
@@ -54,26 +79,35 @@
     "passport-country": {
       "description": "The country in which the passport was issued.",
       "ui-priority": 0,
-      "misp-attribute": "passport-country"
+      "misp-attribute": "passport-country",
+      "disable_correlation": true
     },
     "passport-expiration": {
       "description": "The expiration date of a passport.",
       "ui-priority": 0,
-      "misp-attribute": "passport-expiration"
+      "misp-attribute": "passport-expiration",
+      "disable_correlation": true
     },
     "redress-number": {
       "description": "The Redress Control Number is the record identifier for people who apply for redress through the DHS Travel Redress Inquiry Program (DHS TRIP). DHS TRIP is for travelers who have been repeatedly identified for additional screening and who want to file an inquiry to have erroneous information corrected in DHS systems.",
       "ui-priority": 0,
       "misp-attribute": "redress-number"
     },
+    "social-security-number": {
+      "description": "Social security number",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
     "nationality": {
       "description": "The nationality of a natural person.",
       "ui-priority": 0,
-      "misp-attribute": "nationality"
+      "misp-attribute": "nationality",
+      "multiple": true,
+      "disable_correlation": true
     }
   },
-  "version": 2,
-  "description": "An person which describes a person or an identity.",
+  "version": 3,
+  "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
   "name": "person"

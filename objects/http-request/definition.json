@@ -1,6 +1,6 @@
 {
-  "required": [
-    "method",
+  "requiredOneOf": [
+    "url",
     "uri"
   ],
   "attributes": {
@@ -111,7 +111,7 @@
       "misp-attribute": "user-agent"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "A single HTTP request header",
   "meta-category": "network",
   "uuid": "b4a8d163-8110-4239-bfcf-e08f3a9fdf7b",
