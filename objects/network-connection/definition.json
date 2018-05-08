@@ -41,6 +41,16 @@
       ],
       "misp-attribute": "port"
     },
+    "hostname-src": {
+      "description": "Source hostname of the network connection.",
+      "ui-priority": 1,
+      "misp-attribute": "hostname"
+    },
+    "hostname-dst": {
+      "description": "Destination hostname of the network connection.",
+      "ui-priority": 1,
+      "misp-attribute": "hostname"
+    },
     "layer3-protocol": {
       "description": "Layer 3 protocol of the network connection.",
       "ui-priority": 0,
