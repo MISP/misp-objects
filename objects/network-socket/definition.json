@@ -51,6 +51,17 @@
       ],
       "misp-attribute": "port"
     },
+    "protocol": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "TCP",
+        "UDP",
+        "ICMP",
+        "IP"
+      ],
+      "description": "Protocol used by the network socket."
+    },
     "address-family": {
       "description": "Address family who specifies the address family type (AF_*) of the socket connection.",
       "ui-priority": 1,
