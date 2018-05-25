@@ -115,6 +115,7 @@ for a specific attribute.
 * [objects/stix2-pattern](objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
 * [objects/suricata](objects/suricata/definition.json) - Suricata rule with context.
 * [objects/target-system](objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromissed internal system.
+* [objects/timecode](objects/timecode/definition.json) - Timecode object to describe a start of video sequence (e.g. CCTV evidence) and the end of the video sequence.
 * [objects/timestamp](objects/timestamp/definition.json) - A generic timestamp object to represent time including first time and last time seen. Relationship will then define the kind of time relationship.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
 * [objects/transaction](objects/transaction/definition.json) - Object describing a financial transaction.
