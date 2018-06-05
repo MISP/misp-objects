@@ -4,34 +4,11 @@
     "shortened-url"
   ],
   "attributes": {
-    "port": {
-      "description": "Port number",
-      "ui-priority": 0,
-      "misp-attribute": "port",
-      "disable_correlation": true
-    },
-    "scheme": {
-      "description": "Scheme",
-      "sane_default": [
-        "http",
-        "https",
-        "ftp"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
     "first-seen": {
-      "description": "First time this URL has been seen",
+      "description": "First time this shortened URL has been seen",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
-    },
-    "query_string": {
-      "description": "Query (after path, preceded by '?')",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true
     },
     "url": {
       "description": "Redirected to URL",
@@ -62,6 +39,6 @@
   "version": 1,
   "description": "Shortened link and its redirect target",
   "meta-category": "network",
-  "uuid": "3ac2857c-689f-11e8-adc0-fa7ae01bbebc",
+  "uuid": "99c2857c-689f-11e8-adc0-fa7ae01bbebc",
   "name": "shortened-link"
 }
