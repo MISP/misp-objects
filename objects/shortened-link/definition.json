@@ -1,0 +1,44 @@
+{
+  "required": [
+    "redirect-url",
+    "shortened-url"
+  ],
+  "attributes": {
+    "first-seen": {
+      "description": "First time this shortened URL has been seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "redirect-url": {
+      "description": "Redirected to URL",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "shortened-url": {
+      "description": "Shortened URL",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "domain": {
+      "description": "Full domain",
+      "ui-priority": 0,
+      "misp-attribute": "domain"
+    },
+    "credential": {
+      "description": "Credential (username, password)",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "text": {
+      "description": "Description and context of the shortened URL ",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 2018060501,
+  "description": "Shortened link and its redirect target",
+  "meta-category": "network",
+  "uuid": "361c0ae8-68bd-11e8-adc0-fa7ae01bbebc",
+  "name": "shortened-link"
+}
