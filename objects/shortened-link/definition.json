@@ -1,6 +1,6 @@
 {
   "required": [
-    "url",
+    "redirect-url",
     "shortened-url"
   ],
   "attributes": {
@@ -10,7 +10,7 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
-    "url": {
+    "redirect-url": {
       "description": "Redirected to URL",
       "ui-priority": 1,
       "misp-attribute": "url"
@@ -36,9 +36,9 @@
       "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2018060501,
   "description": "Shortened link and its redirect target",
   "meta-category": "network",
-  "uuid": "99c2857c-689f-11e8-adc0-fa7ae01bbebc",
+  "uuid": "361c0ae8-68bd-11e8-adc0-fa7ae01bbebc",
   "name": "shortened-link"
 }
