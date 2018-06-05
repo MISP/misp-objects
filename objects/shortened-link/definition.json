@@ -1,0 +1,67 @@
+{
+  "required": [
+    "url",
+    "shortened-url"
+  ],
+  "attributes": {
+    "port": {
+      "description": "Port number",
+      "ui-priority": 0,
+      "misp-attribute": "port",
+      "disable_correlation": true
+    },
+    "scheme": {
+      "description": "Scheme",
+      "sane_default": [
+        "http",
+        "https",
+        "ftp"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "first-seen": {
+      "description": "First time this URL has been seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "query_string": {
+      "description": "Query (after path, preceded by '?')",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "url": {
+      "description": "Redirected to URL",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "shortened-url": {
+      "description": "Shortened URL",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "domain": {
+      "description": "Full domain",
+      "ui-priority": 0,
+      "misp-attribute": "domain"
+    },
+    "credential": {
+      "description": "Credential (username, password)",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "text": {
+      "description": "Description and context of the shortened URL ",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Shortened link and its redirect target",
+  "meta-category": "network",
+  "uuid": "3ac2857c-689f-11e8-adc0-fa7ae01bbebc",
+  "name": "shortened-link"
+}
