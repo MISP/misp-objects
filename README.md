@@ -111,6 +111,7 @@ for a specific attribute.
 * [objects/rtir](objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 * [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
+* [objects/script](objects/script/definition.json) - Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.
 * [objects/shortened-link](objects/shortened-link/definition.json) - Shortened link and its redirect target.
 * [objects/ss7-attack](objects/ss7-attack/definition.json) - SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.
 * [objects/stix2-pattern](objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
