@@ -76,6 +76,7 @@
     "spacial-reference": {
       "description": "Default spacial or projection refence for this object.",
       "misp-attribute": "text",
+      "ui-priority": 1,
       "disable_correlation": true,
       "values_list": [
         "WGS84 EPSG:4326",
