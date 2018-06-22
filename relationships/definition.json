@@ -34,8 +34,24 @@
       ]
     },
     {
+      "name": "connected-from",
+      "description": "The referenced source is connected from the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
       "name": "contains",
-      "description": "The references source is containing the target object.",
+      "description": "The referenced source is containing the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "contained-within",
+      "description": "The referenced source is contained within the target object.",
       "format": [
         "misp",
         "stix-1.1"
@@ -99,7 +115,7 @@
     },
     {
       "name": "impersonates",
-      "description": "This relationship describe a source object which impersonates the target object",
+      "description": "This relationship describes a source object which impersonates the target object",
       "format": [
         "misp",
         "stix-2.0"
