@@ -1,0 +1,55 @@
+{
+  "requiredOneOf": [
+    "organisation",
+    "administrative-area",
+    "industry",
+    "country"
+  ],
+  "attributes": {
+    "organisation": {
+      "description": "AIS Organisation Name.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "administrative-area": {
+      "description": "AIS Administrative Area represented using ISO-3166-2.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "industry": {
+      "description": "AIS IndustryType.",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "multiple": true,
+      "sane_default": [
+        "Chemical Sector",
+        "Commercial Facilities Sector",
+        "Communications Sector",
+        "Critical Manufacturing Sector",
+        "Dams Sector",
+        "Defense Industrial Base Sector",
+        "Emergency Services Sector",
+        "Energy Sector",
+        "Financial Services Sector",
+        "Food and Agriculture Sector",
+        "Government Facilities Sector",
+        "Healthcare and Public Health Sector",
+        "Information Technology Sector",
+        "Nuclear Reactors, Materials, and Waste Sector",
+        "Transportation Systems Sector",
+        "Water and Wastewater Systems Sector",
+        "Other"
+      ]
+    },
+    "country": {
+      "description": "AIS Country represented using ISO-3166-1_alpha-2.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "version": 1,
+  "description": "Automated Indicator Sharing (AIS) Information Source Markings.",
+  "meta-category": "misc",
+  "uuid": "1f3f466d-465f-4c3a-8cce-933642c9ea83",
+  "name": "ais-info"
+}
