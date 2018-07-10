@@ -512,6 +512,10 @@
       "format": [
         "cert-eu"
       ]
+    },
+    {
+      "name": "exploits",
+      "descriptipn": "This relationships describes an object (like a PoC/exploit) which exploits another object (such as a vulnerability object)."
     }
   ],
   "description": "Default type of relationships in MISP objects.",
