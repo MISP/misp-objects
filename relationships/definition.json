@@ -611,7 +611,10 @@
     },
     {
       "name": "exploits",
-      "descriptipn": "This relationships describes an object (like a PoC/exploit) which exploits another object (such as a vulnerability object)."
+      "description": "This relationships describes an object (like a PoC/exploit) which exploits another object (such as a vulnerability object).",
+      "format": [
+        "misp"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
