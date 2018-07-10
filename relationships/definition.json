@@ -50,8 +50,104 @@
       ]
     },
     {
+      "name": "contained-by",
+      "description": "The referenced source is contained by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
       "name": "contained-within",
       "description": "The referenced source is contained within the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "characterized-by",
+      "description": "The referenced source is characterized by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "characterizes",
+      "description": "The referenced source is characterizing the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "properties-queried",
+      "description": "The referenced source has queried the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "properties-queried-by",
+      "description": "The referenced source is queried by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "extracted-from",
+      "description": "The referenced source is extracted from the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "supra-domain-of",
+      "description": "The referenced source is a supra domain of the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "sub-domain-of",
+      "description": "The referenced source is a sub domain of the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "dropped",
+      "description": "The referenced source has dropped the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "dropped-by",
+      "description": "The referenced source is dropped by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "downloaded",
+      "description": "The referenced source has downloaded the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "downloaded-from",
+      "description": "The referenced source has been downloaded from the target object.",
       "format": [
         "misp",
         "stix-1.1"
