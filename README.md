@@ -85,6 +85,7 @@ for a specific attribute.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
 * [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
 * [objects/email](objects/email/definition.json) - An email object.
+* [objects/exploit-poc](objects/exploit-poc/definition.json) - Exploit-poc object describing a proof of concept or exploit of a vulnerability. This object has often a relationship with a vulnerability object.
 * [objects/fail2ban](objects/fail2ban/definition.json) - A fail2ban object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
