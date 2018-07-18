@@ -1,0 +1,49 @@
+{
+  "required": [
+    "software",
+    "signature"
+  ],
+  "attributes": {
+    "software": {
+      "description": "Name of Sandbox software",
+      "disable_correlation": true,
+      "categories": [
+        "Sandbox detection"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "signature": {
+      "description": "Name of detection signature - set the description of the detection signature as a comment",
+      "categories": [
+        "Sandbox detection"
+      ],
+      "ui-priority": 2,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "text": {
+      "description": "Additional signature description",
+      "disable_correlation": true,
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "datetime": {
+      "description": "Datetime",
+      "disable_correlation": true,
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "Sandbox detection signature",
+  "meta-category": "misc",
+  "uuid": "984c5c39-be7f-4e1e-b034-d3213bac51cb",
+  "name": "sb-signature"
+}

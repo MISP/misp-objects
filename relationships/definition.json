@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 12,
   "values": [
     {
       "name": "derived-from",
@@ -23,6 +23,142 @@
       "format": [
         "misp",
         "stix-2.0"
+      ]
+    },
+    {
+      "name": "connected-to",
+      "description": "The referenced source is connected to the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "connected-from",
+      "description": "The referenced source is connected from the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "contains",
+      "description": "The referenced source is containing the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "contained-by",
+      "description": "The referenced source is contained by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "contained-within",
+      "description": "The referenced source is contained within the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "characterized-by",
+      "description": "The referenced source is characterized by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "characterizes",
+      "description": "The referenced source is characterizing the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "properties-queried",
+      "description": "The referenced source has queried the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "properties-queried-by",
+      "description": "The referenced source is queried by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "extracted-from",
+      "description": "The referenced source is extracted from the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "supra-domain-of",
+      "description": "The referenced source is a supra domain of the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "sub-domain-of",
+      "description": "The referenced source is a sub domain of the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "dropped",
+      "description": "The referenced source has dropped the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "dropped-by",
+      "description": "The referenced source is dropped by the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "downloaded",
+      "description": "The referenced source has downloaded the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "downloaded-from",
+      "description": "The referenced source has been downloaded from the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
+      ]
+    },
+    {
+      "name": "resolved-to",
+      "description": "The referenced source is resolved to the target object.",
+      "format": [
+        "misp",
+        "stix-1.1"
       ]
     },
     {
@@ -75,7 +211,7 @@
     },
     {
       "name": "impersonates",
-      "description": "This relationship describe a source object which impersonates the target object",
+      "description": "This relationship describes a source object which impersonates the target object",
       "format": [
         "misp",
         "stix-2.0"
@@ -126,6 +262,13 @@
     {
       "name": "dropped-by",
       "description": "This relationship describes an object dropped by another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "drops",
+      "description": "This relationship describes an object which drops another object",
       "format": [
         "misp"
       ]
@@ -189,6 +332,20 @@
     {
       "name": "detected-as",
       "description": "This relationship describes an object which is detected as another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "followed-by",
+      "description": "This relationship describes an object which is followed by another object. This can be used when a time reference is missing but a sequence is known.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "preceding-by",
+      "description": "This relationship describes an object which is preceded by another object. This can be used when a time reference is missing but a sequence is known.",
       "format": [
         "misp"
       ]
@@ -450,6 +607,13 @@
       "description": "This relationship describes an object which release another object.",
       "format": [
         "cert-eu"
+      ]
+    },
+    {
+      "name": "exploits",
+      "description": "This relationships describes an object (like a PoC/exploit) which exploits another object (such as a vulnerability object).",
+      "format": [
+        "misp"
       ]
     }
   ],

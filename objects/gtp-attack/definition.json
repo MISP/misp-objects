@@ -1,0 +1,99 @@
+{
+  "requiredOneOf": [
+    "text"
+  ],
+  "attributes": {
+    "GtpServingNetwork": {
+      "description": "GTP Serving Network.",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 1
+    },
+    "GtpImei": {
+      "description": "GTP IMEI (International Mobile Equipment Identity).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "GtpMsisdn": {
+      "description": "GTP MSISDN.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "GtpImsi": {
+      "description": "GTP IMSI (International mobile subscriber identity).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "GtpInterface": {
+      "description": "GTP interface.",
+      "sane_default": [
+        "S5",
+        "S11",
+        "S10",
+        "S8",
+        "Gn",
+        "Gp"
+      ],
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "GtpMessageType": {
+      "description": "GTP defines a set of messages between two associated GSNs or an SGSN and an RNC. Message type is described as a decimal value.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "PortDest": {
+      "description": "Destination port.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PortSrc": {
+      "description": "Source port.",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "ui-priority": 0
+    },
+    "ipDest": {
+      "description": "IP destination address.",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 0
+    },
+    "ipSrc": {
+      "description": "IP source address.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 0
+    },
+    "GtpVersion": {
+      "description": "GTP version",
+      "sane_default": [
+        "0",
+        "1",
+        "2"
+      ],
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "A description of the GTP attack.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "first-seen": {
+      "description": "When the attack has been seen for the first time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 3,
+  "description": "GTP attack object as seen on a GSM, UMTS or LTE network",
+  "meta-category": "network",
+  "uuid": "6b3c48d2-0ca6-4608-9c36-455105439145",
+  "name": "gtp-attack"
+}

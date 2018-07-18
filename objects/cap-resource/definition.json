@@ -1,0 +1,46 @@
+{
+  "requiredOneOf": [
+    "resourceDesc"
+  ],
+  "attributes": {
+    "resourceDesc": {
+      "description": "The text describing the type and content of the resource file.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "mimeType": {
+      "description": "The identifier of the MIME content type and sub-type describing the resource file.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "mime-type"
+    },
+    "size": {
+      "description": "The integer indicating the size of the resource file.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "uri": {
+      "description": "The identifier of the hyperlink for the resource file.",
+      "ui-priority": 0,
+      "misp-attribute": "link"
+    },
+    "derefUri": {
+      "description": "The base-64 encoded data content of the resource file.",
+      "ui-priority": 0,
+      "misp-attribute": "attachment",
+      "disable_correlation": true
+    },
+    "digest": {
+      "description": "The code representing the digital digest (“hash”) computed from the resource file (OPTIONAL).",
+      "ui-priority": 0,
+      "misp-attribute": "sha1"
+    }
+  },
+  "version": 1,
+  "description": "Common Alerting Protocol Version (CAP) resource object",
+  "meta-category": "misc",
+  "uuid": "6fddc76b-59fc-49f6-a673-52f8d15149c4",
+  "name": "cap-resource"
+}

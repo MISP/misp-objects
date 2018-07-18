@@ -1,0 +1,71 @@
+{
+  "requiredOneOf": [
+    "text"
+  ],
+  "attributes": {
+    "text": {
+      "description": "Raw text of the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "ref": {
+      "description": "Reference(s) to the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true
+    },
+    "type": {
+      "description": "Type of the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Annotation",
+        "Executive Summary",
+        "Introduction",
+        "Conclusion",
+        "Disclaimer",
+        "Keywords",
+        "Acknowledgement",
+        "Other",
+        "Copyright",
+        "Authors",
+        "Logo"
+      ]
+    },
+    "format": {
+      "description": "Format of the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "text",
+        "markdown",
+        "asciidoctor",
+        "MultiMarkdown",
+        "GFM",
+        "pandoc",
+        "Fountain",
+        "CommonWork",
+        "kramdown-rfc2629",
+        "rfc7328",
+        "Extra"
+      ]
+    },
+    "creation-date": {
+      "description": "Initial creation of the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "modification-date": {
+      "description": "Last update of the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 2,
+  "description": "An annotation object allowing analysts to add annotations, comments, executive summary to a MISP event, objects or attributes.",
+  "meta-category": "misc",
+  "uuid": "5d8dc046-15a1-4ca3-a09f-ed4ede7c4487",
+  "name": "annotation"
+}

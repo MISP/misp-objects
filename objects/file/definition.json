@@ -15,7 +15,10 @@
     "sha512/224",
     "sha512/256",
     "tlsh",
-    "pattern-in-file"
+    "pattern-in-file",
+    "x509-fingerprint-sha1",
+    "malware-sample",
+    "path"
   ],
   "attributes": {
     "md5": {
@@ -111,6 +114,8 @@
     },
     "filename": {
       "description": "Filename on disk",
+      "disable_correlation": true,
+      "multiple": true,
       "categories": [
         "Payload delivery",
         "Artifacts dropped",
@@ -120,23 +125,37 @@
       "ui-priority": 1,
       "misp-attribute": "filename"
     },
+    "path": {
+      "description": "Path of the filename complete or partial",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
     "tlsh": {
       "description": "Fuzzy hash by Trend Micro: Locality Sensitive Hash",
       "ui-priority": 0,
       "misp-attribute": "tlsh"
     },
+    "certificate": {
+      "description": "Certificate value if the binary is signed with another authentication scheme than authenticode",
+      "ui-priority": 0,
+      "misp-attribute": "x509-fingerprint-sha1"
+    },
     "mimetype": {
       "description": "Mime type",
       "disable_correlation": true,
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "mime-type"
     },
     "state": {
       "misp-attribute": "text",
       "ui-priority": 0,
       "description": "State of the file",
       "multiple": true,
+      "disable_correlation": true,
       "values_list": [
+        "Malicious",
         "Harmless",
         "Signed",
         "Revoked",
@@ -145,7 +164,7 @@
       ]
     }
   },
-  "version": 4,
+  "version": 11,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",

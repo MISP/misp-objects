@@ -67,7 +67,8 @@
         "network",
         "financial",
         "misc",
-        "internal"
+        "internal",
+        "vulnerability"
       ]
     },
     "name": {

@@ -1,0 +1,47 @@
+{
+  "requiredOneOf": [
+    "body",
+    "from"
+  ],
+  "attributes": {
+    "body": {
+      "description": "Message body of the SMS",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "url-rfc5724": {
+      "description": "url representing SMS using RFC 5724 (not url contained in the SMS which should use an url object)",
+      "ui-priority": 6,
+      "misp-attribute": "url"
+    },
+    "from": {
+      "description": "Phone number used to send the SMS",
+      "ui-priority": 1,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "to": {
+      "description": "Phone number receiving the SMS",
+      "ui-priority": 1,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "sent-date": {
+      "description": "Initial sent date of the SMS",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "received-date": {
+      "description": "Received date of the SMS",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "Short Message Service (SMS) object template describing one or more SMS message. Restriction of the initial format 3GPP 23.038 GSM character set doesn't apply.",
+  "meta-category": "misc",
+  "uuid": "4851a3dc-e1a6-43ac-9d97-f0d13a099fd2",
+  "name": "short-message-service"
+}

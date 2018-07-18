@@ -1,0 +1,52 @@
+{
+  "name": "process",
+  "uuid": "02aeef94-ac23-455c-addb-731757ceafb5",
+  "meta-category": "misc",
+  "description": "Object describing a system process.",
+  "version": 1,
+  "attributes": {
+    "creation-time": {
+      "description": "Local date/time at which the process was created.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "start-time": {
+      "description": "Local date/time at which the process was started.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "name": {
+      "description": "Name of the process",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "pid": {
+      "description": "Process ID of the process.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "parent-pid": {
+      "description": "Process ID of the parent process.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "child-pid": {
+      "description": "Process ID of the child(ren) process.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "port": {
+      "description": "Port(s) owned by the process.",
+      "ui-priority": 1,
+      "misp-attribute": "src-port",
+      "multiple": true
+    }
+  },
+  "requiredOneOf": [
+    "name",
+    "pid"
+  ]
+}

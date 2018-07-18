@@ -1,0 +1,170 @@
+{
+  "requiredOneOf": [
+    "account"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the bank account.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "institution-name": {
+      "description": "Name of the bank or financial organisation.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "institution-code": {
+      "description": "Institution code of the bank.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "swift": {
+      "description": "SWIFT or BIC as defined in ISO 9362.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "bic"
+    },
+    "branch": {
+      "description": "Branch code or name",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "non-banking-institution": {
+      "description": "A flag to define if this account belong to a non-banking organisation. If set to true, it's a non-banking organisation.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "boolean"
+    },
+    "account": {
+      "description": "Account number",
+      "ui-priority": 0,
+      "misp-attribute": "bank-account-nr"
+    },
+    "currency-code": {
+      "description": "Currency of the account.",
+      "ui-priority": 0,
+      "sane_default": [
+        "USD",
+        "EUR"
+      ],
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "aba-rtn": {
+      "description": " ABA routing transit number",
+      "ui-priority": 0,
+      "misp-attribute": "aba-rtn"
+    },
+    "account-name": {
+      "description": "A field to freely describe the bank account details.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "iban": {
+      "description": "IBAN of the bank account.",
+      "ui-priority": 0,
+      "misp-attribute": "iban"
+    },
+    "client-number": {
+      "description": "Client number as seen by the bank.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "personal-account-type": {
+      "description": "Account type.",
+      "ui-priority": 0,
+      "sane_default": [
+        "A - Business",
+        "B - Personal Current",
+        "C - Savings",
+        "D - Trust Account",
+        "E - Trading Account",
+        "O - Other"
+      ],
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "opened": {
+      "description": "When the account was opened.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "closed": {
+      "description": "When the account was closed.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "balance": {
+      "description": "The balance of the account after the suspicious transaction was processed.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "date-balance": {
+      "description": "When the balance was reported.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "status-code": {
+      "description": "Account status at the time of the transaction processed.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "A - Active",
+        "B - Inactive",
+        "C - Dormant"
+      ]
+    },
+    "beneficiary": {
+      "description": "Final beneficiary of the bank account.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "beneficiary-comment": {
+      "description": "Comment about the final beneficiary.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "comments": {
+      "description": "Comments about the bank account.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "report-code": {
+      "description": "Report code of the bank account.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "CTR Cash Transaction Report",
+        "STR Suspicious Transaction Report",
+        "EFT Electronic Funds Transfer",
+        "IFT International Funds Transfer",
+        "TFR Terror Financing Report",
+        "BCR Border Cash Report",
+        "UTR Unusual Transaction Report",
+        "AIF Additional Information File – Can be used for example to get full disclosure of transactions of an account for a period of time without reporting it as a CTR.",
+        "IRI Incoming Request for Information – International",
+        "ORI Outgoing Request for Information – International",
+        "IRD Incoming Request for Information – Domestic",
+        "ORD Outgoing Request for Information – Domestic"
+      ]
+    }
+  },
+  "version": 1,
+  "description": "An object describing bank account information based on account description from goAML 4.0.",
+  "meta-category": "financial",
+  "uuid": "b4712203-95a8-4883-80e9-b566f5df11c9",
+  "name": "bank-account"
+}
