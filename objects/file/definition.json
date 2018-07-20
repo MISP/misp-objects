@@ -98,7 +98,8 @@
         "External analysis"
       ],
       "ui-priority": 1,
-      "misp-attribute": "pattern-in-file"
+      "misp-attribute": "pattern-in-file",
+      "multiple": true
     },
     "text": {
       "description": "Free text value to attach to the file",
@@ -164,7 +165,7 @@
       ]
     }
   },
-  "version": 11,
+  "version": 12,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
