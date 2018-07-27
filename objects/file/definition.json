@@ -4,8 +4,6 @@
     "size-in-bytes",
     "authentihash",
     "ssdeep",
-    "imphash",
-    "pehash",
     "md5",
     "sha1",
     "sha224",
