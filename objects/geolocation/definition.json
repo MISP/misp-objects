@@ -41,7 +41,8 @@
     "altitude": {
       "description": "The altitude is the decimal value of the altitude in the World Geodetic System 84 (WGS84) reference.",
       "ui-priority": 0,
-      "misp-attribute": "float"
+      "misp-attribute": "float",
+      "disable_correlation": true
     },
     "address": {
       "description": "Address.",
@@ -77,7 +78,8 @@
     "epsg": {
       "description": "EPSG Geodetic Parameter value. This is an integer value of the EPSG.",
       "misp-attribute": "text",
-      "ui-priority": 70
+      "ui-priority": 70,
+      "disable_correlation": true
     },
     "spacial-reference": {
       "description": "Default spacial or projection refence for this object.",
@@ -90,7 +92,7 @@
       ]
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "An object to describe a geographic location.",
   "meta-category": "misc",
   "uuid": "fdd30d5f-6752-45ed-bef2-25e8ce4d8a3",
