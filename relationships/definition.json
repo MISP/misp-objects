@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 13,
   "values": [
     {
       "name": "derived-from",
@@ -612,6 +612,13 @@
     {
       "name": "exploits",
       "description": "This relationships describes an object (like a PoC/exploit) which exploits another object (such as a vulnerability object).",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "signed-by",
+      "description": "This relationship describes an object signed by another object.",
       "format": [
         "misp"
       ]
