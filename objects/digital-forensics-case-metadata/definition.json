@@ -1,0 +1,68 @@
+{
+    "requiredOneOf": [
+      "case-number",
+      "name-of-the-analyst",
+      "crime-date",
+      "analysis-start-date"
+    ],
+    "attributes": {
+      "case-number": {
+        "description": "Any unique number assigned to the case for unique identification.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "case-name": {
+        "description": "Name to address the case.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "name-of-the-analyst": {
+        "description": "Name(s) of the analyst assigned to the case.",
+        "multiple": true,
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "location-of-the-crime": {
+        "description": "Location where the crime took place.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "crime-date": {
+        "description": "Date and time when the crime occurred.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "describe-the-crime-scene": {
+        "description": "Description of the crime scene",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "objects-acquired": {
+        "description": "Digital evidence acquired from the crime scene.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "references": {
+        "description": "External references",
+        "multiple": true,
+        "ui-priority": 0,
+        "misp-attribute": "link"
+      },
+      "analysis-start-date": {
+        "description": "Date when the analysis began.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "additional-comments": {
+        "description": "Comments.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      }
+    },
+    "version": 1,
+    "description": "Describes details of the case under analysis.",
+    "meta-category": "misc",
+    "uuid": "3ea36022-ae93-455e-88b1-d43aca789cac",
+    "name": "Digital forensic - Case info"
+  }
+  
