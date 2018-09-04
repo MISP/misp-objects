@@ -187,7 +187,7 @@
     },
     {
       "name": "indicates",
-      "description": "This relationships describes that the source object indicates the target object.",
+      "description": "This relationship describes that the source object indicates the target object.",
       "format": [
         "misp",
         "stix-2.0"
@@ -611,7 +611,7 @@
     },
     {
       "name": "exploits",
-      "description": "This relationships describes an object (like a PoC/exploit) which exploits another object (such as a vulnerability object).",
+      "description": "This relationship describes an object (like a PoC/exploit) which exploits another object (such as a vulnerability object).",
       "format": [
         "misp"
       ]
