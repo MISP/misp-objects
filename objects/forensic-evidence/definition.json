@@ -4,71 +4,77 @@
 	"evidence-number"
   ],
   "attributes": {
-	"case-number": {
-	"description": "A unique number assigned to the case for unique identification.",
-	"ui-priority": 0,
-	"misp-attribute": "text"
-  },
-  "evidence-number": {
-	"description": "A unique number assigned to the evidence for unique identification.",
-	"ui-priority": 0,
-	"misp-attribute": "text"
-  },
-  "type": {
-	"description": "Evidence type.",
-	"multiple": true,
-	"ui-priority": 0,
-	"misp-attribute": "text",
-	"sane_default": [
-		"Computer",
-		"Network",
-		"Mobile Device",
-		"Multimedia",
-		"Cloud",
-		"IoT",
-		"Other"
-	  ],
-	"disable_correlation": true
-  },
-  "name": {
-	"description": "Name",
-	"ui-priority": 0,
-	"misp-attribute": "text"
-  },
-  "acquisition-hash-type": {
-	"description": "Hashing algorithm used on the evidence",
-	"multiple": true,
-	"ui-priority": 0,
-	"misp-attribute": "text",
-	"sane_default": [
-		"MD5",
-		"SHA-1",
-		"Other"
-	],
-	"disable_correlation": true
-  },
-  "acquisition-hash": {
-	"description": "Acquisition hash of the evidence",
-	"ui-priority": 0,
-	"misp-attribute": "text"
-  },
-  "references": {
-	"description": "External references",
-	"multiple": true,
-	"ui-priority": 0,
-	"misp-attribute": "link"
-  },
-  "additional-comments": {
-	"description": "Comments.",
-	"ui-priority": 0,
-	"misp-attribute": "text"
-  },
-  "file-upload": {
-	"description": "Upload any file pertaining to the evidence.",
-	"ui-priority": 0,
-	"misp-attribute": "attachment",
-	"multiple": true
-	}
+	  "case-number": {
+		"description": "A unique number assigned to the case for unique identification.",
+		"ui-priority": 0,
+		"misp-attribute": "text"
+	  },
+	  "evidence-number": {
+		"description": "A unique number assigned to the evidence for unique identification.",
+		"ui-priority": 0,
+		"misp-attribute": "text"
+	  },
+	  "type": {
+		"description": "Evidence type.",
+		"multiple": true,
+		"ui-priority": 0,
+		"misp-attribute": "text",
+		"sane_default": [
+			"Computer",
+			"Network",
+			"Mobile Device",
+			"Multimedia",
+			"Cloud",
+			"IoT",
+			"Other"
+		  ]
+	  },
+	  "name": {
+		"description": "Name",
+		"ui-priority": 0,
+		"misp-attribute": "text"
+	  },
+	  "acquisition-method": {
+		"description": "Method used for acquisition of the evidence.",
+		"ui-priority": 0,
+		"misp-attribute": "text",
+		"sane_default": [
+			"Live acquisition",
+			"Dead/Offline acquisition",
+			"Physical collection",
+			"Logical collection",
+			"File system extraction",
+			"Chip-off",
+			"Other"
+		  ]
+	  },
+	  "acquisition-tools": {
+		"description": "Tools used for acquisition of the evidence.",
+		"ui-priority": 0,
+		"misp-attribute": "text",
+		"multiple" : true,
+		"sane_default": [
+			"DCFldd",
+			"EnCase",
+			"FTK Imager",
+			"FDAS",
+			"TrueBack",
+			"Guymager",
+			"IXimager",
+			"Other"
+		  ]
+	  },
+	  "references": {
+		"description": "External references",
+		"multiple": true,
+		"ui-priority": 0,
+		"misp-attribute": "link"
+	  },
+	  "additional-comments": {
+		"description": "Comments.",
+		"ui-priority": 0,
+		"misp-attribute": "text"
+	  }
   },
   "version": 1,
   "description": "An object template to describe a digital forensic evidence.",
