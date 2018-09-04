@@ -27,10 +27,11 @@
         "Cloud",
         "IoT",
         "Other"
-      ]
+      ],
+      "disable_correlation": true
     },
     "name": {
-      "description": "Name",
+      "description": "Name of the evidence acquired.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -46,7 +47,8 @@
         "File system extraction",
         "Chip-off",
         "Other"
-      ]
+      ],
+      "disable_correlation": true
     },
     "acquisition-tools": {
       "description": "Tools used for acquisition of the evidence.",
@@ -54,7 +56,9 @@
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
-        "DCFldd",
+        "dd",
+        "dc3dd",
+        "dcfldd",
         "EnCase",
         "FTK Imager",
         "FDAS",
@@ -62,7 +66,8 @@
         "Guymager",
         "IXimager",
         "Other"
-      ]
+      ],
+      "disable_correlation": true
     },
     "references": {
       "description": "External references",
@@ -73,10 +78,11 @@
     "additional-comments": {
       "description": "Comments.",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An object template to describe a digital forensic evidence.",
   "meta-category": "misc",
   "uuid": "fe44c648-63ef-43fc-b3de-af71a2e023e4",
