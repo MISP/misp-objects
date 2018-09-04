@@ -44,7 +44,8 @@
         "HSR",
         "STRAT",
         "WAVES",
-        "PPT"
+        "PPT",
+        "ETN"
       ]
     },
     "last-seen": {
@@ -67,7 +68,7 @@
       "recommended": false
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "An address used in a cryptocurrency",
   "meta-category": "financial",
   "uuid": "d0e6997e-78da-4815-a6a1-cfc1c1cb8a46",

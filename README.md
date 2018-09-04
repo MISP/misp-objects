@@ -113,11 +113,13 @@ for a specific attribute.
 * [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
 * [objects/script](objects/script/definition.json) - Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.
+* [objects/short-message-service](objects/short-message-service/definition.json) - Short Message Service (SMS) object template describing one or more SMS message(s).
 * [objects/shortened-link](objects/shortened-link/definition.json) - Shortened link and its redirect target.
 * [objects/ss7-attack](objects/ss7-attack/definition.json) - SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.
 * [objects/stix2-pattern](objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
 * [objects/suricata](objects/suricata/definition.json) - Suricata rule with context.
-* [objects/target-system](objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromissed internal system.
+* [objects/target-system](objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromised internal system.
+* [objects/threatgrid-report](objects/threatgrid-report/definition.json) - A threatgrid report object.
 * [objects/timecode](objects/timecode/definition.json) - Timecode object to describe a start of video sequence (e.g. CCTV evidence) and the end of the video sequence.
 * [objects/timestamp](objects/timestamp/definition.json) - A generic timestamp object to represent time including first time and last time seen. Relationship will then define the kind of time relationship.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
@@ -125,6 +127,7 @@ for a specific attribute.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.
+* [objects/vehicle](objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
