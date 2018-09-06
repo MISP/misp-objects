@@ -1,15 +1,9 @@
 {
   "requiredOneOf": [
-    "filename",
     "imported-sample",
     "type"
   ],
   "attributes": {
-    "filename": {
-      "description": "Original name of the file imported.",
-      "ui-priority": 1,
-      "misp-attribute": "filename"
-    },
     "imported-sample": {
       "description": "The original imported file itself (binary).",
       "ui-priority": 1,
