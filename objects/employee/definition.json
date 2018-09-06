@@ -26,6 +26,7 @@
     },
     "userid": {
       "description": "EMployee user identification",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "target-user"
     },
@@ -36,11 +37,13 @@
     },
     "business-unit": {
       "description": "the organizational business unit associated with the employee",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "target-org"
     },
     "employee-type": {
       "description": "type of employee",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text",
       "values_list": [
