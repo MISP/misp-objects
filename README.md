@@ -100,6 +100,7 @@ for a specific attribute.
 * [objects/mutex](objects/mutex/definition.json) - Object to describe mutual exclusion locks (mutex) as seen in memory or computer program.
 * [objects/netflow](objects/netflow/definition.json) - Netflow object describes an network object based on the Netflowv5/v9 minimal definition.
 * [objects/network-connection](objects/network-connection/definition.json) - Network object describes a local or remote network connection.
+* [objects/original-imported-file](pbjects/original-imported-file/definition.json) - Object to describe the original files used to import data in MISP.
 * [objects/passive-dns](objects/passive-dns/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
 * [objects/paste](objects/paste/definition.json) - Object describing a paste or similar post from a website allowing to share privately or publicly posts.
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
