@@ -8,6 +8,18 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
+    "tracker": {
+      "description": "Name of the tracker - organisation doing the tracking and/or analytics",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Google Analytics",
+        "Piwik",
+        "Kissmetrics",
+        "Woopra",
+        "Chartbeat"
+      ]
+    },
     "description": {
       "description": "Description of the tracking id",
       "ui-priority": 1,
@@ -38,7 +50,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Analytics and tracking ID such as used in Google Analytics or other analytic platform.",
   "meta-category": "network",
   "uuid": "3681c62a-2c75-48d8-99f2-6a3444ce2393",
