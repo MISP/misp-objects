@@ -124,6 +124,7 @@ for a specific attribute.
 * [objects/timecode](objects/timecode/definition.json) - Timecode object to describe a start of video sequence (e.g. CCTV evidence) and the end of the video sequence.
 * [objects/timestamp](objects/timestamp/definition.json) - A generic timestamp object to represent time including first time and last time seen. Relationship will then define the kind of time relationship.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
+* [objects/tracking-id](objects/tracking-id/definition.json) - Analytics and tracking ID such as used in Google Analytics or other analytic platform.
 * [objects/transaction](objects/transaction/definition.json) - Object describing a financial transaction.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
