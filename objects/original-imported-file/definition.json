@@ -12,7 +12,14 @@
     "format": {
       "description": "Format of data imported.",
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "sane_default": [
+        "STIX 1.0",
+        "STIX 1.1",
+        "STIX 1.2",
+        "STIX 2.0",
+        "OpenIOC"
+      ]
     },
     "uri": {
       "description": "URI related to the imported file.",
@@ -20,7 +27,7 @@
       "misp-attribute": "uri"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Object describing the original file used to import data in MISP.",
   "meta-category": "file",
   "uuid": "4cd560e9-2cfe-40a1-9964-7b2e797ecac5",
