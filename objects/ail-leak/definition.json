@@ -12,6 +12,7 @@
   "attributes": {
     "sensor": {
       "description": "The AIL sensor uuid where the leak was processed and analysed.",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -23,6 +24,7 @@
     },
     "duplicate_number": {
       "description": "Number of known duplicates.",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "counter"
     },
