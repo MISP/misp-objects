@@ -1,9 +1,9 @@
 {
   "required": [
-      "expected-asn",
-      "detected-asn",
-      "start",
-      "subnet-announced"
+    "expected-asn",
+    "detected-asn",
+    "start",
+    "subnet-announced"
   ],
   "attributes": {
     "expected-asn": {
@@ -42,7 +42,7 @@
       "description": "Last time the Prefix hijack was seen",
       "disable_correlation": true,
       "ui-priority": 0,
-	"misp-attribute": "datetime"
+      "misp-attribute": "datetime"
     }
   },
   "version": 1,
