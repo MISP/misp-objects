@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "values": [
     {
       "name": "derived-from",
@@ -619,6 +619,20 @@
     {
       "name": "signed-by",
       "description": "This relationship describes an object signed by another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "delivered-by",
+      "description": "This relationship describes an object by another object (such as exploit kit, dropper).",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "controls",
+      "description": "This relationship describes an object which controls another object.",
       "format": [
         "misp"
       ]
