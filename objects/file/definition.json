@@ -16,7 +16,8 @@
     "pattern-in-file",
     "x509-fingerprint-sha1",
     "malware-sample",
-    "path"
+    "path",
+    "fullpath"
   ],
   "attributes": {
     "md5": {
@@ -169,7 +170,7 @@
       ]
     }
   },
-  "version": 14,
+  "version": 15,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
