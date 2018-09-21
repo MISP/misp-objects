@@ -97,6 +97,7 @@ for a specific attribute.
 * [objects/legal-entity](objects/legal-entity/definition.json) - Object describing a legal entity, such as an organisation.
 * [objects/macho](objects/macho/definition.json) - Object describing a Mach object file format.
 * [objects/macho-section](objects/macho-section/definition.json) - Object describing a section of a Mach object file format.
+* [objects/malware-config](objects/malware-config/definition.json) - Object describing a malware configuration recovered or extracted from a malicious binary.
 * [objects/microblog](objects/microblog/definition.json) - Object describing microblog post like Twitter or Facebook.
 * [objects/mutex](objects/mutex/definition.json) - Object to describe mutual exclusion locks (mutex) as seen in memory or computer program.
 * [objects/netflow](objects/netflow/definition.json) - Netflow object describes an network object based on the Netflowv5/v9 minimal definition.
