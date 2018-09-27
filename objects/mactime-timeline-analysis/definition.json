@@ -24,20 +24,20 @@
       "description": "Determines the type of activity conducted on the file at a given time",
       "ui-priority": 0,
       "misp-attribute": "text",
-	  "sane_default": [
-			"Accessed",
-			"Created",
-			"Changed",
-			"Modified",
-			"Other"
-		  ]
+      "sane_default": [
+        "Accessed",
+        "Created",
+        "Changed",
+        "Modified",
+        "Other"
+      ]
     },
     "filePermissions": {
       "description": "Describes permissions assigned the file",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
-	 "file": {
+    "file": {
       "description": "Mactime output file",
       "ui-priority": 0,
       "misp-attribute": "attachment"
