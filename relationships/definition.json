@@ -636,6 +636,13 @@
       "format": [
         "misp"
       ]
+    },
+    {
+      "name": "annotates",
+      "description": "This relationships describes an object which annotates another object.",
+      "format": [
+        "misp"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
