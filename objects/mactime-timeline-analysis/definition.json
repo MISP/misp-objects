@@ -1,0 +1,51 @@
+{
+  "requiredOneOf": [
+    "filepath",
+    "file_activity",
+    "datetime"
+  ],
+  "attributes": {
+    "file-path": {
+      "description": "Location of the file on the disc",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "datetime": {
+      "description": "Date and time when the operation was conducted on the file",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "file_size": {
+      "description": "Determines the file size in bytes",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "activityType": {
+      "description": "Determines the type of activity conducted on the file at a given time",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Accessed",
+        "Created",
+        "Changed",
+        "Modified",
+        "Other"
+      ]
+    },
+    "filePermissions": {
+      "description": "Describes permissions assigned the file",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "file": {
+      "description": "Mactime output file",
+      "ui-priority": 0,
+      "misp-attribute": "attachment"
+    }
+  },
+  "version": 1,
+  "description": "Mactime template, used in forensic investigations to describe the timeline of a file activity",
+  "meta-category": "file",
+  "uuid": "9297982e-be62-4772-a665-c91f5a8d639",
+  "name": "mactime-timeline-analysis"
+}
