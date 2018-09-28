@@ -1,0 +1,69 @@
+{
+  "requiredOneOf": [
+    "url"
+  ],
+  "attributes": {
+    "url": {
+      "description": "Original url of the phishing website",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "phishtank-id": {
+      "description": "Phishtank ID of the reported phishing",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "phishtank-detail-url": {
+      "description": "Phishtank detail URL to the reported phishing",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "submission-time": {
+      "description": "When the phishing was submitted and/or reported",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "verified": {
+      "description": "The phishing has been verified by the team handling the phishing",
+      "ui-priority": 0,
+      "values_list": [
+        "No",
+        "Yes"
+      ],
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "verification-time": {
+      "description": "When the phishing was verified",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "online": {
+      "description": "If the phishing is online and operational, by default is yes",
+      "ui-priority": 0,
+      "values_list": [
+        "Yes",
+        "No"
+      ],
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "takedown-time": {
+      "description": "When the phishing was taken down",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "target": {
+      "description": "Targeted organisation by the phishing",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Phishing template to describe a phishing website and its analysis.",
+  "meta-category": "network",
+  "uuid": "2dad6f9d-d425-4217-8fda-0b0a2d815307",
+  "name": "phishing"
+}
