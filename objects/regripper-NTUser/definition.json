@@ -3,7 +3,7 @@
     "key"
   ],
   "requiredOneOf": [
-    "group-name"
+    "logon-user-name"
   ],
   "attributes": {
     "key": {
