@@ -1,0 +1,59 @@
+{
+    "required": [
+      "key"
+    ],
+    "requiredOneOf": [
+      "user-name",
+      "last-login-time",
+      "login-count"
+    ],
+    "attributes": {
+      "key": {
+        "description": "Registry key where the information is retrieved from.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "key-last-write-time": {
+        "description": "Date and time when the key was last updated.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "user-name": {
+        "description": "User name assigned to the user profile.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "full-user-name": {
+        "description": "Full name assigned to the user profile.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "last-login-time": {
+        "description": "Date and time when the user last logged onto the system.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "pwd-reset-time": {
+        "description": "Date and time when the password was last reset.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "pwd-fail-date": {
+        "description": "Date and time when a password last failed for this user profile.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "login-count": {
+        "description": "Number of times the user logged-in onto the system.",
+        "ui-priority": 0,
+        "misp-attribute": "number"
+      }
+     
+    },
+    "version": 1,
+    "description": "Regripper Object template designed to present user profile details extracted from the SAM hive.",
+    "meta-category": "misc",
+    "uuid": "4d3fffd2-cd07-4357-96e0-a51c988faaef",
+    "name": "regripper-sam-hive-single-user"
+  }
+  
