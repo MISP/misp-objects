@@ -1,0 +1,73 @@
+{
+    "required": [
+      "computer-name"
+    ],
+    "attributes": {
+      "computer-name": {
+        "description": "name of the computer under analysis",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "last-write-time": {
+        "description": "Date and time when the key was last updated.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "shutdown-time": {
+        "description": "Date and time when the system was shutdown.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "timezone-last-write-time": {
+        "description": "Date and time when the timezone key was last updated.",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "timezone-bias": {
+        "description": "Offset in minutes from UTC. Offset added to the local time to get a UTC value.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "timezone-standard-name": {
+        "description": "Timezone standard name used during non-daylight saving months.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "timezone-standard-date": {
+        "description": "Standard date - non daylight saving months",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "timezone-standard-bias": {
+        "description": "value in minutes to be added to the value of timezone-bias to generate the bias used during standard time.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "timezone-daylight-name": {
+        "description": "Timezone name used during daylight saving months.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "timezone-daylight-date": {
+        "description": "Daylight date - daylight saving months",
+        "ui-priority": 0,
+        "misp-attribute": "datetime"
+      },
+      "timezone-daylight-bias": {
+        "description": "value in minutes to be added to the value of timezone-bias to generate the bias used during daylight time.",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+      },
+      "fDenyTSConnections:": {
+        "description": "Specifies whether remote connections are enabled or disabled on the system.",
+        "ui-priority": 0,
+        "misp-attribute": "boolean"
+      }
+    },
+    "version": 1,
+    "description": "Regripper Object template designed to present general system properties extracted from the system-hive.",
+    "meta-category": "misc",
+    "uuid": "5ac85401-cbf1-4d05-a85e-1784546881e4",
+    "name": "regripper-system-hive-general-configuration"
+  }
+  
