@@ -8,7 +8,8 @@
         "ui-priority": 0,
         "sane-default":[
           "Domain Profile",
-          "Standard Profile"
+          "Standard Profile",
+          "other"
         ],
         "misp-attribute": "text"
       },
