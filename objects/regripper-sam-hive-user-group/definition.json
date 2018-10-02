@@ -14,7 +14,8 @@
       "key-last-write-time": {
         "description": "Date and time when the key was last updated.",
         "ui-priority": 0,
-        "misp-attribute": "datetime"
+        "misp-attribute": "datetime",
+        "disable_correlation": true
       },
       "group-name": {
         "description": "Name assigned to the profile.",
@@ -29,18 +30,20 @@
       "last-write-date-time": {
         "description": "Date and time when the group key was updated.",
         "ui-priority": 0,
-        "misp-attribute": "datetime"
+        "misp-attribute": "datetime",
+        "disable_correlation": true
       },
       "group-comment": {
         "description": "Name assigned to the profile.",
         "ui-priority": 0,
-        "misp-attribute": "text"
+        "misp-attribute": "text",
+        "disable_correlation": true
       },
       "group-users": {
         "description": "Users belonging to the group",
         "ui-priority": 0,
         "misp-attribute": "text",
-        "multiple": "true"
+        "multiple": true
       }
      
     },

@@ -11,12 +11,14 @@
       "network-key-last-write-time": {
         "description": "Date and time when the network key was last updated.",
         "ui-priority": 0,
-        "misp-attribute": "datetime"
+        "misp-attribute": "datetime",
+        "disable_correlation": true
       },
       "network-key-path": {
         "description": "Path of the key where the information is retrieved from.",
         "ui-priority": 0,
-        "misp-attribute": "text"
+        "misp-attribute": "text",
+        "disable_correlation": true
       },
       "TCPIP-key": {
         "description": "TCPIP key",
@@ -26,7 +28,8 @@
       "TCPIP-key-last-write-time": {
         "description": "Datetime when the key was last updated.",
         "ui-priority": 0,
-        "misp-attribute": "datetime"
+        "misp-attribute": "datetime",
+        "disable_correlation": true
       },
       "DHCP-domain": {
         "description": "Name of the DHCP domain service",
@@ -36,32 +39,34 @@
       "DHCP-IP-address": {
         "description": "DHCP service - IP address",
         "ui-priority": 0,
-        "misp-attribute": "ip-dist"
+        "misp-attribute": "ip-dst"
       },
       "DHCP-subnet-mask": {
         "description": "DHCP subnet mask - IP address.",
         "ui-priority": 0,
-        "misp-attribute": "ip-dist"
+        "misp-attribute": "ip-dst"
       },
       "DHCP-name-server": {
         "description": "DHCP Name server - IP address.",
         "ui-priority": 0,
-        "misp-attribute": "ip-dist"
+        "misp-attribute": "ip-dst"
       },
       "DHCP-server": {
         "description": "DHCP server - IP address.",
         "ui-priority": 0,
-        "misp-attribute": "ip-dist"
+        "misp-attribute": "ip-dst"
       },
       "interface-GUID": {
         "description": "GUID value assigned to the interface.",
         "ui-priority": 0,
-        "misp-attribute": "text"
+        "misp-attribute": "text",
+        "disable_correlation": true
       },
       "interface-last-write-time": {
         "description": "Last date and time when the interface key was updated.",
         "ui-priority": 0,
-        "misp-attribute": "datetime"
+        "misp-attribute": "datetime",
+        "disable_correlation": true
       },
       "interface-name": {
         "description": "Name of the interface.",
@@ -71,17 +76,26 @@
       "interface-PnpInstanceID": {
         "description": "Plug and Play instance ID assigned to the interface.",
         "ui-priority": 0,
-        "misp-attribute": "text"
+        "misp-attribute": "text",
+        "disable_correlation": true
       },
       "interface-MediaSubType": {
         "description": "",
         "ui-priority": 0,
-        "misp-attribute": "number"
+        "misp-attribute": "text",
+        "disable_correlation": true
       },
       "interface-IPcheckingEnabled": {
         "description": "",
         "ui-priority": 0,
-        "misp-attribute": "boolean"
+        "misp-attribute": "boolean",
+        "disable_correlation": true
+      },
+      "additional-comments": {
+        "description": "Comments.",
+        "ui-priority": 0,
+        "misp-attribute": "text",
+        "disable_correlation": true
       }
     },
     "version": 1,
