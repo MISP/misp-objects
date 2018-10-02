@@ -109,6 +109,7 @@ for a specific attribute.
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
 * [objects/person](objects/person/definition.json) - A person object which describes a person or an identity.
+* [objects/phishing](objects/phishing/definition.json) - Phishing template to describe a phishing website and its analysis.
 * [objects/phone](objects/phone/definition.json) - A phone or mobile phone object.
 * [objects/process](objects/process/definition.json) - A process object.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
