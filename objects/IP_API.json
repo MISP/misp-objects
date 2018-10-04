@@ -1,7 +1,7 @@
 {
     "name": "IP Address",
     "meta-category": "network",
-    "description": "IP Address informtion. Useful if you pull your ip information from ip-api.com",
+    "description": "IP Address informtion. Useful if you are pulling your ip information from ip-api.com",
     "version": 1,
     "uuid": "4336f124-6264-4f72-943e-cc3797e4122b",
 
@@ -16,10 +16,10 @@
         "ui-priority": 1,
         "misp-attribute": "AS"
       },
-      "description": {
-        "description": "Description of the autonomous system",
+       "organization": {
+        "description": "Organization",
         "ui-priority": 1,
-        "misp-attribute": "text"
+        "misp-attribute": "AS"
       },
       "ISP": {
        "description": "ISP.",
