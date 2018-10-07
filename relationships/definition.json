@@ -643,6 +643,13 @@
       "format": [
         "misp"
       ]
+    },
+    {
+      "name": "references",
+      "description": "This relationships describes an object which references another object or attribute.",
+      "format": [
+        "misp"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
