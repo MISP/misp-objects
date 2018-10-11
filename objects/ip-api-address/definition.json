@@ -1,90 +1,91 @@
 {
-    "name": "ip-api-address",
-    "meta-category": "network",
-    "description": "IP Address information. Useful if you are pulling your ip information from ip-api.com",
-    "version": 1,
-    "uuid": "4336f124-6264-4f72-943e-cc3797e4122b",
-
-    "attributes": {
-      "ip-src": {
-        "description": "Source IP address of the network connection.",
-        "ui-priority": 1,
-        "misp-attribute": "ip-src"
-      },
-      "asn": {
-        "description": "Autonomous System Number",
-        "ui-priority": 1,
-        "misp-attribute": "AS"
-      },
-       "organization": {
-        "description": "organization",
-        "ui-priority": 1,
-        "misp-attribute": "text"
-      },
-      "ISP": {
-       "description": "ISP.",
-       "ui-priority": 1,
-       "misp-attribute": "text"
-      },
-      "zipcode": {
-        "description": "Zip Code.",
-        "misp-attribute": "text",
-        "ui-priority": 1
-      },
-      "city": {
-        "description": "City.",
-        "misp-attribute": "text",
-        "ui-priority": 1
-      },
-      "state": {
-        "description": "State.",
-        "misp-attribute": "text",
-        "ui-priority": 1
-      },     
-      "country": {
-        "description": "Country name",
-        "ui-priority": 1,
-        "misp-attribute": "text"
-      },  
-        "country code": {
-        "description": "Country code ",
-        "ui-priority": 1,
-        "misp-attribute": "text"
-      },
-      "region": {
-        "description": "Region. example: California.",
-        "misp-attribute": "text",
-        "ui-priority": 1
-      },
-      "region code": {
-        "description": "Region code. example: CA",
-        "misp-attribute": "text",
-        "ui-priority": 1
-      },
-      "latitude": {
-        "description": "The latitude is the decimal value of the latitude in the World Geodetic System 84 (WGS84) reference.",
-        "disable_correlation": true,
-        "ui-priority": 90,
-        "misp-attribute": "float"
-      },
-      "longitude": {
-        "description": "The longitude is the decimal value of the longitude in the World Geodetic System 84 (WGS84) reference",
-        "disable_correlation": true,
-        "ui-priority": 89,
-        "misp-attribute": "float"
-      },
-      "first-seen": {
-        "description": "First time the ASN was seen",
-        "disable_correlation": true,
-        "ui-priority": 0,
-        "misp-attribute": "datetime"
-      },
-      "last-seen": {
-        "description": "Last time the ASN was seen",
-        "disable_correlation": true,
-        "ui-priority": 0,
-        "misp-attribute": "datetime"
-      }
+  "name": "ip-api-address",
+  "meta-category": "network",
+  "description": "IP Address information. Useful if you are pulling your ip information from ip-api.com",
+  "version": 1,
+  "uuid": "4336f124-6264-4f72-943e-cc3797e4122b",
+  "attributes": {
+    "ip-src": {
+      "description": "Source IP address of the network connection.",
+      "ui-priority": 1,
+      "misp-attribute": "ip-src"
     },
-    "requiredOneOf": [ "ip-src"]
-  }
+    "asn": {
+      "description": "Autonomous System Number",
+      "ui-priority": 1,
+      "misp-attribute": "AS"
+    },
+    "organization": {
+      "description": "organization",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "ISP": {
+      "description": "ISP.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "zipcode": {
+      "description": "Zip Code.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "city": {
+      "description": "City.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "state": {
+      "description": "State.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "country": {
+      "description": "Country name",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "country code": {
+      "description": "Country code ",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "region": {
+      "description": "Region. example: California.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "region code": {
+      "description": "Region code. example: CA",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "latitude": {
+      "description": "The latitude is the decimal value of the latitude in the World Geodetic System 84 (WGS84) reference.",
+      "disable_correlation": true,
+      "ui-priority": 90,
+      "misp-attribute": "float"
+    },
+    "longitude": {
+      "description": "The longitude is the decimal value of the longitude in the World Geodetic System 84 (WGS84) reference",
+      "disable_correlation": true,
+      "ui-priority": 89,
+      "misp-attribute": "float"
+    },
+    "first-seen": {
+      "description": "First time the ASN was seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "last-seen": {
+      "description": "Last time the ASN was seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "requiredOneOf": [
+    "ip-src"
+  ]
+}
