@@ -12,6 +12,7 @@
     "format": {
       "description": "Format of data imported.",
       "ui-priority": 1,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "STIX 1.0",
