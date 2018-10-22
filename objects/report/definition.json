@@ -10,7 +10,8 @@
       "categories": [
         "Other",
         "Internal reference"
-      ]
+      ],
+      "multiple": true
     },
     "case-number": {
       "description": "Case number",
