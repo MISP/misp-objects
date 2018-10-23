@@ -94,7 +94,7 @@
       "misp-attribute": "redress-number"
     },
     "social-security-number": {
-      "description": "Social security number",
+      "description": "Social security number.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -104,9 +104,39 @@
       "misp-attribute": "nationality",
       "multiple": true,
       "disable_correlation": true
+    },
+    "nic-hdl": {
+      "description": "NIC Handle (Network Information Centre handle) of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "phone-number": {
+      "description": "Phone number of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "fax-number": {
+      "description": "Fax number of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "address": {
+      "description": "Postal address of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "e-mail": {
+      "description": "Email address of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "email-src",
+      "multiple": true
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
