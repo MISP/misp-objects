@@ -1,0 +1,54 @@
+{
+  "requiredOneOf": [
+    "text",
+    "first-packet-seen",
+    "last-packet-seen"
+  ],
+  "attributes": {
+    "capture-length": {
+      "description": "Capture length set on the captured interface.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "capture-interface": {
+      "description": "Interface name where the packet capture was running.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "protocol": {
+      "description": "Capture protocol (linktype name).",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "sane_default": [
+        "LINKTYPE_NULL",
+        "LINKTYPE_ETHERNET"
+      ]
+    },
+    "text": {
+      "description": "A description of the packet capture.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "first-packet-seen": {
+      "description": "When the first packet has been seen.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "last-packet-seen": {
+      "description": "When the last packet has been seen.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "Network packet capture metadata",
+  "meta-category": "network",
+  "uuid": "0784aefa-ec3a-4eca-a431-c31ed7058bd3",
+  "name": "pcap-metadata"
+}
