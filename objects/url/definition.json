@@ -1,6 +1,7 @@
 {
-  "required": [
-    "url"
+  "requiredOneOf": [
+    "url",
+    "resource_path"
   ],
   "attributes": {
     "fragment": {
@@ -95,7 +96,7 @@
       "misp-attribute": "hostname"
     }
   },
-  "version": 6,
+  "version": 7,
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "meta-category": "network",
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
