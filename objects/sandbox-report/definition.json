@@ -50,10 +50,10 @@
       "disable_correlation": true,
       "ui-priority": 1,
       "categories": [
-          "External analysis"
+        "External analysis"
       ],
       "multiple": true
-    }, 
+    },
     "sandbox-type": {
       "description": "The type of sandbox used",
       "misp-attribute": "text",
