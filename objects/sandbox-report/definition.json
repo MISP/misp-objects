@@ -44,6 +44,16 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
+    "sandbox-file": {
+      "description": "File related to sandbox run",
+      "misp-attribute": "attachment",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "categories": [
+          "External analysis"
+      ],
+      "multiple": true
+    }, 
     "sandbox-type": {
       "description": "The type of sandbox used",
       "misp-attribute": "text",
@@ -92,7 +102,7 @@
       ]
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Sandbox report",
   "meta-category": "misc",
   "uuid": "4d3fffd2-cd07-4357-96e0-a51c988faaef",
