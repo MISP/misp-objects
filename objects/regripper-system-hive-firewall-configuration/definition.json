@@ -6,7 +6,7 @@
     "profile": {
       "description": "Firewall Profile type",
       "ui-priority": 0,
-      "sane-default": [
+      "sane_default": [
         "Domain Profile",
         "Standard Profile",
         "Network Profile",
