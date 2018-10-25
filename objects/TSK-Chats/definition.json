@@ -8,7 +8,7 @@
       "description": "the type of message extracted from the forensic-evidence.",
       "ui-priority": 0,
       "misp-attribute": "text",
-      "sane_default":[
+      "sane_default": [
         "SMS",
         "MMS",
         "Instant Message (IM)",
