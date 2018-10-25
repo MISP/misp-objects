@@ -1,13 +1,13 @@
 {
   "required": [
-    "URL",
+    "url",
     "name"
   ],
   "attributes": {
-    "URL": {
+    "url": {
       "description": "The URL used to download the file.",
       "ui-priority": 0,
-      "misp-attribute": "link"
+      "misp-attribute": "url"
     },
     "datetime-accessed": {
       "description": "date and time when the file was downloaded.",
@@ -49,7 +49,7 @@
   },
   "version": 1,
   "description": "An Object Template to add web-downloads",
-  "meta-category": "File",
+  "meta-category": "file",
   "uuid": "ab9603a1-9dcc-48e8-a51c-b8bccc7bcc26",
   "name": "tsk-web-downloads"
 }
