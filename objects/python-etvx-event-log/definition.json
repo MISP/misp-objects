@@ -22,7 +22,7 @@
       "ui-priority": 3,
       "misp-attribute": "text",
       "disable_correlation": true,
-      "sane-default": [
+      "sane_default": [
         "Application",
         "System",
         "Security",
@@ -35,7 +35,7 @@
       "ui-priority": 0,
       "misp-attribute": "text",
       "disable_correlation": true,
-      "sane-default": [
+      "sane_default": [
         "Admin",
         "Operational",
         "Audit",
