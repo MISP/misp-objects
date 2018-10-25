@@ -63,5 +63,5 @@
   "description": "An Object Template to add evidential bookmarks identified during a digital forensic investigation.",
   "meta-category": "misc",
   "uuid": "7d9a88a8-9934-4caa-a85b-f76bc97d5373",
-  "name": "TSK-Web-Bookmark"
+  "name": "tsk-web-bookmark"
 }

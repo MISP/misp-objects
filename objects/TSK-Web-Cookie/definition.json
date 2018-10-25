@@ -63,5 +63,5 @@
   "description": "An TSK-Autopsy Object Template to represent cookies identified during a forensic investigation.",
   "meta-category": "misc",
   "uuid": "40d23a4f-43be-4c9e-8328-382a2188eb1d",
-  "name": "TSK-Web-Cookie"
+  "name": "tsk-web-cookie"
 }

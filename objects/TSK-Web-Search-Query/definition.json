@@ -62,5 +62,5 @@
   "description": "An Object Template to share web search query information",
   "meta-category": "misc",
   "uuid": "16b3f8d0-fd09-4812-a42c-b5aeff2d4c2e",
-  "name": "TSK-Web-Search-Query"
+  "name": "tsk-web-search-query"
 }

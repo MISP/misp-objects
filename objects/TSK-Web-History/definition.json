@@ -64,5 +64,5 @@
   "description": "An Object Template to share web history information",
   "meta-category": "misc",
   "uuid": "e1325e52-e52e-49b1-89ad-d503c127c698",
-  "name": "TSK-Web-History"
+  "name": "tsk-web-history"
 }

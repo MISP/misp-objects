@@ -80,5 +80,5 @@
   "description": "An Object Template to gather information from evidential or interesting exchange of messages identified during a digital forensic investigation.",
   "meta-category": "misc",
   "uuid": "6b71f231-c502-467f-bc67-1423cd5bf800",
-  "name": "TSK-Chats"
+  "name": "tsk-chats"
 }
