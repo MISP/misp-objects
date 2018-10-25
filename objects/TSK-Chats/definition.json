@@ -1,0 +1,84 @@
+{
+  "required": [
+    "message-type",
+    "message"
+  ],
+  "attributes": {
+    "message-type": {
+      "description": "the type of message extracted from the forensic-evidence.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "SMS",
+        "MMS",
+        "Instant Message (IM)",
+        "Voice Message"
+      ],
+      "disable_correlation": true
+    },
+    "datetime-sent": {
+      "description": "date and the time when the message was sent.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "datetime-received": {
+      "description": "date and time when the message was received.",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "Source": {
+      "description": "Source of the message.(Contact details)",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "destination": {
+      "description": "Destination of the message.(Contact details)",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "app-used": {
+      "description": "Application used to send the message.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "subject": {
+      "description": "Subject of the message if any.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "message": {
+      "description": "Message exchanged.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "attachments": {
+      "description": "External references",
+      "multiple": true,
+      "ui-priority": 0,
+      "categories": [
+        "External analysis"
+      ],
+      "misp-attribute": "link"
+    },
+    "additional-comments": {
+      "description": "Comments.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "categories": [
+        "External analysis"
+      ],
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "An Object Template to gather information from evidential or interesting exchange of messages identified during a digital forensic investigation.",
+  "meta-category": "misc",
+  "uuid": "6b71f231-c502-467f-bc67-1423cd5bf800",
+  "name": "tsk-chats"
+}

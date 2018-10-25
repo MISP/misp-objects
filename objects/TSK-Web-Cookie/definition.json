@@ -1,0 +1,67 @@
+{
+  "required": [
+    "URL",
+    "name",
+    "value"
+  ],
+  "attributes": {
+    "URL": {
+      "description": "The website URL that created the cookie.",
+      "ui-priority": 0,
+      "misp-attribute": "link"
+    },
+    "datetime-created": {
+      "description": "date and time when the cookie was created.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "name": {
+      "description": "Name of the cookie ",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "value": {
+      "description": "Value assigned to the cookie.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "browser": {
+      "description": "Browser on which the cookie was created.",
+      "ui-priority": 0,
+      "sane_default": [
+        "IE",
+        "Safari",
+        "Chrome",
+        "Firefox",
+        "Opera mini",
+        "Chromium"
+      ],
+      "misp-attribute": "text"
+    },
+    "domain-name": {
+      "description": "Domain of the URL that created the cookie.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "domain-ip": {
+      "description": "IP of the domain that created the URL.",
+      "ui-priority": 0,
+      "misp-attribute": "ip-src"
+    },
+    "additional-comments": {
+      "description": "Comments.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "categories": [
+        "External analysis"
+      ],
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "An TSK-Autopsy Object Template to represent cookies identified during a forensic investigation.",
+  "meta-category": "misc",
+  "uuid": "40d23a4f-43be-4c9e-8328-382a2188eb1d",
+  "name": "tsk-web-cookie"
+}
