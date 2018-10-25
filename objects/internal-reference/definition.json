@@ -19,6 +19,14 @@
           "Internal reference"
       ]
     },
+    "type": {
+      "description": "Type of internal reference.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "categories": [
+          "Internal reference"
+      ]
+    },
     "link": {
       "description": "Link associated to the identifier.",
       "ui-priority": 1,
@@ -28,7 +36,7 @@
       ]
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Internal reference.",
   "meta-category": "misc",
   "uuid": "a3984dc5-5f70-4776-9262-c19641c0ff6a",
