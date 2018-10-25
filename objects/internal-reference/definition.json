@@ -8,7 +8,7 @@
       "ui-priority": 1,
       "misp-attribute": "text",
       "categories": [
-          "Internal reference"
+        "Internal reference"
       ]
     },
     "comment": {
@@ -16,7 +16,7 @@
       "ui-priority": 0,
       "misp-attribute": "comment",
       "categories": [
-          "Internal reference"
+        "Internal reference"
       ]
     },
     "type": {
@@ -24,7 +24,7 @@
       "ui-priority": 1,
       "misp-attribute": "text",
       "categories": [
-          "Internal reference"
+        "Internal reference"
       ]
     },
     "link": {
@@ -32,7 +32,7 @@
       "ui-priority": 1,
       "misp-attribute": "link",
       "categories": [
-          "Internal reference"
+        "Internal reference"
       ]
     }
   },
