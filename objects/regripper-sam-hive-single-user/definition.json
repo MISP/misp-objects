@@ -63,6 +63,6 @@
   "version": 1,
   "description": "Regripper Object template designed to present user profile details extracted from the SAM hive.",
   "meta-category": "misc",
-  "uuid": "4d3fffd2-cd07-4357-96e0-a51c988faaef",
+  "uuid": "112efd9a-2137-4198-92ed-7c91043e2cd4",
   "name": "regripper-sam-hive-single-user"
 }
