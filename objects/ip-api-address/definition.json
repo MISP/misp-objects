@@ -2,7 +2,7 @@
   "name": "ip-api-address",
   "meta-category": "network",
   "description": "IP Address information. Useful if you are pulling your ip information from ip-api.com",
-  "version": 1,
+  "version": 2,
   "uuid": "4336f124-6264-4f72-943e-cc3797e4122b",
   "attributes": {
     "ip-src": {
@@ -13,52 +13,62 @@
     "asn": {
       "description": "Autonomous System Number",
       "ui-priority": 1,
-      "misp-attribute": "AS"
+      "misp-attribute": "AS",
+      "disable_correlation": true
     },
     "organization": {
       "description": "organization",
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "ISP": {
       "description": "ISP.",
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "zipcode": {
       "description": "Zip Code.",
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 1,
+      "disable_correlation": true
     },
     "city": {
       "description": "City.",
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 1,
+      "disable_correlation": true
     },
     "state": {
       "description": "State.",
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 1,
+      "disable_correlation": true
     },
     "country": {
       "description": "Country name",
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "country code": {
       "description": "Country code ",
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "region": {
       "description": "Region. example: California.",
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 1,
+      "disable_correlation": true
     },
     "region code": {
       "description": "Region code. example: CA",
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 1,
+      "disable_correlation": true
     },
     "latitude": {
       "description": "The latitude is the decimal value of the latitude in the World Geodetic System 84 (WGS84) reference.",
