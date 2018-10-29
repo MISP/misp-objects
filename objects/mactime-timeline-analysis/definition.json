@@ -13,12 +13,14 @@
     "datetime": {
       "description": "Date and time when the operation was conducted on the file",
       "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "datetime",
+      "disable_correlation": true
     },
     "file_size": {
       "description": "Determines the file size in bytes",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "activityType": {
       "description": "Determines the type of activity conducted on the file at a given time",
@@ -30,20 +32,23 @@
         "Changed",
         "Modified",
         "Other"
-      ]
+      ],
+      "disable_correlation": true
     },
     "filePermissions": {
       "description": "Describes permissions assigned the file",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "file": {
       "description": "Mactime output file",
       "ui-priority": 0,
-      "misp-attribute": "attachment"
+      "misp-attribute": "attachment",
+      "disable_correlation": true
     }
   },
-  "version": 1,
+  "version": 3,
   "description": "Mactime template, used in forensic investigations to describe the timeline of a file activity",
   "meta-category": "file",
   "uuid": "9297982e-be62-4772-a665-c91f5a8d639",
