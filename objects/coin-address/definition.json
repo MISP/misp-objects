@@ -70,7 +70,7 @@
       "description": "Current balance of address",
       "disable_correlation": true,
       "ui-priority": 1,
-      "misp-attribute": "text",
+      "misp-attribute": "float",
       "recommended": false
     },
     "total-transactions": {
