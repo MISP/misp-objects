@@ -3,7 +3,7 @@
   "uuid": "02aeef94-ac23-455c-addb-731757ceafb5",
   "meta-category": "misc",
   "description": "Object describing a system process.",
-  "version": 2,
+  "version": 3,
   "attributes": {
     "creation-time": {
       "description": "Local date/time at which the process was created.",
@@ -47,10 +47,50 @@
       "misp-attribute": "src-port",
       "multiple": true,
       "disable_correlation": true
+    },
+    "command-line": {
+      "description": "Command line of the process",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "current-directory": {
+      "description": "Current working directory of the process",
+      "ui-priority": 2,
+      "misp-attribute": "filename",
+      "disable_correlation": true
+    },
+    "image": {
+      "description": "Path of process image",
+      "ui-priority": 1,
+      "misp-attribute": "filename"
+    },
+    "parent-command-line": {
+      "description": "Command line of the parent process",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "parent-image": {
+      "description": "Path of parent process image",
+      "ui-priority": 1,
+      "misp-attribute": "filename"
+    },
+    "user": {
+      "description": "User context of the process",
+      "ui-priority": 2,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "integrity-level": {
+      "description": "Integrity level of the process",
+      "ui-priority": 2,
+      "misp-attribute": "text",
+      "disable_correlation": true
     }
   },
   "requiredOneOf": [
     "name",
-    "pid"
+    "pid",
+    "image",
+    "command-line"
   ]
 }
