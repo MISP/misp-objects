@@ -7,7 +7,9 @@
   ],
   "attributes": {
     "namespace": {
-      "categories": ["External analysis"],
+      "categories": [
+        "External analysis"
+      ],
       "description": "Cortex Taxonomy Namespace",
       "disable_correlation": true,
       "multiple": false,
@@ -15,7 +17,9 @@
       "misp-attribute": "text"
     },
     "predicate": {
-      "categories": ["External analysis"],
+      "categories": [
+        "External analysis"
+      ],
       "description": "Cortex Taxonomy Predicate",
       "disable_correlation": true,
       "multiple": false,
@@ -23,7 +27,9 @@
       "misp-attribute": "text"
     },
     "value": {
-      "categories": ["External analysis"],
+      "categories": [
+        "External analysis"
+      ],
       "description": "Cortex Taxonomy Value",
       "disable_correlation": true,
       "multiple": false,
@@ -31,7 +37,9 @@
       "misp-attribute": "text"
     },
     "level": {
-      "categories": ["External analysis"],
+      "categories": [
+        "External analysis"
+      ],
       "description": "Cortex Taxonomy Level",
       "disable_correlation": true,
       "multiple": false,
