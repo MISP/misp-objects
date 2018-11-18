@@ -59,8 +59,8 @@
       "misp-attribute": "link"
     }
   },
-  "version": 3,
-  "description": "Cortex object describing an Cortex Taxonomy",
+  "version": 4,
+  "description": "Cortex object describing an Cortex Taxonomy (or mini report)",
   "meta-category": "misc",
   "uuid": "bef7d23b-e796-4d46-803a-32e317896894",
   "name": "cortex-taxonomy"
