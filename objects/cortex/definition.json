@@ -41,7 +41,7 @@
     }
   },
   "version": 1,
-  "description": "Cortex object describing a complete cortex analysis",
+  "description": "Cortex object describing a complete cortex analysis. Observables would be attribute with a relationship from this object.",
   "meta-category": "misc",
   "uuid": "144988f3-fa00-4374-8015-c1a32092f451",
   "name": "cortex"
