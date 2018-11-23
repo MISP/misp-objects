@@ -1,0 +1,26 @@
+{
+  "required": [
+    "datetime",
+    "message"
+  ],
+  "attributes": {
+    "datetime": {
+      "description": "datetime of the message",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "datetime",
+      "recommended": true
+    },
+    "message": {
+      "description": "message",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "A timesketch message entry.",
+  "meta-category": "misc",
+  "uuid": "ef27fb19-7e71-43e0-b6f6-6f03ab67666f",
+  "name": "timesketch_message"
+}
