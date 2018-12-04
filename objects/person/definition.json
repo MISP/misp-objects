@@ -98,6 +98,16 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
+    "birth-certificate-number": {
+      "description": "Birth Certificate Number",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "ofac-identification-number": {
+      "description": "ofac-identification Number",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
     "nationality": {
       "description": "The nationality of a natural person.",
       "ui-priority": 0,
@@ -136,7 +146,7 @@
       "multiple": true
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
