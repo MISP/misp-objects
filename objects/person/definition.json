@@ -144,9 +144,15 @@
       "ui-priority": 10,
       "misp-attribute": "email-src",
       "multiple": true
+    },
+    "portrait": {
+      "description": "Portrait of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "attachment",
+      "multiple": true
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
