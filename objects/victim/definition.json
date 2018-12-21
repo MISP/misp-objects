@@ -1,6 +1,8 @@
 {
   "requiredOneOf": [
-    "name"
+    "name",
+    "regions",
+    "sectors"
   ],
   "attributes": {
     "description": {
