@@ -927,6 +927,13 @@
       "format": [
         "alfred"
       ]
+    },
+    {
+      "name": "witness-of",
+      "description": "Represents an object being a witness of something.",
+      "format": [
+        "misp"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
