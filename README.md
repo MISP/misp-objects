@@ -122,6 +122,7 @@ for a specific attribute.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
 * [objects/report](objects/report/definition.json) - Object to describe metadata used to generate an executive level report.
+* [objects/research-scanner](objects/research-scanner/definition.json) - Information related to known scanning activity (e.g. from research projects)
 * [objects/rtir](objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 * [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
