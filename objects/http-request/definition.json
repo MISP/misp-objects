@@ -51,6 +51,15 @@
       "ui-priority": 1,
       "misp-attribute": "hostname"
     },
+    "ip": {
+      "categories": [
+        "Network activity",
+        "Payload delivery"
+      ],
+      "description": "The IP address of the server",
+      "ui-priority": 1,
+      "misp-attribute": "ip-dst"
+    },
     "method": {
       "categories": [
         "Network activity"
@@ -111,7 +120,7 @@
       "misp-attribute": "user-agent"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "A single HTTP request header",
   "meta-category": "network",
   "uuid": "b4a8d163-8110-4239-bfcf-e08f3a9fdf7b",
