@@ -265,13 +265,6 @@
       ]
     },
     {
-      "name": "dropped-by",
-      "description": "This relationship describes an object dropped by another object.",
-      "format": [
-        "misp"
-      ]
-    },
-    {
       "name": "drops",
       "description": "This relationship describes an object which drops another object",
       "format": [
@@ -926,6 +919,13 @@
       "description": "Represents the semantic link of working for something.",
       "format": [
         "alfred"
+      ]
+    },
+    {
+      "name": "witness-of",
+      "description": "Represents an object being a witness of something.",
+      "format": [
+        "misp"
       ]
     }
   ],

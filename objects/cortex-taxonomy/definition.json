@@ -1,0 +1,67 @@
+{
+  "required": [
+    "level",
+    "predicate",
+    "value",
+    "namespace"
+  ],
+  "attributes": {
+    "namespace": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Cortex Taxonomy Namespace",
+      "disable_correlation": true,
+      "multiple": false,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "predicate": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Cortex Taxonomy Predicate",
+      "disable_correlation": true,
+      "multiple": false,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "value": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Cortex Taxonomy Value",
+      "disable_correlation": true,
+      "multiple": false,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "level": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Cortex Taxonomy Level",
+      "disable_correlation": true,
+      "multiple": false,
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "info",
+        "safe",
+        "suspicious",
+        "malicious"
+      ]
+    },
+    "cortex_url": {
+      "description": "URL to the Cortex job",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "link"
+    }
+  },
+  "version": 4,
+  "description": "Cortex object describing an Cortex Taxonomy (or mini report)",
+  "meta-category": "misc",
+  "uuid": "bef7d23b-e796-4d46-803a-32e317896894",
+  "name": "cortex-taxonomy"
+}

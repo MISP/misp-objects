@@ -1,0 +1,80 @@
+{
+  "required": [
+    "project",
+    "scanning_ip"
+  ],
+  "attributes": {
+    "project": {
+      "description": "Description of scanning project",
+      "ui-priority": 1,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "scanning_ip": {
+      "description": "IP address used by project",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "ip-src",
+      "multiple": true
+    },
+    "domain": {
+      "description": "Domain related to project",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "domain"
+    },
+    "asn": {
+      "description": "Autonomous System Number related to project",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "AS"
+    },
+    "scheduled_start": {
+      "description": "Scheduled start of scanning activity",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "datetime"
+    },
+    "scheduled_end": {
+      "description": "Scheduled end of scanning activity",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "datetime"
+    },
+    "contact_email": {
+      "description": "Project contact information",
+      "disable_correlation": true,
+      "categories": [
+        "Network activity",
+        "Social network"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "email-dst",
+      "multiple": true
+    },
+    "contact_phone": {
+      "description": "Phone number related to project",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "project_url": {
+      "description": "URL related to project",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "link",
+      "multiple": true
+    }
+  },
+  "version": 20190102,
+  "description": "Information related to known scanning activity (e.g. from research projects)",
+  "meta-category": "network",
+  "uuid": "d690e956-fc8a-11e8-8eb2-f2801f1b9fd1",
+  "name": "research-scanner"
+}

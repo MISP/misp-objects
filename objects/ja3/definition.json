@@ -2,12 +2,12 @@
   "name": "ja3",
   "meta-category": "network",
   "description": "JA3 is a new technique for creating SSL client fingerprints that are easy to produce and can be easily shared for threat intelligence. Fingerprints are composed of Client Hello packet; SSL Version, Accepted Ciphers, List of Extensions, Elliptic Curves, and Elliptic Curve Formats. https://github.com/salesforce/ja3",
-  "version": 3,
+  "version": 4,
   "uuid": "09b45449-5d6e-492c-a68a-cb2e188cbfac",
   "attributes": {
     "ja3-fingerprint-md5": {
       "description": "Hash identifying source",
-      "misp-attribute": "md5",
+      "misp-attribute": "ja3-fingerprint-md5",
       "ui-priority": 1
     },
     "description": {

@@ -88,6 +88,7 @@ for a specific attribute.
 * [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
 * [objects/email](objects/email/definition.json) - An email object.
 * [objects/exploit-poc](objects/exploit-poc/definition.json) - Exploit-poc object describing a proof of concept or exploit of a vulnerability. This object has often a relationship with a vulnerability object.
+* [objects/facial-composite](objects/facial-composite/definition.json) A facial composite object.
 * [objects/fail2ban](objects/fail2ban/definition.json) - A fail2ban object.
 * [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 * [objects/forensic-case](objects/forensic-case/definition.json) - An object template to describe a digital forensic case.
@@ -121,6 +122,7 @@ for a specific attribute.
 * [objects/registry-key](objects/registry-key/definition.json) - A registry-key object.
 * [objects/r2graphity](objects/r2graphity/definition.json) - Indicators extracted from binary files using radare2 and graphml.
 * [objects/report](objects/report/definition.json) - Object to describe metadata used to generate an executive level report.
+* [objects/research-scanner](objects/research-scanner/definition.json) - Information related to known scanning activity (e.g. from research projects)
 * [objects/rtir](objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 * [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
@@ -185,9 +187,9 @@ The MISP objects model allows to add new combined indicators format based on the
 
 ~~~~
 
-Copyright (C) 2016-2018 Andras Iklody
-Copyright (C) 2016-2018 Alexandre Dulaunoy
-Copyright (C) 2016-2018 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2019 Andras Iklody
+Copyright (C) 2016-2019 Alexandre Dulaunoy
+Copyright (C) 2016-2019 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
