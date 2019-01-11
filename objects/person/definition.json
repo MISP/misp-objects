@@ -1,7 +1,8 @@
 {
   "requiredOneOf": [
     "first-name",
-    "last-name"
+    "last-name",
+    "alias"
   ],
   "attributes": {
     "text": {
