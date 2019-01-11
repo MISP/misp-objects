@@ -153,7 +153,7 @@
       "multiple": true
     }
   },
-  "version": 6,
+  "version": 7,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
