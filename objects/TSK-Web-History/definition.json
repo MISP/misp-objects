@@ -1,0 +1,68 @@
+{
+  "required": [
+    "URL",
+    "datetime-accessed"
+  ],
+  "attributes": {
+    "URL": {
+      "description": "The URL accessed.",
+      "ui-priority": 0,
+      "misp-attribute": "link"
+    },
+    "datetime-accessed": {
+      "description": "date and the time when the URL was accessed.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "referrer": {
+      "description": "where the URL was referred from ",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "title": {
+      "description": "Title of the web page",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "domain-name": {
+      "description": "Domain of the URL.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "domain-ip": {
+      "description": "IP of the URL domain.",
+      "ui-priority": 0,
+      "misp-attribute": "ip-src"
+    },
+    "browser": {
+      "description": "Browser used to access the URL.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "IE",
+        "Safari",
+        "Chrome",
+        "Firefox",
+        "Opera mini",
+        "Chromium"
+      ],
+      "disable_correlation": true
+    },
+    "additional-comments": {
+      "description": "Comments.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "categories": [
+        "External analysis"
+      ],
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "An Object Template to share web history information",
+  "meta-category": "misc",
+  "uuid": "e1325e52-e52e-49b1-89ad-d503c127c698",
+  "name": "tsk-web-history"
+}

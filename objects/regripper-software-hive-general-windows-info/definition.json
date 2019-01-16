@@ -1,0 +1,126 @@
+{
+  "required": [
+    "win-cv-path",
+    "CurrentVersion"
+  ],
+  "attributes": {
+    "win-cv-path": {
+      "description": "key where the windows information is retrieved from",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "last-write-time": {
+      "description": "Date and time when the key was last updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "RegisteredOrganization": {
+      "description": "Name of the registered organization.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "RegisteredOwner": {
+      "description": "Name of the registered owner.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "CurrentVersion": {
+      "description": "Current version of windows",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "CurrentBuild": {
+      "description": "Build number of the windows OS.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "SoftwareType": {
+      "description": "Software type of windows.",
+      "ui-priority": 0,
+      "sane_default": [
+        "System",
+        "Application",
+        "other"
+      ],
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "InstallationType": {
+      "description": "Type of windows installation.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "InstallDate": {
+      "description": "Date when windows was installed.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "SystemRoot": {
+      "description": "Root directory.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "PathName": {
+      "description": "Path to the root directory.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "EditionID": {
+      "description": "Windows edition.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "ProductName": {
+      "description": "Name of the windows version.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "ProductID": {
+      "description": "ID of the product version.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "CSDVersion": {
+      "description": "Version of the service pack installed.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "CurrentBuildType": {
+      "description": "Current build type of the OS.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "BuildLab": {
+      "description": "Windows BuildLab string.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "BuildGUID": {
+      "description": "Build ID.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "BuildLabEx": {
+      "description": "Windows BuildLabEx string.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "comment": {
+      "description": "Additional comments.",
+      "ui-priority": 0,
+      "misp-attribute": "comment",
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "Regripper Object template designed to gather general windows information extracted from the software-hive.",
+  "meta-category": "misc",
+  "uuid": "03200c25-4bf5-4282-9852-001a51ab20f1",
+  "name": "regripper-software-hive-windows-general-info"
+}

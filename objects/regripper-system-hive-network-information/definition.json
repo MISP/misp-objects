@@ -1,0 +1,106 @@
+{
+  "required": [
+    "network-key"
+  ],
+  "attributes": {
+    "network-key": {
+      "description": "Registry key assigned to the network",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "network-key-last-write-time": {
+      "description": "Date and time when the network key was last updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "network-key-path": {
+      "description": "Path of the key where the information is retrieved from.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "TCPIP-key": {
+      "description": "TCPIP key",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "TCPIP-key-last-write-time": {
+      "description": "Datetime when the key was last updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "DHCP-domain": {
+      "description": "Name of the DHCP domain service",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "DHCP-IP-address": {
+      "description": "DHCP service - IP address",
+      "ui-priority": 0,
+      "misp-attribute": "ip-dst"
+    },
+    "DHCP-subnet-mask": {
+      "description": "DHCP subnet mask - IP address.",
+      "ui-priority": 0,
+      "misp-attribute": "ip-dst"
+    },
+    "DHCP-name-server": {
+      "description": "DHCP Name server - IP address.",
+      "ui-priority": 0,
+      "misp-attribute": "ip-dst"
+    },
+    "DHCP-server": {
+      "description": "DHCP server - IP address.",
+      "ui-priority": 0,
+      "misp-attribute": "ip-dst"
+    },
+    "interface-GUID": {
+      "description": "GUID value assigned to the interface.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "interface-last-write-time": {
+      "description": "Last date and time when the interface key was updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "interface-name": {
+      "description": "Name of the interface.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "interface-PnpInstanceID": {
+      "description": "Plug and Play instance ID assigned to the interface.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "interface-MediaSubType": {
+      "description": "",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "interface-IPcheckingEnabled": {
+      "description": "",
+      "ui-priority": 0,
+      "misp-attribute": "boolean",
+      "disable_correlation": true
+    },
+    "additional-comments": {
+      "description": "Comments.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "Regripper object template designed to gather network information from the system-hive.",
+  "meta-category": "misc",
+  "uuid": "a5a3ba3a-ba2e-42a4-be45-b36809ae56f0",
+  "name": "regripper-system-hive-network-information."
+}

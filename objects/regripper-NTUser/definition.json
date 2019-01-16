@@ -1,0 +1,98 @@
+{
+  "required": [
+    "key"
+  ],
+  "requiredOneOf": [
+    "logon-user-name"
+  ],
+  "attributes": {
+    "key": {
+      "description": "Registry key where the information is retrieved from.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "key-last-write-time": {
+      "description": "Date and time when the key was last updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "logon-user-name": {
+      "description": "Name assigned to the user profile.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "recent-folders-accessed": {
+      "description": "List of recent folders accessed by the user.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "recent-files-accessed": {
+      "description": "List of recent files accessed by the user.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "typed-urls": {
+      "description": "Urls typed by the user in internet explorer",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "applications-installed": {
+      "description": "List of applications installed.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "applications-run": {
+      "description": "List of applications set to run on the system.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "external-devices": {
+      "description": "List of external devices connected to the system by the user.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "user-init": {
+      "description": "Applications or processes set to run when the user logs onto the windows system.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "nukeOnDelete": {
+      "description": "Determines if the Recycle bin option has been disabled.",
+      "ui-priority": 0,
+      "misp-attribute": "boolean",
+      "disable_correlation": true
+    },
+    "network-connected-to": {
+      "description": "List of networks the user connected the system to.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "mount-points": {
+      "description": "Details of the mount points created on the system.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "disable_correlation": true
+    },
+    "comments": {
+      "description": "Additional information related to the user profile",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "Regripper Object template designed to present user specific configuration details extracted from the NTUSER.dat hive.",
+  "meta-category": "misc",
+  "uuid": "f9dc7b7e-8ab1-4dde-95d9-67e41b461c65",
+  "name": "regripper-NTUser"
+}

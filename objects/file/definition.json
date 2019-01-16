@@ -4,8 +4,6 @@
     "size-in-bytes",
     "authentihash",
     "ssdeep",
-    "imphash",
-    "pehash",
     "md5",
     "sha1",
     "sha224",
@@ -18,7 +16,8 @@
     "pattern-in-file",
     "x509-fingerprint-sha1",
     "malware-sample",
-    "path"
+    "path",
+    "fullpath"
   ],
   "attributes": {
     "md5": {
@@ -98,7 +97,8 @@
         "External analysis"
       ],
       "ui-priority": 1,
-      "misp-attribute": "pattern-in-file"
+      "misp-attribute": "pattern-in-file",
+      "multiple": true
     },
     "text": {
       "description": "Free text value to attach to the file",
@@ -128,6 +128,12 @@
     "path": {
       "description": "Path of the filename complete or partial",
       "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "fullpath": {
+      "description": "Complete path of the filename including the filename",
       "multiple": true,
       "ui-priority": 0,
       "misp-attribute": "text"
@@ -164,7 +170,7 @@
       ]
     }
   },
-  "version": 11,
+  "version": 15,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",

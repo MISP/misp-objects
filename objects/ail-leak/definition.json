@@ -12,6 +12,7 @@
   "attributes": {
     "sensor": {
       "description": "The AIL sensor uuid where the leak was processed and analysed.",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -23,6 +24,7 @@
     },
     "duplicate_number": {
       "description": "Number of known duplicates.",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "counter"
     },
@@ -62,7 +64,7 @@
       "misp-attribute": "attachment"
     }
   },
-  "version": 8,
+  "version": 9,
   "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
   "meta-category": "misc",
   "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
