@@ -1,7 +1,6 @@
 {
-  "requiredOneOf": [
-    "first-name",
-    "last-name",
+  "required": [
+    "notice-color"
   ],
   "attributes": {
     "notice-color": {
@@ -23,7 +22,7 @@
       "ui-priority": 0,
       "misp-attribute": "last-name"
     },
-    "Forename": {
+    "forename": {
       "description": "First name of a natural person.",
       "ui-priority": 0,
       "misp-attribute": "first-name",
@@ -38,12 +37,12 @@
     "father-s-family-name-&-forename": {
       "description": "Father's family name & forename.",
       "ui-priority": 0,
-      "misp-attribute": "text",
+      "misp-attribute": "text"
     },
     "mother-s-family-name-&-forename": {
       "description": "Mother's family name & forename.",
       "ui-priority": 0,
-      "misp-attribute": "text",
+      "misp-attribute": "text"
     },
     "date-of-birth": {
       "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
@@ -97,38 +96,38 @@
     "place-of-disappearance": {
       "description": "Place of birth of a natural person.",
       "ui-priority": 0,
-      "misp-attribute": "text",
+      "misp-attribute": "text"
     },
-    "height":	{
+    "height": {
       "description": "Height of a person.",
       "ui-priority": 0,
       "misp-attribute": "text",
       "disable_correlation": true
     },
-  "weight": {
-    "description": "weight of a person.",
-    "ui-priority": 0,
-    "misp-attribute": "text",
-    "disable_correlation": true
+    "weight": {
+      "description": "weight of a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
-  "colour-of-hair": {
-    "description": "Description of a person's colour of hair.",
-    "ui-priority": 0,
-    "misp-attribute": "text",
-    "disable_correlation": true
+    "colour-of-hair": {
+      "description": "Description of a person's colour of hair.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
-  "colour-of-eyes": 	 {
-    "description": "Description of a person's colour of eyes.",
-    "ui-priority": 0,
-    "misp-attribute": "text",
-    "disable_correlation": true
+    "colour-of-eyes": {
+      "description": "Description of a person's colour of eyes.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
-    "distinguishing-marks-and-characteristics": 	 {
+    "distinguishing-marks-and-characteristics": {
       "description": "Distinguishing marks and characteristics of a person.",
       "ui-priority": 0,
       "misp-attribute": "text",
       "disable_correlation": true
-      },
+    },
     "portrait": {
       "description": "Portrait of the person.",
       "ui-priority": 10,
