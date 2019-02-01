@@ -178,9 +178,19 @@
       "ui-priority": 1,
       "disable_correlation": true,
       "misp-attribute": "text"
+    },
+    "level-of-knowledge": {
+      "description": "Level of knowledge of the organisation who created this object",
+      "ui-priority": 10,
+      "values_list": [
+        "Only the anonymised data is known",
+        "Deanonymised data is known"
+      ],
+      "disable_correlation": true,
+      "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Anonymisation object describing an anonymisation technique used to encode MISP attribute values. Reference: https://www.caida.org/tools/taxonomy/anonymization.xml",
   "meta-category": "misc",
   "uuid": "5867cffe-60ff-44f6-b097-e5f36b5de0ac",
