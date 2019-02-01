@@ -55,13 +55,46 @@
       "misp-attribute": "datetime",
       "disable_correlation": true
     },
+    "takedown-request": {
+      "description": "When the phishing was requested to be taken down",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "takedown-request-to": {
+      "description": "Destination email address for take-down request",
+      "misp-attribute": "email-dst",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "categories": [
+        "Network activity"
+      ],
+      "multiple": true
+    },
     "target": {
       "description": "Targeted organisation by the phishing",
       "ui-priority": 0,
       "misp-attribute": "text"
+    },
+    "screenshot": {
+      "description": "Screenshot of phishing site",
+      "misp-attribute": "attachment",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "categories": [
+        "External analysis"
+      ]
+    },
+    "internal reference": {
+      "description": "Internal reference such as ticket ID",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "categories": [
+        "Internal reference"
+      ]
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Phishing template to describe a phishing website and its analysis.",
   "meta-category": "network",
   "uuid": "2dad6f9d-d425-4217-8fda-0b0a2d815307",
