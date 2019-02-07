@@ -8,6 +8,11 @@
       "ui-priority": 1,
       "misp-attribute": "url"
     },
+    "hostname": {
+      "description": "host of the phishing website",
+      "ui-priority": 1,
+      "misp-attribute": "hostname"
+    },
     "phishtank-id": {
       "description": "Phishtank ID of the reported phishing",
       "ui-priority": 1,
@@ -94,7 +99,7 @@
       ]
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "Phishing template to describe a phishing website and its analysis.",
   "meta-category": "network",
   "uuid": "2dad6f9d-d425-4217-8fda-0b0a2d815307",
