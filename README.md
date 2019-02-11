@@ -62,7 +62,7 @@ allowing advanced users to show all the attributes depending of their configurat
 shall be set to true if multiple elements of the same key can be used in the object. An optional **values_list**
 where this list of value can be selected as a value for an attribute. An optional **sane_default** where this list of value recommend
 potential a sane default for an attribute. An optional **disable_correlation** boolean field to suggest the disabling of correlation
-for a specific attribute.
+for a specific attribute. An optional **to_ids** boolean field to disable the IDS flag of an attribute.
 
 ## Existing MISP objects
 
