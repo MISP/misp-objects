@@ -68,13 +68,14 @@
     },
     "takedown-request-to": {
       "description": "Destination email address for take-down request",
-      "misp-attribute": "email-dst",
+      "misp-attribute": "text",
       "disable_correlation": true,
       "ui-priority": 1,
       "categories": [
-        "Network activity"
+        "Other"
       ],
-      "multiple": true
+      "multiple": true,
+      "to_ids": false
     },
     "target": {
       "description": "Targeted organisation by the phishing",
@@ -99,7 +100,7 @@
       ]
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Phishing template to describe a phishing website and its analysis.",
   "meta-category": "network",
   "uuid": "2dad6f9d-d425-4217-8fda-0b0a2d815307",
