@@ -151,9 +151,25 @@
       "ui-priority": 10,
       "misp-attribute": "attachment",
       "multiple": true
+    },
+    "role": {
+      "description": "The role of a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "values_list": [
+        "Suspect",
+        "Victim",
+        "Defendent",
+        "Accused",
+        "Culprit",
+        "Accomplice",
+        "Witness"
+      ],
+      "disable_correlation": true
     }
   },
-  "version": 7,
+  "version": 8,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
