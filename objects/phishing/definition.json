@@ -4,14 +4,21 @@
   ],
   "attributes": {
     "url": {
-      "description": "Original url of the phishing website",
+      "description": "Original URL of the phishing website",
       "ui-priority": 1,
       "misp-attribute": "url"
     },
+    "url-redirect": {
+      "description": "Redirect URL of the phishing website",
+      "ui-priority": 1,
+      "misp-attribute": "url",
+      "multiple": true
+    },    
     "hostname": {
       "description": "host of the phishing website",
       "ui-priority": 1,
-      "misp-attribute": "hostname"
+      "misp-attribute": "hostname",
+      "multiple": true
     },
     "phishtank-id": {
       "description": "Phishtank ID of the reported phishing",
@@ -80,7 +87,8 @@
     "target": {
       "description": "Targeted organisation by the phishing",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "multiple": true
     },
     "screenshot": {
       "description": "Screenshot of phishing site",
@@ -89,7 +97,8 @@
       "ui-priority": 1,
       "categories": [
         "External analysis"
-      ]
+      ],
+      "multiple": true
     },
     "internal reference": {
       "description": "Internal reference such as ticket ID",
@@ -100,7 +109,7 @@
       ]
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "Phishing template to describe a phishing website and its analysis.",
   "meta-category": "network",
   "uuid": "2dad6f9d-d425-4217-8fda-0b0a2d815307",
