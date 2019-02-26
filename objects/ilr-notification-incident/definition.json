@@ -19,7 +19,7 @@
       "misp-attribute": "text"
     },
     "impact-servicesw-urgence": {
-      "description": "Services d’urgences impactés ?",
+      "description": "Services d’urgences impactes ?",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text",
@@ -29,7 +29,7 @@
       ]
     },
     "description-probleme-services-urgence": {
-      "description": "Description du problème sur les services d’urgences impactes",
+      "description": "Description du probleme sur les services d’urgences impactes",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
@@ -64,26 +64,26 @@
       "misp-attribute": "text",
       "values_list": [
         "rreur humaine",
-        "Défaut système 'hardware', 'software', 'procédures'",
+        "Defaut systeme 'hardware', 'software', 'procedures'",
         "Attaque malveillante",
-        "Défaut d’une partie tierce ou externe",
+        "Defaut d’une partie tierce ou externe",
         "Catastrophe naturelle"
       ]
     },
     "autres-informations": {
-      "description": "Autres informations concernant la nature de l’incident notamment la liste des actifs affectés et les causes subséquentes éventuelles, déclenchées par la cause initiale ",
+      "description": "Autres informations concernant la nature de l’incident notamment la liste des actifs affectes et les causes subsequentes eventuelles, declenches par la cause initiale ",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "description-incident": {
-      "description": "Description générale de l’incident",
+      "description": "Description generale de l’incident",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "traitement-incident": {
-      "description": "Traitement de l’incident et actions effectuées en ordre chronologique",
+      "description": "Traitement de l’incident et actions effectuees en ordre chronologique",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
@@ -132,7 +132,7 @@
     }
   },
   "version": 1,
-  "description": "Institut Luxembourgeois de Régulation - Notification d'incident",
+  "description": "Institut Luxembourgeois de Regulation - Notification d'incident",
   "meta-category": "misc",
   "uuid": "b8ade604-39b2-11e9-b753-1fd28d3b612c",
   "name": "ilr-notification-incident"
