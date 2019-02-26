@@ -16,20 +16,20 @@
         "Acces Internet mobile"
       ]
     },
-    "Nombre d'utilisateurs touches": {
+    "nombre-utilisateurs-touches": {
       "description": "Nombre d’utilisateurs touches par l'incident",
       "ui-priority": 0,
       "disable_correlation": true,
       "misp-attribute": "text"
     },
-    "Pourcentage d'utilisateurs touches": {
+    "pourcentage-utilisateurs-touches": {
       "description": "Pourcentage d'utilisateurs du service touches par l'incident",
       "ui-priority": 0,
       "disable_correlation": true,
       "misp-attribute": "text"
     },
-    "Durée": {
-      "description": "Durée de l'incident en hh : mm",
+    "duree": {
+      "description": "Duree de l'incident en hh : mm",
       "ui-priority": 0,
       "disable_correlation": true,
       "misp-attribute": "text"
