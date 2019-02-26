@@ -52,7 +52,7 @@
       "misp-attribute": "text"
     },
     "details-service": {
-      "description": "Details relatifs au service concerne et à l’impact de l’incident",
+      "description": "Details relatifs au service concerne et a l’impact de l’incident",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
@@ -101,7 +101,7 @@
       "misp-attribute": "text"
     },
     "actions-corrective": {
-      "description": "Actions correctives à long terme",
+      "description": "Actions correctives a long terme",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
