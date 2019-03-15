@@ -1,0 +1,139 @@
+{
+  "attributes": {
+    "Nom entreprise": {
+      "description": "Nom de l’entreprise notifiee",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "date-incident": {
+      "description": "Date/heure de la detection de l’incident:",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "date-pre-notification": {
+      "description": "Date de la pre-notification",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "impact-servicesw-urgence": {
+      "description": "Services d’urgences impactes ?",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "values_list": [
+        "Oui",
+        "Non"
+      ]
+    },
+    "description-probleme-services-urgence": {
+      "description": "Description du probleme sur les services d’urgences impactes",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "delimitation-geographique": {
+      "description": "Delimitation geographique",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "values_list": [
+        "Nationale",
+        "Regionale"
+      ]
+    },
+    "zone-impactee": {
+      "description": "zones/communes/villes impactees ",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "text"
+    },
+    "details-service": {
+      "description": "Details relatifs au service concerne et a l’impact de l’incident",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "cause-initiale-incident": {
+      "description": "Cause initiale de l'incident",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "values_list": [
+        "rreur humaine",
+        "Defaut systeme 'hardware', 'software', 'procedures'",
+        "Attaque malveillante",
+        "Defaut d’une partie tierce ou externe",
+        "Catastrophe naturelle"
+      ]
+    },
+    "autres-informations": {
+      "description": "Autres informations concernant la nature de l’incident notamment la liste des actifs affectes et les causes subsequentes eventuelles, declenches par la cause initiale ",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "description-incident": {
+      "description": "Description generale de l’incident",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "traitement-incident": {
+      "description": "Traitement de l’incident et actions effectuees en ordre chronologique",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "actions-posterieur": {
+      "description": "Actions posterieures de l’incident pour minimiser le risque ",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "interconnections-affectees": {
+      "description": "Interconnections nationales et/ou internationales affectees",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "actions-corrective": {
+      "description": "Actions correctives a long terme",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "remarques": {
+      "description": "Remarque(s), notamment les experiences gagnees et les leçons tirees de l’incident",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "nom-contact-incident": {
+      "description": "Nom de la personne de contact en rapport avec l’incident",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "telephone-contact-incident": {
+      "description": "Telephone de la personne de contact en rapport avec l’incident",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "email-contact-incident": {
+      "description": "Email de la personne de contact en rapport avec l’incident",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Institut Luxembourgeois de Regulation - Notification d'incident",
+  "meta-category": "misc",
+  "uuid": "b8ade604-39b2-11e9-b753-1fd28d3b612c",
+  "name": "ilr-notification-incident"
+}

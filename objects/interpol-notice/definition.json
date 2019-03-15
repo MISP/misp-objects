@@ -1,0 +1,143 @@
+{
+  "required": [
+    "notice-color"
+  ],
+  "attributes": {
+    "notice-color": {
+      "description": "The color/type of the notice",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "sane_default": [
+        "Red",
+        "Yellow",
+        "Blue",
+        "Black",
+        "Green",
+        "Orange",
+        "Purple"
+      ]
+    },
+    "present-family-name": {
+      "description": "Last name of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "last-name"
+    },
+    "forename": {
+      "description": "First name of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "first-name",
+      "disable_correlation": true
+    },
+    "alias": {
+      "description": "Alias name or known as.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "father-s-family-name-&-forename": {
+      "description": "Father's family name & forename.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "mother-s-family-name-&-forename": {
+      "description": "Mother's family name & forename.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "date-of-birth": {
+      "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
+      "ui-priority": 0,
+      "misp-attribute": "date-of-birth"
+    },
+    "place-of-birth": {
+      "description": "Place of birth of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "place-of-birth",
+      "disable_correlation": true
+    },
+    "sex": {
+      "description": "The gender of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "gender",
+      "values_list": [
+        "Male",
+        "Female",
+        "Other",
+        "Prefer not to say"
+      ],
+      "disable_correlation": true
+    },
+    "nationality": {
+      "description": "The nationality of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "nationality",
+      "multiple": true,
+      "disable_correlation": true
+    },
+    "language-spoken": {
+      "description": "Languages spoken by a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "disable_correlation": true
+    },
+    "charges": {
+      "description": "Charges published as provided by requesting entity",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "disable_correlation": true
+    },
+    "date-of-disappearance": {
+      "description": "Date of disappearance of a missing person.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "place-of-disappearance": {
+      "description": "Place of birth of a natural person.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "height": {
+      "description": "Height of a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "weight": {
+      "description": "weight of a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "colour-of-hair": {
+      "description": "Description of a person's colour of hair.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "colour-of-eyes": {
+      "description": "Description of a person's colour of eyes.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "distinguishing-marks-and-characteristics": {
+      "description": "Distinguishing marks and characteristics of a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "portrait": {
+      "description": "Portrait of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "attachment",
+      "multiple": true
+    }
+  },
+  "version": 1,
+  "description": "An object which describes a Interpol notice.",
+  "meta-category": "misc",
+  "uuid": "24927972-1e4a-11e9-857e-3b2306b99911",
+  "name": "interpol-notice"
+}

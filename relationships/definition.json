@@ -223,6 +223,13 @@
       ]
     },
     {
+      "name": "retrieved-from",
+      "description": "This relationship describes an object retrieved from the target object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "authored-by",
       "description": "This relationship describes the author of a specific object.",
       "format": [

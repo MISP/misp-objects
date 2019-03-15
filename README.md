@@ -62,7 +62,7 @@ allowing advanced users to show all the attributes depending of their configurat
 shall be set to true if multiple elements of the same key can be used in the object. An optional **values_list**
 where this list of value can be selected as a value for an attribute. An optional **sane_default** where this list of value recommend
 potential a sane default for an attribute. An optional **disable_correlation** boolean field to suggest the disabling of correlation
-for a specific attribute.
+for a specific attribute. An optional **to_ids** boolean field to disable the IDS flag of an attribute.
 
 ## Existing MISP objects
 
@@ -96,6 +96,7 @@ for a specific attribute.
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
 * [objects/gtp-attack](objects/gtp-attack/definition.json) - GTP attack object as seen on a GSM, UMTS or LTE network.
 * [objects/http-request](objects/http-request/definition.json) - A single HTTP request header object.
+* [objects/interpol-notice](objects/interpol-notice/definition.json) - Object used to represent an Interpol notice
 * [objects/ip-api-address](objects/ip-api-address/definition.json) - Object describing IP Address information, as defined in [ip-api.com](http://ip-api.com).
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/ja3](objects/ja3/definition.json) - A ja3 object which describes an SSL client fingerprint in an easy to produce and shareable way.
