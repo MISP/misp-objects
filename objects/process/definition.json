@@ -3,7 +3,7 @@
   "uuid": "02aeef94-ac23-455c-addb-731757ceafb5",
   "meta-category": "misc",
   "description": "Object describing a system process.",
-  "version": 3,
+  "version": 5,
   "attributes": {
     "creation-time": {
       "description": "Local date/time at which the process was created.",
@@ -56,7 +56,7 @@
     "current-directory": {
       "description": "Current working directory of the process",
       "ui-priority": 2,
-      "misp-attribute": "filename",
+      "misp-attribute": "text",
       "disable_correlation": true
     },
     "image": {
