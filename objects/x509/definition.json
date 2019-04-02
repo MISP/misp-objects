@@ -3,7 +3,8 @@
     "x509-fingerprint-md5",
     "x509-fingerprint-sha1",
     "x509-fingerprint-sha256",
-    "serial-number"
+    "serial-number",
+    "issuer"
   ],
   "attributes": {
     "subject": {
@@ -105,7 +106,7 @@
       "ui-priority": 0
     }
   },
-  "version": 7,
+  "version": 8,
   "description": "x509 object describing a X.509 certificate",
   "meta-category": "network",
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
