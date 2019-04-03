@@ -101,6 +101,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
 * [objects/ja3](objects/ja3/definition.json) - A ja3 object which describes an SSL client fingerprint in an easy to produce and shareable way.
 * [objects/legal-entity](objects/legal-entity/definition.json) - Object describing a legal entity, such as an organisation.
+* [objects/lnk](objects/lnk/definition.json) - Object describing a Windows LNK (Windows Shortcut) file.
 * [objects/macho](objects/macho/definition.json) - Object describing a Mach object file format.
 * [objects/macho-section](objects/macho-section/definition.json) - Object describing a section of a Mach object file format.
 * [objects/mactime-timeline-analysis](objects/mactime-timeline-analysis/definition.json) - Mactime template, used in forensic investigations to describe the timeline of a file activity.
