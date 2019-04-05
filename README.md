@@ -139,6 +139,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/timecode](objects/timecode/definition.json) - Timecode object to describe a start of video sequence (e.g. CCTV evidence) and the end of the video sequence.
 * [objects/timesketch-timeline](objects/timesketch-timeline/definition.json) - A timesketch timeline object based on mandatory field in timesketch to describe a log entry.
 * [objects/timestamp](objects/timestamp/definition.json) - A generic timestamp object to represent time including first time and last time seen. Relationship will then define the kind of time relationship.
+* [objects/tor-hiddenservice](objects/tor-hiddenservice/definition.json) - Tor hidden service (Onion Service) object to describe a Tor hidden service.
 * [objects/tor-node](objects/tor-node/definition.json) - Tor node description which are part of the Tor network at a time.
 * [objects/tracking-id](objects/tracking-id/definition.json) - Analytics and tracking ID such as used in Google Analytics or other analytic platform.
 * [objects/transaction](objects/transaction/definition.json) - Object describing a financial transaction.
