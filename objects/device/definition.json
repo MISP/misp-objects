@@ -1,6 +1,7 @@
 {
   "requiredOneOf": [
-    "name"
+    "name",
+    "alias"
   ],
   "attributes": {
     "description": {
