@@ -55,7 +55,7 @@
     },
 
     "role": {
-      "description": "The role of a person.",
+      "description": "The role of the organization.",
       "ui-priority": 0,
       "misp-attribute": "text",
       "multiple": true,
@@ -71,9 +71,9 @@
       "disable_correlation": true
     }
   },
-  "version": 10,
-  "description": "An object which describes a person or an identity.",
+  "version": 1,
+  "description": "An object which describes an organization.",
   "meta-category": "organization",
-  "uuid": "ec8f8ca1-7f82-4d79-a9d0-2254303de686",
+  "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
   "name": "organization"
 }
