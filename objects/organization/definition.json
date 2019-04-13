@@ -1,0 +1,79 @@
+{
+  "requiredOneOf": [
+    "name",
+    "alias"
+  ],
+  "attributes": {
+    "name": {
+      "description": "Name of the organization",
+      "disable_correlation": false,
+      "ui-priority": 100,
+      "misp-attribute": "text"
+    },
+    "alias": {
+      "description": "Alias of the organization",
+      "ui-priority": 99,
+      "misp-attribute": "text",
+      "multiple" : true
+    },
+
+    "type-of-organizarion" : {
+      "description" : "Type of the organization",
+      "ui-priority" : 97,
+      "misp-attribute" : "text"
+    },
+    "date-of-inception": {
+      "description": "Date of inception of the organization",
+      "ui-priority": 0,
+      "misp-attribute": "date-of-birth"
+    },
+
+    "phone-number": {
+      "description": "Phone number of the organization.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "fax-number": {
+      "description": "Fax number of the organization.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "address": {
+      "description": "Postal address of the organization.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+
+    "e-mail": {
+      "description": "Email address of the organization.",
+      "ui-priority": 10,
+      "misp-attribute": "email-src",
+      "multiple": true
+    },
+
+    "role": {
+      "description": "The role of a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "values_list": [
+        "Suspect",
+        "Victim",
+        "Defendent",
+        "Accused",
+        "Culprit",
+        "Accomplice",
+        "Target"
+      ],
+      "disable_correlation": true
+    }
+  },
+  "version": 10,
+  "description": "An object which describes a person or an identity.",
+  "meta-category": "organization",
+  "uuid": "ec8f8ca1-7f82-4d79-a9d0-2254303de686",
+  "name": "organization"
+}
