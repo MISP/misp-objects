@@ -934,6 +934,13 @@
       "format": [
         "misp"
       ]
+    },
+    {
+      "name": "creates",
+      "description": "Represents an object that creates something.",
+      "format": [
+        "misp"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
