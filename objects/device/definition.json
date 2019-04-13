@@ -1,0 +1,62 @@
+{
+  "requiredOneOf": [
+    "name",
+    "alias"
+  ],
+  "attributes": {
+    "description": {
+      "description": "Description of the Device",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "name": {
+      "description": "Name of the Device",
+      "ui-priority": 101,
+      "misp-attribute": "text"
+    },
+    "alias": {
+      "description": "Alias of the Device",
+      "ui-priority": 100,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "device-type": {
+      "description": "Type of the device",
+      "ui-priority": 99,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "categories": [
+        "PC",
+        "Mobile",
+        "Laptop",
+        "HID",
+        "TV",
+        "IoT",
+        "Hardware",
+        "Other"
+      ]
+    },
+    "ip-address": {
+      "description": "Device IP address",
+      "ui-priority": 0,
+      "misp-attribute": "ip-src"
+    },
+    "analysis-date": {
+      "description": "Date of device analysis",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "attachment": {
+      "description": "An attachment",
+      "ui-priority": 0,
+      "misp-attribute": "attachment",
+      "multiple": true
+    }
+  },
+  "version": 3,
+  "description": "An object to define a device",
+  "meta-category": "misc",
+  "uuid": "0c64b41a-e583-4f4d-ac92-d484163b9e52",
+  "name": "Device"
+}

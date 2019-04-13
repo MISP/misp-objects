@@ -13,17 +13,17 @@
     },
     "last-name": {
       "description": "Last name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 100,
       "misp-attribute": "last-name"
     },
     "middle-name": {
       "description": "Middle name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 99,
       "misp-attribute": "middle-name"
     },
     "first-name": {
       "description": "First name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 98,
       "misp-attribute": "first-name",
       "disable_correlation": true
     },
@@ -34,13 +34,13 @@
     },
     "title": {
       "description": "Title of the natural person such as Dr. or equivalent.",
-      "ui-priority": 0,
+      "ui-priority": 101,
       "misp-attribute": "text",
       "disable_correlation": true
     },
     "alias": {
       "description": "Alias name or known as.",
-      "ui-priority": 0,
+      "ui-priority": 97,
       "misp-attribute": "text",
       "multiple": true
     },
@@ -182,7 +182,8 @@
         "Accused",
         "Culprit",
         "Accomplice",
-        "Witness"
+        "Witness",
+        "Target"
       ],
       "disable_correlation": true
     }
