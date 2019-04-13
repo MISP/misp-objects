@@ -56,7 +56,7 @@
   },
   "version": 3,
   "description": "An object to define a device",
-  "meta-category": "device",
+  "meta-category": "misc",
   "uuid": "0c64b41a-e583-4f4d-ac92-d484163b9e52",
   "name": "Device"
 }
