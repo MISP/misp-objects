@@ -27,7 +27,7 @@
       "ui-priority": 99,
       "misp-attribute": "attachment",
       "multiple": true
-    },
+    }
   },
   "version": 1,
   "description": "Metadata used to generate an executive level report",

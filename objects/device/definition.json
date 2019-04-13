@@ -7,18 +7,18 @@
       "description": "Description of the Device",
       "ui-priority": 0,
       "misp-attribute": "text",
-      "disable_correlation" : true
+      "disable_correlation": true
     },
-    "name" : {
-      "description" : "Name of the Device",
-      "ui-priority" : 101,
-      "misp-attribute" : "text",
+    "name": {
+      "description": "Name of the Device",
+      "ui-priority": 101,
+      "misp-attribute": "text"
     },
-    "alias" : {
-      "description" : "Alias of the Device",
-      "ui-priority" : 100,
-      "misp-attribute" : "text",
-      "multiple" : true
+    "alias": {
+      "description": "Alias of the Device",
+      "ui-priority": 100,
+      "misp-attribute": "text",
+      "multiple": true
     },
     "device-type": {
       "description": "Type of the device",
@@ -46,12 +46,12 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
-    "attachment" : {
-      "description" : "An attachment",
-      "ui-priority" : 0,
+    "attachment": {
+      "description": "An attachment",
+      "ui-priority": 0,
       "misp-attribute": "attachment",
-      "multiple" : true
-    },
+      "multiple": true
+    }
   },
   "version": 3,
   "description": "An object to define a device",
