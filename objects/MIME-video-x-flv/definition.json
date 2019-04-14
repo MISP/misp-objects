@@ -1,0 +1,358 @@
+{
+    "attributes": {
+        "Composite-ImageSize": {
+            "description": "Image Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Composite-Megapixels": {
+            "description": "Megapixels",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ExifTool-ExifToolVersion": {
+            "description": "ExifTool Version Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-Directory": {
+            "description": "Directory",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileAccessDate": {
+            "description": "File Access Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileInodeChangeDate": {
+            "description": "File Inode Change Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileModifyDate": {
+            "description": "File Modification Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileName": {
+            "description": "File Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FilePermissions": {
+            "description": "File Permissions",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileSize": {
+            "description": "File Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileType": {
+            "description": "File Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileTypeExtension": {
+            "description": "File Type Extension",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-MIMEType": {
+            "description": "MIME Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "Flash-AudioBitrate": {
+            "description": "Audio Bitrate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioBitsPerSample": {
+            "description": "Audio Bits Per Sample",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioChannels": {
+            "description": "Audio Channels",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioCodecID": {
+            "description": "Audio Codec ID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioDelay": {
+            "description": "Audio Delay",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioEncoding": {
+            "description": "Audio Encoding",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioSampleRate": {
+            "description": "Audio Sample Rate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioSampleSize": {
+            "description": "Audio Sample Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-AudioSize": {
+            "description": "Audio Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CanSeekToEnd": {
+            "description": "Can Seek To End",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint0Name": {
+            "description": "Cue Point 0 Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint0Time": {
+            "description": "Cue Point 0 Time",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint0Type": {
+            "description": "Cue Point 0 Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint1Name": {
+            "description": "Cue Point 1 Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint1ParameterParam1": {
+            "description": "Cue Point 1 Parameter Param 1",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint1ParameterParam2": {
+            "description": "Cue Point 1 Parameter Param 2",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint1Time": {
+            "description": "Cue Point 1 Time",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-CuePoint1Type": {
+            "description": "Cue Point 1 Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-DataSize": {
+            "description": "Data Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-Duration": {
+            "description": "Duration",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-FileSizeBytes": {
+            "description": "File Size Bytes",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-FrameRate": {
+            "description": "Frame Rate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-HasAudio": {
+            "description": "Has Audio",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-HasCuePoints": {
+            "description": "Has Cue Points",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-HasKeyFrames": {
+            "description": "Has Key Frames",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-HasMetadata": {
+            "description": "Has Metadata",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-HasVideo": {
+            "description": "Has Video",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-ImageHeight": {
+            "description": "Image Height",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-ImageWidth": {
+            "description": "Image Width",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-KeyFramePositions": {
+            "description": "Key Frame Positions",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-KeyFramesTimes": {
+            "description": "Key Frames Times",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-LastKeyFrameTime": {
+            "description": "Last Key Frame Time",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-LastTimeStamp": {
+            "description": "Last Time Stamp",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-MetadataCreator": {
+            "description": "Metadata Creator",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-MetadataDate": {
+            "description": "Metadata Date",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "Flash-Stereo": {
+            "description": "Stereo",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-Test": {
+            "description": "Test",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-VideoBitrate": {
+            "description": "Video Bitrate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-VideoCodecID": {
+            "description": "Video Codec ID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-VideoEncoding": {
+            "description": "Video Encoding",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Flash-VideoSize": {
+            "description": "Video Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "SourceFile": {
+            "description": "/tmp/exiftool/t/images/Flash.flv",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "first-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "last-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "source-file": {
+            "description": "Source filename",
+            "disable_correlation": true,
+            "misp-attribute": "filename",
+            "ui-priority": 1
+        }
+    },
+    "description": "Object describing file metadata.",
+    "meta-category": "file",
+    "name": "video-x-flv",
+    "required": [
+        "source-file"
+    ],
+    "uuid": "2ea473fc-f003-422b-b03b-2d49f462806c",
+    "version": 1
+}

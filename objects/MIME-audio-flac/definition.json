@@ -1,0 +1,196 @@
+{
+    "attributes": {
+        "ExifTool-ExifToolVersion": {
+            "description": "ExifTool Version Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-BitsPerSample": {
+            "description": "Bits Per Sample",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-BlockSizeMax": {
+            "description": "Block Size Max",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-BlockSizeMin": {
+            "description": "Block Size Min",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-Channels": {
+            "description": "Channels",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-FrameSizeMax": {
+            "description": "Frame Size Max",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-FrameSizeMin": {
+            "description": "Frame Size Min",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-MD5Signature": {
+            "description": "MD5 Signature",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-SampleRate": {
+            "description": "Sample Rate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "FLAC-TotalSamples": {
+            "description": "Total Samples",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-Directory": {
+            "description": "Directory",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileAccessDate": {
+            "description": "File Access Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileInodeChangeDate": {
+            "description": "File Inode Change Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileModifyDate": {
+            "description": "File Modification Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileName": {
+            "description": "File Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FilePermissions": {
+            "description": "File Permissions",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileSize": {
+            "description": "File Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileType": {
+            "description": "File Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileTypeExtension": {
+            "description": "File Type Extension",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-MIMEType": {
+            "description": "MIME Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "SourceFile": {
+            "description": "/tmp/exiftool/t/images/FLAC.flac",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Vorbis-Copyright": {
+            "description": "Copyright",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Vorbis-ReplayGainAlbumGain": {
+            "description": "Replay Gain Album Gain",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Vorbis-ReplayGainAlbumPeak": {
+            "description": "Replay Gain Album Peak",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Vorbis-ReplayGainTrackGain": {
+            "description": "Replay Gain Track Gain",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Vorbis-ReplayGainTrackPeak": {
+            "description": "Replay Gain Track Peak",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Vorbis-Title": {
+            "description": "Title",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Vorbis-Vendor": {
+            "description": "Vendor",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "first-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "last-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "source-file": {
+            "description": "Source filename",
+            "disable_correlation": true,
+            "misp-attribute": "filename",
+            "ui-priority": 1
+        }
+    },
+    "description": "Object describing file metadata.",
+    "meta-category": "file",
+    "name": "audio-flac",
+    "required": [
+        "source-file"
+    ],
+    "uuid": "dfec6852-8a01-497f-ad4c-5fb90a0c1de3",
+    "version": 1
+}

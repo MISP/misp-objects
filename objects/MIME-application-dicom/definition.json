@@ -1,0 +1,688 @@
+{
+    "attributes": {
+        "DICOM-AccessionNumber": {
+            "description": "Accession Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-AcquisitionDate": {
+            "description": "Acquisition Date",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-AcquisitionMatrix": {
+            "description": "Acquisition Matrix",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-AcquisitionNumber": {
+            "description": "Acquisition Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-AcquisitionTime": {
+            "description": "Acquisition Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "DICOM-AdditionalPatientHistory": {
+            "description": "Additional Patient History",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-BitsAllocated": {
+            "description": "Bits Allocated",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-BitsStored": {
+            "description": "Bits Stored",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-CardiacNumberOfImages": {
+            "description": "Cardiac Number Of Images",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-Columns": {
+            "description": "Columns",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ContentDate": {
+            "description": "Content Date",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ContentTime": {
+            "description": "Content Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "DICOM-EchoNumber": {
+            "description": "Echo Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-EchoTime": {
+            "description": "Echo Time",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-EchoTrainLength": {
+            "description": "Echo Train Length",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-FileMetaInfoGroupLength": {
+            "description": "File Meta Info Group Length",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-FileMetaInfoVersion": {
+            "description": "File Meta Info Version",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-FlipAngle": {
+            "description": "Flip Angle",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-FrameOfReferenceUID": {
+            "description": "Frame Of Reference UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-HeartRate": {
+            "description": "Heart Rate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-HighBit": {
+            "description": "High Bit",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImageOrientation": {
+            "description": "Image Orientation",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImageOrientationPatient": {
+            "description": "Image Orientation Patient",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImagePosition": {
+            "description": "Image Position",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImagePositionPatient": {
+            "description": "Image Position Patient",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImageType": {
+            "description": "Image Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImagesInAcquisition": {
+            "description": "Images In Acquisition",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImagingFrequency": {
+            "description": "Imaging Frequency",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImplementationClassUID": {
+            "description": "Implementation Class UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ImplementationVersionName": {
+            "description": "Implementation Version Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-InPlanePhaseEncodingDirection": {
+            "description": "In Plane Phase Encoding Direction",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-InstanceNumber": {
+            "description": "Instance Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-InstitutionName": {
+            "description": "Institution Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-LargestImagePixelValue": {
+            "description": "Largest Image Pixel Value",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-MRAcquisitionType": {
+            "description": "MR Acquisition Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-MagneticFieldStrength": {
+            "description": "Magnetic Field Strength",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-Manufacturer": {
+            "description": "Manufacturer",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ManufacturersModelName": {
+            "description": "Manufacturers Model Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-MediaStorageSOPClassUID": {
+            "description": "Media Storage SOP Class UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-MediaStorageSOPInstanceUID": {
+            "description": "Media Storage SOP Instance UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-Modality": {
+            "description": "Modality",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-NumberOfAverages": {
+            "description": "Number Of Averages",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-NumberOfPhaseEncodingSteps": {
+            "description": "Number Of Phase Encoding Steps",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-OperatorsName": {
+            "description": "Operators Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientAge": {
+            "description": "Patient Age",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientBirthDate": {
+            "description": "Patient Birth Date",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientID": {
+            "description": "Patient ID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientName": {
+            "description": "Patient Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientOrientation": {
+            "description": "Patient Orientation",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientPosition": {
+            "description": "Patient Position",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientSex": {
+            "description": "Patient Sex",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PatientWeight": {
+            "description": "Patient Weight",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PerformingPhysicianName": {
+            "description": "Performing Physician Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PhotometricInterpretation": {
+            "description": "Photometric Interpretation",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PixelBandwidth": {
+            "description": "Pixel Bandwidth",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PixelData": {
+            "description": "Pixel Data",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PixelPaddingValue": {
+            "description": "Pixel Padding Value",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PixelRepresentation": {
+            "description": "Pixel Representation",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PixelSpacing": {
+            "description": "Pixel Spacing",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-PositionReferenceIndicator": {
+            "description": "Position Reference Indicator",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ProtocolName": {
+            "description": "Protocol Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ReceiveCoilName": {
+            "description": "Receive Coil Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ReconstructionDiameter": {
+            "description": "Reconstruction Diameter",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ReferringPhysicianName": {
+            "description": "Referring Physician Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-RepetitionTime": {
+            "description": "Repetition Time",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-RescaleIntercept": {
+            "description": "Rescale Intercept",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-RescaleSlope": {
+            "description": "Rescale Slope",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-RescaleType": {
+            "description": "Rescale Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-Rows": {
+            "description": "Rows",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SAR": {
+            "description": "SAR",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SOPClassUID": {
+            "description": "SOP Class UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SOPInstanceUID": {
+            "description": "SOP Instance UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SamplesPerPixel": {
+            "description": "Samples Per Pixel",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ScanOptions": {
+            "description": "Scan Options",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-ScanningSequence": {
+            "description": "Scanning Sequence",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SequenceName": {
+            "description": "Sequence Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SequenceVariant": {
+            "description": "Sequence Variant",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SeriesDate": {
+            "description": "Series Date",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SeriesDescription": {
+            "description": "Series Description",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SeriesInstanceUID": {
+            "description": "Series Instance UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SeriesNumber": {
+            "description": "Series Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SeriesTime": {
+            "description": "Series Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "DICOM-SliceLocation": {
+            "description": "Slice Location",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SliceThickness": {
+            "description": "Slice Thickness",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SmallestImagePixelValue": {
+            "description": "Smallest Image Pixel Value",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SoftwareVersion": {
+            "description": "Software Version",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SourceApplicationEntityTitle": {
+            "description": "Source Application Entity Title",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-SpacingBetweenSlices": {
+            "description": "Spacing Between Slices",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-StationName": {
+            "description": "Station Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-StudyDate": {
+            "description": "Study Date",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-StudyDescription": {
+            "description": "Study Description",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-StudyID": {
+            "description": "Study ID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-StudyInstanceUID": {
+            "description": "Study Instance UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-StudyTime": {
+            "description": "Study Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "DICOM-TransferSyntaxUID": {
+            "description": "Transfer Syntax UID",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-TriggerWindow": {
+            "description": "Trigger Window",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-WindowCenter": {
+            "description": "Window Center",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "DICOM-WindowWidth": {
+            "description": "Window Width",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ExifTool-ExifToolVersion": {
+            "description": "ExifTool Version Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-Directory": {
+            "description": "Directory",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileAccessDate": {
+            "description": "File Access Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileInodeChangeDate": {
+            "description": "File Inode Change Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileModifyDate": {
+            "description": "File Modification Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileName": {
+            "description": "File Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FilePermissions": {
+            "description": "File Permissions",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileSize": {
+            "description": "File Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileType": {
+            "description": "File Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileTypeExtension": {
+            "description": "File Type Extension",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-MIMEType": {
+            "description": "MIME Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "SourceFile": {
+            "description": "/tmp/exiftool/t/images/DICOM.dcm",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "first-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "last-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "source-file": {
+            "description": "Source filename",
+            "disable_correlation": true,
+            "misp-attribute": "filename",
+            "ui-priority": 1
+        }
+    },
+    "description": "Object describing file metadata.",
+    "meta-category": "file",
+    "name": "application-dicom",
+    "required": [
+        "source-file"
+    ],
+    "uuid": "f1a21f0c-8f3e-463d-b918-3c45eb9b12d0",
+    "version": 1
+}

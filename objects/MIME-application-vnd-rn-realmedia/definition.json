@@ -1,0 +1,394 @@
+{
+    "attributes": {
+        "Composite-DateTimeOriginal": {
+            "description": "Date/Time Original",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ExifTool-ExifToolVersion": {
+            "description": "ExifTool Version Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-Directory": {
+            "description": "Directory",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileAccessDate": {
+            "description": "File Access Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileInodeChangeDate": {
+            "description": "File Inode Change Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileModifyDate": {
+            "description": "File Modification Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileName": {
+            "description": "File Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FilePermissions": {
+            "description": "File Permissions",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileSize": {
+            "description": "File Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileType": {
+            "description": "File Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileTypeExtension": {
+            "description": "File Type Extension",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-MIMEType": {
+            "description": "MIME Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "ID3-Album": {
+            "description": "Album",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ID3-Artist": {
+            "description": "Artist",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ID3-Comment": {
+            "description": "Comment",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ID3-Genre": {
+            "description": "Genre",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ID3-Title": {
+            "description": "Title",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "ID3-Year": {
+            "description": "Year",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-AlbumName": {
+            "description": "Album Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Audiences": {
+            "description": "Audiences",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-AudioMode": {
+            "description": "Audio Mode",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Author": {
+            "description": "Author",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-AvgBitrate": {
+            "description": "Avg Bitrate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-AvgPacketSize": {
+            "description": "Avg Packet Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Comment": {
+            "description": "Comment",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-ContentRating": {
+            "description": "Content Rating",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Copyright": {
+            "description": "Copyright",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-CreateDate": {
+            "description": "Create Date",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "Real-Description": {
+            "description": "Description",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Duration": {
+            "description": "Duration",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-FileInfoVersion": {
+            "description": "File Info Version",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Flags": {
+            "description": "Flags",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Keywords": {
+            "description": "Keywords",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-MaxBitrate": {
+            "description": "Max Bitrate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-MaxPacketSize": {
+            "description": "Max Packet Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-ModifyDate": {
+            "description": "Modify Date",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "Real-NumPackets": {
+            "description": "Num Packets",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-NumStreams": {
+            "description": "Num Streams",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Preroll": {
+            "description": "Preroll",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Software": {
+            "description": "Software",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StatisticsCDInfoSource": {
+            "description": "Statistics CD Info Source",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamAvgBitrate": {
+            "description": "Stream Avg Bitrate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamAvgPacketSize": {
+            "description": "Stream Avg Packet Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamDuration": {
+            "description": "Stream Duration",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamMaxBitrate": {
+            "description": "Stream Max Bitrate",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamMaxPacketSize": {
+            "description": "Stream Max Packet Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamMimeType": {
+            "description": "Stream Mime Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "Real-StreamName": {
+            "description": "Stream Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamNumber": {
+            "description": "Stream Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamPreroll": {
+            "description": "Stream Preroll",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-StreamStartTime": {
+            "description": "Stream Start Time",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-Title": {
+            "description": "Title",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-TrackCategory": {
+            "description": "Track Category",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-TrackComments": {
+            "description": "Track Comments",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-TrackCommentsDataSize": {
+            "description": "Track Comments Data Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-TrackCommentsMimeType": {
+            "description": "Track Comments Mime Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "Real-TrackLyricsDataSize": {
+            "description": "Track Lyrics Data Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-TrackLyricsExtension": {
+            "description": "Track Lyrics Extension",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Real-TrackLyricsMimeType": {
+            "description": "Track Lyrics Mime Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "Real-VideoMode": {
+            "description": "Video Mode",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "SourceFile": {
+            "description": "/tmp/exiftool/t/images/Real.rm",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "first-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "last-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "source-file": {
+            "description": "Source filename",
+            "disable_correlation": true,
+            "misp-attribute": "filename",
+            "ui-priority": 1
+        }
+    },
+    "description": "Object describing file metadata.",
+    "meta-category": "file",
+    "name": "application-vnd-rn-realmedia",
+    "required": [
+        "source-file"
+    ],
+    "uuid": "189cab66-d221-4b90-9be1-079485475f53",
+    "version": 1
+}

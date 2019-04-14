@@ -1,0 +1,256 @@
+{
+    "attributes": {
+        "ExifTool-ExifToolVersion": {
+            "description": "ExifTool Version Number",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-Directory": {
+            "description": "Directory",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileAccessDate": {
+            "description": "File Access Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileInodeChangeDate": {
+            "description": "File Inode Change Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileModifyDate": {
+            "description": "File Modification Date/Time",
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "File-FileName": {
+            "description": "File Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FilePermissions": {
+            "description": "File Permissions",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileSize": {
+            "description": "File Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileType": {
+            "description": "File Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-FileTypeExtension": {
+            "description": "File Type Extension",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "File-MIMEType": {
+            "description": "MIME Type",
+            "disable_correlation": true,
+            "misp-attribute": "mime-type",
+            "ui-priority": 0
+        },
+        "Font-Ascent": {
+            "description": "Ascent",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-AvgWidth": {
+            "description": "Avg Width",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-BreakChar": {
+            "description": "Break Char",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-CharacterSet": {
+            "description": "Character Set",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-Copyright": {
+            "description": "Copyright",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-DefaultChar": {
+            "description": "Default Char",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-ExternalLeading": {
+            "description": "External Leading",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-FirstChar": {
+            "description": "First Char",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-FontName": {
+            "description": "Font Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-FontType": {
+            "description": "Font Type",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-InternalLeading": {
+            "description": "Internal Leading",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-Italic": {
+            "description": "Italic",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-LastChar": {
+            "description": "Last Char",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-MaxWidth": {
+            "description": "Max Width",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-PFMVersion": {
+            "description": "PFM Version",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-PitchAndFamily": {
+            "description": "Pitch And Family",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-PixHeight": {
+            "description": "Pix Height",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-PixWidth": {
+            "description": "Pix Width",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-PointSize": {
+            "description": "Point Size",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-PostScriptFontName": {
+            "description": "PostScript Font Name",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-Strikeout": {
+            "description": "Strikeout",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-Underline": {
+            "description": "Underline",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-Weight": {
+            "description": "Weight",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-WidthBytes": {
+            "description": "Width Bytes",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-XResolution": {
+            "description": "X Resolution",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "Font-YResolution": {
+            "description": "Y Resolution",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "SourceFile": {
+            "description": "/tmp/exiftool/t/images/Font.pfm",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 0
+        },
+        "first-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "last-seen": {
+            "disable_correlation": true,
+            "misp-attribute": "datetime",
+            "ui-priority": 0
+        },
+        "source-file": {
+            "description": "Source filename",
+            "disable_correlation": true,
+            "misp-attribute": "filename",
+            "ui-priority": 1
+        }
+    },
+    "description": "Object describing file metadata.",
+    "meta-category": "file",
+    "name": "application-x-font-pfm",
+    "required": [
+        "source-file"
+    ],
+    "uuid": "a0ceb6fb-b482-4c80-9ac0-e6e48ee5d0cb",
+    "version": 1
+}
