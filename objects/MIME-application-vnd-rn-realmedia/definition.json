@@ -367,11 +367,13 @@
       "ui-priority": 0
     },
     "first-seen": {
+      "description": "Source filename",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "last-seen": {
+      "description": "Source filename",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
@@ -389,6 +391,6 @@
   "required": [
     "source-file"
   ],
-  "uuid": "311db36a-1546-4846-8a08-601bb5fa6a71",
+  "uuid": "1642050d-c46f-46d6-b210-324ca9ac3e6d",
   "version": 1
 }

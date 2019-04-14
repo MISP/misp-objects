@@ -117,7 +117,7 @@ class MIMEDefinition:
             f = open('../objects/MIME-' + mime + '/definition.json', 'w')
 
             # Default definition values.
-            mime_definition = {'name': mime, 'meta-category': 'file', 'description': 'Object describing file metadata.', 'version': 1, 'required': ['source-file'], 'uuid': str(uuid.uuid4()), 'attributes': {'source-file': {'description': 'Source filename', 'ui-priority': 1, 'misp-attribute': 'filename', 'disable_correlation': True}, 'first-seen': {'misp-attribute': 'datetime', 'disable_correlation': True, 'ui-priority': 0}, 'last-seen': {'misp-attribute': 'datetime', 'disable_correlation': True, 'ui-priority': 0}}}
+            mime_definition = {'name': mime, 'meta-category': 'file', 'description': 'Object describing file metadata.', 'version': 1, 'required': ['source-file'], 'uuid': str(uuid.uuid4()), 'attributes': {'source-file': {'description': 'Source filename', 'ui-priority': 1, 'misp-attribute': 'filename', 'disable_correlation': True}, 'first-seen': {'description': 'Source filename', 'misp-attribute': 'datetime', 'disable_correlation': True, 'ui-priority': 0}, 'last-seen': {'description': 'Source filename', 'misp-attribute': 'datetime', 'disable_correlation': True, 'ui-priority': 0}}}
 
 
             for k, v in self.mimetype_misp_objects[mime].items():
