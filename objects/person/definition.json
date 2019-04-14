@@ -190,7 +190,7 @@
   },
   "version": 9,
   "description": "An object which describes a person or an identity.",
-  "meta-category": "misc",
+  "meta-category": "organization",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
   "name": "person"
 }
