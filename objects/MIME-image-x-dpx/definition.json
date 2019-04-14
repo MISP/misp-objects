@@ -1,268 +1,268 @@
 {
-    "attributes": {
-        "Composite-ImageSize": {
-            "description": "Image Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-Megapixels": {
-            "description": "Megapixels",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ExifTool-ExifToolVersion": {
-            "description": "ExifTool Version Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-BitDepth": {
-            "description": "Bit Depth",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ByteOrder": {
-            "description": "Byte Order",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ComponentsConfiguration": {
-            "description": "Components Configuration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-Copyright": {
-            "description": "Copyright",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-CreateDate": {
-            "description": "Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-Creator": {
-            "description": "Creator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-DPXFileSize": {
-            "description": "DPX File Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-DataSign": {
-            "description": "Data Sign",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-Directory": {
-            "description": "Directory",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-DittoKey": {
-            "description": "Ditto Key",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-EncryptionKey": {
-            "description": "Encryption Key",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileAccessDate": {
-            "description": "File Access Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileInodeChangeDate": {
-            "description": "File Inode Change Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileModifyDate": {
-            "description": "File Modification Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileName": {
-            "description": "File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FilePermissions": {
-            "description": "File Permissions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileSize": {
-            "description": "File Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileType": {
-            "description": "File Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileTypeExtension": {
-            "description": "File Type Extension",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FrameID": {
-            "description": "Frame ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FrameRate": {
-            "description": "Frame Rate",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-HeaderVersion": {
-            "description": "Header Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ImageDescription": {
-            "description": "Image Description",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ImageElements": {
-            "description": "Image Elements",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ImageFileName": {
-            "description": "Image File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ImageHeight": {
-            "description": "Image Height",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ImageWidth": {
-            "description": "Image Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-InputDeviceName": {
-            "description": "Input Device Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-InputDeviceSerialNumber": {
-            "description": "Input Device Serial Number",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-MIMEType": {
-            "description": "MIME Type",
-            "disable_correlation": true,
-            "misp-attribute": "mime-type",
-            "ui-priority": 0
-        },
-        "File-Orientation": {
-            "description": "Orientation",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-Project": {
-            "description": "Project",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-SlateInformation": {
-            "description": "Slate Information",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-SourceCreateDate": {
-            "description": "Source Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-SourceFileName": {
-            "description": "Source File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-UserID": {
-            "description": "User ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "SourceFile": {
-            "description": "Source File Path",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "first-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "last-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "source-file": {
-            "description": "Source filename",
-            "disable_correlation": true,
-            "misp-attribute": "filename",
-            "ui-priority": 1
-        }
+  "attributes": {
+    "Composite-ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
-    "description": "Object describing file metadata.",
-    "meta-category": "file",
-    "name": "image-x-dpx",
-    "required": [
-        "source-file"
-    ],
-    "uuid": "25b41156-87a1-46df-b136-c5b30a363769",
-    "version": 1
+    "Composite-Megapixels": {
+      "description": "Megapixels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifTool-ExifToolVersion": {
+      "description": "ExifTool Version Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-BitDepth": {
+      "description": "Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ByteOrder": {
+      "description": "Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ComponentsConfiguration": {
+      "description": "Components Configuration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-DPXFileSize": {
+      "description": "DPX File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-DataSign": {
+      "description": "Data Sign",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-DittoKey": {
+      "description": "Ditto Key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-EncryptionKey": {
+      "description": "Encryption Key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FrameID": {
+      "description": "Frame ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FrameRate": {
+      "description": "Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-HeaderVersion": {
+      "description": "Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ImageDescription": {
+      "description": "Image Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ImageElements": {
+      "description": "Image Elements",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ImageFileName": {
+      "description": "Image File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-InputDeviceName": {
+      "description": "Input Device Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-InputDeviceSerialNumber": {
+      "description": "Input Device Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "File-Orientation": {
+      "description": "Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-Project": {
+      "description": "Project",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-SlateInformation": {
+      "description": "Slate Information",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-SourceCreateDate": {
+      "description": "Source Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-SourceFileName": {
+      "description": "Source File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-UserID": {
+      "description": "User ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SourceFile": {
+      "description": "Source File Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "source-file": {
+      "description": "Source filename",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-x-dpx",
+  "required": [
+    "source-file"
+  ],
+  "uuid": "25b41156-87a1-46df-b136-c5b30a363769",
+  "version": 1
 }

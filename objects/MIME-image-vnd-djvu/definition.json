@@ -1,304 +1,304 @@
 {
-    "attributes": {
-        "Composite-ImageSize": {
-            "description": "Image Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-Megapixels": {
-            "description": "Megapixels",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Annotation": {
-            "description": "Annotation",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Author": {
-            "description": "Author",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-CreateDate": {
-            "description": "Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "DjVu-Creator": {
-            "description": "Creator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-DjVuVersion": {
-            "description": "DjVu Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Gamma": {
-            "description": "Gamma",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-ImageHeight": {
-            "description": "Image Height",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-ImageWidth": {
-            "description": "Image Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-IncludedFileID": {
-            "description": "Included File ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Keywords": {
-            "description": "Keywords",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-ModifyDate": {
-            "description": "Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "DjVu-Note": {
-            "description": "Note",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Orientation": {
-            "description": "Orientation",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Producer": {
-            "description": "Producer",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-SpatialResolution": {
-            "description": "Spatial Resolution",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-SubfileType": {
-            "description": "Subfile Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Subject": {
-            "description": "Subject",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Title": {
-            "description": "Title",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-Trapped": {
-            "description": "Trapped",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "DjVu-URL": {
-            "description": "URL",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ExifTool-ExifToolVersion": {
-            "description": "ExifTool Version Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-Directory": {
-            "description": "Directory",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileAccessDate": {
-            "description": "File Access Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileInodeChangeDate": {
-            "description": "File Inode Change Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileModifyDate": {
-            "description": "File Modification Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileName": {
-            "description": "File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FilePermissions": {
-            "description": "File Permissions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileSize": {
-            "description": "File Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileType": {
-            "description": "File Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileTypeExtension": {
-            "description": "File Type Extension",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-MIMEType": {
-            "description": "MIME Type",
-            "disable_correlation": true,
-            "misp-attribute": "mime-type",
-            "ui-priority": 0
-        },
-        "SourceFile": {
-            "description": "Source File Path",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-CreateDate": {
-            "description": "Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-Creator": {
-            "description": "Creator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-CreatorTool": {
-            "description": "Creator Tool",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Description": {
-            "description": "Description",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Keywords": {
-            "description": "Keywords",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ModifyDate": {
-            "description": "Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-Notes": {
-            "description": "Notes",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Producer": {
-            "description": "Producer",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Rights": {
-            "description": "Rights",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Subject": {
-            "description": "Subject",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Title": {
-            "description": "Title",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Trapped": {
-            "description": "Trapped",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "first-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "last-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "source-file": {
-            "description": "Source filename",
-            "disable_correlation": true,
-            "misp-attribute": "filename",
-            "ui-priority": 1
-        }
+  "attributes": {
+    "Composite-ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
-    "description": "Object describing file metadata.",
-    "meta-category": "file",
-    "name": "image-vnd-djvu",
-    "required": [
-        "source-file"
-    ],
-    "uuid": "aa325bac-183d-457a-9be6-2264c1e3f6fc",
-    "version": 1
+    "Composite-Megapixels": {
+      "description": "Megapixels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Annotation": {
+      "description": "Annotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DjVu-Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-DjVuVersion": {
+      "description": "DjVu Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Gamma": {
+      "description": "Gamma",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-IncludedFileID": {
+      "description": "Included File ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DjVu-Note": {
+      "description": "Note",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Orientation": {
+      "description": "Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Producer": {
+      "description": "Producer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-SpatialResolution": {
+      "description": "Spatial Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-SubfileType": {
+      "description": "Subfile Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-Trapped": {
+      "description": "Trapped",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DjVu-URL": {
+      "description": "URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifTool-ExifToolVersion": {
+      "description": "ExifTool Version Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "SourceFile": {
+      "description": "Source File Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-CreatorTool": {
+      "description": "Creator Tool",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-Notes": {
+      "description": "Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Producer": {
+      "description": "Producer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Rights": {
+      "description": "Rights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Trapped": {
+      "description": "Trapped",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "source-file": {
+      "description": "Source filename",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-vnd-djvu",
+  "required": [
+    "source-file"
+  ],
+  "uuid": "aa325bac-183d-457a-9be6-2264c1e3f6fc",
+  "version": 1
 }

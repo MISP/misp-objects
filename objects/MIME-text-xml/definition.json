@@ -1,1426 +1,1426 @@
 {
-    "attributes": {
-        "Composite-Aperture": {
-            "description": "Aperture",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-FocalLength35efl": {
-            "description": "Focal Length",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-ImageSize": {
-            "description": "Image Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-Megapixels": {
-            "description": "Megapixels",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-ShutterSpeed": {
-            "description": "Shutter Speed",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ColorSpace": {
-            "description": "Color Space",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ComponentsConfiguration": {
-            "description": "Components Configuration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-CompressedBitsPerPixel": {
-            "description": "Compressed Bits Per Pixel",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-Compression": {
-            "description": "Compression",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-CreateDate": {
-            "description": "Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "EXIF-DateTimeOriginal": {
-            "description": "Date Time Original",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "EXIF-ExifImageHeight": {
-            "description": "Exif Image Height",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ExifImageWidth": {
-            "description": "Exif Image Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ExifVersion": {
-            "description": "Exif Version",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "EXIF-ExposureCompensation": {
-            "description": "Exposure Compensation",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ExposureProgram": {
-            "description": "Exposure Program",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ExposureTime": {
-            "description": "Exposure Time",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-FNumber": {
-            "description": "F Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-FileSource": {
-            "description": "File Source",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-Flash": {
-            "description": "Flash",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-FlashpixVersion": {
-            "description": "Flashpix Version",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "EXIF-FocalLength": {
-            "description": "Focal Length",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ImageDescription": {
-            "description": "Image Description",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-InteropIndex": {
-            "description": "Interop Index",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-InteropVersion": {
-            "description": "Interop Version",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "EXIF-Iso": {
-            "description": "Iso",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-LightSource": {
-            "description": "Light Source",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-Make": {
-            "description": "Make",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-MaxApertureValue": {
-            "description": "Max Aperture Value",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-MeteringMode": {
-            "description": "Metering Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-Model": {
-            "description": "Model",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ModifyDate": {
-            "description": "Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "EXIF-Orientation": {
-            "description": "Orientation",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ResolutionUnit": {
-            "description": "Resolution Unit",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-SceneType": {
-            "description": "Scene Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-Software": {
-            "description": "Software",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ThumbnailLength": {
-            "description": "Thumbnail Length",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-ThumbnailOffset": {
-            "description": "Thumbnail Offset",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-UserComment": {
-            "description": "User Comment",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-XResolution": {
-            "description": "X Resolution",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-YCbCrPositioning": {
-            "description": "Y Cb Cr Positioning",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "EXIF-YResolution": {
-            "description": "Y Resolution",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ExifTool-ExifToolVersion": {
-            "description": "ExifTool Version Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-Directory": {
-            "description": "Directory",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileAccessDate": {
-            "description": "File Access Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileInodeChangeDate": {
-            "description": "File Inode Change Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileModifyDate": {
-            "description": "File Modification Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileName": {
-            "description": "File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FilePermissions": {
-            "description": "File Permissions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileSize": {
-            "description": "File Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileType": {
-            "description": "File Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileTypeExtension": {
-            "description": "File Type Extension",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-MIMEType": {
-            "description": "MIME Type",
-            "disable_correlation": true,
-            "misp-attribute": "mime-type",
-            "ui-priority": 0
-        },
-        "HTML-Author": {
-            "description": "Author",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Category": {
-            "description": "Category",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-CharacterSet": {
-            "description": "Character Set",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Characters": {
-            "description": "Characters",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-CharactersWithSpaces": {
-            "description": "Characters With Spaces",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-CheckedBy": {
-            "description": "Checked By",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Company": {
-            "description": "Company",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-ContentType": {
-            "description": "Content Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-CreateDate": {
-            "description": "Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "HTML-Creator": {
-            "description": "Creator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Date": {
-            "description": "Date",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Depth": {
-            "description": "Depth",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Description": {
-            "description": "Description",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Duration": {
-            "description": "Duration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Files": {
-            "description": "Files",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Footnotes": {
-            "description": "Footnotes",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Format": {
-            "description": "Format",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Generator": {
-            "description": "Generator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Identifier": {
-            "description": "Identifier",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-KByteSize": {
-            "description": "K Byte Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Keywords": {
-            "description": "Keywords",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Language": {
-            "description": "Language",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-LastAuthor": {
-            "description": "Last Author",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Lines": {
-            "description": "Lines",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Manager": {
-            "description": "Manager",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-MaxPageNormal": {
-            "description": "Max Page Normal",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-ModifyDate": {
-            "description": "Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "HTML-MultimediaType": {
-            "description": "Multimedia Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Narrator": {
-            "description": "Narrator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-PageFront": {
-            "description": "Page Front",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-PageNormal": {
-            "description": "Page Normal",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-PageSpecial": {
-            "description": "Page Special",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Pages": {
-            "description": "Pages",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Paragraphs": {
-            "description": "Paragraphs",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-ProdNotes": {
-            "description": "Prod Notes",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Publisher": {
-            "description": "Publisher",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-RecEngineer": {
-            "description": "Rec Engineer",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-RecLocation": {
-            "description": "Rec Location",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-RevisionNumber": {
-            "description": "Revision Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-SetInfo": {
-            "description": "Set Info",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "HTML-Sidebars": {
-            "description": "Sidebars",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Source": {
-            "description": "Source",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-SourceDate": {
-            "description": "Source Date",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-SourceEdition": {
-            "description": "Source Edition",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-SourcePublisher": {
-            "description": "Source Publisher",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Subject": {
-            "description": "Subject",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-TOCItems": {
-            "description": "TOC Items",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Template": {
-            "description": "Template",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Test1": {
-            "description": "Test 1",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Test2": {
-            "description": "Test 2",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Test3": {
-            "description": "Test 3",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "HTML-Test4": {
-            "description": "Test 4",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Title": {
-            "description": "Title",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-TotalEditTime": {
-            "description": "Total Edit Time",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "HTML-Words": {
-            "description": "Words",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-AFAreaMode": {
-            "description": "AF Area Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-AFPoint": {
-            "description": "AF Point",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-AFPointsInFocus": {
-            "description": "AF Points In Focus",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-AuxiliaryLens": {
-            "description": "Auxiliary Lens",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-ColorMode": {
-            "description": "Color Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-DataDump": {
-            "description": "Data Dump",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-DigitalZoom": {
-            "description": "Digital Zoom",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-FlashSetting": {
-            "description": "Flash Setting",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-FocusMode": {
-            "description": "Focus Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-ISOSelection": {
-            "description": "ISO Selection",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-ImageAdjustment": {
-            "description": "Image Adjustment",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-Iso": {
-            "description": "Iso",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-MakerNoteVersion": {
-            "description": "Maker Note Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-ManualFocusDistance": {
-            "description": "Manual Focus Distance",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-Quality": {
-            "description": "Quality",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-SceneMode": {
-            "description": "Scene Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-Sharpness": {
-            "description": "Sharpness",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-WhiteBalance": {
-            "description": "White Balance",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-AdjustmentBaseVersion": {
-            "description": "Adjustment Base Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-AdjustmentData": {
-            "description": "Adjustment Data",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-AdjustmentEditorBundleID": {
-            "description": "Adjustment Editor Bundle ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-AdjustmentFormatIdentifier": {
-            "description": "Adjustment Format Identifier",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-AdjustmentFormatVersion": {
-            "description": "Adjustment Format Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-AdjustmentRenderTypes": {
-            "description": "Adjustment Render Types",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestArray": {
-            "description": "Test Array",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestBoolean": {
-            "description": "Test Boolean",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestData": {
-            "description": "Test Data",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestDate": {
-            "description": "Test Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "PLIST-TestDictAuthor": {
-            "description": "Test Dict Author",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestDictWhen": {
-            "description": "Test Dict When",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "PLIST-TestInteger": {
-            "description": "Test Integer",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestReal": {
-            "description": "Test Real",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestString": {
-            "description": "Test String",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "PLIST-TestUnicode": {
-            "description": "Test Unicode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "SourceFile": {
-            "description": "Source File Path",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-Aperture": {
-            "description": "Aperture",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-BitsPerSample": {
-            "description": "Bits Per Sample",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-ColorComponents": {
-            "description": "Color Components",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-Directory": {
-            "description": "Directory",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-EncodingProcess": {
-            "description": "Encoding Process",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-ExifByteOrder": {
-            "description": "Exif Byte Order",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-ExifToolVersion": {
-            "description": "Exif Tool Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-FileModifyDate": {
-            "description": "File Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XML-FileName": {
-            "description": "File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-FileSize": {
-            "description": "File Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-FileType": {
-            "description": "File Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-FocalLength35efl": {
-            "description": "Focal Length 35efl",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-ImageHeight": {
-            "description": "Image Height",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-ImageSize": {
-            "description": "Image Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-ImageWidth": {
-            "description": "Image Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-LightValue": {
-            "description": "Light Value",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-MIMEType": {
-            "description": "MIME Type",
-            "disable_correlation": true,
-            "misp-attribute": "mime-type",
-            "ui-priority": 0
-        },
-        "XML-ShutterSpeed": {
-            "description": "Shutter Speed",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-ThumbnailImage": {
-            "description": "Thumbnail Image",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XML-YCbCrSubSampling": {
-            "description": "Y Cb Cr Sub Sampling",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-About": {
-            "description": "About",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ColorantBlack": {
-            "description": "Colorant Black",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ColorantCyan": {
-            "description": "Colorant Cyan",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ColorantMagenta": {
-            "description": "Colorant Magenta",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ColorantMode": {
-            "description": "Colorant Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ColorantSwatchName": {
-            "description": "Colorant Swatch Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ColorantType": {
-            "description": "Colorant Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ColorantYellow": {
-            "description": "Colorant Yellow",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-CreateDate": {
-            "description": "Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-CreatorTool": {
-            "description": "Creator Tool",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-DerivedFromDocumentID": {
-            "description": "Derived From Document ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-DerivedFromInstanceID": {
-            "description": "Derived From Instance ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-DocumentID": {
-            "description": "Document ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-FontComposite": {
-            "description": "Font Composite",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-FontFace": {
-            "description": "Font Face",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-FontFamily": {
-            "description": "Font Family",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-FontFileName": {
-            "description": "Font File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-FontName": {
-            "description": "Font Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-FontType": {
-            "description": "Font Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-FontVersion": {
-            "description": "Font Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Format": {
-            "description": "Format",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxCreator": {
-            "description": "Gpx Creator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxSchemaLocation": {
-            "description": "Gpx Schema Location",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxTrkCmt": {
-            "description": "Gpx Trk Cmt",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxTrkName": {
-            "description": "Gpx Trk Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxTrkTrksegTrkptEle": {
-            "description": "Gpx Trk Trkseg Trkpt Ele",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxTrkTrksegTrkptLat": {
-            "description": "Gpx Trk Trkseg Trkpt Lat",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxTrkTrksegTrkptLon": {
-            "description": "Gpx Trk Trkseg Trkpt Lon",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxTrkTrksegTrkptTime": {
-            "description": "Gpx Trk Trkseg Trkpt Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-GpxVersion": {
-            "description": "Gpx Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-GpxXmlns": {
-            "description": "Gpx Xmlns",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-HistoryRunTrackTrackpointPositionAltitude": {
-            "description": "History Run Track Trackpoint Position Altitude",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-HistoryRunTrackTrackpointPositionLatitude": {
-            "description": "History Run Track Trackpoint Position Latitude",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-HistoryRunTrackTrackpointPositionLongitude": {
-            "description": "History Run Track Trackpoint Position Longitude",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-HistoryRunTrackTrackpointTime": {
-            "description": "History Run Track Trackpoint Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-HistorySchemaLocation": {
-            "description": "History Schema Location",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-HistoryVersion": {
-            "description": "History Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-HistoryXmlns": {
-            "description": "History Xmlns",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-InstanceID": {
-            "description": "Instance ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentDescription": {
-            "description": "Kml Document Description",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentName": {
-            "description": "Kml Document Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentOpen": {
-            "description": "Kml Document Open",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentPlacemarkDescription": {
-            "description": "Kml Document Placemark Description",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentPlacemarkName": {
-            "description": "Kml Document Placemark Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentPlacemarkStyleUrl": {
-            "description": "Kml Document Placemark Style Url",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentPlacemarkTrackAltitudeMode": {
-            "description": "Kml Document Placemark Track Altitude Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentPlacemarkTrackCoord": {
-            "description": "Kml Document Placemark Track Coord",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentPlacemarkTrackWhen": {
-            "description": "Kml Document Placemark Track When",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleIconStyleIconHref": {
-            "description": "Kml Document Style Icon Style Icon Href",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleIconStyleScale": {
-            "description": "Kml Document Style Icon Style Scale",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleId": {
-            "description": "Kml Document Style Id",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleLineStyleColor": {
-            "description": "Kml Document Style Line Style Color",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleLineStyleWidth": {
-            "description": "Kml Document Style Line Style Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleMapId": {
-            "description": "Kml Document Style Map Id",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleMapPairKey": {
-            "description": "Kml Document Style Map Pair Key",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlDocumentStyleMapPairStyleUrl": {
-            "description": "Kml Document Style Map Pair Style Url",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-KmlXmlns": {
-            "description": "Kml Xmlns",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ManifestLinkForm": {
-            "description": "Manifest Link Form",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ManifestPlacedResolutionUnit": {
-            "description": "Manifest Placed Resolution Unit",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ManifestPlacedXResolution": {
-            "description": "Manifest Placed X Resolution",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ManifestPlacedYResolution": {
-            "description": "Manifest Placed Y Resolution",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ManifestReferenceDocumentID": {
-            "description": "Manifest Reference Document ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ManifestReferenceInstanceID": {
-            "description": "Manifest Reference Instance ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-MetadataDate": {
-            "description": "Metadata Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-ModifyDate": {
-            "description": "Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-RenditionClass": {
-            "description": "Rendition Class",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ThumbnailFormat": {
-            "description": "Thumbnail Format",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ThumbnailHeight": {
-            "description": "Thumbnail Height",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-ThumbnailWidth": {
-            "description": "Thumbnail Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-XMPToolkit": {
-            "description": "XMP Toolkit",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "first-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "last-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "source-file": {
-            "description": "Source filename",
-            "disable_correlation": true,
-            "misp-attribute": "filename",
-            "ui-priority": 1
-        }
+  "attributes": {
+    "Composite-Aperture": {
+      "description": "Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
-    "description": "Object describing file metadata.",
-    "meta-category": "file",
-    "name": "text-xml",
-    "required": [
-        "source-file"
-    ],
-    "uuid": "cb86400e-258b-4f29-8fb9-f218305a6c5c",
-    "version": 1
+    "Composite-FocalLength35efl": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-Megapixels": {
+      "description": "Megapixels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-ShutterSpeed": {
+      "description": "Shutter Speed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ColorSpace": {
+      "description": "Color Space",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ComponentsConfiguration": {
+      "description": "Components Configuration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-CompressedBitsPerPixel": {
+      "description": "Compressed Bits Per Pixel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-Compression": {
+      "description": "Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EXIF-DateTimeOriginal": {
+      "description": "Date Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EXIF-ExifImageHeight": {
+      "description": "Exif Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ExifImageWidth": {
+      "description": "Exif Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ExifVersion": {
+      "description": "Exif Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EXIF-ExposureCompensation": {
+      "description": "Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ExposureProgram": {
+      "description": "Exposure Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ExposureTime": {
+      "description": "Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-FNumber": {
+      "description": "F Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-FileSource": {
+      "description": "File Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-Flash": {
+      "description": "Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-FlashpixVersion": {
+      "description": "Flashpix Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EXIF-FocalLength": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ImageDescription": {
+      "description": "Image Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-InteropIndex": {
+      "description": "Interop Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-InteropVersion": {
+      "description": "Interop Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EXIF-Iso": {
+      "description": "Iso",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-LightSource": {
+      "description": "Light Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-MaxApertureValue": {
+      "description": "Max Aperture Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-MeteringMode": {
+      "description": "Metering Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-Model": {
+      "description": "Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EXIF-Orientation": {
+      "description": "Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ResolutionUnit": {
+      "description": "Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-SceneType": {
+      "description": "Scene Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ThumbnailLength": {
+      "description": "Thumbnail Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-ThumbnailOffset": {
+      "description": "Thumbnail Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-UserComment": {
+      "description": "User Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-XResolution": {
+      "description": "X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-YCbCrPositioning": {
+      "description": "Y Cb Cr Positioning",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EXIF-YResolution": {
+      "description": "Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifTool-ExifToolVersion": {
+      "description": "ExifTool Version Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "HTML-Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-CharacterSet": {
+      "description": "Character Set",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Characters": {
+      "description": "Characters",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-CharactersWithSpaces": {
+      "description": "Characters With Spaces",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-CheckedBy": {
+      "description": "Checked By",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Company": {
+      "description": "Company",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-ContentType": {
+      "description": "Content Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "HTML-Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Date": {
+      "description": "Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Depth": {
+      "description": "Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Files": {
+      "description": "Files",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Footnotes": {
+      "description": "Footnotes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Format": {
+      "description": "Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Generator": {
+      "description": "Generator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Identifier": {
+      "description": "Identifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-KByteSize": {
+      "description": "K Byte Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Language": {
+      "description": "Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-LastAuthor": {
+      "description": "Last Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Lines": {
+      "description": "Lines",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Manager": {
+      "description": "Manager",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-MaxPageNormal": {
+      "description": "Max Page Normal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "HTML-MultimediaType": {
+      "description": "Multimedia Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Narrator": {
+      "description": "Narrator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-PageFront": {
+      "description": "Page Front",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-PageNormal": {
+      "description": "Page Normal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-PageSpecial": {
+      "description": "Page Special",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Pages": {
+      "description": "Pages",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Paragraphs": {
+      "description": "Paragraphs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-ProdNotes": {
+      "description": "Prod Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Publisher": {
+      "description": "Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-RecEngineer": {
+      "description": "Rec Engineer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-RecLocation": {
+      "description": "Rec Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-RevisionNumber": {
+      "description": "Revision Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-SetInfo": {
+      "description": "Set Info",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "HTML-Sidebars": {
+      "description": "Sidebars",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Source": {
+      "description": "Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-SourceDate": {
+      "description": "Source Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-SourceEdition": {
+      "description": "Source Edition",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-SourcePublisher": {
+      "description": "Source Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-TOCItems": {
+      "description": "TOC Items",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Template": {
+      "description": "Template",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Test1": {
+      "description": "Test 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Test2": {
+      "description": "Test 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Test3": {
+      "description": "Test 3",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "HTML-Test4": {
+      "description": "Test 4",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-TotalEditTime": {
+      "description": "Total Edit Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HTML-Words": {
+      "description": "Words",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-AFAreaMode": {
+      "description": "AF Area Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-AFPoint": {
+      "description": "AF Point",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-AFPointsInFocus": {
+      "description": "AF Points In Focus",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-AuxiliaryLens": {
+      "description": "Auxiliary Lens",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-ColorMode": {
+      "description": "Color Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-DataDump": {
+      "description": "Data Dump",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-DigitalZoom": {
+      "description": "Digital Zoom",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-FlashSetting": {
+      "description": "Flash Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-FocusMode": {
+      "description": "Focus Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-ISOSelection": {
+      "description": "ISO Selection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-ImageAdjustment": {
+      "description": "Image Adjustment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-Iso": {
+      "description": "Iso",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-MakerNoteVersion": {
+      "description": "Maker Note Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-ManualFocusDistance": {
+      "description": "Manual Focus Distance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-SceneMode": {
+      "description": "Scene Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-Sharpness": {
+      "description": "Sharpness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-AdjustmentBaseVersion": {
+      "description": "Adjustment Base Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-AdjustmentData": {
+      "description": "Adjustment Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-AdjustmentEditorBundleID": {
+      "description": "Adjustment Editor Bundle ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-AdjustmentFormatIdentifier": {
+      "description": "Adjustment Format Identifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-AdjustmentFormatVersion": {
+      "description": "Adjustment Format Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-AdjustmentRenderTypes": {
+      "description": "Adjustment Render Types",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestArray": {
+      "description": "Test Array",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestBoolean": {
+      "description": "Test Boolean",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestData": {
+      "description": "Test Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestDate": {
+      "description": "Test Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PLIST-TestDictAuthor": {
+      "description": "Test Dict Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestDictWhen": {
+      "description": "Test Dict When",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PLIST-TestInteger": {
+      "description": "Test Integer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestReal": {
+      "description": "Test Real",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestString": {
+      "description": "Test String",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLIST-TestUnicode": {
+      "description": "Test Unicode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SourceFile": {
+      "description": "Source File Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-Aperture": {
+      "description": "Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-ColorComponents": {
+      "description": "Color Components",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-EncodingProcess": {
+      "description": "Encoding Process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-ExifByteOrder": {
+      "description": "Exif Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-ExifToolVersion": {
+      "description": "Exif Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-FileModifyDate": {
+      "description": "File Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XML-FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-FocalLength35efl": {
+      "description": "Focal Length 35efl",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-LightValue": {
+      "description": "Light Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "XML-ShutterSpeed": {
+      "description": "Shutter Speed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-ThumbnailImage": {
+      "description": "Thumbnail Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XML-YCbCrSubSampling": {
+      "description": "Y Cb Cr Sub Sampling",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-About": {
+      "description": "About",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ColorantBlack": {
+      "description": "Colorant Black",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ColorantCyan": {
+      "description": "Colorant Cyan",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ColorantMagenta": {
+      "description": "Colorant Magenta",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ColorantMode": {
+      "description": "Colorant Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ColorantSwatchName": {
+      "description": "Colorant Swatch Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ColorantType": {
+      "description": "Colorant Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ColorantYellow": {
+      "description": "Colorant Yellow",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-CreatorTool": {
+      "description": "Creator Tool",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-DerivedFromDocumentID": {
+      "description": "Derived From Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-DerivedFromInstanceID": {
+      "description": "Derived From Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-DocumentID": {
+      "description": "Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-FontComposite": {
+      "description": "Font Composite",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-FontFace": {
+      "description": "Font Face",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-FontFamily": {
+      "description": "Font Family",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-FontFileName": {
+      "description": "Font File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-FontName": {
+      "description": "Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-FontType": {
+      "description": "Font Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-FontVersion": {
+      "description": "Font Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Format": {
+      "description": "Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxCreator": {
+      "description": "Gpx Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxSchemaLocation": {
+      "description": "Gpx Schema Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxTrkCmt": {
+      "description": "Gpx Trk Cmt",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxTrkName": {
+      "description": "Gpx Trk Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxTrkTrksegTrkptEle": {
+      "description": "Gpx Trk Trkseg Trkpt Ele",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxTrkTrksegTrkptLat": {
+      "description": "Gpx Trk Trkseg Trkpt Lat",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxTrkTrksegTrkptLon": {
+      "description": "Gpx Trk Trkseg Trkpt Lon",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxTrkTrksegTrkptTime": {
+      "description": "Gpx Trk Trkseg Trkpt Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-GpxVersion": {
+      "description": "Gpx Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-GpxXmlns": {
+      "description": "Gpx Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-HistoryRunTrackTrackpointPositionAltitude": {
+      "description": "History Run Track Trackpoint Position Altitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-HistoryRunTrackTrackpointPositionLatitude": {
+      "description": "History Run Track Trackpoint Position Latitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-HistoryRunTrackTrackpointPositionLongitude": {
+      "description": "History Run Track Trackpoint Position Longitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-HistoryRunTrackTrackpointTime": {
+      "description": "History Run Track Trackpoint Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-HistorySchemaLocation": {
+      "description": "History Schema Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-HistoryVersion": {
+      "description": "History Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-HistoryXmlns": {
+      "description": "History Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-InstanceID": {
+      "description": "Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentDescription": {
+      "description": "Kml Document Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentName": {
+      "description": "Kml Document Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentOpen": {
+      "description": "Kml Document Open",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentPlacemarkDescription": {
+      "description": "Kml Document Placemark Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentPlacemarkName": {
+      "description": "Kml Document Placemark Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentPlacemarkStyleUrl": {
+      "description": "Kml Document Placemark Style Url",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentPlacemarkTrackAltitudeMode": {
+      "description": "Kml Document Placemark Track Altitude Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentPlacemarkTrackCoord": {
+      "description": "Kml Document Placemark Track Coord",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentPlacemarkTrackWhen": {
+      "description": "Kml Document Placemark Track When",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleIconStyleIconHref": {
+      "description": "Kml Document Style Icon Style Icon Href",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleIconStyleScale": {
+      "description": "Kml Document Style Icon Style Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleId": {
+      "description": "Kml Document Style Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleLineStyleColor": {
+      "description": "Kml Document Style Line Style Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleLineStyleWidth": {
+      "description": "Kml Document Style Line Style Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleMapId": {
+      "description": "Kml Document Style Map Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleMapPairKey": {
+      "description": "Kml Document Style Map Pair Key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlDocumentStyleMapPairStyleUrl": {
+      "description": "Kml Document Style Map Pair Style Url",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-KmlXmlns": {
+      "description": "Kml Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ManifestLinkForm": {
+      "description": "Manifest Link Form",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ManifestPlacedResolutionUnit": {
+      "description": "Manifest Placed Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ManifestPlacedXResolution": {
+      "description": "Manifest Placed X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ManifestPlacedYResolution": {
+      "description": "Manifest Placed Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ManifestReferenceDocumentID": {
+      "description": "Manifest Reference Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ManifestReferenceInstanceID": {
+      "description": "Manifest Reference Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-MetadataDate": {
+      "description": "Metadata Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-RenditionClass": {
+      "description": "Rendition Class",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ThumbnailFormat": {
+      "description": "Thumbnail Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ThumbnailHeight": {
+      "description": "Thumbnail Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-ThumbnailWidth": {
+      "description": "Thumbnail Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "source-file": {
+      "description": "Source filename",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml",
+  "required": [
+    "source-file"
+  ],
+  "uuid": "cb86400e-258b-4f29-8fb9-f218305a6c5c",
+  "version": 1
 }

@@ -1,340 +1,340 @@
 {
-    "attributes": {
-        "APE-Album": {
-            "description": "Album",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-Artist": {
-            "description": "Artist",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-CoverArtFront": {
-            "description": "Cover Art Front",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-CoverArtFrontDesc": {
-            "description": "Cover Art Front Desc",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-Genre": {
-            "description": "Genre",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-MediaJukeboxDate": {
-            "description": "Media Jukebox Date",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-Title": {
-            "description": "Title",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-ToolName": {
-            "description": "Tool Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-ToolVersion": {
-            "description": "Tool Version",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "APE-Track": {
-            "description": "Track",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "APE-Year": {
-            "description": "Year",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-DateTimeOriginal": {
-            "description": "Date/Time Original",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ExifTool-ExifToolVersion": {
-            "description": "ExifTool Version Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-Directory": {
-            "description": "Directory",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileAccessDate": {
-            "description": "File Access Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileInodeChangeDate": {
-            "description": "File Inode Change Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileModifyDate": {
-            "description": "File Modification Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileName": {
-            "description": "File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FilePermissions": {
-            "description": "File Permissions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileSize": {
-            "description": "File Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileType": {
-            "description": "File Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileTypeExtension": {
-            "description": "File Type Extension",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-ID3Size": {
-            "description": "ID3 Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-MIMEType": {
-            "description": "MIME Type",
-            "disable_correlation": true,
-            "misp-attribute": "mime-type",
-            "ui-priority": 0
-        },
-        "ID3-Album": {
-            "description": "Album",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Artist": {
-            "description": "Artist",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Comment": {
-            "description": "Comment",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Composer": {
-            "description": "Composer",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Genre": {
-            "description": "Genre",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Grouping": {
-            "description": "Grouping",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Lyrics": {
-            "description": "Lyrics",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-PartOfSet": {
-            "description": "Part Of Set",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "ID3-Picture": {
-            "description": "Picture",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-PictureDescription": {
-            "description": "Picture Description",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-PictureFormat": {
-            "description": "Picture Format",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-PictureType": {
-            "description": "Picture Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-RelativeVolumeAdjustment": {
-            "description": "Relative Volume Adjustment",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Title": {
-            "description": "Title",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ID3-Track": {
-            "description": "Track",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "ID3-Year": {
-            "description": "Year",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-EncoderVersion": {
-            "description": "Encoder Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-FastSeek": {
-            "description": "Fast Seek",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-Gapless": {
-            "description": "Gapless",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-MaxBand": {
-            "description": "Max Band",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-Quality": {
-            "description": "Quality",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-ReplayGainAlbumGain": {
-            "description": "Replay Gain Album Gain",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-ReplayGainAlbumPeak": {
-            "description": "Replay Gain Album Peak",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-ReplayGainTrackGain": {
-            "description": "Replay Gain Track Gain",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-ReplayGainTrackPeak": {
-            "description": "Replay Gain Track Peak",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-SampleRate": {
-            "description": "Sample Rate",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MPC-TotalFrames": {
-            "description": "Total Frames",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "SourceFile": {
-            "description": "Source File Path",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "first-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "last-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "source-file": {
-            "description": "Source filename",
-            "disable_correlation": true,
-            "misp-attribute": "filename",
-            "ui-priority": 1
-        }
+  "attributes": {
+    "APE-Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
-    "description": "Object describing file metadata.",
-    "meta-category": "file",
-    "name": "audio-x-musepack",
-    "required": [
-        "source-file"
-    ],
-    "uuid": "7d5192d5-8ab3-44c8-bbeb-79084ee7ca7e",
-    "version": 1
+    "APE-Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-CoverArtFront": {
+      "description": "Cover Art Front",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-CoverArtFrontDesc": {
+      "description": "Cover Art Front Desc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-MediaJukeboxDate": {
+      "description": "Media Jukebox Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-ToolName": {
+      "description": "Tool Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-ToolVersion": {
+      "description": "Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "APE-Track": {
+      "description": "Track",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APE-Year": {
+      "description": "Year",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-DateTimeOriginal": {
+      "description": "Date/Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifTool-ExifToolVersion": {
+      "description": "ExifTool Version Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-ID3Size": {
+      "description": "ID3 Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "ID3-Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Composer": {
+      "description": "Composer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Grouping": {
+      "description": "Grouping",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Lyrics": {
+      "description": "Lyrics",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-PartOfSet": {
+      "description": "Part Of Set",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ID3-Picture": {
+      "description": "Picture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-PictureDescription": {
+      "description": "Picture Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-PictureFormat": {
+      "description": "Picture Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-PictureType": {
+      "description": "Picture Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-RelativeVolumeAdjustment": {
+      "description": "Relative Volume Adjustment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ID3-Track": {
+      "description": "Track",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ID3-Year": {
+      "description": "Year",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-EncoderVersion": {
+      "description": "Encoder Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-FastSeek": {
+      "description": "Fast Seek",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-Gapless": {
+      "description": "Gapless",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-MaxBand": {
+      "description": "Max Band",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-ReplayGainAlbumGain": {
+      "description": "Replay Gain Album Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-ReplayGainAlbumPeak": {
+      "description": "Replay Gain Album Peak",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-ReplayGainTrackGain": {
+      "description": "Replay Gain Track Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-ReplayGainTrackPeak": {
+      "description": "Replay Gain Track Peak",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPC-TotalFrames": {
+      "description": "Total Frames",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SourceFile": {
+      "description": "Source File Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "source-file": {
+      "description": "Source filename",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-musepack",
+  "required": [
+    "source-file"
+  ],
+  "uuid": "7d5192d5-8ab3-44c8-bbeb-79084ee7ca7e",
+  "version": 1
 }

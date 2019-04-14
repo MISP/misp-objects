@@ -1,628 +1,628 @@
 {
-    "attributes": {
-        "Composite-Aperture": {
-            "description": "Aperture",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-AvgBitrate": {
-            "description": "Avg Bitrate",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-FocalLength35efl": {
-            "description": "Focal Length",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-ImageSize": {
-            "description": "Image Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-LightValue": {
-            "description": "Light Value",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-Megapixels": {
-            "description": "Megapixels",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-Rotation": {
-            "description": "Rotation",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "Composite-ShutterSpeed": {
-            "description": "Shutter Speed",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "ExifTool-ExifToolVersion": {
-            "description": "ExifTool Version Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-Directory": {
-            "description": "Directory",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileAccessDate": {
-            "description": "File Access Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileInodeChangeDate": {
-            "description": "File Inode Change Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileModifyDate": {
-            "description": "File Modification Date/Time",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "File-FileName": {
-            "description": "File Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FilePermissions": {
-            "description": "File Permissions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileSize": {
-            "description": "File Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileType": {
-            "description": "File Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-FileTypeExtension": {
-            "description": "File Type Extension",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "File-MIMEType": {
-            "description": "MIME Type",
-            "disable_correlation": true,
-            "misp-attribute": "mime-type",
-            "ui-priority": 0
-        },
-        "MakerNotes-ExposureCompensation": {
-            "description": "Exposure Compensation",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-ExposureTime": {
-            "description": "Exposure Time",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-FNumber": {
-            "description": "F Number",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-FocalLength": {
-            "description": "Focal Length",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-ISO": {
-            "description": "ISO",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-Make": {
-            "description": "Make",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "MakerNotes-WhiteBalance": {
-            "description": "White Balance",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Album": {
-            "description": "Album",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-AlbumArtist": {
-            "description": "Album Artist",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Artist": {
-            "description": "Artist",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-AudioBitsPerSample": {
-            "description": "Audio Bits Per Sample",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-AudioChannels": {
-            "description": "Audio Channels",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-AudioFormat": {
-            "description": "Audio Format",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-AudioSampleRate": {
-            "description": "Audio Sample Rate",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Balance": {
-            "description": "Balance",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-BeatsPerMinute": {
-            "description": "Beats Per Minute",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-BitDepth": {
-            "description": "Bit Depth",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-CleanApertureDimensions": {
-            "description": "Clean Aperture Dimensions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Comment": {
-            "description": "Comment",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Composer": {
-            "description": "Composer",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-CompressorID": {
-            "description": "Compressor ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-CompressorName": {
-            "description": "Compressor Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-ContentCreateDate": {
-            "description": "Content Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-CoverArt": {
-            "description": "Cover Art",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-CreateDate": {
-            "description": "Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-CurrentTime": {
-            "description": "Current Time",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-DiskNumber": {
-            "description": "Disk Number",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-Duration": {
-            "description": "Duration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-EncodedPixelsDimensions": {
-            "description": "Encoded Pixels Dimensions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Format": {
-            "description": "Format",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Genre": {
-            "description": "Genre",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-GraphicsMode": {
-            "description": "Graphics Mode",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Grouping": {
-            "description": "Grouping",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-HandlerClass": {
-            "description": "Handler Class",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-HandlerType": {
-            "description": "Handler Type",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-HandlerVendorID": {
-            "description": "Handler Vendor ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-ImageHeight": {
-            "description": "Image Height",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-ImageWidth": {
-            "description": "Image Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Information": {
-            "description": "Information",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-Lyrics": {
-            "description": "Lyrics",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-MatrixStructure": {
-            "description": "Matrix Structure",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-MediaCreateDate": {
-            "description": "Media Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-MediaDuration": {
-            "description": "Media Duration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-MediaHeaderVersion": {
-            "description": "Media Header Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-MediaModifyDate": {
-            "description": "Media Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-MediaTimeScale": {
-            "description": "Media Time Scale",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-ModifyDate": {
-            "description": "Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-MovieDataOffset": {
-            "description": "Movie Data Offset",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-MovieDataSize": {
-            "description": "Movie Data Size",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-MovieHeaderVersion": {
-            "description": "Movie Header Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-NextTrackID": {
-            "description": "Next Track ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-OpColor": {
-            "description": "Op Color",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-PosterTime": {
-            "description": "Poster Time",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-PreferredRate": {
-            "description": "Preferred Rate",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-PreferredVolume": {
-            "description": "Preferred Volume",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-PreviewDuration": {
-            "description": "Preview Duration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-PreviewTime": {
-            "description": "Preview Time",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-ProductionApertureDimensions": {
-            "description": "Production Aperture Dimensions",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-SelectionDuration": {
-            "description": "Selection Duration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-SelectionTime": {
-            "description": "Selection Time",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-SourceImageHeight": {
-            "description": "Source Image Height",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-SourceImageWidth": {
-            "description": "Source Image Width",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-TimeScale": {
-            "description": "Time Scale",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackCreateDate": {
-            "description": "Track Create Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackDuration": {
-            "description": "Track Duration",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackHeaderVersion": {
-            "description": "Track Header Version",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackID": {
-            "description": "Track ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackLayer": {
-            "description": "Track Layer",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackModifyDate": {
-            "description": "Track Modify Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackNumber": {
-            "description": "Track Number",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "QuickTime-TrackVolume": {
-            "description": "Track Volume",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-VendorID": {
-            "description": "Vendor ID",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-VideoFrameRate": {
-            "description": "Video Frame Rate",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-XResolution": {
-            "description": "X Resolution",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "QuickTime-YResolution": {
-            "description": "Y Resolution",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "SourceFile": {
-            "description": "Source File Path",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Album": {
-            "description": "Album",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-AltTapeName": {
-            "description": "Alt Tape Name",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-Creator": {
-            "description": "Creator",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "XMP-MetadataDate": {
-            "description": "Metadata Date",
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "XMP-XMPToolkit": {
-            "description": "XMP Toolkit",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "ui-priority": 0
-        },
-        "first-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "last-seen": {
-            "disable_correlation": true,
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "source-file": {
-            "description": "Source filename",
-            "disable_correlation": true,
-            "misp-attribute": "filename",
-            "ui-priority": 1
-        }
+  "attributes": {
+    "Composite-Aperture": {
+      "description": "Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
-    "description": "Object describing file metadata.",
-    "meta-category": "file",
-    "name": "video-quicktime",
-    "required": [
-        "source-file"
-    ],
-    "uuid": "1a787d59-002c-47fa-b27d-6695812381c3",
-    "version": 1
+    "Composite-AvgBitrate": {
+      "description": "Avg Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-FocalLength35efl": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-LightValue": {
+      "description": "Light Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-Megapixels": {
+      "description": "Megapixels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-Rotation": {
+      "description": "Rotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composite-ShutterSpeed": {
+      "description": "Shutter Speed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifTool-ExifToolVersion": {
+      "description": "ExifTool Version Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "File-FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File-MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "MakerNotes-ExposureCompensation": {
+      "description": "Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-ExposureTime": {
+      "description": "Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-FNumber": {
+      "description": "F Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-FocalLength": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-ISO": {
+      "description": "ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNotes-WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-AlbumArtist": {
+      "description": "Album Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-AudioBitsPerSample": {
+      "description": "Audio Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-AudioChannels": {
+      "description": "Audio Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-AudioFormat": {
+      "description": "Audio Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-AudioSampleRate": {
+      "description": "Audio Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Balance": {
+      "description": "Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-BeatsPerMinute": {
+      "description": "Beats Per Minute",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-BitDepth": {
+      "description": "Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-CleanApertureDimensions": {
+      "description": "Clean Aperture Dimensions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Composer": {
+      "description": "Composer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-CompressorID": {
+      "description": "Compressor ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-CompressorName": {
+      "description": "Compressor Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-ContentCreateDate": {
+      "description": "Content Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-CoverArt": {
+      "description": "Cover Art",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-CurrentTime": {
+      "description": "Current Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-DiskNumber": {
+      "description": "Disk Number",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-EncodedPixelsDimensions": {
+      "description": "Encoded Pixels Dimensions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Format": {
+      "description": "Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-GraphicsMode": {
+      "description": "Graphics Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Grouping": {
+      "description": "Grouping",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-HandlerClass": {
+      "description": "Handler Class",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-HandlerType": {
+      "description": "Handler Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-HandlerVendorID": {
+      "description": "Handler Vendor ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Information": {
+      "description": "Information",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-Lyrics": {
+      "description": "Lyrics",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-MatrixStructure": {
+      "description": "Matrix Structure",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-MediaCreateDate": {
+      "description": "Media Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-MediaDuration": {
+      "description": "Media Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-MediaHeaderVersion": {
+      "description": "Media Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-MediaModifyDate": {
+      "description": "Media Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-MediaTimeScale": {
+      "description": "Media Time Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-MovieDataOffset": {
+      "description": "Movie Data Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-MovieDataSize": {
+      "description": "Movie Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-MovieHeaderVersion": {
+      "description": "Movie Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-NextTrackID": {
+      "description": "Next Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-OpColor": {
+      "description": "Op Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-PosterTime": {
+      "description": "Poster Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-PreferredRate": {
+      "description": "Preferred Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-PreferredVolume": {
+      "description": "Preferred Volume",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-PreviewDuration": {
+      "description": "Preview Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-PreviewTime": {
+      "description": "Preview Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-ProductionApertureDimensions": {
+      "description": "Production Aperture Dimensions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-SelectionDuration": {
+      "description": "Selection Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-SelectionTime": {
+      "description": "Selection Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-SourceImageHeight": {
+      "description": "Source Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-SourceImageWidth": {
+      "description": "Source Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-TimeScale": {
+      "description": "Time Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackCreateDate": {
+      "description": "Track Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackDuration": {
+      "description": "Track Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackHeaderVersion": {
+      "description": "Track Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackID": {
+      "description": "Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackLayer": {
+      "description": "Track Layer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackModifyDate": {
+      "description": "Track Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackNumber": {
+      "description": "Track Number",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "QuickTime-TrackVolume": {
+      "description": "Track Volume",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-VendorID": {
+      "description": "Vendor ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-VideoFrameRate": {
+      "description": "Video Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-XResolution": {
+      "description": "X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickTime-YResolution": {
+      "description": "Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SourceFile": {
+      "description": "Source File Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-AltTapeName": {
+      "description": "Alt Tape Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMP-MetadataDate": {
+      "description": "Metadata Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "XMP-XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "source-file": {
+      "description": "Source filename",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-quicktime",
+  "required": [
+    "source-file"
+  ],
+  "uuid": "1a787d59-002c-47fa-b27d-6695812381c3",
+  "version": 1
 }
