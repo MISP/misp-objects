@@ -1,10 +1,9 @@
-
 {
   "name": "phishing-kit",
-  "uuid": "e08eea9b-5776-4014-9b0e-a821ee890143",
+  "uuid": "f452c16b-12fa-4f87-84a2-15a9e8ca6e7c",
   "meta-category": "network",
   "description": "Oject to describe a phishing-kit.",
-  "version": 1,
+  "version": 2,
   "attributes": {
     "internal reference": {
       "categories": [
@@ -19,8 +18,8 @@
       "misp-attribute": "datetime",
       "ui-priority": 0,
       "description": "Date when the phishing kit was found",
-      "to_ids" : false,
-      "disable_correlation" : true
+      "to_ids": false,
+      "disable_correlation": true
     },
     "reference-link": {
       "to_ids": false,
@@ -29,37 +28,37 @@
       "misp-attribute": "link",
       "description": "Link where the Phishing Kit was observed"
     },
-    "threat-actor-email" : {
-      "description" : "Email of the Threat Actor",
-      "multiple" : true,
-      "ui-priority" : 0,
-      "misp-attribute" : "email-src"
+    "threat-actor-email": {
+      "description": "Email of the Threat Actor",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "email-src"
     },
-    "email-type" : {
-      "description" : "Type of the Email",
-      "multiple" : false,
-      "ui-priority" : 0,
-      "misp-attribute" : "text",
-      "disable_correlation" : true
+    "email-type": {
+      "description": "Type of the Email",
+      "multiple": false,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
-    "kit-mailer" : {
-      "description" : "Mailer Kit Used",
-      "multiple" : true,
-      "ui-priority" : 0,
-      "misp-attribute" : "text",
-      "disable_correlation" : true
+    "kit-mailer": {
+      "description": "Mailer Kit Used",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
-    "target" :{
-      "description" : "What was targeted using this phishing kit",
-      "multiple" : true,
-      "ui-priority" : 1,
-      "misp-attribute" : "text"
+    "target": {
+      "description": "What was targeted using this phishing kit",
+      "multiple": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
     },
-    "phishing-domain" : {
-      "description" : "Domain used for Phishing",
-      "multiple" : true,
-      "ui-priority" : 1,
-      "misp-attribute" : "url"
+    "phishing-domain": {
+      "description": "Domain used for Phishing",
+      "multiple": true,
+      "ui-priority": 1,
+      "misp-attribute": "url"
     },
     "online": {
       "disable_correlation": true,
@@ -76,16 +75,16 @@
       "ui-priority": 1,
       "description": "URL of Phishing Kit"
     },
-    "threat-actor" : {
-      "description" : "Identified threat actor",
-      "ui-priority" : 0,
-      "multiple" : true,
-      "misp-attribute" : "text"
+    "threat-actor": {
+      "description": "Identified threat actor",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "text"
     },
-    "kit-name" : {
-      "description" : "Name of the Phishing Kit",
-      "ui-priority" : 10,
-      "misp-attribute" : "text"
+    "kit-name": {
+      "description": "Name of the Phishing Kit",
+      "ui-priority": 10,
+      "misp-attribute": "text"
     }
   },
   "requiredOneOf": [
