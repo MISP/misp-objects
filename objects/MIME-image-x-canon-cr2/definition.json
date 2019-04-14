@@ -1333,7 +1333,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/CanonRaw.cr2",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -1361,6 +1361,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "be098a30-4f8c-44c6-81c3-dd024a893cc7",
+    "uuid": "e03e4fa7-bd55-429a-9499-2e7e0222e7f9",
     "version": 1
 }

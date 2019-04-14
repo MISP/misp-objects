@@ -535,7 +535,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/BPG.bpg",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -581,6 +581,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "4158b60c-01c5-449c-a5ed-2c7f8b6fdaef",
+    "uuid": "fae2da65-9ba8-4307-bd94-2e62781553f5",
     "version": 1
 }

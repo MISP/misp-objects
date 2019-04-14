@@ -205,7 +205,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/PGF.pgf",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -233,6 +233,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "99109be2-d18d-4fd9-87f3-ce77f207889d",
+    "uuid": "bd25633b-33a3-45f9-bf3a-3ec7fcbd9147",
     "version": 1
 }

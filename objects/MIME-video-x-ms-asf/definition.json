@@ -301,7 +301,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/ASF.wmv",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -329,6 +329,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "a4a635d4-c65f-4275-8a3d-84e90f416f78",
+    "uuid": "f2fc03ec-2d79-4420-aff4-6bbdb774d155",
     "version": 1
 }

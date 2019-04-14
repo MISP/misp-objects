@@ -247,7 +247,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/FITS.fits",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -275,6 +275,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "8f6c976e-f1a8-4b6c-bfe7-dbd4fed0a63b",
+    "uuid": "3dc1d2f3-c63f-43fa-b7c2-733608042c3e",
     "version": 1
 }

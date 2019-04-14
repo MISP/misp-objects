@@ -205,7 +205,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Vorbis.ogg",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -341,6 +341,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "4db757fd-e618-4830-82a4-3be4736bfd52",
+    "uuid": "2671b41c-9a8a-4616-a6f6-2a0998aa29d2",
     "version": 1
 }

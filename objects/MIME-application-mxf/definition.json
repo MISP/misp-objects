@@ -253,7 +253,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/MXF.mxf",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -281,6 +281,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "c126d3b7-6e2e-49f5-a930-72e66ba1b3c8",
+    "uuid": "7d027593-3f09-4285-b7d5-776ce9b7f7f4",
     "version": 1
 }

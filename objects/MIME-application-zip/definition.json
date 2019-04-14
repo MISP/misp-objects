@@ -265,7 +265,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/iWork.numbers",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -671,6 +671,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "06ba549b-c18b-4948-a993-bb9f2cbc5688",
+    "uuid": "928d2081-3d9b-45db-b039-ef80c42b237e",
     "version": 1
 }

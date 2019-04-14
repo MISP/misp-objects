@@ -199,7 +199,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/DjVu.djvu",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -299,6 +299,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "144c6211-3053-4f6a-b24c-a586dabf20dd",
+    "uuid": "aa325bac-183d-457a-9be6-2264c1e3f6fc",
     "version": 1
 }

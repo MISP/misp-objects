@@ -253,7 +253,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/PostScript.eps",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -425,6 +425,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "9e02e1f0-e247-4f21-896b-69609d74d3a2",
+    "uuid": "a80f4c64-5d3c-40bb-aa95-360baad9efc0",
     "version": 1
 }

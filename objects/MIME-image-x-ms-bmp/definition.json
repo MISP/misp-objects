@@ -145,7 +145,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/BMP.bmp",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -173,6 +173,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "1ac5bcd8-7479-4152-9f11-5210c7ed494f",
+    "uuid": "d1b4b7f4-757e-40dd-b0f7-f19908038163",
     "version": 1
 }

@@ -199,7 +199,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/AIFF.aif",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -227,6 +227,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "a4950577-435e-4f12-bb8d-ebf2b705a77e",
+    "uuid": "fb2602b1-b7ed-4dce-8b45-3647f5e7270b",
     "version": 1
 }

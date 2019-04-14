@@ -235,7 +235,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/DPX.dpx",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -263,6 +263,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "5af1c0fc-727c-4684-bd0b-4ca6304e7c88",
+    "uuid": "25b41156-87a1-46df-b136-c5b30a363769",
     "version": 1
 }

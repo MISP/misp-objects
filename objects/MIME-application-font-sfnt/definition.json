@@ -223,7 +223,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Font.ttf",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -251,6 +251,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "959c297f-7e15-4a55-95be-0c6425928ac7",
+    "uuid": "2d82a821-d1c0-4b6f-9823-6702d6131655",
     "version": 1
 }

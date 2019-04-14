@@ -241,7 +241,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/MP3.mp3",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -269,6 +269,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "80fc728b-df45-4b0c-ac57-15f82a42460b",
+    "uuid": "464bf653-e7a4-45ba-8fbc-cbe9b2c37331",
     "version": 1
 }

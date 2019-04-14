@@ -289,7 +289,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/FlashPix.ppt",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -317,6 +317,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "535749cc-7843-4f6f-a4ea-e433da8d4603",
+    "uuid": "1f47a00c-8385-422f-90b7-8119e45609d0",
     "version": 1
 }

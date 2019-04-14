@@ -571,7 +571,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Photoshop.psd",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -665,6 +665,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "fb6613e5-fe67-4036-b5b2-a9b624156f72",
+    "uuid": "e8711668-1529-47d5-b2b5-f92b4795f704",
     "version": 1
 }

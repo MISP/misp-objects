@@ -91,7 +91,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/EXE.so",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -119,6 +119,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "4725a929-4061-4d6f-a6d2-8ce03ed3c217",
+    "uuid": "8b5b0a44-13eb-474c-bdb2-d43712d22a92",
     "version": 1
 }

@@ -121,7 +121,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Flash.swf",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -161,6 +161,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "8acaa16d-0669-4d4e-8659-2a78a7683393",
+    "uuid": "12bbe5ea-e170-4a1e-b6a7-4cdb64444a65",
     "version": 1
 }

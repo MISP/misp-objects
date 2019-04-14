@@ -109,7 +109,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/RIFF.webp",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -137,6 +137,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "df43d021-58b7-4332-a3b4-8c95193c459b",
+    "uuid": "f87d4b1d-7c35-46e5-a242-d7f5884b6bb3",
     "version": 1
 }

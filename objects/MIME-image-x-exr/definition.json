@@ -151,7 +151,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/OpenEXR.exr",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -179,6 +179,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "3f29b8b3-8be1-4b28-acf8-ddd69b007e1b",
+    "uuid": "967fc59a-ccd1-4604-b5ed-237fdf72a466",
     "version": 1
 }

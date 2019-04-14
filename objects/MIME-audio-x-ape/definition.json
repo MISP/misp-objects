@@ -181,7 +181,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/APE.ape",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -209,6 +209,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "ba6ce892-c67e-4f6e-927e-1dd195aeaebd",
+    "uuid": "3fea175f-c8f4-4071-8394-3f08a0334b13",
     "version": 1
 }

@@ -157,7 +157,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/PCX.pcx",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -185,6 +185,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "a3a18cdc-ff16-4587-9e86-d69a7b6fd6f6",
+    "uuid": "6c6982b2-6f54-4801-af0d-187cef5d6f4c",
     "version": 1
 }

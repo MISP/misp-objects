@@ -133,7 +133,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/PNG.png",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -173,6 +173,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "428ae171-a42a-48c7-8735-0f19e55f0a96",
+    "uuid": "37a820c5-a397-44e6-9fd4-5aff1343a50f",
     "version": 1
 }

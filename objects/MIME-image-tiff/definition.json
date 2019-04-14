@@ -2983,7 +2983,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/PhaseOne.iiq",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -3239,6 +3239,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "b8e1561d-a964-4219-abe9-bc1f3c3cf90a",
+    "uuid": "bda0d568-6590-4564-88e0-5fb989eb89ac",
     "version": 1
 }

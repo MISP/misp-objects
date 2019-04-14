@@ -127,6 +127,8 @@ class MIMEDefinition:
                 # Set attribute description value.
                 if type(v) is dict:
                     text_attribute["description"] = v['desc']
+                elif k == 'SourceFile':
+                    text_attribute["description"] = 'Source File Path'
                 else:
                     text_attribute["description"] = v
 

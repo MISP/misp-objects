@@ -127,7 +127,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/RTF.rtf",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -155,6 +155,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "aeba9728-931e-4381-b92f-7262cf5519e6",
+    "uuid": "c569be7a-21c7-489b-a579-3507777582ca",
     "version": 1
 }

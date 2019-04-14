@@ -67,7 +67,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/VCard.ics",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -371,6 +371,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "b7a63a52-6a11-4e79-a5bd-008416b8fbd3",
+    "uuid": "09370bfe-9cb5-4be8-a278-5b1db9605cf2",
     "version": 1
 }

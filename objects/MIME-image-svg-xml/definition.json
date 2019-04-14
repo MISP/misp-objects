@@ -121,7 +121,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/XMP.svg",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -197,6 +197,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "1e9a1d7b-569e-447f-bb51-de2e6df7f517",
+    "uuid": "86f651ee-50ba-4537-8ff6-352f4f98fb7e",
     "version": 1
 }

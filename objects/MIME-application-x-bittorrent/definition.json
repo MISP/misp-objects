@@ -67,7 +67,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Torrent.torrent",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -221,6 +221,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "60fa6b86-aff1-4401-bd76-5d589e62a4f4",
+    "uuid": "9ace5fc0-f731-4dd3-834c-07e596440d0e",
     "version": 1
 }

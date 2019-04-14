@@ -217,7 +217,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/ICC_Profile.icc",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -245,6 +245,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "e788eabb-a9d5-494f-b0c1-58a0689de314",
+    "uuid": "4c039cbf-b90e-4ec9-a9c0-9fecdc3804b3",
     "version": 1
 }

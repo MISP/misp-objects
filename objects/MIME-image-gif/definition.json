@@ -277,7 +277,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/GIF.gif",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -317,6 +317,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "5facbe90-0432-477b-a24c-acef2f752b65",
+    "uuid": "3f27161f-9e76-4324-af07-0add045a4e4b",
     "version": 1
 }

@@ -73,7 +73,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/OpenDoc.ods",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -203,6 +203,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "422e62bd-046d-4f84-b1fb-c89d8f31e173",
+    "uuid": "ab17edf1-f2dc-42aa-8905-914280a65ea4",
     "version": 1
 }

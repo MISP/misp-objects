@@ -103,7 +103,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/EXE.macho",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -131,6 +131,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "afb5a876-a0ff-4456-990e-d4321bb50839",
+    "uuid": "1853516a-6e21-418a-9489-cad5c89df392",
     "version": 1
 }

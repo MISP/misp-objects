@@ -253,7 +253,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/EXE.exe",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -281,6 +281,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "6697b53d-9047-45c9-9324-8713df1c4f1a",
+    "uuid": "7ccdba7b-275d-4c95-b2b7-c6cf33e4a100",
     "version": 1
 }

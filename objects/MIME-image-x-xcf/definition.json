@@ -373,7 +373,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/GIMP.xcf",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -431,6 +431,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "e26ce10b-0379-4aa7-a6a2-0ddeb188dda3",
+    "uuid": "8c076f6a-51a3-498e-b488-b48581f05c43",
     "version": 1
 }

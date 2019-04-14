@@ -763,7 +763,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/RIFF.avi",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -821,6 +821,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "9f3ef6df-c402-4279-936f-1ea33e5c176e",
+    "uuid": "7ddae423-bd56-45e9-ace1-6e57ff23f467",
     "version": 1
 }

@@ -325,7 +325,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Flash.flv",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -353,6 +353,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "2ea473fc-f003-422b-b03b-2d49f462806c",
+    "uuid": "9214169b-b72c-4e07-ab1c-b51701e4eba5",
     "version": 1
 }

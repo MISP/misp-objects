@@ -565,7 +565,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/QuickTime.mov",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -623,6 +623,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "b4f01365-35f8-4612-be41-64bafc2ab3fe",
+    "uuid": "1a787d59-002c-47fa-b27d-6695812381c3",
     "version": 1
 }

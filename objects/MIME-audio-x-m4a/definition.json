@@ -421,7 +421,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/QuickTime.m4a",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -449,6 +449,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "d5b33ab3-eb6a-4121-a23b-494539d806b4",
+    "uuid": "80ac36fd-f81e-4cbe-8a5e-d71e5db3ddc3",
     "version": 1
 }

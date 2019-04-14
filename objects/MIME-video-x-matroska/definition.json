@@ -241,7 +241,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Matroska.mkv",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -269,6 +269,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "8dbcc094-7e7b-4fba-a990-0fd6b6897cc7",
+    "uuid": "f44d04b9-dce9-40ad-9125-dbab4783af93",
     "version": 1
 }

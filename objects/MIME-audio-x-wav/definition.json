@@ -151,7 +151,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/RIFF.wav",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -179,6 +179,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "c605edba-72c5-4258-9f55-94821cff8fe6",
+    "uuid": "862e8b36-0b3d-4b7e-9c9e-318ec956ba65",
     "version": 1
 }

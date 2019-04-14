@@ -655,7 +655,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/DICOM.dcm",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -683,6 +683,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "f1a21f0c-8f3e-463d-b918-3c45eb9b12d0",
+    "uuid": "a700864d-05b3-49e1-95db-0410e2077945",
     "version": 1
 }

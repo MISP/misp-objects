@@ -223,7 +223,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Font.pfm",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -251,6 +251,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "a0ceb6fb-b482-4c80-9ac0-e6e48ee5d0cb",
+    "uuid": "e932a141-c454-420c-9c7e-8fc7dcfa1e8d",
     "version": 1
 }

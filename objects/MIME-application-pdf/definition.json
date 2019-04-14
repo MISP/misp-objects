@@ -601,7 +601,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/PDF2.pdf",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -773,6 +773,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "242fe998-dcbf-42c5-b1b4-07b94f016664",
+    "uuid": "e9c19552-21b8-4aff-8dab-30fcedd2ff66",
     "version": 1
 }

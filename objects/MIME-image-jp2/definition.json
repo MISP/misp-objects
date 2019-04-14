@@ -283,7 +283,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Jpeg2000.jp2",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -425,6 +425,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "94dc4039-7f59-4ea8-89d9-22b7384d5096",
+    "uuid": "bdbaf3a7-06fb-44e3-ae10-ea431fff7089",
     "version": 1
 }

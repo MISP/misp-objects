@@ -853,7 +853,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/XMP.xml",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -1421,6 +1421,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "ecf6d8b3-8a1e-4824-92d1-3f7202fae071",
+    "uuid": "cb86400e-258b-4f29-8fb9-f218305a6c5c",
     "version": 1
 }

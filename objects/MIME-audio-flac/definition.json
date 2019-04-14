@@ -121,7 +121,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/FLAC.flac",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -191,6 +191,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "dfec6852-8a01-497f-ad4c-5fb90a0c1de3",
+    "uuid": "d1b5ff40-fc4f-4fab-ab37-f12df9208783",
     "version": 1
 }

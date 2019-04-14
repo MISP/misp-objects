@@ -973,7 +973,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/SigmaDP2.x3f",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -1001,6 +1001,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "49f6a637-d50e-4ef5-baf5-10d78cc99555",
+    "uuid": "2722f016-1e16-4176-85b7-f2c4a3efd0ef",
     "version": 1
 }

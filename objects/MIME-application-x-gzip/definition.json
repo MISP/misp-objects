@@ -67,7 +67,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/ZIP.gz",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -137,6 +137,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "31b09db8-dfc2-4112-871f-0305b4404a69",
+    "uuid": "3e30426e-622b-4f88-b61d-19ef7337fa2d",
     "version": 1
 }

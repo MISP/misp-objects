@@ -115,7 +115,7 @@
             "ui-priority": 0
         },
         "SourceFile": {
-            "description": "/tmp/exiftool/t/images/Real.ra",
+            "description": "Source File Path",
             "disable_correlation": true,
             "misp-attribute": "text",
             "ui-priority": 0
@@ -143,6 +143,6 @@
     "required": [
         "source-file"
     ],
-    "uuid": "e4da8df8-8801-459d-99d6-16f3e89d72ff",
+    "uuid": "14763bc1-e550-4cd2-acb8-b3711a9c27be",
     "version": 1
 }
