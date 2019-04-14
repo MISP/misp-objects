@@ -939,7 +939,8 @@
       "name": "creates",
       "description": "Represents an object that creates something.",
       "format": [
-        "misp"
+        "misp",
+        "haxpak"
       ]
     }
   ],
