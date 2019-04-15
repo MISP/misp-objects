@@ -69,7 +69,7 @@
   },
   "version": 1,
   "description": "An object which describes an organization.",
-  "meta-category": "organization",
+  "meta-category": "misc",
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
-  "name": "organization"
+  "name": "misc"
 }

@@ -82,6 +82,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/cowrie](objects/cowrie/definition.json) - A cowrie object describes cowrie honeypot sessions.
 * [objects/credential](objects/credential/definition.json) - A credential object describes one or more credential(s) including password(s), api key(s) or decryption key(s).
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
+* [objects/device](objects/device/definition.json) - An object to describe a device such as a computer, laptop or alike.
 * [objects/diameter-attack](objects/diameter-attack/definition.json) - Attack as seen on diameter authentication against a GSM, UMTS or LTE network.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
@@ -112,6 +113,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/network-connection](objects/network-connection/definition.json) - Network object describes a local or remote network connection.
 * [objects/network-socket](objects/network-socket/definition.json) - Object to describe a local or remote network connections based on the socket data structure.
 * [objects/original-imported-file](objects/original-imported-file/definition.json) - Object to describe the original files used to import data in MISP.
+* [objects/organization](objects/organization/definition.json) - An object which describes an organization.
 * [objects/passive-dns](objects/passive-dns/definition.json) - Passive DNS records as expressed in [draft-dulaunoy-dnsop-passive-dns-cof-01](https://tools.ietf.org/html/draft-dulaunoy-dnsop-passive-dns-cof-01).
 * [objects/paste](objects/paste/definition.json) - Object describing a paste or similar post from a website allowing to share privately or publicly posts.
 * [objects/pe](objects/pe/definition.json) - Portable Executable (PE) object.
