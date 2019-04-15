@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "values": [
     {
       "name": "derived-from",
@@ -9,6 +9,11 @@
         "stix-2.0",
         "alfred"
       ]
+    },
+    {
+      "name" : "executes",
+	    "description" : "This relationship describes an object which executes another object",
+	    "format" : [ "misp" ]
     },
     {
       "name": "duplicate-of",
