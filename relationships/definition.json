@@ -11,9 +11,11 @@
       ]
     },
     {
-      "name" : "executes",
-	    "description" : "This relationship describes an object which executes another object",
-	    "format" : [ "misp" ]
+      "name": "executes",
+      "description": "This relationship describes an object which executes another object",
+      "format": [
+        "misp"
+      ]
     },
     {
       "name": "duplicate-of",
