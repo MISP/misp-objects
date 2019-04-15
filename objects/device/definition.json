@@ -40,7 +40,13 @@
     "ip-address": {
       "description": "Device IP address",
       "ui-priority": 0,
-      "misp-attribute": "ip-src"
+      "misp-attribute": "ip-src",
+      "multiple": true
+    },
+    "MAC-address": {
+      "description": "Device MAC address",
+      "ui-priority": 0,
+      "misp-attribute": "text"
     },
     "analysis-date": {
       "description": "Date of device analysis",
@@ -54,7 +60,7 @@
       "multiple": true
     }
   },
-  "version": 3,
+  "version": 5,
   "description": "An object to define a device",
   "meta-category": "misc",
   "uuid": "0c64b41a-e583-4f4d-ac92-d484163b9e52",
