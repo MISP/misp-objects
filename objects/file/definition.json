@@ -15,7 +15,7 @@
     "tlsh",
     "pattern-in-file",
     "x509-fingerprint-sha1",
-    "malware-sample"
+    "malware-sample",
     "path",
     "fullpath"
   ],
