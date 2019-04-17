@@ -94,7 +94,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-flac-audio",
-  "requiredOneof": [
+  "requiredOneOf": [
     "BlockSizeMin",
     "BlockSizeMax",
     "FrameSizeMin",

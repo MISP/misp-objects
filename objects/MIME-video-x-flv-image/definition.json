@@ -58,7 +58,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-flv-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

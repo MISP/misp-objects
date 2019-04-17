@@ -34,7 +34,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jpeg-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ThumbnailImage",
     "PreviewImage",
     "ObjectPreviewData",

@@ -3910,7 +3910,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jpeg-camera",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Make",
     "Model",
     "ExposureProgram",

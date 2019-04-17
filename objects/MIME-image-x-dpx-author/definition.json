@@ -16,7 +16,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-dpx-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Creator",
     "Copyright"
   ],

@@ -22,7 +22,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jp2-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "MajorBrand",
     "MinorVersion",
     "CompatibleBrands"

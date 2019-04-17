@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-m4a-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "CoverArt"
   ],
   "uuid": "947fdffc-04a3-41d6-a03a-1be7b2156171",

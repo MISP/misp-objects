@@ -100,7 +100,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-msvideo-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FrameRate",
     "MaxDataRate",
     "FrameCount",

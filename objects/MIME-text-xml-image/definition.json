@@ -184,7 +184,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-xml-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

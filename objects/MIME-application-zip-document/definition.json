@@ -28,7 +28,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-zip-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Projects",
     "Title",
     "Keywords",

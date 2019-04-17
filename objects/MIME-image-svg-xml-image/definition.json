@@ -88,7 +88,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-svg-xml-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

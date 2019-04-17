@@ -124,7 +124,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-x-bittorrent-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Announce",
     "AnnounceList1",
     "AnnounceList2",

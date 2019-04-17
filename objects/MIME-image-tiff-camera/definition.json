@@ -1072,7 +1072,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-tiff-camera",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Make",
     "Model",
     "LightSource",

@@ -136,14 +136,14 @@ class ExifDefinition:
                                    'meta-category': 'file',
                                    'description': 'Object describing file metadata.',
                                    'version': 1,
-                                   'requiredOneof': [],
+                                   'requiredOneOf': [],
                                    'uuid': str(uuid.uuid4()),
                                    'attributes': {}
                                    }
 
                 if isinstance(group_keys, dict):
                     for k, v in group_keys.items():
-                        mime_definition['requiredOneof'].append(k)
+                        mime_definition['requiredOneOf'].append(k)
 
                         # Default attribute values.
                         text_attribute = {"misp-attribute": "text", "ui-priority": 0, "disable_correlation": True}

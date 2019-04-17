@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-plain-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "URL"
   ],
   "uuid": "995d7867-8c18-45c3-999c-c367df16e1d9",

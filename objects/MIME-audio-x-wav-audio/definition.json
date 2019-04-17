@@ -52,7 +52,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-wav-audio",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Encoding",
     "NumChannels",
     "SampleRate",

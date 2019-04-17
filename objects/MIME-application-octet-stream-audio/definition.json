@@ -202,7 +202,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-octet-stream-audio",
-  "requiredOneof": [
+  "requiredOneOf": [
     "MediaIsStereo",
     "Model",
     "Duration",

@@ -178,7 +178,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-ms-asf-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ToolName",
     "Publisher",
     "ToolVersion",

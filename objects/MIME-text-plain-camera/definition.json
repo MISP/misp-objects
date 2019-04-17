@@ -142,7 +142,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-plain-camera",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FlashMode",
     "FlashReturn",
     "RegionExtensionsFlashMode",

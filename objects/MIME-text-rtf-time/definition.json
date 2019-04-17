@@ -28,7 +28,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-rtf-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

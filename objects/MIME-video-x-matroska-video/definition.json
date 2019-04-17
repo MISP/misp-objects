@@ -148,7 +148,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-matroska-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "DocType",
     "DocTypeVersion",
     "DocTypeReadVersion",

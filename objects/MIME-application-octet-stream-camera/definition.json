@@ -1864,7 +1864,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-octet-stream-camera",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Lens",
     "SerialNumber",
     "Flash",

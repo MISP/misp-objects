@@ -178,7 +178,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-flv-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "HasKeyFrames",
     "CuePoint0Name",
     "CuePoint0Time",

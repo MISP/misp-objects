@@ -34,7 +34,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-musepack-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

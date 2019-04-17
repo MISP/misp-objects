@@ -502,7 +502,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-octet-stream-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "NumWBEntries",
     "WBType1",
     "WB_RGBLevels1",

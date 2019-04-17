@@ -70,7 +70,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-postscript-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Writer-Editor",
     "By-line",
     "By-lineTitle",

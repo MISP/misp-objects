@@ -118,7 +118,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jp2-unknown",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ImageCreationXmlns",
     "ImageCreationSchemaLocation",
     "ImageCreationGeneralCreationInfoCreationTime",

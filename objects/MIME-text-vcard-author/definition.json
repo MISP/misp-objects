@@ -16,7 +16,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-vcard-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Name",
     "FormattedName"
   ],

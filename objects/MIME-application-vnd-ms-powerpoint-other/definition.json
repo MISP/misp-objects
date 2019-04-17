@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-vnd-ms-powerpoint-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "CodePage"
   ],
   "uuid": "87efb94f-c64b-4420-a5d7-0a5fea4b09be",

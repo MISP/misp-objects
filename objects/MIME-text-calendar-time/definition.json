@@ -154,7 +154,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-calendar-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-svg-xml-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Language"
   ],
   "uuid": "ea0ff957-76f2-4360-96ec-cfd990737ca7",

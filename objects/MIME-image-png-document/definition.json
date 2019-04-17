@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-png-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "XMPToolkit"
   ],
   "uuid": "68129b59-e381-45f5-94f8-d24cd65ceabf",

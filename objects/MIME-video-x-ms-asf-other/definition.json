@@ -28,7 +28,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-ms-asf-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "AudioCodecName",
     "AudioCodecDescription",
     "VideoCodecName",

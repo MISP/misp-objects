@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-musepack-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Artist"
   ],
   "uuid": "41f01c29-a308-4448-98f7-1c3f47ddc4e8",

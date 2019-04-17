@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-x-shockwave-flash-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Author"
   ],
   "uuid": "074b0f00-bf6d-45ab-b087-2f18b58ff6e1",

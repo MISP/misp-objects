@@ -64,7 +64,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-m4a-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

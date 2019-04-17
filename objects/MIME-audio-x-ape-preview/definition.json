@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-ape-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "CoverArtFront"
   ],
   "uuid": "58aae97c-9d23-471c-8ce6-e4f5c6d2eaf1",

@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-x-font-pfm-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Copyright"
   ],
   "uuid": "b1e3370b-3e0f-4b3a-a38a-8d16b3b83b0a",

@@ -742,7 +742,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-octet-stream-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "DatabaseName",
     "ModificationNumber",
     "PalmFileType",

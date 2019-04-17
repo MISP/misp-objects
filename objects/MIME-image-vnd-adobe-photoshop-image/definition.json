@@ -454,7 +454,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-vnd-adobe-photoshop-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

@@ -22,7 +22,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-x3f-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "JpgFromRaw",
     "PreviewImage",
     "ThumbnailImage"

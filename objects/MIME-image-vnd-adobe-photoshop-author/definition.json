@@ -82,7 +82,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-vnd-adobe-photoshop-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Writer-Editor",
     "By-line",
     "By-lineTitle",

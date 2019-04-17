@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-flac-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Copyright"
   ],
   "uuid": "d8a6c4a7-0ed0-42b4-81ae-f729ae44212b",

@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-canon-crw-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "XMPToolkit"
   ],
   "uuid": "8b488f1b-d1eb-4213-942b-dc4dbfc96ba3",

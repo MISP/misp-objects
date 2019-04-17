@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-quicktime-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "XMPToolkit"
   ],
   "uuid": "904ba0c6-2f96-4a4c-9911-19f9726131b4",

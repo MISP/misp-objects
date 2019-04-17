@@ -28,7 +28,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-x-archive-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

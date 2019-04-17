@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-mpeg-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Picture"
   ],
   "uuid": "d162c2f2-0954-4c4b-868f-8a84fcec554d",

@@ -58,7 +58,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-tiff-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ApplicationRecordVersion",
     "Caption-Abstract",
     "SpecialInstructions",

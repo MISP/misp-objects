@@ -76,7 +76,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-vnd-oasis-opendocument-spreadsheet-unknown",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Transformation",
     "Initial-creator",
     "Creation-date",

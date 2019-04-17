@@ -52,7 +52,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-x-Algol68-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

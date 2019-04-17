@@ -124,7 +124,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-m4a-audio",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Balance",
     "AudioFormat",
     "AudioChannels",

@@ -94,7 +94,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-quicktime-audio",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Balance",
     "AudioFormat",
     "AudioChannels",

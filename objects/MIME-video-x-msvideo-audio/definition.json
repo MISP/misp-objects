@@ -40,7 +40,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-msvideo-audio",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Encoding",
     "NumChannels",
     "SampleRate",

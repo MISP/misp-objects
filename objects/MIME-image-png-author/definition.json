@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-png-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Creator"
   ],
   "uuid": "c6c5418d-e730-4e3f-afde-6fe84ed52fa0",

@@ -46,7 +46,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-pn-realaudio-audio",
-  "requiredOneof": [
+  "requiredOneOf": [
     "AudioBytes",
     "BytesPerMinute",
     "AudioFrameSize",

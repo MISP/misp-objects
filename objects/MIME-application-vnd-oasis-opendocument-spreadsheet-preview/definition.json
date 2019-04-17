@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-vnd-oasis-opendocument-spreadsheet-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "PreviewPNG"
   ],
   "uuid": "50cc02a0-bba7-4a1a-8133-da4936bcab71",

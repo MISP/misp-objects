@@ -196,7 +196,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-dpx-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

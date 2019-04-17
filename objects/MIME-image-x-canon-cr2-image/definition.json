@@ -640,7 +640,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-canon-cr2-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

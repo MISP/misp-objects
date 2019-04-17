@@ -184,7 +184,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-x-dosexec-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "MachineType",
     "ImageFileCharacteristics",
     "PEType",

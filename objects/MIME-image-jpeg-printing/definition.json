@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jpeg-printing",
-  "requiredOneof": [
+  "requiredOneOf": [
     "PrintIMVersion"
   ],
   "uuid": "865c04c5-7a25-4eb0-9424-ade79c3f511c",

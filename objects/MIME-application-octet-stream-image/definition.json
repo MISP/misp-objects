@@ -2980,7 +2980,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-octet-stream-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

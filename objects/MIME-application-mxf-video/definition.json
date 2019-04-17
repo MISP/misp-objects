@@ -142,7 +142,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-mxf-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "MXFVersion",
     "SDKVersion",
     "ApplicationSupplierName",

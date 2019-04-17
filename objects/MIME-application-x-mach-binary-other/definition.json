@@ -40,7 +40,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-x-mach-binary-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "CPUArchitecture",
     "CPUByteOrder",
     "CPUType",

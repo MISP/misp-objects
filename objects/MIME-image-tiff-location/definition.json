@@ -94,7 +94,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-tiff-location",
-  "requiredOneof": [
+  "requiredOneOf": [
     "City",
     "Province-State",
     "Country-PrimaryLocationName",

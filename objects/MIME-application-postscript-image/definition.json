@@ -154,7 +154,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-postscript-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

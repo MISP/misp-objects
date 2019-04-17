@@ -46,7 +46,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-vnd-adobe-photoshop-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ApplicationRecordVersion",
     "Caption-Abstract",
     "ObjectName",

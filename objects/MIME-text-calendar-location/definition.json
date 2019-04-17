@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-calendar-location",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Location"
   ],
   "uuid": "cc931680-6056-4a49-9c96-5110c3af4abc",

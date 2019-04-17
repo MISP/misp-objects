@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-ogg-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Duration"
   ],
   "uuid": "601d4bdf-9952-4048-b23d-9ec5a29eb7bd",

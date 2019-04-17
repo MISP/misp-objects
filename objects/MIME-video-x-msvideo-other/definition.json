@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-x-msvideo-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Duration"
   ],
   "uuid": "bd804a9d-a8d5-4081-bdd1-41403ad00889",

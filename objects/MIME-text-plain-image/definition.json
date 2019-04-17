@@ -388,7 +388,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-plain-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

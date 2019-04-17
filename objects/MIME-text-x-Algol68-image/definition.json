@@ -196,7 +196,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-x-Algol68-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

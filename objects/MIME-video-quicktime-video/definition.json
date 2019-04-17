@@ -262,7 +262,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-quicktime-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "MovieHeaderVersion",
     "TimeScale",
     "Duration",

@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "video-quicktime-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "CoverArt"
   ],
   "uuid": "507c64ff-6c01-4b9f-ad3c-872ed6417b4f",

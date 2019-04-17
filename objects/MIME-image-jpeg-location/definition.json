@@ -202,7 +202,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jpeg-location",
-  "requiredOneof": [
+  "requiredOneOf": [
     "City",
     "Country",
     "State",

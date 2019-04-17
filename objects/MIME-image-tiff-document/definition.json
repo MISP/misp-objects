@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-tiff-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "XMPToolkit"
   ],
   "uuid": "193d0552-d128-49ea-8cda-afe511d89401",

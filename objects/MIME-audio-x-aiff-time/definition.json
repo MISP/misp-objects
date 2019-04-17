@@ -40,7 +40,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-aiff-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

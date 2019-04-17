@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-octet-stream-printing",
-  "requiredOneof": [
+  "requiredOneOf": [
     "PrintIMVersion"
   ],
   "uuid": "4aaabb9d-f5f8-444c-bc70-c7ac657e8938",

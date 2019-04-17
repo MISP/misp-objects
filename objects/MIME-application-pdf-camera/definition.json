@@ -64,7 +64,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-pdf-camera",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Make",
     "Model",
     "ExposureProgram",

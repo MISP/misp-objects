@@ -178,7 +178,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-plain-unknown",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Test",
     "BTestTagField1-en-CA",
     "BTestTagField1-en-US",

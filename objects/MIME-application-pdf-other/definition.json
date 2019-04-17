@@ -88,7 +88,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-pdf-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ApplicationRecordVersion",
     "Caption-Abstract",
     "Headline",

@@ -2146,7 +2146,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jpeg-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

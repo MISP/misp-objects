@@ -100,7 +100,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-tiff-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

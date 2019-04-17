@@ -22,7 +22,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-dicom-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate"

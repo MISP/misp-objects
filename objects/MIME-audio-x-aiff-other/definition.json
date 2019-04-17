@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-aiff-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Duration"
   ],
   "uuid": "a01694e2-58dd-4d58-9781-99f194c45117",

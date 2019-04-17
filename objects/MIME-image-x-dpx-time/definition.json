@@ -28,7 +28,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-dpx-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

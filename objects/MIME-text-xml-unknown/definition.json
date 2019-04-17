@@ -658,7 +658,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-xml-unknown",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ExifToolVersion",
     "FileName",
     "Directory",

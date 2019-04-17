@@ -112,7 +112,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-plain-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Flash",
     "Scene",
     "ManifestLinkForm",

@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-mpeg-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Artist"
   ],
   "uuid": "9018a93f-3aff-47b2-847c-441000a759f6",

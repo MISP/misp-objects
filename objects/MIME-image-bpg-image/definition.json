@@ -394,7 +394,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-bpg-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

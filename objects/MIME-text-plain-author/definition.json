@@ -172,7 +172,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-plain-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ArtworkTitle",
     "ArtworkTitle-de",
     "ArtworkTitle-fr",

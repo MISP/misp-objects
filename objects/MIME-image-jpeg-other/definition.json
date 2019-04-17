@@ -178,7 +178,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jpeg-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "JobRefName",
     "DocumentID",
     "ApplicationRecordVersion",

@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-x-pn-realaudio-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Copyright"
   ],
   "uuid": "4d040fea-f109-4c0f-95e4-5c618905e24e",

@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jp2-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Artist"
   ],
   "uuid": "09dd5593-5d75-4443-a788-95034f0adb72",

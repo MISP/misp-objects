@@ -172,7 +172,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-vcard-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "VCardVersion",
     "Software",
     "Organization",

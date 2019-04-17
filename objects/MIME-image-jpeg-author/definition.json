@@ -112,7 +112,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-jpeg-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Artist",
     "Copyright",
     "Creator",

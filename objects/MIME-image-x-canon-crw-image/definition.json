@@ -418,7 +418,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-canon-crw-image",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileName",
     "Directory",
     "FileSize",

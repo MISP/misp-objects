@@ -34,7 +34,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-vnd-djvu-time",
-  "requiredOneof": [
+  "requiredOneOf": [
     "FileModifyDate",
     "FileAccessDate",
     "FileInodeChangeDate",

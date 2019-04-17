@@ -34,7 +34,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-xml-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Creator",
     "Publisher",
     "Source",

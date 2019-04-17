@@ -76,7 +76,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-postscript-other",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ApplicationRecordVersion",
     "Caption-Abstract",
     "Headline",

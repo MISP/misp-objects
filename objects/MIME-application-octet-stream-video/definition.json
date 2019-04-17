@@ -694,7 +694,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-octet-stream-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "MediaClassPrimaryID",
     "MediaClassSecondaryID",
     "Title",

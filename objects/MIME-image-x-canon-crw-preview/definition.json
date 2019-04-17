@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-x-canon-crw-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "JpgFromRaw"
   ],
   "uuid": "a2369863-c762-4763-912d-0cc22e53cce2",

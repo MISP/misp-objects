@@ -22,7 +22,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-vnd-rn-realmedia-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Author",
     "Copyright",
     "Artist"

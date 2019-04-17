@@ -124,7 +124,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-plain-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "XMPToolkit",
     "About",
     "Custom0020Property00201",

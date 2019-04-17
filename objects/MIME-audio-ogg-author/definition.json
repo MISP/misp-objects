@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "audio-ogg-author",
-  "requiredOneof": [
+  "requiredOneOf": [
     "Artist"
   ],
   "uuid": "a2275f8a-bdae-4f1e-85f7-804753eaca0b",

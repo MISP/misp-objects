@@ -232,7 +232,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-vnd-rn-realmedia-video",
-  "requiredOneof": [
+  "requiredOneOf": [
     "MaxBitrate",
     "AvgBitrate",
     "MaxPacketSize",

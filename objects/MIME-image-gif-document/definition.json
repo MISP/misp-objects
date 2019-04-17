@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-gif-document",
-  "requiredOneof": [
+  "requiredOneOf": [
     "XMPToolkit"
   ],
   "uuid": "e4ddc67e-1809-431d-afdd-4e3523fb9a7a",

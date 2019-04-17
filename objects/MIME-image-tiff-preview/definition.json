@@ -22,7 +22,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "image-tiff-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "ThumbnailTIFF",
     "JpgFromRaw",
     "PreviewImage"

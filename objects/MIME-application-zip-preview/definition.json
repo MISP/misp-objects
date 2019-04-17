@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "application-zip-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "PreviewImage"
   ],
   "uuid": "d32eeb3a-4e8b-4456-805d-e3f6b6912684",

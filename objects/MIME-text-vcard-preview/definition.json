@@ -10,7 +10,7 @@
   "description": "Object describing file metadata.",
   "meta-category": "file",
   "name": "text-vcard-preview",
-  "requiredOneof": [
+  "requiredOneOf": [
     "PhotoJpeg"
   ],
   "uuid": "541b6176-f878-4c5f-8a89-44d498f2ee74",
