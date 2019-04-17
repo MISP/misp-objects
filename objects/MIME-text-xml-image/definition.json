@@ -1,0 +1,221 @@
+{
+  "attributes": {
+    "Aperture": {
+      "description": "Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorantBlack": {
+      "description": "Colorant Black",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorantCyan": {
+      "description": "Colorant Cyan",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorantMagenta": {
+      "description": "Colorant Magenta",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorantMode": {
+      "description": "Colorant Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorantSwatchName": {
+      "description": "Colorant Swatch Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorantType": {
+      "description": "Colorant Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorantYellow": {
+      "description": "Colorant Yellow",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreatorTool": {
+      "description": "Creator Tool",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontComposite": {
+      "description": "Font Composite",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFace": {
+      "description": "Font Face",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFamily": {
+      "description": "Font Family",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFileName": {
+      "description": "Font File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName": {
+      "description": "Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontType": {
+      "description": "Font Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontVersion": {
+      "description": "Font Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Format": {
+      "description": "Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "Megapixels": {
+      "description": "Megapixels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShutterSpeed": {
+      "description": "Shutter Speed",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ThumbnailFormat": {
+      "description": "Thumbnail Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailHeight": {
+      "description": "Thumbnail Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailWidth": {
+      "description": "Thumbnail Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml-image",
+  "requiredOneof": [
+    "FileName",
+    "Directory",
+    "FileSize",
+    "FilePermissions",
+    "FileType",
+    "FileTypeExtension",
+    "MIMEType",
+    "Aperture",
+    "ImageSize",
+    "Megapixels",
+    "ShutterSpeed",
+    "CreatorTool",
+    "ThumbnailFormat",
+    "ThumbnailWidth",
+    "ThumbnailHeight",
+    "ColorantSwatchName",
+    "ColorantMode",
+    "ColorantType",
+    "ColorantCyan",
+    "ColorantMagenta",
+    "ColorantYellow",
+    "ColorantBlack",
+    "FontName",
+    "FontFamily",
+    "FontFace",
+    "FontType",
+    "FontVersion",
+    "FontComposite",
+    "FontFileName",
+    "Format"
+  ],
+  "uuid": "668d3691-57d8-424a-9552-a77bd5b1ab05",
+  "version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-aiff-other",
+  "requiredOneof": [
+    "Duration"
+  ],
+  "uuid": "a01694e2-58dd-4d58-9781-99f194c45117",
+  "version": 1
+}

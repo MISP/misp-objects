@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "About": {
+      "description": "About",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Linearized": {
+      "description": "Linearized",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PDFVersion": {
+      "description": "PDF Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PageCount": {
+      "description": "Page Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Producer": {
+      "description": "Producer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-pdf-document",
+  "requiredOneof": [
+    "PDFVersion",
+    "Linearized",
+    "PageCount",
+    "Creator",
+    "Producer",
+    "XMPToolkit",
+    "About"
+  ],
+  "uuid": "0fa85cbd-9880-450d-b996-39a8696768e7",
+  "version": 1
+}

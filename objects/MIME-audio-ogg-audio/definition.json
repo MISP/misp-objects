@@ -1,0 +1,186 @@
+{
+  "attributes": {
+    "Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioChannels": {
+      "description": "Audio Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlockSizeMax": {
+      "description": "Block Size Max",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlockSizeMin": {
+      "description": "Block Size Min",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Channels": {
+      "description": "Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CoverArtMIMEType": {
+      "description": "Cover Art MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "Encoder": {
+      "description": "Encoder",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameSizeMax": {
+      "description": "Frame Size Max",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameSizeMin": {
+      "description": "Frame Size Min",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MD5Signature": {
+      "description": "MD5 Signature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediajukeboxDate": {
+      "description": "Mediajukebox Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediajukeboxToolName": {
+      "description": "Mediajukebox Tool Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediajukeboxToolVersion": {
+      "description": "Mediajukebox Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "NominalBitrate": {
+      "description": "Nominal Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OpusVersion": {
+      "description": "Opus Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OutputGain": {
+      "description": "Output Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TotalSamples": {
+      "description": "Total Samples",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackNumber": {
+      "description": "Track Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Vendor": {
+      "description": "Vendor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VorbisVersion": {
+      "description": "Vorbis Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-ogg-audio",
+  "requiredOneof": [
+    "VorbisVersion",
+    "AudioChannels",
+    "SampleRate",
+    "NominalBitrate",
+    "Vendor",
+    "CoverArtMIMEType",
+    "MediajukeboxToolName",
+    "MediajukeboxToolVersion",
+    "Genre",
+    "MediajukeboxDate",
+    "Title",
+    "TrackNumber",
+    "Comment",
+    "Album",
+    "OpusVersion",
+    "OutputGain",
+    "Encoder",
+    "BlockSizeMin",
+    "BlockSizeMax",
+    "FrameSizeMin",
+    "FrameSizeMax",
+    "Channels",
+    "BitsPerSample",
+    "TotalSamples",
+    "MD5Signature"
+  ],
+  "uuid": "bc4b2052-6189-4970-b559-17601474b46f",
+  "version": 1
+}

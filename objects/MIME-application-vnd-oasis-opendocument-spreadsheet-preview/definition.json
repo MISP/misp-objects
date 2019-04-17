@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "PreviewPNG": {
+      "description": "Preview PNG",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-oasis-opendocument-spreadsheet-preview",
+  "requiredOneof": [
+    "PreviewPNG"
+  ],
+  "uuid": "50cc02a0-bba7-4a1a-8133-da4936bcab71",
+  "version": 1
+}

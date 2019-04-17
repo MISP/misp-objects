@@ -1,0 +1,81 @@
+{
+  "attributes": {
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Date": {
+      "description": "Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MetadataDate": {
+      "description": "Metadata Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SourceDate": {
+      "description": "Source Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestDate": {
+      "description": "Test Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TestDictWhen": {
+      "description": "Test Dict When",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "CreateDate",
+    "ModifyDate",
+    "MetadataDate",
+    "TestDate",
+    "TestDictWhen",
+    "Date",
+    "SourceDate"
+  ],
+  "uuid": "a2d9626d-be56-4ae2-a076-0f96ed991e56",
+  "version": 1
+}

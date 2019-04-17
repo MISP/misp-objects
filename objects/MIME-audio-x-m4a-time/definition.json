@@ -1,0 +1,81 @@
+{
+  "attributes": {
+    "ContentCreateDate": {
+      "description": "Content Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaCreateDate": {
+      "description": "Media Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaModifyDate": {
+      "description": "Media Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TrackCreateDate": {
+      "description": "Track Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TrackModifyDate": {
+      "description": "Track Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-m4a-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "CreateDate",
+    "ModifyDate",
+    "TrackCreateDate",
+    "TrackModifyDate",
+    "MediaCreateDate",
+    "MediaModifyDate",
+    "ContentCreateDate"
+  ],
+  "uuid": "b062bb72-b757-4517-8e21-73bfbab46624",
+  "version": 1
+}

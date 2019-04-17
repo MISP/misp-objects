@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "CPUArchitecture": {
+      "description": "CPU Architecture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUByteOrder": {
+      "description": "CPU Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUType": {
+      "description": "CPU Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectFileType": {
+      "description": "Object File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-executable-other",
+  "requiredOneof": [
+    "CPUArchitecture",
+    "CPUByteOrder",
+    "ObjectFileType",
+    "CPUType"
+  ],
+  "uuid": "ee718054-d308-4358-8c79-351378a6988f",
+  "version": 1
+}

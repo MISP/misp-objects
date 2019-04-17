@@ -1,0 +1,67 @@
+{
+  "attributes": {
+    "FileVersion": {
+      "description": "File Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageUniqueID": {
+      "description": "Image Unique ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MarkBits": {
+      "description": "Mark Bits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rotation": {
+      "description": "Rotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneCaptureType": {
+      "description": "Scene Capture Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-x-x3f-other",
+  "requiredOneof": [
+    "FileVersion",
+    "ImageUniqueID",
+    "MarkBits",
+    "ImageWidth",
+    "ImageHeight",
+    "Rotation",
+    "WhiteBalance",
+    "SceneCaptureType"
+  ],
+  "uuid": "53fe9ec7-ec6f-4425-918d-2d2ab0158579",
+  "version": 1
+}

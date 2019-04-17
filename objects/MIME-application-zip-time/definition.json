@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateTimeOriginal": {
+      "description": "Date/Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ZipModifyDate": {
+      "description": "Zip Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-zip-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "ZipModifyDate",
+    "DateTimeOriginal",
+    "CreateDate"
+  ],
+  "uuid": "d50e469e-2a5f-4e0e-9b9f-43879f3ad86e",
+  "version": 1
+}

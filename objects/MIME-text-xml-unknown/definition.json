@@ -1,0 +1,774 @@
+{
+  "attributes": {
+    "AFAreaMode": {
+      "description": "AF Area Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFPoint": {
+      "description": "AF Point",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFPointsInFocus": {
+      "description": "AF Points In Focus",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Aperture": {
+      "description": "Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AuxiliaryLens": {
+      "description": "Auxiliary Lens",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorComponents": {
+      "description": "Color Components",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorMode": {
+      "description": "Color Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorSpace": {
+      "description": "Color Space",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ComponentsConfiguration": {
+      "description": "Components Configuration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompressedBitsPerPixel": {
+      "description": "Compressed Bits Per Pixel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Compression": {
+      "description": "Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DataDump": {
+      "description": "Data Dump",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DateTimeOriginal": {
+      "description": "Date Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DigitalZoom": {
+      "description": "Digital Zoom",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EncodingProcess": {
+      "description": "Encoding Process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifByteOrder": {
+      "description": "Exif Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifImageHeight": {
+      "description": "Exif Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifImageWidth": {
+      "description": "Exif Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifToolVersion": {
+      "description": "Exif Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifVersion": {
+      "description": "Exif Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ExposureCompensation": {
+      "description": "Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureProgram": {
+      "description": "Exposure Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureTime": {
+      "description": "Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FNumber": {
+      "description": "F Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSource": {
+      "description": "File Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flash": {
+      "description": "Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashSetting": {
+      "description": "Flash Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashpixVersion": {
+      "description": "Flashpix Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FocalLength": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalLength35efl": {
+      "description": "Focal Length 35efl",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocusMode": {
+      "description": "Focus Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxCreator": {
+      "description": "Gpx Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxSchemaLocation": {
+      "description": "Gpx Schema Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxTrkCmt": {
+      "description": "Gpx Trk Cmt",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxTrkName": {
+      "description": "Gpx Trk Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxTrkTrksegTrkptEle": {
+      "description": "Gpx Trk Trkseg Trkpt Ele",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxTrkTrksegTrkptLat": {
+      "description": "Gpx Trk Trkseg Trkpt Lat",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxTrkTrksegTrkptLon": {
+      "description": "Gpx Trk Trkseg Trkpt Lon",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxTrkTrksegTrkptTime": {
+      "description": "Gpx Trk Trkseg Trkpt Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "GpxVersion": {
+      "description": "Gpx Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GpxXmlns": {
+      "description": "Gpx Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HistoryRunTrackTrackpointPositionAltitude": {
+      "description": "History Run Track Trackpoint Position Altitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HistoryRunTrackTrackpointPositionLatitude": {
+      "description": "History Run Track Trackpoint Position Latitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HistoryRunTrackTrackpointPositionLongitude": {
+      "description": "History Run Track Trackpoint Position Longitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HistoryRunTrackTrackpointTime": {
+      "description": "History Run Track Trackpoint Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "HistorySchemaLocation": {
+      "description": "History Schema Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HistoryVersion": {
+      "description": "History Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HistoryXmlns": {
+      "description": "History Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ISOSelection": {
+      "description": "ISO Selection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageAdjustment": {
+      "description": "Image Adjustment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageDescription": {
+      "description": "Image Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InteropIndex": {
+      "description": "Interop Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InteropVersion": {
+      "description": "Interop Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Iso": {
+      "description": "Iso",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentDescription": {
+      "description": "Kml Document Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentName": {
+      "description": "Kml Document Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentOpen": {
+      "description": "Kml Document Open",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentPlacemarkDescription": {
+      "description": "Kml Document Placemark Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentPlacemarkName": {
+      "description": "Kml Document Placemark Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentPlacemarkStyleUrl": {
+      "description": "Kml Document Placemark Style Url",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentPlacemarkTrackAltitudeMode": {
+      "description": "Kml Document Placemark Track Altitude Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentPlacemarkTrackCoord": {
+      "description": "Kml Document Placemark Track Coord",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentPlacemarkTrackWhen": {
+      "description": "Kml Document Placemark Track When",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleIconStyleIconHref": {
+      "description": "Kml Document Style Icon Style Icon Href",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleIconStyleScale": {
+      "description": "Kml Document Style Icon Style Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleId": {
+      "description": "Kml Document Style Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleLineStyleColor": {
+      "description": "Kml Document Style Line Style Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleLineStyleWidth": {
+      "description": "Kml Document Style Line Style Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleMapId": {
+      "description": "Kml Document Style Map Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleMapPairKey": {
+      "description": "Kml Document Style Map Pair Key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlDocumentStyleMapPairStyleUrl": {
+      "description": "Kml Document Style Map Pair Style Url",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KmlXmlns": {
+      "description": "Kml Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LightSource": {
+      "description": "Light Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LightValue": {
+      "description": "Light Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNoteVersion": {
+      "description": "Maker Note Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManualFocusDistance": {
+      "description": "Manual Focus Distance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxApertureValue": {
+      "description": "Max Aperture Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeteringMode": {
+      "description": "Metering Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Model": {
+      "description": "Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Orientation": {
+      "description": "Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ResolutionUnit": {
+      "description": "Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneMode": {
+      "description": "Scene Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneType": {
+      "description": "Scene Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Sharpness": {
+      "description": "Sharpness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShutterSpeed": {
+      "description": "Shutter Speed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailImage": {
+      "description": "Thumbnail Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailLength": {
+      "description": "Thumbnail Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailOffset": {
+      "description": "Thumbnail Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UserComment": {
+      "description": "User Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XResolution": {
+      "description": "X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YCbCrPositioning": {
+      "description": "Y Cb Cr Positioning",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YCbCrSubSampling": {
+      "description": "Y Cb Cr Sub Sampling",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YResolution": {
+      "description": "Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml-unknown",
+  "requiredOneof": [
+    "ExifToolVersion",
+    "FileName",
+    "Directory",
+    "FileSize",
+    "FileModifyDate",
+    "FileType",
+    "MIMEType",
+    "ExifByteOrder",
+    "ImageWidth",
+    "ImageHeight",
+    "EncodingProcess",
+    "BitsPerSample",
+    "ColorComponents",
+    "YCbCrSubSampling",
+    "ImageDescription",
+    "Make",
+    "Model",
+    "Orientation",
+    "XResolution",
+    "YResolution",
+    "ResolutionUnit",
+    "Software",
+    "ModifyDate",
+    "YCbCrPositioning",
+    "ExposureTime",
+    "FNumber",
+    "ExposureProgram",
+    "Iso",
+    "ExifVersion",
+    "DateTimeOriginal",
+    "CreateDate",
+    "ComponentsConfiguration",
+    "CompressedBitsPerPixel",
+    "ExposureCompensation",
+    "MaxApertureValue",
+    "MeteringMode",
+    "LightSource",
+    "Flash",
+    "FocalLength",
+    "UserComment",
+    "FlashpixVersion",
+    "ColorSpace",
+    "ExifImageWidth",
+    "ExifImageHeight",
+    "FileSource",
+    "SceneType",
+    "MakerNoteVersion",
+    "ColorMode",
+    "Quality",
+    "WhiteBalance",
+    "Sharpness",
+    "FocusMode",
+    "FlashSetting",
+    "ISOSelection",
+    "ImageAdjustment",
+    "AuxiliaryLens",
+    "ManualFocusDistance",
+    "DigitalZoom",
+    "AFAreaMode",
+    "AFPoint",
+    "AFPointsInFocus",
+    "SceneMode",
+    "DataDump",
+    "InteropIndex",
+    "InteropVersion",
+    "Compression",
+    "ThumbnailOffset",
+    "ThumbnailLength",
+    "Aperture",
+    "ImageSize",
+    "ShutterSpeed",
+    "ThumbnailImage",
+    "FocalLength35efl",
+    "LightValue",
+    "HistoryXmlns",
+    "HistorySchemaLocation",
+    "HistoryVersion",
+    "HistoryRunTrackTrackpointPositionLatitude",
+    "HistoryRunTrackTrackpointPositionLongitude",
+    "HistoryRunTrackTrackpointPositionAltitude",
+    "HistoryRunTrackTrackpointTime",
+    "KmlXmlns",
+    "KmlDocumentName",
+    "KmlDocumentOpen",
+    "KmlDocumentDescription",
+    "KmlDocumentStyleMapId",
+    "KmlDocumentStyleMapPairKey",
+    "KmlDocumentStyleMapPairStyleUrl",
+    "KmlDocumentStyleId",
+    "KmlDocumentStyleIconStyleIconHref",
+    "KmlDocumentStyleLineStyleColor",
+    "KmlDocumentStyleLineStyleWidth",
+    "KmlDocumentStyleIconStyleScale",
+    "KmlDocumentPlacemarkName",
+    "KmlDocumentPlacemarkDescription",
+    "KmlDocumentPlacemarkStyleUrl",
+    "KmlDocumentPlacemarkTrackAltitudeMode",
+    "KmlDocumentPlacemarkTrackWhen",
+    "KmlDocumentPlacemarkTrackCoord",
+    "GpxXmlns",
+    "GpxVersion",
+    "GpxCreator",
+    "GpxSchemaLocation",
+    "GpxTrkName",
+    "GpxTrkCmt",
+    "GpxTrkTrksegTrkptLat",
+    "GpxTrkTrksegTrkptLon",
+    "GpxTrkTrksegTrkptEle",
+    "GpxTrkTrksegTrkptTime"
+  ],
+  "uuid": "2553d049-4dc6-435f-ae7e-2202725aa7a4",
+  "version": 1
+}

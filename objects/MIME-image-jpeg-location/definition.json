@@ -1,0 +1,242 @@
+{
+  "attributes": {
+    "City": {
+      "description": "City",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Country": {
+      "description": "Country",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Country-PrimaryLocationCode": {
+      "description": "Country-Primary Location Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Country-PrimaryLocationName": {
+      "description": "Country-Primary Location Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CountryCode": {
+      "description": "Country Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSAltitude": {
+      "description": "GPS Altitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSAltitudeRef": {
+      "description": "GPS Altitude Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSDOP": {
+      "description": "GPS Dilution Of Precision",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSDestBearing": {
+      "description": "GPS Dest Bearing",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSDestBearingRef": {
+      "description": "GPS Dest Bearing Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSDestDistance": {
+      "description": "GPS Dest Distance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSDestDistanceRef": {
+      "description": "GPS Dest Distance Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSDifferential": {
+      "description": "GPS Differential",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSHPositioningError": {
+      "description": "GPS Horizontal Positioning Error",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSImgDirection": {
+      "description": "GPS Img Direction",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSImgDirectionRef": {
+      "description": "GPS Img Direction Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSLatitude": {
+      "description": "GPS Latitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSLatitudeRef": {
+      "description": "GPS Latitude Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSLongitude": {
+      "description": "GPS Longitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSLongitudeRef": {
+      "description": "GPS Longitude Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSMapDatum": {
+      "description": "GPS Map Datum",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSMeasureMode": {
+      "description": "GPS Measure Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSPosition": {
+      "description": "GPS Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSSatellites": {
+      "description": "GPS Satellites",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSSpeed": {
+      "description": "GPS Speed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSSpeedRef": {
+      "description": "GPS Speed Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSStatus": {
+      "description": "GPS Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSTrack": {
+      "description": "GPS Track",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSTrackRef": {
+      "description": "GPS Track Ref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSVersionID": {
+      "description": "GPS Version ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Province-State": {
+      "description": "Province-State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "State": {
+      "description": "State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Sub-location": {
+      "description": "Sub-location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jpeg-location",
+  "requiredOneof": [
+    "City",
+    "Country",
+    "State",
+    "GPSVersionID",
+    "GPSLatitudeRef",
+    "GPSLongitudeRef",
+    "GPSAltitudeRef",
+    "GPSSatellites",
+    "GPSStatus",
+    "GPSMeasureMode",
+    "GPSDOP",
+    "GPSSpeedRef",
+    "GPSSpeed",
+    "GPSTrackRef",
+    "GPSTrack",
+    "GPSImgDirectionRef",
+    "GPSImgDirection",
+    "GPSMapDatum",
+    "GPSDestBearingRef",
+    "GPSDestBearing",
+    "GPSDestDistanceRef",
+    "GPSDestDistance",
+    "GPSDifferential",
+    "GPSAltitude",
+    "GPSLatitude",
+    "GPSLongitude",
+    "GPSPosition",
+    "Province-State",
+    "Country-PrimaryLocationName",
+    "Country-PrimaryLocationCode",
+    "CountryCode",
+    "Sub-location",
+    "GPSHPositioningError"
+  ],
+  "uuid": "b1fa7b88-969a-4a13-bea9-3a18d2ec306e",
+  "version": 1
+}

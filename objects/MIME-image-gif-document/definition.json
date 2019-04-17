@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-gif-document",
+  "requiredOneof": [
+    "XMPToolkit"
+  ],
+  "uuid": "e4ddc67e-1809-431d-afdd-4e3523fb9a7a",
+  "version": 1
+}

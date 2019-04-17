@@ -1,0 +1,88 @@
+{
+  "attributes": {
+    "ContentCreateDate": {
+      "description": "Content Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaCreateDate": {
+      "description": "Media Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaModifyDate": {
+      "description": "Media Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MetadataDate": {
+      "description": "Metadata Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TrackCreateDate": {
+      "description": "Track Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TrackModifyDate": {
+      "description": "Track Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-quicktime-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "CreateDate",
+    "ModifyDate",
+    "TrackCreateDate",
+    "TrackModifyDate",
+    "MediaCreateDate",
+    "MediaModifyDate",
+    "MetadataDate",
+    "ContentCreateDate"
+  ],
+  "uuid": "973a5f9b-b9a9-4c7e-b092-d311a076d369",
+  "version": 1
+}

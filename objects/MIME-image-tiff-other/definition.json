@@ -1,0 +1,74 @@
+{
+  "attributes": {
+    "ApplicationRecordVersion": {
+      "description": "Application Record Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Caption-Abstract": {
+      "description": "Caption-Abstract",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flash": {
+      "description": "Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Headline": {
+      "description": "Headline",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectName": {
+      "description": "Object Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalTransmissionReference": {
+      "description": "Original Transmission Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SpecialInstructions": {
+      "description": "Special Instructions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-tiff-other",
+  "requiredOneof": [
+    "ApplicationRecordVersion",
+    "Caption-Abstract",
+    "SpecialInstructions",
+    "ObjectName",
+    "OriginalTransmissionReference",
+    "Keywords",
+    "Headline",
+    "Creator",
+    "Flash"
+  ],
+  "uuid": "e7cad3d8-9bbb-457b-b1af-3cf255321c1c",
+  "version": 1
+}

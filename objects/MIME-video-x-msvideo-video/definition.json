@@ -1,0 +1,123 @@
+{
+  "attributes": {
+    "AudioCodec": {
+      "description": "Audio Codec",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSampleCount": {
+      "description": "Audio Sample Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSampleRate": {
+      "description": "Audio Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameCount": {
+      "description": "Frame Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameRate": {
+      "description": "Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxDataRate": {
+      "description": "Max Data Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleSize": {
+      "description": "Sample Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamCount": {
+      "description": "Stream Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamType": {
+      "description": "Stream Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TotalFrameCount": {
+      "description": "Total Frame Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoCodec": {
+      "description": "Video Codec",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoFrameCount": {
+      "description": "Video Frame Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoFrameRate": {
+      "description": "Video Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-msvideo-video",
+  "requiredOneof": [
+    "FrameRate",
+    "MaxDataRate",
+    "FrameCount",
+    "StreamCount",
+    "ImageWidth",
+    "ImageHeight",
+    "StreamType",
+    "VideoCodec",
+    "VideoFrameRate",
+    "VideoFrameCount",
+    "Quality",
+    "SampleSize",
+    "AudioCodec",
+    "AudioSampleRate",
+    "AudioSampleCount",
+    "TotalFrameCount"
+  ],
+  "uuid": "b958ae47-a39e-4d63-b75b-7ea85ce20c6c",
+  "version": 1
+}

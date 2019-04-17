@@ -1,0 +1,207 @@
+{
+  "attributes": {
+    "ABLabel": {
+      "description": "AB Label",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AB_UID": {
+      "description": "AB UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AIMHomePref": {
+      "description": "AIM Home Pref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AddressOtherLabel": {
+      "description": "Address Other Label",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EmailInternet": {
+      "description": "Email Internet",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EmailInternetHomePref": {
+      "description": "Email Internet Home Pref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EmailInternetWork": {
+      "description": "Email Internet Work",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ICQPref": {
+      "description": "ICQ Pref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IMPP": {
+      "description": "IMPP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IMPPHomePref": {
+      "description": "IMPP Home Pref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IMPPWork": {
+      "description": "IMPP Work",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LabelWork": {
+      "description": "Label Work",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LogoImageJpeg": {
+      "description": "Logo Image Jpeg",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Note": {
+      "description": "Note",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Note-fr": {
+      "description": "Note (fr)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Organization": {
+      "description": "Organization",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SoundOgg": {
+      "description": "Sound Ogg",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneCellVoicePref": {
+      "description": "Telephone Cell Voice Pref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneHomeVoice": {
+      "description": "Telephone Home Voice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneIphoneCellVoice": {
+      "description": "Telephone Iphone Cell Voice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneMain": {
+      "description": "Telephone Main",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneOtherVoice": {
+      "description": "Telephone Other Voice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephonePager": {
+      "description": "Telephone Pager",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneWorkFax": {
+      "description": "Telephone Work Fax",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneWorkVoice": {
+      "description": "Telephone Work Voice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URLPref": {
+      "description": "URL Pref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VCardVersion": {
+      "description": "VCard Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-vcard-document",
+  "requiredOneof": [
+    "VCardVersion",
+    "Software",
+    "Organization",
+    "EmailInternetHomePref",
+    "EmailInternetWork",
+    "EmailInternet",
+    "TelephoneCellVoicePref",
+    "TelephoneIphoneCellVoice",
+    "TelephoneHomeVoice",
+    "TelephoneWorkVoice",
+    "TelephoneMain",
+    "TelephoneWorkFax",
+    "TelephonePager",
+    "TelephoneOtherVoice",
+    "AddressOtherLabel",
+    "Note",
+    "Note-fr",
+    "URLPref",
+    "AIMHomePref",
+    "ICQPref",
+    "IMPPHomePref",
+    "IMPPWork",
+    "IMPP",
+    "ABLabel",
+    "AB_UID",
+    "LabelWork",
+    "LogoImageJpeg",
+    "SoundOgg"
+  ],
+  "uuid": "d65bc93a-6ddc-4cf4-b13d-b61bad9072fa",
+  "version": 1
+}

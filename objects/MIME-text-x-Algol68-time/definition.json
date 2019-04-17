@@ -1,0 +1,67 @@
+{
+  "attributes": {
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ObservationDate": {
+      "description": "Observation Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ObservationDateEnd": {
+      "description": "Observation Date End",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ObservationTime": {
+      "description": "Observation Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ObservationTimeEnd": {
+      "description": "Observation Time End",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-x-Algol68-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "CreateDate",
+    "ObservationDate",
+    "ObservationTime",
+    "ObservationDateEnd",
+    "ObservationTimeEnd"
+  ],
+  "uuid": "4f9fa2c8-4fff-4fc7-aec9-ad9a25bed967",
+  "version": 1
+}

@@ -1,0 +1,151 @@
+{
+  "attributes": {
+    "Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioBitrate": {
+      "description": "Audio Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioLayer": {
+      "description": "Audio Layer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ChannelMode": {
+      "description": "Channel Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composer": {
+      "description": "Composer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightFlag": {
+      "description": "Copyright Flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Emphasis": {
+      "description": "Emphasis",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Grouping": {
+      "description": "Grouping",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IntensityStereo": {
+      "description": "Intensity Stereo",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Lyrics": {
+      "description": "Lyrics",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPEGAudioVersion": {
+      "description": "MPEG Audio Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MSStereo": {
+      "description": "MS Stereo",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalMedia": {
+      "description": "Original Media",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PartOfSet": {
+      "description": "Part Of Set",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "RelativeVolumeAdjustment": {
+      "description": "Relative Volume Adjustment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Track": {
+      "description": "Track",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-mpeg-audio",
+  "requiredOneof": [
+    "MPEGAudioVersion",
+    "AudioLayer",
+    "AudioBitrate",
+    "SampleRate",
+    "ChannelMode",
+    "MSStereo",
+    "IntensityStereo",
+    "CopyrightFlag",
+    "OriginalMedia",
+    "Emphasis",
+    "Track",
+    "PartOfSet",
+    "RelativeVolumeAdjustment",
+    "Lyrics",
+    "Title",
+    "Composer",
+    "Album",
+    "Grouping",
+    "Genre",
+    "Comment"
+  ],
+  "uuid": "1370b163-09d6-493a-92d6-869c4e8d16fc",
+  "version": 1
+}

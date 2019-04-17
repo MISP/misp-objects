@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-x-dpx-author",
+  "requiredOneof": [
+    "Creator",
+    "Copyright"
+  ],
+  "uuid": "542b1da1-d6e6-449e-8a67-e390ef1ad42f",
+  "version": 1
+}

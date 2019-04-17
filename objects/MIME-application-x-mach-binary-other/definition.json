@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "CPUArchitecture": {
+      "description": "CPU Architecture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUByteOrder": {
+      "description": "CPU Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUSubtype": {
+      "description": "CPU Subtype",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUType": {
+      "description": "CPU Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectFileType": {
+      "description": "Object File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectFlags": {
+      "description": "Object Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-mach-binary-other",
+  "requiredOneof": [
+    "CPUArchitecture",
+    "CPUByteOrder",
+    "CPUType",
+    "CPUSubtype",
+    "ObjectFileType",
+    "ObjectFlags"
+  ],
+  "uuid": "63ce455b-9d8d-4a2b-a6ae-bb720b2633dc",
+  "version": 1
+}

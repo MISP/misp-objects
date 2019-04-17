@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "PhotoJpeg": {
+      "description": "Photo Jpeg",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-vcard-preview",
+  "requiredOneof": [
+    "PhotoJpeg"
+  ],
+  "uuid": "541b6176-f878-4c5f-8a89-44d498f2ee74",
+  "version": 1
+}

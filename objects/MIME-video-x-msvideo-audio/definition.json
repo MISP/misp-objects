@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "AvgBytesPerSec": {
+      "description": "Avg Bytes Per Sec",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Encoding": {
+      "description": "Encoding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumChannels": {
+      "description": "Num Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-msvideo-audio",
+  "requiredOneof": [
+    "Encoding",
+    "NumChannels",
+    "SampleRate",
+    "AvgBytesPerSec",
+    "BitsPerSample",
+    "Software"
+  ],
+  "uuid": "c1412aaa-2739-49be-97f9-36ff38430596",
+  "version": 1
+}

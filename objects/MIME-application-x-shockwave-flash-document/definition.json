@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-shockwave-flash-document",
+  "requiredOneof": [
+    "XMPToolkit"
+  ],
+  "uuid": "be0c5927-3c19-4d9e-97dd-b55f8c2d145e",
+  "version": 1
+}

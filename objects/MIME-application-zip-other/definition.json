@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "ZipBitFlag": {
+      "description": "Zip Bit Flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipCRC": {
+      "description": "Zip CRC",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipCompressedSize": {
+      "description": "Zip Compressed Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipCompression": {
+      "description": "Zip Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipFileName": {
+      "description": "Zip File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipRequiredVersion": {
+      "description": "Zip Required Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipUncompressedSize": {
+      "description": "Zip Uncompressed Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-zip-other",
+  "requiredOneof": [
+    "ZipRequiredVersion",
+    "ZipBitFlag",
+    "ZipCompression",
+    "ZipCRC",
+    "ZipCompressedSize",
+    "ZipUncompressedSize",
+    "ZipFileName"
+  ],
+  "uuid": "8f615e41-55c4-4c72-83cc-c2a6b3fe2119",
+  "version": 1
+}

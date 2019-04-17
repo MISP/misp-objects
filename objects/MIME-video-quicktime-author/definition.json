@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "AlbumArtist": {
+      "description": "Album Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-quicktime-author",
+  "requiredOneof": [
+    "Creator",
+    "AlbumArtist"
+  ],
+  "uuid": "39a1924f-fb5e-46bd-ac42-50d63cf704bf",
+  "version": 1
+}

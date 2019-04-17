@@ -1,0 +1,32 @@
+{
+  "attributes": {
+    "CompatibleBrands": {
+      "description": "Compatible Brands",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MajorBrand": {
+      "description": "Major Brand",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinorVersion": {
+      "description": "Minor Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jp2-video",
+  "requiredOneof": [
+    "MajorBrand",
+    "MinorVersion",
+    "CompatibleBrands"
+  ],
+  "uuid": "f932e2e1-7aa5-481d-9140-821e1299da2b",
+  "version": 1
+}

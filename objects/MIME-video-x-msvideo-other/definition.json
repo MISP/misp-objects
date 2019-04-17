@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-msvideo-other",
+  "requiredOneof": [
+    "Duration"
+  ],
+  "uuid": "bd804a9d-a8d5-4081-bdd1-41403ad00889",
+  "version": 1
+}

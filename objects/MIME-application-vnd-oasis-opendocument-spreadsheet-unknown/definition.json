@@ -1,0 +1,95 @@
+{
+  "attributes": {
+    "Creation-date": {
+      "description": "Creation-date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Document-statisticCell-count": {
+      "description": "Document-statistic Cell-count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Document-statisticObject-count": {
+      "description": "Document-statistic Object-count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Document-statisticTable-count": {
+      "description": "Document-statistic Table-count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Editing-cycles": {
+      "description": "Editing-cycles",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Editing-duration": {
+      "description": "Editing-duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Generator": {
+      "description": "Generator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Initial-creator": {
+      "description": "Initial-creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keyword": {
+      "description": "Keyword",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Transformation": {
+      "description": "Transformation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "User-defined": {
+      "description": "User-defined",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "User-definedName": {
+      "description": "User-defined Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-oasis-opendocument-spreadsheet-unknown",
+  "requiredOneof": [
+    "Transformation",
+    "Initial-creator",
+    "Creation-date",
+    "Keyword",
+    "Editing-duration",
+    "Editing-cycles",
+    "Document-statisticTable-count",
+    "Document-statisticCell-count",
+    "Document-statisticObject-count",
+    "Generator",
+    "User-definedName",
+    "User-defined"
+  ],
+  "uuid": "a5aa8e81-3476-47a5-89e0-dff20d33de39",
+  "version": 1
+}

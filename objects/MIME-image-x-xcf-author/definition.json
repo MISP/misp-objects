@@ -1,0 +1,46 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rights": {
+      "description": "Rights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WebStatement": {
+      "description": "Web Statement",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-x-xcf-author",
+  "requiredOneof": [
+    "Creator",
+    "Rights",
+    "WebStatement",
+    "Artist",
+    "Copyright"
+  ],
+  "uuid": "c9f4a255-417e-442e-9adf-2303c3fdecf1",
+  "version": 1
+}

@@ -1,0 +1,172 @@
+{
+  "attributes": {
+    "CircleOfConfusion": {
+      "description": "Circle Of Confusion",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureMode": {
+      "description": "Exposure Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashFired": {
+      "description": "Flash Fired",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashFunction": {
+      "description": "Flash Function",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashMode": {
+      "description": "Flash Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashRedEyeMode": {
+      "description": "Flash Red Eye Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashReturn": {
+      "description": "Flash Return",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalLength": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalLength35efl": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneResolutionUnit": {
+      "description": "Focal Plane Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneXResolution": {
+      "description": "Focal Plane X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneYResolution": {
+      "description": "Focal Plane Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HyperfocalDistance": {
+      "description": "Hyperfocal Distance",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxApertureValue": {
+      "description": "Max Aperture Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeteringMode": {
+      "description": "Metering Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Model": {
+      "description": "Camera Model Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RegionExtensionsFlashMode": {
+      "description": "Region Extensions Flash Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RegionExtensionsFlashReturn": {
+      "description": "Region Extensions Flash Return",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScaleFactor35efl": {
+      "description": "Scale Factor To 35 mm Equivalent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneCaptureType": {
+      "description": "Scene Capture Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensingMethod": {
+      "description": "Sensing Method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-plain-camera",
+  "requiredOneof": [
+    "FlashMode",
+    "FlashReturn",
+    "RegionExtensionsFlashMode",
+    "RegionExtensionsFlashReturn",
+    "MaxApertureValue",
+    "MeteringMode",
+    "FocalLength",
+    "FocalPlaneXResolution",
+    "FocalPlaneYResolution",
+    "FocalPlaneResolutionUnit",
+    "SensingMethod",
+    "ExposureMode",
+    "WhiteBalance",
+    "SceneCaptureType",
+    "Make",
+    "Model",
+    "FlashFired",
+    "FlashFunction",
+    "FlashRedEyeMode",
+    "ScaleFactor35efl",
+    "CircleOfConfusion",
+    "FocalLength35efl",
+    "HyperfocalDistance"
+  ],
+  "uuid": "caa468f4-e682-4a48-8f99-713586661600",
+  "version": 1
+}

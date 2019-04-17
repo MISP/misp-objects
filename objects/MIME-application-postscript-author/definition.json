@@ -1,0 +1,88 @@
+{
+  "attributes": {
+    "AuthorsPosition": {
+      "description": "Authors Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "By-line": {
+      "description": "By-line",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "By-lineTitle": {
+      "description": "By-line Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CaptionWriter": {
+      "description": "Caption Writer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightNotice": {
+      "description": "Copyright Notice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Credit": {
+      "description": "Credit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rights": {
+      "description": "Rights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Source": {
+      "description": "Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WebStatement": {
+      "description": "Web Statement",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Writer-Editor": {
+      "description": "Writer-Editor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-postscript-author",
+  "requiredOneof": [
+    "Writer-Editor",
+    "By-line",
+    "By-lineTitle",
+    "CopyrightNotice",
+    "AuthorsPosition",
+    "CaptionWriter",
+    "Credit",
+    "Source",
+    "WebStatement",
+    "Creator",
+    "Rights"
+  ],
+  "uuid": "0ba5d83e-a50f-429d-8a12-735a729280b9",
+  "version": 1
+}

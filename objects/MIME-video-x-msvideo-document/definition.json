@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-msvideo-document",
+  "requiredOneof": [
+    "XMPToolkit"
+  ],
+  "uuid": "43ee1bf6-eb93-4e91-b600-12fdddca35d6",
+  "version": 1
+}

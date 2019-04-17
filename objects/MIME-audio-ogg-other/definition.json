@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-ogg-other",
+  "requiredOneof": [
+    "Duration"
+  ],
+  "uuid": "601d4bdf-9952-4048-b23d-9ec5a29eb7bd",
+  "version": 1
+}

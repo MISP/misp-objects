@@ -1,0 +1,116 @@
+{
+  "attributes": {
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlockSizeMax": {
+      "description": "Block Size Max",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlockSizeMin": {
+      "description": "Block Size Min",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Channels": {
+      "description": "Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameSizeMax": {
+      "description": "Frame Size Max",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameSizeMin": {
+      "description": "Frame Size Min",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MD5Signature": {
+      "description": "MD5 Signature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainAlbumGain": {
+      "description": "Replay Gain Album Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainAlbumPeak": {
+      "description": "Replay Gain Album Peak",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainTrackGain": {
+      "description": "Replay Gain Track Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainTrackPeak": {
+      "description": "Replay Gain Track Peak",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TotalSamples": {
+      "description": "Total Samples",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Vendor": {
+      "description": "Vendor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-flac-audio",
+  "requiredOneof": [
+    "BlockSizeMin",
+    "BlockSizeMax",
+    "FrameSizeMin",
+    "FrameSizeMax",
+    "SampleRate",
+    "Channels",
+    "BitsPerSample",
+    "TotalSamples",
+    "MD5Signature",
+    "Vendor",
+    "ReplayGainTrackPeak",
+    "ReplayGainTrackGain",
+    "ReplayGainAlbumPeak",
+    "ReplayGainAlbumGain",
+    "Title"
+  ],
+  "uuid": "7c23975c-1fd8-4ea4-be8f-180a11b43776",
+  "version": 1
+}

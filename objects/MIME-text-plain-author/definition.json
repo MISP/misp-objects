@@ -1,0 +1,207 @@
+{
+  "attributes": {
+    "ArtworkTitle": {
+      "description": "Artwork Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ArtworkTitle-de": {
+      "description": "Artwork Title (de)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ArtworkTitle-fr": {
+      "description": "Artwork Title (fr)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AttributionName": {
+      "description": "Attribution Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Contributor": {
+      "description": "Contributor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightOwnerName": {
+      "description": "Copyright Owner Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightStatus": {
+      "description": "Copyright Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreditLineRequired": {
+      "description": "Credit Line Required",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DigitalSourceType": {
+      "description": "Digital Source Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageAlterationConstraints": {
+      "description": "Image Alteration Constraints",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageCreatorName": {
+      "description": "Image Creator Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageDuplicationConstraints": {
+      "description": "Image Duplication Constraints",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageFileConstraints": {
+      "description": "Image File Constraints",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageFileFormatAsDelivered": {
+      "description": "Image File Format As Delivered",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageFileSizeAsDelivered": {
+      "description": "Image File Size As Delivered",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageSupplierName": {
+      "description": "Image Supplier Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LicenseeName": {
+      "description": "Licensee Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LicensorName": {
+      "description": "Licensor Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Marked": {
+      "description": "Marked",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaSummaryCode": {
+      "description": "Media Summary Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Notice": {
+      "description": "Notice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PLUSVersion": {
+      "description": "PLUS Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "RegionExtensionsArtworkTitle-de": {
+      "description": "Region Extensions Artwork Title (de)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Reuse": {
+      "description": "Reuse",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rights": {
+      "description": "Rights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rights-fr": {
+      "description": "Rights (fr)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UsageTerms": {
+      "description": "Usage Terms",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-plain-author",
+  "requiredOneof": [
+    "ArtworkTitle",
+    "ArtworkTitle-de",
+    "ArtworkTitle-fr",
+    "RegionExtensionsArtworkTitle-de",
+    "LicenseeName",
+    "Contributor",
+    "Creator",
+    "AttributionName",
+    "Rights",
+    "Rights-fr",
+    "DigitalSourceType",
+    "CopyrightOwnerName",
+    "CopyrightStatus",
+    "CreditLineRequired",
+    "ImageAlterationConstraints",
+    "ImageCreatorName",
+    "ImageDuplicationConstraints",
+    "ImageFileConstraints",
+    "ImageFileFormatAsDelivered",
+    "ImageFileSizeAsDelivered",
+    "ImageSupplierName",
+    "LicensorName",
+    "MediaSummaryCode",
+    "Reuse",
+    "PLUSVersion",
+    "Marked",
+    "UsageTerms",
+    "Notice"
+  ],
+  "uuid": "b3b7d6b9-8e0e-40f8-8608-fe842515e1c6",
+  "version": 1
+}

@@ -1,0 +1,214 @@
+{
+  "attributes": {
+    "ApplicationRecordVersion": {
+      "description": "Application Record Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Caption-Abstract": {
+      "description": "Caption-Abstract",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CodePage": {
+      "description": "Code Page",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreatingApplication": {
+      "description": "Creating Application",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentID": {
+      "description": "Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentNotes": {
+      "description": "Document Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EditStatus": {
+      "description": "Edit Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EmbeddedAudioFileName": {
+      "description": "Embedded Audio File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExtensionClassID": {
+      "description": "Extension Class ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExtensionDescription": {
+      "description": "Extension Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExtensionName": {
+      "description": "Extension Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExtensionPersistence": {
+      "description": "Extension Persistence",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasExtendedXMP": {
+      "description": "Has Extended XMP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Headline": {
+      "description": "Headline",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JobRefName": {
+      "description": "Job Ref Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumSlices": {
+      "description": "Num Slices",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectCycle": {
+      "description": "Object Cycle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectName": {
+      "description": "Object Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalTransmissionReference": {
+      "description": "Original Transmission Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScreenNail": {
+      "description": "Screen Nail",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SlicesGroupName": {
+      "description": "Slices Group Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SpecialInstructions": {
+      "description": "Special Instructions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Storage-StreamPathname": {
+      "description": "Storage-Stream Pathname",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupplementalCategories": {
+      "description": "Supplemental Categories",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrailerSignature": {
+      "description": "Trailer Signature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Urgency": {
+      "description": "Urgency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UsedExtensionNumbers": {
+      "description": "Used Extension Numbers",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jpeg-other",
+  "requiredOneof": [
+    "JobRefName",
+    "DocumentID",
+    "ApplicationRecordVersion",
+    "ObjectName",
+    "Category",
+    "SupplementalCategories",
+    "Keywords",
+    "EditStatus",
+    "Caption-Abstract",
+    "Headline",
+    "SpecialInstructions",
+    "Urgency",
+    "UsedExtensionNumbers",
+    "ExtensionName",
+    "ExtensionClassID",
+    "ExtensionPersistence",
+    "CreatingApplication",
+    "ExtensionDescription",
+    "Storage-StreamPathname",
+    "CodePage",
+    "ScreenNail",
+    "OriginalTransmissionReference",
+    "SlicesGroupName",
+    "NumSlices",
+    "ObjectCycle",
+    "DocumentNotes",
+    "HasExtendedXMP",
+    "EmbeddedAudioFileName",
+    "TrailerSignature"
+  ],
+  "uuid": "ad879a5f-977b-4854-a0aa-fc4458421cd9",
+  "version": 1
+}

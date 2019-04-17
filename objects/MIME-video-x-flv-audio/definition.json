@@ -1,0 +1,88 @@
+{
+  "attributes": {
+    "AudioBitrate": {
+      "description": "Audio Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioBitsPerSample": {
+      "description": "Audio Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioChannels": {
+      "description": "Audio Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioCodecID": {
+      "description": "Audio Codec ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioDelay": {
+      "description": "Audio Delay",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioEncoding": {
+      "description": "Audio Encoding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSampleRate": {
+      "description": "Audio Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSampleSize": {
+      "description": "Audio Sample Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSize": {
+      "description": "Audio Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasAudio": {
+      "description": "Has Audio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Stereo": {
+      "description": "Stereo",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-flv-audio",
+  "requiredOneof": [
+    "AudioBitrate",
+    "Stereo",
+    "AudioSampleSize",
+    "AudioSize",
+    "HasAudio",
+    "AudioDelay",
+    "AudioCodecID",
+    "AudioEncoding",
+    "AudioSampleRate",
+    "AudioBitsPerSample",
+    "AudioChannels"
+  ],
+  "uuid": "3f0b6e84-e057-46e5-9e30-8ff0fafcdfd4",
+  "version": 1
+}

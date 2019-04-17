@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-bpg-document",
+  "requiredOneof": [
+    "XMPToolkit"
+  ],
+  "uuid": "73e00a82-dcf8-40e5-ada9-0f1d2e87f2c4",
+  "version": 1
+}

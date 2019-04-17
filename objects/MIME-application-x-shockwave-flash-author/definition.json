@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-shockwave-flash-author",
+  "requiredOneof": [
+    "Author"
+  ],
+  "uuid": "074b0f00-bf6d-45ab-b087-2f18b58ff6e1",
+  "version": 1
+}

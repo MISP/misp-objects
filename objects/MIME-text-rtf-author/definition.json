@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-rtf-author",
+  "requiredOneof": [
+    "Author",
+    "Copyright"
+  ],
+  "uuid": "57559c4c-15f6-47a6-9c59-e481122ce246",
+  "version": 1
+}

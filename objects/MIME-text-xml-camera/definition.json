@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "FocalLength35efl": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml-camera",
+  "requiredOneof": [
+    "FocalLength35efl"
+  ],
+  "uuid": "fe734699-5bc7-4509-850d-515dc85df010",
+  "version": 1
+}

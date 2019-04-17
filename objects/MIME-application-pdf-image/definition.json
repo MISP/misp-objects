@@ -1,0 +1,417 @@
+{
+  "attributes": {
+    "Aperture": {
+      "description": "Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApertureValue": {
+      "description": "Aperture Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BrightnessValue": {
+      "description": "Brightness Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorSpace": {
+      "description": "Color Space",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ComponentsConfiguration": {
+      "description": "Components Configuration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompressedBitsPerPixel": {
+      "description": "Compressed Bits Per Pixel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Compression": {
+      "description": "Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DisplayedUnitsX": {
+      "description": "Displayed Units X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DisplayedUnitsY": {
+      "description": "Displayed Units Y",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifByteOrder": {
+      "description": "Exif Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifImageHeight": {
+      "description": "Exif Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifImageWidth": {
+      "description": "Exif Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifVersion": {
+      "description": "Exif Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ExposureCompensation": {
+      "description": "Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FNumber": {
+      "description": "F Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSource": {
+      "description": "File Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashpixVersion": {
+      "description": "Flashpix Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "GlobalAltitude": {
+      "description": "Global Altitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GlobalAngle": {
+      "description": "Global Angle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasRealMergedData": {
+      "description": "Has Real Merged Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Headline": {
+      "description": "Headline",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IPTCDigest": {
+      "description": "IPTC Digest",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ISO": {
+      "description": "ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageDescription": {
+      "description": "Image Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Instructions": {
+      "description": "Instructions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LightValue": {
+      "description": "Light Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "Noise": {
+      "description": "Noise",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Orientation": {
+      "description": "Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrintPosition": {
+      "description": "Print Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrintScale": {
+      "description": "Print Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrintStyle": {
+      "description": "Print Style",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReaderName": {
+      "description": "Reader Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ResolutionUnit": {
+      "description": "Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneType": {
+      "description": "Scene Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShutterSpeed": {
+      "description": "Shutter Speed",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ShutterSpeedValue": {
+      "description": "Shutter Speed Value",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupplementalCategories": {
+      "description": "Supplemental Categories",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailLength": {
+      "description": "Thumbnail Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailOffset": {
+      "description": "Thumbnail Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TransmissionReference": {
+      "description": "Transmission Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URL_List": {
+      "description": "URL List",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Urgency": {
+      "description": "Urgency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WriterName": {
+      "description": "Writer Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XResolution": {
+      "description": "X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YCbCrPositioning": {
+      "description": "Y Cb Cr Positioning",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YResolution": {
+      "description": "Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-pdf-image",
+  "requiredOneof": [
+    "FileName",
+    "Directory",
+    "FileSize",
+    "FilePermissions",
+    "FileType",
+    "FileTypeExtension",
+    "MIMEType",
+    "IPTCDigest",
+    "XResolution",
+    "DisplayedUnitsX",
+    "YResolution",
+    "DisplayedUnitsY",
+    "PrintStyle",
+    "PrintPosition",
+    "PrintScale",
+    "GlobalAngle",
+    "GlobalAltitude",
+    "URL_List",
+    "HasRealMergedData",
+    "WriterName",
+    "ReaderName",
+    "ExifByteOrder",
+    "ImageDescription",
+    "Orientation",
+    "ResolutionUnit",
+    "Software",
+    "YCbCrPositioning",
+    "FNumber",
+    "ISO",
+    "ExifVersion",
+    "ComponentsConfiguration",
+    "CompressedBitsPerPixel",
+    "ShutterSpeedValue",
+    "ApertureValue",
+    "BrightnessValue",
+    "ExposureCompensation",
+    "Noise",
+    "FlashpixVersion",
+    "ColorSpace",
+    "ExifImageWidth",
+    "ExifImageHeight",
+    "FileSource",
+    "SceneType",
+    "Compression",
+    "ThumbnailOffset",
+    "ThumbnailLength",
+    "Category",
+    "Headline",
+    "Instructions",
+    "TransmissionReference",
+    "Urgency",
+    "SupplementalCategories",
+    "Description",
+    "Title",
+    "Subject",
+    "Aperture",
+    "ShutterSpeed",
+    "LightValue"
+  ],
+  "uuid": "09bb6573-a7ac-4849-a986-7eed605c0882",
+  "version": 1
+}

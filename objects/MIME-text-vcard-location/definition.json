@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "AddressHomePref": {
+      "description": "Address Home Pref",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AddressOther": {
+      "description": "Address Other",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AddressOtherGeolocation": {
+      "description": "Address Other Geolocation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AddressWork": {
+      "description": "Address Work",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-vcard-location",
+  "requiredOneof": [
+    "AddressHomePref",
+    "AddressWork",
+    "AddressOther",
+    "AddressOtherGeolocation"
+  ],
+  "uuid": "72f0b49d-be02-4611-b99a-0927268869ca",
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Model": {
+      "description": "Camera Model Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-wav-camera",
+  "requiredOneof": [
+    "Make",
+    "Model"
+  ],
+  "uuid": "d0ade0cb-c6e5-4b17-90bc-620be8b58ee4",
+  "version": 1
+}

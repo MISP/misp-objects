@@ -1,0 +1,81 @@
+{
+  "attributes": {
+    "ExposureProgram": {
+      "description": "Exposure Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flash": {
+      "description": "Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneResolutionUnit": {
+      "description": "Focal Plane Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneXResolution": {
+      "description": "Focal Plane X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneYResolution": {
+      "description": "Focal Plane Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxApertureValue": {
+      "description": "Max Aperture Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeteringMode": {
+      "description": "Metering Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Model": {
+      "description": "Camera Model Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensingMethod": {
+      "description": "Sensing Method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-pdf-camera",
+  "requiredOneof": [
+    "Make",
+    "Model",
+    "ExposureProgram",
+    "MaxApertureValue",
+    "MeteringMode",
+    "Flash",
+    "FocalPlaneXResolution",
+    "FocalPlaneYResolution",
+    "FocalPlaneResolutionUnit",
+    "SensingMethod"
+  ],
+  "uuid": "6482273d-a8c9-472e-a304-f0a6b59e402c",
+  "version": 1
+}

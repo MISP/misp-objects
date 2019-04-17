@@ -1,0 +1,816 @@
+{
+  "attributes": {
+    "ATSCContent": {
+      "description": "ATSC Content",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ActualSoftPostPadding": {
+      "description": "Actual Soft Post Padding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ActualSoftPrePadding": {
+      "description": "Actual Soft Pre Padding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AspectRatio": {
+      "description": "Aspect Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "AudioStreamType": {
+      "description": "Audio Stream Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AvgBitrate": {
+      "description": "Avg Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BrandingImageID": {
+      "description": "Branding Image ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BrandingName": {
+      "description": "Branding Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Colorimetry": {
+      "description": "Colorimetry",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "CompatibleBrands": {
+      "description": "Compatible Brands",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompressorVersion": {
+      "description": "Compressor Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentProtected": {
+      "description": "Content Protected",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentProtectedPercent": {
+      "description": "Content Protected Percent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CurrentTime": {
+      "description": "Current Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DTVContent": {
+      "description": "DTV Content",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FrameRate": {
+      "description": "Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GraphicsMode": {
+      "description": "Graphics Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HDContent": {
+      "description": "HD Content",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HandlerType": {
+      "description": "Handler Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HardPostPadding": {
+      "description": "Hard Post Padding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HardPrePadding": {
+      "description": "Hard Pre Padding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InBandRatingAttributes": {
+      "description": "In Band Rating Attributes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InBandRatingLevel": {
+      "description": "In Band Rating Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InBandRatingSystem": {
+      "description": "In Band Rating System",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KeepUntil": {
+      "description": "Keep Until",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Language": {
+      "description": "Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MOIVersion": {
+      "description": "MOI Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MajorBrand": {
+      "description": "Major Brand",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MatrixStructure": {
+      "description": "Matrix Structure",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaClassPrimaryID": {
+      "description": "Media Class Primary ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaClassSecondaryID": {
+      "description": "Media Class Secondary ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaCredits": {
+      "description": "Media Credits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaDuration": {
+      "description": "Media Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaHeaderVersion": {
+      "description": "Media Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsDelay": {
+      "description": "Media Is Delay",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsFinale": {
+      "description": "Media Is Finale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsLive": {
+      "description": "Media Is Live",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsMovie": {
+      "description": "Media Is Movie",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsPremiere": {
+      "description": "Media Is Premiere",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsRepeat": {
+      "description": "Media Is Repeat",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsSAP": {
+      "description": "Media Is SAP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsSport": {
+      "description": "Media Is Sport",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsSubtitled": {
+      "description": "Media Is Subtitled",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsTape": {
+      "description": "Media Is Tape",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaLanguageCode": {
+      "description": "Media Language Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaNetworkAffiliation": {
+      "description": "Media Network Affiliation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaOriginalChannel": {
+      "description": "Media Original Channel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaOriginalChannelSubNumber": {
+      "description": "Media Original Channel Sub Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaOriginalRunTime": {
+      "description": "Media Original Run Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaStationCallSign": {
+      "description": "Media Station Call Sign",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaStationName": {
+      "description": "Media Station Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbAspectRatioX": {
+      "description": "Media Thumb Aspect Ratio X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbAspectRatioY": {
+      "description": "Media Thumb Aspect Ratio Y",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbHeight": {
+      "description": "Media Thumb Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbRatingAttributes": {
+      "description": "Media Thumb Rating Attributes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbRatingLevel": {
+      "description": "Media Thumb Rating Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbRatingSystem": {
+      "description": "Media Thumb Rating System",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbRet": {
+      "description": "Media Thumb Ret",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbStride": {
+      "description": "Media Thumb Stride",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaThumbWidth": {
+      "description": "Media Thumb Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaTimeScale": {
+      "description": "Media Time Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinorVersion": {
+      "description": "Minor Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MovieDataOffset": {
+      "description": "Movie Data Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MovieDataSize": {
+      "description": "Movie Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MovieHeaderVersion": {
+      "description": "Movie Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NextTrackID": {
+      "description": "Next Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OpColor": {
+      "description": "Op Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalFrameRate": {
+      "description": "Original Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalSoftPostPadding": {
+      "description": "Original Soft Post Padding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalSoftPrePadding": {
+      "description": "Original Soft Pre Padding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ParentalRating": {
+      "description": "Parental Rating",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ParentalRatingReason": {
+      "description": "Parental Rating Reason",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PosterTime": {
+      "description": "Poster Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PreferredRate": {
+      "description": "Preferred Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreferredVolume": {
+      "description": "Preferred Volume",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewDuration": {
+      "description": "Preview Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PreviewTime": {
+      "description": "Preview Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ProgramID": {
+      "description": "Program ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Provider": {
+      "description": "Provider",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProviderCopyright": {
+      "description": "Provider Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProviderRating": {
+      "description": "Provider Rating",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RedcodeVersion": {
+      "description": "Redcode Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReelNumber": {
+      "description": "Reel Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RequestID": {
+      "description": "Request ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rotation": {
+      "description": "Rotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleDuration": {
+      "description": "Sample Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SampleTime": {
+      "description": "Sample Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ScheduleItemID": {
+      "description": "Schedule Item ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SelectionDuration": {
+      "description": "Selection Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SelectionTime": {
+      "description": "Selection Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SeriesUID": {
+      "description": "Series UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ServiceID": {
+      "description": "Service ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Subtitle": {
+      "description": "Subtitle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubtitleDescription": {
+      "description": "Subtitle Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Take": {
+      "description": "Take",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeScale": {
+      "description": "Time Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TotalBitrate": {
+      "description": "Total Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackDuration": {
+      "description": "Track Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TrackHeaderVersion": {
+      "description": "Track Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackID": {
+      "description": "Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackLayer": {
+      "description": "Track Layer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackVolume": {
+      "description": "Track Volume",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoBitrate": {
+      "description": "Video Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoClosedCaptioning": {
+      "description": "Video Closed Captioning",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoFormat": {
+      "description": "Video Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoFrameRate": {
+      "description": "Video Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoScanType": {
+      "description": "Video Scan Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoStreamType": {
+      "description": "Video Stream Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Watched": {
+      "description": "Watched",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-video",
+  "requiredOneof": [
+    "MediaClassPrimaryID",
+    "MediaClassSecondaryID",
+    "Title",
+    "Subtitle",
+    "SubtitleDescription",
+    "Genre",
+    "Language",
+    "MediaCredits",
+    "MediaStationCallSign",
+    "MediaStationName",
+    "MediaNetworkAffiliation",
+    "MediaOriginalChannel",
+    "MediaOriginalChannelSubNumber",
+    "MediaOriginalRunTime",
+    "MediaIsRepeat",
+    "MediaIsLive",
+    "MediaIsTape",
+    "MediaIsDelay",
+    "MediaIsSubtitled",
+    "MediaIsMovie",
+    "MediaIsPremiere",
+    "MediaIsFinale",
+    "MediaIsSAP",
+    "MediaIsSport",
+    "ParentalRating",
+    "ParentalRatingReason",
+    "Provider",
+    "ProviderCopyright",
+    "ProviderRating",
+    "VideoClosedCaptioning",
+    "SeriesUID",
+    "ServiceID",
+    "ProgramID",
+    "RequestID",
+    "ScheduleItemID",
+    "Quality",
+    "OriginalSoftPrePadding",
+    "OriginalSoftPostPadding",
+    "HardPrePadding",
+    "HardPostPadding",
+    "BrandingName",
+    "BrandingImageID",
+    "ATSCContent",
+    "DTVContent",
+    "HDContent",
+    "Duration",
+    "KeepUntil",
+    "ActualSoftPrePadding",
+    "ActualSoftPostPadding",
+    "ContentProtected",
+    "ContentProtectedPercent",
+    "InBandRatingSystem",
+    "InBandRatingLevel",
+    "InBandRatingAttributes",
+    "Watched",
+    "MediaThumbWidth",
+    "MediaThumbHeight",
+    "MediaThumbStride",
+    "MediaThumbRet",
+    "MediaThumbRatingSystem",
+    "MediaThumbRatingLevel",
+    "MediaThumbRatingAttributes",
+    "MediaThumbAspectRatioX",
+    "MediaThumbAspectRatioY",
+    "RedcodeVersion",
+    "ImageWidth",
+    "ImageHeight",
+    "FrameRate",
+    "ReelNumber",
+    "Take",
+    "VideoFormat",
+    "OriginalFrameRate",
+    "MOIVersion",
+    "AspectRatio",
+    "VideoBitrate",
+    "VideoStreamType",
+    "AudioStreamType",
+    "TotalBitrate",
+    "VideoScanType",
+    "Colorimetry",
+    "MajorBrand",
+    "MinorVersion",
+    "CompatibleBrands",
+    "CompressorVersion",
+    "MovieHeaderVersion",
+    "TimeScale",
+    "PreferredRate",
+    "PreferredVolume",
+    "PreviewTime",
+    "PreviewDuration",
+    "PosterTime",
+    "SelectionTime",
+    "SelectionDuration",
+    "CurrentTime",
+    "NextTrackID",
+    "TrackHeaderVersion",
+    "TrackID",
+    "TrackDuration",
+    "TrackLayer",
+    "TrackVolume",
+    "SampleTime",
+    "SampleDuration",
+    "GraphicsMode",
+    "OpColor",
+    "VideoFrameRate",
+    "MatrixStructure",
+    "MediaHeaderVersion",
+    "MediaTimeScale",
+    "MediaDuration",
+    "MediaLanguageCode",
+    "HandlerType",
+    "MovieDataSize",
+    "MovieDataOffset",
+    "AvgBitrate",
+    "Rotation"
+  ],
+  "uuid": "1a70c449-1c16-4668-be72-20e1dd77a0f6",
+  "version": 1
+}

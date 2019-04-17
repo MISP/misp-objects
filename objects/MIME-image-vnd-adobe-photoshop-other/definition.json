@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "ApplicationRecordVersion": {
+      "description": "Application Record Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Caption-Abstract": {
+      "description": "Caption-Abstract",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentID": {
+      "description": "Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JobRefName": {
+      "description": "Job Ref Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumSlices": {
+      "description": "Num Slices",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectName": {
+      "description": "Object Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SlicesGroupName": {
+      "description": "Slices Group Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-vnd-adobe-photoshop-other",
+  "requiredOneof": [
+    "ApplicationRecordVersion",
+    "Caption-Abstract",
+    "ObjectName",
+    "JobRefName",
+    "DocumentID",
+    "SlicesGroupName",
+    "NumSlices"
+  ],
+  "uuid": "5df1070a-f77d-4d14-b9ae-c75d9ef17295",
+  "version": 1
+}

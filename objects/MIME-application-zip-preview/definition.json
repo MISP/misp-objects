@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "PreviewImage": {
+      "description": "Preview Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-zip-preview",
+  "requiredOneof": [
+    "PreviewImage"
+  ],
+  "uuid": "d32eeb3a-4e8b-4456-805d-e3f6b6912684",
+  "version": 1
+}

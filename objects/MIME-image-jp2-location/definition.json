@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "GTCitation": {
+      "description": "GT Citation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GTModelType": {
+      "description": "GT Model Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GTRasterType": {
+      "description": "GT Raster Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeoTiffVersion": {
+      "description": "Geo Tiff Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModelTiePoint": {
+      "description": "Model Tie Point",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProjLinearUnits": {
+      "description": "Proj Linear Units",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProjectedCSType": {
+      "description": "Projected CS Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jp2-location",
+  "requiredOneof": [
+    "ModelTiePoint",
+    "GeoTiffVersion",
+    "GTModelType",
+    "GTRasterType",
+    "GTCitation",
+    "ProjectedCSType",
+    "ProjLinearUnits"
+  ],
+  "uuid": "e1665f6d-1e2d-4c30-a8e5-6fbfb3a05da1",
+  "version": 1
+}

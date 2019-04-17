@@ -1,0 +1,2181 @@
+{
+  "attributes": {
+    "AFAreaHeights": {
+      "description": "AF Area Heights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFAreaMode": {
+      "description": "AF Area Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFAreaWidths": {
+      "description": "AF Area Widths",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFAreaXPositions": {
+      "description": "AF Area X Positions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFAreaYPositions": {
+      "description": "AF Area Y Positions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFAssistLamp": {
+      "description": "AF Assist Lamp",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFImageHeight": {
+      "description": "AF Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFImageWidth": {
+      "description": "AF Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFMicroAdjMode": {
+      "description": "AF Micro Adj Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFMicroAdjValue": {
+      "description": "AF Micro Adj Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFMode": {
+      "description": "AF Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFPointPosition": {
+      "description": "AF Point Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFPointsInFocus": {
+      "description": "AF Points In Focus",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFPointsSelected": {
+      "description": "AF Points Selected",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AccelerometerTime": {
+      "description": "Accelerometer Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AccelerometerX": {
+      "description": "Accelerometer X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AccelerometerY": {
+      "description": "Accelerometer Y",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AccelerometerZ": {
+      "description": "Accelerometer Z",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdvancedSceneMode": {
+      "description": "Advanced Scene Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdvancedSceneType": {
+      "description": "Advanced Scene Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AmbienceSelection": {
+      "description": "Ambience Selection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApertureSetting": {
+      "description": "Aperture Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AspectRatio": {
+      "description": "Aspect Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Audio": {
+      "description": "Audio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AutoBracketing": {
+      "description": "Auto Bracketing",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AutoLightingOptimizer": {
+      "description": "Auto Lighting Optimizer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BWFilter": {
+      "description": "BW Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BabyAge": {
+      "description": "Baby Age",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BatteryType": {
+      "description": "Battery Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BayerPattern": {
+      "description": "Bayer Pattern",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitDepth": {
+      "description": "Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlueBalance": {
+      "description": "Blue Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BracketStep": {
+      "description": "Bracket Step",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Brightness": {
+      "description": "Brightness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BurstMode": {
+      "description": "Burst Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraISO": {
+      "description": "Camera ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraModel": {
+      "description": "Camera Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraPartNumber": {
+      "description": "Camera Part Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraSerialNumber": {
+      "description": "Camera Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraTemperature": {
+      "description": "Camera Temperature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraTemperatureRangeMax": {
+      "description": "Camera Temperature Range Max",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraTemperatureRangeMin": {
+      "description": "Camera Temperature Range Min",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CameraType": {
+      "description": "Camera Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonExposureMode": {
+      "description": "Canon Exposure Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonFirmwareVersion": {
+      "description": "Canon Firmware Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonFlashMode": {
+      "description": "Canon Flash Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonImageSize": {
+      "description": "Canon Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonModelID": {
+      "description": "Canon Model ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ChromaticAberrationSetting": {
+      "description": "Chromatic Aberration Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CircleOfConfusion": {
+      "description": "Circle Of Confusion",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorBalanceBlue": {
+      "description": "Color Balance Blue",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorBalanceGreen": {
+      "description": "Color Balance Green",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorBalanceRed": {
+      "description": "Color Balance Red",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorDataVersion": {
+      "description": "Color Data Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorEffect": {
+      "description": "Color Effect",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorFilter": {
+      "description": "Color Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorMode": {
+      "description": "Color Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorSpace": {
+      "description": "Color Space",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempAsShot": {
+      "description": "Color Temp As Shot",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempAuto": {
+      "description": "Color Temp Auto",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempCloudy": {
+      "description": "Color Temp Cloudy",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempDaylight": {
+      "description": "Color Temp Daylight",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempFlash": {
+      "description": "Color Temp Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempFluorescent": {
+      "description": "Color Temp Fluorescent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempKelvin": {
+      "description": "Color Temp Kelvin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempMeasured": {
+      "description": "Color Temp Measured",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempShade": {
+      "description": "Color Temp Shade",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTempTungsten": {
+      "description": "Color Temp Tungsten",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTemperature": {
+      "description": "Color Temperature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTone": {
+      "description": "Color Tone",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompressedImageSize": {
+      "description": "Compressed Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ConditionalFEC": {
+      "description": "Flash Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContinuousDrive": {
+      "description": "Continuous Drive",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Contrast": {
+      "description": "Contrast",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContrastMode": {
+      "description": "Contrast Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ConversionLens": {
+      "description": "Conversion Lens",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropArea": {
+      "description": "Crop Area",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropBottomMargin": {
+      "description": "Crop Bottom Margin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropLeftMargin": {
+      "description": "Crop Left Margin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropRightMargin": {
+      "description": "Crop Right Margin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropTopMargin": {
+      "description": "Crop Top Margin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CroppedImageHeight": {
+      "description": "Cropped Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CroppedImageLeft": {
+      "description": "Cropped Image Left",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CroppedImageTop": {
+      "description": "Cropped Image Top",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CroppedImageWidth": {
+      "description": "Cropped Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomControls": {
+      "description": "Custom Controls",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomPictureStyleFileName": {
+      "description": "Custom Picture Style File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DECPosition": {
+      "description": "DEC Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DarkFocusEnvironment": {
+      "description": "Dark Focus Environment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DataDump": {
+      "description": "Data Dump",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DigitalZoom": {
+      "description": "Digital Zoom",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DigitalZoomRatio": {
+      "description": "Digital Zoom Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DriveMode": {
+      "description": "Drive Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DynamicRange": {
+      "description": "Dynamic Range",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DynamicRangeSetting": {
+      "description": "Dynamic Range Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EasyMode": {
+      "description": "Easy Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureCompensation": {
+      "description": "Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureCount": {
+      "description": "Exposure Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureMode": {
+      "description": "Exposure Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureProgram": {
+      "description": "Exposure Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureTime": {
+      "description": "Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FNumber": {
+      "description": "F Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FacesDetected": {
+      "description": "Faces Detected",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileNumberMemory": {
+      "description": "File Number Memory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilmMode": {
+      "description": "Film Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Filter": {
+      "description": "Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilterModel": {
+      "description": "Filter Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilterPartNumber": {
+      "description": "Filter Part Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilterSerialNumber": {
+      "description": "Filter Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FirmwareID": {
+      "description": "Firmware ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FirmwareVersion": {
+      "description": "Firmware Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FisheyeFilter": {
+      "description": "Fisheye Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flash": {
+      "description": "Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashActivity": {
+      "description": "Flash Activity",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashBias": {
+      "description": "Flash Bias",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashBits": {
+      "description": "Flash Bits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashCurtain": {
+      "description": "Flash Curtain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashExposureComp": {
+      "description": "Flash Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashFired": {
+      "description": "Flash Fired",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashGuideNumber": {
+      "description": "Flash Guide Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashMetering": {
+      "description": "Flash Metering",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashMode": {
+      "description": "Flash Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashType": {
+      "description": "Flash Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalLength": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalLength35efl": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalLengthIn35mmFormat": {
+      "description": "Focal Length In 35mm Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneResolutionUnit": {
+      "description": "Focal Plane Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneXResolution": {
+      "description": "Focal Plane X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneYResolution": {
+      "description": "Focal Plane Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalUnits": {
+      "description": "Focal Units",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocusArea": {
+      "description": "Focus Area",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocusDistance": {
+      "description": "Focus Distance",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FocusMode": {
+      "description": "Focus Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocusRange": {
+      "description": "Focus Range",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FolderName": {
+      "description": "Folder Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameExposureTime": {
+      "description": "Frame Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FujiFlashMode": {
+      "description": "Fuji Flash Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Gain": {
+      "description": "Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GainControl": {
+      "description": "Gain Control",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GrainyBWFilter": {
+      "description": "Grainy B/W Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HighISONoiseReduction": {
+      "description": "High ISO Noise Reduction",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HighlightTonePriority": {
+      "description": "Highlight Tone Priority",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HighlightWarning": {
+      "description": "Highlight Warning",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HyperfocalDistance": {
+      "description": "Hyperfocal Distance",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "IRWindowTemperature": {
+      "description": "IR Window Temperature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IRWindowTransmission": {
+      "description": "IR Window Transmission",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ISO": {
+      "description": "ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ISOExpansion": {
+      "description": "ISO Expansion",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ISOSetting": {
+      "description": "ISO Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageQuality": {
+      "description": "Image Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageStabilization": {
+      "description": "Image Stabilization",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InternalFlash": {
+      "description": "Internal Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InternalSerialNumber": {
+      "description": "Internal Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IntervalLength": {
+      "description": "Interval Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IntervalMode": {
+      "description": "Interval Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IntervalNumber": {
+      "description": "Interval Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JPEGQuality": {
+      "description": "JPEG Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JSONMetadata": {
+      "description": "JSON Metadata",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LastFileNumber": {
+      "description": "Last File Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Lens": {
+      "description": "Lens",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Lens35efl": {
+      "description": "Lens",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensExitPupilOffsetZ": {
+      "description": "Lens Exit Pupil Offset Z",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensFocusStep": {
+      "description": "Lens Focus Step",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensFocusStepperOffset": {
+      "description": "Lens Focus Stepper Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensID": {
+      "description": "Lens ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensInfinityLambda": {
+      "description": "Lens Infinity Lambda",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "LensModel": {
+      "description": "Lens Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensPartNumber": {
+      "description": "Lens Part Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensSerialNumber": {
+      "description": "Lens Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensTemperature": {
+      "description": "Lens Temperature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensTemperatureAdc": {
+      "description": "Lens Temperature Adc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensType": {
+      "description": "Lens Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensZoomStep": {
+      "description": "Lens Zoom Step",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensZoomStepperOffset": {
+      "description": "Lens Zoom Stepper Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LightSource": {
+      "description": "Light Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LinearityUpperMargin": {
+      "description": "Linearity Upper Margin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LongExposureNoiseReduction": {
+      "description": "Long Exposure Noise Reduction",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MacroMode": {
+      "description": "Macro Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MakerNoteVersion": {
+      "description": "Maker Note Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ManualFlashOutput": {
+      "description": "Manual Flash Output",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxAperture": {
+      "description": "Max Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxApertureAtMaxFocal": {
+      "description": "Max Aperture At Max Focal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxApertureAtMinFocal": {
+      "description": "Max Aperture At Min Focal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxApertureValue": {
+      "description": "Max Aperture Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxFocalLength": {
+      "description": "Max Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasuredRGGB": {
+      "description": "Measured RGGB",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeteringMode": {
+      "description": "Metering Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinAperture": {
+      "description": "Min Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinFocalLength": {
+      "description": "Min Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MiniatureFilter": {
+      "description": "Miniature Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MiniatureFilterOrientation": {
+      "description": "Miniature Filter Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MiniatureFilterParameter": {
+      "description": "Miniature Filter Parameter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MiniatureFilterPosition": {
+      "description": "Miniature Filter Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinoltaImageSize": {
+      "description": "Minolta Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinoltaModelID": {
+      "description": "Minolta Model ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinoltaQuality": {
+      "description": "Minolta Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MlaLensPitch": {
+      "description": "Mla Lens Pitch",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MlaRotation": {
+      "description": "Mla Rotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MlaScaleFactorX": {
+      "description": "Mla Scale Factor X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MlaScaleFactorY": {
+      "description": "Mla Scale Factor Y",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MlaSensorOffsetX": {
+      "description": "Mla Sensor Offset X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MlaSensorOffsetY": {
+      "description": "Mla Sensor Offset Y",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MlaSensorOffsetZ": {
+      "description": "Mla Sensor Offset Z",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MlaTiling": {
+      "description": "Mla Tiling",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Model": {
+      "description": "Camera Model Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NdfilterExposureBias": {
+      "description": "Ndfilter Exposure Bias",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "NoiseReduction": {
+      "description": "Noise Reduction",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NormalWhiteLevel": {
+      "description": "Normal White Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumAFPoints": {
+      "description": "Num AF Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OpticalZoomCode": {
+      "description": "Optical Zoom Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OpticalZoomMode": {
+      "description": "Optical Zoom Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalFileName": {
+      "description": "Original File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OwnerName": {
+      "description": "Owner Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PaintingFilter": {
+      "description": "Painting Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PanasonicExifVersion": {
+      "description": "Panasonic Exif Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PanasonicImageHeight": {
+      "description": "Panasonic Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PanasonicImageWidth": {
+      "description": "Panasonic Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PerChannelBlackLevel": {
+      "description": "Per Channel Black Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PeripheralIlluminationCorr": {
+      "description": "Peripheral Illumination Corr",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PeripheralLightingSetting": {
+      "description": "Peripheral Lighting Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PictureMode": {
+      "description": "Picture Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PictureStylePC": {
+      "description": "Picture Style PC",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PictureStyleUserDef": {
+      "description": "Picture Style User Def",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImageLength": {
+      "description": "Preview Image Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImageStart": {
+      "description": "Preview Image Start",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProgramISO": {
+      "description": "Program ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RGBCurves": {
+      "description": "RGB Curves",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawDepth": {
+      "description": "Raw Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RecordMode": {
+      "description": "Record Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RecordingMode": {
+      "description": "Recording Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RedBalance": {
+      "description": "Red Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RedEyeReduction": {
+      "description": "Red Eye Reduction",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RetractLensOnPowerOff": {
+      "description": "Retract Lens On Power Off",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rotation": {
+      "description": "Rotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SRAWQuality": {
+      "description": "SRAW Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SafetyShift": {
+      "description": "Safety Shift",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Saturation": {
+      "description": "Saturation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScaleFactor35efl": {
+      "description": "Scale Factor To 35 mm Equivalent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneCaptureType": {
+      "description": "Scene Capture Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneMode": {
+      "description": "Scene Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SelfTimer": {
+      "description": "Self Timer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensingMethod": {
+      "description": "Sensing Method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorAnalogGainB": {
+      "description": "Sensor Analog Gain B",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorAnalogGainGb": {
+      "description": "Sensor Analog Gain Gb",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorAnalogGainGr": {
+      "description": "Sensor Analog Gain Gr",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorAnalogGainR": {
+      "description": "Sensor Analog Gain R",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorBitsPerPixel": {
+      "description": "Sensor Bits Per Pixel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorHeight": {
+      "description": "Sensor Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorMosaicTile": {
+      "description": "Sensor Mosaic Tile",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorMosaicUpperLeftPixel": {
+      "description": "Sensor Mosaic Upper Left Pixel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorSerialNumber": {
+      "description": "Sensor Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorWidth": {
+      "description": "Sensor Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SequenceNumber": {
+      "description": "Sequence Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SerialNumber": {
+      "description": "Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Sharpness": {
+      "description": "Sharpness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShootingMode": {
+      "description": "Shooting Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShutterCurtainHack": {
+      "description": "Shutter Curtain Sync",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShutterMechanism": {
+      "description": "Shutter Mechanism",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShutterReleaseWithoutLens": {
+      "description": "Shutter Release Without Lens",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SlowSync": {
+      "description": "Slow Sync",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SocTemperature": {
+      "description": "Soc Temperature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SocTemperatureAdc": {
+      "description": "Soc Temperature Adc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SoftFocusFilter": {
+      "description": "Soft Focus Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SpecularWhiteLevel": {
+      "description": "Specular White Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SpotFocusPointX": {
+      "description": "Spot Focus Point X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SpotFocusPointY": {
+      "description": "Spot Focus Point Y",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StartEdgeCode": {
+      "description": "Start Edge Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StorageMethod": {
+      "description": "Storage Method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StorageSerialNumber": {
+      "description": "Storage Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StorageType": {
+      "description": "Storage Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubjectArea": {
+      "description": "Subject Area",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubjectDistanceRange": {
+      "description": "Subject Distance Range",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubjectProgram": {
+      "description": "Subject Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TextStamp": {
+      "description": "Text Stamp",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailImageValidArea": {
+      "description": "Thumbnail Image Valid Area",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TimeSincePowerOn": {
+      "description": "Time Since Power On",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ToyCameraFilter": {
+      "description": "Toy Camera Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TravelDay": {
+      "description": "Travel Day",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VRDOffset": {
+      "description": "VRD Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ValidAFPoints": {
+      "description": "Valid AF Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Version": {
+      "description": "Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "VignettingCorrVersion": {
+      "description": "Vignetting Corr Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBBlueLevel": {
+      "description": "WB Blue Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBGreenLevel": {
+      "description": "WB Green Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBRedLevel": {
+      "description": "WB Red Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBScale": {
+      "description": "WB Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBShiftAB": {
+      "description": "WB Shift AB",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBShiftGM": {
+      "description": "WB Shift GM",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevels": {
+      "description": "WB RGGB Levels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsAsShot": {
+      "description": "WB RGGB Levels As Shot",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsAuto": {
+      "description": "WB RGGB Levels Auto",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsCloudy": {
+      "description": "WB RGGB Levels Cloudy",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsDaylight": {
+      "description": "WB RGGB Levels Daylight",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsFlash": {
+      "description": "WB RGGB Levels Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsFluorescent": {
+      "description": "WB RGGB Levels Fluorescent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsKelvin": {
+      "description": "WB RGGB Levels Kelvin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsMeasured": {
+      "description": "WB RGGB Levels Measured",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsShade": {
+      "description": "WB RGGB Levels Shade",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGGBLevelsTungsten": {
+      "description": "WB RGGB Levels Tungsten",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WatercolorFilter": {
+      "description": "Watercolor Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalanceFineTune": {
+      "description": "White Balance Fine Tune",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WideFocusZone": {
+      "description": "Wide Focus Zone",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WorldTimeLocation": {
+      "description": "World Time Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZoomSourceWidth": {
+      "description": "Zoom Source Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZoomTargetWidth": {
+      "description": "Zoom Target Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-camera",
+  "requiredOneof": [
+    "Lens",
+    "SerialNumber",
+    "Flash",
+    "StartEdgeCode",
+    "ColorTemperature",
+    "CameraType",
+    "FirmwareVersion",
+    "StorageType",
+    "StorageSerialNumber",
+    "CropArea",
+    "ISO",
+    "RGBCurves",
+    "OriginalFileName",
+    "FNumber",
+    "FocalLength",
+    "FocusDistance",
+    "Model",
+    "Filter",
+    "FocalLength35efl",
+    "LightSource",
+    "ImageQuality",
+    "WhiteBalance",
+    "FocusMode",
+    "AFAreaMode",
+    "ImageStabilization",
+    "MacroMode",
+    "ShootingMode",
+    "Audio",
+    "DataDump",
+    "FlashBias",
+    "InternalSerialNumber",
+    "PanasonicExifVersion",
+    "ColorEffect",
+    "TimeSincePowerOn",
+    "BurstMode",
+    "SequenceNumber",
+    "ContrastMode",
+    "NoiseReduction",
+    "SelfTimer",
+    "Rotation",
+    "AFAssistLamp",
+    "ColorMode",
+    "BabyAge",
+    "OpticalZoomMode",
+    "ConversionLens",
+    "TravelDay",
+    "Contrast",
+    "WorldTimeLocation",
+    "TextStamp",
+    "ProgramISO",
+    "AdvancedSceneType",
+    "FacesDetected",
+    "Saturation",
+    "Sharpness",
+    "FilmMode",
+    "JPEGQuality",
+    "ColorTempKelvin",
+    "WBShiftAB",
+    "WBShiftGM",
+    "FlashCurtain",
+    "PanasonicImageWidth",
+    "PanasonicImageHeight",
+    "AFPointPosition",
+    "MakerNoteVersion",
+    "SceneMode",
+    "HighlightWarning",
+    "DarkFocusEnvironment",
+    "WBRedLevel",
+    "WBGreenLevel",
+    "WBBlueLevel",
+    "SensingMethod",
+    "ExposureMode",
+    "DigitalZoomRatio",
+    "FocalLengthIn35mmFormat",
+    "SceneCaptureType",
+    "GainControl",
+    "Make",
+    "ExposureProgram",
+    "MaxApertureValue",
+    "MeteringMode",
+    "AdvancedSceneMode",
+    "BlueBalance",
+    "RedBalance",
+    "ScaleFactor35efl",
+    "CircleOfConfusion",
+    "HyperfocalDistance",
+    "FirmwareID",
+    "SensorHeight",
+    "SensorWidth",
+    "ImageHeight",
+    "ImageWidth",
+    "RawDepth",
+    "BitDepth",
+    "StorageMethod",
+    "BayerPattern",
+    "SubjectArea",
+    "FlashMode",
+    "MinoltaImageSize",
+    "DriveMode",
+    "ExposureTime",
+    "DigitalZoom",
+    "ExposureCompensation",
+    "BracketStep",
+    "IntervalLength",
+    "IntervalNumber",
+    "FlashFired",
+    "MaxAperture",
+    "FileNumberMemory",
+    "LastFileNumber",
+    "ColorBalanceRed",
+    "ColorBalanceGreen",
+    "ColorBalanceBlue",
+    "SubjectProgram",
+    "ISOSetting",
+    "MinoltaModelID",
+    "IntervalMode",
+    "FolderName",
+    "ColorFilter",
+    "BWFilter",
+    "InternalFlash",
+    "Brightness",
+    "SpotFocusPointX",
+    "SpotFocusPointY",
+    "WideFocusZone",
+    "FocusArea",
+    "DECPosition",
+    "FlashMetering",
+    "CompressedImageSize",
+    "PreviewImageStart",
+    "PreviewImageLength",
+    "MinoltaQuality",
+    "FlashExposureComp",
+    "SubjectDistanceRange",
+    "WBScale",
+    "WB_RGGBLevels",
+    "FocalPlaneXResolution",
+    "FocalPlaneYResolution",
+    "FocalPlaneResolutionUnit",
+    "FlashGuideNumber",
+    "MinAperture",
+    "OwnerName",
+    "ApertureSetting",
+    "Gain",
+    "RecordingMode",
+    "JSONMetadata",
+    "AccelerometerTime",
+    "AccelerometerX",
+    "AccelerometerY",
+    "AccelerometerZ",
+    "LensExitPupilOffsetZ",
+    "LensFocusStep",
+    "LensFocusStepperOffset",
+    "LensInfinityLambda",
+    "LensTemperature",
+    "LensTemperatureAdc",
+    "LensZoomStep",
+    "LensZoomStepperOffset",
+    "MlaLensPitch",
+    "MlaRotation",
+    "MlaScaleFactorX",
+    "MlaScaleFactorY",
+    "MlaSensorOffsetX",
+    "MlaSensorOffsetY",
+    "MlaSensorOffsetZ",
+    "MlaTiling",
+    "NdfilterExposureBias",
+    "SensorAnalogGainB",
+    "SensorAnalogGainGb",
+    "SensorAnalogGainGr",
+    "SensorAnalogGainR",
+    "SensorBitsPerPixel",
+    "SensorMosaicTile",
+    "SensorMosaicUpperLeftPixel",
+    "FrameExposureTime",
+    "ShutterMechanism",
+    "SocTemperature",
+    "SocTemperatureAdc",
+    "SensorSerialNumber",
+    "Version",
+    "Quality",
+    "WhiteBalanceFineTune",
+    "FujiFlashMode",
+    "AFMode",
+    "SlowSync",
+    "PictureMode",
+    "ExposureCount",
+    "AutoBracketing",
+    "DynamicRange",
+    "DynamicRangeSetting",
+    "MinFocalLength",
+    "MaxFocalLength",
+    "MaxApertureAtMinFocal",
+    "MaxApertureAtMaxFocal",
+    "CameraModel",
+    "CameraPartNumber",
+    "CameraSerialNumber",
+    "CameraTemperatureRangeMin",
+    "CameraTemperatureRangeMax",
+    "LensModel",
+    "LensPartNumber",
+    "LensSerialNumber",
+    "FilterModel",
+    "FilterPartNumber",
+    "FilterSerialNumber",
+    "IRWindowTemperature",
+    "IRWindowTransmission",
+    "CanonFlashMode",
+    "ContinuousDrive",
+    "RecordMode",
+    "CanonImageSize",
+    "EasyMode",
+    "CameraISO",
+    "FocusRange",
+    "CanonExposureMode",
+    "LensType",
+    "FocalUnits",
+    "FlashActivity",
+    "FlashBits",
+    "ZoomSourceWidth",
+    "ZoomTargetWidth",
+    "ManualFlashOutput",
+    "ColorTone",
+    "SRAWQuality",
+    "OpticalZoomCode",
+    "CameraTemperature",
+    "CanonFirmwareVersion",
+    "CanonModelID",
+    "ThumbnailImageValidArea",
+    "NumAFPoints",
+    "ValidAFPoints",
+    "AFImageWidth",
+    "AFImageHeight",
+    "AFAreaWidths",
+    "AFAreaHeights",
+    "AFAreaXPositions",
+    "AFAreaYPositions",
+    "AFPointsInFocus",
+    "AFPointsSelected",
+    "BatteryType",
+    "CropLeftMargin",
+    "CropRightMargin",
+    "CropTopMargin",
+    "CropBottomMargin",
+    "ISOExpansion",
+    "SafetyShift",
+    "ShutterReleaseWithoutLens",
+    "RetractLensOnPowerOff",
+    "CustomControls",
+    "AspectRatio",
+    "CroppedImageWidth",
+    "CroppedImageHeight",
+    "CroppedImageLeft",
+    "CroppedImageTop",
+    "MeasuredRGGB",
+    "ColorSpace",
+    "VRDOffset",
+    "PictureStyleUserDef",
+    "PictureStylePC",
+    "CustomPictureStyleFileName",
+    "AFMicroAdjMode",
+    "AFMicroAdjValue",
+    "PeripheralLightingSetting",
+    "ChromaticAberrationSetting",
+    "PeripheralIlluminationCorr",
+    "AutoLightingOptimizer",
+    "HighlightTonePriority",
+    "LongExposureNoiseReduction",
+    "HighISONoiseReduction",
+    "AmbienceSelection",
+    "GrainyBWFilter",
+    "SoftFocusFilter",
+    "ToyCameraFilter",
+    "MiniatureFilter",
+    "MiniatureFilterOrientation",
+    "MiniatureFilterPosition",
+    "MiniatureFilterParameter",
+    "FisheyeFilter",
+    "PaintingFilter",
+    "WatercolorFilter",
+    "ColorDataVersion",
+    "WB_RGGBLevelsAsShot",
+    "ColorTempAsShot",
+    "WB_RGGBLevelsAuto",
+    "ColorTempAuto",
+    "WB_RGGBLevelsMeasured",
+    "ColorTempMeasured",
+    "WB_RGGBLevelsDaylight",
+    "ColorTempDaylight",
+    "WB_RGGBLevelsShade",
+    "ColorTempShade",
+    "WB_RGGBLevelsCloudy",
+    "ColorTempCloudy",
+    "WB_RGGBLevelsTungsten",
+    "ColorTempTungsten",
+    "WB_RGGBLevelsFluorescent",
+    "ColorTempFluorescent",
+    "WB_RGGBLevelsKelvin",
+    "WB_RGGBLevelsFlash",
+    "ColorTempFlash",
+    "PerChannelBlackLevel",
+    "NormalWhiteLevel",
+    "SpecularWhiteLevel",
+    "LinearityUpperMargin",
+    "VignettingCorrVersion",
+    "ConditionalFEC",
+    "FlashType",
+    "LensID",
+    "RedEyeReduction",
+    "ShutterCurtainHack",
+    "Lens35efl"
+  ],
+  "uuid": "7fa98c86-d389-4b80-b22f-db9c88f7c054",
+  "version": 1
+}

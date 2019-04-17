@@ -1,0 +1,137 @@
+{
+  "attributes": {
+    "Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlocksPerFrame": {
+      "description": "Blocks Per Frame",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Channels": {
+      "description": "Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompressionLevel": {
+      "description": "Compression Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CoverArtFrontDesc": {
+      "description": "Cover Art Front Desc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FinalFrameBlocks": {
+      "description": "Final Frame Blocks",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaJukeboxDate": {
+      "description": "Media Jukebox Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToolName": {
+      "description": "Tool Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToolVersion": {
+      "description": "Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TotalFrames": {
+      "description": "Total Frames",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Track": {
+      "description": "Track",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Year": {
+      "description": "Year",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-ape-audio",
+  "requiredOneof": [
+    "CompressionLevel",
+    "BlocksPerFrame",
+    "FinalFrameBlocks",
+    "TotalFrames",
+    "BitsPerSample",
+    "Channels",
+    "SampleRate",
+    "Track",
+    "Year",
+    "Genre",
+    "Artist",
+    "Album",
+    "ToolVersion",
+    "ToolName",
+    "Title",
+    "MediaJukeboxDate",
+    "CoverArtFrontDesc",
+    "Duration"
+  ],
+  "uuid": "dd00f34b-98ca-476b-874c-d88dbc36d4b2",
+  "version": 1
+}

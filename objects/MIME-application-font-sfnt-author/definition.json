@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright-he": {
+      "description": "Copyright (he)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-font-sfnt-author",
+  "requiredOneof": [
+    "Copyright",
+    "Copyright-he"
+  ],
+  "uuid": "958fb30f-837d-4a01-9664-710aba728397",
+  "version": 1
+}

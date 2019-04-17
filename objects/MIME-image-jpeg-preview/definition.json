@@ -1,0 +1,46 @@
+{
+  "attributes": {
+    "ObjectPreviewData": {
+      "description": "Object Preview Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImage": {
+      "description": "Preview Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RatioImage": {
+      "description": "Ratio Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawThermalImage": {
+      "description": "Raw Thermal Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailImage": {
+      "description": "Thumbnail Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jpeg-preview",
+  "requiredOneof": [
+    "ThumbnailImage",
+    "PreviewImage",
+    "ObjectPreviewData",
+    "RawThermalImage",
+    "RatioImage"
+  ],
+  "uuid": "750ff018-ae9e-48cf-a7dc-32cb9eff1043",
+  "version": 1
+}

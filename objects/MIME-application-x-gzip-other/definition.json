@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "ArchivedFileName": {
+      "description": "Archived File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Compression": {
+      "description": "Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExtraFlags": {
+      "description": "Extra Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flags": {
+      "description": "Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OperatingSystem": {
+      "description": "Operating System",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-gzip-other",
+  "requiredOneof": [
+    "Compression",
+    "Flags",
+    "ExtraFlags",
+    "OperatingSystem",
+    "ArchivedFileName",
+    "Comment"
+  ],
+  "uuid": "f7074bbd-9e14-49a2-81d1-ec953a73f95c",
+  "version": 1
+}

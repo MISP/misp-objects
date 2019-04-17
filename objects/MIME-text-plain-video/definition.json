@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "URL": {
+      "description": "URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-plain-video",
+  "requiredOneof": [
+    "URL"
+  ],
+  "uuid": "995d7867-8c18-45c3-999c-c367df16e1d9",
+  "version": 1
+}

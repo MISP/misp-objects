@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-quicktime-document",
+  "requiredOneof": [
+    "XMPToolkit"
+  ],
+  "uuid": "904ba0c6-2f96-4a4c-9911-19f9726131b4",
+  "version": 1
+}

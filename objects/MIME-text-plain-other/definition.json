@@ -1,0 +1,137 @@
+{
+  "attributes": {
+    "DerivedFromDocumentID": {
+      "description": "Derived From Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DerivedFromInstanceID": {
+      "description": "Derived From Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentID": {
+      "description": "Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flash": {
+      "description": "Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeoInfo": {
+      "description": "Geo Info",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeoInfoExif": {
+      "description": "Geo Info Exif",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageViews": {
+      "description": "Image Views",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InstanceID": {
+      "description": "Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "License": {
+      "description": "License",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestLinkForm": {
+      "description": "Manifest Link Form",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestReferenceFilePath": {
+      "description": "Manifest Reference File Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "People": {
+      "description": "People",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Scene": {
+      "description": "Scene",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestThing": {
+      "description": "Test Thing",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestThis": {
+      "description": "Test This",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Url": {
+      "description": "Url",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-plain-other",
+  "requiredOneof": [
+    "Flash",
+    "Scene",
+    "ManifestLinkForm",
+    "ManifestReferenceFilePath",
+    "DocumentID",
+    "InstanceID",
+    "DerivedFromInstanceID",
+    "DerivedFromDocumentID",
+    "Description",
+    "GeoInfo",
+    "GeoInfoExif",
+    "ImageViews",
+    "License",
+    "People",
+    "TestThing",
+    "TestThis",
+    "Title",
+    "Url"
+  ],
+  "uuid": "dfc07692-8f8c-4f0c-8412-56e71bed0860",
+  "version": 1
+}

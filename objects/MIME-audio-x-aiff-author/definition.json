@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-aiff-author",
+  "requiredOneof": [
+    "Author",
+    "Artist"
+  ],
+  "uuid": "ae5d5e26-eb63-4863-bf43-5439fc6edcbc",
+  "version": 1
+}

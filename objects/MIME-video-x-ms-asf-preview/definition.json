@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Picture": {
+      "description": "Picture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-ms-asf-preview",
+  "requiredOneof": [
+    "Picture"
+  ],
+  "uuid": "02d3b403-0569-41f0-8157-582001834eca",
+  "version": 1
+}

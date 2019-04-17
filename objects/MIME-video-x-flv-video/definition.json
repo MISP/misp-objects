@@ -1,0 +1,214 @@
+{
+  "attributes": {
+    "CanSeekToEnd": {
+      "description": "Can Seek To End",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint0Name": {
+      "description": "Cue Point 0 Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint0Time": {
+      "description": "Cue Point 0 Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint0Type": {
+      "description": "Cue Point 0 Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint1Name": {
+      "description": "Cue Point 1 Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint1ParameterParam1": {
+      "description": "Cue Point 1 Parameter Param 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint1ParameterParam2": {
+      "description": "Cue Point 1 Parameter Param 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint1Time": {
+      "description": "Cue Point 1 Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CuePoint1Type": {
+      "description": "Cue Point 1 Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DataSize": {
+      "description": "Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileSizeBytes": {
+      "description": "File Size Bytes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameRate": {
+      "description": "Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasCuePoints": {
+      "description": "Has Cue Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasKeyFrames": {
+      "description": "Has Key Frames",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasMetadata": {
+      "description": "Has Metadata",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasVideo": {
+      "description": "Has Video",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KeyFramePositions": {
+      "description": "Key Frame Positions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KeyFramesTimes": {
+      "description": "Key Frames Times",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LastKeyFrameTime": {
+      "description": "Last Key Frame Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LastTimeStamp": {
+      "description": "Last Time Stamp",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MetadataCreator": {
+      "description": "Metadata Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Test": {
+      "description": "Test",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoBitrate": {
+      "description": "Video Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoCodecID": {
+      "description": "Video Codec ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoEncoding": {
+      "description": "Video Encoding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoSize": {
+      "description": "Video Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-flv-video",
+  "requiredOneof": [
+    "HasKeyFrames",
+    "CuePoint0Name",
+    "CuePoint0Time",
+    "CuePoint0Type",
+    "CuePoint1Name",
+    "CuePoint1Time",
+    "CuePoint1ParameterParam1",
+    "CuePoint1ParameterParam2",
+    "CuePoint1Type",
+    "HasVideo",
+    "CanSeekToEnd",
+    "FrameRate",
+    "VideoCodecID",
+    "DataSize",
+    "LastTimeStamp",
+    "VideoSize",
+    "MetadataCreator",
+    "Test",
+    "LastKeyFrameTime",
+    "ImageHeight",
+    "FileSizeBytes",
+    "HasMetadata",
+    "KeyFramesTimes",
+    "KeyFramePositions",
+    "VideoBitrate",
+    "Duration",
+    "HasCuePoints",
+    "ImageWidth",
+    "VideoEncoding"
+  ],
+  "uuid": "facaad0b-6753-44aa-aee2-8f245202d85f",
+  "version": 1
+}

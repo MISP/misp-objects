@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "AudioChannels": {
+      "description": "Audio Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSampleRate": {
+      "description": "Audio Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-matroska-audio",
+  "requiredOneof": [
+    "AudioSampleRate",
+    "AudioChannels"
+  ],
+  "uuid": "ec6d80b1-93a6-47b5-a8ce-41c6e6edfad3",
+  "version": 1
+}

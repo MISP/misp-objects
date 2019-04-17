@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Producer": {
+      "description": "Producer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rights": {
+      "description": "Rights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-vnd-djvu-author",
+  "requiredOneof": [
+    "Author",
+    "Creator",
+    "Rights",
+    "Producer"
+  ],
+  "uuid": "62e2e990-a7c3-4525-9925-3f87b432e925",
+  "version": 1
+}

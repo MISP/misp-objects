@@ -1,0 +1,242 @@
+{
+  "attributes": {
+    "AggregationId": {
+      "description": "Aggregation Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioBitrate": {
+      "description": "Audio Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioBitsPerSample": {
+      "description": "Audio Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioChannels": {
+      "description": "Audio Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioCodec": {
+      "description": "Audio Codec",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSampleRate": {
+      "description": "Audio Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUType": {
+      "description": "CPU Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Codec": {
+      "description": "Codec",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EncryptedBlocks": {
+      "description": "Encrypted Blocks",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HeaderKey": {
+      "description": "Header Key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HeaderSeed": {
+      "description": "Header Seed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IsAggregation": {
+      "description": "Is Aggregation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LicenseCount": {
+      "description": "License Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LicenseList": {
+      "description": "License List",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LongDescription": {
+      "description": "Long Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaIsStereo": {
+      "description": "Media Is Stereo",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Model": {
+      "description": "Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Narrator": {
+      "description": "Narrator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ParentId": {
+      "description": "Parent Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ParentShortTitle": {
+      "description": "Parent Short Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ParentTitle": {
+      "description": "Parent Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Price": {
+      "description": "Price",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProductId": {
+      "description": "Product Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Provider": {
+      "description": "Provider",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShortDescription": {
+      "description": "Short Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShortTitle": {
+      "description": "Short Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SurroundMode": {
+      "description": "Surround Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Tag7eb298ac1328": {
+      "description": "Tag 7eb 298ac 1328",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TitleId": {
+      "description": "Title Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UserAlias": {
+      "description": "User Alias",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-audio",
+  "requiredOneof": [
+    "MediaIsStereo",
+    "Model",
+    "Duration",
+    "AudioCodec",
+    "AudioBitrate",
+    "SurroundMode",
+    "AudioChannels",
+    "AudioSampleRate",
+    "AudioBitsPerSample",
+    "ProductId",
+    "ParentId",
+    "Title",
+    "Provider",
+    "Narrator",
+    "Price",
+    "Description",
+    "LongDescription",
+    "ShortTitle",
+    "IsAggregation",
+    "TitleId",
+    "Codec",
+    "HeaderSeed",
+    "EncryptedBlocks",
+    "HeaderKey",
+    "LicenseList",
+    "CPUType",
+    "LicenseCount",
+    "Tag7eb298ac1328",
+    "ParentShortTitle",
+    "ParentTitle",
+    "AggregationId",
+    "ShortDescription",
+    "UserAlias"
+  ],
+  "uuid": "a015b948-51b5-4f2a-a3f7-ab4222d29f10",
+  "version": 1
+}

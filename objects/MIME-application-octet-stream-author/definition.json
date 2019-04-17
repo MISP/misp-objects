@@ -1,0 +1,130 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "By-line": {
+      "description": "By-line",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright-en-US": {
+      "description": "Copyright (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightFlag": {
+      "description": "Copyright Flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Credit": {
+      "description": "Credit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Editor": {
+      "description": "Editor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LastModifiedBy": {
+      "description": "Last Modified By",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Marked": {
+      "description": "Marked",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Notice": {
+      "description": "Notice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Owner": {
+      "description": "Owner",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rights": {
+      "description": "Rights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URL": {
+      "description": "URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WebStatement": {
+      "description": "Web Statement",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Writer-Editor": {
+      "description": "Writer-Editor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-author",
+  "requiredOneof": [
+    "Author",
+    "Copyright",
+    "Artist",
+    "Creator",
+    "LastModifiedBy",
+    "Editor",
+    "Owner",
+    "Writer-Editor",
+    "By-line",
+    "CopyrightFlag",
+    "URL",
+    "Rights",
+    "Credit",
+    "Marked",
+    "WebStatement",
+    "Notice",
+    "Copyright-en-US"
+  ],
+  "uuid": "f10826c9-2fb4-40a6-8013-7a9c107c6688",
+  "version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-ogg-author",
+  "requiredOneof": [
+    "Artist"
+  ],
+  "uuid": "a2275f8a-bdae-4f1e-85f7-804753eaca0b",
+  "version": 1
+}

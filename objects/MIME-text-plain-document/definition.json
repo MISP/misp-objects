@@ -1,0 +1,151 @@
+{
+  "attributes": {
+    "About": {
+      "description": "About",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Ascender": {
+      "description": "Ascender",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CapHeight": {
+      "description": "Cap Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Custom0020Property00201": {
+      "description": "Custom 0020 Property 00201",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Custom0020Property00202": {
+      "description": "Custom 0020 Property 00202",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Descender": {
+      "description": "Descender",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EncodingScheme": {
+      "description": "Encoding Scheme",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FSType": {
+      "description": "FS Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFamily": {
+      "description": "Font Family",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName": {
+      "description": "Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontType": {
+      "description": "Font Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FullName": {
+      "description": "Full Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IsFixedPitch": {
+      "description": "Is Fixed Pitch",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ItalicAngle": {
+      "description": "Italic Angle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UnderlinePosition": {
+      "description": "Underline Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UnderlineThickness": {
+      "description": "Underline Thickness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Version": {
+      "description": "Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Weight": {
+      "description": "Weight",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XHeight": {
+      "description": "X Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-plain-document",
+  "requiredOneof": [
+    "XMPToolkit",
+    "About",
+    "Custom0020Property00201",
+    "Custom0020Property00202",
+    "FontType",
+    "FontName",
+    "Version",
+    "FullName",
+    "FontFamily",
+    "Weight",
+    "FSType",
+    "ItalicAngle",
+    "IsFixedPitch",
+    "UnderlinePosition",
+    "UnderlineThickness",
+    "EncodingScheme",
+    "CapHeight",
+    "XHeight",
+    "Ascender",
+    "Descender"
+  ],
+  "uuid": "f6992211-0f76-4548-b449-9b583f496611",
+  "version": 1
+}

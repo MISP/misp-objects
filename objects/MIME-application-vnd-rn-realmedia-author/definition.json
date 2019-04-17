@@ -1,0 +1,32 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-rn-realmedia-author",
+  "requiredOneof": [
+    "Author",
+    "Copyright",
+    "Artist"
+  ],
+  "uuid": "93a46bdf-1410-4543-a010-1d47d9f22c83",
+  "version": 1
+}

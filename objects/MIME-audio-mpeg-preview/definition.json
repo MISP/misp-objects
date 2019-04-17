@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Picture": {
+      "description": "Picture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-mpeg-preview",
+  "requiredOneof": [
+    "Picture"
+  ],
+  "uuid": "d162c2f2-0954-4c4b-868f-8a84fcec554d",
+  "version": 1
+}

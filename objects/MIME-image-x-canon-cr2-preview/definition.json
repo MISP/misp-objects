@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "PreviewImage": {
+      "description": "Preview Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailImage": {
+      "description": "Thumbnail Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-x-canon-cr2-preview",
+  "requiredOneof": [
+    "PreviewImage",
+    "ThumbnailImage"
+  ],
+  "uuid": "18230fa7-fa11-4abc-a680-892426ac96ad",
+  "version": 1
+}

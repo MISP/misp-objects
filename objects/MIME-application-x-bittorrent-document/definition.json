@@ -1,0 +1,151 @@
+{
+  "attributes": {
+    "Announce": {
+      "description": "Announce",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AnnounceList1": {
+      "description": "Announce List 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AnnounceList2": {
+      "description": "Announce List 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AnnounceList3": {
+      "description": "Announce List 3",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Encoding": {
+      "description": "Encoding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File1Length": {
+      "description": "File 1 Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File1Path": {
+      "description": "File 1 Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File2Length": {
+      "description": "File 2 Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File2Path": {
+      "description": "File 2 Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File3Length": {
+      "description": "File 3 Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File3Path": {
+      "description": "File 3 Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File4Length": {
+      "description": "File 4 Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "File4Path": {
+      "description": "File 4 Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Name": {
+      "description": "Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PieceLength": {
+      "description": "Piece Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Pieces": {
+      "description": "Pieces",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URLList1": {
+      "description": "URL List 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URLList2": {
+      "description": "URL List 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-bittorrent-document",
+  "requiredOneof": [
+    "Announce",
+    "AnnounceList1",
+    "AnnounceList2",
+    "AnnounceList3",
+    "Comment",
+    "Creator",
+    "Encoding",
+    "File1Length",
+    "File1Path",
+    "File2Length",
+    "File2Path",
+    "File3Length",
+    "File3Path",
+    "File4Length",
+    "File4Path",
+    "Name",
+    "PieceLength",
+    "Pieces",
+    "URLList1",
+    "URLList2"
+  ],
+  "uuid": "47686fac-cd69-4bc7-8c12-f08cfb95b4fd",
+  "version": 1
+}

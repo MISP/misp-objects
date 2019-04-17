@@ -1,0 +1,32 @@
+{
+  "attributes": {
+    "CountryCode": {
+      "description": "Country Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LocationCreatedCity": {
+      "description": "Location Created City",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LocationCreatedCountryCode": {
+      "description": "Location Created Country Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-plain-location",
+  "requiredOneof": [
+    "LocationCreatedCity",
+    "LocationCreatedCountryCode",
+    "CountryCode"
+  ],
+  "uuid": "f34bfcfa-6cdf-4dad-9586-39624cd4d53c",
+  "version": 1
+}

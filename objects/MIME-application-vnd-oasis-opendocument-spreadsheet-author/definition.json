@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-oasis-opendocument-spreadsheet-author",
+  "requiredOneof": [
+    "Creator"
+  ],
+  "uuid": "e459b78b-ac7f-400a-82c7-4092a59efb80",
+  "version": 1
+}

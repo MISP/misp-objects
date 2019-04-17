@@ -1,0 +1,515 @@
+{
+  "attributes": {
+    "AEAperture": {
+      "description": "AE Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEApertureSteps": {
+      "description": "AE Aperture Steps",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEBXv": {
+      "description": "AEB Xv",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEExposureTime": {
+      "description": "AE Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "AEMaxAperture": {
+      "description": "AE Max Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEMaxAperture2": {
+      "description": "AE Max Aperture 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEMeteringMode": {
+      "description": "AE Metering Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEMeteringMode2": {
+      "description": "AE Metering Mode 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEMinAperture": {
+      "description": "AE Min Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEMinExposureTime": {
+      "description": "AE Min Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "AEProgramMode": {
+      "description": "AE Program Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEWhiteBalance": {
+      "description": "AE White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AEXv": {
+      "description": "AE Xv",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AE_ISO": {
+      "description": "AE ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFPointMode": {
+      "description": "AF Point Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AFPointSelected2": {
+      "description": "AF Point Selected 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApertureRingUse": {
+      "description": "Aperture Ring Use",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AutoAperture": {
+      "description": "Auto Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BracketShotNumber": {
+      "description": "Bracket Shot Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUFirmwareVersion": {
+      "description": "CPU Firmware Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Contrast": {
+      "description": "Contrast",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CrossProcess": {
+      "description": "Cross Process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DSPFirmwareVersion": {
+      "description": "DSP Firmware Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DriveMode": {
+      "description": "Drive Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DriveMode2": {
+      "description": "Drive Mode 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "E-DialInProgram": {
+      "description": "E-Dial In Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EVSteps": {
+      "description": "EV Steps",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureBracketStepSize": {
+      "description": "Exposure Bracket Step Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureCompensation": {
+      "description": "Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExtenderStatus": {
+      "description": "Extender Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FNumber": {
+      "description": "F Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FirmwareVersion": {
+      "description": "Firmware Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashExposureCompSet": {
+      "description": "Flash Exposure Comp. Setting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashOptions": {
+      "description": "Flash Options",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocusMode2": {
+      "description": "Focus Mode 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocusRangeIndex": {
+      "description": "Focus Range Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HighLowKeyAdj": {
+      "description": "High/Low Key Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Hue": {
+      "description": "Hue",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ISOFloor": {
+      "description": "ISO Floor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageTone": {
+      "description": "Image Tone",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InternalSerialNumber": {
+      "description": "Internal Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensFStops": {
+      "description": "Lens F Stops",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensFocalLength": {
+      "description": "Lens Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensID": {
+      "description": "Lens ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensType": {
+      "description": "Lens Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LevelIndicator": {
+      "description": "Level Indicator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxAperture": {
+      "description": "Max Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeteringMode2": {
+      "description": "Metering Mode 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinAperture": {
+      "description": "Min Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinFocusDistance": {
+      "description": "Min Focus Distance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MonochromeFilterEffect": {
+      "description": "Monochrome Filter Effect",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MonochromeToning": {
+      "description": "Monochrome Toning",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MultipleExposureSet": {
+      "description": "Multiple Exposure Set",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NominalMaxAperture": {
+      "description": "Nominal Max Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NominalMinAperture": {
+      "description": "Nominal Min Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PentaxModelID": {
+      "description": "Pentax Model ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PentaxModelType": {
+      "description": "Pentax Model Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PentaxVersion": {
+      "description": "Pentax Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PictureMode": {
+      "description": "Picture Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PictureMode2": {
+      "description": "Picture Mode 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProductionCode": {
+      "description": "Production Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProgramLine": {
+      "description": "Program Line",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SRFocalLength": {
+      "description": "SR Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SRHalfPressTime": {
+      "description": "SR Half Press Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SRResult": {
+      "description": "SR Result",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Saturation": {
+      "description": "Saturation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SerialNumber": {
+      "description": "Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShakeReduction": {
+      "description": "Shake Reduction",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Sharpness": {
+      "description": "Sharpness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalanceSet": {
+      "description": "White Balance Set",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-msvideo-camera",
+  "requiredOneof": [
+    "PentaxVersion",
+    "PentaxModelType",
+    "PentaxModelID",
+    "Quality",
+    "FNumber",
+    "ExposureCompensation",
+    "WhiteBalance",
+    "Saturation",
+    "Contrast",
+    "Sharpness",
+    "DSPFirmwareVersion",
+    "CPUFirmwareVersion",
+    "PictureMode",
+    "DriveMode",
+    "LensType",
+    "ExtenderStatus",
+    "ImageTone",
+    "SRResult",
+    "ShakeReduction",
+    "SRHalfPressTime",
+    "SRFocalLength",
+    "Hue",
+    "HighLowKeyAdj",
+    "MonochromeFilterEffect",
+    "MonochromeToning",
+    "CrossProcess",
+    "PictureMode2",
+    "ProgramLine",
+    "EVSteps",
+    "E-DialInProgram",
+    "ApertureRingUse",
+    "FlashOptions",
+    "MeteringMode2",
+    "AFPointMode",
+    "FocusMode2",
+    "AFPointSelected2",
+    "ISOFloor",
+    "DriveMode2",
+    "ExposureBracketStepSize",
+    "BracketShotNumber",
+    "WhiteBalanceSet",
+    "MultipleExposureSet",
+    "AEExposureTime",
+    "AEAperture",
+    "AE_ISO",
+    "AEXv",
+    "AEBXv",
+    "AEMinExposureTime",
+    "AEProgramMode",
+    "AEApertureSteps",
+    "AEMaxAperture",
+    "AEMaxAperture2",
+    "AEMinAperture",
+    "AEMeteringMode",
+    "AEWhiteBalance",
+    "AEMeteringMode2",
+    "FlashExposureCompSet",
+    "LevelIndicator",
+    "AutoAperture",
+    "MinAperture",
+    "LensFStops",
+    "MinFocusDistance",
+    "FocusRangeIndex",
+    "LensFocalLength",
+    "NominalMaxAperture",
+    "NominalMinAperture",
+    "MaxAperture",
+    "ProductionCode",
+    "InternalSerialNumber",
+    "SerialNumber",
+    "FirmwareVersion",
+    "LensID"
+  ],
+  "uuid": "494000ce-960e-4200-acd9-70c55cd98366",
+  "version": 1
+}

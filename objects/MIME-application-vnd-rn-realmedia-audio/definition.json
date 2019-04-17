@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-rn-realmedia-audio",
+  "requiredOneof": [
+    "Title",
+    "Album",
+    "Comment",
+    "Genre"
+  ],
+  "uuid": "51c72899-0e21-42f2-91cb-1ab4fd91204f",
+  "version": 1
+}

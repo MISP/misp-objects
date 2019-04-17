@@ -1,0 +1,354 @@
+{
+  "attributes": {
+    "AccessDate": {
+      "description": "Access Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateCompleted": {
+      "description": "Date Completed",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateCreated": {
+      "description": "Date Created",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DateTimeOriginal": {
+      "description": "Date/Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DaylightSavings": {
+      "description": "Daylight Savings",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EncodeTime": {
+      "description": "Encode Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EndTime": {
+      "description": "End Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "LastBackupDate": {
+      "description": "Last Backup Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaCreateDate": {
+      "description": "Media Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaModifyDate": {
+      "description": "Media Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaOriginalBroadcastDateTime": {
+      "description": "Media Original Broadcast Date Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MetadataDate": {
+      "description": "Metadata Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MinoltaDate": {
+      "description": "Minolta Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinoltaTime": {
+      "description": "Minolta Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "OffsetTime": {
+      "description": "Offset Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OffsetTimeDigitized": {
+      "description": "Offset Time Digitized",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OffsetTimeOriginal": {
+      "description": "Offset Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalReleaseTime": {
+      "description": "Original Release Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileDateTime": {
+      "description": "Profile Date Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PublishDate": {
+      "description": "Publish Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PublishDateStart": {
+      "description": "Publish Date Start",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "RecordedDate": {
+      "description": "Recorded Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "RootDirectoryCreateDate": {
+      "description": "Root Directory Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "StartTime": {
+      "description": "Start Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "StartTimecode": {
+      "description": "Start Timecode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StorageFormatDate": {
+      "description": "Storage Format Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StorageFormatTime": {
+      "description": "Storage Format Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecCreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecDateTimeOriginal": {
+      "description": "Date/Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecTime": {
+      "description": "Sub Sec Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubSecTimeDigitized": {
+      "description": "Sub Sec Time Digitized",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubSecTimeOriginal": {
+      "description": "Sub Sec Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestDate": {
+      "description": "Test Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TestDictWhen": {
+      "description": "Test Dict When",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeCreated": {
+      "description": "Time Created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeStamp": {
+      "description": "Time Stamp",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeZone": {
+      "description": "Time Zone",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TimeZoneCity": {
+      "description": "Time Zone City",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackCreateDate": {
+      "description": "Track Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TrackModifyDate": {
+      "description": "Track Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "VolumeCreateDate": {
+      "description": "Volume Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "VolumeModifyDate": {
+      "description": "Volume Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ZipModifyDate": {
+      "description": "Zip Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "OriginalReleaseTime",
+    "MediaOriginalBroadcastDateTime",
+    "EncodeTime",
+    "EndTime",
+    "DateTimeOriginal",
+    "ModifyDate",
+    "StartTimecode",
+    "DateCreated",
+    "TimeCreated",
+    "StorageFormatDate",
+    "StorageFormatTime",
+    "CreateDate",
+    "LastBackupDate",
+    "TestDictWhen",
+    "TestDate",
+    "StartTime",
+    "ZipModifyDate",
+    "DateCompleted",
+    "RecordedDate",
+    "MinoltaDate",
+    "MinoltaTime",
+    "AccessDate",
+    "MetadataDate",
+    "RootDirectoryCreateDate",
+    "VolumeCreateDate",
+    "VolumeModifyDate",
+    "ProfileDateTime",
+    "OffsetTime",
+    "OffsetTimeOriginal",
+    "OffsetTimeDigitized",
+    "SubSecTime",
+    "SubSecTimeOriginal",
+    "SubSecTimeDigitized",
+    "TimeZone",
+    "TimeZoneCity",
+    "DaylightSavings",
+    "TrackCreateDate",
+    "TrackModifyDate",
+    "MediaCreateDate",
+    "MediaModifyDate",
+    "TimeStamp",
+    "SubSecCreateDate",
+    "SubSecDateTimeOriginal",
+    "SubSecModifyDate",
+    "PublishDate",
+    "PublishDateStart"
+  ],
+  "uuid": "08274ad1-c13b-477e-a789-e8e3c988dac0",
+  "version": 1
+}

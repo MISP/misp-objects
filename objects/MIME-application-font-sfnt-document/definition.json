@@ -1,0 +1,179 @@
+{
+  "attributes": {
+    "FontFamily": {
+      "description": "Font Family",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFamily-he": {
+      "description": "Font Family (he)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName": {
+      "description": "Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName-he": {
+      "description": "Font Name (he)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily": {
+      "description": "Font Subfamily",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-da": {
+      "description": "Font Subfamily (da)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-de": {
+      "description": "Font Subfamily (de)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-es": {
+      "description": "Font Subfamily (es)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-fi": {
+      "description": "Font Subfamily (fi)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-fr": {
+      "description": "Font Subfamily (fr)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-he": {
+      "description": "Font Subfamily (he)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-it": {
+      "description": "Font Subfamily (it)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-ja": {
+      "description": "Font Subfamily (ja)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-ko": {
+      "description": "Font Subfamily (ko)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-nl": {
+      "description": "Font Subfamily (nl)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-no": {
+      "description": "Font Subfamily (no)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-pt": {
+      "description": "Font Subfamily (pt)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-sv": {
+      "description": "Font Subfamily (sv)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-zh-CN": {
+      "description": "Font Subfamily (zh-CN)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-zh-TW": {
+      "description": "Font Subfamily (zh-TW)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamilyID": {
+      "description": "Font Subfamily ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Manufacturer": {
+      "description": "Manufacturer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NameTableVersion": {
+      "description": "Name Table Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PostScriptFontName": {
+      "description": "PostScript Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-font-sfnt-document",
+  "requiredOneof": [
+    "FontFamily",
+    "FontSubfamily",
+    "FontSubfamilyID",
+    "FontName",
+    "NameTableVersion",
+    "PostScriptFontName",
+    "Manufacturer",
+    "FontSubfamily-fr",
+    "FontSubfamily-de",
+    "FontSubfamily-it",
+    "FontSubfamily-nl",
+    "FontSubfamily-sv",
+    "FontSubfamily-es",
+    "FontSubfamily-da",
+    "FontSubfamily-pt",
+    "FontSubfamily-no",
+    "FontSubfamily-fi",
+    "FontSubfamily-ja",
+    "FontSubfamily-zh-TW",
+    "FontSubfamily-ko",
+    "FontFamily-he",
+    "FontSubfamily-he",
+    "FontName-he",
+    "FontSubfamily-zh-CN"
+  ],
+  "uuid": "7fb0476e-e95d-4e6a-8970-27c477c4ec37",
+  "version": 1
+}

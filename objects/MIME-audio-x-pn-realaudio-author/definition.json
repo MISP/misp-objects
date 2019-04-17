@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-pn-realaudio-author",
+  "requiredOneof": [
+    "Copyright"
+  ],
+  "uuid": "4d040fea-f109-4c0f-95e4-5c618905e24e",
+  "version": 1
+}

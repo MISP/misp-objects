@@ -1,0 +1,116 @@
+{
+  "attributes": {
+    "City": {
+      "description": "City",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Country-PrimaryLocationName": {
+      "description": "Country-Primary Location Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GTModelType": {
+      "description": "GT Model Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GTRasterType": {
+      "description": "GT Raster Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeoTiffVersion": {
+      "description": "Geo Tiff Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "GeogCitation": {
+      "description": "Geog Citation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeogGeodeticDatum": {
+      "description": "Geog Geodetic Datum",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeogSemiMajorAxis": {
+      "description": "Geog Semi Major Axis",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeogSemiMinorAxis": {
+      "description": "Geog Semi Minor Axis",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GeographicType": {
+      "description": "Geographic Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ModelTransform": {
+      "description": "Model Transform",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PCSCitation": {
+      "description": "PCS Citation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProjectedCSType": {
+      "description": "Projected CS Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Projection": {
+      "description": "Projection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Province-State": {
+      "description": "Province-State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-tiff-location",
+  "requiredOneof": [
+    "City",
+    "Province-State",
+    "Country-PrimaryLocationName",
+    "ModelTransform",
+    "GeoTiffVersion",
+    "GTModelType",
+    "GTRasterType",
+    "GeographicType",
+    "GeogCitation",
+    "GeogGeodeticDatum",
+    "GeogSemiMajorAxis",
+    "GeogSemiMinorAxis",
+    "ProjectedCSType",
+    "PCSCitation",
+    "Projection"
+  ],
+  "uuid": "461ddb7d-0b8b-4fb9-8792-02d2ef1a0630",
+  "version": 1
+}

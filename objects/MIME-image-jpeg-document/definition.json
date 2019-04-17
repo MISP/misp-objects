@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "About": {
+      "description": "About",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jpeg-document",
+  "requiredOneof": [
+    "XMPToolkit",
+    "About"
+  ],
+  "uuid": "a6812803-e69f-4f2e-9fa8-b4fcfca475ef",
+  "version": 1
+}

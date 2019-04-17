@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Language": {
+      "description": "Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-svg-xml-other",
+  "requiredOneof": [
+    "Language"
+  ],
+  "uuid": "ea0ff957-76f2-4360-96ec-cfd990737ca7",
+  "version": 1
+}

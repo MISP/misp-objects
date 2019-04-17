@@ -1,0 +1,277 @@
+{
+  "attributes": {
+    "AlbumName": {
+      "description": "Album Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Audiences": {
+      "description": "Audiences",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioMode": {
+      "description": "Audio Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AvgBitrate": {
+      "description": "Avg Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AvgPacketSize": {
+      "description": "Avg Packet Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentRating": {
+      "description": "Content Rating",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInfoVersion": {
+      "description": "File Info Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flags": {
+      "description": "Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxBitrate": {
+      "description": "Max Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxPacketSize": {
+      "description": "Max Packet Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumPackets": {
+      "description": "Num Packets",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumStreams": {
+      "description": "Num Streams",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Preroll": {
+      "description": "Preroll",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StatisticsCDInfoSource": {
+      "description": "Statistics CD Info Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamAvgBitrate": {
+      "description": "Stream Avg Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamAvgPacketSize": {
+      "description": "Stream Avg Packet Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamDuration": {
+      "description": "Stream Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "StreamMaxBitrate": {
+      "description": "Stream Max Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamMaxPacketSize": {
+      "description": "Stream Max Packet Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamMimeType": {
+      "description": "Stream Mime Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "StreamName": {
+      "description": "Stream Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamNumber": {
+      "description": "Stream Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamPreroll": {
+      "description": "Stream Preroll",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "StreamStartTime": {
+      "description": "Stream Start Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackCategory": {
+      "description": "Track Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackComments": {
+      "description": "Track Comments",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackCommentsDataSize": {
+      "description": "Track Comments Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackCommentsMimeType": {
+      "description": "Track Comments Mime Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "TrackLyricsDataSize": {
+      "description": "Track Lyrics Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackLyricsExtension": {
+      "description": "Track Lyrics Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackLyricsMimeType": {
+      "description": "Track Lyrics Mime Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "VideoMode": {
+      "description": "Video Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-rn-realmedia-video",
+  "requiredOneof": [
+    "MaxBitrate",
+    "AvgBitrate",
+    "MaxPacketSize",
+    "AvgPacketSize",
+    "NumPackets",
+    "Duration",
+    "Preroll",
+    "NumStreams",
+    "Flags",
+    "StreamNumber",
+    "StreamMaxBitrate",
+    "StreamAvgBitrate",
+    "StreamMaxPacketSize",
+    "StreamAvgPacketSize",
+    "StreamStartTime",
+    "StreamPreroll",
+    "StreamDuration",
+    "StreamName",
+    "StreamMimeType",
+    "FileInfoVersion",
+    "ContentRating",
+    "Audiences",
+    "AudioMode",
+    "Software",
+    "VideoMode",
+    "Description",
+    "Keywords",
+    "Title",
+    "Comment",
+    "AlbumName",
+    "StatisticsCDInfoSource",
+    "TrackCategory",
+    "TrackComments",
+    "TrackCommentsDataSize",
+    "TrackCommentsMimeType",
+    "TrackLyricsDataSize",
+    "TrackLyricsExtension",
+    "TrackLyricsMimeType"
+  ],
+  "uuid": "3678a8fb-b004-4baf-8106-81e0c290106a",
+  "version": 1
+}

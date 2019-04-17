@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "AudioStream": {
+      "description": "Audio Stream",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EmbeddedAudioFile": {
+      "description": "Embedded Audio File",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jpeg-audio",
+  "requiredOneof": [
+    "AudioStream",
+    "EmbeddedAudioFile"
+  ],
+  "uuid": "54c253ba-29d6-4abe-bd48-29c2bb0e3130",
+  "version": 1
+}

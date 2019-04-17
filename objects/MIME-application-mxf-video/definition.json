@@ -1,0 +1,172 @@
+{
+  "attributes": {
+    "ApplicationName": {
+      "description": "Application Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApplicationPlatform": {
+      "description": "Application Platform",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApplicationSupplierName": {
+      "description": "Application Supplier Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApplicationVersionString": {
+      "description": "Application Version String",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlockAlign": {
+      "description": "Block Align",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ComponentDataDefinition": {
+      "description": "Component Data Definition",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DropFrame": {
+      "description": "Drop Frame",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EditRate": {
+      "description": "Edit Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EssenceLength": {
+      "description": "Essence Length",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "EssenceStreamID": {
+      "description": "Essence Stream ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LinkedTrackID": {
+      "description": "Linked Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LockedIndicator": {
+      "description": "Locked Indicator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MXFVersion": {
+      "description": "MXF Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Origin": {
+      "description": "Origin",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "RoundedTimecodeTimebase": {
+      "description": "Rounded Timecode Timebase",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SDKVersion": {
+      "description": "SDK Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StartTimecode": {
+      "description": "Start Timecode",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ToolkitVersion": {
+      "description": "Toolkit Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackID": {
+      "description": "Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackName": {
+      "description": "Track Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackNumber": {
+      "description": "Track Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-mxf-video",
+  "requiredOneof": [
+    "MXFVersion",
+    "SDKVersion",
+    "ApplicationSupplierName",
+    "ApplicationName",
+    "ApplicationVersionString",
+    "ToolkitVersion",
+    "ApplicationPlatform",
+    "RoundedTimecodeTimebase",
+    "DropFrame",
+    "StartTimecode",
+    "TrackName",
+    "TrackNumber",
+    "Origin",
+    "EditRate",
+    "TrackID",
+    "ComponentDataDefinition",
+    "SampleRate",
+    "LockedIndicator",
+    "BlockAlign",
+    "LinkedTrackID",
+    "EssenceLength",
+    "EssenceStreamID",
+    "Duration"
+  ],
+  "uuid": "ea967376-74ca-44c0-8afa-7b150eb89cde",
+  "version": 1
+}

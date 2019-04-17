@@ -1,0 +1,872 @@
+{
+  "attributes": {
+    "ACustomField": {
+      "description": "A Custom Field",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "About": {
+      "description": "About",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AppVersion": {
+      "description": "App Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Application": {
+      "description": "Application",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApplicationVersion": {
+      "description": "Application Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BookName": {
+      "description": "Book Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Characters": {
+      "description": "Characters",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CharactersWithSpaces": {
+      "description": "Characters With Spaces",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CheckedBy": {
+      "description": "Checked By",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Client": {
+      "description": "Client",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CodePage": {
+      "description": "Code Page",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-cn_ZH": {
+      "description": "Comment (cn_ZH)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-de_DE": {
+      "description": "Comment (de_DE)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-el_GR": {
+      "description": "Comment (el_GR)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-en_CA": {
+      "description": "Comment (en_CA)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-en_GB": {
+      "description": "Comment (en_GB)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-en_US": {
+      "description": "Comment (en_US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-es_ES": {
+      "description": "Comment (es_ES)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-fr_FR": {
+      "description": "Comment (fr_FR)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-hi_IN": {
+      "description": "Comment (hi_IN)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-it_IT": {
+      "description": "Comment (it_IT)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-ja_JP": {
+      "description": "Comment (ja_JP)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment-ru_RU": {
+      "description": "Comment (ru_RU)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Company": {
+      "description": "Company",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompatibleFontName": {
+      "description": "Compatible Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Compression": {
+      "description": "Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Contributor": {
+      "description": "Contributor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreatorBuildNumber": {
+      "description": "Creator Build Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreatorMajorVersion": {
+      "description": "Creator Major Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreatorMinorVersion": {
+      "description": "Creator Minor Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreatorSoftware": {
+      "description": "Creator Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DatabaseName": {
+      "description": "Database Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Department": {
+      "description": "Department",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Designer": {
+      "description": "Designer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Designer-en-US": {
+      "description": "Designer (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Destination": {
+      "description": "Destination",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Disposition": {
+      "description": "Disposition",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Division": {
+      "description": "Division",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocSecurity": {
+      "description": "Doc Security",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentNumber": {
+      "description": "Document Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Encryption": {
+      "description": "Encryption",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FSType": {
+      "description": "FS Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFamily": {
+      "description": "Font Family",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFamily-en-US": {
+      "description": "Font Family (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName": {
+      "description": "Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName-en-US": {
+      "description": "Font Name (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily": {
+      "description": "Font Subfamily",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamily-en-US": {
+      "description": "Font Subfamily (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamilyID": {
+      "description": "Font Subfamily ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSubfamilyID-en-US": {
+      "description": "Font Subfamily ID (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontType": {
+      "description": "Font Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ForwardTo": {
+      "description": "Forward To",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FullName": {
+      "description": "Full Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Group": {
+      "description": "Group",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HeadingPairs": {
+      "description": "Heading Pairs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HyperlinkBase": {
+      "description": "Hyperlink Base",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HyperlinksChanged": {
+      "description": "Hyperlinks Changed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IsFixedPitch": {
+      "description": "Is Fixed Pitch",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ItalicAngle": {
+      "description": "Italic Angle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Language": {
+      "description": "Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LicenseInfoURL": {
+      "description": "License Info URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LicenseInfoURL-en-US": {
+      "description": "License Info URL (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Lines": {
+      "description": "Lines",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LinksUpToDate": {
+      "description": "Links Up To Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Mailstop": {
+      "description": "Mailstop",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Manager": {
+      "description": "Manager",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Matter": {
+      "description": "Matter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinimumVersion": {
+      "description": "Minimum Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MobiType": {
+      "description": "Mobi Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MobiVersion": {
+      "description": "Mobi Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ModificationNumber": {
+      "description": "Modification Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NameTableVersion": {
+      "description": "Name Table Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NameTableVersion-en-US": {
+      "description": "Name Table Version (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Office": {
+      "description": "Office",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Pages": {
+      "description": "Pages",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PalmFileType": {
+      "description": "Palm File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Paragraphs": {
+      "description": "Paragraphs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PostScriptFontName": {
+      "description": "PostScript Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PostScriptFontName-en-US": {
+      "description": "Post Script Font Name (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreferredSubfamily-en-US": {
+      "description": "Preferred Subfamily (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Project": {
+      "description": "Project",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Publisher": {
+      "description": "Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Purpose": {
+      "description": "Purpose",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReceivedFrom": {
+      "description": "Received From",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RecordedBy": {
+      "description": "Recorded By",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Reference": {
+      "description": "Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "References": {
+      "description": "References",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RevisionNumber": {
+      "description": "Revision Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScaleCrop": {
+      "description": "Scale Crop",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SharedDoc": {
+      "description": "Shared Doc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Source": {
+      "description": "Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Status": {
+      "description": "Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TelephoneNumber": {
+      "description": "Telephone Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Template": {
+      "description": "Template",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestArray": {
+      "description": "Test Array",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestBoolean": {
+      "description": "Test Boolean",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestData": {
+      "description": "Test Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestDictAuthor": {
+      "description": "Test Dict Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestInteger": {
+      "description": "Test Integer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestReal": {
+      "description": "Test Real",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestString": {
+      "description": "Test String",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestUnicode": {
+      "description": "Test Unicode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TitlesOfParts": {
+      "description": "Titles Of Parts",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TotalEditTime": {
+      "description": "Total Edit Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Trademark": {
+      "description": "Trademark",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Trademark-en-US": {
+      "description": "Trademark (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Typist": {
+      "description": "Typist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URL": {
+      "description": "URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UncompressedTextLength": {
+      "description": "Uncompressed Text Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UnderlinePosition": {
+      "description": "Underline Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UnderlineThickness": {
+      "description": "Underline Thickness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VendorURL": {
+      "description": "Vendor URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VendorURL-en-US": {
+      "description": "Vendor URL (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Version": {
+      "description": "Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Weight": {
+      "description": "Weight",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Words": {
+      "description": "Words",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-document",
+  "requiredOneof": [
+    "DatabaseName",
+    "ModificationNumber",
+    "PalmFileType",
+    "Compression",
+    "UncompressedTextLength",
+    "Encryption",
+    "MobiType",
+    "CodePage",
+    "MobiVersion",
+    "BookName",
+    "MinimumVersion",
+    "Contributor",
+    "Description",
+    "CreatorSoftware",
+    "CreatorMajorVersion",
+    "CreatorMinorVersion",
+    "CreatorBuildNumber",
+    "TestReal",
+    "TestDictAuthor",
+    "TestString",
+    "TestArray",
+    "TestInteger",
+    "TestUnicode",
+    "TestData",
+    "TestBoolean",
+    "Template",
+    "TotalEditTime",
+    "Pages",
+    "Words",
+    "Characters",
+    "Application",
+    "DocSecurity",
+    "Lines",
+    "Paragraphs",
+    "ScaleCrop",
+    "HeadingPairs",
+    "TitlesOfParts",
+    "Manager",
+    "Company",
+    "LinksUpToDate",
+    "CharactersWithSpaces",
+    "SharedDoc",
+    "HyperlinkBase",
+    "HyperlinksChanged",
+    "AppVersion",
+    "Keywords",
+    "RevisionNumber",
+    "Category",
+    "CheckedBy",
+    "Client",
+    "Department",
+    "Destination",
+    "Disposition",
+    "Division",
+    "DocumentNumber",
+    "ForwardTo",
+    "Group",
+    "Language",
+    "Mailstop",
+    "Matter",
+    "Office",
+    "Project",
+    "Publisher",
+    "Purpose",
+    "ReceivedFrom",
+    "RecordedBy",
+    "Reference",
+    "Source",
+    "Status",
+    "TelephoneNumber",
+    "Typist",
+    "ACustomField",
+    "XMPToolkit",
+    "Comment",
+    "Comment-cn_ZH",
+    "Comment-de_DE",
+    "Comment-el_GR",
+    "Comment-en_CA",
+    "Comment-en_GB",
+    "Comment-en_US",
+    "Comment-es_ES",
+    "Comment-fr_FR",
+    "Comment-hi_IN",
+    "Comment-it_IT",
+    "Comment-ja_JP",
+    "Comment-ru_RU",
+    "References",
+    "Software",
+    "Title",
+    "URL",
+    "About",
+    "FontType",
+    "FontName",
+    "Version",
+    "FullName",
+    "FontFamily",
+    "Weight",
+    "FSType",
+    "ItalicAngle",
+    "IsFixedPitch",
+    "UnderlinePosition",
+    "UnderlineThickness",
+    "FontSubfamily",
+    "FontSubfamilyID",
+    "NameTableVersion",
+    "PostScriptFontName",
+    "Trademark",
+    "Designer",
+    "VendorURL",
+    "LicenseInfoURL",
+    "CompatibleFontName",
+    "FontFamily-en-US",
+    "FontSubfamily-en-US",
+    "FontSubfamilyID-en-US",
+    "FontName-en-US",
+    "NameTableVersion-en-US",
+    "PostScriptFontName-en-US",
+    "Trademark-en-US",
+    "Designer-en-US",
+    "VendorURL-en-US",
+    "LicenseInfoURL-en-US",
+    "PreferredSubfamily-en-US",
+    "ApplicationVersion"
+  ],
+  "uuid": "c8ebc1dd-1e5e-4cc6-90dd-8d3ea0f08c22",
+  "version": 1
+}

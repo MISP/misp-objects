@@ -1,0 +1,200 @@
+{
+  "attributes": {
+    "Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Composer": {
+      "description": "Composer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CoverArtFrontDesc": {
+      "description": "Cover Art Front Desc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EncoderVersion": {
+      "description": "Encoder Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FastSeek": {
+      "description": "Fast Seek",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Gapless": {
+      "description": "Gapless",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Grouping": {
+      "description": "Grouping",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Lyrics": {
+      "description": "Lyrics",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxBand": {
+      "description": "Max Band",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaJukeboxDate": {
+      "description": "Media Jukebox Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PartOfSet": {
+      "description": "Part Of Set",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RelativeVolumeAdjustment": {
+      "description": "Relative Volume Adjustment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainAlbumGain": {
+      "description": "Replay Gain Album Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainAlbumPeak": {
+      "description": "Replay Gain Album Peak",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainTrackGain": {
+      "description": "Replay Gain Track Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReplayGainTrackPeak": {
+      "description": "Replay Gain Track Peak",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToolName": {
+      "description": "Tool Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToolVersion": {
+      "description": "Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TotalFrames": {
+      "description": "Total Frames",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Track": {
+      "description": "Track",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Year": {
+      "description": "Year",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-musepack-audio",
+  "requiredOneof": [
+    "TotalFrames",
+    "SampleRate",
+    "Quality",
+    "MaxBand",
+    "ReplayGainTrackPeak",
+    "ReplayGainTrackGain",
+    "ReplayGainAlbumPeak",
+    "ReplayGainAlbumGain",
+    "FastSeek",
+    "Gapless",
+    "EncoderVersion",
+    "Year",
+    "Artist",
+    "ToolVersion",
+    "ToolName",
+    "MediaJukeboxDate",
+    "CoverArtFrontDesc",
+    "Track",
+    "PartOfSet",
+    "RelativeVolumeAdjustment",
+    "Lyrics",
+    "Title",
+    "Composer",
+    "Album",
+    "Grouping",
+    "Genre",
+    "Comment"
+  ],
+  "uuid": "067decb7-0f85-4dac-89f0-d8dfa7580a59",
+  "version": 1
+}

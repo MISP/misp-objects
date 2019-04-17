@@ -1,0 +1,214 @@
+{
+  "attributes": {
+    "ASFLeakyBucketPairs": {
+      "description": "ASF Leaky Bucket Pairs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioChannels": {
+      "description": "Audio Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioCodecID": {
+      "description": "Audio Codec ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioSampleRate": {
+      "description": "Audio Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DataPackets": {
+      "description": "Data Packets",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ErrorCorrectionType": {
+      "description": "Error Correction Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileID": {
+      "description": "File ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileLength": {
+      "description": "File Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flags": {
+      "description": "Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Genre": {
+      "description": "Genre",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IsVBR": {
+      "description": "Is VBR",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxBitrate": {
+      "description": "Max Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxPacketSize": {
+      "description": "Max Packet Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaClassPrimaryID": {
+      "description": "Media Class Primary ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaClassSecondaryID": {
+      "description": "Media Class Secondary ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinPacketSize": {
+      "description": "Min Packet Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Preroll": {
+      "description": "Preroll",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Publisher": {
+      "description": "Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SendDuration": {
+      "description": "Send Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "StreamNumber": {
+      "description": "Stream Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamType": {
+      "description": "Stream Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TimeOffset": {
+      "description": "Time Offset",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ToolName": {
+      "description": "Tool Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToolVersion": {
+      "description": "Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WMADRCAverageReference": {
+      "description": "WMADRC Average Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WMADRCPeakReference": {
+      "description": "WMADRC Peak Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-ms-asf-video",
+  "requiredOneof": [
+    "ToolName",
+    "Publisher",
+    "ToolVersion",
+    "Genre",
+    "ASFLeakyBucketPairs",
+    "FileID",
+    "FileLength",
+    "DataPackets",
+    "Duration",
+    "SendDuration",
+    "Preroll",
+    "Flags",
+    "MinPacketSize",
+    "MaxPacketSize",
+    "MaxBitrate",
+    "MediaClassPrimaryID",
+    "MediaClassSecondaryID",
+    "IsVBR",
+    "WMADRCPeakReference",
+    "WMADRCAverageReference",
+    "AudioCodecID",
+    "AudioChannels",
+    "AudioSampleRate",
+    "StreamType",
+    "ErrorCorrectionType",
+    "TimeOffset",
+    "StreamNumber",
+    "ImageWidth",
+    "ImageHeight"
+  ],
+  "uuid": "be9b07c5-1161-43bb-b4f4-90a7ac115014",
+  "version": 1
+}

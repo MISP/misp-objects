@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "CoverArt": {
+      "description": "Cover Art",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-quicktime-preview",
+  "requiredOneof": [
+    "CoverArt"
+  ],
+  "uuid": "507c64ff-6c01-4b9f-ad3c-872ed6417b4f",
+  "version": 1
+}

@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "By-line": {
+      "description": "By-line",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "By-lineTitle": {
+      "description": "By-line Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightNotice": {
+      "description": "Copyright Notice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Credit": {
+      "description": "Credit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Source": {
+      "description": "Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Writer-Editor": {
+      "description": "Writer-Editor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-tiff-author",
+  "requiredOneof": [
+    "Writer-Editor",
+    "By-line",
+    "By-lineTitle",
+    "Credit",
+    "Source",
+    "CopyrightNotice",
+    "Artist"
+  ],
+  "uuid": "a00d39ad-7867-4843-b4fc-04a0cf58bc5c",
+  "version": 1
+}

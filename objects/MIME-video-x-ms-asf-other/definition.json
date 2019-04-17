@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "AudioCodecDescription": {
+      "description": "Audio Codec Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioCodecName": {
+      "description": "Audio Codec Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoCodecDescription": {
+      "description": "Video Codec Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoCodecName": {
+      "description": "Video Codec Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-ms-asf-other",
+  "requiredOneof": [
+    "AudioCodecName",
+    "AudioCodecDescription",
+    "VideoCodecName",
+    "VideoCodecDescription"
+  ],
+  "uuid": "b4b21813-2dee-4bd5-81ed-490b5574140c",
+  "version": 1
+}

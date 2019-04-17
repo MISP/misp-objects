@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "CPUArchitecture": {
+      "description": "CPU Architecture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUByteOrder": {
+      "description": "CPU Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUSubtype": {
+      "description": "CPU Subtype",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CPUType": {
+      "description": "CPU Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-archive-other",
+  "requiredOneof": [
+    "CPUArchitecture",
+    "CPUByteOrder",
+    "CPUType",
+    "CPUSubtype"
+  ],
+  "uuid": "31b29245-97e6-4b78-89ce-f1664f8ac656",
+  "version": 1
+}

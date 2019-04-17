@@ -1,0 +1,2510 @@
+{
+  "attributes": {
+    "AEBBracketValue": {
+      "description": "AEB Bracket Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APP14Flags0": {
+      "description": "APP14 Flags 0",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "APP14Flags1": {
+      "description": "APP14 Flags 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AboveColor": {
+      "description": "Above Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdobeCMType": {
+      "description": "Adobe CM Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Album": {
+      "description": "Album",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Alpha": {
+      "description": "Alpha",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Aperture": {
+      "description": "Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApertureValue": {
+      "description": "Aperture Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AutoExposureBracketing": {
+      "description": "Auto Exposure Bracketing",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AutoISO": {
+      "description": "Auto ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AutoRotate": {
+      "description": "Auto Rotate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Azimuth": {
+      "description": "Azimuth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BaseISO": {
+      "description": "Base ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BelowColor": {
+      "description": "Below Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Beta": {
+      "description": "Beta",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitDepth": {
+      "description": "Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlackMaskBottomBorder": {
+      "description": "Black Mask Bottom Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlackMaskLeftBorder": {
+      "description": "Black Mask Left Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlackMaskRightBorder": {
+      "description": "Black Mask Right Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlackMaskTopBorder": {
+      "description": "Black Mask Top Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlocksPerColumn": {
+      "description": "Blocks Per Column",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlocksPerRow": {
+      "description": "Blocks Per Row",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlueCurveLimits": {
+      "description": "Blue Curve Limits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlueCurvePoints": {
+      "description": "Blue Curve Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlueMatrixColumn": {
+      "description": "Blue Matrix Column",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BlueTRC": {
+      "description": "Blue Tone Reproduction Curve",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BracketMode": {
+      "description": "Bracket Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BracketShotNumber": {
+      "description": "Bracket Shot Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BracketValue": {
+      "description": "Bracket Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BrightnessAdj": {
+      "description": "Brightness Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BrightnessValue": {
+      "description": "Brightness Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BulbDuration": {
+      "description": "Bulb Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CFAPattern": {
+      "description": "CFA Pattern",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CMMFlags": {
+      "description": "CMM Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonFileLength": {
+      "description": "Canon File Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonImageHeight": {
+      "description": "Canon Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonImageType": {
+      "description": "Canon Image Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CanonImageWidth": {
+      "description": "Canon Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CaptureConditionsPAR": {
+      "description": "Capture Conditions PAR",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CheckMark": {
+      "description": "Check Mark",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorBW": {
+      "description": "Color BW",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorBitDepth": {
+      "description": "Color Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorClass": {
+      "description": "Color Class",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorComponents": {
+      "description": "Color Components",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorMode": {
+      "description": "Color Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorPlanes": {
+      "description": "Color Planes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorSpace": {
+      "description": "Color Space",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorSpaceData": {
+      "description": "Color Space Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTemperature": {
+      "description": "Color Temperature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorToneAdj": {
+      "description": "Color Tone Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ColorTransform": {
+      "description": "Color Transform",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ComponentBitDepth": {
+      "description": "Component Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ComponentsConfiguration": {
+      "description": "Components Configuration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompressedBitsPerPixel": {
+      "description": "Compressed Bits Per Pixel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Compression": {
+      "description": "Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Condition": {
+      "description": "Condition",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ConnectionSpaceIlluminant": {
+      "description": "Connection Space Illuminant",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ConstrainedCropHeight": {
+      "description": "Constrained Crop Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ConstrainedCropWidth": {
+      "description": "Constrained Crop Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContTake": {
+      "description": "Cont Take",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContrastAdj": {
+      "description": "Contrast Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ControlMode": {
+      "description": "Control Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CorrectionMethod": {
+      "description": "Correction Method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CreatorSoftware": {
+      "description": "Creator Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropActive": {
+      "description": "Crop Active",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropAspectRatio": {
+      "description": "Crop Aspect Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropBottom": {
+      "description": "Crop Bottom",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropHeight": {
+      "description": "Crop Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropLeft": {
+      "description": "Crop Left",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropRight": {
+      "description": "Crop Right",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropRotation": {
+      "description": "Crop Rotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropTop": {
+      "description": "Crop Top",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CropWidth": {
+      "description": "Crop Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CurrentIPTCDigest": {
+      "description": "Current IPTC Digest",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomRendered": {
+      "description": "Custom Rendered",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DCTEncodeVersion": {
+      "description": "DCT Encode Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DOF": {
+      "description": "Depth Of Field",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DependentImage1EntryNumber": {
+      "description": "Dependent Image 1 Entry Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DependentImage2EntryNumber": {
+      "description": "Dependent Image 2 Entry Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DeviceAttributes": {
+      "description": "Device Attributes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DeviceManufacturer": {
+      "description": "Device Manufacturer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DeviceModel": {
+      "description": "Device Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DigitalGain": {
+      "description": "Digital Gain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DirectoryIndex": {
+      "description": "Directory Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DisplayedUnitsX": {
+      "description": "Displayed Units X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DisplayedUnitsY": {
+      "description": "Displayed Units Y",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DynamicRangeMax": {
+      "description": "Dynamic Range Max",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DynamicRangeMin": {
+      "description": "Dynamic Range Min",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EditStatus": {
+      "description": "Edit Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EncodingProcess": {
+      "description": "Encoding Process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifByteOrder": {
+      "description": "Exif Byte Order",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifImageHeight": {
+      "description": "Exif Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifImageWidth": {
+      "description": "Exif Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifVersion": {
+      "description": "Exif Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ExposureCompensation": {
+      "description": "Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureIndex": {
+      "description": "Exposure Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExposureTime": {
+      "description": "Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FNumber": {
+      "description": "F Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FOV": {
+      "description": "Field Of View",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileFormat": {
+      "description": "File Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileIndex": {
+      "description": "File Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileNumber": {
+      "description": "File Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSource": {
+      "description": "File Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilmCategory": {
+      "description": "Film Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilmGencode": {
+      "description": "Film Gencode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilmProductCode": {
+      "description": "Film Product Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilmSize": {
+      "description": "Film Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flags": {
+      "description": "Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flash": {
+      "description": "Flash",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashExposureComp": {
+      "description": "Flash Exposure Compensation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashGuideNumber": {
+      "description": "Flash Guide Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashThreshold": {
+      "description": "Flash Threshold",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlashpixVersion": {
+      "description": "Flashpix Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FocalLength": {
+      "description": "Focal Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneXSize": {
+      "description": "Focal Plane X Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalPlaneYSize": {
+      "description": "Focal Plane Y Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocalType": {
+      "description": "Focal Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FocusDistanceLower": {
+      "description": "Focus Distance Lower",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FocusDistanceUpper": {
+      "description": "Focus Distance Upper",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FrameNumber": {
+      "description": "Frame Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Gamma": {
+      "description": "Gamma",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GlobalAltitude": {
+      "description": "Global Altitude",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GlobalAngle": {
+      "description": "Global Angle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GreenCurveLimits": {
+      "description": "Green Curve Limits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GreenCurvePoints": {
+      "description": "Green Curve Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GreenMatrixColumn": {
+      "description": "Green Matrix Column",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GreenTRC": {
+      "description": "Green Tone Reproduction Curve",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HasRealMergedData": {
+      "description": "Has Real Merged Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Headline": {
+      "description": "Headline",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IPTCDigest": {
+      "description": "IPTC Digest",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ISO": {
+      "description": "ISO",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageClass": {
+      "description": "Image Class",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageColor": {
+      "description": "Image Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageDescription": {
+      "description": "Image Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageFormat": {
+      "description": "Image Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageRotationStatus": {
+      "description": "Image Rotation Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageSize": {
+      "description": "Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageSourceEK": {
+      "description": "Image Source EK",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageUniqueID": {
+      "description": "Image Unique ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Instructions": {
+      "description": "Instructions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InterleavedField": {
+      "description": "Interleaved Field",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InteropIndex": {
+      "description": "Interoperability Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InteropVersion": {
+      "description": "Interoperability Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Isotherm1Color": {
+      "description": "Isotherm 1 Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Isotherm2Color": {
+      "description": "Isotherm 2 Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JFIFVersion": {
+      "description": "JFIF Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JPEG-HDRVersion": {
+      "description": "JPEG-HDR Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JPEGProcess": {
+      "description": "JPEG Process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensInfo": {
+      "description": "Lens Info",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensMake": {
+      "description": "Lens Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LensModel": {
+      "description": "Lens Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LightS": {
+      "description": "Light S",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LightValue": {
+      "description": "Light Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Lit": {
+      "description": "Lit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LiveViewShooting": {
+      "description": "Live View Shooting",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Ln0": {
+      "description": "Ln0",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Ln1": {
+      "description": "Ln1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Location": {
+      "description": "Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LongExposureNoiseReduction2": {
+      "description": "Long Exposure Noise Reduction 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Luminance": {
+      "description": "Luminance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LuminanceCurveLimits": {
+      "description": "Luminance Curve Limits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LuminanceCurvePoints": {
+      "description": "Luminance Curve Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "MPFVersion": {
+      "description": "MPF Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MPImageFlags": {
+      "description": "MP Image Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPImageFormat": {
+      "description": "MP Image Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPImageLength": {
+      "description": "MP Image Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPImageStart": {
+      "description": "MP Image Start",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MPImageType": {
+      "description": "MP Image Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Macro": {
+      "description": "Macro",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasuredEV": {
+      "description": "Measured EV",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasuredEV2": {
+      "description": "Measured EV 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasurementBacking": {
+      "description": "Measurement Backing",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasurementFlare": {
+      "description": "Measurement Flare",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasurementGeometry": {
+      "description": "Measurement Geometry",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasurementIlluminant": {
+      "description": "Measurement Illuminant",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MeasurementObserver": {
+      "description": "Measurement Observer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaBlackPoint": {
+      "description": "Media Black Point",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaWhitePoint": {
+      "description": "Media White Point",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Megapixels": {
+      "description": "Megapixels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MetadataNumber": {
+      "description": "Metadata Number",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModelAndVersion": {
+      "description": "Model And Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NDFilter": {
+      "description": "ND Filter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NITFVersion": {
+      "description": "NITF Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Name": {
+      "description": "Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumberOfImages": {
+      "description": "Number Of Images",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectPreviewFileFormat": {
+      "description": "Object Preview File Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectPreviewFileVersion": {
+      "description": "Object Preview File Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Orientation": {
+      "description": "Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalImageHeight": {
+      "description": "Original Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalImageWidth": {
+      "description": "Original Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OverflowColor": {
+      "description": "Overflow Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Palette": {
+      "description": "Palette",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PaletteColors": {
+      "description": "Palette Colors",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PaletteFileName": {
+      "description": "Palette File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PaletteMethod": {
+      "description": "Palette Method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PaletteName": {
+      "description": "Palette Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PaletteStretch": {
+      "description": "Palette Stretch",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "People": {
+      "description": "People",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PhotoshopFormat": {
+      "description": "Photoshop Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PhotoshopQuality": {
+      "description": "Photoshop Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PicLen": {
+      "description": "Pic Len",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PictureStyle": {
+      "description": "Picture Style",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixelAspectRatio": {
+      "description": "Pixel Aspect Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Places": {
+      "description": "Places",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Prefs": {
+      "description": "Prefs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImageLength": {
+      "description": "Preview Image Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImageSize": {
+      "description": "Preview Image Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImageStart": {
+      "description": "Preview Image Start",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrimaryChromaticities": {
+      "description": "Primary Chromaticities",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrimaryPlatform": {
+      "description": "Primary Platform",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrintPosition": {
+      "description": "Print Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrintScale": {
+      "description": "Print Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PrintStyle": {
+      "description": "Print Style",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileCMMType": {
+      "description": "Profile CMM Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileClass": {
+      "description": "Profile Class",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileConnectionSpace": {
+      "description": "Profile Connection Space",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileCopyright": {
+      "description": "Profile Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileCreator": {
+      "description": "Profile Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileDescription": {
+      "description": "Profile Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileFileSignature": {
+      "description": "Profile File Signature",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileID": {
+      "description": "Profile ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProfileVersion": {
+      "description": "Profile Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ProgressiveScans": {
+      "description": "Progressive Scans",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Protect": {
+      "description": "Protect",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Quality": {
+      "description": "Quality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RGBCurveLimits": {
+      "description": "RGB Curve Limits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RGBCurvePoints": {
+      "description": "RGB Curve Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rating": {
+      "description": "Rating",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawBrightnessAdj": {
+      "description": "Raw Brightness Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawColorAdj": {
+      "description": "Raw Color Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawCustomSaturation": {
+      "description": "Raw Custom Saturation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawCustomTone": {
+      "description": "Raw Custom Tone",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawJpgSize": {
+      "description": "Raw Jpg Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawThermalImageHeight": {
+      "description": "Raw Thermal Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawThermalImageType": {
+      "description": "Raw Thermal Image Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawThermalImageWidth": {
+      "description": "Raw Thermal Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawValueMedian": {
+      "description": "Raw Value Median",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RawValueRange": {
+      "description": "Raw Value Range",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReaderName": {
+      "description": "Reader Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RedCurveLimits": {
+      "description": "Red Curve Limits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RedCurvePoints": {
+      "description": "Red Curve Points",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RedMatrixColumn": {
+      "description": "Red Matrix Column",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RedTRC": {
+      "description": "Red Tone Reproduction Curve",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReferenceBlackWhite": {
+      "description": "Reference Black White",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RelatedImageHeight": {
+      "description": "Related Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RelatedImageWidth": {
+      "description": "Related Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RenderingIntent": {
+      "description": "Rendering Intent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Resolution": {
+      "description": "Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ResolutionUnit": {
+      "description": "Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RicohImageHeight": {
+      "description": "Ricoh Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RicohImageWidth": {
+      "description": "Ricoh Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RollGuidElements": {
+      "description": "Roll Guid Elements",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rotation": {
+      "description": "Rotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RunTimeEpoch": {
+      "description": "Run Time Epoch",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RunTimeFlags": {
+      "description": "Run Time Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RunTimeScale": {
+      "description": "Run Time Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RunTimeValue": {
+      "description": "Run Time Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "S0": {
+      "description": "S0",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "S2n": {
+      "description": "S2n",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SBAExposureRecord": {
+      "description": "SBA Exposure Record",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SBAInputImageBitDepth": {
+      "description": "SBA Input Image Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SBAInputImageColorspace": {
+      "description": "SBA Input Image Colorspace",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SBA_RGBShifts": {
+      "description": "SBA RGB Shifts",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SPIFFVersion": {
+      "description": "SPIFF Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SaturationAdj": {
+      "description": "Saturation Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SceneType": {
+      "description": "Scene Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SelfTimer2": {
+      "description": "Self Timer 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorBlueLevel": {
+      "description": "Sensor Blue Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorBottomBorder": {
+      "description": "Sensor Bottom Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorHeight": {
+      "description": "Sensor Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorLeftBorder": {
+      "description": "Sensor Left Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorRedLevel": {
+      "description": "Sensor Red Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorRightBorder": {
+      "description": "Sensor Right Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorTopBorder": {
+      "description": "Sensor Top Border",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SensorWidth": {
+      "description": "Sensor Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SequenceNumber": {
+      "description": "Shot Number In Continuous Burst",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SerialNumber": {
+      "description": "Serial Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Sharpness": {
+      "description": "Sharpness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SharpnessAdj": {
+      "description": "Sharpness Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SharpnessFrequency": {
+      "description": "Sharpness Frequency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ShutterSpeed": {
+      "description": "Shutter Speed",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ShutterSpeedValue": {
+      "description": "Shutter Speed Value",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SignType": {
+      "description": "Sign Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SlowShutter": {
+      "description": "Slow Shutter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamBitDepth": {
+      "description": "Stream Bit Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StreamColor": {
+      "description": "Stream Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupplementalCategories": {
+      "description": "Supplemental Categories",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "T0": {
+      "description": "T0",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TagB": {
+      "description": "Tag B",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TagQ": {
+      "description": "Tag Q",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TagR": {
+      "description": "Tag R",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Tagged": {
+      "description": "Tagged",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TargetAperture": {
+      "description": "Target Aperture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TargetCompressionRatio": {
+      "description": "Target Compression Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TargetExposureTime": {
+      "description": "Target Exposure Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Technology": {
+      "description": "Technology",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThmLen": {
+      "description": "Thm Len",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailLength": {
+      "description": "Thumbnail Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailOffset": {
+      "description": "Thumbnail Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToneCurve": {
+      "description": "Tone Curve",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToneCurveActive": {
+      "description": "Tone Curve Active",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToneCurveInterpolation": {
+      "description": "Tone Curve Interpolation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToneCurveMode": {
+      "description": "Tone Curve Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ToneCurveProperty": {
+      "description": "Tone Curve Property",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Tool_Name": {
+      "description": "Tool Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Tool_Version": {
+      "description": "Tool Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TransmissionReference": {
+      "description": "Transmission Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URL_List": {
+      "description": "URL List",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UnderflowColor": {
+      "description": "Underflow Color",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Urgency": {
+      "description": "Urgency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UserAdjSBA_RGBShifts": {
+      "description": "User Adj SBA RGB Shifts",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UserComment": {
+      "description": "User Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VRDVersion": {
+      "description": "VRD Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ViewingCondDesc": {
+      "description": "Viewing Cond Desc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ViewingCondIlluminant": {
+      "description": "Viewing Cond Illuminant",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ViewingCondIlluminantType": {
+      "description": "Viewing Cond Illuminant Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ViewingCondSurround": {
+      "description": "Viewing Cond Surround",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "WBAdjColorTemp": {
+      "description": "WB Adj Color Temp",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBAdjRGGBLevels": {
+      "description": "WB Adj RGGB Levels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBBracketMode": {
+      "description": "WB Bracket Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBBracketValueAB": {
+      "description": "WB Bracket Value AB",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBBracketValueGM": {
+      "description": "WB Bracket Value GM",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBFineTuneActive": {
+      "description": "WB Fine Tune Active",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBFineTuneSaturation": {
+      "description": "WB Fine Tune Saturation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBFineTuneTone": {
+      "description": "WB Fine Tune Tone",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBShiftAB": {
+      "description": "WB Shift AB",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBShiftGM": {
+      "description": "WB Shift GM",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalanceAdj": {
+      "description": "White Balance Adj",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalanceBlue": {
+      "description": "White Balance Blue",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalanceRed": {
+      "description": "White Balance Red",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WorkColorSpace": {
+      "description": "Work Color Space",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WriterName": {
+      "description": "Writer Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XResolution": {
+      "description": "X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XYResolution": {
+      "description": "XY Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YCbCrCoefficients": {
+      "description": "Y Cb Cr Coefficients",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YCbCrPositioning": {
+      "description": "Y Cb Cr Positioning",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YCbCrSubSampling": {
+      "description": "Y Cb Cr Sub Sampling",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YResolution": {
+      "description": "Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Zoom": {
+      "description": "Zoom",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jpeg-image",
+  "requiredOneof": [
+    "FileName",
+    "Directory",
+    "FileSize",
+    "FilePermissions",
+    "FileType",
+    "FileTypeExtension",
+    "MIMEType",
+    "JFIFVersion",
+    "ExifByteOrder",
+    "ImageDescription",
+    "Orientation",
+    "XResolution",
+    "YResolution",
+    "ResolutionUnit",
+    "Software",
+    "YCbCrPositioning",
+    "FNumber",
+    "ISO",
+    "ExifVersion",
+    "ComponentsConfiguration",
+    "CompressedBitsPerPixel",
+    "ShutterSpeedValue",
+    "ApertureValue",
+    "BrightnessValue",
+    "ExposureCompensation",
+    "FlashpixVersion",
+    "ColorSpace",
+    "ExifImageWidth",
+    "ExifImageHeight",
+    "FileSource",
+    "SceneType",
+    "Compression",
+    "ThumbnailOffset",
+    "ThumbnailLength",
+    "Description",
+    "Subject",
+    "Title",
+    "Category",
+    "Headline",
+    "Instructions",
+    "SupplementalCategories",
+    "TransmissionReference",
+    "Urgency",
+    "ProfileCMMType",
+    "ProfileVersion",
+    "ProfileClass",
+    "ColorSpaceData",
+    "ProfileConnectionSpace",
+    "ProfileFileSignature",
+    "PrimaryPlatform",
+    "CMMFlags",
+    "DeviceManufacturer",
+    "DeviceModel",
+    "DeviceAttributes",
+    "RenderingIntent",
+    "ConnectionSpaceIlluminant",
+    "ProfileCreator",
+    "ProfileID",
+    "ProfileCopyright",
+    "ProfileDescription",
+    "MediaWhitePoint",
+    "MediaBlackPoint",
+    "RedMatrixColumn",
+    "GreenMatrixColumn",
+    "BlueMatrixColumn",
+    "ViewingCondDesc",
+    "ViewingCondIlluminant",
+    "ViewingCondSurround",
+    "ViewingCondIlluminantType",
+    "Luminance",
+    "MeasurementObserver",
+    "MeasurementBacking",
+    "MeasurementGeometry",
+    "MeasurementFlare",
+    "MeasurementIlluminant",
+    "Technology",
+    "RedTRC",
+    "GreenTRC",
+    "BlueTRC",
+    "DCTEncodeVersion",
+    "APP14Flags0",
+    "APP14Flags1",
+    "ColorTransform",
+    "ImageWidth",
+    "ImageHeight",
+    "EncodingProcess",
+    "BitsPerSample",
+    "ColorComponents",
+    "YCbCrSubSampling",
+    "Aperture",
+    "ImageSize",
+    "Megapixels",
+    "ShutterSpeed",
+    "LightValue",
+    "ExposureTime",
+    "UserComment",
+    "InteropIndex",
+    "InteropVersion",
+    "CustomRendered",
+    "ImageUniqueID",
+    "FOV",
+    "RicohImageWidth",
+    "RicohImageHeight",
+    "SignType",
+    "Location",
+    "Lit",
+    "Condition",
+    "Azimuth",
+    "CurrentIPTCDigest",
+    "DisplayedUnitsX",
+    "DisplayedUnitsY",
+    "Prefs",
+    "EditStatus",
+    "Tagged",
+    "ColorClass",
+    "Rotation",
+    "CropLeft",
+    "CropTop",
+    "CropRight",
+    "CropBottom",
+    "PreviewImageSize",
+    "PreviewImageLength",
+    "PreviewImageStart",
+    "WBShiftAB",
+    "WBShiftGM",
+    "DOF",
+    "Resolution",
+    "PrimaryChromaticities",
+    "YCbCrCoefficients",
+    "CFAPattern",
+    "Gamma",
+    "Rating",
+    "ExposureIndex",
+    "IPTCDigest",
+    "PrintStyle",
+    "PrintPosition",
+    "PrintScale",
+    "GlobalAngle",
+    "GlobalAltitude",
+    "URL_List",
+    "HasRealMergedData",
+    "WriterName",
+    "ReaderName",
+    "PhotoshopQuality",
+    "PhotoshopFormat",
+    "ProgressiveScans",
+    "SerialNumber",
+    "ReferenceBlackWhite",
+    "OriginalImageWidth",
+    "OriginalImageHeight",
+    "ColorPlanes",
+    "XYResolution",
+    "CropRotation",
+    "ObjectPreviewFileFormat",
+    "ObjectPreviewFileVersion",
+    "CreatorSoftware",
+    "PaletteColors",
+    "AboveColor",
+    "BelowColor",
+    "OverflowColor",
+    "UnderflowColor",
+    "Isotherm1Color",
+    "Isotherm2Color",
+    "PaletteMethod",
+    "PaletteStretch",
+    "PaletteFileName",
+    "PaletteName",
+    "Palette",
+    "RawValueMedian",
+    "RawValueRange",
+    "RawThermalImageWidth",
+    "RawThermalImageHeight",
+    "RawThermalImageType",
+    "SPIFFVersion",
+    "FileFormat",
+    "TargetCompressionRatio",
+    "PixelAspectRatio",
+    "ComponentBitDepth",
+    "ColorBitDepth",
+    "ColorBW",
+    "FileNumber",
+    "FlashGuideNumber",
+    "FlashThreshold",
+    "FocalType",
+    "FocalLength",
+    "FocalPlaneXSize",
+    "FocalPlaneYSize",
+    "InterleavedField",
+    "MPFVersion",
+    "NumberOfImages",
+    "MPImageFlags",
+    "MPImageFormat",
+    "MPImageType",
+    "MPImageLength",
+    "MPImageStart",
+    "DependentImage1EntryNumber",
+    "DependentImage2EntryNumber",
+    "FilmProductCode",
+    "ImageSourceEK",
+    "CaptureConditionsPAR",
+    "FrameNumber",
+    "FilmCategory",
+    "FilmGencode",
+    "ModelAndVersion",
+    "FilmSize",
+    "SBA_RGBShifts",
+    "SBAInputImageColorspace",
+    "SBAInputImageBitDepth",
+    "SBAExposureRecord",
+    "UserAdjSBA_RGBShifts",
+    "ImageRotationStatus",
+    "RollGuidElements",
+    "MetadataNumber",
+    "NITFVersion",
+    "ImageFormat",
+    "BlocksPerRow",
+    "BlocksPerColumn",
+    "ImageColor",
+    "BitDepth",
+    "ImageClass",
+    "JPEGProcess",
+    "StreamColor",
+    "StreamBitDepth",
+    "Flags",
+    "Tool_Name",
+    "Tool_Version",
+    "People",
+    "Places",
+    "Album",
+    "Name",
+    "Comment",
+    "JPEG-HDRVersion",
+    "Ln0",
+    "Ln1",
+    "S2n",
+    "Alpha",
+    "Beta",
+    "CorrectionMethod",
+    "Flash",
+    "Protect",
+    "ContTake",
+    "ColorMode",
+    "Zoom",
+    "Macro",
+    "LightS",
+    "PicLen",
+    "ThmLen",
+    "TagQ",
+    "TagR",
+    "TagB",
+    "S0",
+    "T0",
+    "AdobeCMType",
+    "Quality",
+    "VRDVersion",
+    "WBAdjRGGBLevels",
+    "WhiteBalanceAdj",
+    "WBAdjColorTemp",
+    "WBFineTuneActive",
+    "WBFineTuneSaturation",
+    "WBFineTuneTone",
+    "RawColorAdj",
+    "RawCustomSaturation",
+    "RawCustomTone",
+    "RawBrightnessAdj",
+    "ToneCurveProperty",
+    "DynamicRangeMin",
+    "DynamicRangeMax",
+    "ToneCurveActive",
+    "ToneCurveMode",
+    "BrightnessAdj",
+    "ContrastAdj",
+    "SaturationAdj",
+    "ColorToneAdj",
+    "LuminanceCurvePoints",
+    "LuminanceCurveLimits",
+    "ToneCurveInterpolation",
+    "RedCurvePoints",
+    "RedCurveLimits",
+    "GreenCurvePoints",
+    "GreenCurveLimits",
+    "BlueCurvePoints",
+    "BlueCurveLimits",
+    "RGBCurvePoints",
+    "RGBCurveLimits",
+    "CropActive",
+    "CropWidth",
+    "CropHeight",
+    "SharpnessAdj",
+    "CropAspectRatio",
+    "ConstrainedCropWidth",
+    "ConstrainedCropHeight",
+    "CheckMark",
+    "WorkColorSpace",
+    "AutoISO",
+    "BaseISO",
+    "MeasuredEV",
+    "TargetAperture",
+    "TargetExposureTime",
+    "WhiteBalance",
+    "SlowShutter",
+    "SequenceNumber",
+    "FlashExposureComp",
+    "AutoExposureBracketing",
+    "AEBBracketValue",
+    "ControlMode",
+    "MeasuredEV2",
+    "BulbDuration",
+    "NDFilter",
+    "CanonImageType",
+    "FileIndex",
+    "DirectoryIndex",
+    "CanonImageWidth",
+    "CanonImageHeight",
+    "BracketMode",
+    "BracketValue",
+    "BracketShotNumber",
+    "RawJpgSize",
+    "LongExposureNoiseReduction2",
+    "WBBracketMode",
+    "WBBracketValueAB",
+    "WBBracketValueGM",
+    "LiveViewShooting",
+    "FocusDistanceUpper",
+    "FocusDistanceLower",
+    "ToneCurve",
+    "Sharpness",
+    "SharpnessFrequency",
+    "SensorRedLevel",
+    "SensorBlueLevel",
+    "WhiteBalanceRed",
+    "WhiteBalanceBlue",
+    "ColorTemperature",
+    "PictureStyle",
+    "DigitalGain",
+    "SensorWidth",
+    "SensorHeight",
+    "SensorLeftBorder",
+    "SensorTopBorder",
+    "SensorRightBorder",
+    "SensorBottomBorder",
+    "BlackMaskLeftBorder",
+    "BlackMaskTopBorder",
+    "BlackMaskRightBorder",
+    "BlackMaskBottomBorder",
+    "AutoRotate",
+    "SelfTimer2",
+    "CanonFileLength",
+    "RelatedImageWidth",
+    "RelatedImageHeight",
+    "RunTimeFlags",
+    "RunTimeValue",
+    "RunTimeEpoch",
+    "RunTimeScale",
+    "LensInfo",
+    "LensMake",
+    "LensModel"
+  ],
+  "uuid": "8b653560-94f0-4044-ac20-64d327dacdaf",
+  "version": 1
+}

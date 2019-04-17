@@ -1,0 +1,88 @@
+{
+  "attributes": {
+    "DerivedFromDocumentID": {
+      "description": "Derived From Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DerivedFromInstanceID": {
+      "description": "Derived From Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentID": {
+      "description": "Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InstanceID": {
+      "description": "Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestLinkForm": {
+      "description": "Manifest Link Form",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestPlacedResolutionUnit": {
+      "description": "Manifest Placed Resolution Unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestPlacedXResolution": {
+      "description": "Manifest Placed X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestPlacedYResolution": {
+      "description": "Manifest Placed Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestReferenceDocumentID": {
+      "description": "Manifest Reference Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManifestReferenceInstanceID": {
+      "description": "Manifest Reference Instance ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RenditionClass": {
+      "description": "Rendition Class",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml-other",
+  "requiredOneof": [
+    "InstanceID",
+    "DerivedFromInstanceID",
+    "DerivedFromDocumentID",
+    "DocumentID",
+    "RenditionClass",
+    "ManifestLinkForm",
+    "ManifestReferenceInstanceID",
+    "ManifestReferenceDocumentID",
+    "ManifestPlacedXResolution",
+    "ManifestPlacedYResolution",
+    "ManifestPlacedResolutionUnit"
+  ],
+  "uuid": "174652a0-17fa-4f94-8028-c24fff55fa30",
+  "version": 1
+}

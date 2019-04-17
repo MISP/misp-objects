@@ -1,0 +1,102 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AuthorsPosition": {
+      "description": "Authors Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "By-line": {
+      "description": "By-line",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "By-lineTitle": {
+      "description": "By-line Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CaptionWriter": {
+      "description": "Caption Writer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightFlag": {
+      "description": "Copyright Flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightNotice": {
+      "description": "Copyright Notice",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rights": {
+      "description": "Rights",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "URL": {
+      "description": "URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WebStatement": {
+      "description": "Web Statement",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Writer-Editor": {
+      "description": "Writer-Editor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-vnd-adobe-photoshop-author",
+  "requiredOneof": [
+    "Writer-Editor",
+    "By-line",
+    "By-lineTitle",
+    "CopyrightNotice",
+    "CaptionWriter",
+    "AuthorsPosition",
+    "WebStatement",
+    "Creator",
+    "Rights",
+    "CopyrightFlag",
+    "URL",
+    "Artist",
+    "Copyright"
+  ],
+  "uuid": "5132fd36-e4ce-46ef-9b50-e38f6dc37da4",
+  "version": 1
+}

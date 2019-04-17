@@ -1,0 +1,221 @@
+{
+  "attributes": {
+    "AvgBitrate": {
+      "description": "Avg Bitrate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompatibleBrands": {
+      "description": "Compatible Brands",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CurrentTime": {
+      "description": "Current Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "HandlerType": {
+      "description": "Handler Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HandlerVendorID": {
+      "description": "Handler Vendor ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MajorBrand": {
+      "description": "Major Brand",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MatrixStructure": {
+      "description": "Matrix Structure",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaDuration": {
+      "description": "Media Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MediaHeaderVersion": {
+      "description": "Media Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaLanguageCode": {
+      "description": "Media Language Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaTimeScale": {
+      "description": "Media Time Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinorVersion": {
+      "description": "Minor Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MovieDataOffset": {
+      "description": "Movie Data Offset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MovieDataSize": {
+      "description": "Movie Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MovieHeaderVersion": {
+      "description": "Movie Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NextTrackID": {
+      "description": "Next Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PosterTime": {
+      "description": "Poster Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PreferredRate": {
+      "description": "Preferred Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreferredVolume": {
+      "description": "Preferred Volume",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewDuration": {
+      "description": "Preview Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "PreviewTime": {
+      "description": "Preview Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SelectionDuration": {
+      "description": "Selection Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SelectionTime": {
+      "description": "Selection Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeScale": {
+      "description": "Time Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackDuration": {
+      "description": "Track Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TrackHeaderVersion": {
+      "description": "Track Header Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackID": {
+      "description": "Track ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackLayer": {
+      "description": "Track Layer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackVolume": {
+      "description": "Track Volume",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-m4a-video",
+  "requiredOneof": [
+    "MajorBrand",
+    "MinorVersion",
+    "CompatibleBrands",
+    "MovieHeaderVersion",
+    "TimeScale",
+    "Duration",
+    "PreferredRate",
+    "PreferredVolume",
+    "PreviewTime",
+    "PreviewDuration",
+    "PosterTime",
+    "SelectionTime",
+    "SelectionDuration",
+    "CurrentTime",
+    "NextTrackID",
+    "TrackHeaderVersion",
+    "TrackID",
+    "TrackDuration",
+    "TrackLayer",
+    "TrackVolume",
+    "MatrixStructure",
+    "MediaHeaderVersion",
+    "MediaTimeScale",
+    "MediaDuration",
+    "MediaLanguageCode",
+    "HandlerType",
+    "HandlerVendorID",
+    "MovieDataSize",
+    "MovieDataOffset",
+    "AvgBitrate"
+  ],
+  "uuid": "08fdbf40-bae0-4a01-9647-af861eebad71",
+  "version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Artist": {
+      "description": "Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-musepack-author",
+  "requiredOneof": [
+    "Artist"
+  ],
+  "uuid": "41f01c29-a308-4448-98f7-1c3f47ddc4e8",
+  "version": 1
+}

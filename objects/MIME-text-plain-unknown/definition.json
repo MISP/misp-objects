@@ -1,0 +1,214 @@
+{
+  "attributes": {
+    "BTestTagField1-en-CA": {
+      "description": "B Test Tag Field 1 (en-CA)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BTestTagField1-en-US": {
+      "description": "B Test Tag Field 1 (en-US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BTestTagField1-fr": {
+      "description": "B Test Tag Field 1 (fr)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BareList1": {
+      "description": "Bare List 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BareList2": {
+      "description": "Bare List 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BareStructItem1": {
+      "description": "Bare Struct Item 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BareStructItem2": {
+      "description": "Bare Struct Item 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProgrammerExclamation": {
+      "description": "Programmer Exclamation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProgrammerFood": {
+      "description": "Programmer Food",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProgrammerFullName": {
+      "description": "Programmer Full Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProgrammerHomePage": {
+      "description": "Programmer Home Page",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProgrammerState": {
+      "description": "Programmer State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StructList1Item1": {
+      "description": "Struct List 1 Item 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StructList1Item2": {
+      "description": "Struct List 1 Item 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StructList2Item1": {
+      "description": "Struct List 2 Item 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StructList2Item2": {
+      "description": "Struct List 2 Item 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StructList2TestList1": {
+      "description": "Struct List 2 Test List 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StructList2TestList2": {
+      "description": "Struct List 2 Test List 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupervisorExclamation": {
+      "description": "Supervisor Exclamation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupervisorFood": {
+      "description": "Supervisor Food",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupervisorFullName": {
+      "description": "Supervisor Full Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupervisorHomePage": {
+      "description": "Supervisor Home Page",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupervisorState": {
+      "description": "Supervisor State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Test": {
+      "description": "Test",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TesterExclamation": {
+      "description": "Tester Exclamation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TesterFood": {
+      "description": "Tester Food",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TesterFullName": {
+      "description": "Tester Full Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TesterHomePage": {
+      "description": "Tester Home Page",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TesterState": {
+      "description": "Tester State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-plain-unknown",
+  "requiredOneof": [
+    "Test",
+    "BTestTagField1-en-CA",
+    "BTestTagField1-en-US",
+    "BTestTagField1-fr",
+    "StructList2Item1",
+    "StructList2Item2",
+    "StructList2TestList1",
+    "StructList2TestList2",
+    "StructList1Item1",
+    "StructList1Item2",
+    "BareStructItem1",
+    "BareStructItem2",
+    "BareList2",
+    "BareList1",
+    "ProgrammerExclamation",
+    "ProgrammerFood",
+    "ProgrammerFullName",
+    "ProgrammerHomePage",
+    "ProgrammerState",
+    "SupervisorExclamation",
+    "SupervisorFood",
+    "SupervisorFullName",
+    "SupervisorHomePage",
+    "SupervisorState",
+    "TesterExclamation",
+    "TesterFood",
+    "TesterFullName",
+    "TesterHomePage",
+    "TesterState"
+  ],
+  "uuid": "243f6495-46ea-42c2-921f-e0cc7a2622c6",
+  "version": 1
+}

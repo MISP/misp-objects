@@ -1,0 +1,144 @@
+{
+  "attributes": {
+    "ContentDescriptionCaption": {
+      "description": "Content Description Caption",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionEventDescription": {
+      "description": "Content Description Event Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionEventEventType": {
+      "description": "Content Description Event Event Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionLocationAddressAddrComp": {
+      "description": "Content Description Location Address Addr Comp",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionLocationAddressAddrCompType": {
+      "description": "Content Description Location Address Addr Comp Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionLocationAddressCountry": {
+      "description": "Content Description Location Address Country",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionLocationAddressType": {
+      "description": "Content Description Location Address Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionLocationAddressZipcode": {
+      "description": "Content Description Location Address Zipcode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionSchemaLocation": {
+      "description": "Content Description Schema Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionThingId": {
+      "description": "Content Description Thing Id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionThingName": {
+      "description": "Content Description Thing Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionThingPositionRectHeight": {
+      "description": "Content Description Thing Position Rect Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionThingPositionRectWidth": {
+      "description": "Content Description Thing Position Rect Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionThingPositionRectX": {
+      "description": "Content Description Thing Position Rect X",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionThingPositionRectY": {
+      "description": "Content Description Thing Position Rect Y",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDescriptionXmlns": {
+      "description": "Content Description Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageCreationGeneralCreationInfoCreationTime": {
+      "description": "Image Creation General Creation Info Creation Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ImageCreationSchemaLocation": {
+      "description": "Image Creation Schema Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageCreationXmlns": {
+      "description": "Image Creation Xmlns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jp2-unknown",
+  "requiredOneof": [
+    "ImageCreationXmlns",
+    "ImageCreationSchemaLocation",
+    "ImageCreationGeneralCreationInfoCreationTime",
+    "ContentDescriptionXmlns",
+    "ContentDescriptionSchemaLocation",
+    "ContentDescriptionCaption",
+    "ContentDescriptionLocationAddressType",
+    "ContentDescriptionLocationAddressAddrCompType",
+    "ContentDescriptionLocationAddressAddrComp",
+    "ContentDescriptionLocationAddressZipcode",
+    "ContentDescriptionLocationAddressCountry",
+    "ContentDescriptionThingId",
+    "ContentDescriptionThingName",
+    "ContentDescriptionThingPositionRectX",
+    "ContentDescriptionThingPositionRectY",
+    "ContentDescriptionThingPositionRectWidth",
+    "ContentDescriptionThingPositionRectHeight",
+    "ContentDescriptionEventEventType",
+    "ContentDescriptionEventDescription"
+  ],
+  "uuid": "bdc6df50-f2ac-4380-bf0e-c7970865d4c9",
+  "version": 1
+}

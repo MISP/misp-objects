@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-mpeg-video",
+  "requiredOneof": [
+    "Duration"
+  ],
+  "uuid": "4a3a5e22-88f4-48f0-b2d1-ef701c9c3458",
+  "version": 1
+}

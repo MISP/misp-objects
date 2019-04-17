@@ -1,0 +1,46 @@
+{
+  "attributes": {
+    "City": {
+      "description": "City",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Country": {
+      "description": "Country",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Country-PrimaryLocationName": {
+      "description": "Country-Primary Location Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Province-State": {
+      "description": "Province-State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "State": {
+      "description": "State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-pdf-location",
+  "requiredOneof": [
+    "Province-State",
+    "Country-PrimaryLocationName",
+    "City",
+    "Country",
+    "State"
+  ],
+  "uuid": "fa00f1bf-b8f8-4f10-86d9-dd214ffdfef3",
+  "version": 1
+}

@@ -1,0 +1,221 @@
+{
+  "attributes": {
+    "CharacterSet": {
+      "description": "Character Set",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CodeSize": {
+      "description": "Code Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CompanyName": {
+      "description": "Company Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EntryPoint": {
+      "description": "Entry Point",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileDescription": {
+      "description": "File Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileFlags": {
+      "description": "File Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileFlagsMask": {
+      "description": "File Flags Mask",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileOS": {
+      "description": "File OS",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSubtype": {
+      "description": "File Subtype",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileVersion": {
+      "description": "File Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileVersionNumber": {
+      "description": "File Version Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageFileCharacteristics": {
+      "description": "Image File Characteristics",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageVersion": {
+      "description": "Image Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InitializedDataSize": {
+      "description": "Initialized Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InternalName": {
+      "description": "Internal Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LanguageCode": {
+      "description": "Language Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LegalCopyright": {
+      "description": "Legal Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LegalTrademarks": {
+      "description": "Legal Trademarks",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LinkerVersion": {
+      "description": "Linker Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MachineType": {
+      "description": "Machine Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OSVersion": {
+      "description": "OS Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectFileType": {
+      "description": "Object File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalFileName": {
+      "description": "Original File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PEType": {
+      "description": "PE Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProductName": {
+      "description": "Product Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProductVersion": {
+      "description": "Product Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProductVersionNumber": {
+      "description": "Product Version Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Subsystem": {
+      "description": "Subsystem",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubsystemVersion": {
+      "description": "Subsystem Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "UninitializedDataSize": {
+      "description": "Uninitialized Data Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-dosexec-other",
+  "requiredOneof": [
+    "MachineType",
+    "ImageFileCharacteristics",
+    "PEType",
+    "LinkerVersion",
+    "CodeSize",
+    "InitializedDataSize",
+    "UninitializedDataSize",
+    "EntryPoint",
+    "OSVersion",
+    "ImageVersion",
+    "SubsystemVersion",
+    "Subsystem",
+    "FileVersionNumber",
+    "ProductVersionNumber",
+    "FileFlagsMask",
+    "FileFlags",
+    "FileOS",
+    "ObjectFileType",
+    "FileSubtype",
+    "LanguageCode",
+    "CharacterSet",
+    "CompanyName",
+    "FileDescription",
+    "FileVersion",
+    "InternalName",
+    "LegalCopyright",
+    "LegalTrademarks",
+    "OriginalFileName",
+    "ProductName",
+    "ProductVersion"
+  ],
+  "uuid": "0bdbeae1-71f5-4a87-9a36-c7c3fdde6853",
+  "version": 1
+}

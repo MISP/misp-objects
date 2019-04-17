@@ -1,0 +1,445 @@
+{
+  "attributes": {
+    "About": {
+      "description": "About",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdjustmentBaseVersion": {
+      "description": "Adjustment Base Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdjustmentData": {
+      "description": "Adjustment Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdjustmentEditorBundleID": {
+      "description": "Adjustment Editor Bundle ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdjustmentFormatIdentifier": {
+      "description": "Adjustment Format Identifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdjustmentFormatVersion": {
+      "description": "Adjustment Format Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AdjustmentRenderTypes": {
+      "description": "Adjustment Render Types",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CharacterSet": {
+      "description": "Character Set",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Characters": {
+      "description": "Characters",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CharactersWithSpaces": {
+      "description": "Characters With Spaces",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CheckedBy": {
+      "description": "Checked By",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Company": {
+      "description": "Company",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentType": {
+      "description": "Content Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Depth": {
+      "description": "Depth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Files": {
+      "description": "Files",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Footnotes": {
+      "description": "Footnotes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Format": {
+      "description": "Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Generator": {
+      "description": "Generator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Identifier": {
+      "description": "Identifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "KByteSize": {
+      "description": "K Byte Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Language": {
+      "description": "Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Lines": {
+      "description": "Lines",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Manager": {
+      "description": "Manager",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxPageNormal": {
+      "description": "Max Page Normal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MultimediaType": {
+      "description": "Multimedia Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Narrator": {
+      "description": "Narrator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PageFront": {
+      "description": "Page Front",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PageNormal": {
+      "description": "Page Normal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PageSpecial": {
+      "description": "Page Special",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Pages": {
+      "description": "Pages",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Paragraphs": {
+      "description": "Paragraphs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProdNotes": {
+      "description": "Prod Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RecEngineer": {
+      "description": "Rec Engineer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RecLocation": {
+      "description": "Rec Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RevisionNumber": {
+      "description": "Revision Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SetInfo": {
+      "description": "Set Info",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Sidebars": {
+      "description": "Sidebars",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SourceEdition": {
+      "description": "Source Edition",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SourcePublisher": {
+      "description": "Source Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TOCItems": {
+      "description": "TOC Items",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Template": {
+      "description": "Template",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Test1": {
+      "description": "Test 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Test2": {
+      "description": "Test 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Test3": {
+      "description": "Test 3",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Test4": {
+      "description": "Test 4",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestArray": {
+      "description": "Test Array",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestBoolean": {
+      "description": "Test Boolean",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestData": {
+      "description": "Test Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestDictAuthor": {
+      "description": "Test Dict Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestInteger": {
+      "description": "Test Integer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestReal": {
+      "description": "Test Real",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestString": {
+      "description": "Test String",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TestUnicode": {
+      "description": "Test Unicode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TotalEditTime": {
+      "description": "Total Edit Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Words": {
+      "description": "Words",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml-document",
+  "requiredOneof": [
+    "About",
+    "XMPToolkit",
+    "AdjustmentBaseVersion",
+    "AdjustmentData",
+    "AdjustmentEditorBundleID",
+    "AdjustmentFormatIdentifier",
+    "AdjustmentFormatVersion",
+    "AdjustmentRenderTypes",
+    "TestArray",
+    "TestBoolean",
+    "TestData",
+    "TestDictAuthor",
+    "TestInteger",
+    "TestReal",
+    "TestString",
+    "TestUnicode",
+    "ContentType",
+    "Title",
+    "Format",
+    "Identifier",
+    "Language",
+    "SourceEdition",
+    "SourcePublisher",
+    "CharacterSet",
+    "Generator",
+    "Narrator",
+    "TOCItems",
+    "Duration",
+    "PageNormal",
+    "MaxPageNormal",
+    "PageFront",
+    "PageSpecial",
+    "ProdNotes",
+    "Footnotes",
+    "Sidebars",
+    "SetInfo",
+    "Depth",
+    "KByteSize",
+    "MultimediaType",
+    "Files",
+    "RecLocation",
+    "RecEngineer",
+    "Subject",
+    "Keywords",
+    "Description",
+    "Template",
+    "TotalEditTime",
+    "Pages",
+    "Words",
+    "Characters",
+    "Category",
+    "Manager",
+    "Company",
+    "Lines",
+    "Paragraphs",
+    "CharactersWithSpaces",
+    "RevisionNumber",
+    "CheckedBy",
+    "Test1",
+    "Test2",
+    "Test3",
+    "Test4"
+  ],
+  "uuid": "a0180ca4-635f-4f56-a218-8a49b6ab44b0",
+  "version": 1
+}

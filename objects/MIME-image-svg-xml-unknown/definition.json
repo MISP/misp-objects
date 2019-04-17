@@ -1,0 +1,46 @@
+{
+  "attributes": {
+    "DescDescrEmph": {
+      "description": "Desc Descr Emph",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DescSceneContains": {
+      "description": "Desc Scene Contains",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DescSceneWhat": {
+      "description": "Desc Scene What",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DescSceneWhen": {
+      "description": "Desc Scene When",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DescTitle": {
+      "description": "Desc Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-svg-xml-unknown",
+  "requiredOneof": [
+    "DescTitle",
+    "DescDescrEmph",
+    "DescSceneWhat",
+    "DescSceneContains",
+    "DescSceneWhen"
+  ],
+  "uuid": "6d726645-6d39-4612-b907-b284210af434",
+  "version": 1
+}

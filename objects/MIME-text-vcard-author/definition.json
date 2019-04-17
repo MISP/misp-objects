@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "FormattedName": {
+      "description": "Formatted Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Name": {
+      "description": "Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-vcard-author",
+  "requiredOneof": [
+    "Name",
+    "FormattedName"
+  ],
+  "uuid": "ec57d975-6f75-42e6-a1f7-81036002d271",
+  "version": 1
+}

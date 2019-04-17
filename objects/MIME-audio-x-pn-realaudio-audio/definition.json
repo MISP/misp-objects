@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "AudioBytes": {
+      "description": "Audio Bytes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AudioFrameSize": {
+      "description": "Audio Frame Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BytesPerMinute": {
+      "description": "Bytes Per Minute",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Channels": {
+      "description": "Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-pn-realaudio-audio",
+  "requiredOneof": [
+    "AudioBytes",
+    "BytesPerMinute",
+    "AudioFrameSize",
+    "SampleRate",
+    "BitsPerSample",
+    "Channels",
+    "Title"
+  ],
+  "uuid": "7947f446-3c99-4846-9b7f-3bb354efd48f",
+  "version": 1
+}

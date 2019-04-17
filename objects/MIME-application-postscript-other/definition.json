@@ -1,0 +1,95 @@
+{
+  "attributes": {
+    "ApplicationRecordVersion": {
+      "description": "Application Record Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Caption-Abstract": {
+      "description": "Caption-Abstract",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentID": {
+      "description": "Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Headline": {
+      "description": "Headline",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JobRefName": {
+      "description": "Job Ref Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ObjectName": {
+      "description": "Object Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OriginalTransmissionReference": {
+      "description": "Original Transmission Reference",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SpecialInstructions": {
+      "description": "Special Instructions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SupplementalCategories": {
+      "description": "Supplemental Categories",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Urgency": {
+      "description": "Urgency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-postscript-other",
+  "requiredOneof": [
+    "ApplicationRecordVersion",
+    "Caption-Abstract",
+    "Headline",
+    "SpecialInstructions",
+    "ObjectName",
+    "OriginalTransmissionReference",
+    "Category",
+    "SupplementalCategories",
+    "Urgency",
+    "Keywords",
+    "JobRefName",
+    "DocumentID"
+  ],
+  "uuid": "e11285df-e0bd-4a32-ba42-4e17381baf56",
+  "version": 1
+}

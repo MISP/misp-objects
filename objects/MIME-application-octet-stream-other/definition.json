@@ -1,0 +1,592 @@
+{
+  "attributes": {
+    "AbstractFileName": {
+      "description": "Abstract File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ApplicationRecordVersion": {
+      "description": "Application Record Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BibligraphicFileName": {
+      "description": "Bibligraphic File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BootSystem": {
+      "description": "Boot System",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Caption-Abstract": {
+      "description": "Caption-Abstract",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CommandLineArguments": {
+      "description": "Command Line Arguments",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CopyrightFileName": {
+      "description": "Copyright File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CursorSize": {
+      "description": "Cursor Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DataPreparer": {
+      "description": "Data Preparer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocumentID": {
+      "description": "Document ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DriveType": {
+      "description": "Drive Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileAttributes": {
+      "description": "File Attributes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FillAttributes": {
+      "description": "Fill Attributes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Flags": {
+      "description": "Flags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontFamily": {
+      "description": "Font Family",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName": {
+      "description": "Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontSize": {
+      "description": "Font Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontWeight": {
+      "description": "Font Weight",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FullScreen": {
+      "description": "Full Screen",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HistoryBufferSize": {
+      "description": "History Buffer Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HotKey": {
+      "description": "Hot Key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "IconIndex": {
+      "description": "Icon Index",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageData": {
+      "description": "Image Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InsertMode": {
+      "description": "Insert Mode",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JobRefName": {
+      "description": "Job Ref Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LocalBasePath": {
+      "description": "Local Base Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MIEVersion": {
+      "description": "MIE Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MachineID": {
+      "description": "Machine ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MetaFormat": {
+      "description": "Meta Format",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumHistoryBuffers": {
+      "description": "Num History Buffers",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumWBEntries": {
+      "description": "Num WB Entries",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PopupFillAttributes": {
+      "description": "Popup Fill Attributes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Publisher": {
+      "description": "Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "QuickEdit": {
+      "description": "Quick Edit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RelativePath": {
+      "description": "Relative Path",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RemoveHistoryDuplicates": {
+      "description": "Remove History Duplicates",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RenditionClass": {
+      "description": "Rendition Class",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RunWindow": {
+      "description": "Run Window",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScreenBufferSize": {
+      "description": "Screen Buffer Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubfileData": {
+      "description": "Subfile Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubfileMIMEType": {
+      "description": "Subfile MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "SubfileName": {
+      "description": "Subfile Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubfileType": {
+      "description": "Subfile Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TargetFileDOSName": {
+      "description": "Target File DOS Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TargetFileSize": {
+      "description": "Target File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Urgency": {
+      "description": "Urgency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VolumeBlockCount": {
+      "description": "Volume Block Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VolumeBlockSize": {
+      "description": "Volume Block Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VolumeLabel": {
+      "description": "Volume Label",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VolumeName": {
+      "description": "Volume Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VolumeSetName": {
+      "description": "Volume Set Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VolumeSize": {
+      "description": "Volume Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBType1": {
+      "description": "WB Type 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBType2": {
+      "description": "WB Type 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBType3": {
+      "description": "WB Type 3",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBType4": {
+      "description": "WB Type 4",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBType5": {
+      "description": "WB Type 5",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBType6": {
+      "description": "WB Type 6",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WBType7": {
+      "description": "WB Type 7",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGBLevels1": {
+      "description": "WB RGB Levels 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGBLevels2": {
+      "description": "WB RGB Levels 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGBLevels3": {
+      "description": "WB RGB Levels 3",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGBLevels4": {
+      "description": "WB RGB Levels 4",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGBLevels5": {
+      "description": "WB RGB Levels 5",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGBLevels6": {
+      "description": "WB RGB Levels 6",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WB_RGBLevels7": {
+      "description": "WB RGB Levels 7",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WindowOrigin": {
+      "description": "Window Origin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WindowOriginAuto": {
+      "description": "Window Origin Auto",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WindowSize": {
+      "description": "Window Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WorkingDirectory": {
+      "description": "Working Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipBitFlag": {
+      "description": "Zip Bit Flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipCRC": {
+      "description": "Zip CRC",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipCompressedSize": {
+      "description": "Zip Compressed Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipCompression": {
+      "description": "Zip Compression",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipFileName": {
+      "description": "Zip File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipRequiredVersion": {
+      "description": "Zip Required Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ZipUncompressedSize": {
+      "description": "Zip Uncompressed Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-other",
+  "requiredOneof": [
+    "NumWBEntries",
+    "WBType1",
+    "WB_RGBLevels1",
+    "WBType2",
+    "WB_RGBLevels2",
+    "WBType3",
+    "WB_RGBLevels3",
+    "WBType4",
+    "WB_RGBLevels4",
+    "WBType5",
+    "WB_RGBLevels5",
+    "WBType6",
+    "WB_RGBLevels6",
+    "WBType7",
+    "WB_RGBLevels7",
+    "ImageHeight",
+    "ImageWidth",
+    "ZipRequiredVersion",
+    "ZipBitFlag",
+    "ZipCompression",
+    "ZipCRC",
+    "ZipCompressedSize",
+    "ZipUncompressedSize",
+    "ZipFileName",
+    "ApplicationRecordVersion",
+    "Category",
+    "Urgency",
+    "Keywords",
+    "Caption-Abstract",
+    "JobRefName",
+    "DocumentID",
+    "SubfileType",
+    "MIEVersion",
+    "SubfileName",
+    "SubfileMIMEType",
+    "SubfileData",
+    "Flags",
+    "FileAttributes",
+    "TargetFileSize",
+    "IconIndex",
+    "RunWindow",
+    "HotKey",
+    "TargetFileDOSName",
+    "DriveType",
+    "VolumeLabel",
+    "LocalBasePath",
+    "Description",
+    "RelativePath",
+    "WorkingDirectory",
+    "CommandLineArguments",
+    "MachineID",
+    "FillAttributes",
+    "PopupFillAttributes",
+    "ScreenBufferSize",
+    "WindowSize",
+    "WindowOrigin",
+    "FontSize",
+    "FontFamily",
+    "FontWeight",
+    "FontName",
+    "CursorSize",
+    "FullScreen",
+    "QuickEdit",
+    "InsertMode",
+    "WindowOriginAuto",
+    "HistoryBufferSize",
+    "NumHistoryBuffers",
+    "RemoveHistoryDuplicates",
+    "RenditionClass",
+    "ImageData",
+    "VolumeName",
+    "VolumeBlockCount",
+    "VolumeBlockSize",
+    "VolumeSetName",
+    "Publisher",
+    "DataPreparer",
+    "Software",
+    "CopyrightFileName",
+    "AbstractFileName",
+    "BibligraphicFileName",
+    "BootSystem",
+    "VolumeSize",
+    "MetaFormat"
+  ],
+  "uuid": "39c92fcd-e57d-47ff-9b98-863deecb8627",
+  "version": 1
+}

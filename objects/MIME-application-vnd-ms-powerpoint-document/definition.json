@@ -1,0 +1,228 @@
+{
+  "attributes": {
+    "AppVersion": {
+      "description": "App Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Bytes": {
+      "description": "Bytes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Comments": {
+      "description": "Comments",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Company": {
+      "description": "Company",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomBoolean": {
+      "description": "Custom Boolean",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomDate": {
+      "description": "Custom Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "CustomNumber": {
+      "description": "Custom Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomText": {
+      "description": "Custom Text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HeadingPairs": {
+      "description": "Heading Pairs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HiddenSlides": {
+      "description": "Hidden Slides",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HyperlinkBase": {
+      "description": "Hyperlink Base",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Hyperlinks": {
+      "description": "Hyperlinks",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HyperlinksChanged": {
+      "description": "Hyperlinks Changed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LinksUpToDate": {
+      "description": "Links Up To Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MMClips": {
+      "description": "MM Clips",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Manager": {
+      "description": "Manager",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Notes": {
+      "description": "Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Paragraphs": {
+      "description": "Paragraphs",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PresentationTarget": {
+      "description": "Presentation Target",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RevisionNumber": {
+      "description": "Revision Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScaleCrop": {
+      "description": "Scale Crop",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SharedDoc": {
+      "description": "Shared Doc",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Slides": {
+      "description": "Slides",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Software": {
+      "description": "Software",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TitleOfParts": {
+      "description": "Title Of Parts",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TotalEditTime": {
+      "description": "Total Edit Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Words": {
+      "description": "Words",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-ms-powerpoint-document",
+  "requiredOneof": [
+    "Title",
+    "Subject",
+    "Keywords",
+    "Comments",
+    "RevisionNumber",
+    "Software",
+    "TotalEditTime",
+    "Words",
+    "Category",
+    "PresentationTarget",
+    "Manager",
+    "Company",
+    "Bytes",
+    "Paragraphs",
+    "Slides",
+    "Notes",
+    "HiddenSlides",
+    "MMClips",
+    "AppVersion",
+    "ScaleCrop",
+    "LinksUpToDate",
+    "SharedDoc",
+    "HyperlinksChanged",
+    "TitleOfParts",
+    "HeadingPairs",
+    "HyperlinkBase",
+    "Hyperlinks",
+    "CustomText",
+    "CustomNumber",
+    "CustomDate",
+    "CustomBoolean"
+  ],
+  "uuid": "4a297997-ff11-4471-a110-0ca3db840d4f",
+  "version": 1
+}

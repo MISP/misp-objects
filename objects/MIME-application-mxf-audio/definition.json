@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "AudioSampleRate": {
+      "description": "Audio Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AverageBytesPerSecond": {
+      "description": "Average Bytes Per Second",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerAudioSample": {
+      "description": "Bits Per Audio Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ChannelCount": {
+      "description": "Channel Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-mxf-audio",
+  "requiredOneof": [
+    "AudioSampleRate",
+    "ChannelCount",
+    "BitsPerAudioSample",
+    "AverageBytesPerSecond"
+  ],
+  "uuid": "c5f0a94f-1dd0-45bf-8fd6-cf9cba959415",
+  "version": 1
+}

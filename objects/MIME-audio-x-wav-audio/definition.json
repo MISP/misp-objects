@@ -1,0 +1,67 @@
+{
+  "attributes": {
+    "AvgBytesPerSec": {
+      "description": "Avg Bytes Per Sec",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsPerSample": {
+      "description": "Bits Per Sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Encoding": {
+      "description": "Encoding",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExifVersion": {
+      "description": "Exif Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MakerNotes": {
+      "description": "Maker Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumChannels": {
+      "description": "Num Channels",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RelatedImageFile": {
+      "description": "Related Image File",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SampleRate": {
+      "description": "Sample Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-wav-audio",
+  "requiredOneof": [
+    "Encoding",
+    "NumChannels",
+    "SampleRate",
+    "AvgBytesPerSec",
+    "BitsPerSample",
+    "ExifVersion",
+    "RelatedImageFile",
+    "MakerNotes"
+  ],
+  "uuid": "01547a85-aff3-4739-8f07-655d7dd96af4",
+  "version": 1
+}

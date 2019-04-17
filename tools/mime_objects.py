@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #
-#    A simple tool to build to file metadata objects.
+#    A simple tool to build to file metadata misp-objects.
 #    Copyright (C) 2019 Roger Johnston
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -28,10 +28,7 @@ import re
 import uuid
 
 
-class MIMEDefinition:
-    """
-    Builds metadata objects using ExifTool.
-    """
+class ExifDefinition:
     def __init__(self):
         self.exiftool_repo = 'https://github.com/exiftool/exiftool.git'
         self.tmp_dir = '/tmp/'
@@ -85,73 +82,102 @@ class MIMEDefinition:
         """
         for each_file in self.exiftool_t_files:
             # exiftool flags:
-            # -G : print group names
+            # -g2 : print category names
+            # https://www.sno.phy.queensu.ca/~phil/exiftool/#groups
             # -n : no print conversion
             # -j : export as json
             # -l : use long output format (description)
-            p = subprocess.Popen(("exiftool", "-G", "-n", "-j", "-l", each_file), stdout=subprocess.PIPE)
+            # -b : binary output
+            p = subprocess.Popen(("exiftool", "-g2", "-j", "-l", "-b", each_file), stdout=subprocess.PIPE)
             output = p.communicate()[0]
 
             # Decode subprocess bytes output as UTF-8.
             metadata = json.loads(output.decode('utf-8'))[0]
 
+
             mime_type = self.strip_mime_name(magic.from_file(each_file, mime=True))
 
             for k, v in metadata.items():
                 sanitized_key_name = self.strip_mime_name(k)
+
                 if sanitized_key_name not in self.mimetype_misp_objects[mime_type]:
-                    self.mimetype_misp_objects[mime_type][sanitized_key_name] = metadata[k]
+                    self.mimetype_misp_objects[mime_type][sanitized_key_name] = {}
+
+                if isinstance(v, dict):
+                    print(v)
+                    for j, w in v.items():
+                        # if j == 'SourceFile'
+                        if self.strip_mime_name(j) not in self.mimetype_misp_objects[mime_type][sanitized_key_name]:
+                            self.mimetype_misp_objects[mime_type][sanitized_key_name][self.strip_mime_name(j)] = w
 
     def create_mime_definitions(self):
         """
         Creates a misp-object folder and definition for each MIME type in self.mimetype_misp_objects.
         :return:
         """
-        for mime in self.mimetype_misp_objects:
-            # Create a folder for each misp-object.
-            try:
-                os.mkdir('../objects/MIME-' + mime)
-            except FileExistsError:
-                pass
+        for mime, groups in self.mimetype_misp_objects.items():
+            for group_name, group_keys in groups.items():
+                if group_name == 'ExifTool':
+                    continue
+                if group_name == 'SourceFile':
+                    continue
 
-            f = open('../objects/MIME-' + mime + '/definition.json', 'w')
-
-            # Default definition values.
-            mime_definition = {'name': mime, 'meta-category': 'file', 'description': 'Object describing file metadata.', 'version': 1, 'required': ['source-file'], 'uuid': str(uuid.uuid4()), 'attributes': {'source-file': {'description': 'Source filename', 'ui-priority': 1, 'misp-attribute': 'filename', 'disable_correlation': True}, 'first-seen': {'description': 'Source filename', 'misp-attribute': 'datetime', 'disable_correlation': True, 'ui-priority': 0}, 'last-seen': {'description': 'Source filename', 'misp-attribute': 'datetime', 'disable_correlation': True, 'ui-priority': 0}}}
-
-
-            for k, v in self.mimetype_misp_objects[mime].items():
-                # Default attribute values.
-                text_attribute = {"misp-attribute": "text", "ui-priority": 0, "disable_correlation": True}
-
-                # Set attribute description value.
-                if type(v) is dict:
-                    text_attribute["description"] = v['desc']
-                elif k == 'SourceFile':
-                    text_attribute["description"] = 'Source File Path'
-                else:
-                    text_attribute["description"] = v
-
-                # Set misp-attribute to MIME type.
-                if 'MIME' in k or 'MimeType' in k:
-                    text_attribute["misp-attribute"] = 'mime-type'
-
-                # Check if attribute is a valid datetime.
+                # Create a folder for each misp-object.
+                folder = '../objects/MIME-' + mime + '-' + group_name.lower()
                 try:
-                    is_date = parse(v['val'])
-                    if type(is_date) is datetime:
-                        text_attribute["misp-attribute"] = 'datetime'
-                except TypeError:
-                    pass
-                except ValueError:
-                    pass
-                except OverflowError:
+                    os.mkdir(folder)
+                except FileExistsError:
                     pass
 
-                mime_definition['attributes'][k] = text_attribute
+                f = open(folder + '/definition.json', 'w')
 
-            f.write(json.dumps(mime_definition, sort_keys=True, indent=4))
-            f.close()
+                # Default definition values.
+                mime_definition = {'name': mime,
+                                   'meta-category': 'file',
+                                   'description': 'Object describing file metadata.',
+                                   'version': 1,
+                                   'requiredOneof': [],
+                                   'uuid': str(uuid.uuid4()),
+                                   'attributes': {}
+                                   }
+
+                if isinstance(group_keys, dict):
+                    for k, v in group_keys.items():
+                        mime_definition['requiredOneof'].append(k)
+
+                        # Default attribute values.
+                        text_attribute = {"misp-attribute": "text", "ui-priority": 0, "disable_correlation": True}
+
+                        # Set attribute description value.
+                        if isinstance(v, dict):
+                            text_attribute["description"] = v['desc']
+                        else:
+                            text_attribute["description"] = v
+
+                        # Set misp-attribute to MIME type.
+                        if 'MIME' in k or 'MimeType' in k:
+                            text_attribute["misp-attribute"] = 'mime-type'
+
+                        # Check if attribute is a valid datetime.
+                        try:
+                            is_date = parse(v['val'])
+                            if isinstance(is_date, datetime):
+                                text_attribute["misp-attribute"] = 'datetime'
+                        except TypeError:
+                            pass
+                        except ValueError:
+                            pass
+                        except OverflowError:
+                            pass
+
+                        mime_definition['attributes'][k] = text_attribute
+                else:
+                    text_attribute = {"misp-attribute": "text", "ui-priority": 0, "disable_correlation": True}
+                    text_attribute["description"] = group_keys
+                    mime_definition['attributes'][group_name] = text_attribute
+
+                f.write(json.dumps(mime_definition, sort_keys=True, indent=4))
+                f.close()
 
     def run(self):
         self.clone_exiftool()
@@ -162,5 +188,5 @@ class MIMEDefinition:
 
 
 if __name__ == '__main__':
-    build_objects = MIMEDefinition()
+    build_objects = ExifDefinition()
     build_objects.run()

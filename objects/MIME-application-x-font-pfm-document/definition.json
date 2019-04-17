@@ -1,0 +1,186 @@
+{
+  "attributes": {
+    "Ascent": {
+      "description": "Ascent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AvgWidth": {
+      "description": "Avg Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BreakChar": {
+      "description": "Break Char",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CharacterSet": {
+      "description": "Character Set",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DefaultChar": {
+      "description": "Default Char",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ExternalLeading": {
+      "description": "External Leading",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FirstChar": {
+      "description": "First Char",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontName": {
+      "description": "Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FontType": {
+      "description": "Font Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InternalLeading": {
+      "description": "Internal Leading",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Italic": {
+      "description": "Italic",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LastChar": {
+      "description": "Last Char",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MaxWidth": {
+      "description": "Max Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PFMVersion": {
+      "description": "PFM Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PitchAndFamily": {
+      "description": "Pitch And Family",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixHeight": {
+      "description": "Pix Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixWidth": {
+      "description": "Pix Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PointSize": {
+      "description": "Point Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PostScriptFontName": {
+      "description": "PostScript Font Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Strikeout": {
+      "description": "Strikeout",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Underline": {
+      "description": "Underline",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Weight": {
+      "description": "Weight",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WidthBytes": {
+      "description": "Width Bytes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XResolution": {
+      "description": "X Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YResolution": {
+      "description": "Y Resolution",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-font-pfm-document",
+  "requiredOneof": [
+    "PFMVersion",
+    "FontType",
+    "PointSize",
+    "YResolution",
+    "XResolution",
+    "Ascent",
+    "InternalLeading",
+    "ExternalLeading",
+    "Italic",
+    "Underline",
+    "Strikeout",
+    "Weight",
+    "CharacterSet",
+    "PixWidth",
+    "PixHeight",
+    "PitchAndFamily",
+    "AvgWidth",
+    "MaxWidth",
+    "FirstChar",
+    "LastChar",
+    "DefaultChar",
+    "BreakChar",
+    "WidthBytes",
+    "FontName",
+    "PostScriptFontName"
+  ],
+  "uuid": "cfcff7d5-9cc4-41cd-a1f8-378451f52a0b",
+  "version": 1
+}

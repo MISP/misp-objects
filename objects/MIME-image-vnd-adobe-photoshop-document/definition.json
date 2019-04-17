@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "About": {
+      "description": "About",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "XMPToolkit": {
+      "description": "XMP Toolkit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-vnd-adobe-photoshop-document",
+  "requiredOneof": [
+    "XMPToolkit",
+    "About"
+  ],
+  "uuid": "688c10e5-e8bb-4bed-9560-6dbe649e51a1",
+  "version": 1
+}

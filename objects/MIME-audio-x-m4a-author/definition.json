@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "AlbumArtist": {
+      "description": "Album Artist",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-m4a-author",
+  "requiredOneof": [
+    "AlbumArtist"
+  ],
+  "uuid": "bb420707-3428-4fdf-9fb5-852adcb525a9",
+  "version": 1
+}

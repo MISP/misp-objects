@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "CoverArt": {
+      "description": "Cover Art",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-m4a-preview",
+  "requiredOneof": [
+    "CoverArt"
+  ],
+  "uuid": "947fdffc-04a3-41d6-a03a-1be7b2156171",
+  "version": 1
+}

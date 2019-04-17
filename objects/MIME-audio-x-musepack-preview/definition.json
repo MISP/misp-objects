@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "CoverArtFront": {
+      "description": "Cover Art Front",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Picture": {
+      "description": "Picture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-x-musepack-preview",
+  "requiredOneof": [
+    "CoverArtFront",
+    "Picture"
+  ],
+  "uuid": "8d378583-ba58-492a-9757-564425248a20",
+  "version": 1
+}

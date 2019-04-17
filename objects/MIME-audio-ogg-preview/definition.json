@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "CoverArt": {
+      "description": "Cover Art",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Picture": {
+      "description": "Picture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "audio-ogg-preview",
+  "requiredOneof": [
+    "CoverArt",
+    "Picture"
+  ],
+  "uuid": "91c72ab8-d472-4180-98da-0f8b4029ed97",
+  "version": 1
+}

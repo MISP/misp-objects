@@ -1,0 +1,32 @@
+{
+  "attributes": {
+    "JpgFromRaw": {
+      "description": "Jpg From Raw",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImage": {
+      "description": "Preview Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailTIFF": {
+      "description": "Thumbnail TIFF",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-tiff-preview",
+  "requiredOneof": [
+    "ThumbnailTIFF",
+    "JpgFromRaw",
+    "PreviewImage"
+  ],
+  "uuid": "8c40be19-1644-44b6-8920-ec73b0e7534c",
+  "version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "PrintIMVersion": {
+      "description": "PrintIM Version",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-printing",
+  "requiredOneof": [
+    "PrintIMVersion"
+  ],
+  "uuid": "4aaabb9d-f5f8-444c-bc70-c7ac657e8938",
+  "version": 1
+}

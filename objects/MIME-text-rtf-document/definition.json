@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "Comments": {
+      "description": "Comments",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Company": {
+      "description": "Company",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomNumber": {
+      "description": "Custom Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CustomString": {
+      "description": "Custom String",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Subject": {
+      "description": "Subject",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-rtf-document",
+  "requiredOneof": [
+    "Title",
+    "Subject",
+    "Comments",
+    "Company",
+    "Keywords",
+    "CustomString",
+    "CustomNumber"
+  ],
+  "uuid": "262fa77a-f777-4b7f-9473-e499e20d1a02",
+  "version": 1
+}

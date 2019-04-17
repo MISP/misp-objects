@@ -1,0 +1,186 @@
+{
+  "attributes": {
+    "DateCreated": {
+      "description": "Date Created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateTimeEnd": {
+      "description": "Date Time End",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateTimeEndTimezoneID": {
+      "description": "Date Time End Timezone ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DateTimeStamp": {
+      "description": "Date Time Stamp",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateTimeStart": {
+      "description": "Date Time Start",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateTimeStartTimezoneID": {
+      "description": "Date Time Start Timezone ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DaylightDateTimeStart": {
+      "description": "Daylight Date Time Start",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DaylightRecurrenceRule": {
+      "description": "Daylight Recurrence Rule",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DaylightTimezoneName": {
+      "description": "Daylight Timezone Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DaylightTimezoneOffsetFrom": {
+      "description": "Daylight Timezone Offset From",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DaylightTimezoneOffsetTo": {
+      "description": "Daylight Timezone Offset To",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ExceptionDateTimes": {
+      "description": "Exception Date Times",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ExceptionDateTimesTimezoneID": {
+      "description": "Exception Date Times Timezone ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "RecurrenceIDTimezoneID": {
+      "description": "Recurrence ID Timezone ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RecurrenceRule": {
+      "description": "Recurrence Rule",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StandardDateTimeStart": {
+      "description": "Standard Date Time Start",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "StandardRecurrenceRule": {
+      "description": "Standard Recurrence Rule",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StandardTimezoneName": {
+      "description": "Standard Timezone Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StandardTimezoneOffsetFrom": {
+      "description": "Standard Timezone Offset From",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "StandardTimezoneOffsetTo": {
+      "description": "Standard Timezone Offset To",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeZone2": {
+      "description": "Time Zone 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TimezoneID": {
+      "description": "Timezone ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-calendar-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "TimeZone2",
+    "TimezoneID",
+    "DaylightTimezoneOffsetFrom",
+    "DaylightRecurrenceRule",
+    "DaylightDateTimeStart",
+    "DaylightTimezoneName",
+    "DaylightTimezoneOffsetTo",
+    "StandardTimezoneOffsetFrom",
+    "StandardRecurrenceRule",
+    "StandardDateTimeStart",
+    "StandardTimezoneName",
+    "StandardTimezoneOffsetTo",
+    "RecurrenceRule",
+    "ExceptionDateTimes",
+    "ExceptionDateTimesTimezoneID",
+    "DateCreated",
+    "DateTimeEnd",
+    "DateTimeEndTimezoneID",
+    "DateTimeStart",
+    "DateTimeStartTimezoneID",
+    "DateTimeStamp",
+    "RecurrenceIDTimezoneID"
+  ],
+  "uuid": "80219b36-ad43-4987-b014-8646b233f76a",
+  "version": 1
+}

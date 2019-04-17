@@ -1,0 +1,46 @@
+{
+  "attributes": {
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LastAuthor": {
+      "description": "Last Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Publisher": {
+      "description": "Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Source": {
+      "description": "Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "text-xml-author",
+  "requiredOneof": [
+    "Creator",
+    "Publisher",
+    "Source",
+    "Author",
+    "LastAuthor"
+  ],
+  "uuid": "b38491b1-3fea-4a67-a45a-53ed46dfd182",
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LastModifiedBy": {
+      "description": "Last Modified By",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-vnd-ms-powerpoint-author",
+  "requiredOneof": [
+    "Author",
+    "LastModifiedBy"
+  ],
+  "uuid": "3304b908-ebc6-4e82-8434-0cfd22c92942",
+  "version": 1
+}

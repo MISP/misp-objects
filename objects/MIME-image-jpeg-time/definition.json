@@ -1,0 +1,326 @@
+{
+  "attributes": {
+    "CreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "CreationDate": {
+      "description": "Creation Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Date": {
+      "description": "Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DateCreated": {
+      "description": "Date Created",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DateTimeCreated": {
+      "description": "Date/Time Created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DateTimeOriginal": {
+      "description": "Date/Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DestinationCity": {
+      "description": "Destination City",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DestinationDST": {
+      "description": "Destination DST",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DigitalCreationDate": {
+      "description": "Digital Creation Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DigitalCreationDateTime": {
+      "description": "Digital Creation Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "DigitalCreationTime": {
+      "description": "Digital Creation Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ExtensionCreateDate": {
+      "description": "Extension Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ExtensionModifyDate": {
+      "description": "Extension Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileAccessDate": {
+      "description": "File Access Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileInodeChangeDate": {
+      "description": "File Inode Change Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FileModifyDate": {
+      "description": "File Modification Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "GPSDateStamp": {
+      "description": "GPS Date Stamp",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "GPSDateTime": {
+      "description": "GPS Date/Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "GPSTimeStamp": {
+      "description": "GPS Time Stamp",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "HometownCity": {
+      "description": "Hometown City",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HometownDST": {
+      "description": "Hometown DST",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManufactureDate": {
+      "description": "Manufacture Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManufactureDate1": {
+      "description": "Manufacture Date 1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManufactureDate2": {
+      "description": "Manufacture Date 2",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinoltaDate": {
+      "description": "Minolta Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MinoltaTime": {
+      "description": "Minolta Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModDate": {
+      "description": "Mod Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "MonthDayCreated": {
+      "description": "Month Day Created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ProfileDateTime": {
+      "description": "Profile Date Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "RicohDate": {
+      "description": "Ricoh Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecCreateDate": {
+      "description": "Create Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecDateTimeOriginal": {
+      "description": "Date/Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecModifyDate": {
+      "description": "Modify Date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SubSecTime": {
+      "description": "Sub Sec Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubSecTimeDigitized": {
+      "description": "Sub Sec Time Digitized",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SubSecTimeOriginal": {
+      "description": "Sub Sec Time Original",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Time": {
+      "description": "Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeCreated": {
+      "description": "Time Created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeStamp": {
+      "description": "Time Stamp",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeStamp1": {
+      "description": "Time Stamp 1",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TimeZoneCode": {
+      "description": "Time Zone Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TimeZoneInfo": {
+      "description": "Time Zone Info",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WorldTimeLocation": {
+      "description": "World Time Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "YearCreated": {
+      "description": "Year Created",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-jpeg-time",
+  "requiredOneof": [
+    "FileModifyDate",
+    "FileAccessDate",
+    "FileInodeChangeDate",
+    "ModifyDate",
+    "DateTimeOriginal",
+    "CreateDate",
+    "DateCreated",
+    "ProfileDateTime",
+    "SubSecTime",
+    "SubSecTimeOriginal",
+    "SubSecTimeDigitized",
+    "SubSecCreateDate",
+    "SubSecDateTimeOriginal",
+    "SubSecModifyDate",
+    "RicohDate",
+    "ManufactureDate1",
+    "ManufactureDate2",
+    "GPSTimeStamp",
+    "GPSDateStamp",
+    "GPSDateTime",
+    "TimeCreated",
+    "DateTimeCreated",
+    "Date",
+    "Time",
+    "WorldTimeLocation",
+    "HometownCity",
+    "DestinationCity",
+    "HometownDST",
+    "DestinationDST",
+    "ManufactureDate",
+    "MinoltaDate",
+    "MinoltaTime",
+    "DigitalCreationDate",
+    "DigitalCreationTime",
+    "DigitalCreationDateTime",
+    "YearCreated",
+    "MonthDayCreated",
+    "ExtensionCreateDate",
+    "ExtensionModifyDate",
+    "CreationDate",
+    "ModDate",
+    "TimeZoneCode",
+    "TimeZoneInfo",
+    "TimeStamp1",
+    "TimeStamp"
+  ],
+  "uuid": "bb95ae9e-f211-4fa4-98fa-7a16c229c463",
+  "version": 1
+}

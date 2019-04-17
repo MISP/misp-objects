@@ -1,0 +1,746 @@
+{
+  "attributes": {
+    "AccessionNumber": {
+      "description": "Accession Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AcquisitionDate": {
+      "description": "Acquisition Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AcquisitionMatrix": {
+      "description": "Acquisition Matrix",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AcquisitionNumber": {
+      "description": "Acquisition Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "AcquisitionTime": {
+      "description": "Acquisition Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "AdditionalPatientHistory": {
+      "description": "Additional Patient History",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsAllocated": {
+      "description": "Bits Allocated",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "BitsStored": {
+      "description": "Bits Stored",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CardiacNumberOfImages": {
+      "description": "Cardiac Number Of Images",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Columns": {
+      "description": "Columns",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentDate": {
+      "description": "Content Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ContentTime": {
+      "description": "Content Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Directory": {
+      "description": "Directory",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EchoNumber": {
+      "description": "Echo Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EchoTime": {
+      "description": "Echo Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "EchoTrainLength": {
+      "description": "Echo Train Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileMetaInfoGroupLength": {
+      "description": "File Meta Info Group Length",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileMetaInfoVersion": {
+      "description": "File Meta Info Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileName": {
+      "description": "File Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FilePermissions": {
+      "description": "File Permissions",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSize": {
+      "description": "File Size",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileType": {
+      "description": "File Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileTypeExtension": {
+      "description": "File Type Extension",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FlipAngle": {
+      "description": "Flip Angle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameOfReferenceUID": {
+      "description": "Frame Of Reference UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HeartRate": {
+      "description": "Heart Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "HighBit": {
+      "description": "High Bit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageOrientation": {
+      "description": "Image Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageOrientationPatient": {
+      "description": "Image Orientation Patient",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImagePosition": {
+      "description": "Image Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImagePositionPatient": {
+      "description": "Image Position Patient",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageType": {
+      "description": "Image Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImagesInAcquisition": {
+      "description": "Images In Acquisition",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImagingFrequency": {
+      "description": "Imaging Frequency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImplementationClassUID": {
+      "description": "Implementation Class UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImplementationVersionName": {
+      "description": "Implementation Version Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InPlanePhaseEncodingDirection": {
+      "description": "In Plane Phase Encoding Direction",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InstanceNumber": {
+      "description": "Instance Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "InstitutionName": {
+      "description": "Institution Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "LargestImagePixelValue": {
+      "description": "Largest Image Pixel Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MIMEType": {
+      "description": "MIME Type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "MRAcquisitionType": {
+      "description": "MR Acquisition Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MagneticFieldStrength": {
+      "description": "Magnetic Field Strength",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Manufacturer": {
+      "description": "Manufacturer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ManufacturersModelName": {
+      "description": "Manufacturers Model Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaStorageSOPClassUID": {
+      "description": "Media Storage SOP Class UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MediaStorageSOPInstanceUID": {
+      "description": "Media Storage SOP Instance UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Modality": {
+      "description": "Modality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumberOfAverages": {
+      "description": "Number Of Averages",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "NumberOfPhaseEncodingSteps": {
+      "description": "Number Of Phase Encoding Steps",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "OperatorsName": {
+      "description": "Operators Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientAge": {
+      "description": "Patient Age",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientBirthDate": {
+      "description": "Patient Birth Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientID": {
+      "description": "Patient ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientName": {
+      "description": "Patient Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientOrientation": {
+      "description": "Patient Orientation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientPosition": {
+      "description": "Patient Position",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientSex": {
+      "description": "Patient Sex",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PatientWeight": {
+      "description": "Patient Weight",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PerformingPhysicianName": {
+      "description": "Performing Physician Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PhotometricInterpretation": {
+      "description": "Photometric Interpretation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixelBandwidth": {
+      "description": "Pixel Bandwidth",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixelData": {
+      "description": "Pixel Data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixelPaddingValue": {
+      "description": "Pixel Padding Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixelRepresentation": {
+      "description": "Pixel Representation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PixelSpacing": {
+      "description": "Pixel Spacing",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PositionReferenceIndicator": {
+      "description": "Position Reference Indicator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ProtocolName": {
+      "description": "Protocol Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReceiveCoilName": {
+      "description": "Receive Coil Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReconstructionDiameter": {
+      "description": "Reconstruction Diameter",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ReferringPhysicianName": {
+      "description": "Referring Physician Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RepetitionTime": {
+      "description": "Repetition Time",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RescaleIntercept": {
+      "description": "Rescale Intercept",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RescaleSlope": {
+      "description": "Rescale Slope",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "RescaleType": {
+      "description": "Rescale Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Rows": {
+      "description": "Rows",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SAR": {
+      "description": "SAR",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SOPClassUID": {
+      "description": "SOP Class UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SOPInstanceUID": {
+      "description": "SOP Instance UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SamplesPerPixel": {
+      "description": "Samples Per Pixel",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScanOptions": {
+      "description": "Scan Options",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ScanningSequence": {
+      "description": "Scanning Sequence",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SequenceName": {
+      "description": "Sequence Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SequenceVariant": {
+      "description": "Sequence Variant",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SeriesDate": {
+      "description": "Series Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SeriesDescription": {
+      "description": "Series Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SeriesInstanceUID": {
+      "description": "Series Instance UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SeriesNumber": {
+      "description": "Series Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SeriesTime": {
+      "description": "Series Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "SliceLocation": {
+      "description": "Slice Location",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SliceThickness": {
+      "description": "Slice Thickness",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SmallestImagePixelValue": {
+      "description": "Smallest Image Pixel Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SoftwareVersion": {
+      "description": "Software Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SourceApplicationEntityTitle": {
+      "description": "Source Application Entity Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SpacingBetweenSlices": {
+      "description": "Spacing Between Slices",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StationName": {
+      "description": "Station Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StudyDate": {
+      "description": "Study Date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StudyDescription": {
+      "description": "Study Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StudyID": {
+      "description": "Study ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StudyInstanceUID": {
+      "description": "Study Instance UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "StudyTime": {
+      "description": "Study Time",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "TransferSyntaxUID": {
+      "description": "Transfer Syntax UID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TriggerWindow": {
+      "description": "Trigger Window",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WindowCenter": {
+      "description": "Window Center",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WindowWidth": {
+      "description": "Window Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-dicom-image",
+  "requiredOneof": [
+    "FileName",
+    "Directory",
+    "FileSize",
+    "FilePermissions",
+    "FileType",
+    "FileTypeExtension",
+    "MIMEType",
+    "FileMetaInfoGroupLength",
+    "FileMetaInfoVersion",
+    "MediaStorageSOPClassUID",
+    "MediaStorageSOPInstanceUID",
+    "TransferSyntaxUID",
+    "ImplementationClassUID",
+    "ImplementationVersionName",
+    "SourceApplicationEntityTitle",
+    "ImageType",
+    "SOPClassUID",
+    "SOPInstanceUID",
+    "StudyDate",
+    "SeriesDate",
+    "AcquisitionDate",
+    "ContentDate",
+    "StudyTime",
+    "SeriesTime",
+    "AcquisitionTime",
+    "ContentTime",
+    "AccessionNumber",
+    "Modality",
+    "Manufacturer",
+    "InstitutionName",
+    "ReferringPhysicianName",
+    "StationName",
+    "StudyDescription",
+    "SeriesDescription",
+    "PerformingPhysicianName",
+    "OperatorsName",
+    "ManufacturersModelName",
+    "PatientName",
+    "PatientID",
+    "PatientBirthDate",
+    "PatientSex",
+    "PatientAge",
+    "PatientWeight",
+    "AdditionalPatientHistory",
+    "ScanningSequence",
+    "SequenceVariant",
+    "ScanOptions",
+    "MRAcquisitionType",
+    "SequenceName",
+    "SliceThickness",
+    "RepetitionTime",
+    "EchoTime",
+    "NumberOfAverages",
+    "ImagingFrequency",
+    "EchoNumber",
+    "MagneticFieldStrength",
+    "SpacingBetweenSlices",
+    "NumberOfPhaseEncodingSteps",
+    "EchoTrainLength",
+    "PixelBandwidth",
+    "SoftwareVersion",
+    "ProtocolName",
+    "HeartRate",
+    "CardiacNumberOfImages",
+    "TriggerWindow",
+    "ReconstructionDiameter",
+    "ReceiveCoilName",
+    "AcquisitionMatrix",
+    "InPlanePhaseEncodingDirection",
+    "FlipAngle",
+    "SAR",
+    "PatientPosition",
+    "StudyInstanceUID",
+    "SeriesInstanceUID",
+    "StudyID",
+    "SeriesNumber",
+    "AcquisitionNumber",
+    "InstanceNumber",
+    "PatientOrientation",
+    "ImagePosition",
+    "ImagePositionPatient",
+    "ImageOrientation",
+    "ImageOrientationPatient",
+    "FrameOfReferenceUID",
+    "ImagesInAcquisition",
+    "PositionReferenceIndicator",
+    "SliceLocation",
+    "SamplesPerPixel",
+    "PhotometricInterpretation",
+    "Rows",
+    "Columns",
+    "PixelSpacing",
+    "BitsAllocated",
+    "BitsStored",
+    "HighBit",
+    "PixelRepresentation",
+    "SmallestImagePixelValue",
+    "LargestImagePixelValue",
+    "PixelPaddingValue",
+    "WindowCenter",
+    "WindowWidth",
+    "RescaleIntercept",
+    "RescaleSlope",
+    "RescaleType",
+    "PixelData"
+  ],
+  "uuid": "b009a613-1612-4baf-a9c5-1579269f30b5",
+  "version": 1
+}

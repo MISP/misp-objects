@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "LightSource": {
+      "description": "Light Source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Make": {
+      "description": "Make",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Model": {
+      "description": "Camera Model Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WhiteBalance": {
+      "description": "White Balance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-zip-camera",
+  "requiredOneof": [
+    "Make",
+    "Model",
+    "LightSource",
+    "WhiteBalance"
+  ],
+  "uuid": "7ad95865-db31-44e9-8819-45d93d7a6ee2",
+  "version": 1
+}

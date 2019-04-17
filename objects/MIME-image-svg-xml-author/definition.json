@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Creator": {
+      "description": "Creator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Publisher": {
+      "description": "Publisher",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "image-svg-xml-author",
+  "requiredOneof": [
+    "Publisher",
+    "Creator"
+  ],
+  "uuid": "41ec83f1-c9c6-46be-af3a-a0db3b6b7e09",
+  "version": 1
+}

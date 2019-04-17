@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "CoverArt": {
+      "description": "Cover Art",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "JpgFromRaw": {
+      "description": "Jpg From Raw",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PreviewImage": {
+      "description": "Preview Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ThumbnailImage": {
+      "description": "Thumbnail Image",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-octet-stream-preview",
+  "requiredOneof": [
+    "JpgFromRaw",
+    "ThumbnailImage",
+    "PreviewImage",
+    "CoverArt"
+  ],
+  "uuid": "ae7bba71-94f1-4e57-b2ac-81fa804a54cd",
+  "version": 1
+}

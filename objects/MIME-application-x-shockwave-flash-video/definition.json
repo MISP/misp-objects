@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "Compressed": {
+      "description": "Compressed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "FlashVersion": {
+      "description": "Flash Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameCount": {
+      "description": "Frame Count",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FrameRate": {
+      "description": "Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-x-shockwave-flash-video",
+  "requiredOneof": [
+    "FlashVersion",
+    "Compressed",
+    "ImageWidth",
+    "ImageHeight",
+    "FrameRate",
+    "FrameCount",
+    "Duration"
+  ],
+  "uuid": "18867562-7fb9-4915-ae90-2f5936028be2",
+  "version": 1
+}

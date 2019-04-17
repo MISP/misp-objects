@@ -1,0 +1,179 @@
+{
+  "attributes": {
+    "AudioCodecID": {
+      "description": "Audio Codec ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "CodecDecodeAll": {
+      "description": "Codec Decode All",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DefaultDuration": {
+      "description": "Default Duration",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DisplayHeight": {
+      "description": "Display Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DisplayWidth": {
+      "description": "Display Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocType": {
+      "description": "Doc Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocTypeReadVersion": {
+      "description": "Doc Type Read Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "DocTypeVersion": {
+      "description": "Doc Type Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Duration": {
+      "description": "Duration",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ImageHeight": {
+      "description": "Image Height",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ImageWidth": {
+      "description": "Image Width",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "MuxingApp": {
+      "description": "Muxing App",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TimecodeScale": {
+      "description": "Timecode Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackDefault": {
+      "description": "Track Default",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackForced": {
+      "description": "Track Forced",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackLanguage": {
+      "description": "Track Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackNumber": {
+      "description": "Track Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackTimecodeScale": {
+      "description": "Track Timecode Scale",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackType": {
+      "description": "Track Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "TrackUsed": {
+      "description": "Track Used",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoCodecID": {
+      "description": "Video Codec ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoFrameRate": {
+      "description": "Video Frame Rate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "VideoScanType": {
+      "description": "Video Scan Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "WritingApp": {
+      "description": "Writing App",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "video-x-matroska-video",
+  "requiredOneof": [
+    "DocType",
+    "DocTypeVersion",
+    "DocTypeReadVersion",
+    "TimecodeScale",
+    "MuxingApp",
+    "WritingApp",
+    "Duration",
+    "VideoCodecID",
+    "VideoFrameRate",
+    "ImageWidth",
+    "ImageHeight",
+    "VideoScanType",
+    "DisplayWidth",
+    "DisplayHeight",
+    "TrackNumber",
+    "TrackType",
+    "TrackUsed",
+    "TrackDefault",
+    "TrackForced",
+    "TrackTimecodeScale",
+    "AudioCodecID",
+    "CodecDecodeAll",
+    "DefaultDuration",
+    "TrackLanguage"
+  ],
+  "uuid": "2e4d4ec2-4d7e-48d6-9ad9-07a72705c275",
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "attributes": {
+    "Author": {
+      "description": "Author",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Copyright": {
+      "description": "Copyright",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-zip-author",
+  "requiredOneof": [
+    "Author",
+    "Copyright"
+  ],
+  "uuid": "388999ef-8990-4ec5-b4d9-2ba48696a212",
+  "version": 1
+}

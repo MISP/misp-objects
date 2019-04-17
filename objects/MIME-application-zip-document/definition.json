@@ -1,0 +1,39 @@
+{
+  "attributes": {
+    "Comment": {
+      "description": "Comment",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Projects": {
+      "description": "Projects",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Title": {
+      "description": "Title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing file metadata.",
+  "meta-category": "file",
+  "name": "application-zip-document",
+  "requiredOneof": [
+    "Projects",
+    "Title",
+    "Keywords",
+    "Comment"
+  ],
+  "uuid": "f96dbcc0-e5c6-4c8d-8818-56a5d4211dae",
+  "version": 1
+}
