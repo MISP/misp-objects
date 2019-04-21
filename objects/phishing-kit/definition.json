@@ -2,8 +2,8 @@
   "name": "phishing-kit",
   "uuid": "f452c16b-12fa-4f87-84a2-15a9e8ca6e7c",
   "meta-category": "network",
-  "description": "Oject to describe a phishing-kit.",
-  "version": 2,
+  "description": "Object to describe a phishing-kit.",
+  "version": 3,
   "attributes": {
     "internal reference": {
       "categories": [
