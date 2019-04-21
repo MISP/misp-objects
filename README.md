@@ -120,6 +120,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/pe-section](objects/pe-section/definition.json)  - Portable Executable (PE) object - section description.
 * [objects/person](objects/person/definition.json) - A person object which describes a person or an identity.
 * [objects/phishing](objects/phishing/definition.json) - Phishing template to describe a phishing website and its analysis.
+* [objects/phishing-kit](objects/phishing-kit/definition.json) - Object to describe a phishing kit.
 * [objects/phone](objects/phone/definition.json) - A phone or mobile phone object.
 * [objects/process](objects/process/definition.json) - A process object.
 * [objects/regexp](objects/regexp/definition.json) - An object describing a regular expression (regex or regexp). The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a regular expression.
