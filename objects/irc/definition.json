@@ -1,7 +1,9 @@
 {
   "requiredOneOf": [
     "ip",
-    "hostname"
+    "hostname",
+    "channel",
+    "nickname"
   ],
   "attributes": {
     "text": {
@@ -39,6 +41,12 @@
       "misp-attribute": "text",
       "multiple": true
     },
+    "nickname": {
+      "description": "IRC nickname used to connect to the associated IRC server and channels",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
     "hostname": {
       "description": "Hostname of the IRC server",
       "categories": [
@@ -60,7 +68,7 @@
       "multiple": true
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An IRC object to describe an IRC server and the associated channels.",
   "meta-category": "network",
   "uuid": "4bbbc004-c344-4b20-8672-b41102177fc7",
