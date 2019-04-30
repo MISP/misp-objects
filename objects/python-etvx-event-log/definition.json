@@ -1,7 +1,7 @@
 {
   "required": [
     "source",
-    "type",
+    "event-type",
     "name"
   ],
   "attributes": {

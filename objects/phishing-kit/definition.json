@@ -90,7 +90,6 @@
   "requiredOneOf": [
     "kit-url",
     "reference-link",
-    "kit-name",
-    "kit-hash"
+    "kit-name"
   ]
 }

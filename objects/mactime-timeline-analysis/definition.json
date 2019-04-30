@@ -1,7 +1,7 @@
 {
   "requiredOneOf": [
-    "filepath",
-    "file_activity",
+    "file-path",
+    "activityType",
     "datetime"
   ],
   "attributes": {
