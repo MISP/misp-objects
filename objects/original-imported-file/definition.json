@@ -1,7 +1,7 @@
 {
   "requiredOneOf": [
     "imported-sample",
-    "type"
+    "format"
   ],
   "attributes": {
     "imported-sample": {

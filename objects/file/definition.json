@@ -14,7 +14,7 @@
     "sha512/256",
     "tlsh",
     "pattern-in-file",
-    "x509-fingerprint-sha1",
+    "certificate",
     "malware-sample",
     "attachment",
     "path",
