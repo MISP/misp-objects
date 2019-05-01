@@ -81,7 +81,7 @@
       "disable_correlation": true
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Regripper Object template designed to present general system properties extracted from the system-hive.",
   "meta-category": "misc",
   "uuid": "5ac85401-cbf1-4d05-a85e-1784546881e4",

@@ -90,7 +90,7 @@
       "disable_correlation": true
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Regripper Object template designed to gather information regarding the services/drivers from the system-hive.",
   "meta-category": "misc",
   "uuid": "78cdae45-2061-4b49-b1d6-71f562094a73",
