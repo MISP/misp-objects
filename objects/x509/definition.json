@@ -118,7 +118,10 @@
       "misp-attribute": "text",
       "ui-priority": 0,
       "disable_correlation": true,
-      "sane_default": ["SHA1_WITH_RSA_ENCRYPTION","SHA256_WITH_RSA_ENCRYPTION"]
+      "sane_default": [
+        "SHA1_WITH_RSA_ENCRYPTION",
+        "SHA256_WITH_RSA_ENCRYPTION"
+      ]
     }
   },
   "version": 9,
