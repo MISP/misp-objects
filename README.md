@@ -70,6 +70,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/ais-info](objects/ais-info/definition.json) - Object describing Automated Indicator Sharing (AIS) information source markings.
 * [objects/android-permission](objects/android-permission/definition.json) - A set of android permissions - one or more permission(s) which can be linked to other objects (e.g. file).
 * [objects/asn](objects/asn/definition.json) - Autonomous system object describing a BGP autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
+* [objects/authenticode-signerinfo](objects/authenticode-signerinfo/definition.json) - Authenticode signer info.
 * [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 * [objects/bank-account](objects/bank-account/definition.json) - Object describing bank account information based on account description from goAML 4.0.
 * [objects/bgp-hijack](objects/bgp-hijack/definition.json) - Object encapsulating BGP Hijack description as specified, for example, by bgpstream.com
