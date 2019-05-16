@@ -63,7 +63,8 @@
         "Male",
         "Female",
         "Other",
-        "Prefer not to say"
+        "Prefer not to say",
+        "Unknown"
       ],
       "disable_correlation": true
     },
@@ -188,7 +189,7 @@
       "disable_correlation": true
     }
   },
-  "version": 9,
+  "version": 10,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
