@@ -137,6 +137,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/short-message-service](objects/short-message-service/definition.json) - Short Message Service (SMS) object template describing one or more SMS message(s).
 * [objects/ss7-attack](objects/ss7-attack/definition.json) - SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.
 * [objects/stix2-pattern](objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
+* [objects/ssh-authorized-keys](objects/ssh-authorized-keys/definition.json) - SSH authorized keys object to store keys and option from SSH authorized_keys file.
 * [objects/suricata](objects/suricata/definition.json) - Suricata rule with context.
 * [objects/target-system](objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromised internal system.
 * [objects/threatgrid-report](objects/threatgrid-report/definition.json) - A threatgrid report object.
