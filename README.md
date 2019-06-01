@@ -133,6 +133,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/sandbox-report](objects/sandbox-report/definition.json) - Sandbox report object.
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
 * [objects/script](objects/script/definition.json) - Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.
+* [objects/shell-commands](objects/shell-commands/definition.json) - Object describing a series of shell commands executed. This object can be linked with malicious files in order to describe a specific execution of shell commands.
 * [objects/shortened-link](objects/shortened-link/definition.json) - Shortened link and its redirect target.
 * [objects/short-message-service](objects/short-message-service/definition.json) - Short Message Service (SMS) object template describing one or more SMS message(s).
 * [objects/ss7-attack](objects/ss7-attack/definition.json) - SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.
