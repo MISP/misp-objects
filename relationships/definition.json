@@ -949,6 +949,13 @@
         "misp",
         "haxpak"
       ]
+    },
+    {
+      "name": "screenshot-of",
+      "description": "Represents an object being the screenshot of something.",
+      "format": [
+        "misp"
+      ]
     }
   ],
   "description": "Default type of relationships in MISP objects.",
