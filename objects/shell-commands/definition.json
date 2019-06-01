@@ -58,5 +58,5 @@
   "description": "Object describing a series of shell commands executed. This object can be linked with malicious files in order to describe a specific execution of shell commands.",
   "meta-category": "misc",
   "uuid": "fee65efa-eb64-4516-8611-1db76c589f79",
-  "name": "script"
+  "name": "shell-commands"
 }
