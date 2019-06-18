@@ -4,7 +4,8 @@
     "longitude",
     "city",
     "region",
-    "country"
+    "country",
+    "epsg"
   ],
   "attributes": {
     "first-seen": {
@@ -28,19 +29,20 @@
     "latitude": {
       "description": "The latitude is the decimal value of the latitude in the World Geodetic System 84 (WGS84) reference.",
       "disable_correlation": true,
-      "ui-priority": 1,
+      "ui-priority": 90,
       "misp-attribute": "float"
     },
     "longitude": {
       "description": "The longitude is the decimal value of the longitude in the World Geodetic System 84 (WGS84) reference",
       "disable_correlation": true,
-      "ui-priority": 1,
+      "ui-priority": 89,
       "misp-attribute": "float"
     },
     "altitude": {
       "description": "The altitude is the decimal value of the altitude in the World Geodetic System 84 (WGS84) reference.",
       "ui-priority": 0,
-      "misp-attribute": "float"
+      "misp-attribute": "float",
+      "disable_correlation": true
     },
     "address": {
       "description": "Address.",
@@ -62,13 +64,35 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "accuracy-radius": {
+      "description": "The approximate accuracy radius, in kilometers, around the latitude and longitude for the geographical entity (country, subdivision, city or postal code) associated with the related object. (based on geoip2 accuracy of maxmind)",
+      "misp-attribute": "float",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
     "country": {
       "description": "Country.",
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "epsg": {
+      "description": "EPSG Geodetic Parameter value. This is an integer value of the EPSG.",
+      "misp-attribute": "text",
+      "ui-priority": 70,
+      "disable_correlation": true
+    },
+    "spacial-reference": {
+      "description": "Default spacial or projection refence for this object.",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "disable_correlation": true,
+      "values_list": [
+        "WGS84 EPSG:4326",
+        "Mercator EPSG:3857"
+      ]
     }
   },
-  "version": 2,
+  "version": 5,
   "description": "An object to describe a geographic location.",
   "meta-category": "misc",
   "uuid": "fdd30d5f-6752-45ed-bef2-25e8ce4d8a3",

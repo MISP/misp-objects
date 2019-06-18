@@ -1,0 +1,44 @@
+{
+  "required": [
+    "identifier"
+  ],
+  "attributes": {
+    "identifier": {
+      "description": "Identifier of the reference. Should be unique in your system.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "categories": [
+        "Internal reference"
+      ]
+    },
+    "comment": {
+      "description": "Comment associated to the identifier.",
+      "ui-priority": 0,
+      "misp-attribute": "comment",
+      "categories": [
+        "Internal reference"
+      ]
+    },
+    "type": {
+      "description": "Type of internal reference.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "categories": [
+        "Internal reference"
+      ]
+    },
+    "link": {
+      "description": "Link associated to the identifier.",
+      "ui-priority": 1,
+      "misp-attribute": "link",
+      "categories": [
+        "Internal reference"
+      ]
+    }
+  },
+  "version": 2,
+  "description": "Internal reference.",
+  "meta-category": "misc",
+  "uuid": "a3984dc5-5f70-4776-9262-c19641c0ff6a",
+  "name": "internal-reference"
+}

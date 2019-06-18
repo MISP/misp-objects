@@ -1,0 +1,80 @@
+{
+  "requiredOneOf": [
+    "description",
+    "make",
+    "model",
+    "license-plate-number",
+    "vin",
+    "dyno-power",
+    "date-first-registration",
+    "image-url",
+    "gearbox",
+    "indicative-value"
+  ],
+  "attributes": {
+    "description": {
+      "description": "Description of the vehicle",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "make": {
+      "description": "Manufacturer of the vehicle",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "model": {
+      "description": "Model of the vehicle",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "vin": {
+      "description": "Vehicle identification number (VIN)",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "license-plate-number": {
+      "description": "License plate number",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "dyno-power": {
+      "description": "Dyno power output",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "date-first-registration": {
+      "description": "Date of first registration",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "image-url": {
+      "description": "Image URL",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "gearbox": {
+      "description": "Gearbox",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "indicative-value": {
+      "description": "Indicative value",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    }
+  },
+  "version": 2,
+  "description": "Vehicle object template to describe a vehicle information and registration",
+  "meta-category": "misc",
+  "uuid": "683c076c-f695-4ff2-8efa-e98a418049f4",
+  "name": "vehicle"
+}

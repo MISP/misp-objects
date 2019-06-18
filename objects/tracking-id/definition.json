@@ -1,0 +1,58 @@
+{
+  "requiredOneOf": [
+    "id"
+  ],
+  "attributes": {
+    "id": {
+      "description": "Tracking code",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "tracker": {
+      "description": "Name of the tracker - organisation doing the tracking and/or analytics",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Google Analytics",
+        "Piwik",
+        "Kissmetrics",
+        "Woopra",
+        "Chartbeat"
+      ]
+    },
+    "description": {
+      "description": "Description of the tracking id",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "url": {
+      "description": "URL where the tracking id was found",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "url"
+    },
+    "hostname": {
+      "description": "hostname where the tracking id was found",
+      "ui-priority": 0,
+      "misp-attribute": "hostname",
+      "multiple": true
+    },
+    "first-seen": {
+      "description": "First time the tracking code was seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "last-seen": {
+      "description": "Last time the tracking code was seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 2,
+  "description": "Analytics and tracking ID such as used in Google Analytics or other analytic platform.",
+  "meta-category": "network",
+  "uuid": "3681c62a-2c75-48d8-99f2-6a3444ce2393",
+  "name": "tracking-id"
+}

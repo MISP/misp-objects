@@ -1,0 +1,55 @@
+{
+  "required": [
+    "url",
+    "name"
+  ],
+  "attributes": {
+    "url": {
+      "description": "The URL used to download the file.",
+      "ui-priority": 0,
+      "misp-attribute": "url"
+    },
+    "datetime-accessed": {
+      "description": "date and time when the file was downloaded.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "name": {
+      "description": "Name of the file downloaded.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "path-downloadedTo": {
+      "description": "Location the file was downloaded to.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "pathID": {
+      "description": "Id of the attribute file where the information is gathered from.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "attachment": {
+      "description": "The downloaded file itself.",
+      "ui-priority": 1,
+      "misp-attribute": "attachment",
+      "disable_correlation": true
+    },
+    "additional-comments": {
+      "description": "Comments.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "categories": [
+        "External analysis"
+      ],
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "An Object Template to add web-downloads",
+  "meta-category": "file",
+  "uuid": "ab9603a1-9dcc-48e8-a51c-b8bccc7bcc26",
+  "name": "tsk-web-downloads"
+}

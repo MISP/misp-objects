@@ -19,21 +19,34 @@
         "codepad.org",
         "safebin.net",
         "hastebin.com",
-        "ghostbin.com"
+        "ghostbin.com",
+        "paste.ee",
+        "0bin.net"
       ],
       "description": "Original source of the paste or post.",
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "title": {
       "misp-attribute": "text",
       "ui-priority": 0,
       "description": "Title of the paste or post."
     },
+    "username": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "User who posted the post."
+    },
     "url": {
       "misp-attribute": "url",
       "ui-priority": 0,
-      "description": "Link to the original source of the paste or post."
+      "description": "Link to the original source of the paste or post (when used maliciously)."
+    },
+    "link": {
+      "misp-attribute": "link",
+      "ui-priority": 0,
+      "description": "Link to the original source of the source or post (when used legitimately for OSINT source or alike)."
     },
     "last-seen": {
       "description": "When the paste has been accessible or seen for the last time.",
@@ -48,7 +61,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 2,
+  "version": 4,
   "description": "Paste or similar post from a website allowing to share privately or publicly posts.",
   "meta-category": "misc",
   "uuid": "cedc055c-78aa-49a4-bfd7-4cc30cecef12",

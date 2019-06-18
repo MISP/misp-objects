@@ -3,14 +3,16 @@
     "text",
     "first-seen",
     "last-seen",
-    "origin"
+    "origin",
+    "raw-data"
   ],
   "required": [
-    "type"
+    "sensor"
   ],
   "attributes": {
     "sensor": {
       "description": "The AIL sensor uuid where the leak was processed and analysed.",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -22,6 +24,7 @@
     },
     "duplicate_number": {
       "description": "Number of known duplicates.",
+      "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "counter"
     },
@@ -42,19 +45,6 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
-    "type": {
-      "sane_default": [
-        "Credential",
-        "CreditCards",
-        "Mail",
-        "Onion",
-        "Phone",
-        "Keys"
-      ],
-      "description": "Type of information leak as discovered and classified by an AIL module.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
     "last-seen": {
       "description": "When the leak has been accessible or seen for the last time.",
       "disable_correlation": true,
@@ -74,7 +64,7 @@
       "misp-attribute": "attachment"
     }
   },
-  "version": 7,
+  "version": 9,
   "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
   "meta-category": "misc",
   "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",

@@ -1,0 +1,68 @@
+{
+  "required": [
+    "key"
+  ],
+  "requiredOneOf": [
+    "user-name",
+    "last-login-time",
+    "login-count"
+  ],
+  "attributes": {
+    "key": {
+      "description": "Registry key where the information is retrieved from.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "key-last-write-time": {
+      "description": "Date and time when the key was last updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "user-name": {
+      "description": "User name assigned to the user profile.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "full-user-name": {
+      "description": "Full name assigned to the user profile.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "last-login-time": {
+      "description": "Date and time when the user last logged onto the system.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "pwd-reset-time": {
+      "description": "Date and time when the password was last reset.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "pwd-fail-date": {
+      "description": "Date and time when a password last failed for this user profile.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "login-count": {
+      "description": "Number of times the user logged-in onto the system.",
+      "ui-priority": 0,
+      "misp-attribute": "counter",
+      "disable_correlation": true
+    },
+    "comments": {
+      "description": "Full name assigned to the user profile.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    }
+  },
+  "version": 1,
+  "description": "Regripper Object template designed to present user profile details extracted from the SAM hive.",
+  "meta-category": "misc",
+  "uuid": "112efd9a-2137-4198-92ed-7c91043e2cd4",
+  "name": "regripper-sam-hive-single-user"
+}

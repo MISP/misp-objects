@@ -1,0 +1,90 @@
+{
+  "required": [
+    "case-number",
+    "evidence-number"
+  ],
+  "attributes": {
+    "case-number": {
+      "description": "A unique number assigned to the case for unique identification.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "evidence-number": {
+      "description": "A unique number assigned to the evidence for unique identification.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "type": {
+      "description": "Evidence type.",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Computer",
+        "Network",
+        "Mobile Device",
+        "Multimedia",
+        "Cloud",
+        "IoT",
+        "Other"
+      ],
+      "disable_correlation": true
+    },
+    "name": {
+      "description": "Name of the evidence acquired.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "acquisition-method": {
+      "description": "Method used for acquisition of the evidence.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Live acquisition",
+        "Dead/Offline acquisition",
+        "Physical collection",
+        "Logical collection",
+        "File system extraction",
+        "Chip-off",
+        "Other"
+      ],
+      "disable_correlation": true
+    },
+    "acquisition-tools": {
+      "description": "Tools used for acquisition of the evidence.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "dd",
+        "dc3dd",
+        "dcfldd",
+        "EnCase",
+        "FTK Imager",
+        "FDAS",
+        "TrueBack",
+        "Guymager",
+        "IXimager",
+        "Other"
+      ],
+      "disable_correlation": true
+    },
+    "references": {
+      "description": "External references",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "link"
+    },
+    "additional-comments": {
+      "description": "Comments.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    }
+  },
+  "version": 2,
+  "description": "An object template to describe a digital forensic evidence.",
+  "meta-category": "misc",
+  "uuid": "fe44c648-63ef-43fc-b3de-af71a2e023e4",
+  "name": "forensic-evidence"
+}

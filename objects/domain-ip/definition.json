@@ -36,7 +36,8 @@
         "External analysis"
       ],
       "ui-priority": 1,
-      "misp-attribute": "domain"
+      "misp-attribute": "domain",
+      "multiple": true
     },
     "ip": {
       "description": "IP Address",

@@ -1,7 +1,8 @@
 {
   "requiredOneOf": [
     "first-name",
-    "last-name"
+    "last-name",
+    "alias"
   ],
   "attributes": {
     "text": {
@@ -12,17 +13,17 @@
     },
     "last-name": {
       "description": "Last name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 100,
       "misp-attribute": "last-name"
     },
     "middle-name": {
       "description": "Middle name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 99,
       "misp-attribute": "middle-name"
     },
     "first-name": {
       "description": "First name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 98,
       "misp-attribute": "first-name",
       "disable_correlation": true
     },
@@ -33,13 +34,13 @@
     },
     "title": {
       "description": "Title of the natural person such as Dr. or equivalent.",
-      "ui-priority": 0,
+      "ui-priority": 101,
       "misp-attribute": "text",
       "disable_correlation": true
     },
     "alias": {
       "description": "Alias name or known as.",
-      "ui-priority": 0,
+      "ui-priority": 97,
       "misp-attribute": "text",
       "multiple": true
     },
@@ -62,7 +63,8 @@
         "Male",
         "Female",
         "Other",
-        "Prefer not to say"
+        "Prefer not to say",
+        "Unknown"
       ],
       "disable_correlation": true
     },
@@ -94,7 +96,17 @@
       "misp-attribute": "redress-number"
     },
     "social-security-number": {
-      "description": "Social security number",
+      "description": "Social security number.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "birth-certificate-number": {
+      "description": "Birth Certificate Number",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "ofac-identification-number": {
+      "description": "ofac-identification Number",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -104,9 +116,80 @@
       "misp-attribute": "nationality",
       "multiple": true,
       "disable_correlation": true
+    },
+    "nic-hdl": {
+      "description": "NIC Handle (Network Information Centre handle) of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "phone-number": {
+      "description": "Phone number of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "fax-number": {
+      "description": "Fax number of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "address": {
+      "description": "Postal address of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "dni": {
+      "description": "Spanish National ID",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "nie": {
+      "description": "Foreign National ID (Spain)",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "nif": {
+      "description": "Tax ID Number (Spain)",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "e-mail": {
+      "description": "Email address of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "email-src",
+      "multiple": true
+    },
+    "portrait": {
+      "description": "Portrait of the person.",
+      "ui-priority": 10,
+      "misp-attribute": "attachment",
+      "multiple": true
+    },
+    "role": {
+      "description": "The role of a person.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "values_list": [
+        "Suspect",
+        "Victim",
+        "Defendent",
+        "Accused",
+        "Culprit",
+        "Accomplice",
+        "Witness",
+        "Target"
+      ],
+      "disable_correlation": true
     }
   },
-  "version": 3,
+  "version": 10,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",

@@ -1,0 +1,52 @@
+{
+  "requiredOneOf": [
+    "description",
+    "start-marker-timecode",
+    "end-marker-timecode",
+    "start-timecode",
+    "end-timecode",
+    "recording-date"
+  ],
+  "attributes": {
+    "description": {
+      "description": "Description of the video sequence",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "start-marker-timecode": {
+      "description": "Start marker timecode in the format hh:mm:ss;ff",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "end-marker-timecode": {
+      "description": "End marker timecode in the format hh:mm:ss;ff",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "start-timecode": {
+      "description": "Start marker timecode in the format hh:mm:ss.mms",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "end-timecode": {
+      "description": "End marker timecode in the format hh:mm:ss.mms",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "recording-date": {
+      "description": "Date of recording of the video sequence",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "multiple": true
+    }
+  },
+  "version": 1,
+  "description": "Timecode object to describe a start of video sequence (e.g. CCTV evidence) and the end of the video sequence.",
+  "meta-category": "misc",
+  "uuid": "60141eac-71d2-4173-930d-91dba8106c40",
+  "name": "timecode"
+}

@@ -34,6 +34,7 @@
     },
     "SccpCgGT": {
       "description": "Signaling Connection Control Part (SCCP) CgGT - Phone number.",
+      "multiple": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -44,6 +45,7 @@
     },
     "SccpCgPC": {
       "description": "Signaling Connection Control Part (SCCP) CgPC - Phone number.",
+      "multiple": true,
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -167,7 +169,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.",
   "meta-category": "network",
   "uuid": "f3493d8b-a7ab-48d0-a775-046c4d64d782",

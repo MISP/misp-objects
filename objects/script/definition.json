@@ -1,0 +1,64 @@
+{
+  "requiredOneOf": [
+    "script",
+    "filename"
+  ],
+  "attributes": {
+    "script": {
+      "description": "Free text of the script.",
+      "ui-priority": 10,
+      "misp-attribute": "text"
+    },
+    "comment": {
+      "description": "Comment associated to the script.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "language": {
+      "description": "Scripting language used for the script.",
+      "ui-priority": 9,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "PowerShell",
+        "VBScript",
+        "Bash",
+        "Lua",
+        "JavaScript",
+        "AppleScript",
+        "AWK",
+        "Python",
+        "Perl",
+        "Ruby",
+        "Winbatch",
+        "AutoIt",
+        "PHP"
+      ]
+    },
+    "filename": {
+      "description": "Filename used for the script.",
+      "ui-priority": 8,
+      "misp-attribute": "filename",
+      "multiple": true,
+      "disable_correlation": true
+    },
+    "state": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "Known state of the script.",
+      "multiple": true,
+      "disable_correlation": true,
+      "values_list": [
+        "Malicious",
+        "Unknown",
+        "Harmless",
+        "Trusted"
+      ]
+    }
+  },
+  "version": 4,
+  "description": "Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.",
+  "meta-category": "misc",
+  "uuid": "6bce7d01-dbec-4054-b3c2-3655a19382e2",
+  "name": "script"
+}

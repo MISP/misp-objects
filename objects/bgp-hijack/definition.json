@@ -1,0 +1,53 @@
+{
+  "required": [
+    "expected-asn",
+    "detected-asn",
+    "start",
+    "subnet-announced"
+  ],
+  "attributes": {
+    "expected-asn": {
+      "description": "Expected Autonomous System Number",
+      "ui-priority": 1,
+      "misp-attribute": "AS"
+    },
+    "detected-asn": {
+      "description": "Detected Autonomous System Number",
+      "ui-priority": 1,
+      "misp-attribute": "AS"
+    },
+    "description": {
+      "description": "BGP Hijack details",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "country": {
+      "description": "Country code of the main location of the attacking autonomous system",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "subnet-announced": {
+      "description": "Subnet announced",
+      "ui-priority": 0,
+      "misp-attribute": "ip-src",
+      "multiple": true
+    },
+    "start": {
+      "description": "First time the Prefix hijack was seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "end": {
+      "description": "Last time the Prefix hijack was seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "Object encapsulating BGP Hijack description as specified, for example, by bgpstream.com",
+  "meta-category": "network",
+  "uuid": "42355673-1fab-4908-8045-00bebd91c389",
+  "name": "bgp-hijack"
+}
