@@ -5,7 +5,8 @@
     "domain",
     "hostname",
     "ip",
-    "ip-src"
+    "ip-src",
+    "ip-dst"
   ],
   "attributes": {
     "text": {
