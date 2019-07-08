@@ -150,6 +150,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/tracking-id](objects/tracking-id/definition.json) - Analytics and tracking ID such as used in Google Analytics or other analytic platform.
 * [objects/transaction](objects/transaction/definition.json) - Object describing a financial transaction.
 * [objects/url](objects/url/definition.json) - url object describes an url along with its normalized field (e.g. using faup parsing library) and its metadata.
+* [objects/user-account](objects/user-account/definition.json) - Object describing a user account (UNIX, Windows, etc).
 * [objects/vehicle](objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
