@@ -6,7 +6,8 @@
   "version": 1,
   "requiredOneOf": [
     "password",
-    "username"
+    "username",
+    "user-id"
   ],
   "attributes": {
     "text": {
