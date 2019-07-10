@@ -1,0 +1,62 @@
+{
+  "requiredOneOf": [
+    "url",
+    "program-name"
+  ],
+  "attributes": {
+    "text": {
+      "description": "Free text description of the signer info",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "issuer": {
+      "description": "Issuer of the certificate",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "version": {
+      "description": "Version of the certificate",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "url": {
+      "description": "Url",
+      "multiple": true,
+      "misp-attribute": "url",
+      "ui-priority": 0
+    },
+    "content-type": {
+      "description": "Content type",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "program-name": {
+      "description": "Program name",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "digest_algorithm": {
+      "description": "Digest algorithm",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true
+    },
+    "signature_algorithm": {
+      "description": "Signature algorithm",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "sane_default": [
+        "SHA1_WITH_RSA_ENCRYPTION",
+        "SHA256_WITH_RSA_ENCRYPTION"
+      ]
+    }
+  },
+  "version": 1,
+  "description": "Authenticode Signer Info",
+  "meta-category": "file",
+  "uuid": "965cb0aa-baf1-4cc6-9070-68f5c1698c1e",
+  "name": "authenticode-signerinfo"
+}

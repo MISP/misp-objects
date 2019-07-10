@@ -61,6 +61,12 @@
       "description": "Last update of the annotation",
       "ui-priority": 0,
       "misp-attribute": "datetime"
+    },
+    "attachment": {
+      "description": "An attachment to support the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "attachment",
+      "multiple": true
     }
   },
   "version": 2,

@@ -13,17 +13,17 @@
     },
     "last-name": {
       "description": "Last name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 100,
       "misp-attribute": "last-name"
     },
     "middle-name": {
       "description": "Middle name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 99,
       "misp-attribute": "middle-name"
     },
     "first-name": {
       "description": "First name of a natural person.",
-      "ui-priority": 0,
+      "ui-priority": 98,
       "misp-attribute": "first-name",
       "disable_correlation": true
     },
@@ -34,13 +34,13 @@
     },
     "title": {
       "description": "Title of the natural person such as Dr. or equivalent.",
-      "ui-priority": 0,
+      "ui-priority": 101,
       "misp-attribute": "text",
       "disable_correlation": true
     },
     "alias": {
       "description": "Alias name or known as.",
-      "ui-priority": 0,
+      "ui-priority": 97,
       "misp-attribute": "text",
       "multiple": true
     },
@@ -63,7 +63,8 @@
         "Male",
         "Female",
         "Other",
-        "Prefer not to say"
+        "Prefer not to say",
+        "Unknown"
       ],
       "disable_correlation": true
     },
@@ -140,6 +141,24 @@
       "misp-attribute": "text",
       "multiple": true
     },
+    "dni": {
+      "description": "Spanish National ID",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "nie": {
+      "description": "Foreign National ID (Spain)",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "nif": {
+      "description": "Tax ID Number (Spain)",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
     "e-mail": {
       "description": "Email address of the person.",
       "ui-priority": 10,
@@ -164,12 +183,13 @@
         "Accused",
         "Culprit",
         "Accomplice",
-        "Witness"
+        "Witness",
+        "Target"
       ],
       "disable_correlation": true
     }
   },
-  "version": 8,
+  "version": 10,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",

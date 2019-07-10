@@ -1,0 +1,137 @@
+{
+  "name": "user-account",
+  "uuid": "49606b06-22f0-4ac8-8eee-2f12ad46f3d3",
+  "meta-category": "misc",
+  "description": "",
+  "version": 1,
+  "requiredOneOf": [
+    "password",
+    "username",
+    "user-id"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the user account.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "username": {
+      "description": "Username related to the password.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "user-id": {
+      "description": "Identifier of the account.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "password": {
+      "description": "Password related to the username.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "display-name": {
+      "description": "Display name of the account.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "account-type": {
+      "description": "Type of the account.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "sane_default": [
+        "facebook",
+        "ldap",
+        "nis",
+        "openid",
+        "radius",
+        "skype",
+        "tacacs",
+        "twitter",
+        "unix",
+        "windows-local",
+        "windows-domain"
+      ]
+    },
+    "is_service_account": {
+      "description": "Specifies if the account is associated with a network service.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "boolean"
+    },
+    "privileged": {
+      "description": "Specifies if the account has privileges such as root rights.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "boolean"
+    },
+    "can_escalate_privs": {
+      "description": "Specifies if the account has the ability to escalate privileges.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "boolean"
+    },
+    "disabled": {
+      "description": "Specifies if the account is desabled.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "boolean"
+    },
+    "created": {
+      "description": "Creation time of the account.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "datetime"
+    },
+    "expires": {
+      "description": "Expiration time of the account",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "datetime"
+    },
+    "first_login": {
+      "description": "First time someone logged in to the account.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "datetime"
+    },
+    "last_login": {
+      "description": "Last time someone logged in to the account.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "datetime"
+    },
+    "password_last_changed": {
+      "description": "Last time the password has been changed.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "datetime"
+    },
+    "group-id": {
+      "description": "Identifier of the primary group of the account, in case of a UNIX account.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "group": {
+      "description": "UNIX group(s) the account is member of.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "home_dir": {
+      "description": "Home directory of the UNIX account.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "shell": {
+      "description": "UNIX command shell of the account.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    }
+  }
+}

@@ -29,6 +29,17 @@
         "Other"
       ]
     },
+    "state": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "State of the microblog post",
+      "disable_correlation": true,
+      "values_list": [
+        "Informative",
+        "Malicious",
+        "Unknown"
+      ]
+    },
     "username": {
       "description": "Username who posted the microblog post (without the @ prefix)",
       "ui-priority": 0,
@@ -62,7 +73,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",

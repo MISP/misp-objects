@@ -1,0 +1,279 @@
+{
+  "requiredOneOf": [
+    "filename",
+    "ssdeep",
+    "md5",
+    "sha1",
+    "sha224",
+    "sha256",
+    "sha384",
+    "sha512",
+    "sha512/224",
+    "sha512/256"
+  ],
+  "attributes": {
+    "md5": {
+      "description": "[Insecure] MD5 hash (128 bits)",
+      "ui-priority": 1,
+      "misp-attribute": "md5",
+      "recommended": false
+    },
+    "sha1": {
+      "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
+      "ui-priority": 1,
+      "misp-attribute": "sha1",
+      "recommended": false
+    },
+    "sha224": {
+      "description": "Secure Hash Algorithm 2 (224 bits)",
+      "ui-priority": 0,
+      "misp-attribute": "sha224",
+      "recommended": false
+    },
+    "sha256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "ui-priority": 1,
+      "misp-attribute": "sha256"
+    },
+    "sha384": {
+      "description": "Secure Hash Algorithm 2 (384 bits)",
+      "ui-priority": 0,
+      "misp-attribute": "sha384",
+      "recommended": false
+    },
+    "sha512": {
+      "description": "Secure Hash Algorithm 2 (512 bits)",
+      "ui-priority": 1,
+      "misp-attribute": "sha512"
+    },
+    "sha512/224": {
+      "description": "Secure Hash Algorithm 2 (224 bits)",
+      "ui-priority": 0,
+      "misp-attribute": "sha512/224",
+      "recommended": false
+    },
+    "sha512/256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "ui-priority": 0,
+      "misp-attribute": "sha512/256",
+      "recommended": false
+    },
+    "ssdeep": {
+      "description": "Fuzzy hash using context triggered piecewise hashes (CTPH)",
+      "ui-priority": 0,
+      "misp-attribute": "ssdeep"
+    },
+    "size-in-bytes": {
+      "description": "Size of the LNK file, in bytes",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "size-in-bytes"
+    },
+    "entropy": {
+      "description": "Entropy of the whole file",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "float"
+    },
+    "pattern-in-file": {
+      "description": "Pattern that can be found in the file",
+      "categories": [
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "pattern-in-file",
+      "multiple": true
+    },
+    "text": {
+      "description": "Free text value to attach to the file",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "recommended": false
+    },
+    "malware-sample": {
+      "description": "The LNK file itself (binary)",
+      "ui-priority": 1,
+      "misp-attribute": "malware-sample"
+    },
+    "filename": {
+      "description": "Filename on disk",
+      "disable_correlation": true,
+      "multiple": true,
+      "categories": [
+        "Payload delivery",
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "filename"
+    },
+    "path": {
+      "description": "Path of the LNK filename complete or partial",
+      "disable_correlation": true,
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "fullpath": {
+      "description": "Complete path of the LNK filename including the filename",
+      "multiple": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "tlsh": {
+      "description": "Fuzzy hash by Trend Micro: Locality Sensitive Hash",
+      "ui-priority": 0,
+      "misp-attribute": "tlsh"
+    },
+    "state": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "State of the LNK file",
+      "multiple": true,
+      "disable_correlation": true,
+      "values_list": [
+        "Malicious",
+        "Harmless",
+        "Trusted"
+      ]
+    },
+    "lnk-creation-time": {
+      "description": "Creation time of the LNK",
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "lnk-modification-time": {
+      "description": "Modification time of the LNK",
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "lnk-access-time": {
+      "description": "Access time of the LNK",
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "lnk-file-size": {
+      "description": "Size of the target file, in bytes",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "size-in-bytes"
+    },
+    "lnk-icon-index": {
+      "description": "Icon index",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-show-window-value": {
+      "description": "Show Window value",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-hot-key-value": {
+      "description": "Hot Key value",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-file-attribute-flags": {
+      "description": "File attribute flags",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-drive-type": {
+      "description": "Drive type",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-drive-serial-number": {
+      "description": "Drive serial number",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-volume-label": {
+      "description": "Volume label",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-local-path": {
+      "description": "Local path",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-description": {
+      "description": "LNK description",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-relative-path": {
+      "description": "Relative path",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-working-directory": {
+      "description": "LNK working path",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "lnk-command-line-arguments": {
+      "description": "LNK command line arguments",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "machine-identifier": {
+      "description": "Machine identifier",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "droid-volume-identifier": {
+      "description": "Droid volume identifier",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "droid-file-identifier": {
+      "description": "Droid file identifier (UUIDv1 where MAC can be extracted)",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "birth-droid-volume-identifier": {
+      "description": "Droid volume identifier",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "birth-droid-file-identifier": {
+      "description": "Birth droid volume identifier (UUIDv1 where MAC can be extracted)",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "LNK object describing a Windows LNK binary file (aka Windows shortcut)",
+  "meta-category": "file",
+  "uuid": "ad13533e-1853-4da0-a111-33a7ce7e6c09",
+  "name": "lnk"
+}

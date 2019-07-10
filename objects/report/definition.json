@@ -5,7 +5,7 @@
   "attributes": {
     "summary": {
       "description": "Free text summary of the report",
-      "ui-priority": 1,
+      "ui-priority": 100,
       "misp-attribute": "text",
       "categories": [
         "Other",
@@ -21,6 +21,12 @@
         "Internal reference",
         "Other"
       ]
+    },
+    "report-file(s)": {
+      "description": "Attachment(s) that is related to the report",
+      "ui-priority": 99,
+      "misp-attribute": "attachment",
+      "multiple": true
     }
   },
   "version": 1,

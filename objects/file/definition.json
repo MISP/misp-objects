@@ -14,8 +14,9 @@
     "sha512/256",
     "tlsh",
     "pattern-in-file",
-    "x509-fingerprint-sha1",
+    "certificate",
     "malware-sample",
+    "attachment",
     "path",
     "fullpath"
   ],
@@ -111,6 +112,11 @@
       "description": "The file itself (binary)",
       "ui-priority": 1,
       "misp-attribute": "malware-sample"
+    },
+    "attachment": {
+      "description": "A non-malicious file.",
+      "ui-priority": 1,
+      "misp-attribute": "attachment"
     },
     "filename": {
       "description": "Filename on disk",
@@ -436,7 +442,7 @@
       ]
     }
   },
-  "version": 16,
+  "version": 17,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",

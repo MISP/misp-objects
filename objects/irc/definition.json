@@ -1,0 +1,76 @@
+{
+  "requiredOneOf": [
+    "ip",
+    "hostname",
+    "channel",
+    "nickname"
+  ],
+  "attributes": {
+    "text": {
+      "description": "Description of the IRC server",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "last-seen": {
+      "description": "Last time the IRC server with the associated channels has been seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "description": "First time the IRC server with the associated channels has been seen",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "dst-port": {
+      "description": "Destination port to reach the IRC server",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "port",
+      "disable_correlation": true,
+      "multiple": true
+    },
+    "channel": {
+      "description": "IRC channel associated to the IRC server",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "nickname": {
+      "description": "IRC nickname used to connect to the associated IRC server and channels",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "hostname": {
+      "description": "Hostname of the IRC server",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "hostname",
+      "multiple": true
+    },
+    "ip": {
+      "description": "IP address of the IRC server",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "ip-dst",
+      "multiple": true
+    }
+  },
+  "version": 2,
+  "description": "An IRC object to describe an IRC server and the associated channels.",
+  "meta-category": "network",
+  "uuid": "4bbbc004-c344-4b20-8672-b41102177fc7",
+  "name": "irc"
+}
