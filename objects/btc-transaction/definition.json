@@ -40,7 +40,6 @@
       "disable_correlation": true,
       "misp-attribute": "btc"
     }
-     
   },
   "version": 1,
   "description": "An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.",
