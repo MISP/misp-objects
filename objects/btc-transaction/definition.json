@@ -8,6 +8,7 @@
     "transaction-number": {
       "description": "A Bitcoin transaction number in a sequence of transactions",
       "ui-priority": 0,
+      "disable_correlation": true,
       "multiple": true,
       "misp-attribute": "text"
     },
@@ -42,7 +43,7 @@
       "misp-attribute": "btc"
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.",
   "meta-category": "financial",
   "uuid": "B7341729-5A8A-439F-A775-6D814DA3C7B5",
