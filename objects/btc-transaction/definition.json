@@ -1,8 +1,8 @@
 {
   "requiredOneOf": [
-    "wallet-address",
-    "value_BTC",
-    "time"
+    "transaction-number",
+    "time",
+    "value_BTC"
   ],
   "attributes": {
     "transaction-number": {
