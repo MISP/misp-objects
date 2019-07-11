@@ -41,7 +41,7 @@
       "misp-attribute": "btc"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.",
   "meta-category": "financial",
   "uuid": "B7341729-5A8A-439F-A775-6D814DA3C7B5",
