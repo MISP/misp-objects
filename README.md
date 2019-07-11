@@ -74,6 +74,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 * [objects/bank-account](objects/bank-account/definition.json) - Object describing bank account information based on account description from goAML 4.0.
 * [objects/bgp-hijack](objects/bgp-hijack/definition.json) - Object encapsulating BGP Hijack description as specified, for example, by bgpstream.com
+* [objects/btc-transaction](objects/btc-transaction/definition.json) - Object describing BTC transaction (often attached to a btc-wallet object.
+* [objects/btc-wallet](objects/btc-wallet/definition.json) - Object describing a BTC wallet.
 * [objects/cap-alert](objects/cap-alert/definition.json) - Common Alerting Protocol Version (CAP) alert object.
 * [objects/cap-info](objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
 * [objects/cap-resource](objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
@@ -98,6 +100,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
 * [objects/gtp-attack](objects/gtp-attack/definition.json) - GTP attack object as seen on a GSM, UMTS or LTE network.
 * [objects/http-request](objects/http-request/definition.json) - A single HTTP request header object.
+* [objects/imsi-catcher](objects/imsi-catcher/definition.json) - Object describing IMSI catcher associated event.
 * [objects/interpol-notice](objects/interpol-notice/definition.json) - Object used to represent an Interpol notice
 * [objects/ip-api-address](objects/ip-api-address/definition.json) - Object describing IP Address information, as defined in [ip-api.com](http://ip-api.com).
 * [objects/ip-port](objects/ip-port/definition.json) - An IP address and a port seen as a tuple (or as a triple) in a specific time frame.
