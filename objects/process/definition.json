@@ -3,7 +3,7 @@
   "uuid": "02aeef94-ac23-455c-addb-731757ceafb5",
   "meta-category": "misc",
   "description": "Object describing a system process.",
-  "version": 5,
+  "version": 6,
   "attributes": {
     "creation-time": {
       "description": "Local date/time at which the process was created.",
@@ -39,6 +39,20 @@
       "ui-priority": 1,
       "misp-attribute": "text",
       "multiple": true,
+      "disable_correlation": true
+    },
+    "process-state": {
+      "description": "State of process. (ps codes R/S/Z...)",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": false,
+      "disable_correlation": true
+    },
+    "fake-process-name": {
+      "description": "Is the process spawned under a false name.",
+      "ui-priority": 1,
+      "misp-attribute": "boolean",
+      "multiple": false,
       "disable_correlation": true
     },
     "port": {
