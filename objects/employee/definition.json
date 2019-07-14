@@ -1,0 +1,66 @@
+{
+  "required": [
+    "email-address"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the person or identity.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "last-name": {
+      "description": "Last name Employee",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "last-name"
+    },
+    "first-name": {
+      "description": "First name of Employee",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "first-name"
+    },
+    "email-address": {
+      "description": "Employee Email Address",
+      "ui-priority": 0,
+      "misp-attribute": "target-email"
+    },
+    "userid": {
+      "description": "EMployee user identification",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "target-user"
+    },
+    "primary-asset": {
+      "description": "Asset tag of the primary asset assigned to employee",
+      "ui-priority": 0,
+      "misp-attribute": "target-machine"
+    },
+    "business-unit": {
+      "description": "the organizational business unit associated with the employee",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "target-org"
+    },
+    "employee-type": {
+      "description": "type of employee",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "values_list": [
+        "Mid-Level Manager",
+        "Senior Manager",
+        "Non-Manager",
+        "Supervisor",
+        "First-Line Manager",
+        "Director"
+      ]
+    }
+  },
+  "version": 1,
+  "description": "An employee and related data points",
+  "meta-category": "misc",
+  "uuid": "443b2f15-d7c9-4d3d-bfd2-38f099753e83",
+  "name": "employee"
+}
