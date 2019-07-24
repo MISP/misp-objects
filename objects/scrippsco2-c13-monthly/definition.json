@@ -48,9 +48,9 @@
       "ui-priority": 1
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Monthly average C13 concentrations (ppm) derived from flask air samples.",
-  "meta-category": "environment",
+  "meta-category": "climate",
   "uuid": "812125c7-47de-4503-8bbc-19067d3a1c38",
   "name": "scrippsco2-c13-monthly"
 }

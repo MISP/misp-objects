@@ -48,9 +48,9 @@
       "ui-priority": 1
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Monthly average O18 concentrations (ppm) derived from flask air samples.",
-  "meta-category": "environment",
+  "meta-category": "climate",
   "uuid": "86bd588b-cd0c-486a-8ea0-17fd95312fa0",
   "name": "scrippsco2-o18-monthly"
 }

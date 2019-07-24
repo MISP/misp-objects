@@ -45,9 +45,9 @@
       "ui-priority": 1
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Daily average CO2 concentrations (ppm) derived from flask air samples.",
-  "meta-category": "environment",
+  "meta-category": "climate",
   "uuid": "0779baca-06b9-491e-9ab7-ccc3e1538fd3",
   "name": "scrippsco2-co2-daily"
 }

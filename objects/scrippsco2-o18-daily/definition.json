@@ -45,9 +45,9 @@
       "ui-priority": 1
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Daily average O18 concentrations (ppm) derived from flask air samples.",
-  "meta-category": "environment",
+  "meta-category": "climate",
   "uuid": "8b6878a7-577d-4845-b165-ead6e58bec04",
   "name": "scrippsco2-o18-daily"
 }

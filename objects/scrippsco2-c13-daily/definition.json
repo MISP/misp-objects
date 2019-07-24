@@ -45,9 +45,9 @@
       "ui-priority": 1
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Daily average C13 concentrations (ppm) derived from flask air samples.",
-  "meta-category": "environment",
+  "meta-category": "climate",
   "uuid": "5f71a99e-4a56-45b5-b7d6-19949d22409a",
   "name": "scrippsco2-c13-daily"
 }
