@@ -258,6 +258,13 @@
       ]
     },
     {
+      "name": "includes",
+      "description": "This relationship describes an object that includes an other object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "analysed-with",
       "description": "This relationship describes an object analysed by another object.",
       "format": [
