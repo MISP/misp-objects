@@ -11,6 +11,13 @@
       ]
     },
     {
+      "name": "executes",
+      "description": "This relationship describes an object which executes another object",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "duplicate-of",
       "description": "The referenced source and target objects are semantically duplicates of each other.",
       "format": [
@@ -223,6 +230,13 @@
       ]
     },
     {
+      "name": "retrieved-from",
+      "description": "This relationship describes an object retrieved from the target object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "authored-by",
       "description": "This relationship describes the author of a specific object.",
       "format": [
@@ -239,6 +253,13 @@
     {
       "name": "included-in",
       "description": "This relationship describes an object included in another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "includes",
+      "description": "This relationship describes an object that includes an other object.",
       "format": [
         "misp"
       ]
@@ -938,6 +959,21 @@
     {
       "name": "injected-into",
       "description": "Represents an object which is injected something into something",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "creates",
+      "description": "Represents an object that creates something.",
+      "format": [
+        "misp",
+        "haxpak"
+      ]
+    },
+    {
+      "name": "screenshot-of",
+      "description": "Represents an object being the screenshot of something.",
       "format": [
         "misp"
       ]

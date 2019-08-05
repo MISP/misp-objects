@@ -1,6 +1,7 @@
 {
   "requiredOneOf": [
-    "yara"
+    "yara",
+    "yara-rule-name"
   ],
   "attributes": {
     "comment": {
@@ -12,6 +13,11 @@
       "description": "YARA rule.",
       "ui-priority": 0,
       "misp-attribute": "yara"
+    },
+    "yara-rule-name": {
+      "description": "YARA rule name.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
     },
     "version": {
       "sane_default": [
@@ -33,8 +39,8 @@
       "ui-priority": 0
     }
   },
-  "version": 3,
-  "description": "An object describing a YARA rule along with its version.",
+  "version": 4,
+  "description": "An object describing a YARA rule (or a YARA rule name) along with its version.",
   "meta-category": "misc",
   "uuid": "b5acf82e-ecca-4868-82fe-9dbdf4d808c3",
   "name": "yara"

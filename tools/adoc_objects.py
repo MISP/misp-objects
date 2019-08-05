@@ -3,7 +3,7 @@
 #
 #
 #    A simple converter of MISP objects to asciidoctor format
-#    Copyright (C) 2017-2018 Alexandre Dulaunoy
+#    Copyright (C) 2017-2019 Alexandre Dulaunoy
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -73,12 +73,14 @@ def asciidoc(content=False, adoc=None, t='title',title=''):
     if t == 'title':
         output = '== ' + content
     elif t == 'info':
+        content = content.rstrip('\.')
         output = "\n{}.\n\n{} {} {}{}/definition.json[*this location*] {}.\n".format(content, 'NOTE: ', title, 'is a MISP object available in JSON format at https://github.com/MISP/misp-objects/blob/master/objects/',title.lower(),' The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP]')
     elif t == 'author':
         output = '\nauthors:: {}\n'.format(' - '.join(content))
     elif t == 'value':
         output = '=== ' + content
     elif t == 'description':
+        content = content.rstrip('\.')
         output = '\n{}\n'.format(content)
     elif t == 'attributes':
         #output = '\n{}\n'.format

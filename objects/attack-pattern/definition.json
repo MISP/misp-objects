@@ -1,0 +1,45 @@
+{
+  "requiredOneOf": [
+    "name",
+    "id"
+  ],
+  "attributes": {
+    "id": {
+      "description": "CAPEC ID.",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "name": {
+      "description": "Name of the attack pattern.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "summary": {
+      "description": "Summary description of the attack pattern.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "prerequisites": {
+      "description": "Prerequisites for the attack pattern to succeed.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "solutions": {
+      "description": "Solutions for the attack pattern to be countered.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "related-weakness": {
+      "description": "Weakness related to the attack pattern.",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "weakness"
+    }
+  },
+  "version": 1,
+  "description": "Attack pattern describing a common attack pattern enumeration and classification.",
+  "meta-category": "vulnerability",
+  "uuid": "35928348-56be-4d7f-9752-a80927936351",
+  "name": "attack-pattern"
+}

@@ -1,0 +1,46 @@
+{
+  "required": [
+    "rogue-dns"
+  ],
+  "attributes": {
+    "timestamp": {
+      "description": "Last time that the rogue DNS value was seen.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "rogue-dns": {
+      "description": "IP address of the rogue DNS",
+      "ui-priority": 0,
+      "misp-attribute": "ip-dst"
+    },
+    "status": {
+      "description": "How many authoritative DNS answers were received at the Passive DNS Server's collectors with exactly the given set of values as answers.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "ROGUE DNS",
+        "Unknown"
+      ],
+      "disable_correlation": true
+    },
+    "hijacked-domain": {
+      "description": "Domain/hostname hijacked by the the rogue DNS",
+      "categories": [
+        "Network activity"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "hostname"
+    },
+    "phishing-ip": {
+      "description": "Resource records returns by the rogue DNS",
+      "ui-priority": 1,
+      "misp-attribute": "ip-dst"
+    }
+  },
+  "version": 1,
+  "description": "Rogue DNS as defined by CERT.br",
+  "meta-category": "network",
+  "uuid": "b7e7859b-6872-4fd2-ac49-f66ccb904505",
+  "name": "rogue-dns"
+}

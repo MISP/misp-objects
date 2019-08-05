@@ -1,0 +1,56 @@
+{
+  "required": [
+    "sample-datetime",
+    "sample-date-excel",
+    "sample-date-fractional"
+  ],
+  "attributes": {
+    "sample-datetime": {
+      "description": "The monthly values have been adjusted to 24:00 hours on the 15th of each month.",
+      "ui-priority": 1,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "sample-date-excel": {
+      "description": "M$Excel spreadsheet date format.",
+      "ui-priority": 1,
+      "misp-attribute": "float",
+      "disable_correlation": true
+    },
+    "sample-date-fractional": {
+      "description": "Decimal year and fractional year.",
+      "ui-priority": 1,
+      "misp-attribute": "float",
+      "disable_correlation": true
+    },
+    "monthly-c13": {
+      "description": "Monthly C13 concentrations in micro-mol C13 per mole (ppm) reported on the 2008A SIO manometric mole fraction scale. This is the standard version of the data most often sought.",
+      "misp-attribute": "float",
+      "disable_correlation": true,
+      "ui-priority": 1
+    },
+    "monthly-c13-seasonal-adjustment": {
+      "description": "Same data after a seasonal adjustment to remove the quasi-regular seasonal cycle.  The adjustment involves subtracting from the data a 4-harmonic fit with a linear gain factor.",
+      "misp-attribute": "float",
+      "disable_correlation": true,
+      "ui-priority": 0
+    },
+    "monthly-c13-smoothed": {
+      "description": "Smoothed version of the data generated from a stiff cubic spline function plus 4-harmonic functions with linear gain.",
+      "misp-attribute": "float",
+      "disable_correlation": true,
+      "ui-priority": 1
+    },
+    "monthly-c13-smoothed-seasonal-adjustment": {
+      "description": "Same smoothed version with the seasonal cycle removed.",
+      "misp-attribute": "float",
+      "disable_correlation": true,
+      "ui-priority": 1
+    }
+  },
+  "version": 2,
+  "description": "Monthly average C13 concentrations (ppm) derived from flask air samples.",
+  "meta-category": "climate",
+  "uuid": "812125c7-47de-4503-8bbc-19067d3a1c38",
+  "name": "scrippsco2-c13-monthly"
+}
