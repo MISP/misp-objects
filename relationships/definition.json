@@ -950,6 +950,20 @@
       ]
     },
     {
+      "name": "injects-into",
+      "description": "Represents an object injecting something into something",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "injected-into",
+      "description": "Represents an object which is injected something into something",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "creates",
       "description": "Represents an object that creates something.",
       "format": [
