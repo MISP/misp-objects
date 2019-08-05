@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "values": [
     {
       "name": "derived-from",
@@ -924,6 +924,20 @@
     {
       "name": "witness-of",
       "description": "Represents an object being a witness of something.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "injects-into",
+      "description": "Represents an object injecting something into something",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "injected-into",
+      "description": "Represents an object which is injected something into something",
       "format": [
         "misp"
       ]
