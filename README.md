@@ -70,6 +70,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/ais-info](objects/ais-info/definition.json) - Object describing Automated Indicator Sharing (AIS) information source markings.
 * [objects/android-permission](objects/android-permission/definition.json) - A set of android permissions - one or more permission(s) which can be linked to other objects (e.g. file).
 * [objects/asn](objects/asn/definition.json) - Autonomous system object describing a BGP autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
+* [objects/attack-pattern](objects/attack-pattern/definition.json) - Attack Pattern object describing a common attack pattern enumeration and classification.
 * [objects/authenticode-signerinfo](objects/authenticode-signerinfo/definition.json) - Authenticode signer info.
 * [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 * [objects/bank-account](objects/bank-account/definition.json) - Object describing bank account information based on account description from goAML 4.0.
@@ -161,6 +162,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
+* [objects/weakness](objects/weakness/definition.json) - Weakness object as described in a CWE.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
 * [objects/yabin](objects/yabin/definition.json) - yabin.py generates Yara rules from function prologs, for matching and hunting binaries. ref: [yabin](https://github.com/AlienVault-OTX/yabin).
