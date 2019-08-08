@@ -1,67 +1,74 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "title": "Validator for misp-objects",
-  "id": "https://www.github.com/MISP/misp-objects/schema.json",
+  "additionalProperties": false,
   "defs": {
     "attribute": {
-      "type": "object",
       "additionalProperties": false,
       "properties": {
-        "misp-attribute": {
-          "type": "string"
-        },
-        "ui-priority": {
-          "type": "number"
-        },
         "categories": {
-          "type": "array",
-          "uniqueItems": true,
           "items": {
             "type": "string"
-          }
-        },
-        "values_list": {
+          },
           "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string"
-          }
+          "uniqueItems": true
         },
-        "sane_default": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string"
-          }
-        },
-        "multiple": {
-          "type": "boolean"
+        "description": {
+          "type": "string"
         },
         "disable_correlation": {
           "type": "boolean"
         },
-        "to_ids": {
+        "misp-attribute": {
+          "type": "string"
+        },
+        "multiple": {
           "type": "boolean"
         },
         "recommended": {
           "type": "boolean"
         },
-        "description": {
-          "type": "string"
+        "sane_default": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "to_ids": {
+          "type": "boolean"
+        },
+        "ui-priority": {
+          "type": "number"
+        },
+        "values_list": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
         }
       },
       "required": [
         "misp-attribute",
         "ui-priority",
         "description"
-      ]
+      ],
+      "type": "object"
     }
   },
-  "type": "object",
-  "additionalProperties": false,
+  "id": "https://www.github.com/MISP/misp-objects/schema.json",
   "properties": {
+    "attributes": {
+      "additionalProperties": {
+        "$ref": "#/defs/attribute",
+        "type": "object"
+      },
+      "type": "object"
+    },
+    "description": {
+      "type": "string"
+    },
     "meta-category": {
-      "type": "string",
       "enum": [
         "file",
         "network",
@@ -70,40 +77,31 @@
         "internal",
         "vulnerability",
         "climate"
-      ]
+      ],
+      "type": "string"
     },
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
+    "required": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
     },
-    "version": {
-      "type": "integer"
+    "requiredOneOf": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
     },
     "uuid": {
       "type": "string"
     },
-    "attributes": {
-      "type": "object",
-      "additionalProperties": {
-        "type": "object",
-        "$ref": "#/defs/attribute"
-      }
-    },
-    "requiredOneOf": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string"
-      }
-    },
-    "required": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string"
-      }
+    "version": {
+      "type": "integer"
     }
   },
   "required": [
@@ -113,5 +111,7 @@
     "meta-category",
     "name",
     "uuid"
-  ]
+  ],
+  "title": "Validator for misp-objects",
+  "type": "object"
 }
