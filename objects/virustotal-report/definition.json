@@ -48,14 +48,14 @@
     "comment": {
       "description": "Comment related to this hash",
       "categories": [
-        "Exernal analysis"
+        "External analysis"
       ],
       "misp-attribute": "text",
       "ui-priority": 2,
       "multiple": true
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "VirusTotal report",
   "meta-category": "misc",
   "uuid": "d7dd0154-e04f-4c34-a2fb-79f3a3a52aa4",

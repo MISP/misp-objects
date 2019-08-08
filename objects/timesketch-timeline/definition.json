@@ -12,7 +12,7 @@
     "timestamp": {
       "description": "When the log entry was seen in microseconds since Unix epoch",
       "ui-priority": 0,
-      "misp-attribute": "timestamp-microsec"
+      "misp-attribute": "text"
     },
     "timestamp_desc": {
       "description": "Text explaining what type of timestamp is it",
@@ -25,7 +25,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "A timesketch timeline object based on mandatory field in timesketch to describe a log entry.",
   "meta-category": "misc",
   "uuid": "06db0221-cbc0-4ffc-ad98-7f34549310f1",
