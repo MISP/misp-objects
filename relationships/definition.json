@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "values": [
     {
       "name": "derived-from",
@@ -239,6 +239,13 @@
     {
       "name": "authored-by",
       "description": "This relationship describes the author of a specific object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "is-author-of",
+      "description": "This relationship describes an object being author by someone.",
       "format": [
         "misp"
       ]
