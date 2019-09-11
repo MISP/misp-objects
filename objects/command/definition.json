@@ -30,7 +30,7 @@
     }
   },
   "version": 1,
-  "description": "Command functionalities related to a software malicious or not to execute specific commands. Command-line are attached to this object for the related commands.",
+  "description": "Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.",
   "meta-category": "misc",
   "uuid": "21ad70d8-d397-11e9-9ea7-43b2d5f6a6e3",
   "name": "command"
