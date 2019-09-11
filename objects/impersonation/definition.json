@@ -42,7 +42,7 @@
       "misp-attribute": "text"
     },
     "type": {
-      "description": "",
+      "description": "Type of the account",
       "ui-priority": 1,
       "misp-attribute": "text",
       "disable_correlation": true,
@@ -60,7 +60,11 @@
       "disable_correlation": true,
       "multiple": true,
       "sane_default": [
-        "Infomation stealing",
+        "Information stealing",
+        "Disinformation",
+        "Distrusting",
+        "Advertising",
+        "Parody",
         "Other"
       ]
     }
