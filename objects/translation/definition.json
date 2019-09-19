@@ -1,0 +1,34 @@
+{
+  "attributes": {
+    "original-text": {
+      "description": "Original text",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "translated-text": {
+      "description": "Text after translation",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "original-language": {
+      "description": "Language of the original text",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "translation-language": {
+      "description": "Language of translation",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "translation-service": {
+      "description": "translation service used for the translation",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Used to keep a text and its translation",
+  "meta-category": "misc",
+  "uuid": "a43b54fa-dac9-11e9-9b0d-97296aceae1a",
+  "name": "translation"
+}
