@@ -16,7 +16,7 @@
     "link": {
       "description": "Original link into the microblog post (Supposed harmless)",
       "ui-priority": 1,
-      "misp-attribute": "link",
+      "misp-attribute": "link"
     },
     "type": {
       "description": "Type of the microblog post",
@@ -82,7 +82,7 @@
       "ui-priority": 0,
       "misp-attribute": "text",
       "multiple": true
-    },
+    }
   },
   "version": 8,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
