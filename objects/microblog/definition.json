@@ -15,9 +15,8 @@
     },
     "link": {
       "description": "Original link into the microblog post (Supposed harmless)",
-      "ui-priority": 0,
-      "misp-attribute": "link",
-      "multiple": true
+      "ui-priority": 1,
+      "misp-attribute": "link"
     },
     "type": {
       "description": "Type of the microblog post",
@@ -77,9 +76,15 @@
       "ui-priority": 0,
       "multiple": true,
       "misp-attribute": "text"
+    },
+    "hashtag": {
+      "description": "Hashtag into the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
     }
   },
-  "version": 7,
+  "version": 8,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
