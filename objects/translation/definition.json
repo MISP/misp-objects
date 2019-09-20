@@ -2,7 +2,6 @@
   "requiredOneOf": [
     "original-text",
     "translated-text",
-    "original-text",
     "original-language",
     "translation-language",
     "translation-type"
