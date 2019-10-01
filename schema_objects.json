@@ -60,6 +60,7 @@
             "counter",
             "country-of-residence",
             "cpe",
+            "dash",
             "date-of-birth",
             "datetime",
             "dns-soa-email",
