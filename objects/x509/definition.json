@@ -19,18 +19,18 @@
       "disable_correlation": true
     },
     "pubkey-info-size": {
-      "description": "Length of the public key (in bits)",
+      "description": "Length of the public key (in bits expressed in decimal: eg. 256 bits)",
       "ui-priority": 0,
       "misp-attribute": "text",
       "disable_correlation": true
     },
     "pubkey-info-exponent": {
-      "description": "Exponent of the public key",
+      "description": "Exponent of the public key - in decimal",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "pubkey-info-modulus": {
-      "description": "Modulus of the public key",
+      "description": "Modulus of the public key - in Hexadecimal - no 0x, no :",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
@@ -148,7 +148,7 @@
       ]
     }
   },
-  "version": 10,
+  "version": 11,
   "description": "x509 object describing a X.509 certificate",
   "meta-category": "network",
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
