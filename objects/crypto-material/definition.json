@@ -3,7 +3,8 @@
     "text",
     "private",
     "p",
-    "q"
+    "q",
+    "modulus"
   ],
   "attributes": {
     "text": {
@@ -18,15 +19,21 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
+    "modulus": {
+      "description": "Modulus Parameter - in hexadecimal - no 0x, no :",
+      "disable_correlation": false,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
     "p": {
       "description": "Prime Parameter - P in decimal",
-      "disable_correlation": true,
+      "disable_correlation": false,
       "ui-priority": 1,
       "misp-attribute": "text"
     },
     "q": {
       "description": "Prime Parameter - Q in decimal",
-      "disable_correlation": true,
+      "disable_correlation": false,
       "ui-priority": 1,
       "misp-attribute": "text"
     },
@@ -140,7 +147,7 @@
       ]
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Cryptographic materials such as public or/and private keys.",
   "meta-category": "misc",
   "uuid": "50677f82-ec9c-4484-bb29-2519cfe56823",
