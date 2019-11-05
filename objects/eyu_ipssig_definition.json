@@ -1,0 +1,96 @@
+{
+  "name": "IPS-sig",
+  "meta-category": "internal",
+  "description": "A Fortinet representation of an IPS detection",
+  "version": 1,
+  "attributes": {
+    "source-ip": {
+      "description": "The source IP that triggered the detection",
+      "misp-attribute": "ip-src",
+      "ui-priority": 0,
+      "categories": [
+        "Intrusion Prevention System Detection Fortinet"
+      ]
+    },
+    "destination-ip": {
+      "description": "The destination IP that triggered the detection",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 0,
+      "categories": [
+        "Intrusion Prevention System Detection Fortinet"
+      ]
+    },
+    "sig-name": {
+      "description": "The IPS Signature Name at the time detection was triggered",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "categories": [
+        "Intrusion Prevention System Detection Fortinet"
+      ]
+    },
+    "sig-id": {
+      "description": "The IPS Signature ID at the time detection was triggered",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "categories": [
+        "Intrusion Prevention System Detection Fortinet"
+      ]
+    },
+    "volume-count": {
+      "description": "The number of detections on this signature in the last 24 hours",
+      "misp-attribute": "counter",
+      "ui-priority": 1,
+      "categories": [
+        "Network activity"
+      ]
+    },
+    "device-count": {
+      "description": "The number devices detectiong this signature in the last 24 hours",
+      "misp-attribute": "counter",
+      "categories": [
+        "Network activity"
+      ],
+      "ui-priority": 1
+    },
+    "sig-version": {
+      "description": "The signature version",
+      "misp-attribute": "text",
+      "categories": [
+        "Intrusion Prevention System Detection Fortinet"
+      ],
+      "ui-priority": 1
+    },
+    "vuln-id": {
+      "description": "The ID of the associated vulnerability",
+      "misp-attribute": "text",
+      "categories": [
+        "Intrusion Prevention System Detection Fortinet"
+      ],
+      "ui-priority": 1
+    },
+    "fortios-version": {
+      "description": "The version of the device that triggered detection",
+      "misp-attribute": "text",
+      "categories": [
+        "Intrusion Prevention System Detection Fortinet"
+      ],
+      "sane_default": [
+        "5.2.x",
+        "6.0.X",
+        "6.1.X",
+        "6.2.X"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "required": [
+    "sig-id",
+    "sig-version",
+    "sig-name",
+    "vuln-id"
+  ],
+  "requiredOneOf": [
+    "volumecount",
+    "devicecount"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "name": "AV-sig",
+  "meta-category": "internal",
+  "description": "A Fortinet representation of the detection for this file.",
+  "version": 1,
+  "attributes": {
+    "hash": {
+      "description": "The MD5 Hash of the file being detected",
+      "misp-attribute": "md5",
+      "ui-priority": 0,
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ]
+    },
+    "crc32": {
+      "description": "The CRC32 of the file being detected",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ]
+    },
+    "filesize": {
+      "description": "The size of the file being detected in bytes",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0,
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ]
+    },
+    "sig-id": {
+      "description": "The AV Signature ID at the time detection was triggered",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ]
+    },
+    "volume-count": {
+      "description": "The number of detections on this signature in the last 24 hours",
+      "misp-attribute": "counter",
+      "ui-priority": 1,
+      "categories": [
+        "Network activity"
+      ]
+    },
+    "device-count": {
+      "description": "The number devices detectiong this signature in the last 24 hours",
+      "misp-attribute": "counter",
+      "categories": [
+        "Network activity"
+      ],
+      "ui-priority": 1
+    },
+    "sig-version": {
+      "description": "The signature version",
+      "misp-attribute": "text",
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ],
+      "ui-priority": 1
+    },
+    "virus-name": {
+      "description": "The fortinet signature name at the time detection was triggered",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ]
+    },
+    "virus-id": {
+      "description": "The virus id of the threat detected",
+      "misp-attribute": "text",
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ],
+      "ui-priority": 1
+    },
+    "fortios-version": {
+      "description": "The version of the device that detected this sample",
+      "misp-attribute": "text",
+      "categories": [
+        "Antivirus Detection Fortinet"
+      ],
+      "sane_default": [
+        "5.2.x",
+        "6.0.X",
+        "6.1.X",
+        "6.2.X"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "required": [
+    "sig-id",
+    "sig-version",
+    "virus-name",
+    "virus-id"
+  ],
+  "requiredOneOf": [
+    "volumecount",
+    "devicecount"
+  ]
+}

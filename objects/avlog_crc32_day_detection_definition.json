@@ -1,0 +1,116 @@
+{
+  "required": [
+    "virus-name",
+    "crc32",
+    "file-size"
+  ],
+  "attributes": {
+    "virus-name": {
+        "description": "The virus name",
+        "ui-priority": 0,
+        "misp-attribute": "text"
+    },
+    "signature-id": {
+        "description": "The signature id",
+        "ui-priority": 1,
+        "misp-attribute": "text",
+        "multiple": true
+      },
+    "virus-id": {
+      "description": "Category",
+      "disable_correlation": true,
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 2,
+      "misp-attribute": "text"
+    },
+    "crc32": {
+      "description": "The worm checksum hash",
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 3,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "file-size": {
+      "description": "The file size in bytes",
+      "disable_correlation": true,
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 4,
+      "misp-attribute": "text"
+    },
+    "md5": {
+        "description": "The md5 hash",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "ui-priority": 5,
+        "misp-attribute": "text"
+    },
+    "sha1": {
+        "description": "The sha1 hash",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "ui-priority": 6,
+        "misp-attribute": "text"
+    },
+    "sha2": {
+        "description": "The sha256 hash",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "ui-priority": 7,
+        "misp-attribute": "text"
+    },
+    "file-type": {
+        "description": "The file type",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "ui-priority": 8,
+        "misp-attribute": "text"
+    },
+    "count": {
+        "description": "Detection count",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "ui-priority": 9,
+        "misp-attribute": "text"
+    },
+    "metric-count": {
+        "description": "Detection count for that signature id",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "sane_default": [
+            "devices",
+            "detections"
+          ],
+        "ui-priority": 10,
+        "misp-attribute": "text"
+    },
+    "date-seen": {
+        "description": "The date when the file was detected",
+        "disable_correlation": true,
+        "ui-priority": 11,
+        "misp-attribute": "datetime"
+      }
+  },
+  "version": 1,
+  "description": "Fortinet CRC32 virus detections in AVLOG",
+  "meta-category": "misc",
+  "uuid": "16166267-21b6-4487-a64f-2db793dd5cbf",
+  "name": "avlog-crc32-day-detection"
+}

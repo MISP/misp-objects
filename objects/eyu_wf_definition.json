@@ -1,0 +1,52 @@
+{
+  "name": "FortiGuard-Web-Filter",
+  "meta-category": "internal",
+  "description": "Fortinet Web Filter detection",
+  "version": 1,
+  "attributes": {
+    "url": {
+      "description": "URL that triggered the detection",
+      "misp-attribute": "url",
+      "ui-priority": 0,
+      "categories": [
+        "Web Filter Detection Fortinet"
+      ]
+    },
+    "category": {
+      "description": "Web Filter Category Name",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "categories": [
+        "Web Filter Detection Fortinet"
+      ]
+    },
+    "category-version": {
+      "description": "Web Filter Category Version",
+      "misp-attribute": "text",
+      "categories": [
+        "Web Filter Detection Fortinet"
+      ],
+      "ui-priority": 1
+    },
+    "webfilter-database-version": {
+      "description": "The version of the Web Filter database that triggered detection",
+      "misp-attribute": "text",
+      "categories": [
+        "Web Filter Detection Fortinet"
+      ],
+      "ui-priority": 1
+    },
+    "fortiosversion": {
+      "description": "The version of the device that detected this sample",
+      "misp-attribute": "text",
+      "categories": [
+        "Web Filter Detection Fortinet"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "required": [
+    "url",
+    "category"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "required": [
+    "ip",
+    "signature-id",
+    "count-by-signature-id",
+    "count-by-ip",
+    "metric-count"
+  ],
+  "attributes": {
+    "ip": {
+        "description": "IP Address",
+        "categories": [
+          "Network activity",
+          "External analysis"
+        ],
+        "ui-priority": 1,
+        "misp-attribute": "ip-dst",
+        "multiple": true
+    },
+    "vuln-name": {
+      "description": "Vulnerability name",
+      "disable_correlation": true,
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 2,
+      "misp-attribute": "text"
+    },
+    "signature-id": {
+      "description": "Signature id",
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 3,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "count-by-signature-id": {
+      "description": "Detection count for that signature id",
+      "disable_correlation": true,
+      "categories": [
+        "Other"
+      ],
+      "ui-priority": 4,
+      "misp-attribute": "text"
+    },
+    "count-by-ip": {
+        "description": "Detection count for that specific ip",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "ui-priority": 4,
+        "misp-attribute": "text"
+      },
+    "metric-count": {
+        "description": "Detection count for that signature id",
+        "disable_correlation": true,
+        "categories": [
+          "Other"
+        ],
+        "sane_default": [
+            "devices",
+            "detections"
+          ],
+        "ui-priority": 5,
+        "misp-attribute": "text"
+    },
+    "date-seen": {
+        "description": "The date when the IP address was detected",
+        "disable_correlation": true,
+        "ui-priority": 6,
+        "misp-attribute": "datetime"
+      }
+  },
+  "version": 1,
+  "description": "Fortinet IPS detection signature associated with an IP address in a specific time frame",
+  "meta-category": "network",
+  "uuid": "dd02de89-e3a7-4920-b201-e223fbc54eac",
+  "name": "avlog-ips-day-detection"
+}
