@@ -50,6 +50,16 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
+    "verified-username": {
+      "description": "Is the username account verified by the operator of the microblog platform",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "values_list": [
+        "Verified",
+        "Unverified",
+        "Unknown"
+      ]
+    },
     "creation-date": {
       "description": "Initial creation of the microblog post",
       "ui-priority": 0,
@@ -84,7 +94,7 @@
       "multiple": true
     }
   },
-  "version": 8,
+  "version": 9,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
