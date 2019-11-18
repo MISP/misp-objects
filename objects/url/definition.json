@@ -90,13 +90,18 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
+    "ip": {
+      "description": "Better type when the host is an IP.",
+      "ui-priority": 0,
+      "misp-attribute": "ip-dst"
+    },
     "host": {
       "description": "Full hostname",
       "ui-priority": 0,
       "misp-attribute": "hostname"
     }
   },
-  "version": 7,
+  "version": 8,
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "meta-category": "network",
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
