@@ -1,0 +1,49 @@
+{
+  "attributes": {
+    "extra": {
+      "description": "All anecdotal information of the report, which cannot be parsed into the data harmonization elements. E.g. subject of mails, etc. This is data is not automatically propagated to the events.",
+      "misp-attribute": "text"
+    },
+    "feed.accuracy": {
+      "description": "A float between 0 and 100 that represents how accurate the data in the feed is",
+      "misp-attribute": "float"
+    },
+    "feed.code": {
+      "description": "Code name for the feed, e.g. DFGS, HSDAG etc.",
+      "misp-attribute": "text"
+    },
+    "feed.documentation": {
+      "description": "A URL or hint where to find the documentation of this feed.",
+      "misp-attribute": "text"
+    },
+    "feed.name": {
+      "description": "Name for the feed, usually found in collector bot configuration.",
+      "misp-attribute": "text"
+    },
+    "feed.provider": {
+      "description": "Name for the provider of the feed, usually found in collector bot configuration.",
+      "misp-attribute": "text"
+    },
+    "feed.url": {
+      "description": "The URL of a given abuse feed, where applicable",
+      "misp-attribute": "url"
+    },
+    "raw": {
+      "description": "The original raw and unparsed data encoded in base64.",
+      "misp-attribute": "text"
+    },
+    "rtir_id": {
+      "description": "Request Tracker Incident Response ticket id.",
+      "misp-attribute": "counter"
+    },
+    "time.observation": {
+      "description": "The time the collector of the local instance processed (observed) the event.",
+      "misp-attribute": "datetime"
+    }
+  },
+  "description": "IntelMQ Report",
+  "meta-category": "network",
+  "name": "intelmq_report",
+  "uuid": "c3d34be1-904b-455b-bceb-509418392110",
+  "version": 1
+}
