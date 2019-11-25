@@ -42,7 +42,7 @@
     },
     "destination.asn": {
       "description": "The autonomous system number to which the connection headed.",
-      "misp-attribute": "asn",
+      "misp-attribute": "AS",
       "ui-priority": 1
     },
     "destination.domain_suffix": {
@@ -282,7 +282,7 @@
     },
     "source.asn": {
       "description": "The autonomous system number from which originated the connection.",
-      "misp-attribute": "asn",
+      "misp-attribute": "AS",
       "ui-priority": 1
     },
     "source.domain_suffix": {
@@ -415,5 +415,5 @@
   "meta-category": "network",
   "name": "intelmq_event",
   "uuid": "491ac7d2-25a1-4078-8246-b04a132d003d",
-  "version": 2
+  "version": 3
 }
