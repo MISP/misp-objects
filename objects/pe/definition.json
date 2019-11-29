@@ -1,6 +1,7 @@
 {
   "requiredOneOf": [
     "text",
+    "type",
     "original-filename",
     "internal-filename",
     "entrypoint-address"
