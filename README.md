@@ -160,6 +160,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/user-account](objects/user-account/definition.json) - Object describing a user account (UNIX, Windows, etc).
 * [objects/vehicle](objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
+* [objects/virustotal-graph](objects/virustotal-graph/definition.json) - VirusTotal graph.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
 * [objects/weakness](objects/weakness/definition.json) - Weakness object as described in a CWE.
