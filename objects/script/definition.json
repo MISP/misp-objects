@@ -1,13 +1,19 @@
 {
   "requiredOneOf": [
     "script",
-    "filename"
+    "filename",
+    "attachment"
   ],
   "attributes": {
     "script": {
       "description": "Free text of the script.",
       "ui-priority": 10,
       "misp-attribute": "text"
+    },
+    "script-as-attachment": {
+      "description": "Attachment of the script.",
+      "ui-priority": 10,
+      "misp-attribute": "attachment"
     },
     "comment": {
       "description": "Comment associated to the script.",
@@ -57,7 +63,7 @@
       ]
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.",
   "meta-category": "misc",
   "uuid": "6bce7d01-dbec-4054-b3c2-3655a19382e2",
