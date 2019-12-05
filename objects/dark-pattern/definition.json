@@ -12,7 +12,7 @@
       "misp-attribute": "text"
     },
     "time": {
-      "description": "Date and time of first-seen",
+      "description": "Date and time when first-seen",
       "ui-priority": 0,
       "disable_correlation": true,
       "misp-attribute": "datetime"
@@ -55,8 +55,8 @@
       "misp-attribute": "attachment"
     }
   },
-  "version": 1,
-  "description": "An Iten whose User Interface implements a dark pattern.",
+  "version": 2,
+  "description": "An Item whose User Interface implements a dark pattern.",
   "meta-category": "misc",
   "uuid": "05755e29-8f5f-464d-bcff-2b4686472769",
   "name": "dark-pattern-item"
