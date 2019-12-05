@@ -79,6 +79,7 @@
             "email-subject",
             "email-thread-index",
             "email-x-mailer",
+            "eppn",
             "filename",
             "filename|authentihash",
             "filename|impfuzzy",
