@@ -76,6 +76,12 @@
       "misp-attribute": "url",
       "multiple": true
     },
+    "embedded-safe-link": {
+      "description": "Safe link into the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true
+    },
     "removal-date": {
       "description": "When the microblog post was removed",
       "ui-priority": 0,
@@ -94,7 +100,7 @@
       "multiple": true
     }
   },
-  "version": 9,
+  "version": 10,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
