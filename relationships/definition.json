@@ -1,5 +1,5 @@
 {
-  "version": 16,
+  "version": 17,
   "values": [
     {
       "name": "derived-from",
@@ -202,6 +202,13 @@
       "format": [
         "misp",
         "stix-2.0"
+      ]
+    },
+    {
+      "name": "mentions",
+      "description": "This relationship describes that the source object mentions the target object.",
+      "format": [
+        "misp"
       ]
     },
     {
