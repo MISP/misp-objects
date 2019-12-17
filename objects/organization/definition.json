@@ -65,9 +65,15 @@
         "Target"
       ],
       "disable_correlation": true
+    },
+    "VAT": {
+      "description": "VAT or TAX-ID of the organization",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "An object which describes an organization.",
   "meta-category": "misc",
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
