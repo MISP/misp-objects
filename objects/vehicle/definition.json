@@ -9,7 +9,8 @@
     "date-first-registration",
     "image-url",
     "gearbox",
-    "indicative-value"
+    "indicative-value",
+    "state",
   ],
   "attributes": {
     "description": {
@@ -70,7 +71,13 @@
       "ui-priority": 0,
       "misp-attribute": "text",
       "multiple": true
-    }
+    },
+     "state": {
+      "description": "State of the vehicle",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
   },
   "version": 2,
   "description": "Vehicle object template to describe a vehicle information and registration",
