@@ -10,7 +10,7 @@
     "image-url",
     "gearbox",
     "indicative-value",
-    "state",
+    "state"
   ],
   "attributes": {
     "description": {
@@ -77,7 +77,7 @@
       "ui-priority": 0,
       "misp-attribute": "text",
       "disable_correlation": true
-    },
+    }
   },
   "version": 3,
   "description": "Vehicle object template to describe a vehicle information and registration",
