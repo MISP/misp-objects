@@ -54,6 +54,7 @@
       "description": "Is the username account verified by the operator of the microblog platform",
       "ui-priority": 0,
       "misp-attribute": "text",
+      "disable_correlation": true,
       "values_list": [
         "Verified",
         "Unverified",
@@ -100,7 +101,7 @@
       "multiple": true
     }
   },
-  "version": 10,
+  "version": 11,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
