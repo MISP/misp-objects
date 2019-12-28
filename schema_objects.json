@@ -120,6 +120,7 @@
             "issue-date-of-the-visa",
             "ja3-fingerprint-md5",
             "jabber-id",
+            "kusto-query",
             "last-name",
             "link",
             "mac-address",
