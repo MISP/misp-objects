@@ -445,9 +445,14 @@
       "description": "Hash (md5) calculated from the import table",
       "ui-priority": 0,
       "misp-attribute": "imphash"
+    },
+    "compilation-timestamp": {
+      "description": "Compilation timestamp",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
     }
   },
-  "version": 18,
+  "version": 19,
   "description": "File object describing a file with meta-information",
   "meta-category": "file",
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
