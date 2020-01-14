@@ -61,7 +61,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "Paste or similar post from a website allowing to share privately or publicly posts.",
   "meta-category": "misc",
   "uuid": "cedc055c-78aa-49a4-bfd7-4cc30cecef12",

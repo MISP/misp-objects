@@ -1,0 +1,20 @@
+{
+  "attributes": {
+    "value": {
+      "description": "command code",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "description": {
+      "description": "description of the command",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+  "meta-category": "misc",
+  "uuid": "88ebe222-d3cc-11e9-875d-7f13f460adaf",
+  "name": "command-line"
+}

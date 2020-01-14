@@ -3,7 +3,7 @@
   "uuid": "bf148c58-3e7e-414e-8de8-5d96379ca77e",
   "meta-category": "network",
   "description": "Netflow object describes an network object based on the Netflowv5/v9 minimal definition",
-  "version": 1,
+  "version": 2,
   "attributes": {
     "ip-dst": {
       "misp-attribute": "ip-dst",
@@ -70,6 +70,7 @@
     "protocol": {
       "misp-attribute": "text",
       "ui-priority": 0,
+      "disable_correlation": true,
       "values_list": [
         "TCP",
         "UDP",
@@ -133,18 +134,26 @@
     "first-packet-seen": {
       "misp-attribute": "datetime",
       "ui-priority": 1,
-      "description": "First packet seen in this flow"
+      "description": "First packet seen in this flow",
+      "disable_correlation": true
     },
     "last-packet-seen": {
       "misp-attribute": "datetime",
       "ui-priority": 0,
-      "description": "Last packet seen in this flow"
+      "description": "Last packet seen in this flow",
+      "disable_correlation": true
+    },
+    "community-id": {
+      "misp-attribute": "community-id",
+      "ui-priority": 0,
+      "description": "Community id of the represented flow"
     }
   },
   "requiredOneOf": [
     "first-packet-seen",
     "ip-src",
     "ip-dst",
-    "dst-port"
+    "dst-port",
+    "community-id"
   ]
 }

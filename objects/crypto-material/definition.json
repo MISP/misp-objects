@@ -1,0 +1,161 @@
+{
+  "requiredOneOf": [
+    "text",
+    "private",
+    "p",
+    "q",
+    "modulus"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the cryptographic materials.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "rsa-modulus-size": {
+      "description": "RSA modulus size in bits",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "modulus": {
+      "description": "Modulus Parameter - in hexadecimal - no 0x, no :",
+      "disable_correlation": false,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "e": {
+      "description": "RSA public exponent",
+      "disable_correlation": false,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "p": {
+      "description": "Prime Parameter - P in decimal",
+      "disable_correlation": false,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "q": {
+      "description": "Prime Parameter - Q in decimal",
+      "disable_correlation": false,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "g": {
+      "description": "Curve Parameter - G in decimal",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "y": {
+      "description": "Curve Parameter - Y in decimal",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "x": {
+      "description": "Curve Parameter - X in decimal",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "n": {
+      "description": "Curve Parameter - N in decimal",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "b": {
+      "description": "Curve Parameter - B in decimal",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "curve-length": {
+      "description": "Length of the Curve in bits",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "Gx": {
+      "description": "Curve Parameter - Gx in decimal",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "Gy": {
+      "description": "Curve Parameter - Gy in decimal",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "private": {
+      "description": "Private part of the cryptographic materials in PEM format",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "type": {
+      "description": "Type of crytographic materials",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "values_list": [
+        "RSA",
+        "DSA",
+        "ECDSA",
+        "unknown"
+      ]
+    },
+    "ecdsa-type": {
+      "description": "Curve type of the ECDSA cryptographic materials",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "values_list": [
+        "Anomalous",
+        "M-221",
+        "E-222",
+        "NIST P-224",
+        "Curve1174",
+        "Curve25519",
+        "BN(2,254)",
+        "brainpoolP256t1",
+        "ANSSI FRP256v1",
+        "NIST P-256",
+        "secp256k1",
+        "E-382",
+        "M-383",
+        "Curve383187",
+        "brainpoolP384t1",
+        "NIST P-384",
+        "Curve41417",
+        "Ed448-Goldilocks",
+        "M-511",
+        "E-521"
+      ]
+    },
+    "origin": {
+      "description": "Origin of the cryptographic materials",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "mathematical-attack",
+        "exhaustive-search",
+        "bruteforce-attack",
+        "malware-extraction",
+        "memory-interception",
+        "network-interception",
+        "leak",
+        "unknown"
+      ]
+    }
+  },
+  "version": 3,
+  "description": "Cryptographic materials such as public or/and private keys.",
+  "meta-category": "misc",
+  "uuid": "50677f82-ec9c-4484-bb29-2519cfe56823",
+  "name": "crypto-material"
+}

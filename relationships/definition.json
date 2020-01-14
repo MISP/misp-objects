@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 17,
   "values": [
     {
       "name": "derived-from",
@@ -205,6 +205,13 @@
       ]
     },
     {
+      "name": "mentions",
+      "description": "This relationship describes that the source object mentions the target object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "mitigates",
       "description": "This relationship describes a source object which mitigates the target object.",
       "format": [
@@ -244,6 +251,13 @@
       ]
     },
     {
+      "name": "is-author-of",
+      "description": "This relationship describes an object being author by someone.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
       "name": "located",
       "description": "This relationship describes the location (of any type) of a specific object.",
       "format": [
@@ -253,6 +267,13 @@
     {
       "name": "included-in",
       "description": "This relationship describes an object included in another object.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "includes",
+      "description": "This relationship describes an object that includes an other object.",
       "format": [
         "misp"
       ]
@@ -938,6 +959,20 @@
     {
       "name": "witness-of",
       "description": "Represents an object being a witness of something.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "injects-into",
+      "description": "Represents an object injecting something into something",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "injected-into",
+      "description": "Represents an object which is injected something into something",
       "format": [
         "misp"
       ]

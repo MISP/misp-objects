@@ -70,6 +70,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/ais-info](objects/ais-info/definition.json) - Object describing Automated Indicator Sharing (AIS) information source markings.
 * [objects/android-permission](objects/android-permission/definition.json) - A set of android permissions - one or more permission(s) which can be linked to other objects (e.g. file).
 * [objects/asn](objects/asn/definition.json) - Autonomous system object describing a BGP autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
+* [objects/attack-pattern](objects/attack-pattern/definition.json) - Attack Pattern object describing a common attack pattern enumeration and classification.
 * [objects/authenticode-signerinfo](objects/authenticode-signerinfo/definition.json) - Authenticode signer info.
 * [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 * [objects/bank-account](objects/bank-account/definition.json) - Object describing bank account information based on account description from goAML 4.0.
@@ -87,10 +88,12 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target.
 * [objects/device](objects/device/definition.json) - An object to describe a device such as a computer, laptop or alike.
 * [objects/diameter-attack](objects/diameter-attack/definition.json) - Attack as seen on diameter authentication against a GSM, UMTS or LTE network.
+* [objects/dns-record](objects/dns-record/definition.json) - A DNS record object to describe the associated records for a domain.
 * [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 * [objects/elf](objects/elf/definition.json) - Object describing an Executable and Linkable Format (ELF).
 * [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format (ELF).
 * [objects/email](objects/email/definition.json) - An email object.
+* [objects/employee](objects/employee/definition.json) - An employee object.
 * [objects/exploit-poc](objects/exploit-poc/definition.json) - Exploit-poc object describing a proof of concept or exploit of a vulnerability. This object has often a relationship with a vulnerability object.
 * [objects/facial-composite](objects/facial-composite/definition.json) A facial composite object.
 * [objects/fail2ban](objects/fail2ban/definition.json) - A fail2ban object.
@@ -137,6 +140,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/sb-signature](objects/sb-signature/definition.json) - Sandbox detection signature object.
 * [objects/script](objects/script/definition.json) - Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.
 * [objects/shell-commands](objects/shell-commands/definition.json) - Object describing a series of shell commands executed. This object can be linked with malicious files in order to describe a specific execution of shell commands.
+* [objects/shodan](objects/shodan/definition.json) - A shodan object to describe a shodan report.
 * [objects/shortened-link](objects/shortened-link/definition.json) - Shortened link and its redirect target.
 * [objects/short-message-service](objects/short-message-service/definition.json) - Short Message Service (SMS) object template describing one or more SMS message(s).
 * [objects/ss7-attack](objects/ss7-attack/definition.json) - SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.
@@ -156,8 +160,10 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/user-account](objects/user-account/definition.json) - Object describing a user account (UNIX, Windows, etc).
 * [objects/vehicle](objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
 * [objects/victim](objects/victim/definition.json) - a victim object to describe the organisation being targeted or abused.
+* [objects/virustotal-graph](objects/virustotal-graph/definition.json) - VirusTotal graph.
 * [objects/virustotal-report](objects/virustotal-report/definition.json) - VirusTotal report.
 * [objects/vulnerability](objects/vulnerability/definition.json) - Vulnerability object to describe software or hardware vulnerability as described in a CVE.
+* [objects/weakness](objects/weakness/definition.json) - Weakness object as described in a CWE.
 * [objects/whois](objects/whois/definition.json) - Whois records information for a domain name.
 * [objects/x509](objects/x509/definition.json) - x509 object describing a X.509 certificate.
 * [objects/yabin](objects/yabin/definition.json) - yabin.py generates Yara rules from function prologs, for matching and hunting binaries. ref: [yabin](https://github.com/AlienVault-OTX/yabin).

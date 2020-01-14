@@ -9,9 +9,14 @@
       "misp-attribute": "text"
     },
     "url": {
-      "description": "Original URL location of the microblog post",
+      "description": "Original URL location of the microblog post (potentially malicious)",
       "ui-priority": 1,
       "misp-attribute": "url"
+    },
+    "link": {
+      "description": "Original link into the microblog post (Supposed harmless)",
+      "ui-priority": 1,
+      "misp-attribute": "link"
     },
     "type": {
       "description": "Type of the microblog post",
@@ -45,6 +50,17 @@
       "ui-priority": 0,
       "misp-attribute": "text"
     },
+    "verified-username": {
+      "description": "Is the username account verified by the operator of the microblog platform",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "values_list": [
+        "Verified",
+        "Unverified",
+        "Unknown"
+      ]
+    },
     "creation-date": {
       "description": "Initial creation of the microblog post",
       "ui-priority": 0,
@@ -55,10 +71,16 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
-    "link": {
+    "embedded-link": {
       "description": "Link into the microblog post",
       "ui-priority": 0,
       "misp-attribute": "url",
+      "multiple": true
+    },
+    "embedded-safe-link": {
+      "description": "Safe link into the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "link",
       "multiple": true
     },
     "removal-date": {
@@ -71,9 +93,15 @@
       "ui-priority": 0,
       "multiple": true,
       "misp-attribute": "text"
+    },
+    "hashtag": {
+      "description": "Hashtag into the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
     }
   },
-  "version": 6,
+  "version": 11,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",

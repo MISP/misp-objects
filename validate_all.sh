@@ -8,7 +8,7 @@ set -x
 diffs=`git status --porcelain | wc -l`
 
 if ! [ $diffs -eq 0 ]; then
-	echo "Please make sure you run ./jq_all_the_things.sh before commiting."
+	echo "ERROR: Please make sure you run ./jq_all_the_things.sh before doing a PR."
 	exit 1
 fi
 
@@ -18,7 +18,7 @@ find -name "*.json" -exec chmod -x "{}" \;
 diffs=`git status --porcelain | wc -l`
 
 if ! [ $diffs -eq 0 ]; then
-    echo "Please make sure you run remove the executable flag on the json files before commiting: find -name "*.json" -exec chmod -x \"{}\" \\;"
+    echo "ERROR: Please make sure you run remove the executable flag on the json files before doing a PR: find -name "*.json" -exec chmod -x \"{}\" \\;"
     exit 1
 fi
 
@@ -33,3 +33,5 @@ done
 jsonschema -i relationships/definition.json schema_relationships.json
 
 ./unique_uuid.py
+
+echo "Success: All is fine, please go ahead.".

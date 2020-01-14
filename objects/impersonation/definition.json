@@ -1,0 +1,77 @@
+{
+  "attributes": {
+    "type-of-account": {
+      "description": "Type of the impersonated account",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Twitter",
+        "Facebook",
+        "LinkedIn",
+        "Reddit",
+        "Google+",
+        "Instagram",
+        "Forum",
+        "Other"
+      ]
+    },
+    "account-url": {
+      "description": "url of the impersonating account",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "account-name": {
+      "description": "Name of the impersonating account",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "impersonated-account-url": {
+      "description": "url of the impersonated account",
+      "ui-priority": 1,
+      "misp-attribute": "link"
+    },
+    "impersonated-account-name": {
+      "description": "Name of the impersonated account",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "real-name": {
+      "description": "Real name of the impersonated person or entity",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "type": {
+      "description": "Type of the account",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Person",
+        "Association",
+        "Enterprise",
+        "Other"
+      ]
+    },
+    "objective": {
+      "description": "Objective of the impersonation",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "sane_default": [
+        "Information stealing",
+        "Disinformation",
+        "Distrusting",
+        "Advertising",
+        "Parody",
+        "Other"
+      ]
+    }
+  },
+  "version": 1,
+  "description": "Represent an impersonating account",
+  "meta-category": "misc",
+  "uuid": "01833a92-d2ff-11e9-8016-d3b988153702",
+  "name": "impersonation"
+}

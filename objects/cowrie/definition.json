@@ -116,9 +116,14 @@
       "ui-priority": 1,
       "misp-attribute": "text",
       "disable_correlation": true
+    },
+    "hassh": {
+      "description": "HASSH of the client SSH session following Salesforce algorithm",
+      "misp-attribute": "hassh-md5",
+      "ui-priority": 1
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "Cowrie honeypot object template",
   "meta-category": "network",
   "uuid": "ae085d32-6534-4d52-b3eb-063fccb753e7",
