@@ -16,7 +16,8 @@
     "link": {
       "description": "Original link into the microblog post (Supposed harmless)",
       "ui-priority": 1,
-      "misp-attribute": "link"
+      "misp-attribute": "link",
+      "to_ids": 0
     },
     "type": {
       "description": "Type of the microblog post",
@@ -81,7 +82,8 @@
       "description": "Safe link into the microblog post",
       "ui-priority": 0,
       "misp-attribute": "link",
-      "multiple": true
+      "multiple": true,
+      "to_ids": 0
     },
     "removal-date": {
       "description": "When the microblog post was removed",
@@ -101,7 +103,7 @@
       "multiple": true
     }
   },
-  "version": 11,
+  "version": 12,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
