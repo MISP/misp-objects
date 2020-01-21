@@ -53,6 +53,7 @@
             "campaign-name",
             "cc-number",
             "cdhash",
+            "chrome-extension-id",
             "comment",
             "community-id",
             "cookie",
