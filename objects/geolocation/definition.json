@@ -49,6 +49,11 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "neighborhood": {
+      "description": "Neighborhood.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "zipcode": {
       "description": "Zip Code.",
       "misp-attribute": "text",
