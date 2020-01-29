@@ -9,12 +9,40 @@
     "date-first-registration",
     "image-url",
     "gearbox",
+    "exterior color",
+    "interior color",
+    "type",
+    "state",
     "indicative-value"
   ],
   "attributes": {
     "description": {
       "description": "Description of the vehicle",
       "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "exterior color": {
+      "description": "Exterior color of the vehicule",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "state": {
+      "description": "State of the vehicule (stolen or recovered)",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "interior color": {
+      "description": "Interior color of the vehicule",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "type": {
+      "description": "Type of the vehicule",
+      "ui-priority": 0,
       "misp-attribute": "text",
       "disable_correlation": true
     },
