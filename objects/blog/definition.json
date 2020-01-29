@@ -1,0 +1,91 @@
+{
+  "requiredOneOf": [
+    "post"
+  ],
+  "attributes": {
+    "post": {
+      "description": "Raw post.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "url": {
+      "description": "Original URL location of the blog post (potentially malicious).",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "link": {
+      "description": "Original link into the blog post (Supposed harmless).",
+      "ui-priority": 1,
+      "misp-attribute": "link"
+    },
+    "type": {
+      "description": "Type of blog post.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Medium",
+        "WordPress",
+        "Blogger",
+        "Tumbler",
+        "LiveJournal",
+        "Forum",
+        "Other"
+      ]
+    },
+    "username": {
+      "description": "Username who posted the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "verified-username": {
+      "description": "Is the username account verified by the operator of the blog platform.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "values_list": [
+        "Verified",
+        "Unverified",
+        "Unknown"
+      ]
+    },
+    "creation-date": {
+      "description": "Initial creation of the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "modification-date": {
+      "description": "Last update of the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "embedded-link": {
+      "description": "Site linked by the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "url",
+      "multiple": true
+    },
+    "embedded-safe-link": {
+      "description": "Safe site linked by the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true
+    },
+    "removal-date": {
+      "description": "When the blog post was removed.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "username-quoted": {
+      "description": "Username who are quoted into the blog post.",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 11,
+  "description": "Blog post like Medium or WordPress.",
+  "meta-category": "misc",
+  "uuid": "1f165fc0-b158-498f-8bc8-6dc3d2822bb1",
+  "name": "blog"
+}
