@@ -95,6 +95,6 @@
   "version": 5,
   "description": "Object describing a meme (image).",
   "meta-category": "file",
-  "uuid": "7e927620-b97c-4b00-98c0-8c0184d83d21",
-  "name": "forged-document"
+  "uuid": "6f6c3b61-f085-475e-93df-2e2d9c2fb0f6",
+  "name": "meme-image"
 }

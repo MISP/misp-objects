@@ -46,7 +46,7 @@
         "other"
       ]
     },
-      "attachment": {
+    "attachment": {
       "description": "The leaked document file.",
       "ui-priority": 1,
       "misp-attribute": "attachment"
