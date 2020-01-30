@@ -34,6 +34,7 @@
       "ui-priority": 1,
       "misp-attribute": "text",
       "disable_correlation": true,
+      "multiple": true,
       "sane_default": [
         "email",
         "letterhead",
@@ -71,6 +72,12 @@
       "ui-priority": 1,
       "misp-attribute": "link"
     },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
     "objective": {
       "description": "Reason for leaking the document.",
       "ui-priority": 1,
@@ -98,7 +105,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "Object describing a leaked document.",
   "meta-category": "file",
   "uuid": "ea145ecd-b3c2-4f57-ac11-c16e883c4247",

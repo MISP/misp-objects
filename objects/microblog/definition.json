@@ -19,6 +19,12 @@
       "misp-attribute": "link",
       "to_ids": false
     },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
     "type": {
       "description": "Type of the microblog post",
       "ui-priority": 1,
@@ -103,7 +109,7 @@
       "multiple": true
     }
   },
-  "version": 12,
+  "version": 13,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",

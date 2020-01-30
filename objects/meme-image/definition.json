@@ -66,6 +66,12 @@
       "ui-priority": 1,
       "misp-attribute": "link"
     },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
     "objective": {
       "description": "Objective of the meme.",
       "ui-priority": 1,
@@ -92,7 +98,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "Object describing a meme (image).",
   "meta-category": "file",
   "uuid": "6f6c3b61-f085-475e-93df-2e2d9c2fb0f6",

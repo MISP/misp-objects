@@ -9,7 +9,7 @@
       "misp-attribute": "text"
     },
     "title": {
-      "description": "Raw post.",
+      "description": "Title of blog post.",
       "ui-priority": 1,
       "misp-attribute": "text"
     },
@@ -21,6 +21,12 @@
     "link": {
       "description": "Original link into the blog post (Supposed harmless).",
       "ui-priority": 1,
+      "misp-attribute": "link"
+    },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
       "misp-attribute": "link"
     },
     "type": {
@@ -88,7 +94,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 12,
+  "version": 13,
   "description": "Blog post like Medium or WordPress.",
   "meta-category": "misc",
   "uuid": "1f165fc0-b158-498f-8bc8-6dc3d2822bb1",
