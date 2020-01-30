@@ -45,6 +45,6 @@ for mispobject in objects:
     with open(fullPathClusters) as fp:
         c = json.load(fp)
     if not c['description'].endswith('.'):
-        c['description'] = c['description']+"."
-    v = "- [objects/{}](objects/{}/definition.json) - {}".format(c['name'], c['name'],c['description'])
+        c['description'] = c['description'] + "."
+    v = "- [objects/{}](objects/{}/definition.json) - {}".format(c['name'], c['name'], c['description'])
     print(v)
