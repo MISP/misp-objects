@@ -25,6 +25,11 @@
       "multiple": true,
       "misp-attribute": "link"
     },
+    "attachment": {
+      "description": "The microblog post file or screen capture.",
+      "ui-priority": 1,
+      "misp-attribute": "attachment"
+    },
     "type": {
       "description": "Type of the microblog post",
       "ui-priority": 1,
@@ -109,7 +114,7 @@
       "multiple": true
     }
   },
-  "version": 13,
+  "version": 14,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
