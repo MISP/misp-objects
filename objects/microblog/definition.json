@@ -28,6 +28,7 @@
     "attachment": {
       "description": "The microblog post file or screen capture.",
       "ui-priority": 1,
+      "multiple": true,
       "misp-attribute": "attachment"
     },
     "type": {
@@ -114,7 +115,7 @@
       "multiple": true
     }
   },
-  "version": 14,
+  "version": 15,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
