@@ -8,6 +8,11 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
+    "title": {
+      "description": "Raw post.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
     "url": {
       "description": "Original URL location of the blog post (potentially malicious).",
       "ui-priority": 1,
@@ -83,7 +88,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 11,
+  "version": 12,
   "description": "Blog post like Medium or WordPress.",
   "meta-category": "misc",
   "uuid": "1f165fc0-b158-498f-8bc8-6dc3d2822bb1",
