@@ -3,7 +3,7 @@
   "uuid": "49606b06-22f0-4ac8-8eee-2f12ad46f3d3",
   "meta-category": "misc",
   "description": "",
-  "version": 2,
+  "version": 3,
   "requiredOneOf": [
     "password",
     "username",
@@ -25,6 +25,12 @@
       "description": "Identifier of the account.",
       "ui-priority": 1,
       "misp-attribute": "text"
+    },
+    "user-avatar": {
+      "description": "A user profile picture or avatar.",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "attachment"
     },
     "password": {
       "description": "Password related to the username.",
