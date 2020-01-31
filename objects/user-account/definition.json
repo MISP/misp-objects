@@ -3,7 +3,7 @@
   "uuid": "49606b06-22f0-4ac8-8eee-2f12ad46f3d3",
   "meta-category": "misc",
   "description": "",
-  "version": 1,
+  "version": 2,
   "requiredOneOf": [
     "password",
     "username",
@@ -53,6 +53,11 @@
         "windows-local",
         "windows-domain"
       ]
+    },
+    "link": {
+      "description": "Original link into the account page (Supposed harmless)",
+      "ui-priority": 1,
+      "misp-attribute": "link"
     },
     "is_service_account": {
       "description": "Specifies if the account is associated with a network service.",
