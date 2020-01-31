@@ -35,6 +35,8 @@
         "letterhead",
         "speech",
         "literature",
+        "blog",
+        "microblog",
         "photo",
         "audio",
         "invoice",
@@ -99,7 +101,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 6,
+  "version": 7,
   "description": "Object describing a forged document.",
   "meta-category": "file",
   "uuid": "7e927620-b97c-4b00-98c0-8c0184d83d21",
