@@ -1,18 +1,23 @@
 {
   "requiredOneOf": [
     "name",
-    "alias"
+    "alias",
+    "archive",
+    "url",
+    "link",
+    "attachment"
   ],
   "attributes": {
     "name": {
       "description": "Name of the news agency.",
-      "disable_correlation": false,
+      "disable_correlation": true,
       "ui-priority": 100,
       "misp-attribute": "text"
     },
     "alias": {
       "description": "Alias of the news agency.",
       "ui-priority": 99,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true
     },
@@ -65,7 +70,7 @@
       "multiple": true
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "News agencies compile news and disseminate news in bulk.",
   "meta-category": "misc",
   "uuid": "92b3f7fd-c4bc-42af-a73b-033ace439622",

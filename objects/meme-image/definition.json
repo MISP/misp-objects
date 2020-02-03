@@ -1,6 +1,7 @@
 {
   "requiredOneOf": [
     "attachment",
+    "archive",
     "document-text"
   ],
   "attributes": {
@@ -98,7 +99,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 6,
+  "version": 7,
   "description": "Object describing a meme (image).",
   "meta-category": "file",
   "uuid": "6f6c3b61-f085-475e-93df-2e2d9c2fb0f6",
