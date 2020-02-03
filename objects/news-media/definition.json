@@ -1,20 +1,31 @@
 {
   "requiredOneOf": [
     "source",
-    "alias"
+    "alias",
+    "archive",
+    "content",
+    "url",
+    "link",
+    "attachment"
   ],
   "attributes": {
     "source": {
       "description": "Name of the news source.",
-      "disable_correlation": false,
+      "disable_correlation": true,
       "ui-priority": 100,
       "misp-attribute": "text"
     },
     "alias": {
       "description": "Alias of the news source.",
       "ui-priority": 99,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true
+    },
+    "username": {
+      "description": "Username who posted the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
     },
     "content": {
       "description": "Raw content of the news.",
@@ -112,6 +123,18 @@
       "misp-attribute": "text",
       "multiple": true
     },
+    "embedded-link": {
+      "description": "Site linked by the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "url",
+      "multiple": true
+    },
+    "embedded-safe-link": {
+      "description": "Safe site linked by the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true
+    },
     "e-mail": {
       "description": "Email address of the news source.",
       "ui-priority": 10,
@@ -119,8 +142,8 @@
       "multiple": true
     }
   },
-  "version": 1,
-  "description": "News media are forms of mass media deliverings news to the general public.",
+  "version": 2,
+  "description": "News media are forms of mass media delivering news to the general public.",
   "meta-category": "misc",
   "uuid": "691463c5-5302-4847-9bec-4c56ccfec677",
   "name": "news-media"

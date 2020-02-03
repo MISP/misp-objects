@@ -1,6 +1,10 @@
 {
   "requiredOneOf": [
-    "post"
+    "post",
+    "archive",
+    "url",
+    "link",
+    "attachment"
   ],
   "attributes": {
     "post": {
@@ -94,7 +98,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 13,
+  "version": 14,
   "description": "Blog post like Medium or WordPress.",
   "meta-category": "misc",
   "uuid": "1f165fc0-b158-498f-8bc8-6dc3d2822bb1",
