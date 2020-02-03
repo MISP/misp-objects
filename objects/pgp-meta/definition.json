@@ -1,30 +1,18 @@
 {
   "required": [
-    "key"
+    "key-id"
   ],
   "attributes": {
-    "first-seen": {
-      "description": "First time the tuple has been seen",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "last-seen": {
-      "description": "Last time the tuple has been seen",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
     "key-id": {
-      "description": "key-id",
+      "description": "Key ID in hexadecimal",
       "ui-priority": 1,
       "misp-attribute": "text",
       "multiple": true
     },
     "user-id-email": {
-      "description": "User ID packet, email address of the key holder",
+      "description": "User ID packet, email address of the key holder (UTF-8 text)",
       "ui-priority": 1,
-      "misp-attribute": "email-subject",
+      "misp-attribute": "text",
       "multiple": true
     },
     "user-id-name": {
