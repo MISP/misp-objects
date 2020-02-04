@@ -1,6 +1,7 @@
 {
   "requiredOneOf": [
-    "account"
+    "account",
+    "iban"
   ],
   "attributes": {
     "text": {
@@ -162,7 +163,7 @@
       ]
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An object describing bank account information based on account description from goAML 4.0.",
   "meta-category": "financial",
   "uuid": "b4712203-95a8-4883-80e9-b566f5df11c9",
