@@ -16,9 +16,14 @@
       "misp-attribute": "text",
       "multiple": true
     },
-    "type-of-organizarion": {
+    "type-of-organization": {
       "description": "Type of the organization",
       "ui-priority": 97,
+      "misp-attribute": "text"
+    },
+    "description": {
+      "description": "Description of the organization",
+      "ui-priority": 96,
       "misp-attribute": "text"
     },
     "date-of-inception": {
@@ -73,7 +78,7 @@
       "multiple": true
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "An object which describes an organization.",
   "meta-category": "misc",
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
