@@ -44,6 +44,21 @@
       "description": "Type of the vehicule",
       "ui-priority": 0,
       "misp-attribute": "text",
+      "sane_default": [
+        "car",
+        "bus",
+        "caravan",
+        "bicycle",
+        "boat",
+        "taxi",
+        "camper van",
+        "motorcycle",
+        "truck",
+        "scooter",
+        "tractor",
+        "trailer",
+        "van"
+      ],
       "disable_correlation": true
     },
     "make": {
@@ -87,6 +102,12 @@
       "misp-attribute": "text",
       "multiple": true
     },
+    "image": {
+      "description": "Image of the vehicle.",
+      "ui-priority": 0,
+      "misp-attribute": "attachment",
+      "multiple": true
+    },
     "gearbox": {
       "description": "Gearbox",
       "ui-priority": 0,
@@ -100,7 +121,7 @@
       "multiple": true
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "Vehicle object template to describe a vehicle information and registration",
   "meta-category": "misc",
   "uuid": "683c076c-f695-4ff2-8efa-e98a418049f4",
