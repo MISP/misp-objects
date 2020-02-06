@@ -37,9 +37,19 @@
       "ui-priority": 0,
       "misp-attribute": "datetime",
       "disable_correlation": true
+    },
+    "smsc": {
+      "description": "SMS Message Center",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "name": {
+      "description": "Sender name",
+      "ui-priority": 0,
+      "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Short Message Service (SMS) object template describing one or more SMS message. Restriction of the initial format 3GPP 23.038 GSM character set doesn't apply.",
   "meta-category": "misc",
   "uuid": "4851a3dc-e1a6-43ac-9d97-f0d13a099fd2",
