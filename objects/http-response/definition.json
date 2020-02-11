@@ -1,7 +1,7 @@
 {
   "requiredOneOf": [
-    "url",
-    "uri"
+    "status",
+    "status-text"
   ],
   "attributes": {
     "text": {
@@ -58,8 +58,15 @@
       ],
       "description": "Size of the receiverd response body in bytes",
       "ui-priority": 1,
-      "misp-attribute": "size-in-bytes",
-      "multiple": true
+      "misp-attribute": "size-in-bytes"
+    },
+    "redirect-url": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Redirection target URL from Location Response header (if existed)",
+      "ui-priority": 1,
+      "misp-attribute": "text"
     }
   },
   "version": 1,
