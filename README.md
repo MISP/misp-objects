@@ -103,6 +103,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 * [objects/geolocation](objects/geolocation/definition.json) - A geolocation object to describe a location.
 * [objects/gtp-attack](objects/gtp-attack/definition.json) - GTP attack object as seen on a GSM, UMTS or LTE network.
 * [objects/http-request](objects/http-request/definition.json) - A single HTTP request header object.
+* [objects/http-response](objects/http-response/definition.json) - HTTP response compatible with HAR Format
 * [objects/imsi-catcher](objects/imsi-catcher/definition.json) - Object describing IMSI catcher associated event.
 * [objects/interpol-notice](objects/interpol-notice/definition.json) - Object used to represent an Interpol notice
 * [objects/ip-api-address](objects/ip-api-address/definition.json) - Object describing IP Address information, as defined in [ip-api.com](http://ip-api.com).
