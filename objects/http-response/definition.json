@@ -1,0 +1,70 @@
+{
+  "requiredOneOf": [
+    "url",
+    "uri"
+  ],
+  "attributes": {
+    "text": {
+      "description": "HTTP Response comment",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "status": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP status",
+      "ui-priority": 1,
+      "misp-attribute": "float"
+    },
+    "status-text": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP status description",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "httpVersion": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Response HTTP version",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "cookie": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Set-cookie in HTTP response",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "header": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Header in HTTP response",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "body-size": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Size of the receiverd response body in bytes",
+      "ui-priority": 1,
+      "misp-attribute": "size-in-bytes",
+      "multiple": true
+    }
+  },
+  "version": 1,
+  "description": "HTTP response as defined in HAR",
+  "meta-category": "network",
+  "uuid": "cc55a720-4ca6-11ea-b77f-2e728ce88125",
+  "name": "http-response"
+}

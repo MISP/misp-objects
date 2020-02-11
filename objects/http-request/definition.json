@@ -61,6 +61,14 @@
       "ui-priority": 1,
       "misp-attribute": "hostname"
     },
+    "http-version": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Request HTTP version",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
     "ip": {
       "categories": [
         "Network activity",
@@ -130,7 +138,7 @@
       "misp-attribute": "user-agent"
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "A single HTTP request header",
   "meta-category": "network",
   "uuid": "b4a8d163-8110-4239-bfcf-e08f3a9fdf7b",
