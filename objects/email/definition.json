@@ -57,7 +57,8 @@
       "ui-priority": 1,
       "categories": [
         "Payload delivery"
-      ]
+      ],
+      "multiple": true
     },
     "screenshot": {
       "description": "Screenshot of email",
@@ -141,7 +142,8 @@
       "ui-priority": 1,
       "categories": [
         "Payload delivery"
-      ]
+      ],
+      "multiple": true
     },
     "return-path": {
       "description": "Message return path",
@@ -157,7 +159,8 @@
       "ui-priority": 1,
       "categories": [
         "Payload delivery"
-      ]
+      ],
+      "multiple": true
     },
     "email-body": {
       "description": "Body of the email",
