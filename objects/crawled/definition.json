@@ -1,0 +1,39 @@
+{
+  "required": [
+    "domain"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the tuple",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "recommended": false
+    },
+    "domain": {
+      "description": "Domain name",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "domain",
+      "multiple": true
+    },
+    "url": {
+      "description": "domain url",
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "ui-priority": 1,
+      "misp-attribute": "url",
+      "multiple": true
+    }
+  },
+  "version": 1,
+  "description": "A domain crawled over time",
+  "meta-category": "network",
+  "uuid": "bad4888d-c44e-4612-b08f-3d97c1e0014a",
+  "name": "crawled"
+}
