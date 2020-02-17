@@ -124,6 +124,6 @@
   "version": 1,
   "description": "An IoT device.",
   "meta-category": "iot",
-  "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
+  "uuid": "3de3b92a-859b-431b-9c4f-1a81de1d9637",
   "name": "iot-device"
 }
