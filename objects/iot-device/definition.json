@@ -119,9 +119,45 @@
       "description": "Vendor of the IoT device",
       "ui-priority": 1,
       "misp-attribute": "text"
+    },
+    "spi-interface": {
+      "description": "SPI interface of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ]
+    },
+    "serial-interface": {
+      "description": "Serial interface of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ]
+    },
+    "jtag-interface": {
+      "description": "JTAG interface of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ]
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An IoT device.",
   "meta-category": "iot",
   "uuid": "3de3b92a-859b-431b-9c4f-1a81de1d9637",
