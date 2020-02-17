@@ -120,6 +120,12 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
+    "reference": {
+      "description": "Reference of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "link",
+      "multiple": true
+    },
     "spi-interface": {
       "description": "SPI interface of the IoT device",
       "ui-priority": 1,
@@ -157,7 +163,7 @@
       ]
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "An IoT device.",
   "meta-category": "iot",
   "uuid": "3de3b92a-859b-431b-9c4f-1a81de1d9637",
