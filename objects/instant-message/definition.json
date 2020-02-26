@@ -1,7 +1,6 @@
 {
   "requiredOneOf": [
     "body",
-    "from",
     "from-user"
   ],
   "attributes": {
