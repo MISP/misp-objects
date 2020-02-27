@@ -260,7 +260,8 @@
         "misc",
         "internal",
         "vulnerability",
-        "climate"
+        "climate",
+        "iot"
       ],
       "type": "string"
     },

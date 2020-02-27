@@ -1,0 +1,171 @@
+{
+  "requiredOneOf": [
+    "model",
+    "vendor",
+    "architecture",
+    "boot-log",
+    "picture-pcb",
+    "picture-device"
+  ],
+  "attributes": {
+    "picture-pcb": {
+      "description": "Picture of the IoT device PCB",
+      "ui-priority": 10,
+      "misp-attribute": "attachment",
+      "multiple": true
+    },
+    "picture-device": {
+      "description": "Picture of the IoT device",
+      "ui-priority": 10,
+      "misp-attribute": "attachment",
+      "multiple": true
+    },
+    "fcc-id": {
+      "description": "FCC-ID of the IoT device",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "boot-log": {
+      "description": "Boot log of the IoT device",
+      "ui-priority": 10,
+      "misp-attribute": "attachment",
+      "multiple": true
+    },
+    "platform": {
+      "description": "Platform of of the IoT device",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "sane_default": [
+        "mach-aspeed",
+        "mach-at91",
+        "mach-bcm283x",
+        "mach-bcmstb",
+        "mach-cortina",
+        "mach-davinci",
+        "mach-exynos",
+        "mach-highbank",
+        "mach-imx",
+        "mach-integrator",
+        "mach-k3",
+        "mach-keystone",
+        "mach-kirkwood",
+        "mach-mediatek",
+        "mach-meson",
+        "mach-mvebu",
+        "mach-omap2",
+        "mach-orion5x",
+        "mach-owl",
+        "mach-qemu",
+        "mach-rmobile",
+        "mach-rockchip",
+        "mach-s5pc1xx",
+        "mach-snapdragon",
+        "mach-socfpga",
+        "mach-sti",
+        "mach-stm32",
+        "mach-stm32mp",
+        "mach-sunxi",
+        "mach-tegra",
+        "mach-u8500",
+        "mach-uniphier",
+        "mach-versal",
+        "mach-versatile",
+        "mach-zynq",
+        "mach-zynqmp",
+        "mach-zynqmp-r5",
+        "mcf5227x",
+        "mcf523x",
+        "mcf52x2",
+        "mcf530x",
+        "mcf532x",
+        "mcf5445x",
+        "mcf547x_8x",
+        "mach-ath79",
+        "mach-bmips",
+        "mach-jz47xx",
+        "mach-mscc",
+        "mach-mtmips",
+        "mach-pic32"
+      ]
+    },
+    "architecture": {
+      "description": "architecture of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "sane_default": [
+        "ARC",
+        "ARM",
+        "M68000",
+        "MicroBlaze",
+        "MIPS",
+        "NSD32",
+        "Nios II",
+        "PowerPC",
+        "RISC-V",
+        "Sandbox",
+        "SH",
+        "x86",
+        "Xtensa"
+      ]
+    },
+    "model": {
+      "description": "Model of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "vendor": {
+      "description": "Vendor of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "reference": {
+      "description": "Reference of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "link",
+      "multiple": true
+    },
+    "spi-interface": {
+      "description": "SPI interface of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ]
+    },
+    "serial-interface": {
+      "description": "Serial interface of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ]
+    },
+    "jtag-interface": {
+      "description": "JTAG interface of the IoT device",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ]
+    }
+  },
+  "version": 3,
+  "description": "An IoT device.",
+  "meta-category": "iot",
+  "uuid": "3de3b92a-859b-431b-9c4f-1a81de1d9637",
+  "name": "iot-device"
+}

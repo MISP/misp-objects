@@ -4,7 +4,9 @@
     "type",
     "original-filename",
     "internal-filename",
-    "entrypoint-address"
+    "entrypoint-address",
+    "imphash",
+    "impfuzzy"
   ],
   "attributes": {
     "pehash": {
@@ -119,7 +121,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "Object describing a Portable Executable",
   "meta-category": "file",
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",

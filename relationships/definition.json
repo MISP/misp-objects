@@ -1,5 +1,5 @@
 {
-  "version": 17,
+  "version": 18,
   "values": [
     {
       "name": "derived-from",
@@ -988,6 +988,13 @@
     {
       "name": "screenshot-of",
       "description": "Represents an object being the screenshot of something.",
+      "format": [
+        "misp"
+      ]
+    },
+    {
+      "name": "knows",
+      "description": "Represents an object having the knowledge of another object.",
       "format": [
         "misp"
       ]
