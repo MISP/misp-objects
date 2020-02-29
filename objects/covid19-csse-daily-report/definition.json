@@ -1,0 +1,49 @@
+{
+  "required": [
+    "country-region",
+    "update"
+  ],
+  "attributes": {
+    "province-state": {
+      "description": "province name; US/Canada/Australia/ - city name, state/province name; Others - name of the event (e.g., \"Diamond Princess\" cruise ship); other countries - blank.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "country-region": {
+      "description": "country/region name conforming to WHO (will be updated).",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "update": {
+      "description": "Time of the last update that day (UTC)",
+      "ui-priority": 1,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "confirmed": {
+      "description": "the number of confirmed cases. For Hubei Province: from Feb 13 (GMT +8), we report both clinically diagnosed and lab-confirmed cases. For lab-confirmed cases only (Before Feb 17), please refer to https://github.com/CSSEGISandData/COVID-19/tree/master/who_covid_19_situation_reports.",
+      "misp-attribute": "counter",
+      "disable_correlation": true,
+      "ui-priority": 1
+    },
+    "death": {
+      "description": "the number of deaths.",
+      "misp-attribute": "counter",
+      "disable_correlation": true,
+      "ui-priority": 1
+    },
+    "recovered": {
+      "description": "the number of recovered cases.",
+      "misp-attribute": "counter",
+      "disable_correlation": true,
+      "ui-priority": 1
+    }
+  },
+  "version": 1,
+  "description": "CSSE COVID-19 Daily report",
+  "meta-category": "health",
+  "uuid": "9458bf83-2e29-4ff3-9996-0564f2d954c8",
+  "name": "covid19-csse-daily-report"
+}
