@@ -1,5 +1,6 @@
 {
   "requiredOneOf": [
+    "generic-symmetric-key",
     "text",
     "private",
     "p",
@@ -96,6 +97,11 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
+    "generic-symmetric-key": {
+      "description": "Generic symmetric key (please precise the type)",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
     "type": {
       "description": "Type of crytographic materials",
       "ui-priority": 1,
@@ -105,6 +111,8 @@
         "RSA",
         "DSA",
         "ECDSA",
+        "RC4",
+        "XOR",
         "unknown"
       ]
     },
