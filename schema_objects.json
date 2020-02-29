@@ -261,7 +261,8 @@
         "internal",
         "vulnerability",
         "climate",
-        "iot"
+        "iot",
+        "health"
       ],
       "type": "string"
     },
