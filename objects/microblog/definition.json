@@ -121,6 +121,12 @@
       "multiple": true,
       "misp-attribute": "text"
     },
+    "twitter-id": {
+      "description": "Twitter id",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "twitter-id"
+    },
     "hashtag": {
       "description": "Hashtag into the microblog post",
       "ui-priority": 0,
@@ -128,7 +134,7 @@
       "multiple": true
     }
   },
-  "version": 18,
+  "version": 19,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",
