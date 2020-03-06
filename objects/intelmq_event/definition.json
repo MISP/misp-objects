@@ -52,7 +52,7 @@
     },
     "destination.fqdn": {
       "description": "A DNS name related to the host from which the connection originated. DNS allows even binary data in DNS, so we have to allow everything. A final point is stripped, string is converted to lower case characters.",
-      "misp-attribute": "text",
+      "misp-attribute": "domain",
       "ui-priority": 1
     },
     "destination.geolocation.cc": {
@@ -97,7 +97,7 @@
     },
     "destination.local_hostname": {
       "description": "Some sources report a internal hostname within a NAT related to the name configured for a compromized system",
-      "misp-attribute": "text",
+      "misp-attribute": "hostname",
       "ui-priority": 1
     },
     "destination.local_ip": {
@@ -197,17 +197,17 @@
     },
     "malware.hash.md5": {
       "description": "A string depicting an MD5 checksum for a file, be it a malware sample for example.",
-      "misp-attribute": "text",
+      "misp-attribute": "md5",
       "ui-priority": 1
     },
     "malware.hash.sha1": {
       "description": "A string depicting a SHA1 checksum for a file, be it a malware sample for example.",
-      "misp-attribute": "text",
+      "misp-attribute": "sha1",
       "ui-priority": 1
     },
     "malware.hash.sha256": {
       "description": "A string depicting a SHA256 checksum for a file, be it a malware sample for example.",
-      "misp-attribute": "text",
+      "misp-attribute": "sha256",
       "ui-priority": 1
     },
     "malware.name": {
@@ -292,7 +292,7 @@
     },
     "source.fqdn": {
       "description": "A DNS name related to the host from which the connection originated. DNS allows even binary data in DNS, so we have to allow everything. A final point is stripped, string is converted to lower case characters.",
-      "misp-attribute": "text",
+      "misp-attribute": "domain",
       "ui-priority": 1
     },
     "source.geolocation.cc": {
@@ -347,7 +347,7 @@
     },
     "source.local_hostname": {
       "description": "Some sources report a internal hostname within a NAT related to the name configured for a compromised system",
-      "misp-attribute": "text",
+      "misp-attribute": "hostname",
       "ui-priority": 1
     },
     "source.local_ip": {
@@ -415,5 +415,5 @@
   "meta-category": "network",
   "name": "intelmq_event",
   "uuid": "491ac7d2-25a1-4078-8246-b04a132d003d",
-  "version": 3
+  "version": 4
 }
