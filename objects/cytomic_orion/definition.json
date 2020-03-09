@@ -1,7 +1,5 @@
 {
-  "required": [
-
-  ],
+  "required": [],
   "attributes": {
     "fileName": {
       "description": "Original filename",
