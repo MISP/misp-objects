@@ -1,5 +1,7 @@
 {
-  "required": [],
+  "required": [
+
+  ],
   "attributes": {
     "fileName": {
       "description": "Original filename",
@@ -36,7 +38,7 @@
       ],
       "misp-attribute": "text"
     },
-    "firstSeen": {
+    "first-seen": {
       "description": "First seen timestamp of the file",
       "to_ids": false,
       "ui-priority": 3,
@@ -45,7 +47,7 @@
       ],
       "misp-attribute": "datetime"
     },
-    "lastSeen": {
+    "last-seen": {
       "description": "Last seen timestamp of the file",
       "to_ids": false,
       "ui-priority": 4,
@@ -55,7 +57,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 6,
+  "version": 7,
   "description": "Cytomic Orion File Detection",
   "meta-category": "misc",
   "uuid": "0ad86572-ba38-4baf-9fed-1926e9ecc916",

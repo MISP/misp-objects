@@ -47,7 +47,7 @@
       ],
       "misp-attribute": "text"
     },
-    "machineFirstSeen": {
+    "first-seen": {
       "description": "First seen on machine",
       "to_ids": false,
       "ui-priority": 3,
@@ -56,7 +56,7 @@
       ],
       "misp-attribute": "datetime"
     },
-    "machineLastSeen": {
+    "last-seen": {
       "description": "Last seen on machine",
       "to_ids": false,
       "ui-priority": 4,
@@ -93,7 +93,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 3,
+  "version": 4,
   "description": "Cytomic Orion File at Machine Detection",
   "meta-category": "misc",
   "uuid": "e0e46343-43fd-4ce7-b447-51381402c774",
