@@ -61,7 +61,7 @@
       "ui-priority": 1,
       "misp-attribute": "hostname"
     },
-    "ip": {
+    "ip-dst": {
       "categories": [
         "Network activity",
         "Payload delivery"
@@ -70,6 +70,15 @@
       "ui-priority": 1,
       "misp-attribute": "ip-dst"
     },
+    "ip-src": {
+      "categories": [
+        "Network activity",
+        "Payload delivery"
+      ],
+      "description": "The IP address of the client",
+      "ui-priority": 1,
+      "misp-attribute": "ip-src"
+    },     
     "method": {
       "categories": [
         "Network activity"
