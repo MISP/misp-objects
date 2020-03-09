@@ -22,6 +22,12 @@
       "misp-attribute": "target-external",
       "multiple": true
     },
+    "reference": {
+      "description": "External reference to the victim/case.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
     "classification": {
       "description": "The type of entity being targeted.",
       "misp-attribute": "text",
@@ -108,7 +114,7 @@
       "multiple": true
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "Victim object describes the target of an attack or abuse.",
   "meta-category": "misc",
   "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
