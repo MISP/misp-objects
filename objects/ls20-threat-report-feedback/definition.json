@@ -1,0 +1,49 @@
+{
+  "required": [
+    "type"
+  ],
+  "attributes": {
+    "monitor": {
+      "description": "Are IOCs in the report being monitored",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "boolean"
+    },
+    "type": {
+      "description": "Interpreted type",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "ddos infrastructure",
+        "false positive",
+        "brute-force",
+        "phishing",
+        "malware url",
+        "defacement",
+        "c&c",
+        "malware configuration",
+        "backdoor",
+        "attack",
+        "mitm",
+        "need more information",
+        "artifact",
+        "exploit url",
+        "hijack",
+        "dropzone",
+        "scanner"
+      ]
+    },
+    "comment": {
+      "description": "Additional comments",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "LS20 Object meant for yellow teams to provide feedback on threat-reports to blue teams",
+  "meta-category": "locked-shield",
+  "uuid": "271475d3-e9d6-4055-8c47-217588355406",
+  "name": "ls20-threat-report-feedback"
+}
