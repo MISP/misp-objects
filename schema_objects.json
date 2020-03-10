@@ -262,7 +262,8 @@
         "vulnerability",
         "climate",
         "iot",
-        "health"
+        "health",
+        "locked-shield"
       ],
       "type": "string"
     },
