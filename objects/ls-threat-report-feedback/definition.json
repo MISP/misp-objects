@@ -45,5 +45,5 @@
   "description": "LS20 Object meant for yellow teams to provide feedback on threat-reports to blue teams",
   "meta-category": "locked-shield",
   "uuid": "271475d3-e9d6-4055-8c47-217588355406",
-  "name": "ls20-threat-report-feedback"
+  "name": "ls-threat-report-feedback"
 }
