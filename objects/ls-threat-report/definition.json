@@ -106,7 +106,7 @@
   },
   "version": 1,
   "description": "LS Object to inform the command center analysts about the adversary infrastructure and how it is being used to attack you",
-  "meta-category": "locked-shield",
+  "meta-category": "locked-shields",
   "uuid": "359d4790-dd73-4d8c-bfb4-9e4039c8bf8c",
   "name": "ls-threat-report"
 }

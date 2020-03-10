@@ -43,7 +43,7 @@
   },
   "version": 1,
   "description": "LS Object meant for yellow teams to provide feedback on threat-reports to blue teams",
-  "meta-category": "locked-shield",
+  "meta-category": "locked-shields",
   "uuid": "271475d3-e9d6-4055-8c47-217588355406",
   "name": "ls-threat-report-feedback"
 }

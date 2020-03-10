@@ -263,7 +263,7 @@
         "climate",
         "iot",
         "health",
-        "locked-shield"
+        "locked-shields"
       ],
       "type": "string"
     },
