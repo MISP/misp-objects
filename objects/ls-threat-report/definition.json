@@ -105,7 +105,7 @@
     }
   },
   "version": 1,
-  "description": "LS20 Object to inform the command center analysts about the adversary infrastructure and how it is being used to attack you",
+  "description": "LS Object to inform the command center analysts about the adversary infrastructure and how it is being used to attack you",
   "meta-category": "locked-shield",
   "uuid": "359d4790-dd73-4d8c-bfb4-9e4039c8bf8c",
   "name": "ls-threat-report"
