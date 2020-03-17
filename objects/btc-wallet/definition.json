@@ -1,0 +1,41 @@
+{
+  "requiredOneOf": [
+    "wallet-address"
+  ],
+  "attributes": {
+    "wallet-address": {
+      "description": "A Bitcoin wallet address",
+      "ui-priority": 0,
+      "misp-attribute": "btc"
+    },
+    "balance_BTC": {
+      "description": "Value in BTC at date/time displayed in field 'time'",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "float"
+    },
+    "BTC_received": {
+      "description": "Value of received BTC",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "float"
+    },
+    "BTC_sent": {
+      "description": "Value of sent BTC",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "float"
+    },
+    "time": {
+      "description": "Date and time of lookup/conversion",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 2,
+  "description": "An object to describe a Bitcoin wallet. Best to be used with bitcoin-transactions.",
+  "meta-category": "financial",
+  "uuid": "22910C83-DD0E-4ED2-9823-45F8CAD562A4",
+  "name": "btc-wallet"
+}

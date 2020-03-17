@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "description": "Splunk / Splunk ES object",
+  "meta-category": "misc",
+  "uuid": "fd9b7bf8-df7b-4df9-bcd8-28591edcaab8",
+  "name": "splunk",
+  "required": [
+    "search"
+  ],
+  "attributes": {
+    "search": {
+      "description": "Search / Correlation search",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "drill-down": {
+      "description": "Drilldown",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true
+    },
+    "response-action": {
+      "description": "Response action",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true,
+      "disable_correlation": true,
+      "sane_default": [
+        "notable",
+        "risk"
+      ]
+    },
+    "schedule": {
+      "description": "Schedule",
+      "ui-priority": 0,
+      "misp-attribute": "other",
+      "disable_correlation": true
+    },
+    "earliest": {
+      "description": "Earliest time",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "latest": {
+      "description": "Latest time",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "description": {
+      "description": "Description",
+      "ui-priority": 0,
+      "misp-attribute": "comment",
+      "disable_correlation": true
+    }
+  }
+}

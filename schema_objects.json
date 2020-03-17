@@ -1,108 +1,293 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "title": "Validator for misp-objects",
-  "id": "https://www.github.com/MISP/misp-objects/schema.json",
+  "additionalProperties": false,
   "defs": {
     "attribute": {
-      "type": "object",
       "additionalProperties": false,
       "properties": {
-        "misp-attribute": {
-          "type": "string"
-        },
-        "ui-priority": {
-          "type": "number"
-        },
         "categories": {
-          "type": "array",
-          "uniqueItems": true,
           "items": {
+            "enum": [
+              "Antivirus detection",
+              "Artifacts dropped",
+              "Attribution",
+              "External analysis",
+              "Financial fraud",
+              "Internal reference",
+              "Network activity",
+              "Other",
+              "Payload delivery",
+              "Payload installation",
+              "Payload type",
+              "Persistence mechanism",
+              "Person",
+              "Social network",
+              "Support Tool",
+              "Targeting data"
+            ],
             "type": "string"
-          }
-        },
-        "values_list": {
+          },
           "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string"
-          }
+          "uniqueItems": true
         },
-        "sane_default": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string"
-          }
-        },
-        "multiple": {
-          "type": "boolean"
+        "description": {
+          "type": "string"
         },
         "disable_correlation": {
           "type": "boolean"
         },
-        "to_ids": {
+        "misp-attribute": {
+          "enum": [
+            "AS",
+            "aba-rtn",
+            "anonymised",
+            "attachment",
+            "authentihash",
+            "bank-account-nr",
+            "bic",
+            "bin",
+            "boolean",
+            "bro",
+            "btc",
+            "campaign-id",
+            "campaign-name",
+            "cc-number",
+            "cdhash",
+            "chrome-extension-id",
+            "comment",
+            "community-id",
+            "cookie",
+            "cortex",
+            "counter",
+            "country-of-residence",
+            "cpe",
+            "dash",
+            "date-of-birth",
+            "datetime",
+            "dns-soa-email",
+            "domain",
+            "domain|ip",
+            "email-attachment",
+            "email-body",
+            "email-dst",
+            "email-dst-display-name",
+            "email-header",
+            "email-message-id",
+            "email-mime-boundary",
+            "email-reply-to",
+            "email-src",
+            "email-src-display-name",
+            "email-subject",
+            "email-thread-index",
+            "email-x-mailer",
+            "eppn",
+            "filename",
+            "filename|authentihash",
+            "filename|impfuzzy",
+            "filename|imphash",
+            "filename|md5",
+            "filename|pehash",
+            "filename|sha1",
+            "filename|sha224",
+            "filename|sha256",
+            "filename|sha384",
+            "filename|sha512",
+            "filename|sha512/224",
+            "filename|sha512/256",
+            "filename|ssdeep",
+            "filename|tlsh",
+            "first-name",
+            "float",
+            "frequent-flyer-number",
+            "gender",
+            "gene",
+            "github-organisation",
+            "github-repository",
+            "github-username",
+            "hassh-md5",
+            "hasshserver-md5",
+            "hex",
+            "hostname",
+            "hostname|port",
+            "http-method",
+            "iban",
+            "identity-card-number",
+            "impfuzzy",
+            "imphash",
+            "ip-dst",
+            "ip-dst|port",
+            "ip-src",
+            "ip-src|port",
+            "issue-date-of-the-visa",
+            "ja3-fingerprint-md5",
+            "jabber-id",
+            "kusto-query",
+            "last-name",
+            "link",
+            "mac-address",
+            "mac-eui-64",
+            "malware-sample",
+            "malware-type",
+            "md5",
+            "middle-name",
+            "mime-type",
+            "mobile-application-id",
+            "mutex",
+            "named pipe",
+            "nationality",
+            "other",
+            "passenger-name-record-locator-number",
+            "passport-country",
+            "passport-expiration",
+            "passport-number",
+            "pattern-in-file",
+            "pattern-in-memory",
+            "pattern-in-traffic",
+            "payment-details",
+            "pdb",
+            "pehash",
+            "phone-number",
+            "place-of-birth",
+            "place-port-of-clearance",
+            "place-port-of-onward-foreign-destination",
+            "place-port-of-original-embarkation",
+            "port",
+            "primary-residence",
+            "prtn",
+            "redress-number",
+            "regkey",
+            "regkey|value",
+            "sha1",
+            "sha224",
+            "sha256",
+            "sha384",
+            "sha512",
+            "sha512/224",
+            "sha512/256",
+            "sigma",
+            "size-in-bytes",
+            "snort",
+            "special-service-request",
+            "ssdeep",
+            "stix2-pattern",
+            "target-email",
+            "target-external",
+            "target-location",
+            "target-machine",
+            "target-org",
+            "target-user",
+            "text",
+            "threat-actor",
+            "tlsh",
+            "travel-details",
+            "twitter-id",
+            "uri",
+            "url",
+            "user-agent",
+            "visa-number",
+            "vulnerability",
+            "weakness",
+            "whois-creation-date",
+            "whois-registrant-email",
+            "whois-registrant-name",
+            "whois-registrant-org",
+            "whois-registrant-phone",
+            "whois-registrar",
+            "windows-scheduled-task",
+            "windows-service-displayname",
+            "windows-service-name",
+            "x509-fingerprint-md5",
+            "x509-fingerprint-sha1",
+            "x509-fingerprint-sha256",
+            "xmr",
+            "yara",
+            "zeek"
+          ],
+          "type": "string"
+        },
+        "multiple": {
           "type": "boolean"
         },
         "recommended": {
           "type": "boolean"
         },
-        "description": {
-          "type": "string"
+        "sane_default": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "to_ids": {
+          "type": "boolean"
+        },
+        "ui-priority": {
+          "type": "number"
+        },
+        "values_list": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
         }
       },
       "required": [
         "misp-attribute",
         "ui-priority",
         "description"
-      ]
+      ],
+      "type": "object"
     }
   },
-  "type": "object",
-  "additionalProperties": false,
+  "id": "https://www.github.com/MISP/misp-objects/schema.json",
   "properties": {
+    "attributes": {
+      "additionalProperties": {
+        "$ref": "#/defs/attribute",
+        "type": "object"
+      },
+      "type": "object"
+    },
+    "description": {
+      "type": "string"
+    },
     "meta-category": {
-      "type": "string",
       "enum": [
         "file",
         "network",
         "financial",
         "misc",
         "internal",
-        "vulnerability"
-      ]
+        "vulnerability",
+        "climate",
+        "iot",
+        "health"
+      ],
+      "type": "string"
     },
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
+    "required": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
     },
-    "version": {
-      "type": "integer"
+    "requiredOneOf": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
     },
     "uuid": {
       "type": "string"
     },
-    "attributes": {
-      "type": "object",
-      "additionalProperties": {
-        "type": "object",
-        "$ref": "#/defs/attribute"
-      }
-    },
-    "requiredOneOf": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string"
-      }
-    },
-    "required": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string"
-      }
+    "version": {
+      "type": "integer"
     }
   },
   "required": [
@@ -112,5 +297,7 @@
     "meta-category",
     "name",
     "uuid"
-  ]
+  ],
+  "title": "Validator for misp-objects",
+  "type": "object"
 }

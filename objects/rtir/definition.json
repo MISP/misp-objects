@@ -47,7 +47,8 @@
         "resolved",
         "rejected",
         "deleted"
-      ]
+      ],
+      "disable_correlation": true
     },
     "ticket-number": {
       "description": "ticket-number of the RTIR ticket",
@@ -55,7 +56,7 @@
       "misp-attribute": "text"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "RTIR - Request Tracker for Incident Response",
   "meta-category": "misc",
   "uuid": "7534ee19-0a1f-4f46-a197-e6e73e457943",

@@ -1,0 +1,51 @@
+{
+  "requiredOneOf": [
+    "transaction-number",
+    "time",
+    "value_BTC"
+  ],
+  "attributes": {
+    "transaction-number": {
+      "description": "A Bitcoin transaction number in a sequence of transactions",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "multiple": true,
+      "misp-attribute": "text"
+    },
+    "time": {
+      "description": "Date and time of transaction",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "datetime"
+    },
+    "value_BTC": {
+      "description": "Value in BTC at date/time displayed in field 'time'",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "float"
+    },
+    "value_EUR": {
+      "description": "Value in EUR with conversion rate as of date/time displayed in field 'time'",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "float"
+    },
+    "value_USD": {
+      "description": "Value in USD with conversion rate as of date/time displayed in field 'time'",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "float"
+    },
+    "btc-address": {
+      "description": "A Bitcoin transactional address",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "btc"
+    }
+  },
+  "version": 4,
+  "description": "An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.",
+  "meta-category": "financial",
+  "uuid": "B7341729-5A8A-439F-A775-6D814DA3C7B5",
+  "name": "btc-transaction"
+}

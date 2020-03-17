@@ -1,0 +1,53 @@
+{
+  "required": [
+    "key",
+    "DLL-name",
+    "DLL-path"
+  ],
+  "attributes": {
+    "key": {
+      "description": "Software hive key where the information is retrieved from.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "last-write-time": {
+      "description": "Date and time when the key was last updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "DLL-name": {
+      "description": "Name of the DLL file.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "DLL-path": {
+      "description": "Path where the DLL file is stored.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "DLL-last-write-time": {
+      "description": "Date and time when the DLL file was last updated.",
+      "ui-priority": 0,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "comments": {
+      "description": "Additional comments.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "references": {
+      "description": "References to the DLL file.",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true
+    }
+  },
+  "version": 1,
+  "description": "Regripper Object template designed to gather information of the DLL files installed on the system.",
+  "meta-category": "misc",
+  "uuid": "7893be05-8398-451e-ab1e-5e25ea4a8859",
+  "name": "regripper-software-hive-appInit-DLLS"
+}

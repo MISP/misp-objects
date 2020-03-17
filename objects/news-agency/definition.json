@@ -1,0 +1,78 @@
+{
+  "requiredOneOf": [
+    "name",
+    "alias",
+    "archive",
+    "url",
+    "link",
+    "attachment"
+  ],
+  "attributes": {
+    "name": {
+      "description": "Name of the news agency.",
+      "disable_correlation": true,
+      "ui-priority": 100,
+      "misp-attribute": "text"
+    },
+    "alias": {
+      "description": "Alias of the news agency.",
+      "ui-priority": 99,
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
+    "attachment": {
+      "description": "The news file, screen capture, audio, etc.",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "attachment"
+    },
+    "url": {
+      "description": "Original URL location of the news agency (potentially malicious).",
+      "ui-priority": 1,
+      "misp-attribute": "url",
+      "multiple": true
+    },
+    "link": {
+      "description": "Original link to the news agency (Supposed harmless).",
+      "ui-priority": 1,
+      "misp-attribute": "link",
+      "multiple": true
+    },
+    "phone-number": {
+      "description": "Phone number of the news agency.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "fax-number": {
+      "description": "Fax number of the news agency.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "address": {
+      "description": "Postal address of the news agency.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "e-mail": {
+      "description": "Email address of the organization.",
+      "ui-priority": 10,
+      "misp-attribute": "email-src",
+      "multiple": true
+    }
+  },
+  "version": 2,
+  "description": "News agencies compile news and disseminate news in bulk.",
+  "meta-category": "misc",
+  "uuid": "92b3f7fd-c4bc-42af-a73b-033ace439622",
+  "name": "news-agency"
+}

@@ -3,7 +3,7 @@
   "uuid": "af16764b-f8e5-4603-9de1-de34d272f80b",
   "meta-category": "network",
   "description": "A local or remote network connection.",
-  "version": 1,
+  "version": 3,
   "attributes": {
     "ip-src": {
       "description": "Source IP address of the nework connection.",
@@ -59,7 +59,8 @@
         "ICMP",
         "ARP"
       ],
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "layer4-protocol": {
       "description": "Layer 4 protocol of the network connection.",
@@ -68,7 +69,8 @@
         "TCP",
         "UDP"
       ],
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "layer7-protocol": {
       "description": "Layer 7 protocol of the network connection.",
@@ -78,12 +80,19 @@
         "HTTPS",
         "FTP"
       ],
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "first-packet-seen": {
       "misp-attribute": "datetime",
       "ui-priority": 1,
-      "description": "Datetime of the first packet seen."
+      "description": "Datetime of the first packet seen.",
+      "disable_correlation": true
+    },
+    "community-id": {
+      "misp-attribute": "community-id",
+      "ui-priority": 1,
+      "description": "Flow description as a community ID hash value"
     }
   },
   "requiredOneOf": [
@@ -91,6 +100,7 @@
     "ip-src",
     "ip-dst",
     "src-port",
-    "dst-port"
+    "dst-port",
+    "community-id"
   ]
 }

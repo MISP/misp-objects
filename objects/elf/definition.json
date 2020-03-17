@@ -22,7 +22,8 @@
         "RELOCATABLE"
       ],
       "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "disable_correlation": true
     },
     "number-sections": {
       "description": "Number of sections",
@@ -250,7 +251,7 @@
       "recommended": false
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "Object describing a Executable and Linkable Format",
   "meta-category": "file",
   "uuid": "fa6534ae-ad74-4ce0-8f23-15a66c82c7fa",

@@ -53,7 +53,8 @@
       "disable_correlation": true,
       "sane_default": [
         "Remedy",
-        "Response"
+        "Response",
+        "Further Analysis Required"
       ]
     },
     "cost": {

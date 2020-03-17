@@ -30,7 +30,8 @@
         "Other",
         "Copyright",
         "Authors",
-        "Logo"
+        "Logo",
+        "Full Report"
       ]
     },
     "format": {
@@ -61,9 +62,15 @@
       "description": "Last update of the annotation",
       "ui-priority": 0,
       "misp-attribute": "datetime"
+    },
+    "attachment": {
+      "description": "An attachment to support the annotation",
+      "ui-priority": 0,
+      "misp-attribute": "attachment",
+      "multiple": true
     }
   },
-  "version": 2,
+  "version": 3,
   "description": "An annotation object allowing analysts to add annotations, comments, executive summary to a MISP event, objects or attributes.",
   "meta-category": "misc",
   "uuid": "5d8dc046-15a1-4ca3-a09f-ed4ede7c4487",

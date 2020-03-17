@@ -3,7 +3,7 @@
 #
 #
 #    A simple converter of MISP objects to asciidoctor format
-#    Copyright (C) 2017-2018 Alexandre Dulaunoy
+#    Copyright (C) 2017-2019 Alexandre Dulaunoy
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -39,6 +39,7 @@ argParser = argparse.ArgumentParser(description='Generate documentation from MIS
 argParser.add_argument('-v', action='store_true', help='Verbose mode')
 args = argParser.parse_args()
 
+
 def header(adoc=False):
     if adoc is False:
         return False
@@ -66,23 +67,26 @@ def header(adoc=False):
     doc = doc + "= MISP objects\n"
     return doc
 
-def asciidoc(content=False, adoc=None, t='title',title=''):
+
+def asciidoc(content=False, adoc=None, t='title', title=''):
 
     adoc = adoc + "\n"
     output = ""
     if t == 'title':
         output = '== ' + content
     elif t == 'info':
-        output = "\n{}.\n\n{} {} {}{}/definition.json[*this location*] {}.\n".format(content, 'NOTE: ', title, 'is a MISP object available in JSON format at https://github.com/MISP/misp-objects/blob/master/objects/',title.lower(),' The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP]')
+        content = content.rstrip('.')
+        output = "\n{}.\n\n{} {} {}{}/definition.json[*this location*] {}.\n".format(content, 'NOTE: ', title, 'is a MISP object available in JSON format at https://github.com/MISP/misp-objects/blob/master/objects/', title.lower(), ' The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP]')
     elif t == 'author':
         output = '\nauthors:: {}\n'.format(' - '.join(content))
     elif t == 'value':
         output = '=== ' + content
     elif t == 'description':
+        content = content.rstrip('.')
         output = '\n{}\n'.format(content)
     elif t == 'attributes':
-        #output = '\n{}\n'.format
-        #output = '[cols=\",a\"]\n'
+        # output = '\n{}\n'.format
+        # output = '[cols=\",a\"]\n'
         output = output + '|===\n'
         output = output + '|Object attribute | MISP attribute type | Description | Disable correlation | Multiple\n'
         adoc = adoc + output
@@ -101,21 +105,22 @@ def asciidoc(content=False, adoc=None, t='title',title=''):
                     description = '{}'.format(content['attributes'][v]['description'])
                 if 'values_list' in content['attributes'][v]:
                     values = content['attributes'][v]['values_list']
-                    description = '{} {}'.format(content['attributes'][v]['description'],values)
+                    description = '{} {}'.format(content['attributes'][v]['description'], values)
                 if 'sane_default' in content['attributes'][v]:
                     values = content['attributes'][v]['sane_default']
-                    description = '{} {}'.format(content['attributes'][v]['description'],values)
-            output = '\n| {} | {} a| {} a| {} a| {}\n'.format(v, content['attributes'][v]['misp-attribute'], description ,disableCorrelation, multiple)
+                    description = '{} {}'.format(content['attributes'][v]['description'], values)
+            output = '\n| {} | {} a| {} a| {} a| {}\n'.format(v, content['attributes'][v]['misp-attribute'], description, disableCorrelation, multiple)
             adoc = adoc + output
         output = '\n|===\n'
     adoc = adoc + output
     return adoc
 
+
 adoc = ""
-print (header(adoc=adoc))
+print(header(adoc=adoc))
 
 for mispobject in objects:
-    fullPathClusters = os.path.join(pathObjects, '{}/{}'.format(mispobject,'definition.json'))
+    fullPathClusters = os.path.join(pathObjects, '{}/{}'.format(mispobject, 'definition.json'))
     with open(fullPathClusters) as fp:
         c = json.load(fp)
     title = c['name']
@@ -136,4 +141,5 @@ with open('../relationships/definition.json') as filerelationships:
     output = output + '\n|===\n'
     adoc = adoc + output
 
-print (adoc)
+
+print(adoc)

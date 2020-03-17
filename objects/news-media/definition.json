@@ -1,0 +1,150 @@
+{
+  "requiredOneOf": [
+    "source",
+    "alias",
+    "archive",
+    "content",
+    "url",
+    "link",
+    "attachment"
+  ],
+  "attributes": {
+    "source": {
+      "description": "Name of the news source.",
+      "disable_correlation": true,
+      "ui-priority": 100,
+      "misp-attribute": "text"
+    },
+    "alias": {
+      "description": "Alias of the news source.",
+      "ui-priority": 99,
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "username": {
+      "description": "Username who posted the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "text"
+    },
+    "content": {
+      "description": "Raw content of the news.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "transcription": {
+      "description": "Transcribed audio/visual content.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "title": {
+      "description": "Title of the post.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "archive": {
+      "description": "Archive of the news (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
+    "attachment": {
+      "description": "The news file, screen capture, audio, etc.",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "attachment"
+    },
+    "type": {
+      "description": "Type of news media (newspaper, TV, podcast, etc).",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "sane_default": [
+        "Newspaper",
+        "Newspaper (Online)",
+        "Magazine",
+        "Magazine (Online)",
+        "TV",
+        "Tube",
+        "Radio",
+        "Radio (Online)",
+        "Podcast",
+        "Alternative Media",
+        "Other"
+      ]
+    },
+    "sub-type": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "Format of the news post (business daily, local news, metasite, etc).",
+      "disable_correlation": true,
+      "values_list": [
+        "Business Daily",
+        "Local News",
+        "State News",
+        "National News",
+        "Metasite",
+        "Political Commentary",
+        "Clipper",
+        "Pressure Group",
+        "Staging",
+        "Trade Site",
+        "Other"
+      ]
+    },
+    "url": {
+      "description": "Original URL location of news (potentially malicious).",
+      "ui-priority": 1,
+      "misp-attribute": "url",
+      "multiple": true
+    },
+    "link": {
+      "description": "Original link to news (Supposed harmless).",
+      "ui-priority": 1,
+      "misp-attribute": "link",
+      "multiple": true
+    },
+    "phone-number": {
+      "description": "Phone number of the news source.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "fax-number": {
+      "description": "Fax number of the news source.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "address": {
+      "description": "Postal address of the news source.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "embedded-link": {
+      "description": "Site linked by the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "url",
+      "multiple": true
+    },
+    "embedded-safe-link": {
+      "description": "Safe site linked by the blog post.",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true
+    },
+    "e-mail": {
+      "description": "Email address of the news source.",
+      "ui-priority": 10,
+      "misp-attribute": "email-src",
+      "multiple": true
+    }
+  },
+  "version": 2,
+  "description": "News media are forms of mass media delivering news to the general public.",
+  "meta-category": "misc",
+  "uuid": "691463c5-5302-4847-9bec-4c56ccfec677",
+  "name": "news-media"
+}

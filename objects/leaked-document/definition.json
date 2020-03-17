@@ -1,0 +1,113 @@
+{
+  "requiredOneOf": [
+    "document-name",
+    "attachment",
+    "document-text"
+  ],
+  "attributes": {
+    "origin": {
+      "description": "Original source of leaked document.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "purpose-of-document": {
+      "description": "What the document is used for.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "sane_default": [
+        "Identification",
+        "Travel",
+        "Health",
+        "Legal",
+        "Financial",
+        "Government",
+        "Military",
+        "Media",
+        "Communication",
+        "Other"
+      ]
+    },
+    "document-type": {
+      "description": "The type of document (not the file type).",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "sane_default": [
+        "email",
+        "letterhead",
+        "speech",
+        "literature",
+        "photo",
+        "audio",
+        "invoice",
+        "receipt",
+        "other"
+      ]
+    },
+    "attachment": {
+      "description": "The leaked document file.",
+      "ui-priority": 1,
+      "misp-attribute": "attachment"
+    },
+    "document-name": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "Title of the document."
+    },
+    "document-text": {
+      "description": "Raw text of document",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "url": {
+      "description": "Original URL location of the document (potentially malicious)",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "link": {
+      "description": "Original link into the document (Supposed harmless)",
+      "ui-priority": 1,
+      "misp-attribute": "link"
+    },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
+    "objective": {
+      "description": "Reason for leaking the document.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "sane_default": [
+        "Disinformation",
+        "Influence",
+        "Whistleblowing",
+        "Extortion",
+        "Other"
+      ]
+    },
+    "last-seen": {
+      "description": "When the document has been accessible or seen for the last time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "first-seen": {
+      "description": "When the document has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 6,
+  "description": "Object describing a leaked document.",
+  "meta-category": "file",
+  "uuid": "ea145ecd-b3c2-4f57-ac11-c16e883c4247",
+  "name": "leaked-document"
+}

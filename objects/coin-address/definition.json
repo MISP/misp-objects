@@ -60,6 +60,40 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
+    "last-updated": {
+      "description": "Last time the balances and totals have been updated",
+      "disable_correlation": true,
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "current-balance": {
+      "description": "Current balance of address",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "float",
+      "recommended": false
+    },
+    "total-transactions": {
+      "description": "Total transactions performed",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "recommended": false
+    },
+    "total-received": {
+      "description": "Total balance received",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "float",
+      "recommended": false
+    },
+    "total-sent": {
+      "description": "Total balance sent",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "float",
+      "recommended": false
+    },
     "text": {
       "description": "Free text value",
       "disable_correlation": true,
@@ -68,7 +102,7 @@
       "recommended": false
     }
   },
-  "version": 4,
+  "version": 5,
   "description": "An address used in a cryptocurrency",
   "meta-category": "financial",
   "uuid": "d0e6997e-78da-4815-a6a1-cfc1c1cb8a46",

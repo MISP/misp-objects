@@ -40,7 +40,17 @@
       ],
       "description": "An HTTP cookie previously sent by the server with Set-Cookie",
       "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "header": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "An HTTP header sent during HTTP request",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
     },
     "host": {
       "categories": [
@@ -50,6 +60,24 @@
       "description": "The domain name of the server",
       "ui-priority": 1,
       "misp-attribute": "hostname"
+    },
+    "ip-dst": {
+      "categories": [
+        "Network activity",
+        "Payload delivery"
+      ],
+      "description": "The IP address of the server",
+      "ui-priority": 1,
+      "misp-attribute": "ip-dst"
+    },
+    "ip-src": {
+      "categories": [
+        "Network activity",
+        "Payload delivery"
+      ],
+      "description": "The IP address of the client",
+      "ui-priority": 1,
+      "misp-attribute": "ip-src"
     },
     "method": {
       "categories": [
@@ -111,7 +139,7 @@
       "misp-attribute": "user-agent"
     }
   },
-  "version": 2,
+  "version": 4,
   "description": "A single HTTP request header",
   "meta-category": "network",
   "uuid": "b4a8d163-8110-4239-bfcf-e08f3a9fdf7b",

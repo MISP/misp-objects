@@ -1,6 +1,10 @@
 {
   "requiredOneOf": [
-    "post"
+    "post",
+    "archive",
+    "url",
+    "link",
+    "attachment"
   ],
   "attributes": {
     "post": {
@@ -8,10 +12,35 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
-    "url": {
-      "description": "Original URL location of the microblog post",
+    "title": {
+      "description": "Title of the post",
       "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "url": {
+      "description": "Original URL location of the microblog post (potentially malicious)",
+      "ui-priority": 1,
+      "multiple": true,
       "misp-attribute": "url"
+    },
+    "link": {
+      "description": "Original link into the microblog post (Supposed harmless)",
+      "ui-priority": 1,
+      "misp-attribute": "link",
+      "multiple": true,
+      "to_ids": false
+    },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
+    "attachment": {
+      "description": "The microblog post file or screen capture.",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "attachment"
     },
     "type": {
       "description": "Type of the microblog post",
@@ -29,10 +58,34 @@
         "Other"
       ]
     },
+    "state": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "State of the microblog post",
+      "disable_correlation": true,
+      "values_list": [
+        "Informative",
+        "Malicious",
+        "Misinformation",
+        "Disinformation",
+        "Unknown"
+      ]
+    },
     "username": {
-      "description": "Username who posted the microblog post",
+      "description": "Username who posted the microblog post (without the @ prefix)",
       "ui-priority": 0,
       "misp-attribute": "text"
+    },
+    "verified-username": {
+      "description": "Is the username account verified by the operator of the microblog platform",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "values_list": [
+        "Verified",
+        "Unverified",
+        "Unknown"
+      ]
     },
     "creation-date": {
       "description": "Initial creation of the microblog post",
@@ -44,11 +97,18 @@
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
-    "link": {
+    "embedded-link": {
       "description": "Link into the microblog post",
       "ui-priority": 0,
       "misp-attribute": "url",
       "multiple": true
+    },
+    "embedded-safe-link": {
+      "description": "Safe link into the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true,
+      "to_ids": false
     },
     "removal-date": {
       "description": "When the microblog post was removed",
@@ -60,9 +120,21 @@
       "ui-priority": 0,
       "multiple": true,
       "misp-attribute": "text"
+    },
+    "twitter-id": {
+      "description": "Twitter id",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "twitter-id"
+    },
+    "hashtag": {
+      "description": "Hashtag into the microblog post",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
     }
   },
-  "version": 4,
+  "version": 19,
   "description": "Microblog post like a Twitter tweet or a post on a Facebook wall.",
   "meta-category": "misc",
   "uuid": "8ec8c911-ddbe-4f5b-895b-fbff70c42a60",

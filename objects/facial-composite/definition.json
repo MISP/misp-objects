@@ -1,0 +1,39 @@
+{
+  "requiredOneOf": [
+    "facial-composite",
+    "text"
+  ],
+  "attributes": {
+    "text": {
+      "description": "A description of the facial composite.",
+      "disable_correlation": true,
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "technique": {
+      "description": "Construction technique of the facial composite.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "values_list": [
+        "E-FIT",
+        "PROfit",
+        "Sketch",
+        "Photofit",
+        "EvoFIT",
+        "PortraitPad"
+      ],
+      "disable_correlation": true
+    },
+    "facial-composite": {
+      "description": "Facial composite image.",
+      "ui-priority": 10,
+      "misp-attribute": "attachment",
+      "multiple": true
+    }
+  },
+  "version": 1,
+  "description": "An object which describes a facial composite.",
+  "meta-category": "misc",
+  "uuid": "d727bc27-d1b9-4754-972c-dea305bd5976",
+  "name": "facial-composite"
+}

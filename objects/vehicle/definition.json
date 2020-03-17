@@ -1,11 +1,19 @@
 {
   "requiredOneOf": [
     "description",
-    "year",
     "make",
     "model",
     "license-plate-number",
-    "vin"
+    "vin",
+    "dyno-power",
+    "date-first-registration",
+    "image-url",
+    "gearbox",
+    "exterior color",
+    "interior color",
+    "type",
+    "state",
+    "indicative-value"
   ],
   "attributes": {
     "description": {
@@ -14,10 +22,43 @@
       "misp-attribute": "text",
       "disable_correlation": true
     },
-    "year": {
-      "description": "Year of manufacturing of the vehicle",
+    "exterior color": {
+      "description": "Exterior color of the vehicule",
       "ui-priority": 0,
       "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "state": {
+      "description": "State of the vehicule (stolen or recovered)",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "interior color": {
+      "description": "Interior color of the vehicule",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "type": {
+      "description": "Type of the vehicule",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "sane_default": [
+        "car",
+        "bus",
+        "caravan",
+        "bicycle",
+        "boat",
+        "taxi",
+        "camper van",
+        "motorcycle",
+        "truck",
+        "scooter",
+        "tractor",
+        "trailer",
+        "van"
+      ],
       "disable_correlation": true
     },
     "make": {
@@ -42,9 +83,45 @@
       "ui-priority": 0,
       "misp-attribute": "text",
       "multiple": true
+    },
+    "dyno-power": {
+      "description": "Dyno power output",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "date-first-registration": {
+      "description": "Date of first registration",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "image-url": {
+      "description": "Image URL",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "image": {
+      "description": "Image of the vehicle.",
+      "ui-priority": 0,
+      "misp-attribute": "attachment",
+      "multiple": true
+    },
+    "gearbox": {
+      "description": "Gearbox",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "indicative-value": {
+      "description": "Indicative value",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
     }
   },
-  "version": 1,
+  "version": 3,
   "description": "Vehicle object template to describe a vehicle information and registration",
   "meta-category": "misc",
   "uuid": "683c076c-f695-4ff2-8efa-e98a418049f4",

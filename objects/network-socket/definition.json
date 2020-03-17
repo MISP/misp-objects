@@ -3,7 +3,7 @@
   "uuid": "48bbfd72-ef8e-4649-b14d-41b4b5a0eba2",
   "meta-category": "network",
   "description": "Network socket object describes a local or remote network connections based on the socket data structure.",
-  "version": 1,
+  "version": 2,
   "attributes": {
     "ip-src": {
       "description": "Source (local) IP address of the network socket connection.",
@@ -13,6 +13,11 @@
         "External analysis"
       ],
       "misp-attribute": "ip-src"
+    },
+    "filename": {
+      "description": "Socket using filename",
+      "ui-priority": 1,
+      "misp-attribute": "filename"
     },
     "hostname-src": {
       "description": "Source (local) hostname of the network socket connection.",

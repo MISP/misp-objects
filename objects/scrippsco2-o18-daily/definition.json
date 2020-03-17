@@ -1,0 +1,53 @@
+{
+  "requiredOneOf": [
+    "sample-datetime",
+    "sample-date-excel",
+    "sample-date-fractional",
+    "number-flask",
+    "flag",
+    "o18-value"
+  ],
+  "attributes": {
+    "sample-datetime": {
+      "description": "Datetime the sample has been taken",
+      "ui-priority": 1,
+      "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "sample-date-excel": {
+      "description": "M$Excel spreadsheet date format.",
+      "ui-priority": 1,
+      "misp-attribute": "float",
+      "disable_correlation": true
+    },
+    "sample-date-fractional": {
+      "description": "Decimal year and fractional year.",
+      "ui-priority": 1,
+      "misp-attribute": "float",
+      "disable_correlation": true
+    },
+    "number-flask": {
+      "description": "Number of flasks used in daily average.",
+      "misp-attribute": "counter",
+      "disable_correlation": true,
+      "ui-priority": 1
+    },
+    "flag": {
+      "description": "Flag (see taxonomy for details).",
+      "misp-attribute": "counter",
+      "disable_correlation": true,
+      "ui-priority": 0
+    },
+    "o18-value": {
+      "description": "O18 value (ppm) - O18 concentrations are measured on the '08A' Calibration Scale",
+      "misp-attribute": "float",
+      "disable_correlation": true,
+      "ui-priority": 1
+    }
+  },
+  "version": 2,
+  "description": "Daily average O18 concentrations (ppm) derived from flask air samples.",
+  "meta-category": "climate",
+  "uuid": "8b6878a7-577d-4845-b165-ead6e58bec04",
+  "name": "scrippsco2-o18-daily"
+}

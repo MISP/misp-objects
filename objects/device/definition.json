@@ -1,0 +1,87 @@
+{
+  "requiredOneOf": [
+    "name",
+    "alias"
+  ],
+  "attributes": {
+    "description": {
+      "description": "Description of the Device",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "name": {
+      "description": "Name of the Device",
+      "ui-priority": 101,
+      "misp-attribute": "text"
+    },
+    "alias": {
+      "description": "Alias of the Device",
+      "ui-priority": 100,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "device-type": {
+      "description": "Type of the device",
+      "ui-priority": 99,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "sane_default": [
+        "PC",
+        "Mobile",
+        "Laptop",
+        "HID",
+        "TV",
+        "IoT",
+        "Hardware",
+        "Other"
+      ]
+    },
+    "OS": {
+      "description": "OS of the device",
+      "ui-priority": 98,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true
+    },
+    "version": {
+      "description": "Version of the device/ OS",
+      "ui-priority": 97,
+      "misp-attribute": "text",
+      "disable_correlation": true
+    },
+    "ip-address": {
+      "description": "Device IP address",
+      "ui-priority": 0,
+      "misp-attribute": "ip-src",
+      "multiple": true
+    },
+    "dns-name": {
+      "description": "Device DNS Name",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "MAC-address": {
+      "description": "Device MAC address",
+      "ui-priority": 0,
+      "misp-attribute": "mac-address"
+    },
+    "analysis-date": {
+      "description": "Date of device analysis",
+      "ui-priority": 0,
+      "misp-attribute": "datetime"
+    },
+    "attachment": {
+      "description": "An attachment",
+      "ui-priority": 0,
+      "misp-attribute": "attachment",
+      "multiple": true
+    }
+  },
+  "version": 7,
+  "description": "An object to define a device",
+  "meta-category": "misc",
+  "uuid": "0c64b41a-e583-4f4d-ac92-d484163b9e52",
+  "name": "device"
+}

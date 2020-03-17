@@ -1,0 +1,43 @@
+{
+  "required": [
+    "service"
+  ],
+  "attributes": {
+    "service": {
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "description": "Service impacte par l'incident",
+      "disable_correlation": true,
+      "multiple": true,
+      "sane_default": [
+        "Telephonie fixe",
+        "Acces Internet fixe",
+        "Telephonie mobile",
+        "Acces Internet mobile"
+      ]
+    },
+    "nombre-utilisateurs-touches": {
+      "description": "Nombre d’utilisateurs touches par l'incident",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "pourcentage-utilisateurs-touches": {
+      "description": "Pourcentage d'utilisateurs du service touches par l'incident",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    },
+    "duree": {
+      "description": "Duree de l'incident en hh : mm",
+      "ui-priority": 0,
+      "disable_correlation": true,
+      "misp-attribute": "text"
+    }
+  },
+  "version": 1,
+  "description": "Institut Luxembourgeois de Regulation - Impact",
+  "meta-category": "misc",
+  "uuid": "b995af48-39b2-11e9-b2ab-b77adfee75d1",
+  "name": "ilr-impact"
+}
