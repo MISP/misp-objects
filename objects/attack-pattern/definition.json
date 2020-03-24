@@ -35,6 +35,12 @@
       "ui-priority": 0,
       "multiple": true,
       "misp-attribute": "weakness"
+    },
+    "references": {
+      "description": "External references",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "link"
     }
   },
   "version": 1,
