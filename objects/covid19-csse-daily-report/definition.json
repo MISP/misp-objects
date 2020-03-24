@@ -4,6 +4,18 @@
     "update"
   ],
   "attributes": {
+    "fips": {
+      "description": "Federal Information Processing Standard county code (US Only)",
+      "ui-priority": 0,
+      "misp-attribute": "counter",
+      "disable_correlation": true
+    },
+    "county": {
+      "description": "US County (US Only)",
+      "ui-priority": 0,
+      "misp-attribute": "counter",
+      "disable_correlation": true
+    },
     "province-state": {
       "description": "province name; US/Canada/Australia/ - city name, state/province name; Others - name of the event (e.g., \"Diamond Princess\" cruise ship); other countries - blank.",
       "ui-priority": 1,
@@ -20,6 +32,18 @@
       "description": "Time of the last update that day (UTC)",
       "ui-priority": 1,
       "misp-attribute": "datetime",
+      "disable_correlation": true
+    },
+    "latitude": {
+      "description": "Approximate latitude of the entry",
+      "ui-priority": 0,
+      "misp-attribute": "float",
+      "disable_correlation": true
+    },
+    "longitude": {
+      "description": "Approximate longitude of the entry",
+      "ui-priority": 0,
+      "misp-attribute": "float",
       "disable_correlation": true
     },
     "confirmed": {
@@ -39,9 +63,15 @@
       "misp-attribute": "counter",
       "disable_correlation": true,
       "ui-priority": 1
+    },
+    "active": {
+      "description": "the number of active cases.",
+      "misp-attribute": "counter",
+      "disable_correlation": true,
+      "ui-priority": 1
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "CSSE COVID-19 Daily report",
   "meta-category": "health",
   "uuid": "9458bf83-2e29-4ff3-9996-0564f2d954c8",
