@@ -71,19 +71,19 @@
       ]
     },
     "last-seen": {
-      "description": "When the meme has been accessible or seen for the last time.",
+      "description": "When the narrative has been accessible or seen for the last time.",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     },
     "first-seen": {
-      "description": "When the meme has been accessible or seen for the first time.",
+      "description": "When the narrative has been accessible or seen for the first time.",
       "disable_correlation": true,
       "ui-priority": 0,
       "misp-attribute": "datetime"
     }
   },
-  "version": 7,
+  "version": 1,
   "description": "Object describing a narrative.",
   "meta-category": "misc",
   "uuid": "83bea299-514a-4719-a84b-f6fd0997fac1",
