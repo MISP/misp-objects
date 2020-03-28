@@ -27,6 +27,7 @@
     },
     "narrative-description": {
       "description": "A description of the narrative.",
+      "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "text"
     },
@@ -35,30 +36,25 @@
       "ui-priority": 1,
       "misp-attribute": "text"
     },
-    "crosspost": {
-      "description": "Safe site where the narrative has been posted.",
-      "ui-priority": 0,
-      "misp-attribute": "link",
-      "multiple": true
-    },
-    "crosspost-unsafe": {
-      "description": "Unsafe site where the narrative has been posted.",
-      "ui-priority": 0,
-      "misp-attribute": "url",
-      "multiple": true
-    },
-    "url": {
-      "description": "Original URL location of the narrative (potentially malicious)",
-      "ui-priority": 1,
-      "misp-attribute": "url"
-    },
-    "link": {
-      "description": "Original link into the narrative (Supposed harmless)",
+    "external-references": {
+      "description": "Link to external references.",
+      "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "link"
     },
+    "link": {
+      "description": "Original link to the narrative source (Supposed harmless)",
+      "ui-priority": 1,
+      "misp-attribute": "link"
+    },
+    "url": {
+      "description": "Original link to the narrative source (Supposed malicious)",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
     "archive": {
       "description": "Archive of the original narrative source (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
       "ui-priority": 1,
       "multiple": true,
       "misp-attribute": "link"
