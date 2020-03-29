@@ -2,7 +2,8 @@
   "requiredOneOf": [
     "attachment",
     "archive",
-    "narrative-description"
+    "narrative-description",
+    "narrative-summary"
   ],
   "attributes": {
     "5Ds-of-propaganda": {
@@ -25,34 +26,35 @@
       "misp-attribute": "attachment"
     },
     "narrative-description": {
-      "description": "Raw text of narrative.",
+      "description": "A description of the narrative.",
+      "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "text"
     },
-    "crosspost": {
-      "description": "Safe site where the narrative has been posted.",
-      "ui-priority": 0,
-      "misp-attribute": "link",
-      "multiple": true
-    },
-    "crosspost-unsafe": {
-      "description": "Unsafe site where the narrative has been posted.",
-      "ui-priority": 0,
-      "misp-attribute": "url",
-      "multiple": true
-    },
-    "url": {
-      "description": "Original URL location of the narrative (potentially malicious)",
+    "narrative-summary": {
+      "description": "A summary of the narrative.",
       "ui-priority": 1,
-      "misp-attribute": "url"
+      "misp-attribute": "text"
     },
-    "link": {
-      "description": "Original link into the narrative (Supposed harmless)",
+    "external-references": {
+      "description": "Link to external references.",
+      "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "link"
     },
+    "link": {
+      "description": "Original link to the narrative source (Supposed harmless)",
+      "ui-priority": 1,
+      "misp-attribute": "link"
+    },
+    "url": {
+      "description": "Original link to the narrative source (Supposed malicious)",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
     "archive": {
       "description": "Archive of the original narrative source (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
       "ui-priority": 1,
       "multiple": true,
       "misp-attribute": "link"
@@ -83,7 +85,7 @@
       "misp-attribute": "datetime"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "Object describing a narrative.",
   "meta-category": "misc",
   "uuid": "83bea299-514a-4719-a84b-f6fd0997fac1",
