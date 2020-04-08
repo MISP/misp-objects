@@ -186,7 +186,7 @@ If the unparsed object can be included, a **raw-base64** attribute can be used i
 
 Every object needs a **uuid** which can be created using **uuidgen -r** on a linux command line.
 
-When the object is created, pull a request on this project. We usually merge the objects if it fits existing use-cases.
+When the object is created, the `validate_all.sh` and `jq_all_the_things.sh` is run for validation, pull a request on this project. We usually merge the objects if it fits existing use-cases.
 
 ## MISP objects documentation
 
