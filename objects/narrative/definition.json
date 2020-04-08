@@ -25,8 +25,8 @@
       "ui-priority": 1,
       "misp-attribute": "attachment"
     },
-    "narrative-description": {
-      "description": "A description of the narrative.",
+    "narrative-disproof": {
+      "description": "Disproof or evidence against the narrative.",
       "disable_correlation": true,
       "ui-priority": 1,
       "misp-attribute": "text"
@@ -71,23 +71,11 @@
         "Parody",
         "Other"
       ]
-    },
-    "last-seen": {
-      "description": "When the narrative has been accessible or seen for the last time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "first-seen": {
-      "description": "When the narrative has been accessible or seen for the first time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
     }
   },
-  "version": 2,
+  "version": 4,
   "description": "Object describing a narrative.",
   "meta-category": "misc",
-  "uuid": "83bea299-514a-4719-a84b-f6fd0997fac1",
+  "uuid": "fb965678-e14f-4485-bc6c-3fc5463e5318",
   "name": "narrative"
 }
