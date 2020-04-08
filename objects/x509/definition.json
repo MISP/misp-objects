@@ -110,25 +110,25 @@
     "dns_names": {
       "description": "Subject Alternative Name - DNS names",
       "multiple": true,
-      "misp-attribute": "text",
+      "misp-attribute": "hostname",
       "ui-priority": 0
     },
     "email": {
       "description": "Subject Alternative Name - emails",
       "multiple": true,
-      "misp-attribute": "text",
+      "misp-attribute": "email-dst",
       "ui-priority": 0
     },
     "ip": {
       "description": "Subject Alternative Name - IP",
       "multiple": true,
-      "misp-attribute": "text",
+      "misp-attribute": "ip-dst",
       "ui-priority": 0
     },
     "uri": {
       "description": "Subject Alternative Name - URI",
       "multiple": true,
-      "misp-attribute": "text",
+      "misp-attribute": "uri",
       "ui-priority": 0
     },
     "rid": {
@@ -148,7 +148,7 @@
       ]
     }
   },
-  "version": 11,
+  "version": 12,
   "description": "x509 object describing a X.509 certificate",
   "meta-category": "network",
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
