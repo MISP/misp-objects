@@ -112,9 +112,15 @@
       "misp-attribute": "ip-dst",
       "ui-priority": 1,
       "multiple": true
+    },
+    "domain": {
+      "description": "Domain name of the organisation targeted.",
+      "misp-attribute": "domain",
+      "ui-priority": 1,
+      "multiple": true
     }
   },
-  "version": 5,
+  "version": 6,
   "description": "Victim object describes the target of an attack or abuse.",
   "meta-category": "misc",
   "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
