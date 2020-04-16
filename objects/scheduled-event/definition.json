@@ -1,0 +1,129 @@
+{
+  "requiredOneOf": [
+    "event-name",
+    "event-alias",
+    "archive",
+    "attachment"
+  ],
+  "attributes": {
+    "event-name": {
+      "description": "The name of the event.",
+      "ui-priority": 1,
+      "misp-attribute": "text"
+    },
+    "event-alias": {
+      "description": "Aliases of event.",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "text"
+    },
+    "event-listing": {
+      "description": "Social media and other platforms on which the event is advertised.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "multiple": true,
+      "sane_default": [
+        "Twitter",
+        "Facebook",
+        "Meetup",
+        "Eventbrite",
+        "Other"
+      ]
+    },
+    "username": {
+      "description": "A user account who is going to the event.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "person-name": {
+      "description": "A person who is going to the event.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "administrator": {
+      "description": "A user account who is an owner or admin of the event.",
+      "ui-priority": 1,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the event.",
+      "ui-priority": 0,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "url": {
+      "description": "Original URL location of the event (potentially malicious).",
+      "ui-priority": 1,
+      "misp-attribute": "url"
+    },
+    "link": {
+      "description": "Original link into the event (supposed harmless).",
+      "ui-priority": 1,
+      "misp-attribute": "link"
+    },
+    "phone-number": {
+      "description": "Phone number of the event contact.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "fax-number": {
+      "description": "Fax number of the event contact.",
+      "ui-priority": 10,
+      "misp-attribute": "phone-number",
+      "multiple": true
+    },
+    "address": {
+      "description": "Postal address of the event.",
+      "ui-priority": 10,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "e-mail": {
+      "description": "Email address of the event contact.",
+      "ui-priority": 10,
+      "misp-attribute": "email-src",
+      "multiple": true
+    },
+    "embedded-link": {
+      "description": "Link embedded in the event description (potentially malicious).",
+      "ui-priority": 0,
+      "misp-attribute": "url",
+      "multiple": true
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the event description (supposed safe).",
+      "ui-priority": 0,
+      "misp-attribute": "link",
+      "multiple": true,
+      "to_ids": false
+    },
+    "archive": {
+      "description": "Archive of the original event (Internet Archive, Archive.is, etc).",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "link"
+    },
+    "attachment": {
+      "description": "A screen capture or other attachment relevant to the event.",
+      "ui-priority": 1,
+      "multiple": true,
+      "misp-attribute": "attachment"
+    },
+    "scheduled-date": {
+      "description": "Initial creation of the microblog post",
+      "ui-priority": 0,
+      "multiple": true,
+      "misp-attribute": "datetime"
+    }
+  },
+  "version": 1,
+  "description": "Event object template describing a gathering of individuals in meatspace.",
+  "meta-category": "misc",
+  "uuid": "40ba0098-cfd8-4b54-b5a8-9adcdf47533d",
+  "name": "scheduled-event"
+}

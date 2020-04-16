@@ -2,7 +2,6 @@
   "requiredOneOf": [
     "attachment",
     "archive",
-    "narrative-description",
     "narrative-summary"
   ],
   "attributes": {
@@ -76,6 +75,6 @@
   "version": 4,
   "description": "Object describing a narrative.",
   "meta-category": "misc",
-  "uuid": "fb965678-e14f-4485-bc6c-3fc5463e5318",
+  "uuid": "83bea299-514a-4719-a84b-f6fd0997fac1",
   "name": "narrative"
 }
