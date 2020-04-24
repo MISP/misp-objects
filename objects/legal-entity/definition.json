@@ -10,37 +10,47 @@
       "misp-attribute": "text"
     },
     "name": {
-      "description": "Name of an entity.",
+      "description": "Name of the entity.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "commercial-name": {
-      "description": "Commercial name of an entity.",
+      "description": "Commercial name of the entity.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "legal-form": {
-      "description": "Legal form of an entity.",
+      "description": "Legal form of the entity.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "registration-number": {
-      "description": "Registration number of an entity in the relevant authority.",
+      "description": "Registration number of the entity in the relevant authority.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "business": {
-      "description": "Business area of an entity.",
+      "description": "Business area of the entity.",
       "ui-priority": 0,
       "misp-attribute": "text"
     },
     "phone-number": {
-      "description": "Phone number of an entity.",
+      "description": "Phone number of the entity.",
       "ui-priority": 0,
       "misp-attribute": "phone-number"
+    },
+    "website": {
+      "description": "Website of the entity.",
+      "ui-priority": 0,
+      "misp-attribute": "link"
+    },
+    "logo": {
+      "description": "Logo of the entity.",
+      "ui-priority": 0,
+      "misp-attribute": "attachment"
     }
   },
-  "version": 1,
+  "version": 2,
   "description": "An object to describe a legal entity.",
   "meta-category": "misc",
   "uuid": "14f5688f-d89c-469f-9878-c48bf6c41c65",
