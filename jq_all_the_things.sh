@@ -19,7 +19,7 @@ set -x
 
 for dir in objects/*/definition.json
 do
-    cat ${dir} | jq . | sponge ${dir}
+    cat ${dir} | jq -S -j . | sponge ${dir}
 done
 
 cat relationships/definition.json | jq . | sponge relationships/definition.json
