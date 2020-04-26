@@ -1,54 +1,54 @@
 {
+  "attributes": {
+    "full-name": {
+      "description": "Full name assigned to the profile.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "group-comment": {
+      "description": "Any group comment added.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "group-name": {
+      "description": "Name assigned to the profile.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "group-users": {
+      "description": "Users belonging to the group",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "key": {
+      "description": "Registry key where the information is retrieved from.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "key-last-write-time": {
+      "description": "Date and time when the key was last updated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-write-date-time": {
+      "description": "Date and time when the group key was updated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Regripper Object template designed to present group profile details extracted from the SAM hive.",
+  "meta-category": "misc",
+  "name": "regripper-sam-hive-user-group",
   "required": [
     "key"
   ],
   "requiredOneOf": [
     "group-name"
   ],
-  "attributes": {
-    "key": {
-      "description": "Registry key where the information is retrieved from.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "key-last-write-time": {
-      "description": "Date and time when the key was last updated.",
-      "ui-priority": 0,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
-    },
-    "group-name": {
-      "description": "Name assigned to the profile.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "full-name": {
-      "description": "Full name assigned to the profile.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "last-write-date-time": {
-      "description": "Date and time when the group key was updated.",
-      "ui-priority": 0,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
-    },
-    "group-comment": {
-      "description": "Any group comment added.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "group-users": {
-      "description": "Users belonging to the group",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true
-    }
-  },
-  "version": 1,
-  "description": "Regripper Object template designed to present group profile details extracted from the SAM hive.",
-  "meta-category": "misc",
   "uuid": "b924bae1-2dec-4d2d-a8c2-b03305222b7c",
-  "name": "regripper-sam-hive-user-group"
+  "version": 1
 }

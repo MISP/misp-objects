@@ -1,44 +1,36 @@
 {
-  "requiredOneOf": [
-    "ticket-number"
-  ],
   "attributes": {
     "classification": {
       "description": "Classification of the RTIR ticket",
-      "ui-priority": 1,
       "misp-attribute": "text",
-      "multiple": true
-    },
-    "ip": {
-      "description": "IPs automatically extracted from the RTIR ticket",
-      "ui-priority": 0,
-      "misp-attribute": "ip-dst",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 1
     },
     "constituency": {
       "description": "Constituency of the RTIR ticket",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "IPs automatically extracted from the RTIR ticket",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 0
     },
     "queue": {
       "description": "Queue of the RTIR ticket",
-      "ui-priority": 0,
       "misp-attribute": "text",
       "sane_default": [
         "incident",
         "investigations",
         "blocks",
         "incident reports"
-      ]
-    },
-    "subject": {
-      "description": "Subject of the RTIR ticket",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      ],
+      "ui-priority": 0
     },
     "status": {
       "description": "Status of the RTIR ticket",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "new",
@@ -48,17 +40,25 @@
         "rejected",
         "deleted"
       ],
-      "disable_correlation": true
+      "ui-priority": 0
+    },
+    "subject": {
+      "description": "Subject of the RTIR ticket",
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "ticket-number": {
       "description": "ticket-number of the RTIR ticket",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "RTIR - Request Tracker for Incident Response",
   "meta-category": "misc",
+  "name": "rtir",
+  "requiredOneOf": [
+    "ticket-number"
+  ],
   "uuid": "7534ee19-0a1f-4f46-a197-e6e73e457943",
-  "name": "rtir"
+  "version": 2
 }

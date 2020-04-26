@@ -1,57 +1,57 @@
 {
-  "requiredOneOf": [
-    "cc-number"
-  ],
   "attributes": {
-    "iin": {
-      "description": "International Issuer Number (First eight digits of the credit card number",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
     "bank_name": {
       "description": "Name of the bank which have issued the card",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "version": {
-      "description": "Version of the card.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "comment": {
-      "description": "A description of the card.",
-      "ui-priority": 0,
-      "misp-attribute": "comment"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "card-security-code": {
       "description": "Card security code (CSC, CVD, CVV, CVC and SPC) as embossed or printed on the card.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "name": {
-      "description": "Name of the card owner.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "issued": {
-      "description": "Initial date of validity or issued date.",
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "expiration": {
-      "description": "Maximum date of validity",
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "cc-number": {
       "description": "credit-card number as encoded on the card.",
-      "ui-priority": 0,
-      "misp-attribute": "cc-number"
+      "misp-attribute": "cc-number",
+      "ui-priority": 0
+    },
+    "comment": {
+      "description": "A description of the card.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "expiration": {
+      "description": "Maximum date of validity",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "iin": {
+      "description": "International Issuer Number (First eight digits of the credit card number",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issued": {
+      "description": "Initial date of validity or issued date.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name of the card owner.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "Version of the card.",
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
-  "version": 3,
   "description": "A payment card like credit card, debit card or any similar cards which can be used for financial transactions.",
   "meta-category": "financial",
+  "name": "credit-card",
+  "requiredOneOf": [
+    "cc-number"
+  ],
   "uuid": "2b9c57aa-daba-4330-a738-56f18743b0c7",
-  "name": "credit-card"
+  "version": 3
 }

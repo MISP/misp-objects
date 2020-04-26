@@ -1,54 +1,53 @@
 {
-  "required": [
-    "cookie"
-  ],
   "attributes": {
     "cookie": {
       "description": "Full cookie",
-      "ui-priority": 1,
-      "misp-attribute": "cookie"
+      "misp-attribute": "cookie",
+      "ui-priority": 1
     },
     "cookie-name": {
       "description": "Name of the cookie (if splitted)",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "cookie-value": {
       "description": "Value of the cookie (if splitted)",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "path": {
-      "description": "Path defined in the cookie",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "expires": {
       "description": "Expiration date/time of the cookie",
-      "ui-priority": 0,
       "disable_correlation": true,
-      "misp-attribute": "datetime"
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "http-only": {
       "description": "True if send only through HTTP",
-      "ui-priority": 0,
       "disable_correlation": true,
-      "misp-attribute": "boolean"
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "path": {
+      "description": "Path defined in the cookie",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "secure": {
       "description": "True if cookie is sent over TLS",
-      "ui-priority": 0,
       "disable_correlation": true,
-      "misp-attribute": "boolean"
+      "misp-attribute": "boolean",
+      "ui-priority": 0
     },
     "text": {
       "description": "A description of the cookie.",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "type": {
+      "description": "Type of cookie and how it's used in this specific object.",
+      "misp-attribute": "text",
       "sane_default": [
         "Session management",
         "Personalization",
@@ -57,14 +56,15 @@
         "Malicious Payload",
         "Beaconing"
       ],
-      "description": "Type of cookie and how it's used in this specific object.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "ui-priority": 0
     }
   },
-  "version": 3,
   "description": "An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server. Typically, it's used to tell if two requests came from the same browser — keeping a user logged-in, for example. It remembers stateful information for the stateless HTTP protocol. (as defined by the Mozilla foundation.",
   "meta-category": "network",
+  "name": "cookie",
+  "required": [
+    "cookie"
+  ],
   "uuid": "7755ad19-55c7-4da4-805e-197cf81bbcb8",
-  "name": "cookie"
+  "version": 3
 }

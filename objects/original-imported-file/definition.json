@@ -1,18 +1,7 @@
 {
-  "requiredOneOf": [
-    "imported-sample",
-    "format"
-  ],
   "attributes": {
-    "imported-sample": {
-      "description": "The original imported file itself (binary).",
-      "ui-priority": 1,
-      "disable_correlation": true,
-      "misp-attribute": "attachment"
-    },
     "format": {
       "description": "Format of data imported.",
-      "ui-priority": 1,
       "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
@@ -21,17 +10,28 @@
         "STIX 1.2",
         "STIX 2.0",
         "OpenIOC"
-      ]
+      ],
+      "ui-priority": 1
+    },
+    "imported-sample": {
+      "description": "The original imported file itself (binary).",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
     },
     "uri": {
       "description": "URI related to the imported file.",
-      "ui-priority": 0,
-      "misp-attribute": "uri"
+      "misp-attribute": "uri",
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "Object describing the original file used to import data in MISP.",
   "meta-category": "file",
+  "name": "original-imported-file",
+  "requiredOneOf": [
+    "imported-sample",
+    "format"
+  ],
   "uuid": "4cd560e9-2cfe-40a1-9964-7b2e797ecac5",
-  "name": "original-imported-file"
+  "version": 2
 }

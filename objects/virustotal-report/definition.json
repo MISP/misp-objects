@@ -1,63 +1,63 @@
 {
+  "attributes": {
+    "comment": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Comment related to this hash",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "community-score": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Community Score",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "detection-ratio": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Detection Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "first-submission": {
+      "categories": [
+        "Other"
+      ],
+      "description": "First Submission",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-submission": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Last Submission",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "permalink": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Permalink Reference",
+      "misp-attribute": "link",
+      "ui-priority": 2
+    }
+  },
+  "description": "VirusTotal report",
+  "meta-category": "misc",
+  "name": "virustotal-report",
   "required": [
     "permalink"
   ],
-  "attributes": {
-    "community-score": {
-      "description": "Community Score",
-      "disable_correlation": true,
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "detection-ratio": {
-      "description": "Detection Ratio",
-      "disable_correlation": true,
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "first-submission": {
-      "description": "First Submission",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "last-submission": {
-      "description": "Last Submission",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "permalink": {
-      "description": "Permalink Reference",
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 2,
-      "misp-attribute": "link"
-    },
-    "comment": {
-      "description": "Comment related to this hash",
-      "categories": [
-        "External analysis"
-      ],
-      "misp-attribute": "text",
-      "ui-priority": 2,
-      "multiple": true
-    }
-  },
-  "version": 3,
-  "description": "VirusTotal report",
-  "meta-category": "misc",
   "uuid": "d7dd0154-e04f-4c34-a2fb-79f3a3a52aa4",
-  "name": "virustotal-report"
+  "version": 3
 }

@@ -1,40 +1,40 @@
 {
-  "requiredOneOf": [
-    "yara",
-    "yara-hunt"
-  ],
   "attributes": {
-    "version": {
-      "description": "yabin.py and regex.txt version used for the generation of the yara rules.",
-      "ui-priority": 0,
-      "misp-attribute": "comment"
-    },
     "comment": {
       "description": "A description of Yara rule generated.",
-      "ui-priority": 0,
-      "misp-attribute": "comment"
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "yabin.py and regex.txt version used for the generation of the yara rules.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
     },
     "whitelist": {
       "description": "Whitelist name used to generate the rules.",
-      "ui-priority": 0,
-      "misp-attribute": "comment"
-    },
-    "yara-hunt": {
-      "description": "Wide yara rule generated from -yh.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "yara"
+      "misp-attribute": "comment",
+      "ui-priority": 0
     },
     "yara": {
       "description": "Yara rule generated from -y.",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "yara"
+      "misp-attribute": "yara",
+      "ui-priority": 0
+    },
+    "yara-hunt": {
+      "description": "Wide yara rule generated from -yh.",
+      "disable_correlation": true,
+      "misp-attribute": "yara",
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "yabin.py generates Yara rules from function prologs, for matching and hunting binaries. ref: https://github.com/AlienVault-OTX/yabin",
   "meta-category": "file",
+  "name": "yabin",
+  "requiredOneOf": [
+    "yara",
+    "yara-hunt"
+  ],
   "uuid": "35b4dd03-4fa9-4e0e-97d8-a2867b11c956",
-  "name": "yabin"
+  "version": 2
 }

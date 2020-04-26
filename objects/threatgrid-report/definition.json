@@ -1,79 +1,79 @@
 {
+  "attributes": {
+    "analysis_submitted_at": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Submission date",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "heuristic_raw_score": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "heuristic_raw_score",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "heuristic_score": {
+      "categories": [
+        "Other"
+      ],
+      "description": "heuristic_score",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "id": {
+      "categories": [
+        "Other"
+      ],
+      "description": "ThreatGrid ID",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "iocs": {
+      "categories": [
+        "Other"
+      ],
+      "description": "iocs",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "original_filename": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Original filename",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "permalink": {
+      "categories": [
+        "Other"
+      ],
+      "description": "permalink",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "threat_score": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "threat_score",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "ThreatGrid report",
+  "meta-category": "misc",
+  "name": "threatgrid-report",
   "required": [
     "threat_score"
   ],
-  "attributes": {
-    "threat_score": {
-      "description": "threat_score",
-      "disable_correlation": true,
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "heuristic_raw_score": {
-      "description": "heuristic_raw_score",
-      "disable_correlation": true,
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "heuristic_score": {
-      "description": "heuristic_score",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "analysis_submitted_at": {
-      "description": "Submission date",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "original_filename": {
-      "description": "Original filename",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "permalink": {
-      "description": "permalink",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "id": {
-      "description": "ThreatGrid ID",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "iocs": {
-      "description": "iocs",
-      "categories": [
-        "Other"
-      ],
-      "ui-priority": 0,
-      "multiple": true,
-      "misp-attribute": "text"
-    }
-  },
-  "version": 6,
-  "description": "ThreatGrid report",
-  "meta-category": "misc",
   "uuid": "23b3576b-2e68-4a86-a103-68820daef1d5",
-  "name": "threatgrid-report"
+  "version": 6
 }

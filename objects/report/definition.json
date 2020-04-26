@@ -1,37 +1,37 @@
 {
-  "required": [
-    "summary"
-  ],
   "attributes": {
-    "summary": {
-      "description": "Free text summary of the report",
-      "ui-priority": 100,
+    "case-number": {
+      "categories": [
+        "Internal reference",
+        "Other"
+      ],
+      "description": "Case number",
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "report-file(s)": {
+      "description": "Attachment(s) that is related to the report",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 99
+    },
+    "summary": {
       "categories": [
         "Other",
         "Internal reference"
       ],
-      "multiple": true
-    },
-    "case-number": {
-      "description": "Case number",
-      "ui-priority": 1,
+      "description": "Free text summary of the report",
       "misp-attribute": "text",
-      "categories": [
-        "Internal reference",
-        "Other"
-      ]
-    },
-    "report-file(s)": {
-      "description": "Attachment(s) that is related to the report",
-      "ui-priority": 99,
-      "misp-attribute": "attachment",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 100
     }
   },
-  "version": 1,
   "description": "Metadata used to generate an executive level report",
   "meta-category": "misc",
+  "name": "report",
+  "required": [
+    "summary"
+  ],
   "uuid": "70a68471-df22-4e3f-aa1a-5a3be19f82df",
-  "name": "report"
+  "version": 1
 }

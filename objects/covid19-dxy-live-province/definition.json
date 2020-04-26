@@ -1,55 +1,55 @@
 {
-  "required": [
-    "province",
-    "update"
-  ],
   "attributes": {
-    "province": {
-      "description": "Name of the Chinese province, in Chinese.",
-      "ui-priority": 1,
+    "comment": {
+      "description": "Comment, in chinese",
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "update": {
-      "description": "Approximate time of the update (~hour)",
-      "ui-priority": 1,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
+      "ui-priority": 1
     },
     "current-confirmed": {
       "description": "Current number of confirmed cases",
-      "ui-priority": 1,
+      "disable_correlation": true,
       "misp-attribute": "counter",
-      "disable_correlation": true
+      "ui-priority": 1
+    },
+    "province": {
+      "description": "Name of the Chinese province, in Chinese.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "total-confirmed": {
       "description": "Total number of confirmed cases.",
-      "misp-attribute": "counter",
       "disable_correlation": true,
+      "misp-attribute": "counter",
       "ui-priority": 1
     },
     "total-cured": {
       "description": "Total number of cured cases.",
-      "misp-attribute": "counter",
       "disable_correlation": true,
+      "misp-attribute": "counter",
       "ui-priority": 1
     },
     "total-death": {
       "description": "Total number of deaths.",
-      "misp-attribute": "counter",
       "disable_correlation": true,
+      "misp-attribute": "counter",
       "ui-priority": 1
     },
-    "comment": {
-      "description": "Comment, in chinese",
-      "misp-attribute": "text",
+    "update": {
+      "description": "Approximate time of the update (~hour)",
       "disable_correlation": true,
+      "misp-attribute": "datetime",
       "ui-priority": 1
     }
   },
-  "version": 1,
   "description": "COVID 19 from dxy.cn - Aggregation by province",
   "meta-category": "health",
+  "name": "covid19-dxy-live-province",
+  "required": [
+    "province",
+    "update"
+  ],
   "uuid": "40b49502-088b-44a5-80a7-0e55653f3ed4",
-  "name": "covid19-dxy-live-province"
+  "version": 1
 }

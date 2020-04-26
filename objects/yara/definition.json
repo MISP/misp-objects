@@ -1,47 +1,47 @@
 {
-  "requiredOneOf": [
-    "yara",
-    "yara-rule-name"
-  ],
   "attributes": {
     "comment": {
       "description": "A description of the YARA rule.",
-      "ui-priority": 0,
-      "misp-attribute": "comment"
-    },
-    "yara": {
-      "description": "YARA rule.",
-      "ui-priority": 0,
-      "misp-attribute": "yara"
-    },
-    "yara-rule-name": {
-      "description": "YARA rule name.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "version": {
-      "sane_default": [
-        "3.7.1"
-      ],
-      "description": "Version of the YARA rule depending where the yara rule is known to work as expected.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "comment",
+      "ui-priority": 0
     },
     "context": {
       "description": "Context where the YARA rule can be applied",
+      "misp-attribute": "text",
       "sane_default": [
         "all",
         "disk",
         "memory",
         "network"
       ],
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "Version of the YARA rule depending where the yara rule is known to work as expected.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "3.7.1"
+      ],
+      "ui-priority": 0
+    },
+    "yara": {
+      "description": "YARA rule.",
+      "misp-attribute": "yara",
+      "ui-priority": 0
+    },
+    "yara-rule-name": {
+      "description": "YARA rule name.",
       "misp-attribute": "text",
       "ui-priority": 0
     }
   },
-  "version": 4,
   "description": "An object describing a YARA rule (or a YARA rule name) along with its version.",
   "meta-category": "misc",
+  "name": "yara",
+  "requiredOneOf": [
+    "yara",
+    "yara-rule-name"
+  ],
   "uuid": "b5acf82e-ecca-4868-82fe-9dbdf4d808c3",
-  "name": "yara"
+  "version": 4
 }

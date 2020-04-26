@@ -1,40 +1,69 @@
 {
-  "requiredOneOf": [
-    "model",
-    "vendor",
-    "architecture",
-    "boot-log",
-    "picture-pcb",
-    "picture-device"
-  ],
   "attributes": {
-    "picture-pcb": {
-      "description": "Picture of the IoT device PCB",
-      "ui-priority": 10,
-      "misp-attribute": "attachment",
-      "multiple": true
-    },
-    "picture-device": {
-      "description": "Picture of the IoT device",
-      "ui-priority": 10,
-      "misp-attribute": "attachment",
-      "multiple": true
-    },
-    "fcc-id": {
-      "description": "FCC-ID of the IoT device",
-      "ui-priority": 10,
+    "architecture": {
+      "description": "architecture of the IoT device",
       "misp-attribute": "text",
-      "multiple": true
+      "sane_default": [
+        "ARC",
+        "ARM",
+        "M68000",
+        "MicroBlaze",
+        "MIPS",
+        "NSD32",
+        "Nios II",
+        "PowerPC",
+        "RISC-V",
+        "Sandbox",
+        "SH",
+        "x86",
+        "Xtensa"
+      ],
+      "ui-priority": 1
     },
     "boot-log": {
       "description": "Boot log of the IoT device",
-      "ui-priority": 10,
       "misp-attribute": "attachment",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "fcc-id": {
+      "description": "FCC-ID of the IoT device",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "jtag-interface": {
+      "description": "JTAG interface of the IoT device",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ],
+      "ui-priority": 1
+    },
+    "model": {
+      "description": "Model of the IoT device",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "picture-device": {
+      "description": "Picture of the IoT device",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "picture-pcb": {
+      "description": "Picture of the IoT device PCB",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
     },
     "platform": {
       "description": "Platform of of the IoT device",
-      "ui-priority": 10,
       "misp-attribute": "text",
       "sane_default": [
         "mach-aspeed",
@@ -87,85 +116,56 @@
         "mach-mscc",
         "mach-mtmips",
         "mach-pic32"
-      ]
-    },
-    "architecture": {
-      "description": "architecture of the IoT device",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "sane_default": [
-        "ARC",
-        "ARM",
-        "M68000",
-        "MicroBlaze",
-        "MIPS",
-        "NSD32",
-        "Nios II",
-        "PowerPC",
-        "RISC-V",
-        "Sandbox",
-        "SH",
-        "x86",
-        "Xtensa"
-      ]
-    },
-    "model": {
-      "description": "Model of the IoT device",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "multiple": true
-    },
-    "vendor": {
-      "description": "Vendor of the IoT device",
-      "ui-priority": 1,
-      "misp-attribute": "text"
+      ],
+      "ui-priority": 10
     },
     "reference": {
       "description": "Reference of the IoT device",
-      "ui-priority": 1,
       "misp-attribute": "link",
-      "multiple": true
-    },
-    "spi-interface": {
-      "description": "SPI interface of the IoT device",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "sane_default": [
-        "Yes",
-        "No",
-        "Unknown",
-        "Disabled"
-      ]
+      "multiple": true,
+      "ui-priority": 1
     },
     "serial-interface": {
       "description": "Serial interface of the IoT device",
-      "ui-priority": 1,
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "Yes",
         "No",
         "Unknown",
         "Disabled"
-      ]
+      ],
+      "ui-priority": 1
     },
-    "jtag-interface": {
-      "description": "JTAG interface of the IoT device",
-      "ui-priority": 1,
-      "misp-attribute": "text",
+    "spi-interface": {
+      "description": "SPI interface of the IoT device",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "Yes",
         "No",
         "Unknown",
         "Disabled"
-      ]
+      ],
+      "ui-priority": 1
+    },
+    "vendor": {
+      "description": "Vendor of the IoT device",
+      "misp-attribute": "text",
+      "ui-priority": 1
     }
   },
-  "version": 3,
   "description": "An IoT device.",
   "meta-category": "iot",
+  "name": "iot-device",
+  "requiredOneOf": [
+    "model",
+    "vendor",
+    "architecture",
+    "boot-log",
+    "picture-pcb",
+    "picture-device"
+  ],
   "uuid": "3de3b92a-859b-431b-9c4f-1a81de1d9637",
-  "name": "iot-device"
+  "version": 3
 }
