@@ -1,38 +1,9 @@
 {
-  "requiredOneOf": [
-    "text",
-    "entrypoint-address"
-  ],
   "attributes": {
-    "entrypoint-address": {
-      "description": "Address of the entry point",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "type": {
-      "description": "Type of ELF",
-      "sane_default": [
-        "CORE",
-        "DYNAMIC",
-        "EXECUTABLE",
-        "HIPROC",
-        "LOPROC",
-        "NONE",
-        "RELOCATABLE"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "number-sections": {
-      "description": "Number of sections",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
     "arch": {
       "description": "Architecture of the ELF file",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "None",
         "M32",
@@ -210,12 +181,24 @@
         "CSR_KALIMBA",
         "AMDGPU"
       ],
-      "ui-priority": 0,
+      "ui-priority": 0
+    },
+    "entrypoint-address": {
+      "description": "Address of the entry point",
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "disable_correlation": true
+      "ui-priority": 0
+    },
+    "number-sections": {
+      "description": "Number of sections",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "os_abi": {
       "description": "Header operating system application binary interface (ABI)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "AIX",
         "ARM",
@@ -239,21 +222,38 @@
         "SYSTEMV",
         "TRU64"
       ],
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
+      "ui-priority": 0
     },
     "text": {
       "description": "Free text value to attach to the ELF",
       "disable_correlation": true,
-      "ui-priority": 1,
       "misp-attribute": "text",
-      "recommended": false
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Type of ELF",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "CORE",
+        "DYNAMIC",
+        "EXECUTABLE",
+        "HIPROC",
+        "LOPROC",
+        "NONE",
+        "RELOCATABLE"
+      ],
+      "ui-priority": 0
     }
   },
-  "version": 5,
   "description": "Object describing a Executable and Linkable Format",
   "meta-category": "file",
+  "name": "elf",
+  "requiredOneOf": [
+    "text",
+    "entrypoint-address"
+  ],
   "uuid": "fa6534ae-ad74-4ce0-8f23-15a66c82c7fa",
-  "name": "elf"
+  "version": 5
 }

@@ -1,0 +1,66 @@
+{
+  "attributes": {
+    "additional-comments": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Comments.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "browser": {
+      "description": "Browser used.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "IE",
+        "Safari",
+        "Chrome",
+        "Firefox",
+        "Opera mini",
+        "Chromium"
+      ],
+      "ui-priority": 0
+    },
+    "datetime-searched": {
+      "description": "date and time when the search was conducted.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "domain": {
+      "description": "The domain of the search engine.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "sane_default": [
+        "Google",
+        "Yahoo",
+        "Bing",
+        "Alta Vista",
+        "MSN"
+      ],
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "the search word or sentence.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "username": {
+      "description": "User name or ID associated with the search.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An Object Template to share web search query information",
+  "meta-category": "misc",
+  "name": "tsk-web-search-query",
+  "required": [
+    "domain",
+    "text"
+  ],
+  "uuid": "16b3f8d0-fd09-4812-a42c-b5aeff2d4c2e",
+  "version": 1
+}

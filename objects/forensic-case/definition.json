@@ -1,47 +1,47 @@
 {
-  "requiredOneOf": [
-    "case-number"
-  ],
   "attributes": {
-    "case-number": {
-      "description": "Any unique number assigned to the case for unique identification.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "case-name": {
-      "description": "Name to address the case.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "name-of-the-analyst": {
-      "description": "Name(s) of the analyst assigned to the case.",
-      "multiple": true,
-      "ui-priority": 0,
+    "additional-comments": {
+      "description": "Comments.",
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "references": {
-      "description": "External references",
-      "multiple": true,
-      "ui-priority": 0,
-      "misp-attribute": "link"
+      "ui-priority": 0
     },
     "analysis-start-date": {
       "description": "Date when the analysis began.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "datetime",
-      "disable_correlation": true
+      "ui-priority": 0
     },
-    "additional-comments": {
-      "description": "Comments.",
-      "ui-priority": 0,
+    "case-name": {
+      "description": "Name to address the case.",
       "misp-attribute": "text",
-      "disable_correlation": true
+      "ui-priority": 0
+    },
+    "case-number": {
+      "description": "Any unique number assigned to the case for unique identification.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "name-of-the-analyst": {
+      "description": "Name(s) of the analyst assigned to the case.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "references": {
+      "description": "External references",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
     }
   },
-  "version": 1,
   "description": "An object template to describe a digital forensic case.",
   "meta-category": "misc",
+  "name": "forensic-case",
+  "requiredOneOf": [
+    "case-number"
+  ],
   "uuid": "3ea36022-ae93-455e-88b1-d43aca789cac",
-  "name": "forensic-case"
+  "version": 1
 }

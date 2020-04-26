@@ -1,48 +1,48 @@
 {
-  "requiredOneOf": [
-    "full"
-  ],
   "attributes": {
-    "summary": {
-      "description": "Cortex summary object (summary) in JSON",
-      "disable_correlation": false,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
     "full": {
       "description": "Cortex report object (full report) in JSON",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "start-date": {
-      "description": "When the Cortex analyser was started",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "name": {
       "description": "Cortex analyser/worker name",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "server-name": {
       "description": "Name of the cortex server",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "start-date": {
+      "description": "When the Cortex analyser was started",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "success": {
       "description": "Result of the cortex job",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "boolean"
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Cortex summary object (summary) in JSON",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
-  "version": 1,
   "description": "Cortex object describing a complete cortex analysis. Observables would be attribute with a relationship from this object.",
   "meta-category": "misc",
+  "name": "cortex",
+  "requiredOneOf": [
+    "full"
+  ],
   "uuid": "144988f3-fa00-4374-8015-c1a32092f451",
-  "name": "cortex"
+  "version": 1
 }

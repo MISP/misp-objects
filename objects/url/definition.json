@@ -1,29 +1,70 @@
 {
-  "requiredOneOf": [
-    "url",
-    "resource_path"
-  ],
   "attributes": {
+    "credential": {
+      "description": "Credential (username, password)",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "domain": {
+      "description": "Full domain",
+      "misp-attribute": "domain",
+      "ui-priority": 0
+    },
+    "domain_without_tld": {
+      "description": "Domain without Top-Level Domain",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "description": "First time this URL has been seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "fragment": {
       "description": "Fragment identifier is a short string of characters that refers to a resource that is subordinate to another, primary resource.",
-      "ui-priority": 0,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
-    "tld": {
-      "description": "Top-Level Domain",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
+    "host": {
+      "description": "Full hostname",
+      "misp-attribute": "hostname",
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "Better type when the host is an IP.",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "description": "Last time this URL has been seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "port": {
       "description": "Port number",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "port",
-      "disable_correlation": true
+      "ui-priority": 0
+    },
+    "query_string": {
+      "description": "Query (after path, preceded by '?')",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "resource_path": {
+      "description": "Path (between hostname:port and query)",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
     },
     "scheme": {
       "description": "Scheme",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "http",
         "https",
@@ -31,79 +72,38 @@
         "gopher",
         "sip"
       ],
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "first-seen": {
-      "description": "First time this URL has been seen",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "resource_path": {
-      "description": "Path (between hostname:port and query)",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true
-    },
-    "query_string": {
-      "description": "Query (after path, preceded by '?')",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true
-    },
-    "url": {
-      "description": "Full URL",
-      "ui-priority": 1,
-      "misp-attribute": "url"
-    },
-    "domain_without_tld": {
-      "description": "Domain without Top-Level Domain",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "domain": {
-      "description": "Full domain",
-      "ui-priority": 0,
-      "misp-attribute": "domain"
+      "ui-priority": 0
     },
     "subdomain": {
       "description": "Subdomain",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "credential": {
-      "description": "Credential (username, password)",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "ui-priority": 0
     },
     "text": {
       "description": "Description of the URL ",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
-    "last-seen": {
-      "description": "Last time this URL has been seen",
+    "tld": {
+      "description": "Top-Level Domain",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
-    "ip": {
-      "description": "Better type when the host is an IP.",
-      "ui-priority": 0,
-      "misp-attribute": "ip-dst"
-    },
-    "host": {
-      "description": "Full hostname",
-      "ui-priority": 0,
-      "misp-attribute": "hostname"
+    "url": {
+      "description": "Full URL",
+      "misp-attribute": "url",
+      "ui-priority": 1
     }
   },
-  "version": 8,
   "description": "url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
   "meta-category": "network",
+  "name": "url",
+  "requiredOneOf": [
+    "url",
+    "resource_path"
+  ],
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
-  "name": "url"
+  "version": 8
 }

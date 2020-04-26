@@ -1,4 +1,54 @@
 {
+  "attributes": {
+    "a-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IP Address sassociated with A Records",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mx-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with MX Record",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ns-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with NS Records",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "queried-domain": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain name",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "text": {
+      "description": "A description of the records",
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A set of dns records observed for a specific domain.",
+  "meta-category": "network",
+  "name": "dns-record",
   "required": [
     "queried-domain"
   ],
@@ -7,56 +57,6 @@
     "mx-record",
     "ns-record"
   ],
-  "attributes": {
-    "text": {
-      "description": "A description of the records",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "recommended": false
-    },
-    "queried-domain": {
-      "description": "Domain name",
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "domain"
-    },
-    "a-record": {
-      "description": "IP Address sassociated with A Records",
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "ip-dst",
-      "multiple": true
-    },
-    "mx-record": {
-      "description": "Domain associated with MX Record",
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "domain",
-      "multiple": true
-    },
-    "ns-record": {
-      "description": "Domain associated with NS Records",
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "domain",
-      "multiple": true
-    }
-  },
-  "version": 1,
-  "description": "A set of dns records observed for a specific domain.",
-  "meta-category": "network",
   "uuid": "f023c8f0-81ab-41f3-9f5d-fa597a34a9b9",
-  "name": "dns-record"
+  "version": 1
 }

@@ -1,0 +1,63 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "textual comment about the item",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "gain": {
+      "description": "What is the implementer is gaining by deceiving the user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "registration",
+        "personal data",
+        "money",
+        "contacts",
+        "audience"
+      ]
+    },
+    "implementer": {
+      "description": "Who is the vendor / holder of the item",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "location": {
+      "description": "Location where to find the item",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "screenshot": {
+      "description": "A screencapture or a screengrab of the item at work",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "time": {
+      "description": "Date and time when first-seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "user": {
+      "description": "who are the user of the item",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An Item whose User Interface implements a dark pattern.",
+  "meta-category": "misc",
+  "name": "dark-pattern-item",
+  "requiredOneOf": [
+    "location",
+    "screenshot"
+  ],
+  "uuid": "05755e29-8f5f-464d-bcff-2b4686472769",
+  "version": 2
+}

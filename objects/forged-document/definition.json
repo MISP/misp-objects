@@ -1,34 +1,30 @@
 {
-  "requiredOneOf": [
-    "document-name",
-    "attachment",
-    "document-text"
-  ],
   "attributes": {
-    "purpose-of-document": {
-      "description": "What the document is used for.",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true,
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
       "multiple": true,
-      "sane_default": [
-        "Identification",
-        "Travel",
-        "Health",
-        "Legal",
-        "Financial",
-        "Government",
-        "Military",
-        "Media",
-        "Communication",
-        "Other"
-      ]
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The forged document file.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "document-name": {
+      "description": "Title of the document.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "document-text": {
+      "description": "Raw text of document",
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "document-type": {
       "description": "The type of document (not the file type).",
-      "ui-priority": 1,
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
         "email",
@@ -42,68 +38,72 @@
         "invoice",
         "receipt",
         "other"
-      ]
+      ],
+      "ui-priority": 1
     },
-    "attachment": {
-      "description": "The forged document file.",
-      "ui-priority": 1,
-      "misp-attribute": "attachment"
+    "first-seen": {
+      "description": "When the document has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
-    "document-name": {
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "description": "Title of the document."
-    },
-    "document-text": {
-      "description": "Raw text of document",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "url": {
-      "description": "Original URL location of the document (potentially malicious)",
-      "ui-priority": 1,
-      "misp-attribute": "url"
+    "last-seen": {
+      "description": "When the document has been accessible or seen for the last time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "link": {
       "description": "Original link into the document (Supposed harmless)",
-      "ui-priority": 1,
-      "misp-attribute": "link"
-    },
-    "archive": {
-      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
-      "ui-priority": 1,
-      "multiple": true,
-      "misp-attribute": "link"
+      "misp-attribute": "link",
+      "ui-priority": 1
     },
     "objective": {
       "description": "Objective of the forged document.",
-      "ui-priority": 1,
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
         "Disinformation",
         "Advertising",
         "Parody",
         "Other"
-      ]
+      ],
+      "ui-priority": 1
     },
-    "last-seen": {
-      "description": "When the document has been accessible or seen for the last time.",
+    "purpose-of-document": {
+      "description": "What the document is used for.",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Identification",
+        "Travel",
+        "Health",
+        "Legal",
+        "Financial",
+        "Government",
+        "Military",
+        "Media",
+        "Communication",
+        "Other"
+      ],
+      "ui-priority": 1
     },
-    "first-seen": {
-      "description": "When the document has been accessible or seen for the first time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+    "url": {
+      "description": "Original URL location of the document (potentially malicious)",
+      "misp-attribute": "url",
+      "ui-priority": 1
     }
   },
-  "version": 7,
   "description": "Object describing a forged document.",
   "meta-category": "file",
+  "name": "forged-document",
+  "requiredOneOf": [
+    "document-name",
+    "attachment",
+    "document-text"
+  ],
   "uuid": "7e927620-b97c-4b00-98c0-8c0184d83d21",
-  "name": "forged-document"
+  "version": 7
 }

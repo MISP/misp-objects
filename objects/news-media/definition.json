@@ -1,84 +1,82 @@
 {
-  "requiredOneOf": [
-    "source",
-    "alias",
-    "archive",
-    "content",
-    "url",
-    "link",
-    "attachment"
-  ],
   "attributes": {
-    "source": {
-      "description": "Name of the news source.",
-      "disable_correlation": true,
-      "ui-priority": 100,
-      "misp-attribute": "text"
+    "address": {
+      "description": "Postal address of the news source.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
     },
     "alias": {
       "description": "Alias of the news source.",
-      "ui-priority": 99,
       "disable_correlation": true,
       "misp-attribute": "text",
-      "multiple": true
-    },
-    "username": {
-      "description": "Username who posted the blog post.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "content": {
-      "description": "Raw content of the news.",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "transcription": {
-      "description": "Transcribed audio/visual content.",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "title": {
-      "description": "Title of the post.",
-      "ui-priority": 1,
-      "misp-attribute": "text"
+      "multiple": true,
+      "ui-priority": 99
     },
     "archive": {
       "description": "Archive of the news (Internet Archive, Archive.is, etc).",
-      "ui-priority": 1,
+      "misp-attribute": "link",
       "multiple": true,
-      "misp-attribute": "link"
+      "ui-priority": 1
     },
     "attachment": {
       "description": "The news file, screen capture, audio, etc.",
-      "ui-priority": 1,
+      "misp-attribute": "attachment",
       "multiple": true,
-      "misp-attribute": "attachment"
+      "ui-priority": 1
     },
-    "type": {
-      "description": "Type of news media (newspaper, TV, podcast, etc).",
-      "ui-priority": 1,
+    "content": {
+      "description": "Raw content of the news.",
       "misp-attribute": "text",
-      "disable_correlation": true,
+      "ui-priority": 1
+    },
+    "e-mail": {
+      "description": "Email address of the news source.",
+      "misp-attribute": "email-src",
       "multiple": true,
-      "sane_default": [
-        "Newspaper",
-        "Newspaper (Online)",
-        "Magazine",
-        "Magazine (Online)",
-        "TV",
-        "Tube",
-        "Radio",
-        "Radio (Online)",
-        "Podcast",
-        "Alternative Media",
-        "Other"
-      ]
+      "ui-priority": 10
+    },
+    "embedded-link": {
+      "description": "Site linked by the blog post.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Safe site linked by the blog post.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "fax-number": {
+      "description": "Fax number of the news source.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "link": {
+      "description": "Original link to news (Supposed harmless).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "phone-number": {
+      "description": "Phone number of the news source.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "source": {
+      "description": "Name of the news source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 100
     },
     "sub-type": {
-      "misp-attribute": "text",
-      "ui-priority": 0,
       "description": "Format of the news post (business daily, local news, metasite, etc).",
       "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0,
       "values_list": [
         "Business Daily",
         "Local News",
@@ -93,58 +91,60 @@
         "Other"
       ]
     },
+    "title": {
+      "description": "Title of the post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "transcription": {
+      "description": "Transcribed audio/visual content.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Type of news media (newspaper, TV, podcast, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Newspaper",
+        "Newspaper (Online)",
+        "Magazine",
+        "Magazine (Online)",
+        "TV",
+        "Tube",
+        "Radio",
+        "Radio (Online)",
+        "Podcast",
+        "Alternative Media",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
     "url": {
       "description": "Original URL location of news (potentially malicious).",
-      "ui-priority": 1,
       "misp-attribute": "url",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 1
     },
-    "link": {
-      "description": "Original link to news (Supposed harmless).",
-      "ui-priority": 1,
-      "misp-attribute": "link",
-      "multiple": true
-    },
-    "phone-number": {
-      "description": "Phone number of the news source.",
-      "ui-priority": 10,
-      "misp-attribute": "phone-number",
-      "multiple": true
-    },
-    "fax-number": {
-      "description": "Fax number of the news source.",
-      "ui-priority": 10,
-      "misp-attribute": "phone-number",
-      "multiple": true
-    },
-    "address": {
-      "description": "Postal address of the news source.",
-      "ui-priority": 10,
+    "username": {
+      "description": "Username who posted the blog post.",
       "misp-attribute": "text",
-      "multiple": true
-    },
-    "embedded-link": {
-      "description": "Site linked by the blog post.",
-      "ui-priority": 0,
-      "misp-attribute": "url",
-      "multiple": true
-    },
-    "embedded-safe-link": {
-      "description": "Safe site linked by the blog post.",
-      "ui-priority": 0,
-      "misp-attribute": "link",
-      "multiple": true
-    },
-    "e-mail": {
-      "description": "Email address of the news source.",
-      "ui-priority": 10,
-      "misp-attribute": "email-src",
-      "multiple": true
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "News media are forms of mass media delivering news to the general public.",
   "meta-category": "misc",
+  "name": "news-media",
+  "requiredOneOf": [
+    "source",
+    "alias",
+    "archive",
+    "content",
+    "url",
+    "link",
+    "attachment"
+  ],
   "uuid": "691463c5-5302-4847-9bec-4c56ccfec677",
-  "name": "news-media"
+  "version": 2
 }

@@ -1,0 +1,68 @@
+{
+  "attributes": {
+    "URL": {
+      "description": "The URL accessed.",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "additional-comments": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Comments.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "browser": {
+      "description": "Browser used to access the URL.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "IE",
+        "Safari",
+        "Chrome",
+        "Firefox",
+        "Opera mini",
+        "Chromium"
+      ],
+      "ui-priority": 0
+    },
+    "datetime-accessed": {
+      "description": "date and the time when the URL was accessed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "domain-ip": {
+      "description": "IP of the URL domain.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 0
+    },
+    "domain-name": {
+      "description": "Domain of the URL.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "referrer": {
+      "description": "where the URL was referred from ",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "Title of the web page",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An Object Template to share web history information",
+  "meta-category": "misc",
+  "name": "tsk-web-history",
+  "required": [
+    "URL",
+    "datetime-accessed"
+  ],
+  "uuid": "e1325e52-e52e-49b1-89ad-d503c127c698",
+  "version": 1
+}
