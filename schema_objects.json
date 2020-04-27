@@ -262,7 +262,8 @@
         "vulnerability",
         "climate",
         "iot",
-        "health"
+        "health",
+        "followthemoney"
       ],
       "type": "string"
     },
