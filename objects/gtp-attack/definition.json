@@ -1,21 +1,7 @@
 {
-  "requiredOneOf": [
-    "text"
-  ],
   "attributes": {
-    "GtpServingNetwork": {
-      "description": "GTP Serving Network.",
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "ui-priority": 1
-    },
     "GtpImei": {
       "description": "GTP IMEI (International Mobile Equipment Identity).",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "GtpMsisdn": {
-      "description": "GTP MSISDN.",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -26,6 +12,9 @@
     },
     "GtpInterface": {
       "description": "GTP interface.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
       "sane_default": [
         "S5",
         "S11",
@@ -34,9 +23,6 @@
         "Gn",
         "Gp"
       ],
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "multiple": true,
       "ui-priority": 1
     },
     "GtpMessageType": {
@@ -44,6 +30,28 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "GtpMsisdn": {
+      "description": "GTP MSISDN.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "GtpServingNetwork": {
+      "description": "GTP Serving Network.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "GtpVersion": {
+      "description": "GTP version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "0",
+        "1",
+        "2"
+      ],
+      "ui-priority": 0
     },
     "PortDest": {
       "description": "Destination port.",
@@ -57,6 +65,12 @@
       "misp-attribute": "port",
       "ui-priority": 0
     },
+    "first-seen": {
+      "description": "When the attack has been seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "ipDest": {
       "description": "IP destination address.",
       "misp-attribute": "ip-dst",
@@ -67,33 +81,19 @@
       "misp-attribute": "ip-src",
       "ui-priority": 0
     },
-    "GtpVersion": {
-      "description": "GTP version",
-      "sane_default": [
-        "0",
-        "1",
-        "2"
-      ],
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "ui-priority": 0
-    },
     "text": {
       "description": "A description of the GTP attack.",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "first-seen": {
-      "description": "When the attack has been seen for the first time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
-  "version": 3,
   "description": "GTP attack object as seen on a GSM, UMTS or LTE network",
   "meta-category": "network",
+  "name": "gtp-attack",
+  "requiredOneOf": [
+    "text"
+  ],
   "uuid": "6b3c48d2-0ca6-4608-9c36-455105439145",
-  "name": "gtp-attack"
+  "version": 3
 }

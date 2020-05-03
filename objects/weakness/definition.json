@@ -1,0 +1,52 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the weakness.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "id": {
+      "description": "Weakness ID (generally CWE).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name of the weakness.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "status": {
+      "description": "Status of the weakness.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Incomplete",
+        "Deprecated",
+        "Draft",
+        "Usable"
+      ],
+      "ui-priority": 0
+    },
+    "weakness-abs": {
+      "description": "Abstraction of the weakness.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Class",
+        "Base",
+        "Variant"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Weakness object describing a common weakness enumeration which can describe usable, incomplete, draft or deprecated weakness for software, equipment of hardware.",
+  "meta-category": "vulnerability",
+  "name": "weakness",
+  "requiredOneOf": [
+    "id",
+    "name",
+    "description"
+  ],
+  "uuid": "b8713fc0-d7a2-4b27-a182-38ed47966802",
+  "version": 1
+}

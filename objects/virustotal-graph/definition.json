@@ -1,0 +1,52 @@
+{
+  "attributes": {
+    "access": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Access to the VirusTotal graph",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "Private",
+        "Public"
+      ]
+    },
+    "comment": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Comment related to this VirusTotal graph",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "permalink": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Permalink Reference to the VirusTotal graph",
+      "misp-attribute": "link",
+      "ui-priority": 2
+    },
+    "screenshot": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Screenshot of the VirusTotal graph",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    }
+  },
+  "description": "VirusTotal graph",
+  "meta-category": "misc",
+  "name": "virustotal-graph",
+  "required": [
+    "permalink"
+  ],
+  "uuid": "9b421055-b1bb-4c33-9ead-7fa3f39e2232",
+  "version": 1
+}

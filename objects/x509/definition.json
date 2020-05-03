@@ -1,4 +1,149 @@
 {
+  "attributes": {
+    "dns_names": {
+      "description": "Subject Alternative Name - DNS names",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "email": {
+      "description": "Subject Alternative Name - emails",
+      "misp-attribute": "email-dst",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "Subject Alternative Name - IP",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "is_ca": {
+      "description": "CA certificate",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "issuer": {
+      "description": "Issuer of the certificate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "pem": {
+      "description": "Raw certificate in PEM formati (Unix-like newlines)",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "pubkey-info-algorithm": {
+      "description": "Algorithm of the public key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "pubkey-info-exponent": {
+      "description": "Exponent of the public key - in decimal",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "pubkey-info-modulus": {
+      "description": "Modulus of the public key - in Hexadecimal - no 0x, no :",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "pubkey-info-size": {
+      "description": "Length of the public key (in bits expressed in decimal: eg. 256 bits)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "raw-base64": {
+      "description": "Raw certificate base64 encoded (DER format)",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "rid": {
+      "description": "Subject Alternative Name - RID",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "self_signed": {
+      "description": "Self-signed certificate",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "serial-number": {
+      "description": "Serial number of the certificate",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "signature_algorithm": {
+      "description": "Signature algorithm",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "SHA1_WITH_RSA_ENCRYPTION",
+        "SHA256_WITH_RSA_ENCRYPTION"
+      ],
+      "ui-priority": 0
+    },
+    "subject": {
+      "description": "Subject of the certificate",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "text": {
+      "description": "Free text description of the certificate",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "uri": {
+      "description": "Subject Alternative Name - URI",
+      "misp-attribute": "uri",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "validity-not-after": {
+      "description": "Certificate invalid after that date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "validity-not-before": {
+      "description": "Certificate invalid before that date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "Version of the certificate",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "x509-fingerprint-md5": {
+      "description": "[Insecure] MD5 hash (128 bits)",
+      "misp-attribute": "x509-fingerprint-md5",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "x509-fingerprint-sha1": {
+      "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
+      "misp-attribute": "x509-fingerprint-sha1",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "x509-fingerprint-sha256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "misp-attribute": "x509-fingerprint-sha256",
+      "ui-priority": 1
+    }
+  },
+  "description": "x509 object describing a X.509 certificate",
+  "meta-category": "network",
+  "name": "x509",
   "requiredOneOf": [
     "x509-fingerprint-md5",
     "x509-fingerprint-sha1",
@@ -6,127 +151,6 @@
     "serial-number",
     "issuer"
   ],
-  "attributes": {
-    "subject": {
-      "description": "Subject of the certificate",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "pubkey-info-algorithm": {
-      "description": "Algorithm of the public key",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "pubkey-info-size": {
-      "description": "Length of the public key (in bits)",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "pubkey-info-exponent": {
-      "description": "Exponent of the public key",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "pubkey-info-modulus": {
-      "description": "Modulus of the public key",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "x509-fingerprint-md5": {
-      "description": "[Insecure] MD5 hash (128 bits)",
-      "ui-priority": 1,
-      "misp-attribute": "x509-fingerprint-md5",
-      "recommended": false
-    },
-    "x509-fingerprint-sha1": {
-      "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
-      "ui-priority": 1,
-      "misp-attribute": "x509-fingerprint-sha1",
-      "recommended": false
-    },
-    "x509-fingerprint-sha256": {
-      "description": "Secure Hash Algorithm 2 (256 bits)",
-      "ui-priority": 1,
-      "misp-attribute": "x509-fingerprint-sha256"
-    },
-    "raw-base64": {
-      "description": "Raw certificate base64 encoded (DER format)",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "pem": {
-      "description": "Raw certificate in PEM formati (Unix-like newlines)",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "text": {
-      "description": "Free text description of the certificate",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "validity-not-before": {
-      "description": "Certificate invalid before that date",
-      "ui-priority": 0,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
-    },
-    "validity-not-after": {
-      "description": "Certificate invalid after that date",
-      "ui-priority": 0,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
-    },
-    "issuer": {
-      "description": "Issuer of the certificate",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "serial-number": {
-      "description": "Serial number of the certificate",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "version": {
-      "description": "Version of the certificate",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "self_signed": {
-      "description": "Self-signed certificate",
-      "ui-priority": 0,
-      "misp-attribute": "boolean",
-      "disable_correlation": true
-    },
-    "is_ca": {
-      "description": "CA certificate",
-      "ui-priority": 0,
-      "misp-attribute": "boolean",
-      "disable_correlation": true
-    },
-    "dns_names": {
-      "description": "DNS names",
-      "multiple": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "signature_algorithm": {
-      "description": "Signature algorithm",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "sane_default": [
-        "SHA1_WITH_RSA_ENCRYPTION",
-        "SHA256_WITH_RSA_ENCRYPTION"
-      ]
-    }
-  },
-  "version": 9,
-  "description": "x509 object describing a X.509 certificate",
-  "meta-category": "network",
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
-  "name": "x509"
+  "version": 12
 }

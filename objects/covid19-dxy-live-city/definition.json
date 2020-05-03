@@ -1,0 +1,49 @@
+{
+  "attributes": {
+    "city": {
+      "description": "Name of the Chinese city, in Chinese.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "current-confirmed": {
+      "description": "Current number of confirmed cases",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "total-confirmed": {
+      "description": "Total number of confirmed cases.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "total-cured": {
+      "description": "Total number of cured cases.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "total-death": {
+      "description": "Total number of deaths.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "update": {
+      "description": "Approximate time of the update (~hour)",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    }
+  },
+  "description": "COVID 19 from dxy.cn - Aggregation by city",
+  "meta-category": "health",
+  "name": "covid19-dxy-live-city",
+  "required": [
+    "city",
+    "update"
+  ],
+  "uuid": "9132452b-f60a-41ac-a3b9-62701b85621b",
+  "version": 1
+}

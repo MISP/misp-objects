@@ -1,0 +1,63 @@
+{
+  "attributes": {
+    "classification": {
+      "categories": [
+        "Other"
+      ],
+      "description": "File classification - number",
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 2
+    },
+    "classificationName": {
+      "categories": [
+        "Other"
+      ],
+      "description": "File classification",
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "fileName": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Original filename",
+      "misp-attribute": "filename",
+      "ui-priority": 9
+    },
+    "fileSize": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Size of the file",
+      "misp-attribute": "size-in-bytes",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "categories": [
+        "Other"
+      ],
+      "description": "First seen timestamp of the file",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 3
+    },
+    "last-seen": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Last seen timestamp of the file",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 4
+    }
+  },
+  "description": "Cytomic Orion File Detection",
+  "meta-category": "misc",
+  "name": "cytomic-orion-file",
+  "required": [],
+  "uuid": "0ad86572-ba38-4baf-9fed-1926e9ecc916",
+  "version": 7
+}

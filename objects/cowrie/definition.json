@@ -1,126 +1,131 @@
 {
-  "requiredOneOf": [
-    "session"
-  ],
   "attributes": {
+    "compCS": {
+      "description": "SSH compression algorithm supported in the session",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "dst_ip": {
+      "description": "Destination IP address of the session",
+      "disable_correlation": true,
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "dst_port": {
+      "description": "Destination port of the session",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "ui-priority": 1
+    },
+    "encCS": {
+      "description": "SSH symmetric encryption algorithm supported in the session",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "eventid": {
       "description": "Eventid of the session in the cowrie honeypot",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hassh": {
+      "description": "HASSH of the client SSH session following Salesforce algorithm",
+      "misp-attribute": "hassh-md5",
+      "ui-priority": 1
+    },
+    "input": {
+      "description": "Input of the session",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "isError": {
+      "description": "isError",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "keyAlgs": {
+      "description": "SSH public-key algorithm supported in the session",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "macCS": {
+      "description": "SSH MAC supported in the sesssion",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "message": {
+      "description": "Message of the cowrie honeypot",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "password": {
+      "description": "Password",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "protocol": {
+      "description": "Protocol used in the cowrie honeypot",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sensor": {
+      "description": "Cowrie sensor name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "session": {
+      "description": "Session id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "src_ip": {
+      "description": "Source IP address of the session",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "src_port": {
+      "description": "Source port of the session",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "ui-priority": 1
     },
     "system": {
       "description": "System origin in cowrie honeypot",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "username": {
-      "description": "Username related to the password(s)",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "password": {
-      "description": "Password",
-      "multiple": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "session": {
-      "description": "Session id",
-      "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "timestamp": {
       "description": "When the event happened",
-      "ui-priority": 1,
+      "disable_correlation": true,
       "misp-attribute": "datetime",
-      "disable_correlation": true
+      "ui-priority": 1
     },
-    "message": {
-      "description": "Message of the cowrie honeypot",
-      "ui-priority": 1,
+    "username": {
+      "description": "Username related to the password(s)",
       "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "protocol": {
-      "description": "Protocol used in the cowrie honeypot",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "sensor": {
-      "description": "Cowrie sensor name",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "src_ip": {
-      "description": "Source IP address of the session",
-      "ui-priority": 1,
-      "misp-attribute": "ip-src"
-    },
-    "dst_ip": {
-      "description": "Destination IP address of the session",
-      "ui-priority": 1,
-      "misp-attribute": "ip-dst",
-      "disable_correlation": true
-    },
-    "src_port": {
-      "description": "Source port of the session",
-      "ui-priority": 1,
-      "misp-attribute": "port",
-      "disable_correlation": true
-    },
-    "dst_port": {
-      "description": "Destination port of the session",
-      "ui-priority": 1,
-      "misp-attribute": "port",
-      "disable_correlation": true
-    },
-    "isError": {
-      "description": "isError",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "input": {
-      "description": "Input of the session",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "macCS": {
-      "description": "SSH MAC supported in the sesssion",
-      "multiple": true,
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "keyAlgs": {
-      "description": "SSH public-key algorithm supported in the session",
-      "multiple": true,
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "encCS": {
-      "description": "SSH symmetric encryption algorithm supported in the session",
-      "multiple": true,
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "compCS": {
-      "description": "SSH compression algorithm supported in the session",
-      "multiple": true,
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true
+      "ui-priority": 1
     }
   },
-  "version": 2,
   "description": "Cowrie honeypot object template",
   "meta-category": "network",
+  "name": "cowrie",
+  "requiredOneOf": [
+    "session"
+  ],
   "uuid": "ae085d32-6534-4d52-b3eb-063fccb753e7",
-  "name": "cowrie"
+  "version": 3
 }

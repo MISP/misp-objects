@@ -1,19 +1,16 @@
 {
-  "requiredOneOf": [
-    "facial-composite",
-    "text"
-  ],
   "attributes": {
-    "text": {
-      "description": "A description of the facial composite.",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
+    "facial-composite": {
+      "description": "Facial composite image.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
     },
     "technique": {
       "description": "Construction technique of the facial composite.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 0,
       "values_list": [
         "E-FIT",
         "PROfit",
@@ -21,19 +18,22 @@
         "Photofit",
         "EvoFIT",
         "PortraitPad"
-      ],
-      "disable_correlation": true
+      ]
     },
-    "facial-composite": {
-      "description": "Facial composite image.",
-      "ui-priority": 10,
-      "misp-attribute": "attachment",
-      "multiple": true
+    "text": {
+      "description": "A description of the facial composite.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
     }
   },
-  "version": 1,
   "description": "An object which describes a facial composite.",
   "meta-category": "misc",
+  "name": "facial-composite",
+  "requiredOneOf": [
+    "facial-composite",
+    "text"
+  ],
   "uuid": "d727bc27-d1b9-4754-972c-dea305bd5976",
-  "name": "facial-composite"
+  "version": 1
 }

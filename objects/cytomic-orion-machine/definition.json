@@ -1,0 +1,101 @@
+{
+  "attributes": {
+    "clientCreationDateUTC": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Client creation date UTC",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "clientId": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Client id",
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "clientName": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Client name",
+      "misp-attribute": "target-org",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "creationDate": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Client creation date",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "categories": [
+        "Other"
+      ],
+      "description": "First seen on machine",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 3
+    },
+    "last-seen": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Last seen on machine",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 4
+    },
+    "lastSeenUtc": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Client last seen UTC",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "machineMuid": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Machine UID",
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "machineName": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Machine name",
+      "misp-attribute": "target-machine",
+      "ui-priority": 9
+    },
+    "machinePath": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Path of observable",
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 2
+    }
+  },
+  "description": "Cytomic Orion File at Machine Detection",
+  "meta-category": "misc",
+  "name": "cytomic-orion-machine",
+  "required": [
+    "machineName"
+  ],
+  "uuid": "e0e46343-43fd-4ce7-b447-51381402c774",
+  "version": 4
+}

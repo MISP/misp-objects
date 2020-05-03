@@ -1,0 +1,102 @@
+{
+  "attributes": {
+    "administrator": {
+      "description": "A user account who is an owner or admin of the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "archive": {
+      "description": "Archive of the original group (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts, group members, etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the group, channel or community.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the group description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the group description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "group-alias": {
+      "description": "Aliases of group, channel or community.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "group-name": {
+      "description": "The name of the group, channel or community.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link into the group (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "person-name": {
+      "description": "A person who is a member of the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "platform": {
+      "description": "The social media platform used.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Facebook",
+        "Twitter"
+      ],
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the group (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "A user account who is a member of the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Social media group object template describing a public or private group or channel.",
+  "meta-category": "misc",
+  "name": "social-media-group",
+  "requiredOneOf": [
+    "group-name",
+    "group-alias",
+    "archive",
+    "description"
+  ],
+  "uuid": "c4939ec4-ab53-4c35-9a98-3d4d4caf5b6c",
+  "version": 1
+}

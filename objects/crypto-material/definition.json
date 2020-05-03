@@ -1,0 +1,169 @@
+{
+  "attributes": {
+    "Gx": {
+      "description": "Curve Parameter - Gx in decimal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "Gy": {
+      "description": "Curve Parameter - Gy in decimal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "b": {
+      "description": "Curve Parameter - B in decimal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "curve-length": {
+      "description": "Length of the Curve in bits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "e": {
+      "description": "RSA public exponent",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ecdsa-type": {
+      "description": "Curve type of the ECDSA cryptographic materials",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "Anomalous",
+        "M-221",
+        "E-222",
+        "NIST P-224",
+        "Curve1174",
+        "Curve25519",
+        "BN(2,254)",
+        "brainpoolP256t1",
+        "ANSSI FRP256v1",
+        "NIST P-256",
+        "secp256k1",
+        "E-382",
+        "M-383",
+        "Curve383187",
+        "brainpoolP384t1",
+        "NIST P-384",
+        "Curve41417",
+        "Ed448-Goldilocks",
+        "M-511",
+        "E-521"
+      ]
+    },
+    "g": {
+      "description": "Curve Parameter - G in decimal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "generic-symmetric-key": {
+      "description": "Generic symmetric key (please precise the type)",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "modulus": {
+      "description": "Modulus Parameter - in hexadecimal - no 0x, no :",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "n": {
+      "description": "Curve Parameter - N in decimal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "origin": {
+      "description": "Origin of the cryptographic materials",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "mathematical-attack",
+        "exhaustive-search",
+        "bruteforce-attack",
+        "malware-extraction",
+        "memory-interception",
+        "network-interception",
+        "leak",
+        "unknown"
+      ],
+      "ui-priority": 1
+    },
+    "p": {
+      "description": "Prime Parameter - P in decimal",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "private": {
+      "description": "Private part of the cryptographic materials in PEM format",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "q": {
+      "description": "Prime Parameter - Q in decimal",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rsa-modulus-size": {
+      "description": "RSA modulus size in bits",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "text": {
+      "description": "A description of the cryptographic materials.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Type of crytographic materials",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "RSA",
+        "DSA",
+        "ECDSA",
+        "RC4",
+        "XOR",
+        "unknown"
+      ]
+    },
+    "x": {
+      "description": "Curve Parameter - X in decimal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "y": {
+      "description": "Curve Parameter - Y in decimal",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Cryptographic materials such as public or/and private keys.",
+  "meta-category": "misc",
+  "name": "crypto-material",
+  "requiredOneOf": [
+    "generic-symmetric-key",
+    "text",
+    "private",
+    "p",
+    "q",
+    "modulus"
+  ],
+  "uuid": "50677f82-ec9c-4484-bb29-2519cfe56823",
+  "version": 3
+}

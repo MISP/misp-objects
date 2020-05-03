@@ -1,12 +1,85 @@
 {
-  "required": [
-    "notice-color"
-  ],
   "attributes": {
+    "alias": {
+      "description": "Alias name or known as.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "charges": {
+      "description": "Charges published as provided by requesting entity",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "colour-of-eyes": {
+      "description": "Description of a person's colour of eyes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "colour-of-hair": {
+      "description": "Description of a person's colour of hair.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "date-of-birth": {
+      "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
+      "misp-attribute": "date-of-birth",
+      "ui-priority": 0
+    },
+    "date-of-disappearance": {
+      "description": "Date of disappearance of a missing person.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "distinguishing-marks-and-characteristics": {
+      "description": "Distinguishing marks and characteristics of a person.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "father-s-family-name-&-forename": {
+      "description": "Father's family name & forename.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "forename": {
+      "description": "First name of a natural person.",
+      "disable_correlation": true,
+      "misp-attribute": "first-name",
+      "ui-priority": 0
+    },
+    "height": {
+      "description": "Height of a person.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "language-spoken": {
+      "description": "Languages spoken by a person.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "mother-s-family-name-&-forename": {
+      "description": "Mother's family name & forename.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "nationality": {
+      "description": "The nationality of a natural person.",
+      "disable_correlation": true,
+      "misp-attribute": "nationality",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "notice-color": {
       "description": "The color/type of the notice",
       "misp-attribute": "text",
-      "ui-priority": 1,
       "sane_default": [
         "Red",
         "Yellow",
@@ -15,129 +88,56 @@
         "Green",
         "Orange",
         "Purple"
-      ]
-    },
-    "present-family-name": {
-      "description": "Last name of a natural person.",
-      "ui-priority": 0,
-      "misp-attribute": "last-name"
-    },
-    "forename": {
-      "description": "First name of a natural person.",
-      "ui-priority": 0,
-      "misp-attribute": "first-name",
-      "disable_correlation": true
-    },
-    "alias": {
-      "description": "Alias name or known as.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true
-    },
-    "father-s-family-name-&-forename": {
-      "description": "Father's family name & forename.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "mother-s-family-name-&-forename": {
-      "description": "Mother's family name & forename.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "date-of-birth": {
-      "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
-      "ui-priority": 0,
-      "misp-attribute": "date-of-birth"
+      ],
+      "ui-priority": 1
     },
     "place-of-birth": {
       "description": "Place of birth of a natural person.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "place-of-birth",
-      "disable_correlation": true
+      "ui-priority": 0
+    },
+    "place-of-disappearance": {
+      "description": "Place of birth of a natural person.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "portrait": {
+      "description": "Portrait of the person.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "present-family-name": {
+      "description": "Last name of a natural person.",
+      "misp-attribute": "last-name",
+      "ui-priority": 0
     },
     "sex": {
       "description": "The gender of a natural person.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "gender",
+      "ui-priority": 0,
       "values_list": [
         "Male",
         "Female",
         "Other",
         "Prefer not to say"
-      ],
-      "disable_correlation": true
-    },
-    "nationality": {
-      "description": "The nationality of a natural person.",
-      "ui-priority": 0,
-      "misp-attribute": "nationality",
-      "multiple": true,
-      "disable_correlation": true
-    },
-    "language-spoken": {
-      "description": "Languages spoken by a person.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true,
-      "disable_correlation": true
-    },
-    "charges": {
-      "description": "Charges published as provided by requesting entity",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true,
-      "disable_correlation": true
-    },
-    "date-of-disappearance": {
-      "description": "Date of disappearance of a missing person.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "place-of-disappearance": {
-      "description": "Place of birth of a natural person.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "height": {
-      "description": "Height of a person.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
+      ]
     },
     "weight": {
       "description": "weight of a person.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "colour-of-hair": {
-      "description": "Description of a person's colour of hair.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "colour-of-eyes": {
-      "description": "Description of a person's colour of eyes.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "distinguishing-marks-and-characteristics": {
-      "description": "Distinguishing marks and characteristics of a person.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "portrait": {
-      "description": "Portrait of the person.",
-      "ui-priority": 10,
-      "misp-attribute": "attachment",
-      "multiple": true
+      "ui-priority": 0
     }
   },
-  "version": 1,
   "description": "An object which describes a Interpol notice.",
   "meta-category": "misc",
+  "name": "interpol-notice",
+  "required": [
+    "notice-color"
+  ],
   "uuid": "24927972-1e4a-11e9-857e-3b2306b99911",
-  "name": "interpol-notice"
+  "version": 1
 }

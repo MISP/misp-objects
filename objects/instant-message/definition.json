@@ -1,0 +1,112 @@
+{
+  "attributes": {
+    "app-used": {
+      "description": "The IM application used to send the message.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "WhatsApp",
+        "Google Hangouts",
+        "Facebook Messenger",
+        "Telegram",
+        "Signal",
+        "WeChat",
+        "BlackBerry Messenger",
+        "TeamSpeak",
+        "TorChat",
+        "RetroShare",
+        "Slack"
+      ],
+      "ui-priority": 1
+    },
+    "archive": {
+      "description": "Archive of the original message (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The message file or screen capture.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "body": {
+      "description": "Message body of the IM.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "from-name": {
+      "description": "Name of the person that sent the message.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "from-number": {
+      "description": "Phone number used to send the message.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "from-user": {
+      "description": "User account that sent the message.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original link into the message (Supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "received-date": {
+      "description": "Received date of the message.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "sent-date": {
+      "description": "Initial sent date of the message.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "subject": {
+      "description": "Subject of the message if any.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "to-name": {
+      "description": "Name of the person that received the message.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "to-number": {
+      "description": "Phone number receiving the message.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "to-user": {
+      "description": "User account that received the message.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the message (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "Instant Message (IM) object template describing one or more IM message.",
+  "meta-category": "misc",
+  "name": "instant-message",
+  "requiredOneOf": [
+    "body",
+    "from-user"
+  ],
+  "uuid": "5fa51a24-f40f-4696-a77e-d31e26bab5fc",
+  "version": 1
+}

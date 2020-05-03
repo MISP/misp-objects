@@ -1,181 +1,160 @@
 {
-  "requiredOneOf": [
-    "first-name",
-    "last-name",
-    "alias"
-  ],
   "attributes": {
-    "text": {
-      "description": "A description of the person or identity.",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "last-name": {
-      "description": "Last name of a natural person.",
-      "ui-priority": 100,
-      "misp-attribute": "last-name"
-    },
-    "middle-name": {
-      "description": "Middle name of a natural person.",
-      "ui-priority": 99,
-      "misp-attribute": "middle-name"
-    },
-    "first-name": {
-      "description": "First name of a natural person.",
-      "ui-priority": 98,
-      "misp-attribute": "first-name",
-      "disable_correlation": true
-    },
-    "mothers-name": {
-      "description": "Mother name, father, second name or other names following country's regulation.",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "title": {
-      "description": "Title of the natural person such as Dr. or equivalent.",
-      "ui-priority": 101,
+    "address": {
+      "description": "Postal address of the person.",
       "misp-attribute": "text",
-      "disable_correlation": true
+      "multiple": true,
+      "ui-priority": 10
     },
     "alias": {
       "description": "Alias name or known as.",
-      "ui-priority": 97,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 97
+    },
+    "birth-certificate-number": {
+      "description": "Birth Certificate Number",
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "date-of-birth": {
       "description": "Date of birth of a natural person (in YYYY-MM-DD format).",
-      "ui-priority": 0,
-      "misp-attribute": "date-of-birth"
+      "misp-attribute": "date-of-birth",
+      "ui-priority": 0
     },
-    "place-of-birth": {
-      "description": "Place of birth of a natural person.",
-      "ui-priority": 0,
-      "misp-attribute": "place-of-birth",
-      "disable_correlation": true
+    "dni": {
+      "description": "Spanish National ID",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "e-mail": {
+      "description": "Email address of the person.",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "fax-number": {
+      "description": "Fax number of the person.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "first-name": {
+      "description": "First name of a natural person.",
+      "disable_correlation": true,
+      "misp-attribute": "first-name",
+      "ui-priority": 98
     },
     "gender": {
       "description": "The gender of a natural person.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "gender",
+      "ui-priority": 0,
       "values_list": [
         "Male",
         "Female",
         "Other",
         "Prefer not to say",
         "Unknown"
-      ],
-      "disable_correlation": true
+      ]
     },
     "identity-card-number": {
       "description": "The identity card number of a natural person.",
-      "ui-priority": 0,
-      "misp-attribute": "identity-card-number"
+      "misp-attribute": "identity-card-number",
+      "ui-priority": 0
     },
-    "passport-number": {
-      "description": "The passport number of a natural person.",
-      "ui-priority": 0,
-      "misp-attribute": "passport-number"
+    "last-name": {
+      "description": "Last name of a natural person.",
+      "misp-attribute": "last-name",
+      "ui-priority": 100
     },
-    "passport-country": {
-      "description": "The country in which the passport was issued.",
-      "ui-priority": 0,
-      "misp-attribute": "passport-country",
-      "disable_correlation": true
+    "middle-name": {
+      "description": "Middle name of a natural person.",
+      "misp-attribute": "middle-name",
+      "ui-priority": 99
     },
-    "passport-expiration": {
-      "description": "The expiration date of a passport.",
-      "ui-priority": 0,
-      "misp-attribute": "passport-expiration",
-      "disable_correlation": true
-    },
-    "redress-number": {
-      "description": "The Redress Control Number is the record identifier for people who apply for redress through the DHS Travel Redress Inquiry Program (DHS TRIP). DHS TRIP is for travelers who have been repeatedly identified for additional screening and who want to file an inquiry to have erroneous information corrected in DHS systems.",
-      "ui-priority": 0,
-      "misp-attribute": "redress-number"
-    },
-    "social-security-number": {
-      "description": "Social security number.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "birth-certificate-number": {
-      "description": "Birth Certificate Number",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "ofac-identification-number": {
-      "description": "ofac-identification Number",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+    "mothers-name": {
+      "description": "Mother name, father, second name or other names following country's regulation.",
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "nationality": {
       "description": "The nationality of a natural person.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "nationality",
       "multiple": true,
-      "disable_correlation": true
+      "ui-priority": 0
     },
     "nic-hdl": {
       "description": "NIC Handle (Network Information Centre handle) of the person.",
-      "ui-priority": 10,
       "misp-attribute": "text",
-      "multiple": true
-    },
-    "phone-number": {
-      "description": "Phone number of the person.",
-      "ui-priority": 10,
-      "misp-attribute": "phone-number",
-      "multiple": true
-    },
-    "fax-number": {
-      "description": "Fax number of the person.",
-      "ui-priority": 10,
-      "misp-attribute": "phone-number",
-      "multiple": true
-    },
-    "address": {
-      "description": "Postal address of the person.",
-      "ui-priority": 10,
-      "misp-attribute": "text",
-      "multiple": true
-    },
-    "dni": {
-      "description": "Spanish National ID",
-      "ui-priority": 10,
-      "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 10
     },
     "nie": {
       "description": "Foreign National ID (Spain)",
-      "ui-priority": 10,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 10
     },
     "nif": {
       "description": "Tax ID Number (Spain)",
-      "ui-priority": 10,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 10
     },
-    "e-mail": {
-      "description": "Email address of the person.",
-      "ui-priority": 10,
-      "misp-attribute": "email-src",
-      "multiple": true
+    "ofac-identification-number": {
+      "description": "ofac-identification Number",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "passport-country": {
+      "description": "The country in which the passport was issued.",
+      "disable_correlation": true,
+      "misp-attribute": "passport-country",
+      "ui-priority": 0
+    },
+    "passport-expiration": {
+      "description": "The expiration date of a passport.",
+      "disable_correlation": true,
+      "misp-attribute": "passport-expiration",
+      "ui-priority": 0
+    },
+    "passport-number": {
+      "description": "The passport number of a natural person.",
+      "misp-attribute": "passport-number",
+      "ui-priority": 0
+    },
+    "phone-number": {
+      "description": "Phone number of the person.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "place-of-birth": {
+      "description": "Place of birth of a natural person.",
+      "disable_correlation": true,
+      "misp-attribute": "place-of-birth",
+      "ui-priority": 0
     },
     "portrait": {
       "description": "Portrait of the person.",
-      "ui-priority": 10,
       "misp-attribute": "attachment",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "redress-number": {
+      "description": "The Redress Control Number is the record identifier for people who apply for redress through the DHS Travel Redress Inquiry Program (DHS TRIP). DHS TRIP is for travelers who have been repeatedly identified for additional screening and who want to file an inquiry to have erroneous information corrected in DHS systems.",
+      "misp-attribute": "redress-number",
+      "ui-priority": 0
     },
     "role": {
       "description": "The role of a person.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
+      "ui-priority": 0,
       "values_list": [
         "Suspect",
         "Victim",
@@ -185,13 +164,34 @@
         "Accomplice",
         "Witness",
         "Target"
-      ],
-      "disable_correlation": true
+      ]
+    },
+    "social-security-number": {
+      "description": "Social security number.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "A description of the person or identity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "title": {
+      "description": "Title of the natural person such as Dr. or equivalent.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 101
     }
   },
-  "version": 10,
   "description": "An object which describes a person or an identity.",
   "meta-category": "misc",
+  "name": "person",
+  "requiredOneOf": [
+    "first-name",
+    "last-name",
+    "alias"
+  ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "name": "person"
+  "version": 10
 }

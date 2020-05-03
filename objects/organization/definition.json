@@ -1,60 +1,63 @@
 {
-  "requiredOneOf": [
-    "name",
-    "alias"
-  ],
   "attributes": {
-    "name": {
-      "description": "Name of the organization",
-      "disable_correlation": false,
-      "ui-priority": 100,
-      "misp-attribute": "text"
-    },
-    "alias": {
-      "description": "Alias of the organization",
-      "ui-priority": 99,
+    "VAT": {
+      "description": "VAT or TAX-ID of the organization",
       "misp-attribute": "text",
-      "multiple": true
-    },
-    "type-of-organizarion": {
-      "description": "Type of the organization",
-      "ui-priority": 97,
-      "misp-attribute": "text"
-    },
-    "date-of-inception": {
-      "description": "Date of inception of the organization",
-      "ui-priority": 0,
-      "misp-attribute": "date-of-birth"
-    },
-    "phone-number": {
-      "description": "Phone number of the organization.",
-      "ui-priority": 10,
-      "misp-attribute": "phone-number",
-      "multiple": true
-    },
-    "fax-number": {
-      "description": "Fax number of the organization.",
-      "ui-priority": 10,
-      "misp-attribute": "phone-number",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "address": {
       "description": "Postal address of the organization.",
-      "ui-priority": 10,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "alias": {
+      "description": "Alias of the organization",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 99
+    },
+    "date-of-inception": {
+      "description": "Date of inception of the organization",
+      "misp-attribute": "date-of-birth",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the organization",
+      "misp-attribute": "text",
+      "ui-priority": 96
     },
     "e-mail": {
       "description": "Email address of the organization.",
-      "ui-priority": 10,
       "misp-attribute": "email-src",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "fax-number": {
+      "description": "Fax number of the organization.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "name": {
+      "description": "Name of the organization",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 100
+    },
+    "phone-number": {
+      "description": "Phone number of the organization.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
     },
     "role": {
       "description": "The role of the organization.",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
+      "ui-priority": 0,
       "values_list": [
         "Suspect",
         "Victim",
@@ -63,13 +66,21 @@
         "Culprit",
         "Accomplice",
         "Target"
-      ],
-      "disable_correlation": true
+      ]
+    },
+    "type-of-organization": {
+      "description": "Type of the organization",
+      "misp-attribute": "text",
+      "ui-priority": 97
     }
   },
-  "version": 1,
   "description": "An object which describes an organization.",
   "meta-category": "misc",
+  "name": "organization",
+  "requiredOneOf": [
+    "name",
+    "alias"
+  ],
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
-  "name": "misc"
+  "version": 4
 }

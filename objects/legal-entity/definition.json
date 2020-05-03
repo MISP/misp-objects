@@ -1,48 +1,58 @@
 {
-  "requiredOneOf": [
-    "name"
-  ],
   "attributes": {
+    "business": {
+      "description": "Business area of the entity.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "commercial-name": {
+      "description": "Commercial name of the entity.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "legal-form": {
+      "description": "Legal form of the entity.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "logo": {
+      "description": "Logo of the entity.",
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name of the entity.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "phone-number": {
+      "description": "Phone number of the entity.",
+      "misp-attribute": "phone-number",
+      "ui-priority": 0
+    },
+    "registration-number": {
+      "description": "Registration number of the entity in the relevant authority.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "text": {
       "description": "A description of the entity.",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
-    "name": {
-      "description": "Name of an entity.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "commercial-name": {
-      "description": "Commercial name of an entity.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "legal-form": {
-      "description": "Legal form of an entity.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "registration-number": {
-      "description": "Registration number of an entity in the relevant authority.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "business": {
-      "description": "Business area of an entity.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "phone-number": {
-      "description": "Phone number of an entity.",
-      "ui-priority": 0,
-      "misp-attribute": "phone-number"
+    "website": {
+      "description": "Website of the entity.",
+      "misp-attribute": "link",
+      "ui-priority": 0
     }
   },
-  "version": 1,
   "description": "An object to describe a legal entity.",
   "meta-category": "misc",
+  "name": "legal-entity",
+  "requiredOneOf": [
+    "name"
+  ],
   "uuid": "14f5688f-d89c-469f-9878-c48bf6c41c65",
-  "name": "legal-entity"
+  "version": 2
 }

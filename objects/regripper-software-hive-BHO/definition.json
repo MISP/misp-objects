@@ -1,59 +1,59 @@
 {
+  "attributes": {
+    "BHO-key-last-write-time": {
+      "description": "Date and time when the BHO key was last updated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "BHO-name": {
+      "description": "Name of the browser helper object.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "class": {
+      "description": "Class to which the BHO belongs to.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "comments": {
+      "description": "Additional comments.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "key": {
+      "description": "Software hive key where the information is retrieved from.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "last-write-time": {
+      "description": "Date and time when the key was last updated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "module": {
+      "description": "DLL module the BHO belongs to.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "references": {
+      "description": "References to the BHO.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Regripper Object template designed to gather information of the browser helper objects installed on the system.",
+  "meta-category": "misc",
+  "name": "regripper-software-hive-BHO",
   "required": [
     "key",
     "BHO-name"
   ],
-  "attributes": {
-    "key": {
-      "description": "Software hive key where the information is retrieved from.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "last-write-time": {
-      "description": "Date and time when the key was last updated.",
-      "ui-priority": 0,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
-    },
-    "BHO-name": {
-      "description": "Name of the browser helper object.",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "BHO-key-last-write-time": {
-      "description": "Date and time when the BHO key was last updated.",
-      "ui-priority": 0,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
-    },
-    "class": {
-      "description": "Class to which the BHO belongs to.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "module": {
-      "description": "DLL module the BHO belongs to.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "comments": {
-      "description": "Additional comments.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "references": {
-      "description": "References to the BHO.",
-      "ui-priority": 0,
-      "misp-attribute": "link",
-      "multiple": true
-    }
-  },
-  "version": 1,
-  "description": "Regripper Object template designed to gather information of the browser helper objects installed on the system.",
-  "meta-category": "misc",
   "uuid": "e7b46b5a-d2d2-4a05-bc25-2ac8d4683ae2",
-  "name": "regripper-software-hive-BHO"
+  "version": 1
 }

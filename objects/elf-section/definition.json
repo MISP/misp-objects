@@ -1,95 +1,116 @@
 {
-  "requiredOneOf": [
-    "text",
-    "name",
-    "md5",
-    "sha1",
-    "sha224",
-    "sha256",
-    "sha384",
-    "sha512",
-    "sha512/224",
-    "sha512/256"
-  ],
   "attributes": {
-    "md5": {
-      "description": "[Insecure] MD5 hash (128 bits)",
-      "ui-priority": 1,
-      "misp-attribute": "md5",
-      "recommended": false
-    },
-    "sha1": {
-      "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
-      "ui-priority": 1,
-      "misp-attribute": "sha1",
-      "recommended": false
-    },
-    "sha224": {
-      "description": "Secure Hash Algorithm 2 (224 bits)",
-      "ui-priority": 0,
-      "misp-attribute": "sha224",
-      "recommended": false
-    },
-    "sha256": {
-      "description": "Secure Hash Algorithm 2 (256 bits)",
-      "ui-priority": 1,
-      "misp-attribute": "sha256"
-    },
-    "sha384": {
-      "description": "Secure Hash Algorithm 2 (384 bits)",
-      "ui-priority": 0,
-      "misp-attribute": "sha384",
-      "recommended": false
-    },
-    "sha512": {
-      "description": "Secure Hash Algorithm 2 (512 bits)",
-      "ui-priority": 1,
-      "misp-attribute": "sha512"
-    },
-    "sha512/224": {
-      "description": "Secure Hash Algorithm 2 (224 bits)",
-      "ui-priority": 0,
-      "misp-attribute": "sha512/224",
-      "recommended": false
-    },
-    "sha512/256": {
-      "description": "Secure Hash Algorithm 2 (256 bits)",
-      "ui-priority": 0,
-      "misp-attribute": "sha512/256",
-      "recommended": false
-    },
-    "ssdeep": {
-      "description": "Fuzzy hash using context triggered piecewise hashes (CTPH)",
-      "ui-priority": 0,
-      "misp-attribute": "ssdeep"
-    },
     "entropy": {
       "description": "Entropy of the whole section",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "float"
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "flag": {
+      "description": "Flag of the section",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "ALLOC",
+        "EXCLUDE",
+        "EXECINSTR",
+        "GROUP",
+        "HEX_GPREL",
+        "INFO_LINK",
+        "LINK_ORDER",
+        "MASKOS",
+        "MASKPROC",
+        "MERGE",
+        "MIPS_ADDR",
+        "MIPS_LOCAL",
+        "MIPS_MERGE",
+        "MIPS_NAMES",
+        "MIPS_NODUPES",
+        "MIPS_NOSTRIP",
+        "NONE",
+        "OS_NONCONFORMING",
+        "STRINGS",
+        "TLS",
+        "WRITE",
+        "XCORE_SHF_CP_SECTION"
+      ],
+      "ui-priority": 0
+    },
+    "md5": {
+      "description": "[Insecure] MD5 hash (128 bits)",
+      "misp-attribute": "md5",
+      "recommended": false,
+      "ui-priority": 1
     },
     "name": {
       "description": "Name of the section",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sha1": {
+      "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
+      "misp-attribute": "sha1",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "sha224": {
+      "description": "Secure Hash Algorithm 2 (224 bits)",
+      "misp-attribute": "sha224",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "sha384": {
+      "description": "Secure Hash Algorithm 2 (384 bits)",
+      "misp-attribute": "sha384",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha512": {
+      "description": "Secure Hash Algorithm 2 (512 bits)",
+      "misp-attribute": "sha512",
+      "ui-priority": 1
+    },
+    "sha512/224": {
+      "description": "Secure Hash Algorithm 2 (224 bits)",
+      "misp-attribute": "sha512/224",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha512/256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "misp-attribute": "sha512/256",
+      "recommended": false,
+      "ui-priority": 0
     },
     "size-in-bytes": {
       "description": "Size of the section, in bytes",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "size-in-bytes"
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 1
+    },
+    "ssdeep": {
+      "description": "Fuzzy hash using context triggered piecewise hashes (CTPH)",
+      "misp-attribute": "ssdeep",
+      "ui-priority": 0
     },
     "text": {
       "description": "Free text value to attach to the section",
       "disable_correlation": true,
-      "ui-priority": 1,
       "misp-attribute": "text",
-      "recommended": false
+      "recommended": false,
+      "ui-priority": 1
     },
     "type": {
       "description": "Type of the section",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "NULL",
         "PROGBITS",
@@ -127,45 +148,24 @@
         "LOUSER",
         "HIUSER"
       ],
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "flag": {
-      "description": "Flag of the section",
-      "sane_default": [
-        "ALLOC",
-        "EXCLUDE",
-        "EXECINSTR",
-        "GROUP",
-        "HEX_GPREL",
-        "INFO_LINK",
-        "LINK_ORDER",
-        "MASKOS",
-        "MASKPROC",
-        "MERGE",
-        "MIPS_ADDR",
-        "MIPS_LOCAL",
-        "MIPS_MERGE",
-        "MIPS_NAMES",
-        "MIPS_NODUPES",
-        "MIPS_NOSTRIP",
-        "NONE",
-        "OS_NONCONFORMING",
-        "STRINGS",
-        "TLS",
-        "WRITE",
-        "XCORE_SHF_CP_SECTION"
-      ],
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true
+      "ui-priority": 0
     }
   },
-  "version": 4,
   "description": "Object describing a section of an Executable and Linkable Format",
   "meta-category": "file",
+  "name": "elf-section",
+  "requiredOneOf": [
+    "text",
+    "name",
+    "md5",
+    "sha1",
+    "sha224",
+    "sha256",
+    "sha384",
+    "sha512",
+    "sha512/224",
+    "sha512/256"
+  ],
   "uuid": "ca271f32-1234-4e87-b240-6b6e882de5de",
-  "name": "elf-section"
+  "version": 4
 }

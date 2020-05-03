@@ -1,30 +1,8 @@
 {
-  "requiredOneOf": [
-    "file-path",
-    "activityType",
-    "datetime"
-  ],
   "attributes": {
-    "file-path": {
-      "description": "Location of the file on the disc",
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "datetime": {
-      "description": "Date and time when the operation was conducted on the file",
-      "ui-priority": 0,
-      "misp-attribute": "datetime",
-      "disable_correlation": true
-    },
-    "file_size": {
-      "description": "Determines the file size in bytes",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
     "activityType": {
       "description": "Determines the type of activity conducted on the file at a given time",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "Accessed",
@@ -33,24 +11,46 @@
         "Modified",
         "Other"
       ],
-      "disable_correlation": true
+      "ui-priority": 0
     },
-    "filePermissions": {
-      "description": "Describes permissions assigned the file",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
+    "datetime": {
+      "description": "Date and time when the operation was conducted on the file",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "file": {
       "description": "Mactime output file",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "attachment",
-      "disable_correlation": true
+      "ui-priority": 0
+    },
+    "file-path": {
+      "description": "Location of the file on the disc",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "filePermissions": {
+      "description": "Describes permissions assigned the file",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "file_size": {
+      "description": "Determines the file size in bytes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
-  "version": 3,
   "description": "Mactime template, used in forensic investigations to describe the timeline of a file activity",
   "meta-category": "file",
+  "name": "mactime-timeline-analysis",
+  "requiredOneOf": [
+    "file-path",
+    "activityType",
+    "datetime"
+  ],
   "uuid": "9297982e-be62-4772-a665-c91f5a8d639",
-  "name": "mactime-timeline-analysis"
+  "version": 3
 }

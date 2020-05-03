@@ -1,126 +1,129 @@
 {
-  "requiredOneOf": [
-    "text",
-    "original-filename",
-    "internal-filename",
-    "entrypoint-address"
-  ],
   "attributes": {
-    "pehash": {
-      "description": "Hash of the structural information about a sample. See https://www.usenix.org/legacy/event/leet09/tech/full_papers/wicherski/wicherski_html/",
-      "ui-priority": 0,
-      "misp-attribute": "pehash"
+    "company-name": {
+      "description": "CompanyName in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "compilation-timestamp": {
+      "description": "Compilation timestamp defined in the PE header",
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "entrypoint-address": {
+      "description": "Address of the entry point",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "entrypoint-section-at-position": {
+      "description": "Name of the section and position of the section in the PE",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "file-description": {
+      "description": "FileDescription in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "file-version": {
+      "description": "FileVersion in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "impfuzzy": {
       "description": "Fuzzy Hash (ssdeep) calculated from the import table",
-      "ui-priority": 0,
-      "misp-attribute": "impfuzzy"
+      "misp-attribute": "impfuzzy",
+      "ui-priority": 0
+    },
+    "imphash": {
+      "description": "Hash (md5) calculated from the import table",
+      "misp-attribute": "imphash",
+      "ui-priority": 0
     },
     "internal-filename": {
       "description": "InternalFilename in the resources",
-      "ui-priority": 0,
+      "disable_correlation": true,
       "misp-attribute": "filename",
-      "disable_correlation": true
+      "ui-priority": 0
     },
-    "original-filename": {
-      "description": "OriginalFilename in the resources",
-      "ui-priority": 1,
-      "misp-attribute": "filename",
-      "disable_correlation": true
+    "lang-id": {
+      "description": "Lang ID in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "legal-copyright": {
+      "description": "LegalCopyright in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "number-sections": {
       "description": "Number of sections",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "original-filename": {
+      "description": "OriginalFilename in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    },
+    "pehash": {
+      "description": "Hash of the structural information about a sample. See https://www.usenix.org/legacy/event/leet09/tech/full_papers/wicherski/wicherski_html/",
+      "misp-attribute": "pehash",
+      "ui-priority": 0
+    },
+    "product-name": {
+      "description": "ProductName in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "product-version": {
+      "description": "ProductVersion in the resources",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "text": {
       "description": "Free text value to attach to the PE",
       "disable_correlation": true,
-      "ui-priority": 1,
       "misp-attribute": "text",
-      "recommended": false
+      "recommended": false,
+      "ui-priority": 1
     },
     "type": {
       "description": "Type of PE",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "exe",
         "dll",
         "driver",
         "unknown"
       ],
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "imphash": {
-      "description": "Hash (md5) calculated from the import table",
-      "ui-priority": 0,
-      "misp-attribute": "imphash"
-    },
-    "compilation-timestamp": {
-      "description": "Compilation timestamp defined in the PE header",
-      "ui-priority": 1,
-      "misp-attribute": "datetime"
-    },
-    "entrypoint-section-at-position": {
-      "description": "Name of the section and position of the section in the PE",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "entrypoint-address": {
-      "description": "Address of the entry point",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "file-description": {
-      "description": "FileDescription in the resources",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "file-version": {
-      "description": "FileVersion in the resources",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "lang-id": {
-      "description": "Lang ID in the resources",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "product-name": {
-      "description": "ProductName in the resources",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "product-version": {
-      "description": "ProductVersion in the resources",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "company-name": {
-      "description": "CompanyName in the resources",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "legal-copyright": {
-      "description": "LegalCopyright in the resources",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "ui-priority": 1
     }
   },
-  "version": 3,
   "description": "Object describing a Portable Executable",
   "meta-category": "file",
+  "name": "pe",
+  "requiredOneOf": [
+    "text",
+    "type",
+    "original-filename",
+    "internal-filename",
+    "entrypoint-address",
+    "imphash",
+    "impfuzzy"
+  ],
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
-  "name": "pe"
+  "version": 5
 }

@@ -1,0 +1,37 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the command functionalities",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "location": {
+      "description": "Location of the command functionality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Bundled",
+        "Module",
+        "Libraries",
+        "Unknown"
+      ],
+      "ui-priority": 1
+    },
+    "trigger": {
+      "description": "How the commands are triggered",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Local",
+        "Network",
+        "Unknown"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.",
+  "meta-category": "misc",
+  "name": "command",
+  "uuid": "21ad70d8-d397-11e9-9ea7-43b2d5f6a6e3",
+  "version": 1
+}

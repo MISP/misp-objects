@@ -1,70 +1,8 @@
 {
-  "name": "network-socket",
-  "uuid": "48bbfd72-ef8e-4649-b14d-41b4b5a0eba2",
-  "meta-category": "network",
-  "description": "Network socket object describes a local or remote network connections based on the socket data structure.",
-  "version": 1,
   "attributes": {
-    "ip-src": {
-      "description": "Source (local) IP address of the network socket connection.",
-      "ui-priority": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "misp-attribute": "ip-src"
-    },
-    "hostname-src": {
-      "description": "Source (local) hostname of the network socket connection.",
-      "ui-priority": 1,
-      "misp-attribute": "hostname"
-    },
-    "ip-dst": {
-      "description": "Destination IP address of the network socket connection.",
-      "ui-priority": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "misp-attribute": "ip-dst"
-    },
-    "hostname-dst": {
-      "description": "Destination hostname of the network socket connection.",
-      "ui-priority": 1,
-      "misp-attribute": "hostname"
-    },
-    "src-port": {
-      "description": "Source (local) port of the network socket connection.",
-      "ui-priority": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "misp-attribute": "port"
-    },
-    "dst-port": {
-      "description": "Destination port of the network socket connection.",
-      "ui-priority": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "misp-attribute": "port"
-    },
-    "protocol": {
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "values_list": [
-        "TCP",
-        "UDP",
-        "ICMP",
-        "IP"
-      ],
-      "description": "Protocol used by the network socket."
-    },
     "address-family": {
       "description": "Address family who specifies the address family type (AF_*) of the socket connection.",
-      "ui-priority": 1,
+      "misp-attribute": "text",
       "sane_default": [
         "AF_UNSPEC",
         "AF_LOCAL",
@@ -113,11 +51,11 @@
         "AF_KCM",
         "AF_MAX"
       ],
-      "misp-attribute": "text"
+      "ui-priority": 1
     },
     "domain-family": {
       "description": "Domain family who specifies the communication domain (PF_*) of the socket connection.",
-      "ui-priority": 1,
+      "misp-attribute": "text",
       "sane_default": [
         "PF_UNSPEC",
         "PF_LOCAL",
@@ -166,29 +104,96 @@
         "PF_KCM",
         "PF_MAX"
       ],
-      "misp-attribute": "text"
+      "ui-priority": 1
+    },
+    "dst-port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Destination port of the network socket connection.",
+      "misp-attribute": "port",
+      "ui-priority": 1
+    },
+    "filename": {
+      "description": "Socket using filename",
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    },
+    "hostname-dst": {
+      "description": "Destination hostname of the network socket connection.",
+      "misp-attribute": "hostname",
+      "ui-priority": 1
+    },
+    "hostname-src": {
+      "description": "Source (local) hostname of the network socket connection.",
+      "misp-attribute": "hostname",
+      "ui-priority": 1
+    },
+    "ip-dst": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Destination IP address of the network socket connection.",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "ip-src": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Source (local) IP address of the network socket connection.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "option": {
+      "description": "Option on the socket connection.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "protocol": {
+      "description": "Protocol used by the network socket.",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "TCP",
+        "UDP",
+        "ICMP",
+        "IP"
+      ]
+    },
+    "src-port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Source (local) port of the network socket connection.",
+      "misp-attribute": "port",
+      "ui-priority": 1
     },
     "state": {
       "description": "State of the socket connection.",
+      "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
         "blocking",
         "listening"
       ],
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "option": {
-      "description": "Option on the socket connection.",
-      "multiple": true,
-      "misp-attribute": "text",
       "ui-priority": 1
     }
   },
+  "description": "Network socket object describes a local or remote network connections based on the socket data structure.",
+  "meta-category": "network",
+  "name": "network-socket",
   "requiredOneOf": [
     "ip-src",
     "ip-dst",
     "src-port",
     "dst-port"
-  ]
+  ],
+  "uuid": "48bbfd72-ef8e-4649-b14d-41b4b5a0eba2",
+  "version": 2
 }

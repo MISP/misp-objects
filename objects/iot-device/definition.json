@@ -1,0 +1,171 @@
+{
+  "attributes": {
+    "architecture": {
+      "description": "architecture of the IoT device",
+      "misp-attribute": "text",
+      "sane_default": [
+        "ARC",
+        "ARM",
+        "M68000",
+        "MicroBlaze",
+        "MIPS",
+        "NSD32",
+        "Nios II",
+        "PowerPC",
+        "RISC-V",
+        "Sandbox",
+        "SH",
+        "x86",
+        "Xtensa"
+      ],
+      "ui-priority": 1
+    },
+    "boot-log": {
+      "description": "Boot log of the IoT device",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "fcc-id": {
+      "description": "FCC-ID of the IoT device",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "jtag-interface": {
+      "description": "JTAG interface of the IoT device",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ],
+      "ui-priority": 1
+    },
+    "model": {
+      "description": "Model of the IoT device",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "picture-device": {
+      "description": "Picture of the IoT device",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "picture-pcb": {
+      "description": "Picture of the IoT device PCB",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "platform": {
+      "description": "Platform of of the IoT device",
+      "misp-attribute": "text",
+      "sane_default": [
+        "mach-aspeed",
+        "mach-at91",
+        "mach-bcm283x",
+        "mach-bcmstb",
+        "mach-cortina",
+        "mach-davinci",
+        "mach-exynos",
+        "mach-highbank",
+        "mach-imx",
+        "mach-integrator",
+        "mach-k3",
+        "mach-keystone",
+        "mach-kirkwood",
+        "mach-mediatek",
+        "mach-meson",
+        "mach-mvebu",
+        "mach-omap2",
+        "mach-orion5x",
+        "mach-owl",
+        "mach-qemu",
+        "mach-rmobile",
+        "mach-rockchip",
+        "mach-s5pc1xx",
+        "mach-snapdragon",
+        "mach-socfpga",
+        "mach-sti",
+        "mach-stm32",
+        "mach-stm32mp",
+        "mach-sunxi",
+        "mach-tegra",
+        "mach-u8500",
+        "mach-uniphier",
+        "mach-versal",
+        "mach-versatile",
+        "mach-zynq",
+        "mach-zynqmp",
+        "mach-zynqmp-r5",
+        "mcf5227x",
+        "mcf523x",
+        "mcf52x2",
+        "mcf530x",
+        "mcf532x",
+        "mcf5445x",
+        "mcf547x_8x",
+        "mach-ath79",
+        "mach-bmips",
+        "mach-jz47xx",
+        "mach-mscc",
+        "mach-mtmips",
+        "mach-pic32"
+      ],
+      "ui-priority": 10
+    },
+    "reference": {
+      "description": "Reference of the IoT device",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "serial-interface": {
+      "description": "Serial interface of the IoT device",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ],
+      "ui-priority": 1
+    },
+    "spi-interface": {
+      "description": "SPI interface of the IoT device",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Yes",
+        "No",
+        "Unknown",
+        "Disabled"
+      ],
+      "ui-priority": 1
+    },
+    "vendor": {
+      "description": "Vendor of the IoT device",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "An IoT device.",
+  "meta-category": "iot",
+  "name": "iot-device",
+  "requiredOneOf": [
+    "model",
+    "vendor",
+    "architecture",
+    "boot-log",
+    "picture-pcb",
+    "picture-device"
+  ],
+  "uuid": "3de3b92a-859b-431b-9c4f-1a81de1d9637",
+  "version": 3
+}

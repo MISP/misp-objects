@@ -1,0 +1,79 @@
+{
+  "attributes": {
+    "active": {
+      "description": "the number of active cases.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "confirmed": {
+      "description": "the number of confirmed cases. For Hubei Province: from Feb 13 (GMT +8), we report both clinically diagnosed and lab-confirmed cases. For lab-confirmed cases only (Before Feb 17), please refer to https://github.com/CSSEGISandData/COVID-19/tree/master/who_covid_19_situation_reports.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "country-region": {
+      "description": "country/region name conforming to WHO (will be updated).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "county": {
+      "description": "US County (US Only)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "death": {
+      "description": "the number of deaths.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "fips": {
+      "description": "Federal Information Processing Standard county code (US Only)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "latitude": {
+      "description": "Approximate latitude of the entry",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "longitude": {
+      "description": "Approximate longitude of the entry",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "province-state": {
+      "description": "province name; US/Canada/Australia/ - city name, state/province name; Others - name of the event (e.g., \"Diamond Princess\" cruise ship); other countries - blank.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "recovered": {
+      "description": "the number of recovered cases.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "update": {
+      "description": "Time of the last update that day (UTC)",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    }
+  },
+  "description": "CSSE COVID-19 Daily report",
+  "meta-category": "health",
+  "name": "covid19-csse-daily-report",
+  "required": [
+    "country-region",
+    "update"
+  ],
+  "uuid": "9458bf83-2e29-4ff3-9996-0564f2d954c8",
+  "version": 2
+}

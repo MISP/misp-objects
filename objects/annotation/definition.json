@@ -1,43 +1,20 @@
 {
-  "requiredOneOf": [
-    "text"
-  ],
   "attributes": {
-    "text": {
-      "description": "Raw text of the annotation",
-      "ui-priority": 0,
-      "misp-attribute": "text"
+    "attachment": {
+      "description": "An attachment to support the annotation",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
     },
-    "ref": {
-      "description": "Reference(s) to the annotation",
-      "ui-priority": 0,
-      "misp-attribute": "link",
-      "multiple": true
-    },
-    "type": {
-      "description": "Type of the annotation",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "sane_default": [
-        "Annotation",
-        "Executive Summary",
-        "Introduction",
-        "Conclusion",
-        "Disclaimer",
-        "Keywords",
-        "Acknowledgement",
-        "Other",
-        "Copyright",
-        "Authors",
-        "Logo"
-      ]
+    "creation-date": {
+      "description": "Initial creation of the annotation",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "format": {
       "description": "Format of the annotation",
-      "ui-priority": 0,
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "text",
         "markdown",
@@ -50,28 +27,52 @@
         "kramdown-rfc2629",
         "rfc7328",
         "Extra"
-      ]
-    },
-    "creation-date": {
-      "description": "Initial creation of the annotation",
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      ],
+      "ui-priority": 0
     },
     "modification-date": {
       "description": "Last update of the annotation",
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
-    "attachment": {
-      "description": "An attachment to support the annotation",
-      "ui-priority": 0,
-      "misp-attribute": "attachment",
-      "multiple": true
+    "ref": {
+      "description": "Reference(s) to the annotation",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "Raw text of the annotation",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Type of the annotation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Annotation",
+        "Executive Summary",
+        "Introduction",
+        "Conclusion",
+        "Disclaimer",
+        "Keywords",
+        "Acknowledgement",
+        "Other",
+        "Copyright",
+        "Authors",
+        "Logo",
+        "Full Report"
+      ],
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "An annotation object allowing analysts to add annotations, comments, executive summary to a MISP event, objects or attributes.",
   "meta-category": "misc",
+  "name": "annotation",
+  "requiredOneOf": [
+    "text"
+  ],
   "uuid": "5d8dc046-15a1-4ca3-a09f-ed4ede7c4487",
-  "name": "annotation"
+  "version": 3
 }
