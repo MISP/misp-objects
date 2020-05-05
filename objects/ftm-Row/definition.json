@@ -1,0 +1,30 @@
+{
+  "attributes": {
+    "cells": {
+      "description": "Cells",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "index": {
+      "description": "Index",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "indexText": {
+      "description": "Index text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "",
+  "meta-category": "followthemoney",
+  "name": "ftm-Row",
+  "uuid": "282c0f7c-be66-41be-a709-b35032016829",
+  "version": 1
+}
