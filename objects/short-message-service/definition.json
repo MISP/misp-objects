@@ -20,7 +20,7 @@
       "description": "Phone company of the number used to send the SMS",
       "misp-attribute": "text",
       "ui-priority": 0
-    }
+    },
     "received-date": {
       "description": "Received date of the SMS",
       "disable_correlation": true,
