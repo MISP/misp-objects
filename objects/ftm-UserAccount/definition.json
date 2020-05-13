@@ -1,0 +1,201 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Address",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alephUrl": {
+      "description": "Aleph URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alias": {
+      "description": "Other name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "country": {
+      "description": "Country",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "email": {
+      "description": "E-mail",
+      "disable_correlation": false,
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "indexText": {
+      "description": "Index text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "indexUpdatedAt": {
+      "description": "Index updated at",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "modifiedAt": {
+      "description": "Modified on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "notes": {
+      "description": "Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "number": {
+      "description": "Phone Number",
+      "disable_correlation": false,
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "password": {
+      "description": "Password",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "previousName": {
+      "description": "Previous name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "program": {
+      "description": "Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisher": {
+      "description": "Publishing source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisherUrl": {
+      "description": "Publishing source URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "retrievedAt": {
+      "description": "Retrieved on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "service": {
+      "description": "Service",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "sourceUrl": {
+      "description": "Source link",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Summary",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "topics": {
+      "description": "Topics",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "username": {
+      "description": "Username",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "weakAlias": {
+      "description": "Weak alias",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikidataId": {
+      "description": "Wikidata ID",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikipediaUrl": {
+      "description": "Wikipedia Article",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "",
+  "meta-category": "followthemoney",
+  "name": "ftm-UserAccount",
+  "required": [
+    "name"
+  ],
+  "uuid": "094943f5-41c5-4fad-9d61-60d82bce49b1",
+  "version": 1
+}

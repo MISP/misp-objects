@@ -1,0 +1,250 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Address",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alephUrl": {
+      "description": "Aleph URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alias": {
+      "description": "Other name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "amount": {
+      "description": "Amount",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "amountEur": {
+      "description": "Amount in EUR",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "amountUsd": {
+      "description": "Amount in USD",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "buildDate": {
+      "description": "Build Date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "country": {
+      "description": "Country",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "currency": {
+      "description": "Currency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "icaoCode": {
+      "description": "ICAO aircraft type designator",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "indexText": {
+      "description": "Index text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "indexUpdatedAt": {
+      "description": "Index updated at",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "manufacturer": {
+      "description": "Manufacturer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "model": {
+      "description": "Model",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "modifiedAt": {
+      "description": "Modified on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "notes": {
+      "description": "Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "previousName": {
+      "description": "Previous name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "program": {
+      "description": "Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisher": {
+      "description": "Publishing source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisherUrl": {
+      "description": "Publishing source URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "registrationDate": {
+      "description": "Registration Date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "registrationNumber": {
+      "description": "Registration Number",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "retrievedAt": {
+      "description": "Retrieved on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "serialNumber": {
+      "description": "Serial Number",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sourceUrl": {
+      "description": "Source link",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Summary",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "topics": {
+      "description": "Topics",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "weakAlias": {
+      "description": "Weak alias",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikidataId": {
+      "description": "Wikidata ID",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikipediaUrl": {
+      "description": "Wikipedia Article",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "",
+  "meta-category": "followthemoney",
+  "name": "ftm-Airplane",
+  "required": [
+    "name"
+  ],
+  "uuid": "ea720b4a-8849-44a5-a150-eab87b86de2c",
+  "version": 1
+}

@@ -1,0 +1,198 @@
+{
+  "attributes": {
+    "alephUrl": {
+      "description": "Aleph URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ccdNumber": {
+      "description": "Customs Cargo Declaration Number",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ccdValue": {
+      "description": "Declaration Value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "customsAmount": {
+      "description": "Customs Value of goods",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "customsProcedure": {
+      "description": "Customs Procedure — type of customs clearance",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "date": {
+      "description": "Date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "departureCountry": {
+      "description": "Country out of which the goods are transported",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "destinationCountry": {
+      "description": "Final destination for the goods",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "directionOfTransportation": {
+      "description": "Direction of transportation (import/export)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "dollarExchRate": {
+      "description": "USD Exchange Rate for the activity",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "endDate": {
+      "description": "End date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "goodsDescription": {
+      "description": "Description of goods",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "indexText": {
+      "description": "Index text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "invoiceAmount": {
+      "description": "Invoice Value of goods",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "modifiedAt": {
+      "description": "Modified on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "originCountry": {
+      "description": "Country of origin of goods",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisher": {
+      "description": "Publishing source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisherUrl": {
+      "description": "Publishing source URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "recordId": {
+      "description": "Record ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "retrievedAt": {
+      "description": "Retrieved on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sourceUrl": {
+      "description": "Source URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "startDate": {
+      "description": "Start date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Summary",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "tradingCountry": {
+      "description": "Trading Country of the company which transports the goods via Russian border",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "vedCode": {
+      "description": "(Код ТН ВЭД) Foreign Economic Activity Commodity Code",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "vedCodeDescription": {
+      "description": "(Описание кода ТН ВЭД) Foreign Economic Activity Commodity Code description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "A foreign economic activity",
+  "meta-category": "followthemoney",
+  "name": "ftm-EconomicActivity",
+  "uuid": "ab680ac3-7f3f-4282-883c-d3920c63c8b2",
+  "version": 1
+}

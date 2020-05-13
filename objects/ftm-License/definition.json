@@ -1,0 +1,306 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Address",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alephUrl": {
+      "description": "Aleph URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alias": {
+      "description": "Other name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "amount": {
+      "description": "Amount",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "amountEur": {
+      "description": "Amount in EUR",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "amountUsd": {
+      "description": "Amount in USD",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "area": {
+      "description": "Area",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "cancelled": {
+      "description": "Cancelled?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "classification": {
+      "description": "Classification",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "commodities": {
+      "description": "Commodities",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "contractDate": {
+      "description": "Contract date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "country": {
+      "description": "Country",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "criteria": {
+      "description": "Contract award criteria",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "currency": {
+      "description": "Currency",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "indexText": {
+      "description": "Index text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "indexUpdatedAt": {
+      "description": "Index updated at",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "language": {
+      "description": "Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "method": {
+      "description": "Procurement method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "modifiedAt": {
+      "description": "Modified on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Contract name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "notes": {
+      "description": "Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "noticeId": {
+      "description": "Contract Award Notice ID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "numberAwards": {
+      "description": "Number of awards",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "previousName": {
+      "description": "Previous name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "procedure": {
+      "description": "Contract procedure",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "procedureNumber": {
+      "description": "Procedure number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "program": {
+      "description": "Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisher": {
+      "description": "Publishing source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisherUrl": {
+      "description": "Publishing source URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "retrievedAt": {
+      "description": "Retrieved on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "reviewDate": {
+      "description": "License review date",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sourceUrl": {
+      "description": "Source link",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "status": {
+      "description": "Procurement status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Summary",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "Contract title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "topics": {
+      "description": "Topics",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Type of contract. Potentially W (Works), U (Supplies), S (Services).\n",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "weakAlias": {
+      "description": "Weak alias",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikidataId": {
+      "description": "Wikidata ID",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikipediaUrl": {
+      "description": "Wikipedia Article",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "A grant of land, rights or property. A type of Contract",
+  "meta-category": "followthemoney",
+  "name": "ftm-License",
+  "required": [
+    "name"
+  ],
+  "uuid": "4629cf5c-60ee-4292-837a-f48874633c29",
+  "version": 1
+}

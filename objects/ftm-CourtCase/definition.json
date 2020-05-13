@@ -1,0 +1,215 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Address",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alephUrl": {
+      "description": "Aleph URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "alias": {
+      "description": "Other name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "caseNumber": {
+      "description": "Case number",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "category": {
+      "description": "Category",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "closeDate": {
+      "description": "Close date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "country": {
+      "description": "Country",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "court": {
+      "description": "Court",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "fileDate": {
+      "description": "File date",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "indexText": {
+      "description": "Index text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "indexUpdatedAt": {
+      "description": "Index updated at",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "keywords": {
+      "description": "Keywords",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "modifiedAt": {
+      "description": "Modified on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "notes": {
+      "description": "Notes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "previousName": {
+      "description": "Previous name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "program": {
+      "description": "Program",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisher": {
+      "description": "Publishing source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "publisherUrl": {
+      "description": "Publishing source URL",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "retrievedAt": {
+      "description": "Retrieved on",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sourceUrl": {
+      "description": "Source link",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "status": {
+      "description": "Status",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Summary",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "topics": {
+      "description": "Topics",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "weakAlias": {
+      "description": "Weak alias",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikidataId": {
+      "description": "Wikidata ID",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "wikipediaUrl": {
+      "description": "Wikipedia Article",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "",
+  "meta-category": "followthemoney",
+  "name": "ftm-CourtCase",
+  "required": [
+    "name"
+  ],
+  "uuid": "daa2375c-dc92-42c7-80c0-392500c69771",
+  "version": 1
+}

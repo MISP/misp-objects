@@ -30,9 +30,10 @@
     {
       "description": "The referenced source is related to the target object.",
       "format": [
+        "alfred",
+        "followthemoney",
         "misp",
-        "stix-2.0",
-        "alfred"
+        "stix-2.0"
       ],
       "name": "related-to"
     },
@@ -463,7 +464,8 @@
     {
       "description": "This relationship describes an object which belongs to another object.",
       "format": [
-        "cert-eu"
+        "cert-eu",
+        "followthemoney"
       ],
       "name": "belongs-to"
     },
@@ -786,7 +788,8 @@
     {
       "description": "Represents the semantic link of being associated with something.",
       "format": [
-        "alfred"
+        "alfred",
+        "followthemoney"
       ],
       "name": "linked-to"
     },
@@ -1000,7 +1003,77 @@
         "misp"
       ],
       "name": "knows"
+    },
+    {
+      "description": "owns",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "owns"
+    },
+    {
+      "description": "awarded to",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "awarded-to"
+    },
+    {
+      "description": "directs",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "directs"
+    },
+    {
+      "description": "involved in",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "involved-in"
+    },
+    {
+      "description": "associated with",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "associated-with"
+    },
+    {
+      "description": "represents",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "represents"
+    },
+    {
+      "description": "owes",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "owes"
+    },
+    {
+      "description": "preceeds",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "preceeds"
+    },
+    {
+      "description": "documents",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "documents"
+    },
+    {
+      "description": "paid",
+      "format": [
+        "followthemoney"
+      ],
+      "name": "paid"
     }
   ],
-  "version": 18
+  "version": 19
 }
