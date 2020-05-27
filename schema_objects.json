@@ -101,6 +101,7 @@
             "frequent-flyer-number",
             "gender",
             "gene",
+            "git-commit-id",
             "github-organisation",
             "github-repository",
             "github-username",
