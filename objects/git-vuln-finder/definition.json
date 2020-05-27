@@ -1,0 +1,133 @@
+{
+  "attributes": {
+    "author": {
+      "description": "Commit author",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "author-email": {
+      "description": "Commit authors email",
+      "misp-attribute": "email-src",
+      "ui-priority": 1
+    },
+    "authored_date": {
+      "description": "Date the commit was originally made",
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "branches": {
+      "description": "Branches the commit is on",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "commit-id": {
+      "description": "Commit ID where the vulnerability is fixed.",
+      "misp-attribute": "git-commit-id",
+      "ui-priority": 1
+    },
+    "committed_date": {
+      "description": "Date the commit was modified last",
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "cve": {
+      "description": "CVE associated to the vulnerability",
+      "misp-attribute": "vulnerability",
+      "ui-priority": 1
+    },
+    "language": {
+      "description": "Language of the commit (ISO 639-1 codes)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "message": {
+      "description": "Commit message",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "origin": {
+      "description": "Origin of the repository",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "origin-github-api": {
+      "description": "Full path to the commit on github",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "ui-priority": 0
+    },
+    "pattern-matches": {
+      "description": "Pattern matching for the vulnerability",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "pattern-selected": {
+      "description": "Pattern used to find the vulnerability",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "state": {
+      "description": "State of the vulnerability",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "under-review",
+        "cve-assigned"
+      ],
+      "ui-priority": 1
+    },
+    "stats.deletions": {
+      "description": "Number of deletions in the commit",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "stats.files": {
+      "description": "Number of files changed in the commit",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "stats.insertions": {
+      "description": "Number of insertions in the commit",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "stats.lines": {
+      "description": "Number of line changes in the commit",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Commit summary",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "tags": {
+      "description": "User defined tags",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Export from git-vuln-finder",
+  "meta-category": "vulnerability",
+  "name": "git-vuln-finder",
+  "required": [
+    "commit-id"
+  ],
+  "uuid": "caacd757-c324-486d-a429-93b5eb6dff27",
+  "version": 1
+}
