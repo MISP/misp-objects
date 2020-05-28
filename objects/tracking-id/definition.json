@@ -1,35 +1,36 @@
 {
   "attributes": {
     "description": {
-      "description": "Description of the tracking id",
+      "description": "Description of the tracking id.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "first-seen": {
-      "description": "First time the tracking code was seen",
+      "description": "First time the tracking code was seen.",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "hostname": {
-      "description": "hostname where the tracking id was found",
+      "description": "Hostname where the tracking id was found (assumed safe).",
       "misp-attribute": "hostname",
       "multiple": true,
       "ui-priority": 0
     },
     "id": {
-      "description": "Tracking code",
+      "description": "Tracking code.",
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "last-seen": {
-      "description": "Last time the tracking code was seen",
+      "description": "Last time the tracking code was seen.",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "tracker": {
-      "description": "Name of the tracker - organisation doing the tracking and/or analytics",
+      "description": "Name of the tracker - organisation doing the tracking and/or analytics.",
       "misp-attribute": "text",
       "sane_default": [
         "Google Analytics",
@@ -41,7 +42,7 @@
       "ui-priority": 1
     },
     "url": {
-      "description": "URL where the tracking id was found",
+      "description": "URL where the tracking id was found (potentially malicious).",
       "misp-attribute": "url",
       "multiple": true,
       "ui-priority": 1
@@ -54,5 +55,5 @@
     "id"
   ],
   "uuid": "3681c62a-2c75-48d8-99f2-6a3444ce2393",
-  "version": 2
+  "version": 3
 }
