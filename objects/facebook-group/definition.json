@@ -1,0 +1,98 @@
+{
+  "attributes": {
+    "administrator": {
+      "description": "A user account who is an owner or admin of the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "archive": {
+      "description": "Archive of the original group (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts, group members, etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "creator": {
+      "description": "The user account that created the group.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the group, channel or community.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the group description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the group description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "group-alias": {
+      "description": "Aliases or previous names of group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "group-name": {
+      "description": "The name of the group, channel or community.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "group-type": {
+      "description": "Facebook group type, e.g. general, buy and sell etc.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the group (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "privacy": {
+      "description": "Group privacy: public, closed, secret.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "Public",
+        "Closed",
+        "Secret"
+      ],
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the group (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "Public or private facebook group.",
+  "meta-category": "misc",
+  "name": "facebook-group",
+  "requiredOneOf": [
+    "group-name",
+    "description",
+    "archive",
+    "link"
+  ],
+  "uuid": "165c5507-1cba-4cec-9be4-66e21b590ee6",
+  "version": 1
+}

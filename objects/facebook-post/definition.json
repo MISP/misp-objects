@@ -1,0 +1,125 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The facebook post file or screen capture.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link in the facebook post",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Safe link in the facebook post",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hashtag": {
+      "description": "Hashtag embedded in the facebook post",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-display-name": {
+      "description": "The user display name of the facebook this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-status-id": {
+      "description": "The facebook ID of the post that this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-user-id": {
+      "description": "The user ID of the facebook this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "language": {
+      "description": "The language of the post.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the facebook post (supposed harmless).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "post": {
+      "description": "Raw text of the post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "post-id": {
+      "description": "The facebook post id.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "post-location": {
+      "description": "id of the group, page or wall the post was posted to.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "removal-date": {
+      "description": "When the facebook post was removed.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "url": {
+      "description": "Original URL of the facebook post, e.g. link shortener (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "user-id": {
+      "description": "Id of the account who posted.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "user-name": {
+      "description": "Display name of the account who posted.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "username": {
+      "description": "Username who posted the facebook post",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "username-quoted": {
+      "description": "Username who is quoted in the facebook post.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Post on a Facebook wall.",
+  "meta-category": "misc",
+  "name": "facebook-post",
+  "requiredOneOf": [
+    "post",
+    "post-id",
+    "archive",
+    "url",
+    "link",
+    "attachment"
+  ],
+  "uuid": "82c1fd90-85a1-4420-a315-d2a7cfae2f01",
+  "version": 1
+}
