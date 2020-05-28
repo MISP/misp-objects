@@ -12,16 +12,6 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "user-name": {
-      "description": "Display name of the account who posted.",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "user-id": {
-      "description": "Id of the account who posted.",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
     "embedded-link": {
       "description": "Link in the facebook post",
       "misp-attribute": "url",
@@ -40,14 +30,14 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "in-reply-to-status-id": {
-      "description": "The facebook ID of the post that this post shares.",
+    "in-reply-to-display-name": {
+      "description": "The user display name of the facebook this post shares.",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
-    "in-reply-to-display-name": {
-      "description": "The user display name of the facebook this post shares.",
+    "in-reply-to-status-id": {
+      "description": "The facebook ID of the post that this post shares.",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
@@ -60,8 +50,8 @@
     },
     "language": {
       "description": "The language of the post.",
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
@@ -76,9 +66,9 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "removal-date": {
-      "description": "When the facebook post was removed.",
-      "misp-attribute": "datetime",
+    "post-id": {
+      "description": "The facebook post id.",
+      "misp-attribute": "post-id",
       "ui-priority": 0
     },
     "post-location": {
@@ -86,9 +76,9 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "post-id": {
-      "description": "The facebook post id.",
-      "misp-attribute": "post-id",
+    "removal-date": {
+      "description": "When the facebook post was removed.",
+      "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "url": {
@@ -96,6 +86,16 @@
       "misp-attribute": "url",
       "multiple": true,
       "ui-priority": 1
+    },
+    "user-id": {
+      "description": "Id of the account who posted.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "user-name": {
+      "description": "Display name of the account who posted.",
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "username": {
       "description": "Username who posted the facebook post",

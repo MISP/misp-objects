@@ -71,12 +71,12 @@
     "privacy": {
       "description": "Group privacy: public, closed, secret.",
       "misp-attribute": "text",
-      "ui-priority": 1,
       "sane_default": [
         "Public",
         "Closed",
         "Secret"
-      ]
+      ],
+      "ui-priority": 1
     },
     "url": {
       "description": "Original URL location of the group (potentially malicious).",
