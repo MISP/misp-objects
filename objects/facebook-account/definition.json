@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "account-id": {
+      "description": "Account id.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "account-name": {
+      "description": "Account name.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "archive": {
+      "description": "Archive of the account (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the user.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original link to the page (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the page (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "user-avatar": {
+      "description": "A user profile picture or avatar.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Facebook account.",
+  "meta-category": "misc",
+  "name": "facebook-account",
+  "requiredOneOf": [
+    "account-name",
+    "account-id",
+    "description",
+    "archive",
+    "link"
+  ],
+  "uuid": "b9862b95-7d78-4938-a2b5-13e45c60f25a",
+  "version": 1
+}
