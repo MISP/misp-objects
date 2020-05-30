@@ -68,7 +68,7 @@
     },
     "post-id": {
       "description": "Numeric id of the tweet.",
-      "misp-attribute": "post-id",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "removal-date": {
