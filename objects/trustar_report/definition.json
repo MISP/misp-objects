@@ -12,6 +12,12 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "COMMENTS": {
+      "description": "A space for additional comments.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "CVE": {
       "description": "The Common Vulnerabilities and Exposures (CVE) system provides a reference-method for publicly known information-security vulnerabilities and exposures.",
       "misp-attribute": "vulnerability",
@@ -21,6 +27,12 @@
     "EMAIL_ADDRESS": {
       "description": "An email address is a unique identifier for an email account.",
       "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "INDICATOR_SUMMARY": {
+      "description": "Free text summary data related to an indicator. This should include a normalized score if one exists.",
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
     },
@@ -48,6 +60,12 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "REPORT_LINK": {
+      "description": "A link to the TruSTAR report. Access may be restricted depending on user permissions.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "SHA1": {
       "description": "SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function which takes an input and produces a 160-bit (20-byte) hash value known as a message digest - typically rendered as a hexadecimal number, 40 digits long. SHA-1 is prone to length extension attacks.",
       "misp-attribute": "sha1",
@@ -69,24 +87,6 @@
     "URL": {
       "description": "A Uniform Resource Locator (URL) is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it.",
       "misp-attribute": "url",
-      "multiple": true,
-      "ui-priority": 1
-    },
-    "INDICATOR_SUMMARY": {
-      "description": "Free text summary data related to an indicator. This should include a normalized score if one exists.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 1
-    },
-    "REPORT_LINK": {
-      "description": "A link to the TruSTAR report. Access may be restricted depending on user permissions.",
-      "misp-attribute": "link",
-      "multiple": true,
-      "ui-priority": 1
-    },
-    "COMMENTS": {
-      "description": "A space for additional comments.",
-      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
     }
