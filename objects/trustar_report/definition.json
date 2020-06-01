@@ -71,6 +71,24 @@
       "misp-attribute": "url",
       "multiple": true,
       "ui-priority": 1
+    },
+    "INDICATOR_SUMMARY": {
+      "description": "Free text summary data related to an indicator. This should include a normalized score if one exists.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "REPORT_LINK": {
+      "description": "A link to the TruSTAR report. Access may be restricted depending on user permissions.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "COMMENTS": {
+      "description": "A space for additional comments.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
     }
   },
   "description": "TruStar Report",
