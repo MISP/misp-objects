@@ -24,6 +24,18 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "favorite-count": {
+      "description": "Number of favorites.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "geo": {
+      "description": "Geolocation data.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "hashtag": {
       "description": "Hashtag embedded in the tweet",
       "misp-attribute": "text",
@@ -48,12 +60,6 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "geo": {
-      "description": "Geolocation data.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "language": {
       "description": "The language of the post.",
       "disable_correlation": true,
@@ -65,6 +71,23 @@
       "description": "Original link to the post (supposed harmless).",
       "misp-attribute": "link",
       "multiple": true,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Name of the account that posted this tweet.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "possibly-sensitive": {
+      "description": "Does this post contain sensitive content?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "possibly-sensitive-appealable": {
+      "description": "Is the sensitive content of this post appealable?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "post": {
@@ -88,24 +111,6 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "favorite-count": {
-      "description": "Number of favorites.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "possibly-sensitive": {
-      "description": "Does this post contain sensitive content?",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "possibly-sensitive-appealable": {
-      "description": "Is the sensitive content of this post appealable?",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "source": {
       "description": "Source of tweet (android, web etc).",
       "misp-attribute": "text",
@@ -119,11 +124,6 @@
     },
     "user-id": {
       "description": "Id of the account that posted this tweet.",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "name": {
-      "description": "Name of the account that posted this tweet.",
       "misp-attribute": "text",
       "ui-priority": 0
     },

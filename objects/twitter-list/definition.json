@@ -18,18 +18,6 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "member-count": {
-      "description": "Number of accounts following this list.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "subscriber-count": {
-      "description": "Number of accounts subscribing to this list.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "embedded-link": {
       "description": "Link embedded in the description (potentially malicious).",
       "misp-attribute": "url",
@@ -59,8 +47,20 @@
       "misp-attribute": "link",
       "ui-priority": 1
     },
+    "member-count": {
+      "description": "Number of accounts following this list.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "name": {
       "description": "List's screen name (without the @).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "subscriber-count": {
+      "description": "Number of accounts subscribing to this list.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },

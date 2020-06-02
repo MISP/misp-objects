@@ -13,26 +13,6 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "profile_image": {
-      "description": "A screenshot or exported user avatar.",
-      "misp-attribute": "attachment",
-      "ui-priority": 1
-    },
-    "profile-image-url": {
-      "description": "A link to the user's avatar.",
-      "misp-attribute": "url",
-      "ui-priority": 1
-    },
-    "profile-banner": {
-      "description": "A screenshot or exported user avatar.",
-      "misp-attribute": "attachment",
-      "ui-priority": 1
-    },
-    "profile-banner-url": {
-      "description": "A link to the user's background image.",
-      "misp-attribute": "url",
-      "ui-priority": 1
-    },
     "bio": {
       "description": "Displayed name.",
       "misp-attribute": "text",
@@ -125,6 +105,26 @@
         "True",
         "False"
       ],
+      "ui-priority": 1
+    },
+    "profile-banner": {
+      "description": "A screenshot or exported user avatar.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "profile-banner-url": {
+      "description": "A link to the user's background image.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "profile-image-url": {
+      "description": "A link to the user's avatar.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "profile_image": {
+      "description": "A screenshot or exported user avatar.",
+      "misp-attribute": "attachment",
       "ui-priority": 1
     },
     "tweets": {
