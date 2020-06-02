@@ -13,6 +13,11 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "bio": {
+      "description": "Displayed name.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "description": {
       "description": "A description of the user.",
       "disable_correlation": true,
@@ -37,13 +42,13 @@
       "ui-priority": 0
     },
     "followers": {
-      "description": "number of followers.",
+      "description": "Number of followers.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "friends": {
-      "description": "Number of friends.",
+    "following": {
+      "description": "Number of accounts this accounts is following.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
@@ -56,6 +61,12 @@
     },
     "id": {
       "description": "Numeric account id.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "likes": {
+      "description": "Number of likes this account has.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -76,8 +87,49 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "media": {
+      "description": "Number of images and videos posted.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "name": {
       "description": "User's screen name (without the @).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "private": {
+      "description": "User verified.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "profile-banner": {
+      "description": "A screenshot or exported user avatar.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "profile-banner-url": {
+      "description": "A link to the user's background image.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "profile-image-url": {
+      "description": "A link to the user's avatar.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "profile_image": {
+      "description": "A screenshot or exported user avatar.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "tweets": {
+      "description": "Number of tweets posted.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -107,5 +159,5 @@
     "link"
   ],
   "uuid": "8066563f-881e-4f6a-9d6c-a9d15b8658bb",
-  "version": 1
+  "version": 3
 }

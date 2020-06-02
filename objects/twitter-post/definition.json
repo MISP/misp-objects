@@ -24,6 +24,18 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "favorite-count": {
+      "description": "Number of favorites.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "geo": {
+      "description": "Geolocation data.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "hashtag": {
       "description": "Hashtag embedded in the tweet",
       "misp-attribute": "text",
@@ -61,6 +73,23 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "name": {
+      "description": "Name of the account that posted this tweet.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "possibly-sensitive": {
+      "description": "Does this post contain sensitive content?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "possibly-sensitive-appealable": {
+      "description": "Is the sensitive content of this post appealable?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "post": {
       "description": "Raw text of the post.",
       "misp-attribute": "text",
@@ -76,6 +105,12 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "retweet-count": {
+      "description": "Number of retweets.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "source": {
       "description": "Source of tweet (android, web etc).",
       "misp-attribute": "text",
@@ -89,11 +124,6 @@
     },
     "user-id": {
       "description": "Id of the account that posted this tweet.",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "user-name": {
-      "description": "Name of the account that posted this tweet.",
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -116,5 +146,5 @@
     "attachment"
   ],
   "uuid": "d1214031-ce1b-4a35-bd33-644c707bda2e",
-  "version": 1
+  "version": 2
 }
