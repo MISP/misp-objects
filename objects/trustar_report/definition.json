@@ -12,6 +12,12 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "COMMENTS": {
+      "description": "A space for additional comments.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "CVE": {
       "description": "The Common Vulnerabilities and Exposures (CVE) system provides a reference-method for publicly known information-security vulnerabilities and exposures.",
       "misp-attribute": "vulnerability",
@@ -21,6 +27,12 @@
     "EMAIL_ADDRESS": {
       "description": "An email address is a unique identifier for an email account.",
       "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "INDICATOR_SUMMARY": {
+      "description": "Free text summary data related to an indicator. This should include a normalized score if one exists.",
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
     },
@@ -45,6 +57,12 @@
     "REGISTRY_KEY": {
       "description": "The registry is a hierarchical database that contains data that is critical for the operation of Windows and the applications and services that run on Windows.",
       "misp-attribute": "regkey",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "REPORT_LINK": {
+      "description": "A link to the TruSTAR report. Access may be restricted depending on user permissions.",
+      "misp-attribute": "link",
       "multiple": true,
       "ui-priority": 1
     },
