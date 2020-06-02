@@ -18,8 +18,15 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "displayed-name": {
-      "description": "Displayed name.",
+    "member-count": {
+      "description": "Number of accounts following this list.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "subscriber-count": {
+      "description": "Number of accounts subscribing to this list.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -84,5 +91,5 @@
     "link"
   ],
   "uuid": "7ae81d5c-d9d8-4812-88a7-5f14fba241da",
-  "version": 1
+  "version": 2
 }

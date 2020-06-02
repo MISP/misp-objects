@@ -48,6 +48,12 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "geo": {
+      "description": "Geolocation data.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "language": {
       "description": "The language of the post.",
       "disable_correlation": true,
@@ -76,6 +82,30 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "retweet-count": {
+      "description": "Number of retweets.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "favorite-count": {
+      "description": "Number of favorites.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "possibly-sensitive": {
+      "description": "Does this post contain sensitive content?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "possibly-sensitive-appealable": {
+      "description": "Is the sensitive content of this post appealable?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "source": {
       "description": "Source of tweet (android, web etc).",
       "misp-attribute": "text",
@@ -92,7 +122,7 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "user-name": {
+    "name": {
       "description": "Name of the account that posted this tweet.",
       "misp-attribute": "text",
       "ui-priority": 0
@@ -116,5 +146,5 @@
     "attachment"
   ],
   "uuid": "d1214031-ce1b-4a35-bd33-644c707bda2e",
-  "version": 1
+  "version": 2
 }
