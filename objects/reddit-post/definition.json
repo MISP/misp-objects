@@ -13,7 +13,7 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "creator": {
+    "author": {
       "description": "The user account that created the post (do not include u/).",
       "misp-attribute": "text",
       "ui-priority": 1
@@ -22,6 +22,16 @@
       "description": "A description of the post.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "edited": {
+      "description": "Has the post been edited?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "embedded-link": {
@@ -63,6 +73,16 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "thumbnail": {
+      "description": "Screen capture or exported post thumbnail.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "thumbnail-url": {
+      "description": "Link to post thumbnail.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
     "url": {
       "description": "Original URL location of the Reddit post (potentially malicious).",
       "misp-attribute": "url",
@@ -85,5 +105,5 @@
     "link"
   ],
   "uuid": "e5ed7e7f-2e21-44ff-839f-e58d9818f17f",
-  "version": 1
+  "version": 2
 }

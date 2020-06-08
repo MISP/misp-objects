@@ -6,6 +6,12 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "account-avatar-url": {
+      "description": "A user profile picture or avatar.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "account-id": {
       "description": "Account id.",
       "misp-attribute": "text",
@@ -56,12 +62,6 @@
       "description": "Original URL location of the page (potentially malicious).",
       "misp-attribute": "url",
       "ui-priority": 1
-    },
-    "user-avatar": {
-      "description": "A user profile picture or avatar.",
-      "misp-attribute": "attachment",
-      "multiple": true,
-      "ui-priority": 1
     }
   },
   "description": "Reddit account.",
@@ -75,5 +75,5 @@
     "link"
   ],
   "uuid": "6802f885-2003-494a-b234-61aadce62731",
-  "version": 1
+  "version": 2
 }

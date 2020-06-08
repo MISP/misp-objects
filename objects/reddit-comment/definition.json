@@ -13,13 +13,13 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "comment": {
-      "description": "The raw text of the comment.",
+    "author": {
+      "description": "The user account that created the post (do not include u/).",
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "creator": {
-      "description": "The user account that created the post (do not include u/).",
+    "body": {
+      "description": "The raw text of the comment.",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -56,7 +56,6 @@
       "description": "The name of the subreddit where it was posted (exclude the r/).",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "multiple": true,
       "ui-priority": 1
     },
     "url": {
@@ -75,11 +74,11 @@
   "meta-category": "misc",
   "name": "reddit-comment",
   "requiredOneOf": [
-    "creator",
-    "comment",
+    "author",
+    "body",
     "archive",
     "link"
   ],
   "uuid": "0a7e5fc0-fe6a-43c7-a957-de3269c2eb6c",
-  "version": 1
+  "version": 2
 }
