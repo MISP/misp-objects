@@ -1,5 +1,11 @@
 {
   "attributes": {
+    "active-user-count": {
+      "description": "Number of active accounts in the subreddit.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "archive": {
       "description": "Archive of the original subreddit (Internet Archive, Archive.is, etc).",
       "disable_correlation": true,
@@ -13,9 +19,15 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "community-icon": {
-      "description": "A screen capture or exported subreddit community icon.",
+    "banner-background-image": {
+      "description": "A screen capture or exported subreddit header.",
       "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "banner-background-url": {
+      "description": "A link to the subreddit header.",
+      "misp-attribute": "url",
       "multiple": true,
       "ui-priority": 1
     },
@@ -26,6 +38,11 @@
     },
     "description": {
       "description": "A description of the subreddit.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "display-name": {
+      "description": "The name of the subreddit (exclude the r/).",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -47,9 +64,21 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "header-image": {
-      "description": "A screen capture or exported subreddit header.",
+    "header-title": {
+      "description": "A title of the subreddit.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "icon-img": {
+      "description": "A screen capture or exported subreddit community icon.",
       "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "icon-img-url": {
+      "description": "A link to the subreddit community icon.",
+      "misp-attribute": "url",
       "multiple": true,
       "ui-priority": 1
     },
@@ -76,6 +105,7 @@
     "rules": {
       "description": "Raw text of the rules of the subreddit.",
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 1
     },
     "submit-text": {
@@ -87,11 +117,6 @@
       "description": "Aliases or previous names of subreddit.",
       "misp-attribute": "text",
       "multiple": true,
-      "ui-priority": 1
-    },
-    "subreddit-name": {
-      "description": "The name of the subreddit (exclude the r/).",
-      "misp-attribute": "text",
       "ui-priority": 1
     },
     "subreddit-type": {
@@ -111,11 +136,11 @@
   "meta-category": "misc",
   "name": "reddit-subreddit",
   "requiredOneOf": [
-    "subreddit-name",
+    "display-name",
     "description",
     "archive",
     "link"
   ],
   "uuid": "5a00464c-5379-4e66-ab21-d356ba426155",
-  "version": 1
+  "version": 2
 }
