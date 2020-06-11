@@ -100,6 +100,7 @@
     },
     "private": {
       "description": "User verified.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "True",
@@ -117,14 +118,14 @@
       "misp-attribute": "url",
       "ui-priority": 1
     },
+    "profile-image": {
+      "description": "A screenshot or exported user avatar.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
     "profile-image-url": {
       "description": "A link to the user's avatar.",
       "misp-attribute": "url",
-      "ui-priority": 1
-    },
-    "profile_image": {
-      "description": "A screenshot or exported user avatar.",
-      "misp-attribute": "attachment",
       "ui-priority": 1
     },
     "tweets": {
@@ -136,10 +137,12 @@
     "url": {
       "description": "Original URL location of the user (potentially malicious).",
       "misp-attribute": "url",
+      "multiple": true,
       "ui-priority": 1
     },
     "verified": {
       "description": "User verified.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "True",
@@ -159,5 +162,5 @@
     "link"
   ],
   "uuid": "8066563f-881e-4f6a-9d6c-a9d15b8658bb",
-  "version": 3
+  "version": 4
 }
