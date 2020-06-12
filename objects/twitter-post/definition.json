@@ -102,6 +102,7 @@
     },
     "removal-date": {
       "description": "When the tweet was removed.",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
@@ -113,6 +114,7 @@
     },
     "source": {
       "description": "Source of tweet (android, web etc).",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -146,5 +148,5 @@
     "attachment"
   ],
   "uuid": "d1214031-ce1b-4a35-bd33-644c707bda2e",
-  "version": 2
+  "version": 3
 }
