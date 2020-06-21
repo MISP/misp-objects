@@ -1,0 +1,43 @@
+{
+  "attributes": {
+    "appid": {
+      "description": "Application ID",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "certificate": {
+      "description": "Android certificate",
+      "misp-attribute": "sha1",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "domain": {
+      "description": "Domain used by the app",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Generic name of the application",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sha256": {
+      "description": "SHA256 of the APK.",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Indicators related to an Android app",
+  "meta-category": "file",
+  "name": "android-app",
+  "requiredOneOf": [
+    "appid",
+    "name",
+    "sha256"
+  ],
+  "uuid": "92836f23-4730-4eae-82ac-9f00d5299735",
+  "version": 1
+}
