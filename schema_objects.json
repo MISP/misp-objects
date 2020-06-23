@@ -269,7 +269,8 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^[a-z0-9\\-]+$"
     },
     "required": {
       "items": {
