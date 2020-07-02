@@ -14,7 +14,7 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": false,
-      "ui-priority": 0,
+      "ui-priority": 1,
       "values_list": [
         "info",
         "safe",
@@ -30,7 +30,7 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": false,
-      "ui-priority": 0
+      "ui-priority": 4
     },
     "predicate": {
       "categories": [
@@ -40,7 +40,7 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": false,
-      "ui-priority": 0
+      "ui-priority": 3
     },
     "value": {
       "categories": [
@@ -50,18 +50,18 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": false,
-      "ui-priority": 0
+      "ui-priority": 2
     }
   },
   "description": "Cortex object describing an Cortex Taxonomy (or mini report)",
   "meta-category": "misc",
   "name": "cortex-taxonomy",
   "required": [
-    "level",
+    "namespace",
     "predicate",
     "value",
-    "namespace"
+    "level"
   ],
   "uuid": "bef7d23b-e796-4d46-803a-32e317896894",
-  "version": 4
+  "version": 5
 }
