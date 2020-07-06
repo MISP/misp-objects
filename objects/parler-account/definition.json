@@ -1,0 +1,127 @@
+{
+  "attributes": {
+    "account-id": {
+      "description": "Numeric id of the account.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "account-name": {
+      "description": "Name of the account.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "archive": {
+      "description": "Archive of the original parley (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The parley file or screen capture.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "badge": {
+      "description": "Post badge.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "bio": {
+      "description": "The account bio.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "comments": {
+      "description": "The number of user comments.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cover-photo": {
+      "description": "Comment controversy.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "followers": {
+      "description": "Number of followers.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "following": {
+      "description": "Number user is following.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "human": {
+      "description": "Account 'human' bool.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "interactions": {
+      "description": "Account interactions.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "likes": {
+      "description": "Number user likes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original URL of the parley (supposed harmless).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "posts": {
+      "description": "Number user posts.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "profile-photo": {
+      "description": "Comment controversy.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "score": {
+      "description": "User score.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL of the parley, e.g. link shortener (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "verified": {
+      "description": "Account 'verified' bool.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    }
+  },
+  "description": "Parler account.",
+  "meta-category": "misc",
+  "name": "parler-account",
+  "requiredOneOf": [
+    "account-id",
+    "account-name",
+    "archive",
+    "url",
+    "link",
+    "attachment"
+  ],
+  "uuid": "8d5ba58e-cac3-46a6-9d1f-cf236f7e95c9",
+  "version": 1
+}

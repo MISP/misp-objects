@@ -1,0 +1,145 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original parley (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The parley file or screen capture.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "badge": {
+      "description": "Comment badge.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "body": {
+      "description": "Raw text of the post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "comment-depth": {
+      "description": "Comment nesting depth.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "comments": {
+      "description": "Comments on this object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "controversy": {
+      "description": "Comment controversy.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "creator": {
+      "description": "Name of the account that posted this parley.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "creator-id": {
+      "description": "ID of the account that posted this parley.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "downvotes": {
+      "description": "Comment downvotes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link in the parley",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Safe link in the parley",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hashtag": {
+      "description": "Hashtag embedded in the parley.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-display-name": {
+      "description": "The user display name of the parley this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-parley-id": {
+      "description": "The Parler ID of the parley that this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-user-id": {
+      "description": "The user ID of the parley this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the post (supposed harmless).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "post-id": {
+      "description": "Numeric id of the parley.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "score": {
+      "description": "Comment score.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "upvotes": {
+      "description": "Comment upvotes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL of the parley, e.g. link shortener (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "username-quoted": {
+      "description": "Username who is quoted in the parley.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Parler comment.",
+  "meta-category": "misc",
+  "name": "parler-comment",
+  "requiredOneOf": [
+    "body",
+    "post-id",
+    "archive",
+    "url",
+    "link",
+    "attachment"
+  ],
+  "uuid": "86db742e-b86a-40f3-945f-96ab4e305cd6",
+  "version": 1
+}
