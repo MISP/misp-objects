@@ -1,0 +1,43 @@
+{
+    "attributes": {
+        "domain": {
+            "description": "Malicious website",
+            "disable_correlation": false,
+            "misp-attribute": "domain",
+            "multiple": false,
+            "ui-priority": 1
+        },
+        "last seen": {
+            "description": "Last seen",
+            "misp-attribute": "datetime",
+            "multiple": false,
+            "ui-priority": 1
+        },
+        "first seen": {
+            "description": "First seen",
+            "misp-attribute": "datetime",
+            "multiple": false,
+            "ui-priority": 1
+        },
+        "reason": {
+            "description": "Reason",
+            "disable_correlation": false,
+            "misp-attribute": "text",
+            "ui-priority": 1
+        },
+        "source": {
+            "description": "Intel source",
+            "disable_correlation": true,
+            "misp-attribute": "text",
+            "ui-priority": 1
+        }
+    },
+    "description": "A generic object for malicious websites",
+    "meta-category": "network",
+    "name": "malicious-website",
+    "requiredOneOf": [
+        "domain"
+    ],
+    "uuid": "64da5ea8-886d-4946-b414-a351c83146d4",
+    "version": 1
+}
