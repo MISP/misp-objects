@@ -424,6 +424,11 @@
       "description": "Fuzzy hash by Trend Micro: Locality Sensitive Hash",
       "misp-attribute": "tlsh",
       "ui-priority": 0
+    },
+    "vhash": {
+      "description": "vhash by VirusTotal",
+      "misp-attribute": "vhash",
+      "ui-priority": 0
     }
   },
   "description": "File object describing a file with meta-information",
@@ -450,6 +455,6 @@
     "path",
     "fullpath"
   ],
-  "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
-  "version": 20
+  "uuid": "688c36fb-4edb-41a3-7273-1af8923e2215",
+  "version": 21
 }
