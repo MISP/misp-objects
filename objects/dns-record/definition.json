@@ -5,8 +5,28 @@
         "Network activity",
         "External analysis"
       ],
-      "description": "IP Address sassociated with A Records",
+      "description": "IPv4 address associated with A record",
       "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "aaaa-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IPv6 address associated with AAAA record",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "cname-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with CNAME record",
+      "misp-attribute": "domain",
       "multiple": true,
       "ui-priority": 1
     },
@@ -15,7 +35,7 @@
         "Network activity",
         "External analysis"
       ],
-      "description": "Domain associated with MX Record",
+      "description": "Domain associated with MX record",
       "misp-attribute": "domain",
       "multiple": true,
       "ui-priority": 1
@@ -25,7 +45,17 @@
         "Network activity",
         "External analysis"
       ],
-      "description": "Domain associated with NS Records",
+      "description": "Domain associated with NS record",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ptr-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with PTR record",
       "misp-attribute": "domain",
       "multiple": true,
       "ui-priority": 1
@@ -39,14 +69,54 @@
       "misp-attribute": "domain",
       "ui-priority": 1
     },
+    "soa-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with SOA record",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "spf-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IP addresses associated with SPF record",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "srv-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with SRV record",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "text": {
       "description": "A description of the records",
       "misp-attribute": "text",
       "recommended": false,
       "ui-priority": 1
+    },
+    "txt-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Content associated with TXT record",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
     }
   },
-  "description": "A set of dns records observed for a specific domain.",
+  "description": "A set of DNS records observed for a specific domain.",
   "meta-category": "network",
   "name": "dns-record",
   "required": [
@@ -54,9 +124,16 @@
   ],
   "requiredOneOf": [
     "a-record",
+    "aaaa-record",
+    "cname-record",
     "mx-record",
-    "ns-record"
+    "ns-record",
+    "ptr-record",
+    "soa-record",
+    "spf-record",
+    "srv-record",
+    "txt-record"
   ],
   "uuid": "f023c8f0-81ab-41f3-9f5d-fa597a34a9b9",
-  "version": 1
+  "version": 2
 }
