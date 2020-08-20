@@ -95,7 +95,7 @@
     "richpe": {
       "description": "RichPE metadata hash",
       "misp-attribute": "md5",
-      "multiple": 1,
+      "multiple": true,
       "ui-priority": 0
     },
     "text": {
