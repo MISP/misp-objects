@@ -45,12 +45,6 @@
       "misp-attribute": "imphash",
       "ui-priority": 0
     },
-    "richpe": {
-      "description": "RichPE metadata hash",
-      "misp-attribute": "md5",
-      "ui-priority": 0,
-      "multiple": 1
-    },
     "internal-filename": {
       "description": "InternalFilename in the resources",
       "disable_correlation": true,
@@ -96,6 +90,12 @@
       "description": "ProductVersion in the resources",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "richpe": {
+      "description": "RichPE metadata hash",
+      "misp-attribute": "md5",
+      "multiple": 1,
       "ui-priority": 0
     },
     "text": {
