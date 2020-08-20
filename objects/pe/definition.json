@@ -45,6 +45,12 @@
       "misp-attribute": "imphash",
       "ui-priority": 0
     },
+    "richpe": {
+      "description": "RichPE metadata hash",
+      "misp-attribute": "md5",
+      "ui-priority": 0,
+      "multiple": 1
+    },
     "internal-filename": {
       "description": "InternalFilename in the resources",
       "disable_correlation": true,
@@ -125,5 +131,5 @@
     "impfuzzy"
   ],
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
-  "version": 5
+  "version": 6
 }
