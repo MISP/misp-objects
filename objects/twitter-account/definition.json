@@ -13,6 +13,15 @@
       "multiple": true,
       "ui-priority": 1
     },
+    {
+    "join-date":{
+      "description": "When the account was created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "multiple": "false",
+      "ui-priority": 1
+    },
+    {
     "bio": {
       "description": "Displayed name.",
       "misp-attribute": "text",
