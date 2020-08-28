@@ -53,6 +53,18 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "twitter-following":{
+      "description": "following accounts of interest",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+    "twitter-followers":{
+      "description": "followers accounts of interest",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+  }
     "hashtag": {
       "description": "Hashtag embedded in the user description.",
       "misp-attribute": "text",
@@ -169,5 +181,5 @@
     "link"
   ],
   "uuid": "8066563f-881e-4f6a-9d6c-a9d15b8658bb",
-  "version": 6
+  "version": 7
 }
