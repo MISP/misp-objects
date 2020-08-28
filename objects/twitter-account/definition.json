@@ -64,11 +64,11 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "join-date": {
+    "joined-date": {
       "description": "When the account was created",
       "disable_correlation": true,
       "misp-attribute": "datetime",
-      "multiple": "false",
+      "multiple": false,
       "ui-priority": 1
     },
     "likes": {
