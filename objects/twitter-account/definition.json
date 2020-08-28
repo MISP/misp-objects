@@ -64,6 +64,13 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "join-date": {
+      "description": "When the account was created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "multiple": "false",
+      "ui-priority": 1
+    },
     "likes": {
       "description": "Number of likes this account has.",
       "disable_correlation": true,
@@ -162,5 +169,5 @@
     "link"
   ],
   "uuid": "8066563f-881e-4f6a-9d6c-a9d15b8658bb",
-  "version": 4
+  "version": 5
 }
