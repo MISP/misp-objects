@@ -53,18 +53,6 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-       "twitter-following":{
-      "description": "following accounts of interest",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 1
-    },
-    "twitter-followers":{
-      "description": "followers accounts of interest",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 1
-  },
     "hashtag": {
       "description": "Hashtag embedded in the user description.",
       "misp-attribute": "text",
@@ -151,6 +139,18 @@
       "description": "Number of tweets posted.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "twitter-followers": {
+      "description": "followers accounts of interest",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "twitter-following": {
+      "description": "following accounts of interest",
+      "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 1
     },
     "url": {
