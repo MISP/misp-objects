@@ -76,7 +76,7 @@ def asciidoc(content=False, adoc=None, t='title', title=''):
         output = '== ' + content
     elif t == 'info':
         content = content.rstrip('.')
-        output = "\n{}.\n\n{} {} {}{}/definition.json[*this location*] {}.\n".format(content, 'NOTE: ', title, 'is a MISP object available in JSON format at https://github.com/MISP/misp-objects/blob/master/objects/', title.lower(), ' The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP]')
+        output = "\n{}.\n\n{} {} {}{}/definition.json[*this location*] {}.\n".format(content, 'NOTE: ', title, 'is a MISP object available in JSON format at https://github.com/MISP/misp-objects/blob/main/objects/', title.lower(), ' The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP]')
     elif t == 'author':
         output = '\nauthors:: {}\n'.format(' - '.join(content))
     elif t == 'value':
@@ -133,7 +133,7 @@ with open('../relationships/definition.json') as filerelationships:
 
     output = '== Relationships\n'
     output = output + '\n{}\n'.format(rel['description'])
-    output = output + '\nRelationships are part of MISP object and available in JSON format at https://github.com/MISP/misp-objects/blob/master/relationships/definition.json[this location]. The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP].\n'
+    output = output + '\nRelationships are part of MISP object and available in JSON format at https://github.com/MISP/misp-objects/blob/main/relationships/definition.json[this location]. The JSON format can be freely reused in your application or automatically enabled in https://www.github.com/MISP/MISP[MISP].\n'
     output = output + '|===\n'
     output = output + '|Name of relationship | Description | Format\n'
     for relationship in rel['values']:
