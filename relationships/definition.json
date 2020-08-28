@@ -1012,7 +1012,7 @@
       "name": "owns"
     },
     {
-      "description": "awarded to",
+      "description": "awarded-to",
       "format": [
         "followthemoney"
       ],
@@ -1026,14 +1026,14 @@
       "name": "directs"
     },
     {
-      "description": "involved in",
+      "description": "involved-in",
       "format": [
         "followthemoney"
       ],
       "name": "involved-in"
     },
     {
-      "description": "associated with",
+      "description": "associated-with",
       "format": [
         "followthemoney"
       ],
@@ -1075,5 +1075,5 @@
       "name": "paid"
     }
   ],
-  "version": 19
+  "version": 20
 }
