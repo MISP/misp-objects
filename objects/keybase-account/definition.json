@@ -1,52 +1,52 @@
 {
   "attributes": {
     "bio": {
+      "description": "Bio of the keybase user",
       "misp-attribute": "text",
-      "ui-priority": 1,
-      "description": "Bio of the keybase user"
+      "ui-priority": 1
     },
     "cryptocurrency_addresses": {
+      "description": "Associated cryptocurrency address with the keybase user",
       "misp-attribute": "btc",
       "multiple": true,
-      "description": "Associated cryptocurrency address with the keybase user",
       "ui-priority": 1
     },
     "emails": {
+      "description": "Emails associated with the keybase user",
       "misp-attribute": "text",
       "multiple": true,
-      "description": "Emails associated with the keybase user",
       "ui-priority": 1
     },
     "full_name": {
-      "misp-attribute": "text",
       "description": "Full name",
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "location": {
-      "misp-attribute": "text",
       "description": "Location",
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "private_keys": {
+      "description": "OpenPGP private keys associated with the keybase user",
       "misp-attribute": "text",
       "multiple": true,
-      "description": "OpenPGP private keys associated with the keybase user",
       "ui-priority": 1
     },
     "public_keys": {
-      "misp-attribute": "text",
       "description": "OpenPGP public keys associated with the keybase user",
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
     },
     "uid": {
-      "misp-attribute": "text",
       "description": "Keybase user identifier",
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "username": {
-      "misp-attribute": "text",
       "description": "Keybase username",
+      "misp-attribute": "text",
       "ui-priority": 1
     }
   },
