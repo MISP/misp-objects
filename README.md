@@ -8,7 +8,9 @@ and their associated attributes are based on real cyber security use-cases and e
 
 Feel free to propose your own MISP objects to be included in MISP. The system is similar to the [misp-taxonomies](https://github.com/MISP/misp-taxonomies) where anyone can contribute their own objects to be included in MISP without modifying software.
 
-## Format of MISP objects
+## Format of MISP object template
+
+### An example with 'domain-ip' of MISP object template
 
 ~~~~json
 {
