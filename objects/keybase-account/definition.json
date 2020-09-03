@@ -33,12 +33,12 @@
 		},
 		"public_keys": {
 			"misp-attribute": "text",
-			"multiple": true, ##fingerprint, bundle
+			"multiple": true,
 			"ui-priority": 1
 		},
 		"private_keys": {
 			"misp-attribute": "text",
-			"multiple": true, ##fingerprint, bundle
+			"multiple": true,
 			"ui-priority": 1
 		},
 		"cryptocurrency_addresses": {
