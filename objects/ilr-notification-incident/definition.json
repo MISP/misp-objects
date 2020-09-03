@@ -1,6 +1,6 @@
 {
   "attributes": {
-    "Nom entreprise": {
+    "nom-entreprise": {
       "description": "Nom de l’entreprise notifiee",
       "disable_correlation": true,
       "misp-attribute": "text",
