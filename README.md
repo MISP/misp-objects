@@ -12,7 +12,6 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
 
 ~~~~json
 {
-{
   "attributes": {
     "domain": {
       "categories": [
@@ -79,7 +78,6 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
   ],
   "uuid": "43b3b146-77eb-4931-b4cc-b66c60f28734",
   "version": 8
-}
 }
 ~~~~
 
