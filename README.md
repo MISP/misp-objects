@@ -12,36 +12,74 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
 
 ~~~~json
 {
-        "name": "domain|ip",
-        "meta-category": "network",
-        "description": "A domain and IP address seen as a tuple in a specific time frame.",
-        "version": 1,
-        "uuid": "f47559d7-6c16-40e8-a6b0-eda4a008376f",
-        "attributes" :
-        {
-                "ip": {
-                        "misp-attribute": "ip-dst",
-                        "ui-priority": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "domain": {
-                        "misp-attribute": "domain",
-                        "ui-priority": 1,
-                        "categories": ["Network activity","External analysis"]
-                },
-                "first-seen": {
-                        "misp-attribute": "datetime",
-                        "disable_correlation": true,
-                        "ui-priority": 0
-                },
-                "last-seen": {
-                        "misp-attribute": "datetime",
-                        "disable_correlation": true,
-                        "ui-priority": 0
-                }
-
-        },
-        "required": ["ip","domain"]
+{
+  "attributes": {
+    "domain": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain name",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "First time the tuple has been seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ip": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IP Address",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "last-seen": {
+      "description": "Last time the tuple has been seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Associated TCP port with the domain",
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "registration-date": {
+      "description": "Registration date of domain",
+      "disable_correlation": false,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "A description of the tuple",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A domain and IP address seen as a tuple in a specific time frame.",
+  "meta-category": "network",
+  "name": "domain-ip",
+  "required": [
+    "ip",
+    "domain"
+  ],
+  "uuid": "43b3b146-77eb-4931-b4cc-b66c60f28734",
+  "version": 8
+}
 }
 ~~~~
 
