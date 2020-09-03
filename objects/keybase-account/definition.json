@@ -1,47 +1,56 @@
 {
 	"name": "keybase-account",
-    "meta-category": "",
-    "description": "Information related to a keybase account, from API Users Object",
-    "version": 1,
-    "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
-    "attributes" :
+  "meta-category": "",
+  "description": "Information related to a keybase account, from API Users Object",
+  "version": 1,
+  "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
+  "attributes" :
 	{
 		"uid": {
+			"description": "uid",
 			"misp-attribute": "text",
 			"ui-priority": 1
 		},
 		"username": {
+			"description": "Username",
 			"misp-attribute": "text",
 			"ui-priority": 1
 		},
 		"full_name": {
+			"description": "Full name",
 			"misp-attribute": "text",
 			"ui-priority": 1
 		},
 		"location": {
+			"description": "Location",
 			"misp-attribute": "text",
 			"ui-priority": 1
 		},
 		"bio": {
+			"description": "Biography",
 			"misp-attribute": "text",
 			"ui-priority": 1
 		},
 		"emails": {
+			"description": "Verified emails",
 			"misp-attribute": "text",
 			"multiple": true,
 			"ui-priority" : 1
 		},
 		"public_keys": {
+			"description": "OpenPGP public keys",
 			"misp-attribute": "text",
 			"multiple": true,
 			"ui-priority": 1
 		},
 		"private_keys": {
+			"description": "OpenPGP private keys",
 			"misp-attribute": "text",
 			"multiple": true,
 			"ui-priority": 1
 		},
 		"cryptocurrency_addresses": {
+			"description": "Cryptocurrency addresses",
 			"misp-attribute": "btc",
 			"multiple": true,
 			"ui-priority": 1
