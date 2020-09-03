@@ -1,11 +1,5 @@
 {
   "attributes": {
-    "Nom entreprise": {
-      "description": "Nom de l’entreprise notifiee",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
     "actions-corrective": {
       "description": "Actions correctives a long terme",
       "disable_correlation": true,
@@ -101,6 +95,12 @@
     },
     "nom-contact-incident": {
       "description": "Nom de la personne de contact en rapport avec l’incident",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "nom-entreprise": {
+      "description": "Nom de l’entreprise notifiee",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0

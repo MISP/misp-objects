@@ -24,7 +24,7 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "country code": {
+    "country-code": {
       "description": "Country code ",
       "disable_correlation": true,
       "misp-attribute": "text",
@@ -71,7 +71,7 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "region code": {
+    "region-code": {
       "description": "Region code. example: CA",
       "disable_correlation": true,
       "misp-attribute": "text",

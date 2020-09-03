@@ -18,7 +18,7 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "exterior color": {
+    "exterior-color": {
       "description": "Exterior color of the vehicule",
       "disable_correlation": true,
       "misp-attribute": "text",
@@ -48,7 +48,7 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "interior color": {
+    "interior-color": {
       "description": "Interior color of the vehicule",
       "disable_correlation": true,
       "misp-attribute": "text",

@@ -80,6 +80,7 @@
       ],
       "description": "Source port",
       "misp-attribute": "port",
+      "multiple": true,
       "ui-priority": 0
     },
     "text": {
