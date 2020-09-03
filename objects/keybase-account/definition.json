@@ -1,50 +1,49 @@
 {
-	"name": "keybase-account",
-    "meta-category": "",
-    "description": "Information related to a keybase account, from API Users Object",
-    "version": 1,
-    "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
-    "attributes" :
-	{
-		"uid": {
-			"misp-attribute": "text",
-			"ui-priority": 1
-		},
-		"username": {
-			"misp-attribute": "text",
-			"ui-priority": 1
-		},
-		"full_name": {
-			"misp-attribute": "text",
-			"ui-priority": 1
-		},
-		"location": {
-			"misp-attribute": "text",
-			"ui-priority": 1
-		},
-		"bio": {
-			"misp-attribute": "text",
-			"ui-priority": 1
-		},
-		"emails": {
-			"misp-attribute": "text",
-			"multiple": true,
-			"ui-priority" : 1
-		},
-		"public_keys": {
-			"misp-attribute": "text",
-			"multiple": true,
-			"ui-priority": 1
-		},
-		"private_keys": {
-			"misp-attribute": "text",
-			"multiple": true,
-			"ui-priority": 1
-		},
-		"cryptocurrency_addresses": {
-			"misp-attribute": "btc",
-			"multiple": true,
-			"ui-priority": 1
-		}
-	}
+  "attributes": {
+    "bio": {
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cryptocurrency_addresses": {
+      "misp-attribute": "btc",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "emails": {
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "full_name": {
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "location": {
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "private_keys": {
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "public_keys": {
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "uid": {
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "username": {
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Information related to a keybase account, from API Users Object",
+  "meta-category": "",
+  "name": "keybase-account",
+  "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
+  "version": 1
 }
