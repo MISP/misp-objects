@@ -1073,7 +1073,28 @@
         "followthemoney"
       ],
       "name": "paid"
+    },
+    {
+      "description": "leaks",
+      "format": [
+        "misp"
+      ],
+      "name": "leaks"
+    },
+    {
+      "description": "leaked-by",
+      "format": [
+        "misp"
+      ],
+      "name": "leaked-by"
+    },
+    {
+      "description": "doxed-by",
+      "format": [
+        "misp"
+      ],
+      "name": "doxed-by"
     }
   ],
-  "version": 20
+  "version": 21
 }
