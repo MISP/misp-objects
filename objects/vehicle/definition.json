@@ -118,8 +118,8 @@
     "date-first-registration",
     "image-url",
     "gearbox",
-    "exterior color",
-    "interior color",
+    "exterior-color",
+    "interior-color",
     "type",
     "state",
     "indicative-value"
