@@ -1019,6 +1019,13 @@
       "name": "extends"
     },
     {
+      "description": "Represents the semantic link of an asn object being ranked with a bgp-ranking object",
+      "format": [
+        "misp"
+      ],
+      "name": "ranked-with"
+    },
+    {
       "description": "owns",
       "format": [
         "followthemoney"
