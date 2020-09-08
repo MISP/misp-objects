@@ -8,7 +8,7 @@
         "v6"
       ],
       "ui-priority": 0
-    }
+    },
     "date": {
       "description": "Date fo the ranking.",
       "misp-attribute": "datetime",
