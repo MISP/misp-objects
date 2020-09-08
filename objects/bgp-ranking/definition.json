@@ -1,5 +1,14 @@
 {
   "attributes": {
+    "address-family": {
+      "description": "The IP address family concerned by the ranking.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "v4",
+        "v6"
+      ],
+      "ui-priority": 0
+    }
     "date": {
       "description": "Date fo the ranking.",
       "misp-attribute": "datetime",
