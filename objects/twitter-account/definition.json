@@ -14,7 +14,7 @@
       "ui-priority": 1
     },
     "bio": {
-      "description": "Displayed name.",
+      "description": "Displayed biography of the user.",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -181,5 +181,5 @@
     "link"
   ],
   "uuid": "8066563f-881e-4f6a-9d6c-a9d15b8658bb",
-  "version": 6
+  "version": 7
 }
