@@ -2,6 +2,7 @@
   "attributes": {
     "address-family": {
       "description": "The IP address family concerned by the ranking.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "v4",
@@ -11,16 +12,19 @@
     },
     "date": {
       "description": "Date fo the ranking.",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 1
     },
     "position": {
       "description": "Position of the ASN for a given day.",
+      "disable_correlation": true,
       "misp-attribute": "float",
       "ui-priority": 0
     },
     "ranking": {
       "description": "Ranking of the Autonomous System number.",
+      "disable_correlation": true,
       "misp-attribute": "float",
       "ui-priority": 1
     }
