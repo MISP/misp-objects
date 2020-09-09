@@ -5,29 +5,23 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "profile-image": {
-      "description": "Profile image of the GitHub user (it can be multiple).",
-      "misp-attribute": "attachment",
-      "ui-priority": 1,
-      "multiple": true
+    "follower": {
+      "description": "GitHub user is followed by.",
+      "misp-attribute": "github-username",
+      "multiple": true,
+      "ui-priority": 79
     },
     "following": {
       "description": "Followed GitHub users by the GitHub user.",
       "misp-attribute": "github-username",
-      "ui-priority": 80,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 80
     },
-    "follower": {
-      "description": "GitHub user is followed by.",
-      "misp-attribute": "github-username",
-      "ui-priority": 79,
-      "multiple": true
-    },
-    "ssh-public-key": {
-      "description": "SSH public key associated to the GitHub user.",
-      "misp-attribute": "text",
-      "ui-priority": 10,
-      "multiple": true
+    "link": {
+      "description": "Original Link to the GitHub account.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
     },
     "organisation": {
       "description": "Organisation affiliation of the GitHub user (it can be multiple).",
@@ -35,11 +29,11 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "username": {
-      "description": "GitHub username.",
-      "misp-attribute": "github-username",
+    "profile-image": {
+      "description": "Profile image of the GitHub user (it can be multiple).",
+      "misp-attribute": "attachment",
       "multiple": true,
-      "ui-priority": 98
+      "ui-priority": 1
     },
     "repository": {
       "description": "GitHub repository under the GitHub user.",
@@ -47,16 +41,22 @@
       "multiple": true,
       "ui-priority": 96
     },
+    "ssh-public-key": {
+      "description": "SSH public key associated to the GitHub user.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
     "user-fullname": {
       "description": "Fullname of the GitHub user.",
       "misp-attribute": "text",
       "ui-priority": 97
     },
-    "link": {
-      "description": "Original Link to the GitHub account.",
-      "misp-attribute": "link",
+    "username": {
+      "description": "GitHub username.",
+      "misp-attribute": "github-username",
       "multiple": true,
-      "ui-priority": 1
+      "ui-priority": 98
     },
     "verified": {
       "description": "User verified.",
