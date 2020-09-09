@@ -116,6 +116,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/authenticode-signerinfo](objects/authenticode-signerinfo/definition.json) - Authenticode Signer Info.
 - [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 - [objects/bank-account](objects/bank-account/definition.json) - An object describing bank account information based on account description from goAML 4.0.
+- [objects/bgp-ranking](objects/bgp-ranking/definition.json) - An object to link to an asn object to represent the ranking of the Autonomous System for a given day.
 - [objects/bgp-hijack](objects/bgp-hijack/definition.json) - Object encapsulating BGP Hijack description as specified, for example, by bgpstream.com.
 - [objects/blog](objects/blog/definition.json) - Blog post like Medium or WordPress.
 - [objects/boleto](objects/boleto/definition.json) - A common form of payment used in Brazil.
