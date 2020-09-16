@@ -39,7 +39,7 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "uid": {
+    "id": {
       "description": "Keybase user identifier",
       "misp-attribute": "text",
       "ui-priority": 1
@@ -54,7 +54,7 @@
   "meta-category": "misc",
   "name": "keybase-account",
   "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
-  "version": 2,
+  "version": 3,
   "requiredOneOf": [
     "username"
   ]
