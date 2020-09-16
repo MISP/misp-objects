@@ -54,5 +54,8 @@
   "meta-category": "misc",
   "name": "keybase-account",
   "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
-  "version": 1
+  "version": 2,
+  "requiredOneOf": [
+    "username"
+  ]
 }
