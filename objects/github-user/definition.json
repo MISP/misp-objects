@@ -1,7 +1,22 @@
 {
   "attributes": {
+    "avatar_url": {
+      "description": "Avatar URL",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
     "bio": {
       "description": "Biography of the GitHub user.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "blog": {
+      "description": "Blog - often used as website field of the user",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company": {
+      "description": "Company",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -23,6 +38,17 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "location": {
+      "description": "Location given by the GitHub user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "node_id": {
+      "description": "GitHub GraphQL node_id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "organisation": {
       "description": "Organisation affiliation of the GitHub user (it can be multiple).",
       "misp-attribute": "github-organisation",
@@ -33,6 +59,18 @@
       "description": "Profile image of the GitHub user (it can be multiple).",
       "misp-attribute": "attachment",
       "multiple": true,
+      "ui-priority": 1
+    },
+    "public_gists": {
+      "description": "# of public gists associated with this GitHub user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "public_repos": {
+      "description": "# of public repos associated with this GitHub user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "repository": {
@@ -46,6 +84,11 @@
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 10
+    },
+    "twitter_username": {
+      "description": "Associated twitter account",
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "user-fullname": {
       "description": "Fullname of the GitHub user.",
@@ -77,5 +120,5 @@
     "link"
   ],
   "uuid": "4329b5e6-8e6a-4b55-8fd1-9033782017d4",
-  "version": 1
+  "version": 2
 }
