@@ -22,6 +22,11 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "id": {
+      "description": "Keybase user identifier",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "location": {
       "description": "Location",
       "misp-attribute": "text",
@@ -39,11 +44,6 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "id": {
-      "description": "Keybase user identifier",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "username": {
       "description": "Keybase username",
       "misp-attribute": "text",
@@ -53,9 +53,9 @@
   "description": "Information related to a keybase account, from API Users Object",
   "meta-category": "misc",
   "name": "keybase-account",
-  "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
-  "version": 3,
   "requiredOneOf": [
     "username"
-  ]
+  ],
+  "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
+  "version": 3
 }
