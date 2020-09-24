@@ -116,8 +116,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/authenticode-signerinfo](objects/authenticode-signerinfo/definition.json) - Authenticode Signer Info.
 - [objects/av-signature](objects/av-signature/definition.json) - Antivirus detection signature.
 - [objects/bank-account](objects/bank-account/definition.json) - An object describing bank account information based on account description from goAML 4.0.
-- [objects/bgp-ranking](objects/bgp-ranking/definition.json) - An object to link to an asn object to represent the ranking of the Autonomous System for a given day.
 - [objects/bgp-hijack](objects/bgp-hijack/definition.json) - Object encapsulating BGP Hijack description as specified, for example, by bgpstream.com.
+- [objects/bgp-ranking](objects/bgp-ranking/definition.json) - BGP Ranking object describing the ranking of an ASN for a given day, along with its position, 1 being the most malicious ASN of the day, with the highest ranking. This object is meant to have a relationship with the corresponding ASN object and represents its ranking for a specific date.
 - [objects/blog](objects/blog/definition.json) - Blog post like Medium or WordPress.
 - [objects/boleto](objects/boleto/definition.json) - A common form of payment used in Brazil.
 - [objects/btc-transaction](objects/btc-transaction/definition.json) - An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.
@@ -145,7 +145,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/ddos](objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy.
 - [objects/device](objects/device/definition.json) - An object to define a device.
 - [objects/diameter-attack](objects/diameter-attack/definition.json) - Attack as seen on diameter authentication against a GSM, UMTS or LTE network.
-- [objects/dns-record](objects/dns-record/definition.json) - A set of dns records observed for a specific domain.
+- [objects/dns-record](objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
 - [objects/domain-crawled](objects/domain-crawled/definition.json) - A domain crawled over time.
 - [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
 - [objects/elf](objects/elf/definition.json) - Object describing a Executable and Linkable Format.
@@ -217,6 +217,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/ftm-Workbook](objects/ftm-Workbook/definition.json) - .
 - [objects/geolocation](objects/geolocation/definition.json) - An object to describe a geographic location.
 - [objects/git-vuln-finder](objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
+- [objects/github-user](objects/github-user/definition.json) - GitHub user.
 - [objects/gtp-attack](objects/gtp-attack/definition.json) - GTP attack object as seen on a GSM, UMTS or LTE network.
 - [objects/http-request](objects/http-request/definition.json) - A single HTTP request header.
 - [objects/ilr-impact](objects/ilr-impact/definition.json) - Institut Luxembourgeois de Regulation - Impact.
@@ -226,6 +227,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/imsi-catcher](objects/imsi-catcher/definition.json) - IMSI Catcher entry object based on the open source IMSI cather.
 - [objects/instant-message](objects/instant-message/definition.json) - Instant Message (IM) object template describing one or more IM message.
 - [objects/instant-message-group](objects/instant-message-group/definition.json) - Instant Message (IM) group object template describing a public or private IM group, channel or conversation.
+- [objects/intel471-vulnerability-intelligence](objects/intel471-vulnerability-intelligence/definition.json) - Intel 471 vulnerability intelligence object.
 - [objects/intelmq_event](objects/intelmq_event/definition.json) - IntelMQ Event.
 - [objects/intelmq_report](objects/intelmq_report/definition.json) - IntelMQ Report.
 - [objects/internal-reference](objects/internal-reference/definition.json) - Internal reference.
@@ -236,6 +238,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/ip-port](objects/ip-port/definition.json) - An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.
 - [objects/irc](objects/irc/definition.json) - An IRC object to describe an IRC server and the associated channels.
 - [objects/ja3](objects/ja3/definition.json) - JA3 is a new technique for creating SSL client fingerprints that are easy to produce and can be easily shared for threat intelligence. Fingerprints are composed of Client Hello packet; SSL Version, Accepted Ciphers, List of Extensions, Elliptic Curves, and Elliptic Curve Formats. https://github.com/salesforce/ja3.
+- [objects/keybase-account](objects/keybase-account/definition.json) - Information related to a keybase account, from API Users Object.
 - [objects/leaked-document](objects/leaked-document/definition.json) - Object describing a leaked document.
 - [objects/legal-entity](objects/legal-entity/definition.json) - An object to describe a legal entity.
 - [objects/lnk](objects/lnk/definition.json) - LNK object describing a Windows LNK binary file (aka Windows shortcut).
