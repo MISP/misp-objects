@@ -147,6 +147,7 @@
             "passport-country",
             "passport-expiration",
             "passport-number",
+            "pattern-filename",
             "pattern-in-file",
             "pattern-in-memory",
             "pattern-in-traffic",
