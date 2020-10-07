@@ -1,5 +1,10 @@
 {
   "attributes": {
+    "avatar_url": {
+      "description": "Avatar url of the GitLab User",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
     "id": {
       "description": "GitLab User id",
       "misp-attribute": "text",
@@ -7,11 +12,6 @@
     },
     "name": {
       "description": "Complete Name of the GitLab User Id",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "username": {
-      "description": "Username of the GitLab User",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -26,9 +26,9 @@
         "blocked"
       ]
     },
-    "avatar_url": {
-      "description": "Avatar url of the GitLab User",
-      "misp-attribute": "link",
+    "username": {
+      "description": "Username of the GitLab User",
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "web_url": {
