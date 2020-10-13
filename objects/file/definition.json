@@ -449,6 +449,16 @@
       "misp-attribute": "tlsh",
       "ui-priority": 0
     },
+    "telfhash": {
+      "description": "telfhash - Symbol hash for ELF files.",
+      "misp-attribute": "telfhash",
+      "ui-priority": 0
+    },
+    "imphash": {
+      "description": "Hash (md5) calculated from the PE import table",
+      "misp-attribute": "imphash",
+      "ui-priority": 0
+    },
     "vhash": {
       "description": "vhash by VirusTotal",
       "misp-attribute": "vhash",
@@ -476,6 +486,8 @@
     "sha3-384",
     "sha3-512",
     "tlsh",
+    "telfhash",
+    "imphash",
     "pattern-in-file",
     "certificate",
     "malware-sample",
@@ -484,5 +496,5 @@
     "fullpath"
   ],
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
-  "version": 22
+  "version": 23
 }
