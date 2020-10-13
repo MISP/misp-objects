@@ -312,6 +312,11 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "imphash": {
+      "description": "Hash (md5) calculated from the PE import table",
+      "misp-attribute": "imphash",
+      "ui-priority": 0
+    },
     "malware-sample": {
       "description": "The file itself (binary)",
       "misp-attribute": "malware-sample",
@@ -437,6 +442,11 @@
         "Trusted"
       ]
     },
+    "telfhash": {
+      "description": "telfhash - Symbol hash for ELF files.",
+      "misp-attribute": "telfhash",
+      "ui-priority": 0
+    },
     "text": {
       "description": "Free text value to attach to the file",
       "disable_correlation": true,
@@ -447,16 +457,6 @@
     "tlsh": {
       "description": "Fuzzy hash by Trend Micro: Locality Sensitive Hash",
       "misp-attribute": "tlsh",
-      "ui-priority": 0
-    },
-    "telfhash": {
-      "description": "telfhash - Symbol hash for ELF files.",
-      "misp-attribute": "telfhash",
-      "ui-priority": 0
-    },
-    "imphash": {
-      "description": "Hash (md5) calculated from the PE import table",
-      "misp-attribute": "imphash",
       "ui-priority": 0
     },
     "vhash": {
