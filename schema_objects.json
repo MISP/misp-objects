@@ -190,6 +190,7 @@
             "target-machine",
             "target-org",
             "target-user",
+            "telfhash",
             "text",
             "threat-actor",
             "tlsh",
