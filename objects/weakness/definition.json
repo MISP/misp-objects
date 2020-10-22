@@ -7,7 +7,7 @@
     },
     "id": {
       "description": "Weakness ID (generally CWE).",
-      "misp-attribute": "text",
+      "misp-attribute": "weakness",
       "ui-priority": 0
     },
     "name": {

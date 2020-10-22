@@ -2,7 +2,7 @@
   "attributes": {
     "cpe": {
       "description": "CPE—the well-formed CPE name(WFN). WFNs can be used to describe a set of products or to identify an individual product.",
-      "misp-attribute": "text",
+      "misp-attribute": "cpe",
       "ui-priority": 0
     },
     "description": {
