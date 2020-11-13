@@ -18,6 +18,11 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "raw_rdata": {
+      "description": "Resource records of the queried resource, in hexadecimal",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "rdata": {
       "description": "Resource records of the queried resource",
       "misp-attribute": "text",
