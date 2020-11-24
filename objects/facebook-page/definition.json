@@ -1,0 +1,117 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original page (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts, page members, etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "contact-detail": {
+      "description": "Contact url listed on about page.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "creator": {
+      "description": "The user account that created the page.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the page.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the page description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the page description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "event": {
+      "description": "Event announcement on page.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the page.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the page (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "page-alias": {
+      "description": "Aliases or previous names of page.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "page-id": {
+      "description": "Page id (without the @).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "page-name": {
+      "description": "The name of the page.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "page-type": {
+      "description": "Facebook page type, e.g. community, product etc.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "related-page-id": {
+      "description": "id of a page listed as related to this one (without the @).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "related-page-name": {
+      "description": "name of a page listed as related to this one.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "team-member": {
+      "description": "A user account who is a member of the page.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the page (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "Facebook page.",
+  "meta-category": "misc",
+  "name": "facebook-page",
+  "requiredOneOf": [
+    "page-name",
+    "description",
+    "archive",
+    "link"
+  ],
+  "uuid": "e76892db-c168-4289-b957-56e3021c46b9",
+  "version": 1
+}

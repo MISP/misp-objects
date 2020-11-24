@@ -1,0 +1,109 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original Reddit post (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported file from the Reddit post.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "author": {
+      "description": "The user account that created the post (do not include u/).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the post.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "edited": {
+      "description": "Has the post been edited?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the subreddit description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the subreddit description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the Reddit post.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the Reddit post (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "post-content": {
+      "description": "The raw text of the Reddit post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "post-title": {
+      "description": "The title of the Reddit post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "subreddit-name": {
+      "description": "The name of the subreddit where it was posted (exclude the r/).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "thumbnail": {
+      "description": "Screen capture or exported post thumbnail.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "thumbnail-url": {
+      "description": "Link to post thumbnail.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the Reddit post (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "username-quoted": {
+      "description": "Username who are quoted in the Reddit post (do not include u/).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "A Reddit post.",
+  "meta-category": "misc",
+  "name": "reddit-post",
+  "requiredOneOf": [
+    "post-title",
+    "post-content",
+    "archive",
+    "link"
+  ],
+  "uuid": "e5ed7e7f-2e21-44ff-839f-e58d9818f17f",
+  "version": 2
+}

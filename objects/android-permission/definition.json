@@ -1,11 +1,12 @@
 {
-  "requiredOneOf": [
-    "permission"
-  ],
   "attributes": {
+    "comment": {
+      "description": "Comment about the set of android permission(s)",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
     "permission": {
       "description": "Android permission",
-      "ui-priority": 0,
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
@@ -155,17 +156,16 @@
         "WRITE_SETTINGS",
         "WRITE_SYNC_SETTINGS",
         "WRITE_VOICEMAIL"
-      ]
-    },
-    "comment": {
-      "description": "Comment about the set of android permission(s)",
-      "ui-priority": 0,
-      "misp-attribute": "comment"
+      ],
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "A set of android permissions - one or more permission(s) which can be linked to other objects (e.g. malware, app).",
   "meta-category": "misc",
+  "name": "android-permission",
+  "requiredOneOf": [
+    "permission"
+  ],
   "uuid": "d81003b2-5c03-4d96-ae30-e6695de1aea2",
-  "name": "android-permission"
+  "version": 2
 }

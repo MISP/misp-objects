@@ -1,75 +1,9 @@
 {
-  "required": [
-    "sandbox-type"
-  ],
-  "requiredOneOf": [
-    "web-sandbox",
-    "on-premise-sandbox",
-    "saas-sandbox"
-  ],
   "attributes": {
-    "permalink": {
-      "description": "Permalink reference",
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 2,
-      "misp-attribute": "link"
-    },
-    "score": {
-      "description": "Score",
-      "disable_correlation": true,
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "results": {
-      "description": "Freetext result values",
-      "disable_correlation": true,
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "multiple": true
-    },
-    "raw-report": {
-      "description": "Raw report from sandbox",
-      "disable_correlation": true,
-      "categories": [
-        "External analysis"
-      ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "sandbox-file": {
-      "description": "File related to sandbox run",
-      "misp-attribute": "attachment",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "categories": [
-        "External analysis"
-      ],
-      "multiple": true
-    },
-    "sandbox-type": {
-      "description": "The type of sandbox used",
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "sane_default": [
-        "on-premise",
-        "web",
-        "saas"
-      ]
-    },
     "on-premise-sandbox": {
       "description": "The on-premise sandbox used",
-      "misp-attribute": "text",
       "disable_correlation": true,
-      "ui-priority": 1,
+      "misp-attribute": "text",
       "sane_default": [
         "cuckoo",
         "symantec-cas-on-premise",
@@ -78,33 +12,99 @@
         "fireeye-ax",
         "vmray",
         "joe-sandbox-on-premise"
-      ]
+      ],
+      "ui-priority": 1
     },
-    "web-sandbox": {
-      "description": "A web sandbox where results are publicly available via an URL",
-      "misp-attribute": "text",
+    "permalink": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Permalink reference",
+      "misp-attribute": "link",
+      "ui-priority": 2
+    },
+    "raw-report": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Raw report from sandbox",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "sane_default": [
-        "malwr",
-        "hybrid-analysis"
-      ]
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "results": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Freetext result values",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
     },
     "saas-sandbox": {
       "description": "A non-on-premise sandbox, also results are not publicly available",
-      "misp-attribute": "text",
       "disable_correlation": true,
-      "ui-priority": 1,
+      "misp-attribute": "text",
       "sane_default": [
         "forticloud-sandbox",
         "joe-sandbox-cloud",
         "symantec-cas-cloud"
-      ]
+      ],
+      "ui-priority": 1
+    },
+    "sandbox-file": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "File related to sandbox run",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "sandbox-type": {
+      "description": "The type of sandbox used",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "on-premise",
+        "web",
+        "saas"
+      ],
+      "ui-priority": 1
+    },
+    "score": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Score",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "web-sandbox": {
+      "description": "A web sandbox where results are publicly available via an URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "malwr",
+        "hybrid-analysis"
+      ],
+      "ui-priority": 1
     }
   },
-  "version": 2,
   "description": "Sandbox report",
   "meta-category": "misc",
+  "name": "sandbox-report",
+  "required": [
+    "sandbox-type"
+  ],
+  "requiredOneOf": [
+    "web-sandbox",
+    "on-premise-sandbox",
+    "saas-sandbox"
+  ],
   "uuid": "4d3fffd2-cd07-4357-96e0-a51c988faaef",
-  "name": "sandbox-report"
+  "version": 2
 }

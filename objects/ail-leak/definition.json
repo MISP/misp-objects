@@ -1,4 +1,65 @@
 {
+  "attributes": {
+    "duplicate": {
+      "description": "Duplicate of the existing leaks.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "duplicate_number": {
+      "description": "Number of known duplicates.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "description": "When the leak has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "description": "When the leak has been accessible or seen for the last time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "origin": {
+      "description": "The link where the leak is (or was) accessible at first-seen.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "original-date": {
+      "description": "When the information available in the leak was created. It's usually before the first-seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "raw-data": {
+      "description": "Raw data as received by the AIL sensor compressed and encoded in Base64.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "sensor": {
+      "description": "The AIL sensor uuid where the leak was processed and analysed.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "A description of the leak which could include the potential victim(s) or description of the leak.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
+  "meta-category": "misc",
+  "name": "ail-leak",
+  "required": [
+    "sensor"
+  ],
   "requiredOneOf": [
     "text",
     "first-seen",
@@ -6,67 +67,6 @@
     "origin",
     "raw-data"
   ],
-  "required": [
-    "sensor"
-  ],
-  "attributes": {
-    "sensor": {
-      "description": "The AIL sensor uuid where the leak was processed and analysed.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "duplicate": {
-      "description": "Duplicate of the existing leaks.",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "multiple": true
-    },
-    "duplicate_number": {
-      "description": "Number of known duplicates.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "origin": {
-      "description": "The link where the leak is (or was) accessible at first-seen.",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "text": {
-      "description": "A description of the leak which could include the potential victim(s) or description of the leak.",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "original-date": {
-      "description": "When the information available in the leak was created. It's usually before the first-seen.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "last-seen": {
-      "description": "When the leak has been accessible or seen for the last time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "first-seen": {
-      "description": "When the leak has been accessible or seen for the first time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "raw-data": {
-      "description": "Raw data as received by the AIL sensor compressed and encoded in Base64.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "attachment"
-    }
-  },
-  "version": 9,
-  "description": "An information leak as defined by the AIL Analysis Information Leak framework.",
-  "meta-category": "misc",
   "uuid": "dc6a8fa2-0a43-4a0c-a5aa-b1a5336ca80e",
-  "name": "ail-leak"
+  "version": 9
 }

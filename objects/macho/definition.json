@@ -1,18 +1,33 @@
 {
-  "requiredOneOf": [
-    "text",
-    "name",
-    "entrypoint-address"
-  ],
   "attributes": {
     "entrypoint-address": {
       "description": "Address of the entry point",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Binary's name",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "number-sections": {
+      "description": "Number of sections",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "Free text value to attach to the Mach-O file",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
     },
     "type": {
       "description": "Type of Mach-O",
+      "misp-attribute": "text",
       "sane_default": [
         "BUNDLE",
         "CORE",
@@ -26,32 +41,17 @@
         "OBJECT",
         "PRELOAD"
       ],
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "number-sections": {
-      "description": "Number of sections",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "name": {
-      "description": "Binary's name",
-      "disable_correlation": false,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "text": {
-      "description": "Free text value to attach to the Mach-O file",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "recommended": false
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "Object describing a file in Mach-O format.",
   "meta-category": "file",
+  "name": "macho",
+  "requiredOneOf": [
+    "text",
+    "name",
+    "entrypoint-address"
+  ],
   "uuid": "23fb8371-c7e3-45fe-b897-fdf074f95267",
-  "name": "macho"
+  "version": 2
 }

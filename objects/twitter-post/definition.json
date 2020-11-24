@@ -1,0 +1,152 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original tweet (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The tweet file or screen capture.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link in the tweet",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Safe link in the tweet",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "favorite-count": {
+      "description": "Number of favorites.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "geo": {
+      "description": "Geolocation data.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hashtag": {
+      "description": "Hashtag embedded in the tweet",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-display-name": {
+      "description": "The user display name of the tweet this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-status-id": {
+      "description": "The twitter ID of the tweet that this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "in-reply-to-user-id": {
+      "description": "The user ID of the tweet this post shares.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "language": {
+      "description": "The language of the post.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the post (supposed harmless).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Name of the account that posted this tweet.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "possibly-sensitive": {
+      "description": "Does this post contain sensitive content?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "possibly-sensitive-appealable": {
+      "description": "Is the sensitive content of this post appealable?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "post": {
+      "description": "Raw text of the post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "post-id": {
+      "description": "Numeric id of the tweet.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "removal-date": {
+      "description": "When the tweet was removed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "retweet-count": {
+      "description": "Number of retweets.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "source": {
+      "description": "Source of tweet (android, web etc).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL of the tweet, e.g. link shortener (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "user-id": {
+      "description": "Id of the account that posted this tweet.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "username-quoted": {
+      "description": "Username who is quoted in the tweet.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Twitter post (tweet).",
+  "meta-category": "misc",
+  "name": "twitter-post",
+  "requiredOneOf": [
+    "post",
+    "post-id",
+    "archive",
+    "url",
+    "link",
+    "attachment"
+  ],
+  "uuid": "d1214031-ce1b-4a35-bd33-644c707bda2e",
+  "version": 3
+}

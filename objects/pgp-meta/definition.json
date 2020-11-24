@@ -1,0 +1,30 @@
+{
+  "attributes": {
+    "key-id": {
+      "description": "Key ID in hexadecimal",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "user-id-email": {
+      "description": "User ID packet, email address of the key holder (UTF-8 text)",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "user-id-name": {
+      "description": "User ID packet, name of the key holder",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Metadata extracted from a PGP keyblock, message or signature",
+  "meta-category": "misc",
+  "name": "pgp-meta",
+  "required": [
+    "key-id"
+  ],
+  "uuid": "4c9134c4-b3e8-4d9f-b3c0-c683e70ec1dd",
+  "version": 1
+}

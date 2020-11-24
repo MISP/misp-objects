@@ -1,0 +1,90 @@
+{
+  "attributes": {
+    "beneficiary": {
+      "description": "Final beneficiary of the boleto.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "beneficiary-bank-account": {
+      "categories": [
+        "Financial fraud"
+      ],
+      "description": "Recipient bank account number",
+      "misp-attribute": "bank-account-nr",
+      "ui-priority": 0
+    },
+    "beneficiary-bank-agency": {
+      "categories": [
+        "Financial fraud"
+      ],
+      "description": "Recipient bank agency number",
+      "misp-attribute": "bank-account-nr",
+      "ui-priority": 0
+    },
+    "boleto-number": {
+      "categories": [
+        "Financial fraud"
+      ],
+      "description": "Boleto code numbers",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "creation-date": {
+      "description": "Date the boleto was created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "febraban-code": {
+      "description": "Financial institution code in Brazil that created the boleto.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "generator-financial-institution": {
+      "description": "Name of the bank or financial organisation that created the boleto.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "payment-due-date": {
+      "description": "Boleto payment date",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "payment-status": {
+      "description": "Inform if boleto was as paid or not",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "Not Paid",
+        "Paid"
+      ]
+    },
+    "payment-value": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The payment boleto value in Brazilian Reais",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "requester": {
+      "description": "Organisation, service or affiliated person that requested creation of the boleto.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "A common form of payment used in Brazil.",
+  "meta-category": "financial",
+  "name": "boleto",
+  "requiredOneOf": [
+    "boleto-number"
+  ],
+  "uuid": "24979ac7-d413-4345-9c8b-69b43a739fd1",
+  "version": 1
+}

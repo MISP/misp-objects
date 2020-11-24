@@ -1,0 +1,80 @@
+{
+  "attributes": {
+    "app-used": {
+      "description": "The IM application used to send the message.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "WhatsApp",
+        "Google Hangouts",
+        "Facebook Messenger",
+        "Telegram",
+        "Signal",
+        "WeChat",
+        "BlackBerry Messenger",
+        "TeamSpeak",
+        "TorChat",
+        "RetroShare",
+        "Slack"
+      ],
+      "ui-priority": 1
+    },
+    "archive": {
+      "description": "Archive of the original group (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts, group members, etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "group-alias": {
+      "description": "Aliases of group, channel or community.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "group-name": {
+      "description": "The name of the group, channel or community.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original link into the group (Supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "person-name": {
+      "description": "A person who is a member of the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the group (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "A user account who is a member of the group.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Instant Message (IM) group object template describing a public or private IM group, channel or conversation.",
+  "meta-category": "misc",
+  "name": "instant-message-group",
+  "requiredOneOf": [
+    "group-name",
+    "group-alias",
+    "archive",
+    "attachment"
+  ],
+  "uuid": "e26becca-2149-4bc0-b3fb-7090d43af28f",
+  "version": 1
+}

@@ -1,0 +1,61 @@
+{
+  "attributes": {
+    "bio": {
+      "description": "Bio of the keybase user",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cryptocurrency_addresses": {
+      "description": "Associated cryptocurrency address with the keybase user",
+      "misp-attribute": "btc",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "emails": {
+      "description": "Emails associated with the keybase user",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "full_name": {
+      "description": "Full name",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "id": {
+      "description": "Keybase user identifier",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "location": {
+      "description": "Location",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "private_keys": {
+      "description": "OpenPGP private keys associated with the keybase user",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "public_keys": {
+      "description": "OpenPGP public keys associated with the keybase user",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "Keybase username",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Information related to a keybase account, from API Users Object",
+  "meta-category": "misc",
+  "name": "keybase-account",
+  "requiredOneOf": [
+    "username"
+  ],
+  "uuid": "32c29c1c-a6c1-41e9-b1db-8cca88185ecd",
+  "version": 3
+}

@@ -1,159 +1,159 @@
 {
-  "name": "netflow",
-  "uuid": "bf148c58-3e7e-414e-8de8-5d96379ca77e",
-  "meta-category": "network",
-  "description": "Netflow object describes an network object based on the Netflowv5/v9 minimal definition",
-  "version": 2,
   "attributes": {
-    "ip-dst": {
-      "misp-attribute": "ip-dst",
-      "ui-priority": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "IP address destination of the netflow"
+    "byte-count": {
+      "description": "Bytes counted in this flow",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
-    "ip-src": {
-      "misp-attribute": "ip-src",
-      "ui-priority": 1,
+    "community-id": {
+      "description": "Community id of the represented flow",
+      "misp-attribute": "community-id",
+      "ui-priority": 0
+    },
+    "direction": {
+      "description": "Direction of this flow",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Ingress",
+        "Egress"
+      ],
+      "ui-priority": 0
+    },
+    "dst-as": {
       "categories": [
         "Network activity",
         "External analysis"
       ],
-      "description": "IP address source of the netflow"
+      "description": "Destination AS number for this flow",
+      "misp-attribute": "AS",
+      "ui-priority": 0
     },
     "dst-port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
       "description": "Destination port of the netflow",
       "misp-attribute": "port",
-      "ui-priority": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ]
+      "ui-priority": 1
     },
-    "src-port": {
-      "description": "Source port of the netflow",
-      "misp-attribute": "port",
-      "ui-priority": 1,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ]
-    },
-    "tcp-flags": {
-      "misp-attribute": "text",
-      "ui-priority": 0,
+    "first-packet-seen": {
+      "description": "First packet seen in this flow",
       "disable_correlation": true,
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "TCP flags of the flow"
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "flow-count": {
+      "description": "Flows counted in this flow",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "icmp-type": {
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true,
       "categories": [
         "Network activity",
         "External analysis"
       ],
-      "description": "ICMP type of the flow (if the traffic is ICMP)"
+      "description": "ICMP type of the flow (if the traffic is ICMP)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ip-dst": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IP address destination of the netflow",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
     },
     "ip-protocol-number": {
-      "misp-attribute": "size-in-bytes",
-      "ui-priority": 0,
+      "description": "IP protocol number of this flow",
       "disable_correlation": true,
-      "description": "IP protocol number of this flow"
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "ip-src": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IP address source of the netflow",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "ip_version": {
+      "description": "IP version of this flow",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "last-packet-seen": {
+      "description": "Last packet seen in this flow",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "packet-count": {
+      "description": "Packets counted in this flow",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "protocol": {
+      "description": "Protocol used for this flow",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0,
-      "disable_correlation": true,
       "values_list": [
         "TCP",
         "UDP",
         "ICMP",
         "IP"
-      ],
-      "description": "Protocol used for this flow"
+      ]
     },
     "src-as": {
-      "misp-attribute": "AS",
-      "ui-priority": 0,
       "categories": [
         "Network activity",
         "External analysis"
       ],
-      "description": "Source AS number for this flow"
-    },
-    "dst-as": {
+      "description": "Source AS number for this flow",
       "misp-attribute": "AS",
-      "ui-priority": 0,
+      "ui-priority": 0
+    },
+    "src-port": {
       "categories": [
         "Network activity",
         "External analysis"
       ],
-      "description": "Destination AS number for this flow"
+      "description": "Source port of the netflow",
+      "misp-attribute": "port",
+      "ui-priority": 1
     },
-    "ip_version": {
-      "misp-attribute": "counter",
-      "ui-priority": 0,
+    "tcp-flags": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "TCP flags of the flow",
       "disable_correlation": true,
-      "description": "IP version of this flow"
-    },
-    "direction": {
       "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "sane_default": [
-        "Ingress",
-        "Egress"
-      ],
-      "description": "Direction of this flow"
-    },
-    "flow-count": {
-      "misp-attribute": "counter",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "description": "Flows counted in this flow"
-    },
-    "packet-count": {
-      "misp-attribute": "counter",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "description": "Packets counted in this flow"
-    },
-    "byte-count": {
-      "misp-attribute": "counter",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "description": "Bytes counted in this flow"
-    },
-    "first-packet-seen": {
-      "misp-attribute": "datetime",
-      "ui-priority": 1,
-      "description": "First packet seen in this flow",
-      "disable_correlation": true
-    },
-    "last-packet-seen": {
-      "misp-attribute": "datetime",
-      "ui-priority": 0,
-      "description": "Last packet seen in this flow",
-      "disable_correlation": true
-    },
-    "community-id": {
-      "misp-attribute": "community-id",
-      "ui-priority": 0,
-      "description": "Community id of the represented flow"
+      "ui-priority": 0
     }
   },
+  "description": "Netflow object describes an network object based on the Netflowv5/v9 minimal definition",
+  "meta-category": "network",
+  "name": "netflow",
   "requiredOneOf": [
     "first-packet-seen",
     "ip-src",
     "ip-dst",
     "dst-port",
     "community-id"
-  ]
+  ],
+  "uuid": "bf148c58-3e7e-414e-8de8-5d96379ca77e",
+  "version": 2
 }

@@ -1,186 +1,193 @@
 {
-  "name": "email",
-  "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
-  "meta-category": "network",
-  "description": "Email object describing an email with meta-information",
-  "version": 13,
   "attributes": {
-    "reply-to": {
-      "description": "Email address the reply will be sent to",
-      "misp-attribute": "email-reply-to",
-      "ui-priority": 1,
-      "categories": [
-        "Payload delivery"
-      ]
-    },
-    "message-id": {
-      "description": "Message ID",
-      "misp-attribute": "email-message-id",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "categories": [
-        "Payload delivery"
-      ]
-    },
-    "to": {
-      "description": "Destination email address",
-      "misp-attribute": "email-dst",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "categories": [
-        "Payload delivery"
-      ],
-      "multiple": true
-    },
-    "cc": {
-      "description": "Carbon copy",
-      "misp-attribute": "email-dst",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "categories": [
-        "Payload delivery"
-      ],
-      "multiple": true
-    },
-    "to-display-name": {
-      "description": "Display name of the receiver",
-      "misp-attribute": "email-dst-display-name",
-      "ui-priority": 1,
-      "categories": [
-        "Payload delivery"
-      ],
-      "multiple": true
-    },
-    "subject": {
-      "description": "Subject",
-      "misp-attribute": "email-subject",
-      "ui-priority": 1,
-      "categories": [
-        "Payload delivery"
-      ]
-    },
-    "screenshot": {
-      "description": "Screenshot of email",
-      "misp-attribute": "attachment",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "categories": [
-        "External analysis"
-      ]
-    },
     "attachment": {
+      "categories": [
+        "Payload delivery"
+      ],
       "description": "Attachment",
       "misp-attribute": "email-attachment",
-      "ui-priority": 0,
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "cc": {
       "categories": [
         "Payload delivery"
       ],
-      "multiple": true
+      "description": "Carbon copy",
+      "disable_correlation": true,
+      "misp-attribute": "email-dst",
+      "multiple": true,
+      "ui-priority": 1
     },
-    "received-header-ip": {
-      "description": "Extracted IP address from parsed headers",
+    "email-body": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Body of the email",
+      "disable_correlation": true,
+      "misp-attribute": "email-body",
+      "ui-priority": 1
+    },
+    "eml": {
+      "description": "Full EML",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "from": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Sender email address",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "from-display-name": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Display name of the sender",
+      "misp-attribute": "email-src-display-name",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "header": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Full headers",
+      "disable_correlation": true,
+      "misp-attribute": "email-header",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ip-src": {
+      "description": "Source IP address of the email sender",
       "misp-attribute": "ip-src",
-      "ui-priority": 0,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "message-id": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Message ID",
+      "disable_correlation": true,
+      "misp-attribute": "email-message-id",
+      "ui-priority": 0
+    },
+    "mime-boundary": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "MIME Boundary",
+      "disable_correlation": true,
+      "misp-attribute": "email-mime-boundary",
+      "ui-priority": 0
     },
     "received-header-hostname": {
       "description": "Extracted hostname from parsed headers",
       "misp-attribute": "hostname",
-      "ui-priority": 0,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
-    "x-mailer": {
-      "description": "X-Mailer generally tells the program that was used to draft and send the original email",
-      "misp-attribute": "email-x-mailer",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "categories": [
-        "Payload delivery"
-      ]
+    "received-header-ip": {
+      "description": "Extracted IP address from parsed headers",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 0
     },
-    "header": {
-      "description": "Full headers",
-      "misp-attribute": "email-header",
-      "disable_correlation": true,
-      "ui-priority": 0,
+    "reply-to": {
       "categories": [
         "Payload delivery"
       ],
-      "multiple": true
-    },
-    "send-date": {
-      "description": "Date the email has been sent",
-      "misp-attribute": "datetime",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "categories": [
-        "Other"
-      ]
-    },
-    "mime-boundary": {
-      "description": "MIME Boundary",
-      "misp-attribute": "email-mime-boundary",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "categories": [
-        "Payload delivery"
-      ]
-    },
-    "thread-index": {
-      "description": "Identifies a particular conversation thread",
-      "misp-attribute": "email-thread-index",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "categories": [
-        "Payload delivery"
-      ]
-    },
-    "from": {
-      "description": "Sender email address",
-      "misp-attribute": "email-src",
-      "ui-priority": 1,
-      "categories": [
-        "Payload delivery"
-      ]
+      "description": "Email address the reply will be sent to",
+      "misp-attribute": "email-reply-to",
+      "ui-priority": 1
     },
     "return-path": {
+      "categories": [
+        "Payload delivery"
+      ],
       "description": "Message return path",
       "misp-attribute": "email-src",
-      "ui-priority": 1,
-      "categories": [
-        "Payload delivery"
-      ]
+      "ui-priority": 1
     },
-    "from-display-name": {
-      "description": "Display name of the sender",
-      "misp-attribute": "email-src-display-name",
-      "ui-priority": 1,
+    "screenshot": {
       "categories": [
-        "Payload delivery"
-      ]
-    },
-    "email-body": {
-      "description": "Body of the email",
-      "misp-attribute": "email-body",
+        "External analysis"
+      ],
+      "description": "Screenshot of email",
       "disable_correlation": true,
-      "ui-priority": 1,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "send-date": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Date the email has been sent",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "subject": {
       "categories": [
         "Payload delivery"
-      ]
+      ],
+      "description": "Subject",
+      "misp-attribute": "email-subject",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "thread-index": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Identifies a particular conversation thread",
+      "disable_correlation": true,
+      "misp-attribute": "email-thread-index",
+      "ui-priority": 0
+    },
+    "to": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Destination email address",
+      "disable_correlation": true,
+      "misp-attribute": "email-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "to-display-name": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Display name of the receiver",
+      "misp-attribute": "email-dst-display-name",
+      "multiple": true,
+      "ui-priority": 1
     },
     "user-agent": {
       "description": "User Agent of the sender",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "eml": {
-      "description": "Full EML",
-      "misp-attribute": "attachment",
       "disable_correlation": true,
-      "ui-priority": 1
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "x-mailer": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "X-Mailer generally tells the program that was used to draft and send the original email",
+      "disable_correlation": true,
+      "misp-attribute": "email-x-mailer",
+      "ui-priority": 0
     }
   },
+  "description": "Email object describing an email with meta-information",
+  "meta-category": "network",
+  "name": "email",
   "requiredOneOf": [
     "from",
     "from-display-name",
@@ -198,5 +205,7 @@
     "return-path",
     "email-body",
     "eml"
-  ]
+  ],
+  "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
+  "version": 15
 }

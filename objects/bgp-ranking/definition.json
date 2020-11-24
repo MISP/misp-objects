@@ -1,0 +1,41 @@
+{
+  "attributes": {
+    "address-family": {
+      "description": "The IP address family concerned by the ranking.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "v4",
+        "v6"
+      ],
+      "ui-priority": 0
+    },
+    "date": {
+      "description": "Date fo the ranking.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "position": {
+      "description": "Position of the ASN for a given day.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "ranking": {
+      "description": "Ranking of the Autonomous System number.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    }
+  },
+  "description": "BGP Ranking object describing the ranking of an ASN for a given day, along with its position, 1 being the most malicious ASN of the day, with the highest ranking. This object is meant to have a relationship with the corresponding ASN object and represents its ranking for a specific date.",
+  "meta-category": "network",
+  "name": "bgp-ranking",
+  "required": [
+    "date",
+    "ranking"
+  ],
+  "uuid": "0cf87909-e44a-4426-8ebc-a250f932ce00",
+  "version": 1
+}

@@ -1,0 +1,146 @@
+{
+  "attributes": {
+    "active-user-count": {
+      "description": "Number of active accounts in the subreddit.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "archive": {
+      "description": "Archive of the original subreddit (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts, subreddit members, etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "banner-background-image": {
+      "description": "A screen capture or exported subreddit header.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "banner-background-url": {
+      "description": "A link to the subreddit header.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "creator": {
+      "description": "The user account that created the subreddit (do not include u/).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the subreddit.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "display-name": {
+      "description": "The name of the subreddit (exclude the r/).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the subreddit description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the subreddit description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the subreddit.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "header-title": {
+      "description": "A title of the subreddit.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "icon-img": {
+      "description": "A screen capture or exported subreddit community icon.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "icon-img-url": {
+      "description": "A link to the subreddit community icon.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original link to the subreddit (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "moderator": {
+      "description": "A user account who is a moderator of the subreddit (do not include u/).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "privacy": {
+      "description": "Subreddit privacy.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "Public",
+        "Private"
+      ],
+      "ui-priority": 1
+    },
+    "rules": {
+      "description": "Raw text of the rules of the subreddit.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "submit-text": {
+      "description": "The submission form raw text when posting to the subreddit.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "subreddit-alias": {
+      "description": "Aliases or previous names of subreddit.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "subreddit-type": {
+      "description": "Subreddit type, e.g. general, buy and sell etc.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the subreddit (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "Public or private subreddit.",
+  "meta-category": "misc",
+  "name": "reddit-subreddit",
+  "requiredOneOf": [
+    "display-name",
+    "description",
+    "archive",
+    "link"
+  ],
+  "uuid": "5a00464c-5379-4e66-ab21-d356ba426155",
+  "version": 2
+}

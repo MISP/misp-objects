@@ -1,0 +1,109 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The forged document file.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "document-name": {
+      "description": "Title of the document.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "document-text": {
+      "description": "Raw text of document",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "document-type": {
+      "description": "The type of document (not the file type).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "email",
+        "letterhead",
+        "speech",
+        "literature",
+        "blog",
+        "microblog",
+        "photo",
+        "audio",
+        "invoice",
+        "receipt",
+        "other"
+      ],
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "When the document has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "description": "When the document has been accessible or seen for the last time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link into the document (Supposed harmless)",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "objective": {
+      "description": "Objective of the forged document.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Disinformation",
+        "Advertising",
+        "Parody",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
+    "purpose-of-document": {
+      "description": "What the document is used for.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Identification",
+        "Travel",
+        "Health",
+        "Legal",
+        "Financial",
+        "Government",
+        "Military",
+        "Media",
+        "Communication",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the document (potentially malicious)",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing a forged document.",
+  "meta-category": "file",
+  "name": "forged-document",
+  "requiredOneOf": [
+    "document-name",
+    "attachment",
+    "document-text"
+  ],
+  "uuid": "7e927620-b97c-4b00-98c0-8c0184d83d21",
+  "version": 7
+}

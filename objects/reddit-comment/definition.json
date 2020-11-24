@@ -1,0 +1,84 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original comment (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported file from the comment.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "author": {
+      "description": "The user account that created the post (do not include u/).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "body": {
+      "description": "The raw text of the comment.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the comment.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the subreddit description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the subreddit description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the comment.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the comment (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "subreddit-name": {
+      "description": "The name of the subreddit where it was posted (exclude the r/).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the comment (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "username-quoted": {
+      "description": "Username who are quoted in the comment (do not include u/).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "A Reddit post comment.",
+  "meta-category": "misc",
+  "name": "reddit-comment",
+  "requiredOneOf": [
+    "author",
+    "body",
+    "archive",
+    "link"
+  ],
+  "uuid": "0a7e5fc0-fe6a-43c7-a957-de3269c2eb6c",
+  "version": 2
+}

@@ -1,144 +1,144 @@
 {
-  "requiredOneOf": [
-    "r2-commit-version"
-  ],
   "attributes": {
     "callback-average": {
       "description": "Average size of a callback",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "callbacks": {
-      "description": "Amount of callbacks (functions started as thread)",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "shortest-path-to-create-thread": {
-      "description": "Shortest path to the first time the binary calls CreateThread",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "create-thread": {
-      "description": "Amount of calls to CreateThread",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "memory-allocations": {
-      "description": "Amount of memory allocations",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "get-proc-address": {
-      "description": "Amount of calls to GetProcAddress",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "dangling-strings": {
-      "description": "Amount of dangling strings (string with a code cross reference, that is not within a function. Radare2 failed to detect that function.)",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "referenced-strings": {
-      "description": "Amount of referenced strings",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "callback-largest": {
       "description": "Largest callback",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "callbacks": {
+      "description": "Amount of callbacks (functions started as thread)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "create-thread": {
+      "description": "Amount of calls to CreateThread",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "dangling-strings": {
+      "description": "Amount of dangling strings (string with a code cross reference, that is not within a function. Radare2 failed to detect that function.)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "get-proc-address": {
+      "description": "Amount of calls to GetProcAddress",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "gml": {
       "description": "Graph export in G>raph Modelling Language format",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "attachment"
-    },
-    "r2-commit-version": {
-      "description": "Radare2 commit ID used to generate this object",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "text": {
-      "description": "Description of the r2graphity object",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "miss-api": {
-      "description": "Amount of API call reference that does not resolve to a function offset",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "total-api": {
-      "description": "Total amount of API calls",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "unknown-references": {
-      "description": "Amount of API calls not ending in a function (Radare2 bug, probalby)",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
-    },
-    "refsglobalvar": {
-      "description": "Amount of API calls outside of code section (glob var, dynamic API)",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
+      "misp-attribute": "attachment",
+      "ui-priority": 0
     },
     "local-references": {
       "description": "Amount of API calls inside a code section",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
-    "total-functions": {
-      "description": "Total amount of functions in the file.",
+    "memory-allocations": {
+      "description": "Amount of memory allocations",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "miss-api": {
+      "description": "Amount of API call reference that does not resolve to a function offset",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "not-referenced-strings": {
       "description": "Amount of not referenced strings",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
-    "ratio-functions": {
-      "description": "Ratio: amount of functions per kilobyte of code section",
+    "r2-commit-version": {
+      "description": "Radare2 commit ID used to generate this object",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "float"
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "ratio-api": {
       "description": "Ratio: amount of API calls per kilobyte of code section",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "float"
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "ratio-functions": {
+      "description": "Ratio: amount of functions per kilobyte of code section",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
     },
     "ratio-string": {
       "description": "Ratio: amount of referenced strings per kilobyte of code section",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "float"
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "referenced-strings": {
+      "description": "Amount of referenced strings",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "refsglobalvar": {
+      "description": "Amount of API calls outside of code section (glob var, dynamic API)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "shortest-path-to-create-thread": {
+      "description": "Shortest path to the first time the binary calls CreateThread",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "Description of the r2graphity object",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "total-api": {
+      "description": "Total amount of API calls",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "total-functions": {
+      "description": "Total amount of functions in the file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "unknown-references": {
+      "description": "Amount of API calls not ending in a function (Radare2 bug, probalby)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     }
   },
-  "version": 2,
   "description": "Indicators extracted from files using radare2 and graphml",
   "meta-category": "file",
+  "name": "r2graphity",
+  "requiredOneOf": [
+    "r2-commit-version"
+  ],
   "uuid": "b6abe0e0-52ea-4424-ba42-761c2e027b76",
-  "name": "r2graphity"
+  "version": 2
 }

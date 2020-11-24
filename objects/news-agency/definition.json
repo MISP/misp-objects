@@ -1,0 +1,78 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Postal address of the news agency.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "alias": {
+      "description": "Alias of the news agency.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 99
+    },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The news file, screen capture, audio, etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "e-mail": {
+      "description": "Email address of the organization.",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "fax-number": {
+      "description": "Fax number of the news agency.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "link": {
+      "description": "Original link to the news agency (Supposed harmless).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Name of the news agency.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 100
+    },
+    "phone-number": {
+      "description": "Phone number of the news agency.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "url": {
+      "description": "Original URL location of the news agency (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "News agencies compile news and disseminate news in bulk.",
+  "meta-category": "misc",
+  "name": "news-agency",
+  "requiredOneOf": [
+    "name",
+    "alias",
+    "archive",
+    "url",
+    "link",
+    "attachment"
+  ],
+  "uuid": "92b3f7fd-c4bc-42af-a73b-033ace439622",
+  "version": 2
+}

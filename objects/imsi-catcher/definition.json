@@ -1,12 +1,67 @@
 {
-  "requiredOneOf": [
-    "text",
-    "first-seen",
-    "imsi"
-  ],
   "attributes": {
+    "brand": {
+      "description": "Brand associated with the IMSI registration.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "cellid": {
+      "description": "CellID",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "country": {
+      "description": "Country where the IMSI is registered.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "description": "When the IMSI has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "imsi": {
       "description": "A usually unique International Mobile Subscriber Identity (IMSI) is allocated to each mobile subscriber in the GSM/UMTS/EPS system. IMSI can also refer to International Mobile Station Identity in the ITU nomenclature.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "lac": {
+      "description": "LAC - Location Area Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "mcc": {
+      "description": "MCC - Mobile Country Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "mnc": {
+      "description": "MNC - Mobile Network Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "operator": {
+      "description": "Operator associated with the IMSI registration.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "seq": {
+      "description": "A sequence number for the collection",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "A description of the IMSI record.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -19,71 +74,16 @@
       "description": "Temporary Mobile Subscriber Identities (TMSI) to visiting mobile subscribers can be allocated.",
       "misp-attribute": "text",
       "ui-priority": 0
-    },
-    "country": {
-      "description": "Country where the IMSI is registered.",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "brand": {
-      "description": "Brand associated with the IMSI registration.",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "operator": {
-      "description": "Operator associated with the IMSI registration.",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "mcc": {
-      "description": "MCC - Mobile Country Code",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "mnc": {
-      "description": "MNC - Mobile Network Code",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "lac": {
-      "description": "LAC - Location Area Code",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "cellid": {
-      "description": "CellID",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "text": {
-      "description": "A description of the IMSI record.",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "first-seen": {
-      "description": "When the IMSI has been accessible or seen for the first time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "seq": {
-      "description": "A sequence number for the collection",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "counter"
     }
   },
-  "version": 1,
   "description": "IMSI Catcher entry object based on the open source IMSI cather",
   "meta-category": "misc",
+  "name": "imsi-catcher",
+  "requiredOneOf": [
+    "text",
+    "first-seen",
+    "imsi"
+  ],
   "uuid": "a64f21b1-2f1b-4298-8243-c45db2c4aa7c",
-  "name": "imsi-catcher"
+  "version": 1
 }

@@ -1,0 +1,132 @@
+{
+  "attributes": {
+    "DOI": {
+      "description": "DOI System is used to identify digital resources.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ISBN": {
+      "description": "International Standard Book Number.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "academic-institution": {
+      "description": "Academic institution associated with the publisher or authors.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The publication file or screen capture.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "author": {
+      "description": "Author of the publication.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "content": {
+      "description": "Content of the publication.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "contributor": {
+      "description": "Contributors include editors, compilers, and translators.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "A description of the publication.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "edition": {
+      "description": "Edition of the publication.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "embedded-link": {
+      "description": "Link contained in the publication (possibly malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link contained in the publication (assumed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the publication (supposed harmless).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "publisher": {
+      "description": "Publisher of the document.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "series": {
+      "description": "Series of the publication.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "Content of the publication.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "url": {
+      "description": "Original link to the publication (possibly malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "volume": {
+      "description": "Volume of the publication.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "website": {
+      "description": "Website of the publisher.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "year": {
+      "description": "Year of publication.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object to describe a book, journal, or academic publication.",
+  "meta-category": "misc",
+  "name": "publication",
+  "requiredOneOf": [
+    "title",
+    "link",
+    "archive",
+    "ISBN"
+  ],
+  "uuid": "8a86b056-7f2c-4c1b-b04e-a6bac4443068",
+  "version": 2
+}

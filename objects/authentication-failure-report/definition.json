@@ -1,0 +1,51 @@
+{
+  "attributes": {
+    "ip-dst": {
+      "description": "Destination IP.",
+      "disable_correlation": false,
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "ip-src": {
+      "description": "IP address originating the authentication failure.",
+      "disable_correlation": false,
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "total": {
+      "description": "the number of authentication failures reported.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "the type of authentication failure.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "ssh"
+      ],
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "the username used.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Authentication Failure Report",
+  "meta-category": "network",
+  "name": "authentication-failure-report",
+  "required": [
+    "total",
+    "type"
+  ],
+  "requiredOneOf": [
+    "ip-src",
+    "ip-dst",
+    "username"
+  ],
+  "uuid": "9b39afe0-9809-4fe0-8a0b-4cec2b140dd2",
+  "version": 4
+}

@@ -1,0 +1,55 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "Comment, in chinese",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "current-confirmed": {
+      "description": "Current number of confirmed cases",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "province": {
+      "description": "Name of the Chinese province, in Chinese.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "total-confirmed": {
+      "description": "Total number of confirmed cases.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "total-cured": {
+      "description": "Total number of cured cases.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "total-death": {
+      "description": "Total number of deaths.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "update": {
+      "description": "Approximate time of the update (~hour)",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    }
+  },
+  "description": "COVID 19 from dxy.cn - Aggregation by province",
+  "meta-category": "health",
+  "name": "covid19-dxy-live-province",
+  "required": [
+    "province",
+    "update"
+  ],
+  "uuid": "40b49502-088b-44a5-80a7-0e55653f3ed4",
+  "version": 1
+}

@@ -1,0 +1,94 @@
+{
+  "attributes": {
+    "cpe": {
+      "description": "CPE—the well-formed CPE name(WFN). WFNs can be used to describe a set of products or to identify an individual product.",
+      "misp-attribute": "cpe",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Complementary description of the asset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "edition": {
+      "description": "The edition attribute is considered deprecated in this specification, and it SHOULD be assigned the logical value ANY except where required for backward compatibility with version 2.2 of the CPE specification.This attribute is referred to as the “legacyedition”attribute.If this attribute is used,values for this attribute SHOULD capture edition-related terms applied by the vendor to the product. Values for this attribute SHOULD be selected from an attribute-specific valid-values list, which MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs (cf. 5.3.2) MAY be specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "language": {
+      "description": "Values for thisattribute SHALL be valid language tags as defined by [RFC5646], and SHOULD be used to define the language supported in the user interface of the product being described.Although any valid language tag MAY be used, only tags containing language and region codesSHOULD be used.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "other": {
+      "description": "Values for this attribute SHOULD capture any other general descriptive or identifying information which is vendor-or product-specific and which does not logically fit in any other attribute value. Values SHOULD NOT be used for storing instance-specific data (e.g., globally-unique identifiers or Internet Protocol addresses).Values for this attribute SHOULD be selected from a valid-values list that is refined over time; this list MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs (cf. 5.3.2) MAYbe specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "part": {
+      "description": "Part - application, operating systems or hardware devices",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "a",
+        "o",
+        "h"
+      ],
+      "ui-priority": 0
+    },
+    "product": {
+      "description": "Values for this attribute SHOULD describe or identify the most common and recognizable title or name of the product. Values for this attribute SHOULD be selected from an attribute-specific valid-values list, which MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs(cf. 5.3.2) MAY be specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "sw_edition": {
+      "description": "Values for this attribute SHOULD characterize how the product is tailored to a particular market or class of end users. Values for this attribute SHOULD be selected from an attribute-specific valid-values list, which MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs(cf. 5.3.2) MAYbe specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "target_hw": {
+      "description": "Values for this attribute SHOULD characterize the instruction set architecture (e.g., x86) on which the product being described or identified by the WFN operates. Bytecode-intermediate languages, such as Java bytecode for the Java Virtual Machine or Microsoft Common Intermediate Language for the Common Language Runtime virtual machine, SHALL be considered instruction set architectures. Values for this attribute SHOULD be selected from an attribute-specific valid-values list, which MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs(cf. 5.3.2) MAYbe specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "target_sw": {
+      "description": "Values for this attribute SHOULDi characterize the software computing environment within which the product operates.Values for this attribute SHOULD be selected from an attribute-specific valid-values list, which MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs(cf. 5.3.2) MAYbe specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "update": {
+      "description": "Values for this attribute SHOULD be vendor-specific alphanumeric strings characterizing the particular update, service pack, or point release of the product.Values for this attribute SHOULD be selected from an attribute-specific valid-values list, which MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs (cf. 5.3.2) MAYbe specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "vendor": {
+      "description": "Values for this attribute SHOULD describe or identify the person or organization that manufactured or created the product. Values for this attribute SHOULD be selected from an attribute-specific valid-values list, which MAYbe defined by other specifications that utilize this specification. Any character string meeting the requirements for WFNs (cf. 5.3.2) MAY be specified as the value of the attribute",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "Values for this attribute SHOULD be vendor-specific alphanumeric strings characterizing the particular release version of the product.Version information SHOULD be copied directly (with escaping of printable non-alphanumeric characters as required) from discoverable data and SHOULD NOTbe truncated or otherwise modified. Any character string meeting the requirements for WFNs (cf. 5.3.2) MAYbe specified as the value of the attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An asset which can be defined by a CPE. This can be a generic asset. CPE is a structured naming scheme for information technology systems, software, and packages.",
+  "meta-category": "misc",
+  "name": "cpe-asset",
+  "requiredOneOf": [
+    "cpe"
+  ],
+  "uuid": "8ea002c4-172d-45ae-8d91-1cdea825e6a9",
+  "version": 1
+}

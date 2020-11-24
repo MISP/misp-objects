@@ -1,0 +1,107 @@
+{
+  "attributes": {
+    "5Ds-of-propaganda": {
+      "description": "5 D's of propaganda are tactics of rebuttal used to defend against criticism and adversarial narratives.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "dismiss",
+        "distort",
+        "distract",
+        "dismay",
+        "divide"
+      ]
+    },
+    "a/b-test": {
+      "description": "A flag to define if this meme is part of an a/b test. If set to true, it is part of an a/b test set.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "archive": {
+      "description": "Archive of the original document (Internet Archive, Archive.is, etc).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "The image file.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "crosspost": {
+      "description": "Safe site where the meme has been posted.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "crosspost-unsafe": {
+      "description": "Unsafe site where the meme has been posted.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "document-text": {
+      "description": "Raw text of meme",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "When the meme has been accessible or seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "description": "When the meme has been accessible or seen for the last time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link into the meme (Supposed harmless)",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "meme-reference": {
+      "description": "A link to know-your-meme or similar reference material.",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "objective": {
+      "description": "Objective of the meme.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Disinformation",
+        "Advertising",
+        "Parody",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the meme (potentially malicious)",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "Username who posted the meme.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing a meme (image).",
+  "meta-category": "file",
+  "name": "meme-image",
+  "requiredOneOf": [
+    "attachment",
+    "archive",
+    "document-text"
+  ],
+  "uuid": "6f6c3b61-f085-475e-93df-2e2d9c2fb0f6",
+  "version": 7
+}

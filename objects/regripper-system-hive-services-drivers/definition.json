@@ -1,0 +1,98 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "Additional comments.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "display": {
+      "description": "Display name/information of the service or the driver.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "group": {
+      "description": "Group to which the system/driver belong to.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Base",
+        "Boot Bus Extender",
+        "Boot File System",
+        "Cryptography",
+        "Extended base",
+        "Event Log",
+        "Filter",
+        "FSFilter Bottom",
+        "FSFilter Infrastructure",
+        "File System",
+        "FSFilter Virtualization",
+        "Keyboard Port",
+        "Network",
+        "NDIS",
+        "Parallel arbitrator",
+        "Pointer Port",
+        "PnP Filter",
+        "ProfSvc_Group",
+        "PNP_TDI",
+        "SCSI Miniport",
+        "SCSI CDROM Class",
+        "System Bus Extender",
+        "Video Save",
+        "other"
+      ],
+      "ui-priority": 0
+    },
+    "image-path": {
+      "description": "Path of the service/drive",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "last-write-time": {
+      "description": "Date and time when the key was last updated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "name of the key",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "start": {
+      "description": "When the service/driver starts or executes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Boot start",
+        "System start",
+        "Auto start",
+        "Manual",
+        "Disabled"
+      ],
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Service/driver type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Kernel driver",
+        "File system driver",
+        "Own process",
+        "Share process",
+        "Interactive",
+        "Other"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Regripper Object template designed to gather information regarding the services/drivers from the system-hive.",
+  "meta-category": "misc",
+  "name": "regripper-system-hive-services-drivers",
+  "required": [
+    "name"
+  ],
+  "uuid": "78cdae45-2061-4b49-b1d6-71f562094a73",
+  "version": 2
+}

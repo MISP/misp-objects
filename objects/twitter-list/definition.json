@@ -1,0 +1,95 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the account (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the list.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "hashtag": {
+      "description": "Hashtag embedded in the description.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "id": {
+      "description": "Numeric list id.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original link to the list (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "member-count": {
+      "description": "Number of accounts following this list.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "List's screen name (without the @).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "subscriber-count": {
+      "description": "Number of accounts subscribing to this list.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the list (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "user-id": {
+      "description": "Id of the account that manages this list.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "user-name": {
+      "description": "Name of the account that manages this list (without the @).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Twitter list.",
+  "meta-category": "misc",
+  "name": "twitter-list",
+  "requiredOneOf": [
+    "name",
+    "id",
+    "description",
+    "archive",
+    "link"
+  ],
+  "uuid": "7ae81d5c-d9d8-4812-88a7-5f14fba241da",
+  "version": 2
+}

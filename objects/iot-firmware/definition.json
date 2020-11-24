@@ -1,0 +1,99 @@
+{
+  "attributes": {
+    "binwalk-entropy-graph": {
+      "description": "Entropy graph of the firmware",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "binwalk-output": {
+      "description": "Binwalk output of the firmware image",
+      "misp-attribute": "attachment",
+      "ui-priority": 10
+    },
+    "boot-log": {
+      "description": "Boot log of the IoT device for this firmware",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "filename": {
+      "description": "Filename of the firmware",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "firmware": {
+      "description": "Firmware of the IoT device",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "format": {
+      "description": "Format of the firmware",
+      "misp-attribute": "text",
+      "sane_default": [
+        "raw",
+        "Intel hex",
+        "Motorola S-Record",
+        "Unknown"
+      ],
+      "ui-priority": 10
+    },
+    "md5": {
+      "description": "[Insecure] MD5 hash (128 bits)",
+      "misp-attribute": "md5",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "sha1": {
+      "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
+      "misp-attribute": "sha1",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "sha224": {
+      "description": "Secure Hash Algorithm 2 (224 bits)",
+      "misp-attribute": "sha224",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "sha384": {
+      "description": "Secure Hash Algorithm 2 (384 bits)",
+      "misp-attribute": "sha384",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha512": {
+      "description": "Secure Hash Algorithm 2 (512 bits)",
+      "misp-attribute": "sha512",
+      "ui-priority": 1
+    },
+    "size-in-bytes": {
+      "description": "Size of the file, in bytes",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "Version of the firmware",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    }
+  },
+  "description": "A firmware for an IoT device.",
+  "meta-category": "iot",
+  "name": "iot-firmware",
+  "requiredOneOf": [
+    "firmware",
+    "filename",
+    "binwalk-output"
+  ],
+  "uuid": "8bafb8fc-d986-4a58-b22b-6b8c7c0e8b70",
+  "version": 1
+}

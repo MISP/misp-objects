@@ -1,0 +1,80 @@
+{
+  "attributes": {
+    "5Ds-of-propaganda": {
+      "description": "5 D's of propaganda are tactics of rebuttal used to defend against criticism and adversarial narratives.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "dismiss",
+        "distort",
+        "distract",
+        "dismay",
+        "divide"
+      ]
+    },
+    "archive": {
+      "description": "Archive of the original narrative source (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "Documents related to the narrative.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "external-references": {
+      "description": "Link to external references.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original link to the narrative source (Supposed harmless)",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "narrative-disproof": {
+      "description": "Disproof or evidence against the narrative.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "narrative-summary": {
+      "description": "A summary of the narrative.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "objective": {
+      "description": "Objective of the narrative.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Disinformation",
+        "Advertising",
+        "Parody",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original link to the narrative source (Supposed malicious)",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing a narrative.",
+  "meta-category": "misc",
+  "name": "narrative",
+  "requiredOneOf": [
+    "attachment",
+    "archive",
+    "narrative-summary"
+  ],
+  "uuid": "83bea299-514a-4719-a84b-f6fd0997fac1",
+  "version": 4
+}

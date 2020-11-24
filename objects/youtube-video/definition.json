@@ -1,0 +1,88 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the original YouTube video (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported YouTube video.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "channel-name": {
+      "description": "The name of the channel where it was posted.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "creator": {
+      "description": "The user account that created the YouTube video.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the YouTube video.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the YouTube video description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the YouTube video description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hashtag": {
+      "description": "Hashtag used to identify or promote the YouTube video.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Original link to the YouTube video (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the YouTube video (potentially malicious).",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "username-quoted": {
+      "description": "Username who are quoted in the YouTube video or description.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "video-title": {
+      "description": "The title of the YouTube video.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "video-transcript": {
+      "description": "The YouTube video transcript (closed captions).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "A YouTube video.",
+  "meta-category": "misc",
+  "name": "youtube-video",
+  "requiredOneOf": [
+    "video-title",
+    "archive",
+    "link"
+  ],
+  "uuid": "2bd68462-a509-4320-b5c6-760a57fd1a80",
+  "version": 1
+}

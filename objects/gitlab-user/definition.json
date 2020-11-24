@@ -1,0 +1,49 @@
+{
+  "attributes": {
+    "avatar_url": {
+      "description": "Avatar url of the GitLab User",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "id": {
+      "description": "GitLab User id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Complete Name of the GitLab User Id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "state": {
+      "description": "State of the GitLab User",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "active",
+        "inactive",
+        "blocked"
+      ]
+    },
+    "username": {
+      "description": "Username of the GitLab User",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "web_url": {
+      "description": "Profile url of the GitLab User",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 96
+    }
+  },
+  "description": "GitLab user. Gitlab.com user or self-hosted GitLab instance",
+  "meta-category": "misc",
+  "name": "gitlab-user",
+  "requiredOneOf": [
+    "username"
+  ],
+  "uuid": "39ef3197-08f5-445f-b3b6-9d4d8604071c",
+  "version": 1
+}

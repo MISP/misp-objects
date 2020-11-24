@@ -1,31 +1,44 @@
 {
-  "requiredOneOf": [
-    "name",
-    "alias"
-  ],
   "attributes": {
-    "description": {
-      "description": "Description of the Device",
-      "ui-priority": 0,
-      "misp-attribute": "text",
-      "disable_correlation": true
+    "MAC-address": {
+      "description": "Device MAC address",
+      "misp-attribute": "mac-address",
+      "ui-priority": 0
     },
-    "name": {
-      "description": "Name of the Device",
-      "ui-priority": 101,
-      "misp-attribute": "text"
+    "OS": {
+      "description": "OS of the device",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 98
     },
     "alias": {
       "description": "Alias of the Device",
-      "ui-priority": 100,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 100
+    },
+    "analysis-date": {
+      "description": "Date of device analysis",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "attachment": {
+      "description": "An attachment",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the Device",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "device-type": {
       "description": "Type of the device",
-      "ui-priority": 99,
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "PC",
         "Mobile",
@@ -35,53 +48,40 @@
         "IoT",
         "Hardware",
         "Other"
-      ]
-    },
-    "OS": {
-      "description": "OS of the device",
-      "ui-priority": 98,
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "multiple": true
-    },
-    "version": {
-      "description": "Version of the device/ OS",
-      "ui-priority": 97,
-      "misp-attribute": "text",
-      "disable_correlation": true
-    },
-    "ip-address": {
-      "description": "Device IP address",
-      "ui-priority": 0,
-      "misp-attribute": "ip-src",
-      "multiple": true
+      ],
+      "ui-priority": 99
     },
     "dns-name": {
       "description": "Device DNS Name",
-      "ui-priority": 0,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
-    "MAC-address": {
-      "description": "Device MAC address",
-      "ui-priority": 0,
-      "misp-attribute": "mac-address"
+    "ip-address": {
+      "description": "Device IP address",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 0
     },
-    "analysis-date": {
-      "description": "Date of device analysis",
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+    "name": {
+      "description": "Name of the Device",
+      "misp-attribute": "text",
+      "ui-priority": 101
     },
-    "attachment": {
-      "description": "An attachment",
-      "ui-priority": 0,
-      "misp-attribute": "attachment",
-      "multiple": true
+    "version": {
+      "description": "Version of the device/ OS",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 97
     }
   },
-  "version": 7,
   "description": "An object to define a device",
   "meta-category": "misc",
+  "name": "device",
+  "requiredOneOf": [
+    "name",
+    "alias"
+  ],
   "uuid": "0c64b41a-e583-4f4d-ac92-d484163b9e52",
-  "name": "device"
+  "version": 7
 }

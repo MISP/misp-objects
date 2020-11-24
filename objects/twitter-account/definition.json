@@ -1,0 +1,185 @@
+{
+  "attributes": {
+    "archive": {
+      "description": "Archive of the account (Internet Archive, Archive.is, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment": {
+      "description": "A screen capture or exported list of contacts etc.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "bio": {
+      "description": "Displayed biography of the user.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "A description of the user.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "displayed-name": {
+      "description": "Displayed name.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "Link embedded in the user description (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "embedded-safe-link": {
+      "description": "Link embedded in the user description (supposed safe).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "followers": {
+      "description": "Number of followers.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "following": {
+      "description": "Number of accounts this accounts is following.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hashtag": {
+      "description": "Hashtag embedded in the user description.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "id": {
+      "description": "Numeric account id.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "joined-date": {
+      "description": "When the account was created",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "multiple": false,
+      "ui-priority": 1
+    },
+    "likes": {
+      "description": "Number of likes this account has.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original link to the user (supposed harmless).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "listed": {
+      "description": "Number of lists the user is on.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "location": {
+      "description": "User description of location.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "media": {
+      "description": "Number of images and videos posted.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "User's screen name (without the @).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "private": {
+      "description": "User verified.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "profile-banner": {
+      "description": "A screenshot or exported user avatar.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "profile-banner-url": {
+      "description": "A link to the user's background image.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "profile-image": {
+      "description": "A screenshot or exported user avatar.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "profile-image-url": {
+      "description": "A link to the user's avatar.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "tweets": {
+      "description": "Number of tweets posted.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "twitter-followers": {
+      "description": "followers accounts of interest",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "twitter-following": {
+      "description": "following accounts of interest",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Original URL location of the user (potentially malicious).",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "verified": {
+      "description": "User verified.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "Twitter account.",
+  "meta-category": "misc",
+  "name": "twitter-account",
+  "requiredOneOf": [
+    "name",
+    "id",
+    "description",
+    "archive",
+    "link"
+  ],
+  "uuid": "8066563f-881e-4f6a-9d6c-a9d15b8658bb",
+  "version": 7
+}

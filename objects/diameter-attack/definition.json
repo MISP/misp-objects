@@ -1,28 +1,7 @@
 {
-  "requiredOneOf": [
-    "text"
-  ],
   "attributes": {
-    "category": {
-      "description": "Category.",
-      "sane_default": [
-        "Cat0",
-        "Cat1",
-        "Cat2",
-        "Cat3",
-        "CatSMS"
-      ],
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "ui-priority": 0
-    },
     "ApplicationId": {
       "description": "Application-ID is used to identify for which Diameter application the message is applicable. Application-ID is a decimal representation.",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "SessionId": {
-      "description": "Session-ID.",
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -32,20 +11,8 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "Origin-Host": {
-      "description": "Origin-Host.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
     "Destination-Host": {
       "description": "Destination-Host.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
-    "Origin-Realm": {
-      "description": "Origin-Realm.",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
@@ -56,34 +23,67 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "IdrFlags": {
+      "description": "IDR-Flags.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Origin-Host": {
+      "description": "Origin-Host.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "Origin-Realm": {
+      "description": "Origin-Realm.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "SessionId": {
+      "description": "Session-ID.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "Username": {
       "description": "Username (in this case, usually the IMSI).",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
-    "IdrFlags": {
-      "description": "IDR-Flags.",
-      "misp-attribute": "text",
+    "category": {
+      "description": "Category.",
       "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Cat0",
+        "Cat1",
+        "Cat2",
+        "Cat3",
+        "CatSMS"
+      ],
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "description": "When the attack has been seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "text": {
       "description": "A description of the attack seen.",
       "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "text"
-    },
-    "first-seen": {
-      "description": "When the attack has been seen for the first time.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
-  "version": 1,
   "description": "Attack as seen on diameter authentication against a GSM, UMTS or LTE network",
   "meta-category": "network",
+  "name": "diameter-attack",
+  "requiredOneOf": [
+    "text"
+  ],
   "uuid": "a3fdce4c-8e21-4acc-ab8e-9976e9165a12",
-  "name": "diameter-attack"
+  "version": 1
 }

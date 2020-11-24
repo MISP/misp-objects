@@ -1,26 +1,32 @@
 {
-  "requiredOneOf": [
-    "text",
-    "first-packet-seen",
-    "last-packet-seen"
-  ],
   "attributes": {
-    "capture-length": {
-      "description": "Capture length set on the captured interface.",
-      "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
     "capture-interface": {
       "description": "Interface name where the packet capture was running.",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "capture-length": {
+      "description": "Capture length set on the captured interface.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "first-packet-seen": {
+      "description": "When the first packet has been seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-packet-seen": {
+      "description": "When the last packet has been seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "protocol": {
       "description": "Capture protocol (linktype name).",
       "disable_correlation": true,
-      "ui-priority": 1,
       "misp-attribute": "text",
       "sane_default": [
         "PER_PACKET",
@@ -224,30 +230,24 @@
         "JUNIPER_ST",
         "ETHERNET_MPACKET",
         "DOCSIS31_XRA31"
-      ]
+      ],
+      "ui-priority": 1
     },
     "text": {
       "description": "A description of the packet capture.",
       "disable_correlation": true,
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "first-packet-seen": {
-      "description": "When the first packet has been seen.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
-    },
-    "last-packet-seen": {
-      "description": "When the last packet has been seen.",
-      "disable_correlation": true,
-      "ui-priority": 0,
-      "misp-attribute": "datetime"
+      "misp-attribute": "text",
+      "ui-priority": 1
     }
   },
-  "version": 2,
   "description": "Network packet capture metadata",
   "meta-category": "network",
+  "name": "pcap-metadata",
+  "requiredOneOf": [
+    "text",
+    "first-packet-seen",
+    "last-packet-seen"
+  ],
   "uuid": "0784aefa-ec3a-4eca-a431-c31ed7058bd3",
-  "name": "pcap-metadata"
+  "version": 2
 }

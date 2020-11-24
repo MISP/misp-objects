@@ -1,0 +1,124 @@
+{
+  "attributes": {
+    "avatar_url": {
+      "description": "Avatar URL",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "bio": {
+      "description": "Biography of the GitHub user.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "blog": {
+      "description": "Blog - often used as website field of the user",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company": {
+      "description": "Company",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "follower": {
+      "description": "GitHub user is followed by.",
+      "misp-attribute": "github-username",
+      "multiple": true,
+      "ui-priority": 79
+    },
+    "following": {
+      "description": "Followed GitHub users by the GitHub user.",
+      "misp-attribute": "github-username",
+      "multiple": true,
+      "ui-priority": 80
+    },
+    "link": {
+      "description": "Original Link to the GitHub account.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "location": {
+      "description": "Location given by the GitHub user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "node_id": {
+      "description": "GitHub GraphQL node_id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "organisation": {
+      "description": "Organisation affiliation of the GitHub user (it can be multiple).",
+      "misp-attribute": "github-organisation",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "profile-image": {
+      "description": "Profile image of the GitHub user (it can be multiple).",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "public_gists": {
+      "description": "# of public gists associated with this GitHub user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "public_repos": {
+      "description": "# of public repos associated with this GitHub user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "repository": {
+      "description": "GitHub repository under the GitHub user.",
+      "misp-attribute": "github-repository",
+      "multiple": true,
+      "ui-priority": 96
+    },
+    "ssh-public-key": {
+      "description": "SSH public key associated to the GitHub user.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "twitter_username": {
+      "description": "Associated twitter account",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "user-fullname": {
+      "description": "Fullname of the GitHub user.",
+      "misp-attribute": "text",
+      "ui-priority": 97
+    },
+    "username": {
+      "description": "GitHub username.",
+      "misp-attribute": "github-username",
+      "multiple": true,
+      "ui-priority": 98
+    },
+    "verified": {
+      "description": "User verified.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "GitHub user",
+  "meta-category": "misc",
+  "name": "github-user",
+  "requiredOneOf": [
+    "username",
+    "link"
+  ],
+  "uuid": "4329b5e6-8e6a-4b55-8fd1-9033782017d4",
+  "version": 2
+}

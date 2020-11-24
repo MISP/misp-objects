@@ -1,10 +1,61 @@
 {
   "attributes": {
+    "account-name": {
+      "description": "Name of the impersonating account",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "account-url": {
+      "description": "url of the impersonating account",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
+    "impersonated-account-name": {
+      "description": "Name of the impersonated account",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "impersonated-account-url": {
+      "description": "url of the impersonated account",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "objective": {
+      "description": "Objective of the impersonation",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Information stealing",
+        "Disinformation",
+        "Distrusting",
+        "Advertising",
+        "Parody",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
+    "real-name": {
+      "description": "Real name of the impersonated person or entity",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Type of the account",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Person",
+        "Association",
+        "Enterprise",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
     "type-of-account": {
       "description": "Type of the impersonated account",
-      "ui-priority": 1,
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "sane_default": [
         "Twitter",
         "Facebook",
@@ -14,64 +65,13 @@
         "Instagram",
         "Forum",
         "Other"
-      ]
-    },
-    "account-url": {
-      "description": "url of the impersonating account",
-      "ui-priority": 1,
-      "misp-attribute": "url"
-    },
-    "account-name": {
-      "description": "Name of the impersonating account",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "impersonated-account-url": {
-      "description": "url of the impersonated account",
-      "ui-priority": 1,
-      "misp-attribute": "link"
-    },
-    "impersonated-account-name": {
-      "description": "Name of the impersonated account",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "real-name": {
-      "description": "Real name of the impersonated person or entity",
-      "ui-priority": 1,
-      "misp-attribute": "text"
-    },
-    "type": {
-      "description": "Type of the account",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "sane_default": [
-        "Person",
-        "Association",
-        "Enterprise",
-        "Other"
-      ]
-    },
-    "objective": {
-      "description": "Objective of the impersonation",
-      "ui-priority": 1,
-      "misp-attribute": "text",
-      "disable_correlation": true,
-      "multiple": true,
-      "sane_default": [
-        "Information stealing",
-        "Disinformation",
-        "Distrusting",
-        "Advertising",
-        "Parody",
-        "Other"
-      ]
+      ],
+      "ui-priority": 1
     }
   },
-  "version": 1,
   "description": "Represent an impersonating account",
   "meta-category": "misc",
+  "name": "impersonation",
   "uuid": "01833a92-d2ff-11e9-8016-d3b988153702",
-  "name": "impersonation"
+  "version": 1
 }
