@@ -128,6 +128,7 @@
             "issue-date-of-the-visa",
             "ja3-fingerprint-md5",
             "jabber-id",
+            "jarm-fingerprint",
             "kusto-query",
             "last-name",
             "link",
