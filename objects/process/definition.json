@@ -30,6 +30,17 @@
       "misp-attribute": "text",
       "ui-priority": 2
     },
+    "fake-process-name": {
+      "description": "Is the process spawned under a false name.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "multiple": false,
+      "sane_default": [
+        "1",
+        "0"
+      ],
+      "ui-priority": 1
+    },
     "guid": {
       "description": "The globally unique identifier of the assigned by the vendor product",
       "misp-attribute": "text",
@@ -114,6 +125,29 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "process-state": {
+      "description": "State of process.",
+      "disable_correlation": true,
+      "misp-attribute": "process-state",
+      "multiple": false,
+      "sane_default": [
+        "D",
+        "R",
+        "S",
+        "T",
+        "t",
+        "W",
+        "X",
+        "Z",
+        "<",
+        "N",
+        "L",
+        "s",
+        "l",
+        "+"
+      ],
+      "ui-priority": 1
+    },
     "start-time": {
       "description": "Local date/time at which the process was started",
       "disable_correlation": true,
@@ -138,5 +172,5 @@
     "current-directory"
   ],
   "uuid": "02aeef94-ac23-455c-addb-731757ceafb5",
-  "version": 7
+  "version": 8
 }
