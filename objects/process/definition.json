@@ -11,7 +11,6 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
-      "disable_correlation": true,
       "ui-priority": 1
     },
     "command-line": {
@@ -33,14 +32,14 @@
     },
     "fake-process-name": {
       "description": "Is the process spawned under a false name.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "multiple": false,
       "sane_default": [
         "1",
         "0"
       ],
-      "ui-priority": 1,
-      "misp-attribute": "boolean",
-      "multiple": false,
-      "disable_correlation": true
+      "ui-priority": 1
     },
     "guid": {
       "description": "The globally unique identifier of the assigned by the vendor product",
