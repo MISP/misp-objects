@@ -451,6 +451,7 @@
       "description": "Free text value to attach to the file",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "multiple": true,
       "recommended": false,
       "ui-priority": 1
     },
@@ -496,5 +497,5 @@
     "fullpath"
   ],
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
-  "version": 23
+  "version": 24
 }
