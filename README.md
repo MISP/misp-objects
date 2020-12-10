@@ -1,6 +1,6 @@
 # misp-objects
 
-[![Build Status](https://travis-ci.org/MISP/misp-objects.svg?branch=master)](https://travis-ci.org/MISP/misp-objects)
+![Python application](https://github.com/MISP/misp-objects/workflows/Python%20application/badge.svg)
 
 MISP objects used in MISP (starting from 2.4.80) system and can be used by other information sharing tool. MISP objects
 are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects
