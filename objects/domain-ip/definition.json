@@ -16,6 +16,11 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "hostname": {
+      "description": "Hostname related to the IP",
+      "misp-attribute": "hostname",
+      "ui-priority": 1
+    },
     "ip": {
       "categories": [
         "Network activity",
@@ -56,13 +61,14 @@
       "ui-priority": 1
     }
   },
-  "description": "A domain and IP address seen as a tuple in a specific time frame.",
+  "description": "A domain/hostname and IP address seen as a tuple in a specific time frame.",
   "meta-category": "network",
   "name": "domain-ip",
-  "required": [
+  "requiredOneOf": [
     "ip",
-    "domain"
+    "domain",
+    "hostname"
   ],
   "uuid": "43b3b146-77eb-4931-b4cc-b66c60f28734",
-  "version": 8
+  "version": 9
 }
