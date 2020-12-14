@@ -73,6 +73,12 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "media":{
+      "description": "Media (Photos, videos) present in tweet",
+      "misp_attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "name": {
       "description": "Name of the account that posted this tweet.",
       "misp-attribute": "text",
@@ -148,5 +154,5 @@
     "attachment"
   ],
   "uuid": "d1214031-ce1b-4a35-bd33-644c707bda2e",
-  "version": 3
+  "version": 4
 }
