@@ -42,7 +42,7 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "paste_file": {
+    "paste-file": {
       "description": "Content of the paste in file",
       "misp-attribute": "attachment",
       "ui-priority": 0

@@ -12,6 +12,11 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "created-at":{
+      "description": "Datetime of Tweet publication",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "embedded-link": {
       "description": "Link in the tweet",
       "misp-attribute": "url",
@@ -154,5 +159,5 @@
     "attachment"
   ],
   "uuid": "d1214031-ce1b-4a35-bd33-644c707bda2e",
-  "version": 4
+  "version": 5
 }
