@@ -25,6 +25,7 @@
       "values_list": [
         "pastebin.com",
         "pastebin.com_pro",
+        "pastebin.fr",
         "pastie.org",
         "slexy.org",
         "gist.github.com",
@@ -40,6 +41,11 @@
       "description": "Raw text of the paste or post",
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "paste-file": {
+      "description": "Content of the paste in file",
+      "misp-attribute": "attachment",
+      "ui-priority": 0
     },
     "title": {
       "description": "Title of the paste or post.",
@@ -65,5 +71,5 @@
     "paste"
   ],
   "uuid": "cedc055c-78aa-49a4-bfd7-4cc30cecef12",
-  "version": 5
+  "version": 6
 }
