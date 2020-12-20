@@ -26,10 +26,17 @@
       "description": "Body of the email",
       "disable_correlation": true,
       "misp-attribute": "email-body",
+      "multiple": true,
       "ui-priority": 1
     },
     "eml": {
       "description": "Full EML",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "msg": {
+      "description": "Full MSG",
       "disable_correlation": true,
       "misp-attribute": "attachment",
       "ui-priority": 1
@@ -204,7 +211,8 @@
     "x-mailer",
     "return-path",
     "email-body",
-    "eml"
+    "eml",
+    "msg"
   ],
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
   "version": 15
