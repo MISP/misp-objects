@@ -35,12 +35,6 @@
       "misp-attribute": "attachment",
       "ui-priority": 1
     },
-    "msg": {
-      "description": "Full MSG",
-      "disable_correlation": true,
-      "misp-attribute": "attachment",
-      "ui-priority": 1
-    },
     "from": {
       "categories": [
         "Payload delivery"
@@ -92,6 +86,12 @@
       "disable_correlation": true,
       "misp-attribute": "email-mime-boundary",
       "ui-priority": 0
+    },
+    "msg": {
+      "description": "Full MSG",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
     },
     "received-header-hostname": {
       "description": "Extracted hostname from parsed headers",

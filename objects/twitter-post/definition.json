@@ -12,7 +12,7 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "created-at":{
+    "created-at": {
       "description": "Datetime of Tweet publication",
       "misp-attribute": "datetime",
       "ui-priority": 0
@@ -78,7 +78,7 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "media":{
+    "media": {
       "description": "Media (Photos, videos) present in tweet",
       "misp_attribute": "attachment",
       "multiple": true,
