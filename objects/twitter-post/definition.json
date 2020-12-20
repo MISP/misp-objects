@@ -80,7 +80,7 @@
     },
     "media": {
       "description": "Media (Photos, videos) present in tweet",
-      "misp_attribute": "attachment",
+      "misp-attribute": "attachment",
       "multiple": true,
       "ui-priority": 0
     },
