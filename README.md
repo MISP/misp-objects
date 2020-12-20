@@ -136,6 +136,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/covid19-dxy-live-city](objects/covid19-dxy-live-city/definition.json) - COVID 19 from dxy.cn - Aggregation by city.
 - [objects/covid19-dxy-live-province](objects/covid19-dxy-live-province/definition.json) - COVID 19 from dxy.cn - Aggregation by province.
 - [objects/cowrie](objects/cowrie/definition.json) - Cowrie honeypot object template.
+- [objects/cpe-asset](objects/cpe-asset/definition.json) - An asset which can be defined by a CPE. This can be a generic asset. CPE is a structured naming scheme for information technology systems, software, and packages.
 - [objects/credential](objects/credential/definition.json) - Credential describes one or more credential(s) including password(s), api key(s) or decryption key(s).
 - [objects/credit-card](objects/credit-card/definition.json) - A payment card like credit card, debit card or any similar cards which can be used for financial transactions.
 - [objects/crypto-material](objects/crypto-material/definition.json) - Cryptographic materials such as public or/and private keys.
@@ -147,7 +148,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/diameter-attack](objects/diameter-attack/definition.json) - Attack as seen on diameter authentication against a GSM, UMTS or LTE network.
 - [objects/dns-record](objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
 - [objects/domain-crawled](objects/domain-crawled/definition.json) - A domain crawled over time.
-- [objects/domain-ip](objects/domain-ip/definition.json) - A domain and IP address seen as a tuple in a specific time frame.
+- [objects/domain-ip](objects/domain-ip/definition.json) - A domain/hostname and IP address seen as a tuple in a specific time frame.
 - [objects/elf](objects/elf/definition.json) - Object describing a Executable and Linkable Format.
 - [objects/elf-section](objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format.
 - [objects/email](objects/email/definition.json) - Email object describing an email with meta-information.
@@ -218,6 +219,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/geolocation](objects/geolocation/definition.json) - An object to describe a geographic location.
 - [objects/git-vuln-finder](objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
 - [objects/github-user](objects/github-user/definition.json) - GitHub user.
+- [objects/gitlab-user](objects/gitlab-user/definition.json) - GitLab user. Gitlab.com user or self-hosted GitLab instance.
 - [objects/gtp-attack](objects/gtp-attack/definition.json) - GTP attack object as seen on a GSM, UMTS or LTE network.
 - [objects/http-request](objects/http-request/definition.json) - A single HTTP request header.
 - [objects/ilr-impact](objects/ilr-impact/definition.json) - Institut Luxembourgeois de Regulation - Impact.
@@ -356,6 +358,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/youtube-comment](objects/youtube-comment/definition.json) - A YouTube video comment.
 - [objects/youtube-playlist](objects/youtube-playlist/definition.json) - A YouTube playlist.
 - [objects/youtube-video](objects/youtube-video/definition.json) - A YouTube video.
+
 
 ## MISP objects relationships
 
