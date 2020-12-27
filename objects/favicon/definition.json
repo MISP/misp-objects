@@ -1,14 +1,14 @@
 {
   "attributes": {
-    "favicon-mmh3": {
-      "description": "favicon-mmh3 is the murmur3 hash of a favicon as used in Shodan.",
-      "misp-attribute": "favicon-mmh3",
-      "ui-priority": 1
-    },
     "favicon": {
       "description": "The raw favicon file.",
       "misp-attribute": "attachment",
       "ui-priority": 0
+    },
+    "favicon-mmh3": {
+      "description": "favicon-mmh3 is the murmur3 hash of a favicon as used in Shodan.",
+      "misp-attribute": "favicon-mmh3",
+      "ui-priority": 1
     },
     "link": {
       "description": "The original link where the favicon was seen.",
