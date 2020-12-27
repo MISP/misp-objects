@@ -1,0 +1,30 @@
+{
+  "attributes": {
+    "favicon-mmh3": {
+      "description": "favicon-mmh3 is the murmur3 hash of a favicon as used in Shodan.",
+      "misp-attribute": "favicon-mmh3",
+      "ui-priority": 1
+    },
+    "favicon": {
+      "description": "The raw favicon file.",
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "The original link where the favicon was seen.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "A favicon, also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons, associated with a particular website or web page. The object template can include the murmur3 hash of the favicon to facilitate correlation.",
+  "meta-category": "network",
+  "name": "favicon",
+  "requiredOneOf": [
+    "favicon",
+    "favicon-mmh3",
+    "link"
+  ],
+  "uuid": "485892f1-a767-4e9b-b5f8-7f86d1308674",
+  "version": 1
+}
