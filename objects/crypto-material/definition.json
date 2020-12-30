@@ -108,6 +108,11 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "public": {
+      "description": "Public part of the cryptographic materials in PEM format",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "q": {
       "description": "Prime Parameter - Q in decimal",
       "disable_correlation": false,
@@ -160,10 +165,11 @@
     "generic-symmetric-key",
     "text",
     "private",
+    "public",
     "p",
     "q",
     "modulus"
   ],
   "uuid": "50677f82-ec9c-4484-bb29-2519cfe56823",
-  "version": 3
+  "version": 4
 }
