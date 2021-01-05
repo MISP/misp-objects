@@ -1,0 +1,48 @@
+{
+  "attributes": {
+    "jarm": {
+      "description": "JARM Hash of this implementation",
+      "misp-attribute": "jarm",
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Reference to the tool matching this fingerprint",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "scope": {
+      "description": "Scope of the tool",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "Malicious - C2",
+        "Malicious - Client",
+        "Malicious - Unknown",
+        "Legitimate",
+        "Undefined"
+      ]
+    },
+    "tls-implementation": {
+      "description": "SSL/TLS implementation matching this object",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tool": {
+      "description": "Tool having this jarm fingerprint",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Jarm object to describe an TLS/SSL implementation used for malicious or legitimate use-case.",
+  "meta-category": "network",
+  "name": "jarm",
+  "requiredOneOf": [
+    "jarm"
+  ],
+  "uuid": "8220ce60-ce3f-4be4-afa9-743f94ec37e0",
+  "version": 1
+}
