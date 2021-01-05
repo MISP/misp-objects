@@ -160,6 +160,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/facebook-post](objects/facebook-post/definition.json) - Post on a Facebook wall.
 - [objects/facial-composite](objects/facial-composite/definition.json) - An object which describes a facial composite.
 - [objects/fail2ban](objects/fail2ban/definition.json) - Fail2ban event.
+- [objects/favicon](objects/favicon/definition.json) - A favicon, also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons, associated with a particular website or web page. The object template can include the murmur3 hash of the favicon to facilitate correlation.
 - [objects/file](objects/file/definition.json) - File object describing a file with meta-information.
 - [objects/forensic-case](objects/forensic-case/definition.json) - An object template to describe a digital forensic case.
 - [objects/forensic-evidence](objects/forensic-evidence/definition.json) - An object template to describe a digital forensic evidence.
