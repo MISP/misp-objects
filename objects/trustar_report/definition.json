@@ -84,6 +84,12 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "THREAT_ACTOR": {
+      "description": "A string identifying the threat actor.",
+      "misp-attribute": "threat-actor",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "URL": {
       "description": "A Uniform Resource Locator (URL) is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it.",
       "misp-attribute": "url",
@@ -95,5 +101,5 @@
   "meta-category": "network",
   "name": "trustar_report",
   "uuid": "8ff46cf1-db04-4453-ba46-d004e1ef6b7a",
-  "version": 1
+  "version": 2
 }
