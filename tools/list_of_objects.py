@@ -3,7 +3,7 @@
 #
 #
 #    A simple converter of MISP objects to asciidoctor format
-#    Copyright (C) 2017-2019 Alexandre Dulaunoy
+#    Copyright (C) 2017-2021 Alexandre Dulaunoy
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -46,5 +46,5 @@ for mispobject in objects:
         c = json.load(fp)
     if not c['description'].endswith('.'):
         c['description'] = c['description'] + "."
-    v = "- [objects/{}](objects/{}/definition.json) - {}".format(c['name'], c['name'], c['description'])
+    v = "- [objects/{}](https://github.com/MISP/misp-objects/blob/main/objects/{}/definition.json) - {}".format(c['name'], c['name'], c['description'])
     print(v)
