@@ -1,5 +1,10 @@
 {
   "attributes": {
+    "authentihash": {
+      "description": "Authenticode executable signature hash (sha256)",
+      "misp-attribute": "authentihash",
+      "ui-priority": 1
+    },
     "company-name": {
       "description": "CompanyName in the resources",
       "disable_correlation": true,
@@ -131,5 +136,5 @@
     "impfuzzy"
   ],
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
-  "version": 6
+  "version": 7
 }
