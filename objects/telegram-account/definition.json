@@ -1,18 +1,7 @@
 {
   "attributes": {
-    "phone": {
-      "description": "Phone associated with the telegram user",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 1
-    },
     "first_name": {
       "description": "First name",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "last_name": {
-      "description": "Last name",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -21,13 +10,24 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "verified": {
-      "description": "Verified",
+    "last_name": {
+      "description": "Last name",
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "phone": {
+      "description": "Phone associated with the telegram user",
+      "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 1
     },
     "username": {
       "description": "Telegram username",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "verified": {
+      "description": "Verified",
       "misp-attribute": "text",
       "ui-priority": 1
     }
