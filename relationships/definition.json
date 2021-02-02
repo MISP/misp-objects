@@ -1019,6 +1019,13 @@
       "name": "extends"
     },
     {
+      "description": "Reprensents an object which writes towards another object or attribute",
+      "format": [
+        "misp"
+      ],
+      "name": "writes"
+    },
+    {
       "description": "Represents the semantic link of an asn object being ranked with a bgp-ranking object",
       "format": [
         "misp"
@@ -1117,5 +1124,5 @@
       "name": "doxed-by"
     }
   ],
-  "version": 21
+  "version": 22
 }
