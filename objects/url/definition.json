@@ -35,6 +35,7 @@
     "ip": {
       "description": "Better type when the host is an IP.",
       "misp-attribute": "ip-dst",
+      "multiple": true,
       "ui-priority": 0
     },
     "last-seen": {
@@ -105,5 +106,5 @@
     "resource_path"
   ],
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
-  "version": 8
+  "version": 9
 }
