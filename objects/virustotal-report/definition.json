@@ -6,6 +6,7 @@
       ],
       "description": "Comment related to this hash",
       "misp-attribute": "text",
+      "disable_correlation": true,
       "multiple": true,
       "ui-priority": 2
     },
@@ -33,6 +34,7 @@
       ],
       "description": "First Submission",
       "misp-attribute": "datetime",
+      "disable_correlation": true,
       "ui-priority": 0
     },
     "last-submission": {
@@ -41,6 +43,7 @@
       ],
       "description": "Last Submission",
       "misp-attribute": "datetime",
+      "disable_correlation": true,
       "ui-priority": 0
     },
     "permalink": {
@@ -49,6 +52,7 @@
       ],
       "description": "Permalink Reference",
       "misp-attribute": "link",
+      "disable_correlation": true,
       "ui-priority": 2
     }
   },
@@ -59,5 +63,5 @@
     "permalink"
   ],
   "uuid": "d7dd0154-e04f-4c34-a2fb-79f3a3a52aa4",
-  "version": 3
+  "version": 4
 }
