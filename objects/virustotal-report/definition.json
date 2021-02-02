@@ -5,8 +5,8 @@
         "External analysis"
       ],
       "description": "Comment related to this hash",
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 2
     },
@@ -33,8 +33,8 @@
         "Other"
       ],
       "description": "First Submission",
-      "misp-attribute": "datetime",
       "disable_correlation": true,
+      "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "last-submission": {
@@ -42,8 +42,8 @@
         "Other"
       ],
       "description": "Last Submission",
-      "misp-attribute": "datetime",
       "disable_correlation": true,
+      "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "permalink": {
@@ -51,8 +51,8 @@
         "External analysis"
       ],
       "description": "Permalink Reference",
-      "misp-attribute": "link",
       "disable_correlation": true,
+      "misp-attribute": "link",
       "ui-priority": 2
     }
   },
