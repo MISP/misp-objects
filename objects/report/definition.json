@@ -9,6 +9,12 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "link": {
+      "description": "Link to the report mentioned",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 100
+    },
     "report-file(s)": {
       "description": "Attachment(s) that is related to the report",
       "misp-attribute": "attachment",
@@ -30,8 +36,9 @@
   "meta-category": "misc",
   "name": "report",
   "required": [
-    "summary"
+    "summary",
+    "link"
   ],
   "uuid": "70a68471-df22-4e3f-aa1a-5a3be19f82df",
-  "version": 1
+  "version": 2
 }
