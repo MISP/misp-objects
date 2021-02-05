@@ -1,0 +1,36 @@
+{
+  "attributes": {
+    "duration": {
+      "description": "Duration of the movie.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "plot": {
+      "description": "Plot of the movie.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "release-date": {
+      "description": "Date when the movie was released.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "title": {
+      "description": "Title of the movie.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "A movie object describing a movie.",
+  "meta-category": "misc",
+  "name": "movie",
+  "required": [
+    "title"
+  ],
+  "uuid": "da01ac0d-b9cd-4942-9974-c7ab9a199fbd",
+  "version": 1
+}
