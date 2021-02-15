@@ -46,6 +46,7 @@
       "description": "Search / Correlation search",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0
     }
   },
