@@ -5,8 +5,20 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "digest-base64": {
+      "description": "Signature created by the signing certificate’s private key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "digest_algorithm": {
-      "description": "Digest algorithm",
+      "description": "Algorithm used to hash the file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "encryption_algorithm": {
+      "description": "Algorithm used to encrypt the digest",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
@@ -19,6 +31,12 @@
     },
     "program-name": {
       "description": "Program name",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "serial-number": {
+      "description": "Serial number of the certificate",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -55,8 +73,9 @@
   "name": "authenticode-signerinfo",
   "requiredOneOf": [
     "url",
-    "program-name"
+    "program-name",
+    "issuer"
   ],
   "uuid": "965cb0aa-baf1-4cc6-9070-68f5c1698c1e",
-  "version": 1
+  "version": 2
 }

@@ -5,6 +5,7 @@
         "External analysis"
       ],
       "description": "Comment related to this hash",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 2
@@ -32,6 +33,7 @@
         "Other"
       ],
       "description": "First Submission",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
@@ -40,6 +42,7 @@
         "Other"
       ],
       "description": "Last Submission",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
@@ -48,6 +51,7 @@
         "External analysis"
       ],
       "description": "Permalink Reference",
+      "disable_correlation": true,
       "misp-attribute": "link",
       "ui-priority": 2
     }
@@ -59,5 +63,5 @@
     "permalink"
   ],
   "uuid": "d7dd0154-e04f-4c34-a2fb-79f3a3a52aa4",
-  "version": 3
+  "version": 4
 }

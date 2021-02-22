@@ -46,6 +46,7 @@
       "description": "Search / Correlation search",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0
     }
   },
@@ -56,5 +57,5 @@
     "search"
   ],
   "uuid": "fd9b7bf8-df7b-4df9-bcd8-28591edcaab8",
-  "version": 1
+  "version": 2
 }

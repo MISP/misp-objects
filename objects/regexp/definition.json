@@ -19,7 +19,8 @@
         "PCRE",
         "PCRE2",
         "POSIX BRE",
-        "POSIX ERE"
+        "POSIX ERE",
+        "FCRE (Farsight Compatible Regular Expressions)"
       ]
     },
     "type": {
@@ -51,5 +52,5 @@
     "regexp"
   ],
   "uuid": "ceffad66-71e5-4e20-9370-1b3fb694c648",
-  "version": 4
+  "version": 5
 }
