@@ -43,7 +43,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "connected-to"
+      "name": "connected-to",
+      "opposite": "connected-from"
     },
     {
       "description": "The referenced source is connected from the target object.",
@@ -51,7 +52,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "connected-from"
+      "name": "connected-from",
+      "opposite": "connected-to"
     },
     {
       "description": "The referenced source is containing the target object.",
@@ -60,7 +62,8 @@
         "stix-1.1",
         "alfred"
       ],
-      "name": "contains"
+      "name": "contains",
+      "opposite": "contained-by"
     },
     {
       "description": "The referenced source is contained by the target object.",
@@ -68,7 +71,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "contained-by"
+      "name": "contained-by",
+      "opposite": "contains"
     },
     {
       "description": "The referenced source is contained within the target object.",
@@ -84,7 +88,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "characterized-by"
+      "name": "characterized-by",
+      "opposite": "characterizes"
     },
     {
       "description": "The referenced source is characterizing the target object.",
@@ -92,7 +97,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "characterizes"
+      "name": "characterizes",
+      "opposite": "characterized-by"
     },
     {
       "description": "The referenced source has queried the target object.",
@@ -100,7 +106,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "properties-queried"
+      "name": "properties-queried",
+      "opposite": "properties-queried-by"
     },
     {
       "description": "The referenced source is queried by the target object.",
@@ -108,7 +115,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "properties-queried-by"
+      "name": "properties-queried-by",
+      "opposite": "properties-queried"
     },
     {
       "description": "The referenced source is extracted from the target object.",
@@ -124,7 +132,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "supra-domain-of"
+      "name": "supra-domain-of",
+      "opposite": "sub-domain-of"
     },
     {
       "description": "The referenced source is a sub domain of the target object.",
@@ -132,7 +141,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "sub-domain-of"
+      "name": "sub-domain-of",
+      "opposite": "supra-domain-of"
     },
     {
       "description": "The referenced source has dropped the target object.",
@@ -156,7 +166,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "downloaded"
+      "name": "downloaded",
+      "opposite": "downloaded-from"
     },
     {
       "description": "The referenced source has been downloaded from the target object.",
@@ -164,7 +175,8 @@
         "misp",
         "stix-1.1"
       ],
-      "name": "downloaded-from"
+      "name": "downloaded-from",
+      "opposite": "downloaded"
     },
     {
       "description": "The referenced source is resolved to the target object.",
@@ -197,7 +209,8 @@
         "stix-2.0",
         "alfred"
       ],
-      "name": "uses"
+      "name": "uses",
+      "opposite": "used-by"
     },
     {
       "description": "This relationship describes that the source object indicates the target object.",
@@ -251,14 +264,16 @@
       "format": [
         "misp"
       ],
-      "name": "authored-by"
+      "name": "authored-by",
+      "opposite": "is-author-of"
     },
     {
       "description": "This relationship describes an object being author by someone.",
       "format": [
         "misp"
       ],
-      "name": "is-author-of"
+      "name": "is-author-of",
+      "opposite": "authored-by"
     },
     {
       "description": "This relationship describes the location (of any type) of a specific object.",
@@ -272,14 +287,16 @@
       "format": [
         "misp"
       ],
-      "name": "included-in"
+      "name": "included-in",
+      "opposite": "includes"
     },
     {
       "description": "This relationship describes an object that includes an other object.",
       "format": [
         "misp"
       ],
-      "name": "includes"
+      "name": "includes",
+      "opposite": "included-in"
     },
     {
       "description": "This relationship describes an object analysed by another object.",
@@ -382,14 +399,16 @@
       "format": [
         "misp"
       ],
-      "name": "followed-by"
+      "name": "followed-by",
+      "opposite": "preceding-by"
     },
     {
       "description": "This relationship describes an object which is preceded by another object. This can be used when a time reference is missing but a sequence is known.",
       "format": [
         "misp"
       ],
-      "name": "preceding-by"
+      "name": "preceding-by",
+      "opposite": "followed-by"
     },
     {
       "description": "This relationship describes an object which triggers another object.",
@@ -438,7 +457,8 @@
       "format": [
         "cert-eu"
       ],
-      "name": "used-by"
+      "name": "used-by",
+      "opposite": "uses"
     },
     {
       "description": "This relationship describes an object which is affiliated with another object.",
@@ -741,14 +761,16 @@
       "format": [
         "alfred"
       ],
-      "name": "downloads"
+      "name": "downloads",
+      "opposite": "downloads-from"
     },
     {
       "description": "Represents the semantic link of malware being downloaded from a location.",
       "format": [
         "alfred"
       ],
-      "name": "downloads-from"
+      "name": "downloads-from",
+      "opposite": "downloads"
     },
     {
       "description": "Represents the semantic link of an alert generated from a signature.",
@@ -840,14 +862,16 @@
       "format": [
         "alfred"
       ],
-      "name": "registered"
+      "name": "registered",
+      "opposite": "registered-to"
     },
     {
       "description": "Represents the semantic link of something being registered to.",
       "format": [
         "alfred"
       ],
-      "name": "registered-to"
+      "name": "registered-to",
+      "opposite": "registered"
     },
     {
       "description": "Represents the semantic link between HBS Comms and communication addresses.",
@@ -1107,14 +1131,16 @@
       "format": [
         "misp"
       ],
-      "name": "leaks"
+      "name": "leaks",
+      "opposite": "leaked-by"
     },
     {
       "description": "leaked-by",
       "format": [
         "misp"
       ],
-      "name": "leaked-by"
+      "name": "leaked-by",
+      "opposite": "leaks"
     },
     {
       "description": "doxed-by",
