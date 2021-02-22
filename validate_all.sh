@@ -31,6 +31,7 @@ do
 done
 
 jsonschema -i relationships/definition.json schema_relationships.json
+./tools/validate_opposites.sh
 
 ./unique_uuid.py
 

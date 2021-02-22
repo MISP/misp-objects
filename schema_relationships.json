@@ -19,6 +19,9 @@
           "items": {
             "type": "string"
           }
+        },
+        "opposite": {
+          "type": "string"
         }
       },
       "required": [
