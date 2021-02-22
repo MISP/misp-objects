@@ -264,7 +264,7 @@
       "format": [
         "misp"
       ],
-      "name": "authored-by",,
+      "name": "authored-by",
       "opposite": "is-author-of"
     },
     {
@@ -287,7 +287,7 @@
       "format": [
         "misp"
       ],
-      "name": "included-in",,
+      "name": "included-in",
       "opposite": "includes"
     },
     {
