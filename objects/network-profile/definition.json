@@ -1,5 +1,62 @@
 {
   "attributes": {
+    "asn": {
+      "description": "ASN where the content is hosted",
+      "misp-attribute": "as",
+      "ui-priority": 0
+    },
+    "certificate-common-name": {
+      "description": "Certificate common name",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "certificate-country": {
+      "description": "Certificate country name",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "certificate-creation-date": {
+      "description": "Certificate date it was created",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "certificate-expiry-date": {
+      "description": "Certificate date it will expire",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "certificate-issuer": {
+      "description": "Certificate Issuer",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "certificate-organization": {
+      "description": "Certificate organization",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "certificate-organization-locality": {
+      "description": "Certificate locality",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "certificate-organization-state": {
+      "description": "Certificate state or provincy name",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "certificate-organization-unit": {
+      "description": "Certificate organization unit",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "dns-server": {
+      "description": "DNS server",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
     "domain": {
       "categories": [
         "Network activity",
@@ -10,46 +67,35 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "evidences": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Screenshot of the network resources.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "google-analytics-id": {
+      "description": "Google analytics IDS",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hosting-provider": {
+      "description": "The hosting provider/ISP where the resources are.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "ip-address": {
       "description": "IP address of the whois entry",
       "misp-attribute": "ip-src",
       "multiple": true,
       "ui-priority": 0
     },
-    "dns-server": {
-      "description": "DNS server",
-      "misp-attribute": "hostname",
-      "multiple": true,
-      "to_ids": false,
-      "ui-priority": 0
-    },
-    "subdomain": {
-      "description": "Subdomain",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "tld": {
-      "description": "Top-Level Domain",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "threat-actor-infrastructure-pattern": {
-      "description": "Patterns found on threat actor infrastructure that can correlate with other analysis.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
-      "threat-actor-infrastructure-value": {
-      "description": "Unique valeu found on threat actor infrastructure identified through an investigation.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
-    "hosting-provider": {
-      "description": "The hosting provider/ISP where the resources are.",
-      "misp-attribute": "text",
+    "jarm": {
+      "description": "JARM Footprint string",
+      "misp-attribute": "jarm-fingerprint",
       "ui-priority": 0
     },
     "port": {
@@ -70,76 +116,68 @@
       "multiple": true,
       "ui-priority": 0
     },
-        "jarm": {
-      "description": "JARM Footprint string",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "google-analytics-id": {
-      "description": "Google analytics IDS",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "certificate-issuer": {
-      "description": "Certificate Issuer",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "certificate-common-name": {
-      "description": "Certificate common name",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "certificate-organization-unit": {
-      "description": "Certificate organization unit",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "certificate-organization": {
-      "description": "Certificate organization",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "certificate-organization-locality": {
-      "description": "Certificate locality",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "certificate-organization-state": {
-      "description": "Certificate state or provincy name",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "certificate-country": {
-      "description": "Certificate country name",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-        "service-abuse": {
+    "service-abuse": {
       "description": "Service abused by threat actors as part of their infrastructure.",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0,
-           "values_list": [
+      "values_list": [
         "OneDrive",
         "Google Drive",
         "Dropbox",
         "Microsoft",
-                "Google",
-                "DuckDNS",
-                "Cloudflare",
-                "AWS"
+        "Google",
+        "DuckDNS",
+        "Cloudflare",
+        "AWS"
       ]
     },
-    "asn":{
-        "description": "ASN where the content is hosted",
-        "misp-attribute": "as",
-        "ui-priority":0
+    "subdomain": {
+      "description": "Subdomain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "Full whois entry",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "threat-actor-infrastructure-pattern": {
+      "description": "Patterns found on threat actor infrastructure that can correlate with other analysis.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "threat-actor-infrastructure-value": {
+      "description": "Unique valeu found on threat actor infrastructure identified through an investigation.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "tld": {
+      "description": "Top-Level Domain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "url": {
       "description": "Full URL",
       "misp-attribute": "url",
       "ui-priority": 1
+    },
+    "whois-creation-date": {
+      "description": "Initial creation of the whois entry",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "whois-expiration-date": {
+      "description": "Expiration of the whois entry",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "whois-registrant-email": {
       "description": "Registrant email address",
@@ -165,54 +203,16 @@
       "description": "Registrar of the whois entry",
       "misp-attribute": "whois-registrar",
       "ui-priority": 0
-    },
-    "whois-creation-date": {
-      "description": "Initial creation of the whois entry",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 0
-    },
-    "whois-expiration-date": {
-      "description": "Expiration of the whois entry",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 0
-    },
-    "text": {
-      "description": "Full whois entry",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-   "evidences": {
-      "categories": [
-        "External analysis"
-      ],
-      "description": "Screenshot of the network resources.",
-      "disable_correlation": true,
-      "misp-attribute": "attachment",
-      "multiple": true,
-      "ui-priority": 1
-    },
-          "certificate-creation-date": {
-      "description": "Certificate date it was created",
-      "misp-attribute": "datetime",
-      "ui-priority": 0
-    },
-          "certificate-expiry-date": {
-      "description": "Certificate date it will expire",
-      "misp-attribute": "datetime",
-      "ui-priority": 0
     }
-},
+  },
   "description": "Elements that can be used to profile, pivot or identify a network infrastructure, including domains, ip and urls.",
   "meta-category": "network",
   "name": "network-profile",
   "requiredOneOf": [
     "domain",
     "ip-address",
-        "url"
+    "url"
   ],
   "uuid": "f0f9e287-8067-49a4-b0f8-7a0fed8d4e43",
-  "version": 4
+  "version": 5
 }
