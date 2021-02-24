@@ -2,7 +2,7 @@
   "attributes": {
     "asn": {
       "description": "ASN where the content is hosted",
-      "misp-attribute": "as",
+      "misp-attribute": "AS",
       "ui-priority": 0
     },
     "certificate-common-name": {
