@@ -64,6 +64,8 @@
             "dash",
             "date-of-birth",
             "datetime",
+            "dkim",
+            "dkim-signature",
             "dns-soa-email",
             "domain",
             "domain|ip",
