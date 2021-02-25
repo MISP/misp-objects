@@ -1,0 +1,77 @@
+{
+  "attributes": {
+    "d": {
+      "description": "DKIM domain used for the selector record",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "dkim": {
+      "description": "DomainKeys Identified Mail - DKIM full DNS TXT record",
+      "misp-attribute": "dkim",
+      "ui-priority": 1
+    },
+    "h": {
+      "description": "DKIM hash type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "sha1",
+        "md5"
+      ],
+      "ui-priority": 1
+    },
+    "k": {
+      "description": "DKIM key type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "rsa"
+      ],
+      "ui-priority": 1
+    },
+    "n": {
+      "description": "DKIM administrator note",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "public-key": {
+      "description": "DKIM public key",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "s": {
+      "description": "DKIM service record",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "t": {
+      "description": "DKIM domain testing",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "y",
+        "s"
+      ],
+      "ui-priority": 1
+    },
+    "version": {
+      "description": "DKIM version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "DKIM1"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "DomainKeys Identified Mail - DKIM",
+  "meta-category": "misc",
+  "name": "dkim",
+  "required": [
+    "dkim"
+  ],
+  "uuid": "7f1e45a5-b050-433e-83c1-1bf8c8d9e4a5",
+  "version": 1
+}
