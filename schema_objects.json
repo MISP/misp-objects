@@ -108,6 +108,7 @@
             "first-name",
             "float",
             "frequent-flyer-number",
+            "full-name",
             "gender",
             "gene",
             "git-commit-id",

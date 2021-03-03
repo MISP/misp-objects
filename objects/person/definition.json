@@ -46,6 +46,11 @@
       "misp-attribute": "first-name",
       "ui-priority": 98
     },
+    "full-name": {
+      "description": "Full name of a natural person usually composed of first-name, middle-name and last-name.",
+      "misp-attribute": "full-name",
+      "ui-priority": 100
+    },
     "gender": {
       "description": "The gender of a natural person.",
       "disable_correlation": true,
@@ -190,8 +195,9 @@
   "requiredOneOf": [
     "first-name",
     "last-name",
+    "full-name",
     "alias"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 10
+  "version": 11
 }
