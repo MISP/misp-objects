@@ -13,7 +13,7 @@
       "ui-priority": 0
     },
     "origin": {
-      "description": "Origin of the Passive DNS response",
+      "description": "Origin of the Passive DNS response. This field is represented as a Uniform Resource Identifier (URI)",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
@@ -80,8 +80,20 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "time_first_ms": {
+      "description": "Same meaning as the field 'time_first', with the only difference, that the resolution is in milliseconds since 1st of January 1970 (UTC)",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "time_last": {
       "description": "Last time that the unique tuple (rrname, rrtype, rdata) record has been seen by the passive DNS",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "time_last_ms": {
+      "description": "Same meaning as the field 'time_last', with the only difference, that the resolution is in milliseconds since 1st of January 1970 (UTC)",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
@@ -99,7 +111,7 @@
       "ui-priority": 0
     }
   },
-  "description": "Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-01",
+  "description": "Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
   "meta-category": "network",
   "name": "passive-dns",
   "required": [
@@ -108,5 +120,5 @@
     "rdata"
   ],
   "uuid": "b77b7b1c-66ab-4a41-8da4-83810f6d2d6c",
-  "version": 3
+  "version": 4
 }
