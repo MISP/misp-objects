@@ -80,14 +80,14 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
-    "time_last": {
-      "description": "Last time that the unique tuple (rrname, rrtype, rdata) record has been seen by the passive DNS",
+    "time_first_ms": {
+      "description": "Same meaning as the field 'time_first', with the only difference, that the resolution is in milliseconds since 1st of January 1970 (UTC)",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
-    "time_first_ms": {
-      "description": "Same meaning as the field 'time_first', with the only difference, that the resolution is in milliseconds since 1st of January 1970 (UTC)",
+    "time_last": {
+      "description": "Last time that the unique tuple (rrname, rrtype, rdata) record has been seen by the passive DNS",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
@@ -120,5 +120,5 @@
     "rdata"
   ],
   "uuid": "b77b7b1c-66ab-4a41-8da4-83810f6d2d6c",
-  "version": 3
+  "version": 4
 }
