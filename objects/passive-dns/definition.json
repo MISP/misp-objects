@@ -3,7 +3,7 @@
     "bailiwick": {
       "description": "Best estimate of the apex of the zone where this data is authoritative",
       "disable_correlation": true,
-      "misp-attribute": "text",
+      "misp-attribute": "domain",
       "ui-priority": 0
     },
     "count": {
@@ -19,13 +19,31 @@
       "ui-priority": 0
     },
     "raw_rdata": {
-      "description": "Resource records of the queried resource, in hexadecimal",
+      "description": "Resource records of the queried resource, in hexadecimal. *All* rdata entries at once.",
       "misp-attribute": "text",
       "ui-priority": 0
     },
     "rdata": {
-      "description": "Resource records of the queried resource",
+      "description": "Resource records of the queried resource. Note that this field is added for *each* rdata entry in the rrset.",
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rdata_ip": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Resource records of the queried resource. Mapped to MISP 'ip' address type. Valid for rrtypes (A, AAAA, A6, ...).",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "rdata_domain": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Resource records of the queried resource. Mapped to MISP 'domain' address type. Valid for rrtypes (CNAME, etc.).",
+      "misp-attribute": "domain",
       "ui-priority": 1
     },
     "rrname": {
@@ -35,6 +53,24 @@
       ],
       "description": "Resource Record name of the queried resource.",
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rrname_domain": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Resource Record name of the queried resource. Same as the field 'rrname', however already mapped to the MISP 'domain' type so that we can correlate.",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "rrname_ip": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Resource Record name of the queried resource. Same as the field 'rrname', however already mapped to the MISP 'ip' type so that we can correlate. Note that this is only valid if 'rrtype' is 'PTR'.",
+      "misp-attribute": "ip-src",
       "ui-priority": 1
     },
     "rrtype": {
