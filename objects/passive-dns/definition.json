@@ -28,24 +28,6 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "rdata_ip": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "Resource records of the queried resource. Mapped to MISP 'ip' address type. Valid for rrtypes (A, AAAA, A6, ...).",
-      "misp-attribute": "ip-src",
-      "ui-priority": 1
-    },
-    "rdata_domain": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "Resource records of the queried resource. Mapped to MISP 'domain' address type. Valid for rrtypes (CNAME, etc.).",
-      "misp-attribute": "domain",
-      "ui-priority": 1
-    },
     "rrname": {
       "categories": [
         "Network activity",
@@ -53,24 +35,6 @@
       ],
       "description": "Resource Record name of the queried resource.",
       "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "rrname_domain": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "Resource Record name of the queried resource. Same as the field 'rrname', however already mapped to the MISP 'domain' type so that we can correlate.",
-      "misp-attribute": "domain",
-      "ui-priority": 1
-    },
-    "rrname_ip": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "Resource Record name of the queried resource. Same as the field 'rrname', however already mapped to the MISP 'ip' type so that we can correlate. Note that this is only valid if 'rrtype' is 'PTR'.",
-      "misp-attribute": "ip-src",
       "ui-priority": 1
     },
     "rrtype": {
