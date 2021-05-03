@@ -3,7 +3,7 @@
     "bailiwick": {
       "description": "Best estimate of the apex of the zone where this data is authoritative",
       "disable_correlation": true,
-      "misp-attribute": "text",
+      "misp-attribute": "domain",
       "ui-priority": 0
     },
     "count": {
@@ -19,12 +19,12 @@
       "ui-priority": 0
     },
     "raw_rdata": {
-      "description": "Resource records of the queried resource, in hexadecimal",
+      "description": "Resource records of the queried resource, in hexadecimal. *All* rdata entries at once.",
       "misp-attribute": "text",
       "ui-priority": 0
     },
     "rdata": {
-      "description": "Resource records of the queried resource",
+      "description": "Resource records of the queried resource. Note that this field is added for *each* rdata entry in the rrset.",
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -120,5 +120,5 @@
     "rdata"
   ],
   "uuid": "b77b7b1c-66ab-4a41-8da4-83810f6d2d6c",
-  "version": 4
+  "version": 5
 }
