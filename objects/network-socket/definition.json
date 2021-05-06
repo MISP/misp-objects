@@ -168,14 +168,14 @@
     "socket-type": {
       "description": "Type of the socket.",
       "misp-attribute": "text",
-      "sane-default": [
+      "sane_default": [
         "SOCK_STREAM",
         "SOCK_DGRAM",
         "SOCK_RAW",
         "SOCK_RDM",
         "SOCK_SEQPACKET"
       ],
-      "ui-proirity": 1
+      "ui-priority": 1
     },
     "src-port": {
       "categories": [
