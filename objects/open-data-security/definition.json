@@ -1,0 +1,101 @@
+{
+  "attributes": {
+    "description": {
+      "description": "an exhaustive description of the dataset including methods of collection, extraction or analysis",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "frequency": {
+      "description": "frequency of the dataset generation which MUST be expressed in yearly, monthly, daily, hourly",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "yearly",
+        "monthly",
+        "daily",
+        "hourly"
+      ],
+      "ui-priority": 0
+    },
+    "human-validated": {
+      "description": "human-validated describes if the dataset has been manually validated",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "true",
+        "false",
+        "unknown"
+      ],
+      "ui-priority": 0
+    },
+    "license": {
+      "description": "license MUST be expressed in SPDX format to describe under which license the dataset is distributed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "link to open dataset",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "machine-validated": {
+      "description": "machine-validated describes if the dataset has been automatically validated",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "true",
+        "false",
+        "unknown"
+      ],
+      "ui-priority": 0
+    },
+    "producer": {
+      "description": "producer MUST be expressed as an URI to reference the original producer of the dataset",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "source": {
+      "description": "original source of the dataset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "subtitle": {
+      "description": "an extended title of the dataset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "time-precision": {
+      "description": "time-precision MUST be expressed in years, months, days, hours, minutes or seconds to describe the precision of the time expressed",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "years",
+        "months",
+        "days",
+        "hours",
+        "minutes",
+        "seconds"
+      ],
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "a comprehensive and concise title of the dataset",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing an open dataset available and described under the open data security model. ref. https://github.com/CIRCL/open-data-security",
+  "meta-category": "misc",
+  "name": "open-data-security",
+  "requiredOneOf": [
+    "link"
+  ],
+  "uuid": "01f9d45f-134d-4f99-9891-7d1219af5941",
+  "version": 1
+}
