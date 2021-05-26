@@ -1,0 +1,47 @@
+{
+  "attributes": {
+    "rrname": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Resource Record name of the queried resource.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rrtype": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Resource Record type as seen by the passive DNS.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "A",
+        "AAAA",
+        "CNAME",
+        "PTR",
+        "SOA",
+        "TXT",
+        "DNAME",
+        "NS",
+        "SRV",
+        "RP",
+        "NAPTR",
+        "HINFO",
+        "A6"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "DNSDBFLEX object. This object is used at farsight security. Roughly based on Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+  "meta-category": "network",
+  "name": "passive-dns-dnsdbflex",
+  "required": [
+    "rrtype",
+    "rrname"
+  ],
+  "uuid": "e5066302-be0d-11eb-ab6d-2bb17990cb48",
+  "version": 1
+}
