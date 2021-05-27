@@ -16,8 +16,8 @@
       ],
       "description": "Destination port of the attack",
       "misp-attribute": "port",
-      "ui-priority": 0,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "first-seen": {
       "description": "Beginning of the attack",
@@ -41,8 +41,8 @@
       ],
       "description": "IP address originating the attack",
       "misp-attribute": "ip-src",
-      "ui-priority": 1,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 1
     },
     "last-seen": {
       "description": "End of the attack",
@@ -68,8 +68,8 @@
       ],
       "description": "Port originating the attack",
       "misp-attribute": "port",
-      "ui-priority": 0,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "text": {
       "description": "Description of the DDoS",
