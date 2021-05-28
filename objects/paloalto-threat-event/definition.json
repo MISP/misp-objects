@@ -2,16 +2,19 @@
   "attributes": {
     "app": {
       "description": "The application identified (e.g. vnc, ssh, sip, irc, http or smtp).",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "direction": {
       "description": "The Direction of the Event.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "dport": {
       "description": "The port to which the connection headed.",
+      "disable_correlation": true,
       "misp-attribute": "counter",
       "ui-priority": 1
     },
@@ -22,16 +25,19 @@
     },
     "dstloc": {
       "description": "The Destination Location of the event.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "proto": {
       "description": "The transport protocol (e.g. tcp, udp, icmp).",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "sport": {
       "description": "The port from which the connection originated.",
+      "disable_correlation": true,
       "misp-attribute": "counter",
       "ui-priority": 1
     },
@@ -42,31 +48,37 @@
     },
     "srcloc": {
       "description": "The Source Location of the event.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "subtype": {
       "description": "The subtype of the Log Event.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "thr_category": {
       "description": "The Threat Category.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "threatid": {
       "description": "The Threat ID.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "time_generated": {
       "description": "The datetime of the event.",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 1
     },
     "type": {
       "description": "The type of the Log Event",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     }
