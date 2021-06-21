@@ -3,8 +3,9 @@
 
 from glob import glob
 import json
+from typing import Dict
 
-all_uuids = {}
+all_uuids: Dict[str, str] = {}
 for definition in glob('./objects/*/definition.json'):
     with open(definition, 'r') as f:
         d = json.load(f)
