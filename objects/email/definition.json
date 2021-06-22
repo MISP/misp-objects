@@ -53,6 +53,15 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "from-domain": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Sender domain address (when only the source domain is known)",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "header": {
       "categories": [
         "Payload delivery"
@@ -215,5 +224,5 @@
     "msg"
   ],
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
-  "version": 15
+  "version": 16
 }
