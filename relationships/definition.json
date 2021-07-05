@@ -722,6 +722,14 @@
       "name": "child-of"
     },
     {
+      "description": "A parent semantic link to a child.",
+      "format": [
+        "alfred",
+        "misp"
+      ],
+      "name": "parent-of"
+    },
+    {
       "description": "Represents the semantic link of having compromised something.",
       "format": [
         "alfred"
@@ -1150,5 +1158,5 @@
       "name": "doxed-by"
     }
   ],
-  "version": 22
+  "version": 23
 }
