@@ -32,7 +32,7 @@
     "domain": {
       "description": "The domain of the search engine.",
       "disable_correlation": true,
-      "misp-attribute": "link",
+      "misp-attribute": "text",
       "sane_default": [
         "Google",
         "Yahoo",
@@ -62,5 +62,5 @@
     "text"
   ],
   "uuid": "16b3f8d0-fd09-4812-a42c-b5aeff2d4c2e",
-  "version": 1
+  "version": 2
 }
