@@ -1,0 +1,80 @@
+{
+  "attributes": {
+    "FileName": {
+      "description": "Complete path of the filename including the filename",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "FileSize": {
+      "description": "Size of the file, in bytes",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "MD5": {
+      "description": "MD5 hash (128 bits) in hex representation",
+      "misp-attribute": "md5",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "PackageArch": {
+      "description": "Package architecture",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PackageDescription": {
+      "description": "Package description and information",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PackageMaintainer": {
+      "description": "Package Maintainer(s)",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PackageName": {
+      "description": "Package Name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PackageRelease": {
+      "description": "Package Release",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "PackageVersion": {
+      "description": "Package Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SHA-1": {
+      "description": "Secure Hash Algorithm 1 (160 bits) in hex representation",
+      "misp-attribute": "sha1",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "SHA-256": {
+      "description": "Secure Hash Algorithm 2 (256 bits) in hex representation",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    }
+  },
+  "description": "hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup",
+  "meta-category": "file",
+  "name": "file",
+  "requiredOneOf": [
+    "FileName",
+    "FileSize",
+    "MD5",
+    "SHA-1",
+    "SHA-256"
+  ],
+  "uuid": "18671816-2524-452e-b031-5fc0fe2ab774",
+  "version": 1
+}
