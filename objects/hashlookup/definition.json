@@ -67,7 +67,7 @@
   },
   "description": "hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup",
   "meta-category": "file",
-  "name": "file",
+  "name": "hashlookup",
   "requiredOneOf": [
     "FileName",
     "FileSize",
