@@ -3,7 +3,7 @@
     "FileName": {
       "description": "Complete path of the filename including the filename",
       "disable_correlation": true,
-      "misp-attribute": "text",
+      "misp-attribute": "filename",
       "ui-priority": 0
     },
     "FileSize": {
