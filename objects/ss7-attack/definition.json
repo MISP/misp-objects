@@ -118,6 +118,30 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "GtAssignee": {
+      "description": "GT Assignee this is the party that got the GT range assigned by their Regulator.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "GtLessor": {
+      "description": "GT Lessor is a GT Assignee that has decided to lease one or more of their GTs to a third party, the GT Lessee, typically on a commercial basis.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "GtLessee": {
+      "description": "GT Lessee is a third party who will use a leased global title from a GT Lessor.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "GtSubLessee": {
+      "description": "GT Sub-Lessee – this is an additional third party who has entered into an agreement with the GT Lessee to sub-lease a GT from them.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "SccpCdGT": {
       "description": "Signaling Connection Control Part (SCCP) CdGT - Phone number.",
       "misp-attribute": "text",
@@ -173,5 +197,5 @@
     "text"
   ],
   "uuid": "f3493d8b-a7ab-48d0-a775-046c4d64d782",
-  "version": 2
+  "version": 3
 }
