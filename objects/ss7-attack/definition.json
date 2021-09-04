@@ -18,6 +18,30 @@
       ],
       "ui-priority": 1
     },
+    "GtAssignee": {
+      "description": "GT Assignee this is the party that got the GT range assigned by their Regulator.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "GtLessee": {
+      "description": "GT Lessee is a third party who will use a leased global title from a GT Lessor.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "GtLessor": {
+      "description": "GT Lessor is a GT Assignee that has decided to lease one or more of their GTs to a third party, the GT Lessee, typically on a commercial basis.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "GtSubLessee": {
+      "description": "GT Sub-Lessee – this is an additional third party who has entered into an agreement with the GT Lessee to sub-lease a GT from them.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "MapApplicationContext": {
       "description": "MAP application context in OID format.",
       "disable_correlation": true,
@@ -116,30 +140,6 @@
     "MapVlrGT": {
       "description": "MAP VLR GT. Phone number.",
       "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "GtAssignee": {
-      "description": "GT Assignee this is the party that got the GT range assigned by their Regulator.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
-    "GtLessor": {
-      "description": "GT Lessor is a GT Assignee that has decided to lease one or more of their GTs to a third party, the GT Lessee, typically on a commercial basis.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
-    "GtLessee": {
-      "description": "GT Lessee is a third party who will use a leased global title from a GT Lessor.",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
-    "GtSubLessee": {
-      "description": "GT Sub-Lessee – this is an additional third party who has entered into an agreement with the GT Lessee to sub-lease a GT from them.",
-      "misp-attribute": "text",
-      "multiple": true,
       "ui-priority": 0
     },
     "SccpCdGT": {
