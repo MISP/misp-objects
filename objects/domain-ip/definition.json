@@ -44,7 +44,6 @@
       ],
       "description": "Associated TCP port with the domain",
       "misp-attribute": "port",
-      "multiple": true,
       "ui-priority": 1
     },
     "registration-date": {
@@ -70,5 +69,5 @@
     "hostname"
   ],
   "uuid": "43b3b146-77eb-4931-b4cc-b66c60f28734",
-  "version": 9
+  "version": 10
 }
