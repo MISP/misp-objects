@@ -30,6 +30,12 @@
       "misp-attribute": "datetime",
       "ui-priority": 1
     },
+    "description": {
+      "description": "A description of the user account.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "disabled": {
       "description": "Specifies if the account is desabled.",
       "disable_correlation": true,
@@ -112,12 +118,6 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "text": {
-      "description": "A description of the user account.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "user-avatar": {
       "description": "A user profile picture or avatar.",
       "misp-attribute": "attachment",
@@ -144,5 +144,5 @@
     "user-id"
   ],
   "uuid": "49606b06-22f0-4ac8-8eee-2f12ad46f3d3",
-  "version": 3
+  "version": 4
 }
