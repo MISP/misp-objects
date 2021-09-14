@@ -154,8 +154,14 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
-    "user": {
-      "description": "User context of the process",
+    "user-creator": {
+      "description": "User who created of the process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "user-process": {
+      "description": "User who is running the process at the time of the analysis",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 2
@@ -172,5 +178,5 @@
     "current-directory"
   ],
   "uuid": "02aeef94-ac23-455c-addb-731757ceafb5",
-  "version": 8
+  "version": 9
 }
