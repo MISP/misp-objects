@@ -63,6 +63,22 @@
       "description": "Secure Hash Algorithm 2 (256 bits) in hex representation",
       "misp-attribute": "sha256",
       "ui-priority": 1
+    },
+    "SSDEEP": {
+      "description": "SSDEEP - Fuzzy hashing",
+      "misp-attribute": "ssdeep",
+      "ui-priority": 1
+    },
+    "TLSH": {
+      "description": "TLSH - Trend Micro Locality Sensitive Hash",
+      "misp-attribute": "tlsh",
+      "ui-priority": 1
+    },
+    "source": {
+      "description": "Source of the hashlookup record",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     }
   },
   "description": "hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup",
@@ -73,8 +89,10 @@
     "FileSize",
     "MD5",
     "SHA-1",
-    "SHA-256"
+    "SHA-256",
+    "TLSH",
+    "SSDEEP"
   ],
   "uuid": "18671816-2524-452e-b031-5fc0fe2ab774",
-  "version": 1
+  "version": 2
 }
