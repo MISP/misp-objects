@@ -12,6 +12,12 @@
       "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
+    "KnownMalicious": {
+      "description": "Source of the hashlookup record if it's a known malicious file",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "MD5": {
       "description": "MD5 hash (128 bits) in hex representation",
       "misp-attribute": "md5",
@@ -94,5 +100,5 @@
     "SSDEEP"
   ],
   "uuid": "18671816-2524-452e-b031-5fc0fe2ab774",
-  "version": 2
+  "version": 3
 }
