@@ -1,0 +1,186 @@
+{
+  "attributes": {
+    "created": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The time at which the playbook was originally created.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "creator": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Creator organization of the playbook.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Primary classification use case the data are prepared for, e.g. DGA, Phishing, Application identification, Host profiling, ...",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "id": {
+      "categories": [
+        "Other"
+      ],
+      "description": "A value that uniquely identifies the playbook.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "impact": {
+      "categories": [
+        "Other"
+      ],
+      "description": "A positive integer that represents the impact the playbook has on the organization from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "label": {
+      "categories": [
+        "Other"
+      ],
+      "description": "An optional set of terms, labels or tags associated with this playbook.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "modified": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The time that this particular version of the playbook was last modified.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "organization-type": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Type of an organization, that the playbook is intended for.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "playbook": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Content of the whole playbook.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "playbook-abstraction": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Identifies the level of completeness of the playbook.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "guideline",
+        "playbook template",
+        "playbook",
+        "partial workflow",
+        "full workflow",
+        "fully scripted"
+      ]
+    },
+    "playbook-standard": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Identification of the playbook standard.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "playbook-type": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Identifies types of actions in the playbook.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "notification playbook",
+        "detection playbook",
+        "investigation playbook",
+        "prevention playbook",
+        "mitigation playbook",
+        "remediation playbook",
+        "attack playbook"
+      ]
+    },
+    "priority": {
+      "categories": [
+        "Other"
+      ],
+      "description": "A positive integer that represents the priority of this playbook relative to other defined playbooks.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "revoked": {
+      "categories": [
+        "Other"
+      ],
+      "description": "A boolean that identifies if the playbook creator deems that this playbook is no longer valid.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "severity": {
+      "categories": [
+        "Other"
+      ],
+      "description": "A positive integer that represents the seriousness of the conditions that this playbook addresses.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "valid-from": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The time from which the playbook is considered valid and the steps that it contains can be executed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "valid-until": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The time at which this playbook should no longer be considered a valid playbook to be executed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    }
+  },
+  "description": "Security playbook with its metadata for executing course of action in cyberspace defense.",
+  "meta-category": "misc",
+  "name": "security-playbook",
+  "required": [
+    "playbook",
+    "playbook-standard",
+    "playbook-type",
+    "person-role"
+  ],
+  "uuid": "48894c92-447b-4abe-b093-360c4d823e9d",
+  "version": 1
+}
