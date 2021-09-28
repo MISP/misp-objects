@@ -29,7 +29,7 @@
     },
     "id": {
       "categories": [
-        "other"
+        "Other"
       ],
       "description": "A value that uniquely identifies the playbook.",
       "disable_correlation": false,
@@ -100,7 +100,7 @@
     },
     "playbook-standard": {
       "categories": [
-        "other"
+        "Other"
       ],
       "description": "Identification of the playbook standard.",
       "disable_correlation": true,
@@ -109,7 +109,7 @@
     },
     "playbook-type": {
       "categories": [
-        "other"
+        "Other"
       ],
       "description": "Identifies types of actions in the playbook.",
       "disable_correlation": true,
