@@ -178,8 +178,7 @@
   "required": [
     "playbook",
     "playbook-standard",
-    "playbook-type",
-    "person-role"
+    "playbook-type"
   ],
   "uuid": "48894c92-447b-4abe-b093-360c4d823e9d",
   "version": 1
