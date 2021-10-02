@@ -13,7 +13,7 @@
       "categories": [
         "Other"
       ],
-      "description": "Creator organization of the playbook.",
+      "description": "The entity that created this playbook. It can be a natural person or an organization. It may be represented using an id that identifies the creator.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
@@ -22,7 +22,7 @@
       "categories": [
         "Other"
       ],
-      "description": "Primary classification use case the data are prepared for, e.g. DGA, Phishing, Application identification, Host profiling, ...",
+      "description": "More details, context, and possibly an explanation about what this playbook does and tries to accomplish.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
@@ -40,7 +40,7 @@
       "categories": [
         "Other"
       ],
-      "description": "A positive integer that represents the impact the playbook has on the organization from 0 to 100.",
+      "description": "An integer that represents the impact the playbook has on the organization from 0 to 100. A value of 0 means specifically undefined. Values range from 1, the lowest impact, to a value of 100, the highest. For example, a purely investigative playbook that is non-invasive would have a low impact value of 1, whereas a playbook that performs changes such as adding rules into a firewall would have a higher impact value.",
       "disable_correlation": true,
       "misp-attribute": "counter",
       "ui-priority": 1
@@ -49,7 +49,7 @@
       "categories": [
         "Other"
       ],
-      "description": "An optional set of terms, labels or tags associated with this playbook.",
+      "description": "An optional set of terms, labels or tags associated with this playbook (e.g., aliases of adversary groups or operations that this playbook is related to).",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
@@ -68,7 +68,7 @@
       "categories": [
         "Other"
       ],
-      "description": "Type of an organization, that the playbook is intended for.",
+      "description": "Type of an organization, that the playbook is intended for. This can be an industry sector.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
@@ -77,7 +77,7 @@
       "categories": [
         "Payload delivery"
       ],
-      "description": "Content of the whole playbook.",
+      "description": "The whole playbook in its native format (e.g., CACAO JSON). Producers and consumers of playbooks use this property to share and retrieve playbooks.",
       "misp-attribute": "attachment",
       "ui-priority": 1
     },
@@ -111,7 +111,7 @@
       "categories": [
         "Other"
       ],
-      "description": "Identifies types of actions in the playbook.",
+      "description": "The security operational functions the playbook addresses. A playbook may account for multiple types (e.g., detection, investigation).",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
@@ -130,7 +130,7 @@
       "categories": [
         "Other"
       ],
-      "description": "A positive integer that represents the priority of this playbook relative to other defined playbooks.",
+      "description": "An integer that represents the priority of this playbook relative to other defined playbooks. A value of 0 means specifically undefined. Values range from 1, the highest priority, to a value of 100, the lowest.",
       "disable_correlation": true,
       "misp-attribute": "counter",
       "ui-priority": 1
@@ -148,7 +148,7 @@
       "categories": [
         "Other"
       ],
-      "description": "A positive integer that represents the seriousness of the conditions that this playbook addresses.",
+      "description": "A positive integer that represents the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Values range from 1, the lowest severity, to a value of 100, the highest.",
       "disable_correlation": true,
       "misp-attribute": "counter",
       "ui-priority": 1
@@ -172,7 +172,7 @@
       "ui-priority": 1
     }
   },
-  "description": "Security playbook with its metadata for executing course of action in cyberspace defense.",
+  "description": "An object to manage, represent, and share course of action playbooks (security playbooks) for cyberspace defense.",
   "meta-category": "misc",
   "name": "security-playbook",
   "required": [
