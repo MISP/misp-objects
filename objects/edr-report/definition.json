@@ -28,7 +28,7 @@
             "ui-priority": 1
         },
         "event": {
-            "description": "EDR event which triggered reporting",
+            "description": "Raw EDR event which triggered reporting",
             "disable_correlation": true,
             "misp-attribute": "attachment",
             "ui-priority": 1
@@ -65,14 +65,14 @@
             "ui-priority": 0
         },
         "executable": {
-            "description": "Executable file involved in report generation",
+            "description": "Executable file involved in detection",
             "disable_correlation": true,
             "misp-attribute": "attachment",
             "multiple": true,
             "ui-priority": 0
         },
         "additional-file": {
-            "description": "Additional file involved in report generation",
+            "description": "Additional file involved in detection",
             "disable_correlation": true,
             "misp-attribute": "attachment",
             "multiple": true,
