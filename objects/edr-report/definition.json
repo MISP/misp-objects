@@ -1,0 +1,92 @@
+{
+  "attributes": {
+    "additional-file": {
+      "description": "Additional file involved in detection",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "command": {
+      "description": "JSON file containing the output of a command ran at report generation",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "comment": {
+      "description": "Any valuable comment about the report",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "drivers": {
+      "description": "JSON file containing metadata about drivers loaded on the system",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "endpoint-id": {
+      "description": "Unique identifier of the endpoint concerned by the report",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "event": {
+      "description": "Raw EDR event which triggered reporting",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "executable": {
+      "description": "Executable file involved in detection",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hostname": {
+      "description": "Endpoint hostname",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "id": {
+      "description": "Report unique identifier",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ip": {
+      "description": "Endpoint IP address",
+      "disable_correlation": true,
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "modules": {
+      "description": "JSON file containing metadata about modules loaded on the system",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "processes": {
+      "description": "JSON file containing metadata about running processes at the time of detection",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "product": {
+      "description": "EDR product name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "An Object Template to encode an EDR detection report",
+  "meta-category": "misc",
+  "name": "edr-report",
+  "requiredOneOf": [
+    "id",
+    "endpoint-id",
+    "event"
+  ],
+  "uuid": "eeeca35c-cfcb-49f9-81be-e0c31d83c116",
+  "version": 1
+}
