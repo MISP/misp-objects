@@ -9,6 +9,16 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "bcc": {
+      "categories": [
+        "Payload delivery"
+        ],
+      "description": "Blind carbon copy",
+      "disable_correlation": true,
+      "misp-attribute": "email-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "cc": {
       "categories": [
         "Payload delivery"
@@ -120,6 +130,7 @@
       ],
       "description": "Email address the reply will be sent to",
       "misp-attribute": "email-reply-to",
+      "multiple": true,
       "ui-priority": 1
     },
     "return-path": {
@@ -224,5 +235,5 @@
     "msg"
   ],
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
-  "version": 16
+  "version": 17
 }
