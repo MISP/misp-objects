@@ -12,7 +12,7 @@
     "bcc": {
       "categories": [
         "Payload delivery"
-        ],
+      ],
       "description": "Blind carbon copy",
       "disable_correlation": true,
       "misp-attribute": "email-dst",
