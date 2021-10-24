@@ -1156,7 +1156,14 @@
         "misp"
       ],
       "name": "doxed-by"
+    },
+    {
+      "description": "alerts about a specific object",
+      "format": [
+        "misp"
+      ],
+      "name": "alerts"
     }
   ],
-  "version": 23
+  "version": 24
 }
