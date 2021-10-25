@@ -15,7 +15,7 @@
       "multiple": true,
       "ui-priority": 100
     },
-    "report-file(s)": {
+    "report-file": {
       "description": "Attachment(s) that is related to the report",
       "misp-attribute": "attachment",
       "multiple": true,
