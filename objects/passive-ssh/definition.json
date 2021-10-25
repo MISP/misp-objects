@@ -1,0 +1,50 @@
+{
+  "attributes": {
+    "base64": {
+      "description": "Base64 representation of the ssh-key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "fingerprint": {
+      "description": "Fingerprint of the SSH key",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "first_seen": {
+      "description": "First time that the passive-ssh object has been seen by the passive SSH",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "host": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IP Address of the host(s) that exposed this SSH key",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "last_seen": {
+      "description": "Last time that the passive-ssh object has been seen by the passive SSH",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Passive-ssh object as described on passive-ssh services from circl.lu - https://github.com/D4-project/passive-ssh",
+  "meta-category": "network",
+  "name": "passive-ssh",
+  "requiredOneOf": [
+    "host",
+    "base64",
+    "fingerprint"
+  ],
+  "uuid": "ec350cdf-2311-4df5-972a-a4342a2c0065",
+  "version": 1
+}
