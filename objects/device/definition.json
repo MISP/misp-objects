@@ -351,7 +351,8 @@
         "Exposed",
         "Unknown",
         "Clean"
-      ]
+      ],
+      "ui-priority": 0
     },
     "version": {
       "description": "Version of the device/ OS",
