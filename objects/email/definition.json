@@ -19,6 +19,15 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "bcc-display-name": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Display name of the blind carbon copy",
+      "misp-attribute": "email-dst-display-name",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "cc": {
       "categories": [
         "Payload delivery"
@@ -26,6 +35,15 @@
       "description": "Carbon copy",
       "disable_correlation": true,
       "misp-attribute": "email-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "cc-display-name": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Display name of the carbon copy",
+      "misp-attribute": "email-dst-display-name",
       "multiple": true,
       "ui-priority": 1
     },
