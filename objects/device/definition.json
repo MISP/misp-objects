@@ -328,7 +328,8 @@
         "zeus_gameover",
         "zeus_panda",
         "zloader"
-      ]
+      ],
+      "ui-priority": 0
     },
     "ip-address": {
       "description": "Device IP address",
