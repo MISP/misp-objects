@@ -27,6 +27,11 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "countrycode": {
+      "description": "Country code in ISO 3166-1 alpha-2",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "epsg": {
       "description": "EPSG Geodetic Parameter value. This is an integer value of the EPSG.",
       "disable_correlation": true,
@@ -98,8 +103,9 @@
     "city",
     "region",
     "country",
+    "countrycode",
     "epsg"
   ],
   "uuid": "cd6f2238-ba55-4888-82c4-104e6e1acf21",
-  "version": 6
+  "version": 7
 }
