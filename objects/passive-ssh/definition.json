@@ -10,7 +10,7 @@
     "fingerprint": {
       "description": "Fingerprint of the SSH key",
       "disable_correlation": true,
-      "misp-attribute": "text",
+      "misp-attribute": "ssh-fingerprint",
       "multiple": true,
       "ui-priority": 1
     },
