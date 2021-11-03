@@ -1,0 +1,62 @@
+{
+  "attributes": {
+    "apartment": {
+      "description": "Apartment / suite number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "city": {
+      "description": "City or town name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "country": {
+      "description": "Country",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Description of the address",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "number": {
+      "description": "House number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "postal-code": {
+      "description": "ZIP / postal code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "province": {
+      "description": "Province",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "state": {
+      "description": "State",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "street": {
+      "description": "Street name",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "A postal address.",
+  "meta-category": "misc",
+  "name": "postal-address",
+  "uuid": "c22cdd17-d38e-42d3-a365-4febdaaaf25e",
+  "version": 3
+}
