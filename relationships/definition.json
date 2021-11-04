@@ -1163,7 +1163,51 @@
         "misp"
       ],
       "name": "alerts"
+    },
+    {
+      "description": "The referenced source object is the legal address of the target.",
+      "format": [
+        "misp"
+      ],
+      "name": "legal-address-of"
+    },
+    {
+      "description": "The referenced source object is a shipping address of the target.",
+      "format": [
+        "misp"
+      ],
+      "name": "shipping-address-of"
+    },
+    {
+      "description": "The referenced source object visited the target (for example an address).",
+      "format": [
+        "misp"
+      ],
+      "name": "visited"
+    },
+    {
+      "description": "The referenced source object is an office of the target.",
+      "format": [
+        "misp"
+      ],
+      "name": "office-of"
+    },
+    {
+      "description": "The referenced source object is a picture (photo/image) of the target.",
+      "format": [
+        "misp"
+      ],
+      "name": "picture-of",
+      "opposite": "pictured-by"
+    },
+    {
+      "description": "The referenced source object is pictured by the target (photo/image).",
+      "format": [
+        "misp"
+      ],
+      "name": "pictured-by",
+      "opposite": "picture-of"
     }
   ],
-  "version": 24
+  "version": 25
 }
