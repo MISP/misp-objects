@@ -7,7 +7,7 @@
     },
     "armament": {
       "description": "Armaments carried by the submarine",
-      "misp-attribute": "sha512/256",
+      "misp-attribute": "text",
       "multiple": true,
       "recommended": false,
       "ui-priority": 0
@@ -126,7 +126,13 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
-        "Ballistic missile submarine"
+        "Ballistic missile submarine",
+        "Cruise missile submarine",
+        "Nuclear-powered attack submarine",
+        "Non-nuclear attack submarine with air-independent propulsion",
+        "Diesel-electric attack submarine",
+        "Midget submarine",
+        "Special mission submarine"
       ],
       "ui-priority": 0
     }
