@@ -1,0 +1,149 @@
+{
+  "attributes": {
+    "active": {
+      "description": "The number of submarines of this class in active service",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "armament": {
+      "description": "Armaments carried by the submarine",
+      "misp-attribute": "text",
+      "multiple": true,
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "beam": {
+      "description": "The beam measurement of the submarine in meters",
+      "misp-attribute": "float",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "builders": {
+      "description": "The organisation building this class of submarines",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "cancelled": {
+      "description": "The number of submarines of this class cancelled",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "class": {
+      "description": "Submarine class",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "complement": {
+      "description": "Crew size",
+      "misp-attribute": "counter",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "completed": {
+      "description": "The number of submarines of this class built",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "displacement": {
+      "description": "Displacement in tonns",
+      "misp-attribute": "counter",
+      "recommended": true,
+      "ui-priority": 0
+    },
+    "draught": {
+      "description": "The draught measurement of the submarine in meters",
+      "misp-attribute": "float",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "endurance": {
+      "description": "Expected submerged endurance in days",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "in_service_from": {
+      "description": "The year the submarine entered service",
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "in_service_until": {
+      "description": "The year the submarine left service",
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "length": {
+      "description": "The length measurement of the submarine in meters",
+      "misp-attribute": "float",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "operator": {
+      "description": "The countries operating such vessels (can be multiple)",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "planned": {
+      "description": "The number of submarines of this class planned to be built",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "predecessor": {
+      "description": "Predecessor class",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "propulsion": {
+      "description": "The propulsion of the submarine, add multiple if applicabe",
+      "misp-attribute": "text",
+      "multiple": true,
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "retired": {
+      "description": "The number of submarines of this class that has been retired",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "speed_submerged": {
+      "description": "Surfaced top speed in knots",
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "speed_surfaced": {
+      "description": "Surfaced top speed in knots",
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "successor": {
+      "description": "Successor class",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Submarine type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Ballistic missile submarine",
+        "Cruise missile submarine",
+        "Nuclear-powered attack submarine",
+        "Non-nuclear attack submarine with air-independent propulsion",
+        "Diesel-electric attack submarine",
+        "Midget submarine",
+        "Special mission submarine"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Submarine description",
+  "meta-category": "misc",
+  "name": "submarine",
+  "required": [
+    "class",
+    "type"
+  ],
+  "uuid": "c8e0c039-0ada-486a-b446-2686709e1e28",
+  "version": 1
+}
