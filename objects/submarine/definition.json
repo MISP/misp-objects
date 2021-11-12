@@ -132,7 +132,7 @@
     }
   },
   "description": "Submarine description",
-  "meta-category": "naval",
+  "meta-category": "misc",
   "name": "submarine",
   "required": [
     "class",
