@@ -1,0 +1,50 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Type of detected software ie software, malware, c&c",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "First seen of the SSL/TLS handshake",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ip-dst": {
+      "description": "Destination IP address",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "ip-src": {
+      "description": "Source IP Address",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "ja3-fingerprint-md5": {
+      "description": "Hash identifying client",
+      "misp-attribute": "ja3-fingerprint-md5",
+      "ui-priority": 1
+    },
+    "ja3s-fingerprint-md5": {
+      "description": "Hash identifying server",
+      "misp-attribute": "ja3-fingerprint-md5",
+      "ui-priority": 1
+    },
+    "last-seen": {
+      "description": "Last seen of the SSL/TLS handshake",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "JA3S is JA3 for the Server side of the SSL/TLS communication and fingerprints how servers respond to particular clients. JA3S fingerprints are composed of Server Hello packet; SSL Version, Cipher, SSLExtensions. https://github.com/salesforce/ja3",
+  "meta-category": "network",
+  "name": "ja3s",
+  "required": [
+    "ja3-fingerprint-md5",
+    "ja3s-fingerprint-md5"
+  ],
+  "uuid": "7f377f66-d128-4b97-897f-592d06ba2ff7",
+  "version": 4
+}
