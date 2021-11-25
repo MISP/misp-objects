@@ -1207,7 +1207,21 @@
       ],
       "name": "pictured-by",
       "opposite": "picture-of"
+    },
+    {
+      "description": "The referenced source object has been found on the target (device, server).",
+      "format": [
+        "misp"
+      ],
+      "name": "found-on"
+    },
+    {
+      "description": "The referenced source object has been found in the target (document).",
+      "format": [
+        "misp"
+      ],
+      "name": "found-in"
     }
   ],
-  "version": 25
+  "version": 26
 }
