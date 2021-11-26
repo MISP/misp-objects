@@ -151,6 +151,15 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "reply-to-display-name": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Display name of the email address the reply will be sent to",
+      "misp-attribute": "email-dst-display-name",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "return-path": {
       "categories": [
         "Payload delivery"
@@ -253,5 +262,5 @@
     "msg"
   ],
   "uuid": "a0c666e0-fc65-4be8-b48f-3423d788b552",
-  "version": 17
+  "version": 18
 }
