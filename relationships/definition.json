@@ -994,6 +994,13 @@
       "name": "works-for"
     },
     {
+      "description": "Represents an object working with another one.",
+      "format": [
+        "misp"
+      ],
+      "name": "works-with"
+    },
+    {
       "description": "Represents an object being a witness of something.",
       "format": [
         "misp"
@@ -1223,5 +1230,5 @@
       "name": "found-in"
     }
   ],
-  "version": 26
+  "version": 27
 }
