@@ -51,6 +51,12 @@
       "misp-attribute": "full-name",
       "ui-priority": 100
     },
+    "function": {
+      "description": "Function of the natural person such as analyst, cyber operator, lawyer.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 101
+    },
     "gender": {
       "description": "The gender of a natural person.",
       "disable_correlation": true,
@@ -199,5 +205,5 @@
     "alias"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 11
+  "version": 12
 }
