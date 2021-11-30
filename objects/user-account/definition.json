@@ -135,7 +135,7 @@
       "ui-priority": 1
     }
   },
-  "description": "",
+  "description": "User-account object, defining aspects of user identification, authentication, privileges and other relevant data points.",
   "meta-category": "misc",
   "name": "user-account",
   "requiredOneOf": [
@@ -144,5 +144,5 @@
     "user-id"
   ],
   "uuid": "49606b06-22f0-4ac8-8eee-2f12ad46f3d3",
-  "version": 4
+  "version": 5
 }
