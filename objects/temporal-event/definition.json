@@ -1,0 +1,42 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Free text description of the temporal event.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 80
+    },
+    "link": {
+      "description": "Link or reference to the temporal event mentioned.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 80
+    },
+    "summary": {
+      "description": "One line summary of the temporal event.",
+      "misp-attribute": "text",
+      "ui-priority": 100
+    },
+    "type": {
+      "description": "Type of temporal event.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Physical Event",
+        "Virtual Event",
+        "Hybrid Event",
+        "Unknown"
+      ],
+      "ui-priority": 85
+    }
+  },
+  "description": "A temporal event consists of some temporal and spacial boundaries. Spacial boundaries can be physical, virtual or hybrid.",
+  "meta-category": "misc",
+  "name": "report",
+  "requiredOneOf": [
+    "summary",
+    "link"
+  ],
+  "uuid": "d79f2d25-2937-44d3-a6d4-2f36f2505448",
+  "version": 1
+}
