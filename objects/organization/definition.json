@@ -65,7 +65,11 @@
         "Accused",
         "Culprit",
         "Accomplice",
-        "Target"
+        "Target",
+        "Source",
+        "Originator",
+        "Informant",
+        "Emitter"
       ]
     },
     "type-of-organization": {
@@ -82,5 +86,5 @@
     "alias"
   ],
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
-  "version": 4
+  "version": 5
 }

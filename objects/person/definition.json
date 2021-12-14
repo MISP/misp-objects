@@ -174,7 +174,11 @@
         "Culprit",
         "Accomplice",
         "Witness",
-        "Target"
+        "Target",
+        "Source",
+        "Originator",
+        "Informant",
+        "Emitter"
       ]
     },
     "social-security-number": {
@@ -205,5 +209,5 @@
     "alias"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 12
+  "version": 13
 }
