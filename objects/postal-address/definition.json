@@ -57,6 +57,11 @@
   "description": "A postal address.",
   "meta-category": "misc",
   "name": "postal-address",
+  "requiredOneOf": [
+    "street",
+    "city",
+    "country"
+  ],
   "uuid": "c22cdd17-d38e-42d3-a365-4febdaaaf25e",
-  "version": 3
+  "version": 4
 }
