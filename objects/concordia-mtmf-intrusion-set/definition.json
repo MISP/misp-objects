@@ -1,0 +1,55 @@
+{
+  "attributes": {
+    "AttackName": {
+      "description": "Name of the Attack",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "recommended": true,
+      "ui-priority": 1
+    },
+    "CMTMF_ATCKID": {
+      "description": "Identifier of the Attack",
+      "disable_correlation": false,
+      "misp-attribute": "counter",
+      "recommended": true,
+      "ui-priority": 1
+    },
+    "FeedbackLoop": {
+      "description": "Feedback Loop Sequence",
+      "disable_correlation": false,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "PhName": {
+      "description": "Name of the Phase (Tactic)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": true,
+      "ui-priority": 0
+    },
+    "PhSequence": {
+      "description": "Phase Sequence",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "recommended": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the phase",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Intrusion Set - Phase Description",
+  "meta-category": "mobile",
+  "name": "concordia-mtmf-intrusion-set",
+  "required": [
+    "AttackName",
+    "AttackID",
+    "PhName",
+    "PhSequence"
+  ],
+  "uuid": "822cc7e1-5bf9-43e5-80f7-dd0486e3ba17",
+  "version": 2
+}
