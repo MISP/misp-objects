@@ -46,7 +46,7 @@
   "name": "concordia-mtmf-intrusion-set",
   "required": [
     "AttackName",
-    "AttackID",
+    "CMTMF_ATCKID",
     "PhName",
     "PhSequence"
   ],
