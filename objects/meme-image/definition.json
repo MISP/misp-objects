@@ -18,6 +18,10 @@
       "description": "A flag to define if this meme is part of an a/b test. If set to true, it is part of an a/b test set.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "archive": {
@@ -103,5 +107,5 @@
     "document-text"
   ],
   "uuid": "6f6c3b61-f085-475e-93df-2e2d9c2fb0f6",
-  "version": 7
+  "version": 8
 }

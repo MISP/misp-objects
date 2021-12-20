@@ -28,6 +28,10 @@
       "description": "Result of the cortex job",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "summary": {
@@ -44,5 +48,5 @@
     "full"
   ],
   "uuid": "144988f3-fa00-4374-8015-c1a32092f451",
-  "version": 1
+  "version": 2
 }

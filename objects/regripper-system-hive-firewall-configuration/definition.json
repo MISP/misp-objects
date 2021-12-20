@@ -10,12 +10,20 @@
       "description": "Boolean flag to determine if firewall notifications are enabled.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "enbled-firewall": {
       "description": "Boolean flag to determine if the firewall is enabled.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "last-write-time": {
@@ -46,5 +54,5 @@
     "profile"
   ],
   "uuid": "d9839b3c-c013-4ba7-b5e5-2787198b9e07",
-  "version": 1
+  "version": 2
 }

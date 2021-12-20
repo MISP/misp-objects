@@ -93,6 +93,10 @@
       "description": "A flag to define if this account belong to a non-banking organisation. If set to true, it's a non-banking organisation.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "opened": {
@@ -167,5 +171,5 @@
     "iban"
   ],
   "uuid": "b4712203-95a8-4883-80e9-b566f5df11c9",
-  "version": 2
+  "version": 3
 }

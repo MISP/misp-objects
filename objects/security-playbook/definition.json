@@ -142,6 +142,10 @@
       "description": "A boolean that identifies if the playbook creator deems that this playbook is no longer valid.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "severity": {
@@ -181,5 +185,5 @@
     "playbook-type"
   ],
   "uuid": "48894c92-447b-4abe-b093-360c4d823e9d",
-  "version": 1
+  "version": 2
 }

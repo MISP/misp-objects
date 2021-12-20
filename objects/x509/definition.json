@@ -22,6 +22,10 @@
       "description": "CA certificate",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "issuer": {
@@ -72,6 +76,10 @@
       "description": "Self-signed certificate",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "serial-number": {
@@ -152,5 +160,5 @@
     "issuer"
   ],
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
-  "version": 12
+  "version": 13
 }

@@ -57,6 +57,10 @@
       "description": "Determines if the Recycle bin option has been disabled.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "recent-files-accessed": {
@@ -94,5 +98,5 @@
     "logon-user-name"
   ],
   "uuid": "f9dc7b7e-8ab1-4dde-95d9-67e41b461c65",
-  "version": 1
+  "version": 2
 }
