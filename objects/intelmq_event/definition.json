@@ -128,6 +128,10 @@
     "destination.tor_node": {
       "description": "If the destination IP was a known tor node.",
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "destination.url": {
@@ -378,6 +382,10 @@
     "source.tor_node": {
       "description": "If the source IP was a known tor node.",
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "source.url": {
@@ -415,5 +423,5 @@
   "meta-category": "network",
   "name": "intelmq_event",
   "uuid": "491ac7d2-25a1-4078-8246-b04a132d003d",
-  "version": 4
+  "version": 5
 }

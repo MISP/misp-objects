@@ -61,6 +61,10 @@
       "description": "Account 'human' bool.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "interactions": {
@@ -108,6 +112,10 @@
       "description": "Account 'verified' bool.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     }
   },
@@ -123,5 +131,5 @@
     "attachment"
   ],
   "uuid": "8d5ba58e-cac3-46a6-9d1f-cf236f7e95c9",
-  "version": 1
+  "version": 2
 }

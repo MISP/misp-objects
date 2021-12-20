@@ -52,6 +52,10 @@
       "description": "",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "interface-MediaSubType": {
@@ -102,5 +106,5 @@
     "network-key"
   ],
   "uuid": "a5a3ba3a-ba2e-42a4-be45-b36809ae56f0",
-  "version": 1
+  "version": 2
 }

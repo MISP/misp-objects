@@ -22,6 +22,10 @@
       "description": "Specifies if the account has the ability to escalate privileges.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "created": {
@@ -40,6 +44,10 @@
       "description": "Specifies if the account is desabled.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "display-name": {
@@ -82,6 +90,10 @@
       "description": "Specifies if the account is associated with a network service.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "last_login": {
@@ -110,6 +122,10 @@
       "description": "Specifies if the account has privileges such as root rights.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "shell": {
@@ -144,5 +160,5 @@
     "user-id"
   ],
   "uuid": "49606b06-22f0-4ac8-8eee-2f12ad46f3d3",
-  "version": 5
+  "version": 6
 }

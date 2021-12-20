@@ -50,6 +50,10 @@
       "description": "Specifies whether the process is hidden",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "image": {
@@ -178,5 +182,5 @@
     "current-directory"
   ],
   "uuid": "02aeef94-ac23-455c-addb-731757ceafb5",
-  "version": 9
+  "version": 10
 }

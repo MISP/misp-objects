@@ -4,12 +4,20 @@
       "description": "Flag value to determine if autologon is enabled for a user without entering the password.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "AutoRestartShell": {
       "description": "Value of the flag set to auto restart the shell if it crashes or shuts down automatically.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "CachedLogonCount": {
@@ -34,6 +42,10 @@
       "description": "Flag to determine if user login is enabled by pressing Ctrl+ALT+Delete.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "Legal-notice-caption": {
@@ -60,6 +72,10 @@
       "description": "Flag value- if the system is set to power down after it is shutdown.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "PreCreateKnownFolders": {
@@ -72,6 +88,10 @@
       "description": "Flag to check if the reboot was successful.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "SID": {
@@ -97,6 +117,10 @@
       "description": "Value of the flag set to enable shutdown without requiring a user to login.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "UserInit": {
@@ -109,6 +133,10 @@
       "description": "Flag value set to enable/disable logons to the system.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "user-profile-key-last-write-time": {
@@ -156,5 +184,5 @@
     "SID"
   ],
   "uuid": "df03d0e4-3e6b-4e56-951a-142eae4cad59",
-  "version": 1
+  "version": 2
 }

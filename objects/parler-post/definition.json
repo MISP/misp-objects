@@ -10,6 +10,10 @@
       "description": "Indicates if the post is an article.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     },
     "attachment": {
@@ -141,5 +145,5 @@
     "attachment"
   ],
   "uuid": "db85b789-df44-4522-8006-b611e52da5b2",
-  "version": 1
+  "version": 2
 }

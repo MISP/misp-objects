@@ -15,6 +15,10 @@
       "description": "Specifies whether remote connections are enabled or disabled on the system.",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 0
     },
     "last-write-time": {
@@ -85,5 +89,5 @@
     "computer-name"
   ],
   "uuid": "5ac85401-cbf1-4d05-a85e-1784546881e4",
-  "version": 2
+  "version": 3
 }
