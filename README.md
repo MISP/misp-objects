@@ -2,11 +2,11 @@
 
 ![Python application](https://github.com/MISP/misp-objects/workflows/Python%20application/badge.svg)
 
-MISP objects used in MISP (starting from 2.4.80) system and can be used by other information sharing tool. MISP objects
+MISP objects used in MISP system and can be used by other information sharing tool. MISP objects
 are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects
 and their associated attributes are based on real cyber security use-cases and existing practices in information sharing.
 
-Feel free to propose your own MISP objects to be included in MISP. The system is similar to the [misp-taxonomies](https://github.com/MISP/misp-taxonomies) where anyone can contribute their own objects to be included in MISP without modifying software.
+Feel free to propose your own MISP objects template to be included in MISP. The system is similar to the [misp-taxonomies](https://github.com/MISP/misp-taxonomies) where anyone can contribute their own objects to be included in MISP without modifying software.
 
 ## Format of MISP object template
 
@@ -86,7 +86,7 @@ Feel free to propose your own MISP objects to be included in MISP. The system is
 A MISP object is described in a simple JSON file containing the following element.
 
 * **name** is the name of the your object.
-* **meta-category** is the category where the object falls into. (file, network, financial, misc, internal)
+* **meta-category** is the category where the object falls into. (such as file, network, financial, misc, internal...)
 * **description** is a summary of the object description.
 * **version** is the version number as a decimal value.
 * **required** is an array containing the minimal required attributes to describe the object.
@@ -128,6 +128,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/coin-address](https://github.com/MISP/misp-objects/blob/main/objects/coin-address/definition.json) - An address used in a cryptocurrency.
 - [objects/command](https://github.com/MISP/misp-objects/blob/main/objects/command/definition.json) - Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.
 - [objects/command-line](https://github.com/MISP/misp-objects/blob/main/objects/command-line/definition.json) - Command line and options related to a specific command executed by a program, whether it is malicious or not.
+- [objects/concordia-mtmf-intrusion-set](https://github.com/MISP/misp-objects/blob/main/objects/concordia-mtmf-intrusion-set/definition.json) - Intrusion Set - Phase Description.
 - [objects/cookie](https://github.com/MISP/misp-objects/blob/main/objects/cookie/definition.json) - An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server. Typically, it's used to tell if two requests came from the same browser — keeping a user logged-in, for example. It remembers stateful information for the stateless HTTP protocol. (as defined by the Mozilla foundation.
 - [objects/cortex](https://github.com/MISP/misp-objects/blob/main/objects/cortex/definition.json) - Cortex object describing a complete cortex analysis. Observables would be attribute with a relationship from this object.
 - [objects/cortex-taxonomy](https://github.com/MISP/misp-objects/blob/main/objects/cortex-taxonomy/definition.json) - Cortex object describing an Cortex Taxonomy (or mini report).
@@ -337,6 +338,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/suricata](https://github.com/MISP/misp-objects/blob/main/objects/suricata/definition.json) - An object describing one or more Suricata rule(s) along with version and contextual information.
 - [objects/target-system](https://github.com/MISP/misp-objects/blob/main/objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromissed internal system.
 - [objects/telegram-account](https://github.com/MISP/misp-objects/blob/main/objects/telegram-account/definition.json) - Information related to a telegram account.
+- [objects/temporal-event](https://github.com/MISP/misp-objects/blob/main/objects/temporal-event/definition.json) - A temporal event consists of some temporal and spacial boundaries. Spacial boundaries can be physical, virtual or hybrid.
 - [objects/threatgrid-report](https://github.com/MISP/misp-objects/blob/main/objects/threatgrid-report/definition.json) - ThreatGrid report.
 - [objects/timecode](https://github.com/MISP/misp-objects/blob/main/objects/timecode/definition.json) - Timecode object to describe a start of video sequence (e.g. CCTV evidence) and the end of the video sequence.
 - [objects/timesketch-timeline](https://github.com/MISP/misp-objects/blob/main/objects/timesketch-timeline/definition.json) - A timesketch timeline object based on mandatory field in timesketch to describe a log entry.
@@ -358,7 +360,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/twitter-list](https://github.com/MISP/misp-objects/blob/main/objects/twitter-list/definition.json) - Twitter list.
 - [objects/twitter-post](https://github.com/MISP/misp-objects/blob/main/objects/twitter-post/definition.json) - Twitter post (tweet).
 - [objects/url](https://github.com/MISP/misp-objects/blob/main/objects/url/definition.json) - url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.
-- [objects/user-account](https://github.com/MISP/misp-objects/blob/main/objects/user-account/definition.json) - .
+- [objects/user-account](https://github.com/MISP/misp-objects/blob/main/objects/user-account/definition.json) - User-account object, defining aspects of user identification, authentication, privileges and other relevant data points.
 - [objects/vehicle](https://github.com/MISP/misp-objects/blob/main/objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
 - [objects/victim](https://github.com/MISP/misp-objects/blob/main/objects/victim/definition.json) - Victim object describes the target of an attack or abuse.
 - [objects/virustotal-graph](https://github.com/MISP/misp-objects/blob/main/objects/virustotal-graph/definition.json) - VirusTotal graph.
@@ -419,11 +421,11 @@ The MISP objects (JSON files) are dual-licensed under:
 or
 
 ~~~~
- Copyright (c) 2016-2020 Alexandre Dulaunoy - a@foo.be
- Copyright (c) 2016-2020 CIRCL - Computer Incident Response Center Luxembourg
- Copyright (c) 2016-2020 Andras Iklody
- Copyright (c) 2016-2020 Raphael Vinot
- Copyright (c) 2016-2020 Various contributors to MISP Project
+ Copyright (c) 2016-2021 Alexandre Dulaunoy - a@foo.be
+ Copyright (c) 2016-2021 CIRCL - Computer Incident Response Center Luxembourg
+ Copyright (c) 2016-2021 Andras Iklody
+ Copyright (c) 2016-2021 Raphael Vinot
+ Copyright (c) 2016-2021 Various contributors to MISP Project
 
  Redistribution and use in source and binary forms, with or without modification,
  are permitted provided that the following conditions are met:
@@ -453,9 +455,9 @@ If a specific author of a taxonomy wants to license it under a different license
 
 ~~~~
 
-Copyright (C) 2016-2020 Andras Iklody
-Copyright (C) 2016-2020 Alexandre Dulaunoy
-Copyright (C) 2016-2020 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2021 Andras Iklody
+Copyright (C) 2016-2021 Alexandre Dulaunoy
+Copyright (C) 2016-2021 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
