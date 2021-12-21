@@ -32,11 +32,11 @@
   },
   "description": "A temporal event consists of some temporal and spacial boundaries. Spacial boundaries can be physical, virtual or hybrid.",
   "meta-category": "misc",
-  "name": "report",
+  "name": "temporal-event",
   "requiredOneOf": [
     "summary",
     "link"
   ],
   "uuid": "d79f2d25-2937-44d3-a6d4-2f36f2505448",
-  "version": 1
+  "version": 2
 }
