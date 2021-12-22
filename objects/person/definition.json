@@ -115,6 +115,12 @@
       "multiple": true,
       "ui-priority": 10
     },
+    "occupation": {
+      "description": "Work or occupation of the person or identity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
     "ofac-identification-number": {
       "description": "ofac-identification Number",
       "misp-attribute": "text",
@@ -209,5 +215,5 @@
     "alias"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 13
+  "version": 14
 }
