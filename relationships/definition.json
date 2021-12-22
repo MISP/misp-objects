@@ -1228,7 +1228,14 @@
         "misp"
       ],
       "name": "found-in"
+    },
+    {
+      "description": "The referenced source object drives the target described (often a vehicule).",
+      "format": [
+        "misp"
+      ],
+      "name": "drives"
     }
   ],
-  "version": 27
+  "version": 28
 }
