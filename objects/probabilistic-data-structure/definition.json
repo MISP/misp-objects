@@ -40,9 +40,21 @@
         "Cuckoo filter",
         "Quotient filter",
         "Xor filter",
-        "Taffy filter"
+        "Taffy filter",
+        "HyperLogLog filter",
+        "Count–min sketch filter"
       ],
       "ui-priority": 10
+    },
+    "updatable": {
+      "description": "Is the probabilistic data structure updatable?",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "False",
+        "True"
+      ],
+      "ui-priority": 1
     },
     "used-capacity": {
       "description": "The used capacity (and cardinality) of the set represented in this probabilistic data structure.",
@@ -66,5 +78,5 @@
     "total-capacity"
   ],
   "uuid": "026b939b-d737-4a88-8222-03b3d55df303",
-  "version": 1
+  "version": 2
 }
