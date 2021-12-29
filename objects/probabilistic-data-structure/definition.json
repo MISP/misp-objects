@@ -1,0 +1,70 @@
+{
+  "attributes": {
+    "link": {
+      "description": "Source of the probabilistic data structure.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 8
+    },
+    "probability": {
+      "description": "The false positive rate of the probabilistic data structure.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "sane_default": [
+        "0.1",
+        "0.01",
+        "0.001",
+        "0.0001"
+      ],
+      "ui-priority": 9
+    },
+    "total-bits": {
+      "description": "The number of bits used by this probabilistic data structure.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "total-capacity": {
+      "description": "The total capacity of the total set represented in this probabilistic data structure.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Type of the probabilistic data structure.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Bloom filter",
+        "Ribbon filter",
+        "Cuckoo filter",
+        "Quotient filter",
+        "Xor filter",
+        "Taffy filter"
+      ],
+      "ui-priority": 10
+    },
+    "used-capacity": {
+      "description": "The used capacity (and cardinality) of the set represented in this probabilistic data structure.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "vendor-implementation-ref": {
+      "description": "Details about the implementation of the probabilistic data structure.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 0
+    }
+  },
+  "description": "Probabilistic data structure object describe a space-efficient data structure such as Bloom filter or similar structure.",
+  "meta-category": "file",
+  "name": "probabilistic-data-structure",
+  "requiredOneOf": [
+    "type",
+    "used-capacity",
+    "total-capacity"
+  ],
+  "uuid": "026b939b-d737-4a88-8222-03b3d55df303",
+  "version": 1
+}
