@@ -477,7 +477,7 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "A legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective",
   "meta-category": "followthemoney",
   "name": "ftm-Company",
   "required": [
