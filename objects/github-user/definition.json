@@ -32,6 +32,11 @@
       "multiple": true,
       "ui-priority": 80
     },
+    "id": {
+      "description": "User id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "link": {
       "description": "Original Link to the GitHub account.",
       "misp-attribute": "link",
