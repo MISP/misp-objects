@@ -15,6 +15,7 @@
         "BlackBerry Messenger",
         "TeamSpeak",
         "TorChat",
+        "Tox",
         "RetroShare",
         "Slack"
       ],
@@ -76,5 +77,5 @@
     "attachment"
   ],
   "uuid": "e26becca-2149-4bc0-b3fb-7090d43af28f",
-  "version": 1
+  "version": 2
 }

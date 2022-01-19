@@ -15,7 +15,8 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
-        "stix 2.0"
+        "stix 2.0",
+        "stix 2.1"
       ],
       "ui-priority": 0
     }
@@ -27,5 +28,5 @@
     "stix2-pattern"
   ],
   "uuid": "0c5bd072-7c3e-4d45-86f7-a8104d9143b9",
-  "version": 3
+  "version": 4
 }
