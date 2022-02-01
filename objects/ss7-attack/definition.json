@@ -171,6 +171,7 @@
         "mt_forwardSM - 44",
         "sendRoutingInfoForSM - 45",
         "mo_forwardSM - 46",
+        "forwardSM - 46",
         "reportSmDeliveryStatus - 47",
         "noteSubscriberPresent - 48",
         "alertServiceCentreWithoutResult - 49",
