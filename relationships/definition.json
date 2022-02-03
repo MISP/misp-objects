@@ -1235,7 +1235,63 @@
         "misp"
       ],
       "name": "drives"
+    },
+    {
+      "description": "The referenced source object is a friend of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "friend-of"
+    },
+    {
+      "description": "The referenced source object is an acquaintance of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "acquaintance-of"
+    },
+    {
+      "description": "The referenced source object is a sibling of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "sibling-of"
+    },
+    {
+      "description": "The referenced source object is a grandchild of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "grandchild-of"
+    },
+    {
+      "description": "The referenced source object is a spouse of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "spouse-of"
+    },
+    {
+      "description": "The referenced source object is an ennemy of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "ennemy-of"
+    },
+    {
+      "description": "The referenced source object is an antagonist of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "antagonist-of"
+    },
+    {
+      "description": "The referenced source object is an ambivalent of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "ambivalient-of"
     }
   ],
-  "version": 28
+  "version": 29
 }
