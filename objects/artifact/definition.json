@@ -1,0 +1,45 @@
+{
+  "attributes": {
+    "decryption_key": {
+      "description": "Specifies the decryption key for the encrypted binary data (either via payload_bin or url). For example, this may be useful in cases of sharing malware samples, which are often encoded in an encrypted archive.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "encryption_algorithm": {
+      "description": "If the artifact is encrypted, specifies the type of encryption algorithm the binary data  (either via payload_bin or url) is encoded in.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hashes": {
+      "description": "Specifies a dictionary of hashes for the contents of the url or the payload_bin.  This property MUST be present when the url property is present. (should be file with relationships?)",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "mime_type": {
+      "description": "Whenever feasible, this value SHOULD be one of the values defined in the Template column in the IANA media type registry [Media Types]. Maintaining a comprehensive universal catalog of all extant file types is obviously not possible. When specifying a MIME Type not included in the IANA registry, implementers should use their best judgement so as to facilitate interoperability.",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "payload_bin": {
+      "description": "Specifies the binary data contained in the artifact as a base64-encoded string.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "url": {
+      "description": "The value of this property MUST be a valid URL that resolves to the unencoded content.",
+      "misp-attribute": "url",
+      "ui-priority": 0
+    }
+  },
+  "description": "The Artifact object permits capturing an array of bytes (8-bits), as a base64-encoded string, or linking to a file-like payload. from STIX 2.1 (6.1)",
+  "meta-category": "file",
+  "name": "artifact",
+  "requiredOneOf": [
+    "payload_bin",
+    "url"
+  ],
+  "uuid": "0a46df3a-bd9b-472c-a1e7-6aede7094483",
+  "version": 1
+}

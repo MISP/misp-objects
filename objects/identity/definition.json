@@ -1,0 +1,90 @@
+{
+  "attributes": {
+    "contact_information": {
+      "description": "The contact information (e-mail, phone number, etc.) for this Identity. No format for this information is currently defined by this specification.",
+      "misp-attribute": "text",
+      "ui-priority": 18
+    },
+    "description": {
+      "description": "A description that provides more details and context about the Identity, potentially including its purpose and its key characteristics.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "identity_class": {
+      "description": "The type of entity that this Identity describes, e.g., an individual or organization.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "individual",
+        "group",
+        "system",
+        "organization",
+        "class",
+        "unknown"
+      ],
+      "ui-priority": 16
+    },
+    "name": {
+      "description": "The name of this Identity. When referring to a specific entity (e.g., an individual or organization), this property SHOULD contain the canonical name of the specific entity.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "roles": {
+      "description": "The list of roles that this Identity performs (e.g., CEO, Domain Administrators, Doctors, Hospital, or Retailer).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 15
+    },
+    "sectors": {
+      "description": "Description of the organization",
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "agriculture",
+        "aerospace",
+        "automotive",
+        "chemical",
+        "commercial",
+        "communication",
+        "construction",
+        "defense",
+        "education",
+        "energy",
+        "entertainment",
+        "financial-services",
+        "government",
+        "government emergency-services",
+        "government government-local",
+        "government-national",
+        "government-public-services",
+        "government-regional",
+        "healthcare",
+        "hospitality-leasure",
+        "infrastructure",
+        "infrastructure dams",
+        "infrastructure nuclear",
+        "infrastructure water",
+        "insurance",
+        "manufacturing",
+        "mining",
+        "non-profit",
+        "pharmaceuticals",
+        "retail",
+        "technology",
+        "telecommunication",
+        "transportation",
+        "utilities"
+      ],
+      "ui-priority": 17
+    }
+  },
+  "description": "Identities can represent actual individuals, organizations, or groups (e.g., ACME, Inc.) as well as classes of individuals, organizations, systems or groups (e.g., the finance sector).  The Identity SDO can capture basic identifying information, contact information, and the sectors that the Identity belongs to. Identity is used in STIX to represent, among other things, targets of attacks, information sources, object creators, and threat actor identities. (ref. STIX 2.1 - 4.5)",
+  "meta-category": "misc",
+  "name": "identity",
+  "requiredOneOf": [
+    "name"
+  ],
+  "uuid": "ae85b960-b507-4de2-a32c-9cfb8f25f990",
+  "version": 1
+}
