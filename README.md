@@ -146,7 +146,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/dark-pattern-item](https://github.com/MISP/misp-objects/blob/main/objects/dark-pattern-item/definition.json) - An Item whose User Interface implements a dark pattern.
 - [objects/ddos](https://github.com/MISP/misp-objects/blob/main/objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy.
 - [objects/device](https://github.com/MISP/misp-objects/blob/main/objects/device/definition.json) - An object to define a device.
-- [objects/diameter-attack](https://github.com/MISP/misp-objects/blob/main/objects/diameter-attack/definition.json) - Attack as seen on diameter authentication against a GSM, UMTS or LTE network.
+- [objects/diameter-attack](https://github.com/MISP/misp-objects/blob/main/objects/diameter-attack/definition.json) - Attack as seen on the diameter signaling protocol supporting LTE networks.
 - [objects/dkim](https://github.com/MISP/misp-objects/blob/main/objects/dkim/definition.json) - DomainKeys Identified Mail - DKIM.
 - [objects/dns-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
 - [objects/domain-crawled](https://github.com/MISP/misp-objects/blob/main/objects/domain-crawled/definition.json) - A domain crawled over time.
@@ -224,7 +224,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
 - [objects/github-user](https://github.com/MISP/misp-objects/blob/main/objects/github-user/definition.json) - GitHub user.
 - [objects/gitlab-user](https://github.com/MISP/misp-objects/blob/main/objects/gitlab-user/definition.json) - GitLab user. Gitlab.com user or self-hosted GitLab instance.
-- [objects/gtp-attack](https://github.com/MISP/misp-objects/blob/main/objects/gtp-attack/definition.json) - GTP attack object as seen on a GSM, UMTS or LTE network.
+- [objects/gtp-attack](https://github.com/MISP/misp-objects/blob/main/objects/gtp-attack/definition.json) - GTP attack object as attack as seen on the GTP signaling protocol supporting GPRS/LTE networks.
 - [objects/hashlookup](https://github.com/MISP/misp-objects/blob/main/objects/hashlookup/definition.json) - hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup.
 - [objects/http-request](https://github.com/MISP/misp-objects/blob/main/objects/http-request/definition.json) - A single HTTP request header.
 - [objects/ilr-impact](https://github.com/MISP/misp-objects/blob/main/objects/ilr-impact/definition.json) - Institut Luxembourgeois de Regulation - Impact.
@@ -331,7 +331,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/shortened-link](https://github.com/MISP/misp-objects/blob/main/objects/shortened-link/definition.json) - Shortened link and its redirect target.
 - [objects/social-media-group](https://github.com/MISP/misp-objects/blob/main/objects/social-media-group/definition.json) - Social media group object template describing a public or private group or channel.
 - [objects/splunk](https://github.com/MISP/misp-objects/blob/main/objects/splunk/definition.json) - Splunk / Splunk ES object.
-- [objects/ss7-attack](https://github.com/MISP/misp-objects/blob/main/objects/ss7-attack/definition.json) - SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.
+- [objects/ss7-attack](https://github.com/MISP/misp-objects/blob/main/objects/ss7-attack/definition.json) - SS7 object of an attack as seen on the SS7 signaling protocol supporting GSM/GPRS/UMTS networks.
 - [objects/ssh-authorized-keys](https://github.com/MISP/misp-objects/blob/main/objects/ssh-authorized-keys/definition.json) - An object to store ssh authorized keys file.
 - [objects/stix2-pattern](https://github.com/MISP/misp-objects/blob/main/objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
 - [objects/submarine](https://github.com/MISP/misp-objects/blob/main/objects/submarine/definition.json) - Submarine description.
