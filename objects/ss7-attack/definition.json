@@ -46,7 +46,7 @@
       "description": "MAP application context in OID format.",
       "disable_correlation": true,
       "misp-attribute": "text",
-       "sane_default": [
+      "sane_default": [
         "4.0.0.1.0.1. - networkLocUp",
         "4.0.0.1.0.2. - locationCancel",
         "4.0.0.1.0.3. - roamingNbEnquiry",
