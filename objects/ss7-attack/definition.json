@@ -321,12 +321,12 @@
       "ui-priority": 0
     }
   },
-  "description": "SS7 object of an attack seen on a GSM, UMTS or LTE network via SS7 logging.",
+  "description": "SS7 object of an attack as seen on the SS7 signaling protocol supporting GSM/GPRS/UMTS networks.",
   "meta-category": "network",
   "name": "ss7-attack",
   "requiredOneOf": [
     "text"
   ],
   "uuid": "f3493d8b-a7ab-48d0-a775-046c4d64d782",
-  "version": 3
+  "version": 4
 }

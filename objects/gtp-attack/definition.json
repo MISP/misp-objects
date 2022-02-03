@@ -88,12 +88,12 @@
       "ui-priority": 0
     }
   },
-  "description": "GTP attack object as seen on a GSM, UMTS or LTE network",
+  "description": "GTP attack object as attack as seen on the GTP signaling protocol supporting GPRS/LTE networks.",
   "meta-category": "network",
   "name": "gtp-attack",
   "requiredOneOf": [
     "text"
   ],
   "uuid": "6b3c48d2-0ca6-4608-9c36-455105439145",
-  "version": 3
+  "version": 4
 }
