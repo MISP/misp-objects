@@ -16,7 +16,11 @@
         "TorChat",
         "Tox",
         "RetroShare",
-        "Slack"
+        "Slack",
+        "Wire",
+        "Threema",
+        "Discord",
+        "Mumble"
       ],
       "ui-priority": 1
     },
@@ -109,5 +113,5 @@
     "from-user"
   ],
   "uuid": "5fa51a24-f40f-4696-a77e-d31e26bab5fc",
-  "version": 2
+  "version": 3
 }
