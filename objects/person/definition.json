@@ -79,7 +79,7 @@
       "description": "The IM application used by this person.",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "multiple": "true",
+      "multiple": true,
       "sane_default": [
         "WhatsApp",
         "Google Hangouts",
