@@ -1,0 +1,219 @@
+{
+  "attributes": {
+    "china_free_email": {
+      "description": "True if email is a free China email, i.e 163.com.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "comment": {
+      "description": "Field for comments or correlating text",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "dirty_words_domain": {
+      "description": "True if domain contains dirty/bad words.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "dirty_words_username": {
+      "description": "True if username contains dirty/bad words.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "disposable": {
+      "description": "True if email is disposable, i.e yopmail.com.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "dmarc_configured": {
+      "description": "True if domain has DMARC records configured.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "dmarc_enforced": {
+      "description": "True if domain is configured for DMARC and set to an enforcement policy.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "domain": {
+      "description": "Email domain.",
+      "disable_correlation": true,
+      "misp-attribute": "domain",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "domain_popular": {
+      "description": "True if domain is a known popular domain.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "educational_domain": {
+      "description": "True if domain is an educational domain, i.e .edu",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "email": {
+      "categories": [
+        "Attribution"
+      ],
+      "description": "The email address that was queried.",
+      "misp-attribute": "email",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "free_email": {
+      "description": "True if email is a free email, i.e gmail.com.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "government_domain": {
+      "description": "True if domain is a government domain, i.e .gov",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "has_a_records": {
+      "description": "True if domain has A records configured.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "has_mx_records": {
+      "description": "True if domain has MX records configured.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "has_spf_records": {
+      "description": "True if domain has SPF records configured.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is_spoofable": {
+      "description": "True if domain does not have SPF records or if ~all is not configured.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "police_domain": {
+      "description": "True if domain is a police domain (such as *polizei*, *police*, etc).",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "risky_tld": {
+      "description": "True if domain TLD is risky, i.e .top or .pro.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "role_address": {
+      "description": "True if email is a role address, i.e admin@website.com",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "russian_free_email": {
+      "description": "True if email is a free Russian email, i.e mail.ru.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "score": {
+      "description": "A number between 0 (bad) and 100 (good).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "should_block": {
+      "description": "True if the score is bad (<= 70) and thus it should be blocked.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "suspicious_domain": {
+      "description": "True if domain is suspicious, i.e known spam or parked.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "suspicious_email": {
+      "description": "True if email is considered suspicious.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "suspicious_username": {
+      "description": "True if username is suspicious, i.e only numbers.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "Username part of the email address (email prefix)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "valid_format": {
+      "description": "True if email has a valid format.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "valid_tld": {
+      "description": "True if domain TLD is valid, i.e .com or .co.uk",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    }
+  },
+  "description": "Apivoid email verification API result. Reference: https://www.apivoid.com/api/email-verify/",
+  "meta-category": "misc",
+  "name": "apivoid-email-verification",
+  "required": [
+    "email"
+  ],
+  "requiredOneOf": [
+    "valid_format",
+    "username",
+    "role_address",
+    "suspicious_username",
+    "dirty_words_username",
+    "suspicious_email",
+    "domain",
+    "valid_tld",
+    "disposable",
+    "has_a_records",
+    "has_mx_records",
+    "has_spf_records",
+    "is_spoofable",
+    "dmarc_configured",
+    "dmarc_enforced",
+    "free_email",
+    "russian_free_email",
+    "china_free_email",
+    "suspicious_domain",
+    "dirty_words_domain",
+    "domain_popular",
+    "risky_tld",
+    "police_domain",
+    "government_domain",
+    "educational_domain",
+    "should_block",
+    "score"
+  ],
+  "uuid": "289492ab-4b74-49ec-add7-cd9b541f2245",
+  "version": 1
+}
