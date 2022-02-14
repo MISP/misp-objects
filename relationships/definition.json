@@ -455,10 +455,33 @@
     {
       "description": "This relationship describes an object which is used by another object.",
       "format": [
-        "cert-eu"
+        "cert-eu",
+        "stix-2.1"
       ],
       "name": "used-by",
       "opposite": "uses"
+    },
+    {
+      "description": "This relationship describes an object which hosts another object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "hosts",
+      "opposite": "hosted-by"
+    },
+    {
+      "description": "This relationship describes an object which consists of one or more object(s).",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "consists"
+    },
+    {
+      "description": "This relationship describes an object which delivers to one or more object(s).",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "delivers"
     },
     {
       "description": "This relationship describes an object which is affiliated with another object.",
@@ -1293,5 +1316,5 @@
       "name": "ambivalient-of"
     }
   ],
-  "version": 29
+  "version": 30
 }
