@@ -1,0 +1,62 @@
+{
+  "attributes": {
+    "alias": {
+      "description": "Alternative names used to identify this Infrastructure.",
+      "misp-attribute": "text",
+      "ui-priority": 7
+    },
+    "description": {
+      "description": "A description that provides more details and context about the Infrastructure, potentially including its purpose, how it is being used, how it relates to other intelligence activities captured in related objects, and its key characteristics.",
+      "misp-attribute": "text",
+      "ui-priority": 9
+    },
+    "infrastructure_type": {
+      "description": "The type of infrastructure being described.  The values for this property SHOULD come from the infrastructure-type-ov open vocabulary.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "amplification",
+        "anonymization",
+        "botnet",
+        "command-and-control",
+        "exfiltration",
+        "hosting-malware",
+        "hosting-target-lists",
+        "phishing",
+        "reconnaissance",
+        "staging",
+        "unknown"
+      ],
+      "ui-priority": 8
+    },
+    "kill_chain_phases": {
+      "description": "The list of Kill Chain Phases for which this Infrastructure is used.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "(1) Reconnaissance",
+        "(2) Weaponization",
+        "(3) Deliver",
+        "(4) Exploitation",
+        "(5) Installation",
+        "(6) Command and Control",
+        "(7) Actions on objectives"
+      ],
+      "ui-priority": 6
+    },
+    "name": {
+      "description": "A name or characterizing text used to identify the Infrastructure.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    }
+  },
+  "description": "The Infrastructure object represents a type of TTP and describes any systems, software services and any associated physical or virtual resources intended to support some purpose (e.g., C2 servers used as part of an attack, device or server that are part of defense, database servers targeted by an attack, etc.). While elements of an attack can be represented by other objects, the Infrastructure object represents a named group of related data that constitutes the infrastructure. STIX 2.1 - 4.8",
+  "meta-category": "misc",
+  "name": "infrastructure",
+  "requiredOneOf": [
+    "name"
+  ],
+  "uuid": "39d64bd7-1264-4b2e-bdd1-31d1c4b38e6c",
+  "version": 1
+}
