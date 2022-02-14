@@ -470,6 +470,14 @@
       "opposite": "hosted-by"
     },
     {
+      "description": "This relatiobship describes an object hosted by another object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "hosted-by",
+      "opposite": "hosts"
+    },
+    {
       "description": "This relationship describes an object which consists of one or more object(s).",
       "format": [
         "stix-2.1"
@@ -1316,5 +1324,5 @@
       "name": "ambivalient-of"
     }
   ],
-  "version": 30
+  "version": 31
 }
