@@ -1322,7 +1322,14 @@
         "foaf"
       ],
       "name": "ambivalient-of"
+    },
+    {
+      "description": "The referenced source object is a translation of the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-a-translation-of"
     }
   ],
-  "version": 31
+  "version": 32
 }
