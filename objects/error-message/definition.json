@@ -1,0 +1,29 @@
+{
+  "attributes": {
+    "message": {
+      "description": "Content of the error message.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "source": {
+      "description": "Source of the error message.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "misp-stix",
+        "lief",
+        "other"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "An error message which can be related to the processing of data such as import, export scripts from the original MISP instance.",
+  "meta-category": "misc",
+  "name": "error-message",
+  "requiredOneOf": [
+    "source",
+    "message"
+  ],
+  "uuid": "40e81601-8205-41af-8e67-33795291a448",
+  "version": 1
+}
