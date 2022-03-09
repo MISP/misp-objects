@@ -1,5 +1,11 @@
 {
   "attributes": {
+    "backscatter-threshold": {
+      "description": "The minimum amount of backscatter received in 5 minutes / day. This field is only used when the capture origin is indirect network capture such as backscatter.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "capture-origin": {
       "description": "Origin of the (D)DoS evidences",
       "disable_correlation": true,
@@ -153,5 +159,5 @@
     "domain-dst"
   ],
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
-  "version": 8
+  "version": 9
 }
