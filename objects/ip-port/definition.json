@@ -1,5 +1,26 @@
 {
   "attributes": {
+    "AS": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Autonomous system",
+      "disable_correlation": true,
+      "misp-attribute": "AS",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "country-code": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Country Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "domain": {
       "categories": [
         "Network activity",
@@ -73,6 +94,16 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "protocol": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Protocol",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "src-port": {
       "categories": [
         "Network activity",
@@ -83,37 +114,6 @@
       "misp-attribute": "port",
       "multiple": true,
       "ui-priority": 0
-    },
-    "protocol": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "Protocol",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0      
-    },
-    "AS": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "Autonomous system",
-      "disable_correlation": true,
-      "misp-attribute": "AS",
-      "multiple": true,
-      "ui-priority": 0      
-    },
-    "country-code": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
-      "description": "Country Code",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0      
     },
     "text": {
       "description": "Description of the tuple",
