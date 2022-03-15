@@ -17,27 +17,30 @@
       "ui-priority": 9
     },
     "cheat-type": {
-      "description": "Select the type of cheat.",
+      "description": "Select a type of cheat.",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 11,
       "values_list": [
-        "Aim bot",
+        "Aimbot",
+        "Artificial lag",
         "Auto farmer",
-        "Boosting",
         "DDoS",
         "Disconnecting",
         "Exploit",
         "Fly",
         "Force field",
+        "Full brightness",
         "Ghosting",
         "God mode",
         "Invicibility",
         "Macros",
+        "No clip",
+        "No fog",
         "RapidFire",
         "Scripting",
+        "Show Hitboxes",
         "Wallhack",
-        "Win trading",
         "Others"
       ]
     },
@@ -59,9 +62,9 @@
       "ui-priority": 1
     },
     "ig-cheat-behaviour": {
-      "description": "Describe the in-game behaviour of the cheat (e.g. You selected 'Aim Bot', here you can add details like 'Activate by pressing F7, Deactivate by pressing F8. Not detected be Easy Anti-Cheat.'",
+      "description": "Describe the in-game behaviour of the cheat (e.g. You selected 'Aim Bot', here you can add details like 'Activate by pressing F7, Deactivate by pressing F8. Not detected be Easy Anti-Cheat.')",
       "disable_correlation": true,
-      "misp-attribute": "text",
+      "misp-attribute": "comment",
       "ui-priority": 10
     },
     "implementation": {
@@ -93,6 +96,7 @@
       "description": "Cheatware price, 0 if free.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 6
     },
     "webpage": {
@@ -109,5 +113,5 @@
     "cheat-type"
   ],
   "uuid": "ab31f87b-f8ac-4dfc-b610-359302b4e86b",
-  "version": 7
+  "version": 9
 }
