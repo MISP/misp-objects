@@ -70,6 +70,12 @@
         "Unknown"
       ]
     },
+    "handle": {
+      "description": "Handle used by the user in application.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 11
+    },
     "identity-card-number": {
       "description": "The identity card number of a natural person.",
       "misp-attribute": "identity-card-number",
@@ -237,8 +243,9 @@
     "first-name",
     "last-name",
     "full-name",
-    "alias"
+    "alias",
+    "handle"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 16
+  "version": 17
 }
