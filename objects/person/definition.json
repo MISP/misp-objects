@@ -102,7 +102,9 @@
         "Wire",
         "Threema",
         "Discord",
-        "Mumble"
+        "Mumble",
+        "Jabber",
+        "Twitter"
       ],
       "ui-priority": 10
     },
@@ -247,5 +249,5 @@
     "handle"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 17
+  "version": 18
 }
