@@ -276,6 +276,27 @@
     "SccpCdGT": {
       "description": "Signaling Connection Control Part (SCCP) CdGT - Phone number.",
       "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "SccpCdGT-Country": {
+      "description": "Country in which SCCP CDGT is registered.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SccpCdGT-CountryISO2": {
+      "description": "Code ISO 3166-1 alpha-2 from which the SCCP CDGT is allocated.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SccpCdGT-OperatorName": {
+      "description": "Operator Name under which the SCCP CDGT is registered.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SccpCdGT-TADIG": {
+      "description": "TADIG under which the SCCP CDGT is registered.",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "SccpCdPC": {
@@ -293,6 +314,26 @@
       "description": "Signaling Connection Control Part (SCCP) CgGT - Phone number.",
       "misp-attribute": "text",
       "multiple": true,
+      "ui-priority": 0
+    },
+    "SccpCgGT-Country": {
+      "description": "Country in which SCCP CGGT is registered.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SccpCgGT-CountryISO2": {
+      "description": "Allocated Code ISO 3166-1 alpha-2 for the SCCP CGGT.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SccpCgGT-OperatorName": {
+      "description": "Operator Name under which the SCCP CGGT is registered.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "SccpCgGT-TADIG": {
+      "description": "TADIG under which the SCCP CGGT is registered.",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "SccpCgPC": {
