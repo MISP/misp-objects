@@ -276,6 +276,7 @@
     "SccpCdGT": {
       "description": "Signaling Connection Control Part (SCCP) CdGT - Phone number.",
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0
     },
     "SccpCdGT-Country": {
@@ -318,7 +319,6 @@
     "SccpCgGT-Country": {
       "description": "Country in which SCCP CGGT is registered.",
       "misp-attribute": "text",
-      "multiple": true,
       "ui-priority": 0
     },
     "SccpCgGT-CountryISO2": {
@@ -334,7 +334,6 @@
     "SccpCgGT-TADIG": {
       "description": "TADIG under which the SCCP CGGT is registered.",
       "misp-attribute": "text",
-      "multiple": true,
       "ui-priority": 0
     },
     "SccpCgPC": {
