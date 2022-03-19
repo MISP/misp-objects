@@ -1,0 +1,108 @@
+{
+    "attributes": {
+      "tattoo-body-part": {
+        "description": "Describe the body part where the tattoo is located.",
+        "misp-attribute": "text",
+        "ui-priority": 4,
+        "values_list": [
+            "head",
+            "forehead",
+            "face",
+            "ear",
+            "eye",
+            "mouth/lips",
+            "neck",
+            "shoulder",
+            "chest",
+            "elbow",
+            "arm",
+            "forearm",
+            "hand",
+            "finger",
+            "thigh",
+            "knee",
+            "calf",
+            "heel",
+            "foot",
+            "toe"
+        ]
+      },
+      "tattoo-description": {
+        "description": "Description of the tattoo, what's its composition ?",
+        "disable_correlation": true,
+        "misp-attribute": "text",
+        "ui-priority": 0
+      },
+      "tattoo-style": {
+        "description": "Select the style of the tattoo",
+        "multiple": true,
+        "misp-attribute": "text",
+        "ui-priority": 1,
+        "values_list": [
+            "traditional",
+            "realism",
+            "watercolor",
+            "tribal",
+            "new school",
+            "japanese",
+            "blackwork",
+            "lettering",
+            "dotwork",
+            "abstract",
+            "celtic",
+            "geometric",
+            "mandala",
+            "minimalist",
+            "neo-traditional",
+            "portrait",
+            "sketch"
+        ]
+      },
+      "tattoo-color": {
+        "description": "Select the colors of the tattoo",
+        "multiple": true,
+        "misp-attribute": "text",
+        "ui-priority": 1,
+        "values_list": [
+            "black",
+            "white",
+            "red",
+            "green",
+            "blue",
+            "cyan",
+            "orange",
+            "violet",
+            "pink",
+            "yellow",
+            "brown",
+            "grey"
+        ]
+      },
+      "tattoo-picture": {
+        "description": "Picture of the tattoo",
+        "misp-attribute": "attachment",
+        "multiple": true,
+        "ui-priority": 0
+      },
+      "tattoo-size": {
+        "description": "Size of the tattoo",
+        "misp-attribute": "text",
+        "multiple": false,
+        "ui-priority": 0,
+        "values_list": [
+            "tiny",
+            "small",
+            "medium",
+            "large"
+        ]
+      }
+    },
+    "description": "Describes a tattoo on the body of a natural person",
+    "meta-category": "misc",
+    "name": "tattoo",
+    "required": [
+      "tattoo-body-part"
+    ],
+    "uuid": "344111fb-79a3-421d-8d59-cc2b054b0478",
+    "version": 1
+  }
