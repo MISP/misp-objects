@@ -28,13 +28,13 @@
         ]
       },
       "tattoo-description": {
-        "description": "Description of the tattoo, what's its composition ?",
+        "description": "Description of the tattoo,its composition.",
         "disable_correlation": true,
         "misp-attribute": "text",
         "ui-priority": 0
       },
       "tattoo-style": {
-        "description": "Select the style of the tattoo",
+        "description": "Style of the tattoo",
         "multiple": true,
         "misp-attribute": "text",
         "ui-priority": 1,
@@ -59,7 +59,7 @@
         ]
       },
       "tattoo-color": {
-        "description": "Select the colors of the tattoo",
+        "description": "Colors of the tattoo",
         "multiple": true,
         "misp-attribute": "text",
         "ui-priority": 1,
@@ -97,7 +97,7 @@
         ]
       }
     },
-    "description": "Describes a tattoo on the body of a natural person",
+    "description": "Describes tattoos on a natural person's body",
     "meta-category": "misc",
     "name": "tattoo",
     "required": [

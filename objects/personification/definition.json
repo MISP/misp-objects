@@ -1,0 +1,235 @@
+{
+  "attributes": {
+    "portrait": {
+      "description": "Portrait of the person.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "age-range": {
+      "description": "Age range that the person appears to be",
+      "misp-attribute": "int",
+      "ui-priority": 0
+    },
+    "weight": {
+      "description": "Weight of a person in Kg.",
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "height": {
+      "description": "Height of a person in cm.",
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "body-type": {
+      "description": "Body type of a person.",
+      "disable_correlation": true,
+      "misp-attribute": "body-type",
+      "ui-priority": 0,
+      "values_list": [
+        "Slim",
+        "Tone",
+        "Muscular",
+        "Stocky",
+        "Large",
+        "Unknown"
+      ]
+    },
+    "shoe-size": {
+      "description": "Shoe size of a person.",
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "US",
+        "UK",
+        "EU",
+        "Asia",
+        "CM",
+        "Inches"
+      ]
+    },
+    "color-of-eyes": {
+      "description": "Description of a person’s colour of eyes.",
+      "misp-attribute": "color",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Amber",
+        "Blue",
+        "Brown",
+        "Gray",
+        "Green",
+        "Hazel",
+        "Red",
+        "Unknown"
+      ]
+    },
+    "shape-of-eyes": {
+      "description": "Description of a person’s eye shape.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Monolids",
+        "Hooded",
+        "Upturned",
+        "Downturned",
+        "Round",
+        "Almond",
+        "Unknown"
+      ]
+    },  
+    "skin-complexion": {
+      "description": "Skin tone and complexion of a person. Type I: Extremely fair skin, always burns, never tans. Type II: Fair skin, always burns, sometimes tans.Dry: Medium skin, sometimes burns, always tans.Type IV: Olive skin, rarely burns, always tans. Type V: Moderately pigmented brown skin, never burns, always tans. Type VI: Markedly pigmented black skin, never burns, always tans. ",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Type I",
+        "Type II",
+        "Type III",
+        "Type IV",
+        "Type V",
+        "Type VI",
+        "Unknown"
+      ]
+    },
+    "skin-charateristics": {
+      "description": "Traits or features of a person's skin",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Normal",
+        "Irritated",
+        "Dry",
+        "Oily",
+        "Scaly",
+        "Red spots",
+        "Skin moles"
+      ]
+    },
+    "other-facial-features": {
+      "description": "Description of other facial features such as nose, cheeks, lips etc...",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "hair-color": {
+      "description": "Description of a person’s colour of hair.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Black",
+        "Brown",
+        "Auburn",
+        "Red",
+        "Blond",
+        "Gray",
+        "White",
+        "Blue",
+        "Pink",
+        "Green",
+        "Violet",
+        "Unknown"
+      ]
+    },
+    "hair-characteristics": {
+      "description": "Description of the characteristics of someones hairs.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Straight",
+        "Wavy",
+        "Curly",
+        "Coily",
+        "Unknown"
+      ]
+    },
+    "haircut": {
+      "description": "Description of the characteristics of someones hairs.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Crew Cut",
+        "Shaved",
+        "Bald",
+        "Long",
+        "Spiky",
+        "Dreadlocks",
+        "Cornrow",
+        "Bob",
+        "Layered",
+        "Flat-top",
+        "Chignon",
+        "Bun",
+        "French Twist",
+        "Medium",
+        "Braid",
+        "Pigtails",
+        "Ponytail",
+        "Unknown"
+      ]
+    },
+    "beard": {
+      "description": "Description of the characteristics of someones beard.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Beardless",
+        "Stubble Short",
+        "Stuble Medium",
+        "Stuble Long",
+        "Full Beard",
+        "French Fork",
+        "Ducktail",
+        "Goatee",
+        "Imperial",
+        "Van Dyke",
+        "Anchor",
+        "Balbo",
+        "Mutton Chops",
+        "Verdi",
+        "Garibaldi",
+        "Dutch",
+        "Winter Beard",
+        "Mustache",
+        "Unknown"
+      ]
+    },
+    "birthmark": {
+      "description": "Position(s) of birthmarks.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "Head",
+        "Arms",
+        "Back",
+        "Torso",
+        "Legs",
+        "Foot",
+        "Backside",
+        "Unknown"
+      ]
+    }   
+  },
+  "description": "An object which describes a person or an identity",
+  "meta-category": "misc",
+  "name": "personification",
+  "requiredOneOf": [
+    "first-name",
+    "last-name",
+    "full-name",
+    "alias"
+  ],
+  "uuid": "4a2bdac3-e7bb-4a47-ba5f-35df63216885",
+  "version": 2
+}
