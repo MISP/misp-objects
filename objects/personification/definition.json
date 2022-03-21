@@ -8,7 +8,7 @@
     },
     "age-range": {
       "description": "Age range that the person appears to be",
-      "misp-attribute": "int",
+      "misp-attribute": "float",
       "ui-priority": 0
     },
     "weight": {
@@ -26,7 +26,7 @@
     "body-type": {
       "description": "Body type of a person.",
       "disable_correlation": true,
-      "misp-attribute": "body-type",
+      "misp-attribute": "text",
       "ui-priority": 0,
       "values_list": [
         "Slim",
@@ -53,7 +53,7 @@
     },
     "color-of-eyes": {
       "description": "Description of a person’s colour of eyes.",
-      "misp-attribute": "color",
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 10,
       "values_list": [
@@ -230,6 +230,6 @@
     "full-name",
     "alias"
   ],
-  "uuid": "4a2bdac3-e7bb-4a47-ba5f-35df63216885",
+  "uuid": "102a8696-420b-486d-806d-70a34d2f4e54",
   "version": 2
 }
