@@ -1,5 +1,53 @@
 {
   "attributes": {
+    "bottom-accessories": {
+      "description": "Cloth and accessories on the bottom part of the body",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "trousers",
+        "skirt",
+        "underpants / panties",
+        "shorts",
+        "boxer shorts",
+        "body stocking",
+        "sock",
+        "shoe",
+        "boot",
+        "sandal",
+        "slipper",
+        "sneaker",
+        "hiking boot",
+        "high tops"
+      ]
+    },
+    "cloth-color": {
+      "description": "Cloth's colors",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "black",
+        "white",
+        "red",
+        "green",
+        "blue",
+        "cyan",
+        "orange",
+        "violet",
+        "pink",
+        "yellow",
+        "brown",
+        "grey"
+      ]
+    },
+    "cloth-picture": {
+      "description": "Cloth's pictures",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "description": {
       "description": "Cloth's Description of a natural person",
       "misp-attribute": "text",
@@ -43,54 +91,6 @@
         "scarf",
         "glove"
       ]
-    },
-    "bottom-accessories": {
-      "description": "Cloth and accessories on the bottom part of the body",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 10,
-      "values_list": [
-        "trousers",
-        "skirt",
-        "underpants / panties",
-        "shorts",
-        "boxer shorts",
-        "body stocking",
-        "sock",
-        "shoe",
-        "boot",
-        "sandal",
-        "slipper",
-        "sneaker",
-        "hiking boot",
-        "high tops"
-      ]
-    },
-    "cloth-color": {
-      "description": "Cloth's colors",
-      "multiple": true,
-      "misp-attribute": "text",
-      "ui-priority": 1,
-      "values_list": [
-        "black",
-        "white",
-        "red",
-        "green",
-        "blue",
-        "cyan",
-        "orange",
-        "violet",
-        "pink",
-        "yellow",
-        "brown",
-        "grey"
-      ]
-    },
-    "cloth-picture": {
-      "description": "Cloth's pictures",
-      "misp-attribute": "attachment",
-      "multiple": true,
-      "ui-priority": 0
     }
   },
   "description": "Describes clothes a natural person wears",
