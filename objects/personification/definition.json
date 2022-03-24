@@ -225,10 +225,11 @@
   "meta-category": "misc",
   "name": "personification",
   "requiredOneOf": [
-    "first-name",
-    "last-name",
-    "full-name",
-    "alias"
+    "beard",
+    "portrait",
+    "body-type",
+    "hair-color",
+    "age-range"
   ],
   "uuid": "102a8696-420b-486d-806d-70a34d2f4e54",
   "version": 2
