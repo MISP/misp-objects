@@ -26,13 +26,19 @@
       ]
     },
     "first-name": {
-      "description": "First name of Employee",
+      "description": "Employee's first name",
       "disable_correlation": true,
       "misp-attribute": "first-name",
       "ui-priority": 0
     },
+    "full-name": {
+      "description": "Employee's full name",
+      "disable_correlation": true,
+      "misp-attribute": "full-name",
+      "ui-priority": 0
+    },
     "last-name": {
-      "description": "Last name Employee",
+      "description": "Employee's last name",
       "disable_correlation": true,
       "misp-attribute": "last-name",
       "ui-priority": 0
