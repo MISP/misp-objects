@@ -55,7 +55,7 @@
     "registration-number": {
       "description": "Registration number of the organization",
       "misp-attribute": "text",
-      "ui-priority": "15"
+      "ui-priority": 15
     },
     "role": {
       "description": "The role of the organization.",
