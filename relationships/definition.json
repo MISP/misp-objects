@@ -1329,7 +1329,14 @@
         "misp"
       ],
       "name": "is-a-translation-of"
+    },
+    {
+      "description": "The referenced source object has met with the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "has-met"
     }
   ],
-  "version": 32
+  "version": 33
 }
