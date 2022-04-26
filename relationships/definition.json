@@ -1336,7 +1336,23 @@
         "misp"
       ],
       "name": "has-met"
+    },
+    {
+      "description": "The referenced source object uploaded the referenced target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "uploaded",
+      "opposite": "uploaded-by"
+    },
+    {
+      "description": "The referenced source object was uploaded by the referenced target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "uploaded-by",
+      "opposite": "uploaded"
     }
   ],
-  "version": 33
+  "version": 34
 }
