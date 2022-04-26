@@ -32,7 +32,7 @@
     },
     "filename": {
       "categories": [
-        "Payload Delivery"
+        "Payload delivery"
       ],
       "description": "The filename used to submit a file.",
       "disable_correlation": false,
@@ -49,7 +49,7 @@
       "misp-attribute": "text",
       "to_ids": false,
       "ui-priority": 0,
-      "values-list": [
+      "values_list": [
         "web",
         "api",
         "email"
