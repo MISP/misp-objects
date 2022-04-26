@@ -1336,7 +1336,23 @@
         "misp"
       ],
       "name": "has-met"
+    },
+    {
+      "description": "The referenced source object submitted the referenced target object (to an online anti virus scanner).",
+      "format": [
+        "misp"
+      ],
+      "name": "submitted",
+      "opposite": "submitted-by"
+    },
+    {
+      "description": "The referenced source object was submitted (to an online anti virus scanner) by the referenced target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "submitted-by",
+      "opposite": "submitted"
     }
   ],
-  "version": 33
+  "version": 34
 }
