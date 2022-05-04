@@ -1,0 +1,41 @@
+{
+  "attributes": {
+    "BTC_received": {
+      "description": "Value of received BTC",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "BTC_sent": {
+      "description": "Value of sent BTC",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "balance_BTC": {
+      "description": "Value in BTC at date/time displayed in field 'time'",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "time": {
+      "description": "Date and time of lookup/conversion",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "wallet-address": {
+      "description": "A Bitcoin wallet address",
+      "misp-attribute": "btc",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object to describe ransom negotiations, as seen in ransomware incidents.",
+  "meta-category": "financial",
+  "name": "ransom-negotiation",
+  "requiredOneOf": [
+    "wallet-address"
+  ],
+  "uuid": "FB72F951-DE2E-4B54-A570-8FC560A74B06",
+  "version": 1
+}
