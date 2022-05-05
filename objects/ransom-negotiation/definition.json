@@ -78,6 +78,18 @@
       "misp-attribute": "float",
       "ui-priority": 8
     },
+    "negotiations_transcript": {
+    "description": "Transcript of the negotiations",
+    "disable_correlation": true,
+    "misp-attribute": "text",
+    "ui-priority": 14
+    },
+    "negotiations_screenshot": {
+    "description": "Screenshot of the negotiations",
+    "disable_correlation": true,
+    "misp-attribute": "text",
+    "ui-priority": 15
+    },
     "discount": {
       "description": "Discount after negotiations",
       "disable_correlation": true,
@@ -92,5 +104,5 @@
     "wallet-address"
   ],
   "uuid": "FB72F951-DE2E-4B54-A570-8FC560A74B06",
-  "version": 1
+  "version": 1.1
 }
