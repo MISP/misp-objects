@@ -48,7 +48,7 @@
       "misp-attribute": "boolean",
       "ui-priority": 9
     },
-    "data_lekaed": {
+    "data_leaked": {
       "description": "Was data leaked in this incident?",
       "disable_correlation": true,
       "misp-attribute": "boolean",
@@ -63,7 +63,7 @@
     "email_address": {
       "description": "Contact address, if any",
       "disable_correlation": false,
-      "misp-attribute": "float",
+      "misp-attribute": "text",
       "ui-priority": 12
     },
     "Remarks": {
