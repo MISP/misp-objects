@@ -50,6 +50,11 @@
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
+    },
+    "port": {
+      "description": "Port of the connection",
+      "misp-attribute": "port",
+      "ui-priority": 1
     }
   },
   "description": "Passive-ssh object as described on passive-ssh services from circl.lu - https://github.com/D4-project/passive-ssh",
