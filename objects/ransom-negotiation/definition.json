@@ -22,12 +22,20 @@
       "description": "Was data leaked in this incident?",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 890
     },
     "data_stolen": {
       "description": "Was data exfiltrated in this incident?",
       "disable_correlation": true,
       "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 900
     },
     "discount": {
