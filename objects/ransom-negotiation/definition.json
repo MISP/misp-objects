@@ -4,97 +4,117 @@
       "description": "A cryptocoin wallet address",
       "disable_correlation": false,
       "misp-attribute": "btc",
-      "ui-priority": 9
+      "ui-priority": 930
     },
     "time": {
       "description": "Date and time of transaction",
       "disable_correlation": true,
       "misp-attribute": "datetime",
-      "ui-priority": 10
+      "ui-priority": 940
     },
     "initial_ransom": {
       "description": "Initial ransom demand in the currency as displayed in field 'currency'",
       "disable_correlation": true,
       "misp-attribute": "float",
-      "ui-priority": 15
+      "ui-priority": 900
     },
     "final_ransom":{
       "description": "Final ransom amount after negotiations, in the currency as displayed in field 'currency'",
       "disable_correlation": true,
       "misp-attribute": "float",
-      "ui-priority": 14
+      "ui-priority": 980
     },
     "currency":{
       "description": "The currency of the initial demand. Often USD or BTC.",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 12
+      "ui-priority": 960
     },
     "value_EUR": {
       "description": "Value in EUR of the final ransom amount, with conversion rate as of date/time displayed in field 'time'",
       "disable_correlation": true,
       "misp-attribute": "float",
-      "ui-priority": 11
+      "ui-priority": 950
     },
     "annual_revenue_EUR": {
       "description": "Annual revenue of the targeted organisation in EUR",
       "disable_correlation": true,
       "misp-attribute": "float",
-      "ui-priority": 8
+      "ui-priority": 920
     },
     "data_stolen": {
       "description": "Was data exfiltrated in this incident?",
       "disable_correlation": true,
       "misp-attribute": "boolean",
-      "ui-priority": 6
+      "ui-priority": 900
     },
     "data_leaked": {
       "description": "Was data leaked in this incident?",
       "disable_correlation": true,
       "misp-attribute": "boolean",
-      "ui-priority": 5
+      "ui-priority": 890
     },
     "url_leaksite": {
       "description": "URL of the leaksite",
       "disable_correlation": false,
       "misp-attribute": "url",
-      "ui-priority": 4
+      "ui-priority": 880
     },
     "email_address": {
       "description": "Contact address, if any",
       "disable_correlation": false,
       "misp-attribute": "text",
-      "ui-priority": 3
+      "ui-priority": 870
     },
     "Remarks": {
       "description": "Remarks",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 2
+      "ui-priority": 860
     },
     "percentage_of_revenue": {
       "description": "Percentage of the annual revenue that the ransom demand amounts to",
       "disable_correlation": true,
       "misp-attribute": "float",
-      "ui-priority": 7
+      "ui-priority": 910
+    },
+    "pay_for_encryptor": {
+      "description": "Does the target needs/wants to pay for the decryptor",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 908,
+      "sane_default": [
+        "True",
+        "False"
+      ],
+    },
+    "pay_for_deletion": {
+      "description": "Does the target needs/wants to pay for data deletion",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 906,
+      "sane_default": [
+        "True",
+        "False"
+      ],
     },
     "negotiations_transcript": {
     "description": "Transcript of the negotiations",
     "disable_correlation": true,
     "misp-attribute": "text",
-    "ui-priority": 1
+    "ui-priority": 850
     },
     "negotiations_screenshot": {
     "description": "Screenshot of the negotiations",
     "disable_correlation": true,
     "misp-attribute": "attachment",
-    "ui-priority": 0
+    "ui-priority": 840
     },
     "discount": {
       "description": "Discount after negotiations",
       "disable_correlation": true,
       "misp-attribute": "float",
-      "ui-priority": 13
+      "ui-priority": 970
     }
   },
   "description": "An object to describe ransom negotiations, as seen in ransomware incidents.",
