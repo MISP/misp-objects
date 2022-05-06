@@ -75,7 +75,7 @@
       "ui-priority": 850
     },
     "pay_for_deletion": {
-      "description": "Does the target needs/wants to pay for data deletion",
+      "description": "Does the target need/want to pay for data deletion",
       "disable_correlation": true,
       "misp-attribute": "boolean",
       "sane_default": [
@@ -85,7 +85,7 @@
       "ui-priority": 906
     },
     "pay_for_encryptor": {
-      "description": "Does the target needs/wants to pay for the decryptor",
+      "description": "Does the target need/want to pay for the decryptor",
       "disable_correlation": true,
       "misp-attribute": "boolean",
       "sane_default": [
