@@ -1,5 +1,15 @@
 {
   "attributes": {
+    "banner": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "SSH banner",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "base64": {
       "description": "Base64 representation of the ssh-key",
       "disable_correlation": true,
@@ -20,6 +30,11 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "hassh": {
+      "description": "Hassh fingerprint",
+      "misp-attribute": "hassh-md5",
+      "ui-priority": 1
+    },
     "host": {
       "categories": [
         "Network activity",
@@ -35,6 +50,11 @@
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
+    },
+    "port": {
+      "description": "Port of the connection",
+      "misp-attribute": "port",
+      "ui-priority": 1
     }
   },
   "description": "Passive-ssh object as described on passive-ssh services from circl.lu - https://github.com/D4-project/passive-ssh",
@@ -43,8 +63,9 @@
   "requiredOneOf": [
     "host",
     "base64",
-    "fingerprint"
+    "fingerprint",
+    "hassh"
   ],
   "uuid": "ec350cdf-2311-4df5-972a-a4342a2c0065",
-  "version": 1
+  "version": 2
 }
