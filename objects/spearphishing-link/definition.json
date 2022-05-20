@@ -2,8 +2,8 @@
   "attributes": {
     "date": {
       "description": "Date and time e-mail was sent.",
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "email-sender": {
