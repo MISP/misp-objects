@@ -55,6 +55,12 @@
       "misp-attribute": "url",
       "ui-priority": 1
     },
+    "date": {
+      "description": "Date and time the e-mail was sent.",
+      "misp-attribute": "text",
+      "disable_correlation": true,
+      "ui-priority": 0
+    },
     "email-sender": {
       "description": "The source address from which the e-mail was sent.",
       "misp-attribute": "email-src",
