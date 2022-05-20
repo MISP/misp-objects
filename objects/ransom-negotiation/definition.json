@@ -12,6 +12,25 @@
       "misp-attribute": "float",
       "ui-priority": 920
     },
+    "chatsite": {
+      "description": "Chatsite where the negotiations take place",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 835
+    },
+    "chatsite_id_private": {
+      "description": "Second, private, chat ID given by actor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 833
+    },
+    "chatsite_id_public": {
+      "description": "Initial chat ID given by actor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 834
+    },
     "currency": {
       "description": "The currency of the initial demand. Often USD or BTC.",
       "disable_correlation": true,
@@ -65,8 +84,8 @@
     "negotiations_screenshot": {
       "description": "Screenshot of the negotiations",
       "disable_correlation": true,
-      "multiple": true,
       "misp-attribute": "attachment",
+      "multiple": true,
       "ui-priority": 840
     },
     "negotiations_transcript": {
@@ -74,25 +93,6 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 850
-    },
-    "chatsite": {
-      "description": "Chatsite where the negotiations take place",
-      "disable_correlation": true,
-      "to_ids": false,
-      "misp-attribute": "url",
-      "ui-priority": 835
-    },
-    "chatsite_id_public": {
-      "description": "Initial chat ID given by actor",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 834
-    },
-    "chatsite_id_private": {
-      "description": "Second, private, chat ID given by actor",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 833
     },
     "pay_for_deletion": {
       "description": "Does the target need/want to pay for data deletion",
