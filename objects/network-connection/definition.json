@@ -5,6 +5,11 @@
       "misp-attribute": "community-id",
       "ui-priority": 1
     },
+    "count": {
+      "description": "Number of similar network connections seen",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
     "dst-port": {
       "categories": [
         "Network activity",
@@ -102,5 +107,5 @@
     "community-id"
   ],
   "uuid": "af16764b-f8e5-4603-9de1-de34d272f80b",
-  "version": 3
+  "version": 4
 }
