@@ -20,6 +20,7 @@
         "keyword query language (kql)",
         "Query DSL",
         "Query (Elastic Search)",
+        "Search Processing Language - SPL (Splunk)",
         "Sigma",
         "Lucene query",
         "Google search query",
@@ -47,5 +48,5 @@
     "query"
   ],
   "uuid": "006539b3-f68a-4a02-a213-e600762d39b5",
-  "version": 1
+  "version": 2
 }
