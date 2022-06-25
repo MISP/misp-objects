@@ -18,6 +18,7 @@
       "sane_default": [
         "event query language (eql)",
         "keyword query language (kql)",
+        "Kusto Query Language",
         "Query DSL",
         "Query (Elastic Search)",
         "Search Processing Language - SPL (Splunk)",
@@ -48,5 +49,5 @@
     "query"
   ],
   "uuid": "006539b3-f68a-4a02-a213-e600762d39b5",
-  "version": 2
+  "version": 3
 }
