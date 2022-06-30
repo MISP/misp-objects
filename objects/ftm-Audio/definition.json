@@ -358,12 +358,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Audio with meta-data.",
   "meta-category": "followthemoney",
   "name": "ftm-Audio",
   "required": [
     "name"
   ],
   "uuid": "92acc7f9-cb98-4b60-93c0-06be77843968",
-  "version": 1
+  "version": 2
 }
