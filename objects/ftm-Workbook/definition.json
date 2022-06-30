@@ -344,12 +344,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Workbook",
   "meta-category": "followthemoney",
   "name": "ftm-Workbook",
   "required": [
     "name"
   ],
   "uuid": "ebedfb2a-c666-4870-9b77-baedb1c34dac",
-  "version": 1
+  "version": 2
 }

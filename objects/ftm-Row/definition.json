@@ -22,9 +22,9 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Row",
   "meta-category": "followthemoney",
   "name": "ftm-Row",
   "uuid": "282c0f7c-be66-41be-a709-b35032016829",
-  "version": 1
+  "version": 2
 }
