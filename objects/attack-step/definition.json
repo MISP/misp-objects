@@ -1,35 +1,9 @@
 {
   "attributes": {
-    "source-ip": {
-      "description": "IP source of the attack step, if any.",
-      "misp-attribute": "ip-src",
-      "ui-priority": 1
-    },
-    "source-domain": {
-      "description": "Domain source of the attack step, if any.",
-      "misp-attribute": "domain",
-      "ui-priority": 1
-    },
-    "source-misc": {
-      "description": "Other type of source of the attack step, if any. This can be e.g. rotating ip from cloud providers such as AWS, or localhost.",
+    "command-line": {
+      "description": "Command line used to execute attack step, if any.",
       "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "dst-ip": {
-      "description": "IP destination of the attack step, if any.",
-      "misp-attribute": "ip-dst",
-      "disable-correlation": true,
-      "ui-priority": 1
-    },
-    "dst-domain": {
-      "description": "Domain destination of the attack step, if any.",
-      "misp-attribute": "domain",
-      "disable-correlation": true,
-      "ui-priority": 1
-    },
-    "dst-misc": {
-      "description": "Other type of source of the attack step, if any. This can be e.g. localhost.",
-      "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 1
     },
     "description": {
@@ -37,19 +11,31 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "command-line": {
-      "description": "Command line used to execute attack step, if any.",
-      "multiple": true,
+    "detections": {
+      "description": "Detections by the victim's monitoring capabilities.",
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "succesful": {
-      "description": "Was this attack step succesful?",
-      "misp-attribute": "boolean",
-      "sane_default": [
-        "True",
-        "False"
-      ],
+    "dst-domain": {
+      "description": "Domain destination of the attack step, if any.",
+      "disable-correlation": true,
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "dst-ip": {
+      "description": "IP destination of the attack step, if any.",
+      "disable-correlation": true,
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "dst-misc": {
+      "description": "Other type of source of the attack step, if any. This can be e.g. localhost.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "expected-response": {
+      "description": "Response or detection expected (in case of purple teaming)",
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "key-step": {
@@ -61,14 +47,28 @@
       ],
       "ui-priority": 1
     },
-    "detections": {
-      "description": "Detections by the victim's monitoring capabilities.",
+    "source-domain": {
+      "description": "Domain source of the attack step, if any.",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "source-ip": {
+      "description": "IP source of the attack step, if any.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "source-misc": {
+      "description": "Other type of source of the attack step, if any. This can be e.g. rotating ip from cloud providers such as AWS, or localhost.",
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "expected-response": {
-      "description": "Response or detection expected (in case of purple teaming)",
-      "misp-attribute": "text",
+    "succesful": {
+      "description": "Was this attack step succesful?",
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
       "ui-priority": 1
     }
   },
