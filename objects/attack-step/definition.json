@@ -18,13 +18,13 @@
     },
     "dst-domain": {
       "description": "Domain destination of the attack step, if any.",
-      "disable-correlation": true,
+      "disable_correlation": true,
       "misp-attribute": "domain",
       "ui-priority": 1
     },
     "dst-ip": {
       "description": "IP destination of the attack step, if any.",
-      "disable-correlation": true,
+      "disable_correlation": true,
       "misp-attribute": "ip-dst",
       "ui-priority": 1
     },
