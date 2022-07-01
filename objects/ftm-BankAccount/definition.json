@@ -232,12 +232,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "An account held at a bank and controlled by an owner. This may also be used to describe more complex arrangements like correspondent bank settlement accounts.",
   "meta-category": "followthemoney",
   "name": "ftm-BankAccount",
   "required": [
     "name"
   ],
   "uuid": "c51ed099-a628-46ee-ad8f-ffed866b6b8d",
-  "version": 1
+  "version": 2
 }

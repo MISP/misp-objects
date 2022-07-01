@@ -421,7 +421,7 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Email",
   "meta-category": "followthemoney",
   "name": "ftm-Email",
   "required": [

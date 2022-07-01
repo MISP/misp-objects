@@ -218,12 +218,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Vehicle",
   "meta-category": "followthemoney",
   "name": "ftm-Vehicle",
   "required": [
     "name"
   ],
   "uuid": "82378b01-aad3-416b-b678-7af7140f6629",
-  "version": 1
+  "version": 2
 }

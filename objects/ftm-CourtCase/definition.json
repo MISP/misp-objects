@@ -204,7 +204,7 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Court case",
   "meta-category": "followthemoney",
   "name": "ftm-CourtCase",
   "required": [

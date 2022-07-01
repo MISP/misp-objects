@@ -351,12 +351,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Plaintext",
   "meta-category": "followthemoney",
   "name": "ftm-PlainText",
   "required": [
     "name"
   ],
   "uuid": "8f260d94-c712-4fdd-a463-6b2487f8a80d",
-  "version": 1
+  "version": 2
 }

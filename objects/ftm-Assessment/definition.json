@@ -169,12 +169,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Assessment with meta-data.",
   "meta-category": "followthemoney",
   "name": "ftm-Assessment",
   "required": [
     "name"
   ],
   "uuid": "25330bcb-d629-4d81-bbb9-51cead65175d",
-  "version": 1
+  "version": 2
 }

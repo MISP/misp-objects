@@ -113,9 +113,9 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Phone call object template including the call and all associated meta-data.",
   "meta-category": "followthemoney",
   "name": "ftm-Call",
   "uuid": "4ad4661a-59bb-4171-a47b-18d9e7b6d6d7",
-  "version": 1
+  "version": 2
 }
