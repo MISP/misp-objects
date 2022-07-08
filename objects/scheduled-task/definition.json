@@ -2,6 +2,7 @@
   "attributes": {
     "Start-time": {
       "description": "Time when the task is triggered",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "multiple": true,
       "ui-priority": 1
@@ -24,6 +25,7 @@
     },
     "highest-privileges": {
       "description": "Should the task run with the highest privileges",
+      "disable_correlation": true,
       "misp-attribute": "boolean",
       "ui-priority": 0
     },
@@ -31,7 +33,8 @@
       "categories": [
         "Other"
       ],
-      "description": "Location (Path) of the scheduled task on the computer",
+      "description": "Location (Path including filename) of the scheduled task on the computer",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
@@ -45,6 +48,7 @@
     },
     "password-stored": {
       "description": "Should the password be stored (Only if log on is not mandatory)",
+      "disable_correlation": true,
       "misp-attribute": "boolean",
       "ui-priority": 0
     },
@@ -53,11 +57,13 @@
         "Other"
       ],
       "description": "condition to repeat the task",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
     "run-when-user-logged-on-only": {
       "description": "Should the task run if the user is logged on only",
+      "disable_correlation": true,
       "misp-attribute": "boolean",
       "ui-priority": 0
     },
@@ -66,6 +72,7 @@
         "Other"
       ],
       "description": "User account used when running the task",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -74,6 +81,7 @@
         "Other"
       ],
       "description": "when should the task being triggered",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
@@ -96,7 +104,8 @@
   "name": "scheduled-task",
   "requiredOneOf": [
     "name",
-    "description"
+    "description",
+    "location"
   ],
   "uuid": "076f9362-23f7-4326-b370-a98e47531a44",
   "version": 1
