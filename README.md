@@ -114,6 +114,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/artifact](https://github.com/MISP/misp-objects/blob/main/objects/artifact/definition.json) - The Artifact object permits capturing an array of bytes (8-bits), as a base64-encoded string, or linking to a file-like payload. from STIX 2.1 (6.1).
 - [objects/asn](https://github.com/MISP/misp-objects/blob/main/objects/asn/definition.json) - Autonomous system object describing an autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
 - [objects/attack-pattern](https://github.com/MISP/misp-objects/blob/main/objects/attack-pattern/definition.json) - Attack pattern describing a common attack pattern enumeration and classification.
+- [objects/attack-step](https://github.com/MISP/misp-objects/blob/main/objects/attack-step/definition.json) - An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.
 - [objects/authentication-failure-report](https://github.com/MISP/misp-objects/blob/main/objects/authentication-failure-report/definition.json) - Authentication Failure Report.
 - [objects/authenticode-signerinfo](https://github.com/MISP/misp-objects/blob/main/objects/authenticode-signerinfo/definition.json) - Authenticode Signer Info.
 - [objects/av-signature](https://github.com/MISP/misp-objects/blob/main/objects/av-signature/definition.json) - Antivirus detection signature.
@@ -172,58 +173,58 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/forensic-case](https://github.com/MISP/misp-objects/blob/main/objects/forensic-case/definition.json) - An object template to describe a digital forensic case.
 - [objects/forensic-evidence](https://github.com/MISP/misp-objects/blob/main/objects/forensic-evidence/definition.json) - An object template to describe a digital forensic evidence.
 - [objects/forged-document](https://github.com/MISP/misp-objects/blob/main/objects/forged-document/definition.json) - Object describing a forged document.
-- [objects/ftm-Airplane](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Airplane/definition.json) - .
-- [objects/ftm-Assessment](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Assessment/definition.json) - .
-- [objects/ftm-Asset](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Asset/definition.json) - .
+- [objects/ftm-Airplane](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Airplane/definition.json) - An airplane, helicopter or other flying vehicle.
+- [objects/ftm-Assessment](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Assessment/definition.json) - Assessment with meta-data.
+- [objects/ftm-Asset](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Asset/definition.json) - A piece of property which can be owned and assigned a monetary value.
 - [objects/ftm-Associate](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Associate/definition.json) - Non-family association between two people.
-- [objects/ftm-Audio](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Audio/definition.json) - .
-- [objects/ftm-BankAccount](https://github.com/MISP/misp-objects/blob/main/objects/ftm-BankAccount/definition.json) - .
-- [objects/ftm-Call](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Call/definition.json) - .
+- [objects/ftm-Audio](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Audio/definition.json) - Audio with meta-data.
+- [objects/ftm-BankAccount](https://github.com/MISP/misp-objects/blob/main/objects/ftm-BankAccount/definition.json) - An account held at a bank and controlled by an owner. This may also be used to describe more complex arrangements like correspondent bank settlement accounts.
+- [objects/ftm-Call](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Call/definition.json) - Phone call object template including the call and all associated meta-data.
 - [objects/ftm-Company](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Company/definition.json) - A legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective.
 - [objects/ftm-Contract](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Contract/definition.json) - An contract or contract lot issued by an authority. Multiple lots may be awarded to different suppliers (see ContractAward).
 .
 - [objects/ftm-ContractAward](https://github.com/MISP/misp-objects/blob/main/objects/ftm-ContractAward/definition.json) - A contract or contract lot as awarded to a supplier.
-- [objects/ftm-CourtCase](https://github.com/MISP/misp-objects/blob/main/objects/ftm-CourtCase/definition.json) - .
-- [objects/ftm-CourtCaseParty](https://github.com/MISP/misp-objects/blob/main/objects/ftm-CourtCaseParty/definition.json) - .
+- [objects/ftm-CourtCase](https://github.com/MISP/misp-objects/blob/main/objects/ftm-CourtCase/definition.json) - Court case.
+- [objects/ftm-CourtCaseParty](https://github.com/MISP/misp-objects/blob/main/objects/ftm-CourtCaseParty/definition.json) - Court Case Party.
 - [objects/ftm-Debt](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Debt/definition.json) - A monetary debt between two parties.
-- [objects/ftm-Directorship](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Directorship/definition.json) - .
-- [objects/ftm-Document](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Document/definition.json) - .
-- [objects/ftm-Documentation](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Documentation/definition.json) - .
+- [objects/ftm-Directorship](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Directorship/definition.json) - Directorship.
+- [objects/ftm-Document](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Document/definition.json) - Document.
+- [objects/ftm-Documentation](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Documentation/definition.json) - Documentation.
 - [objects/ftm-EconomicActivity](https://github.com/MISP/misp-objects/blob/main/objects/ftm-EconomicActivity/definition.json) - A foreign economic activity.
-- [objects/ftm-Email](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Email/definition.json) - .
-- [objects/ftm-Event](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Event/definition.json) - .
+- [objects/ftm-Email](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Email/definition.json) - Email.
+- [objects/ftm-Event](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Event/definition.json) - Event.
 - [objects/ftm-Family](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Family/definition.json) - Family relationship between two people.
-- [objects/ftm-Folder](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Folder/definition.json) - .
-- [objects/ftm-HyperText](https://github.com/MISP/misp-objects/blob/main/objects/ftm-HyperText/definition.json) - .
-- [objects/ftm-Image](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Image/definition.json) - .
-- [objects/ftm-Land](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Land/definition.json) - .
+- [objects/ftm-Folder](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Folder/definition.json) - Folder.
+- [objects/ftm-HyperText](https://github.com/MISP/misp-objects/blob/main/objects/ftm-HyperText/definition.json) - HyperText.
+- [objects/ftm-Image](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Image/definition.json) - Image.
+- [objects/ftm-Land](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Land/definition.json) - Land.
 - [objects/ftm-LegalEntity](https://github.com/MISP/misp-objects/blob/main/objects/ftm-LegalEntity/definition.json) - A legal entity may be a person or a company.
 - [objects/ftm-License](https://github.com/MISP/misp-objects/blob/main/objects/ftm-License/definition.json) - A grant of land, rights or property. A type of Contract.
-- [objects/ftm-Membership](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Membership/definition.json) - .
-- [objects/ftm-Message](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Message/definition.json) - .
-- [objects/ftm-Organization](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Organization/definition.json) - .
-- [objects/ftm-Ownership](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Ownership/definition.json) - .
-- [objects/ftm-Package](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Package/definition.json) - .
-- [objects/ftm-Page](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Page/definition.json) - .
-- [objects/ftm-Pages](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Pages/definition.json) - .
+- [objects/ftm-Membership](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Membership/definition.json) - Membership.
+- [objects/ftm-Message](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Message/definition.json) - Message.
+- [objects/ftm-Organization](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Organization/definition.json) - Organization.
+- [objects/ftm-Ownership](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Ownership/definition.json) - Ownership.
+- [objects/ftm-Package](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Package/definition.json) - Package.
+- [objects/ftm-Page](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Page/definition.json) - Page.
+- [objects/ftm-Pages](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Pages/definition.json) - Pages.
 - [objects/ftm-Passport](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Passport/definition.json) - Passport.
 - [objects/ftm-Payment](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Payment/definition.json) - A monetary payment between two parties.
 - [objects/ftm-Person](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Person/definition.json) - An individual.
-- [objects/ftm-PlainText](https://github.com/MISP/misp-objects/blob/main/objects/ftm-PlainText/definition.json) - .
+- [objects/ftm-PlainText](https://github.com/MISP/misp-objects/blob/main/objects/ftm-PlainText/definition.json) - Plaintext.
 - [objects/ftm-PublicBody](https://github.com/MISP/misp-objects/blob/main/objects/ftm-PublicBody/definition.json) - A public body, such as a ministry, department or state company.
 - [objects/ftm-RealEstate](https://github.com/MISP/misp-objects/blob/main/objects/ftm-RealEstate/definition.json) - A piece of land or property.
 - [objects/ftm-Representation](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Representation/definition.json) - A mediatory, intermediary, middleman, or broker acting on behalf of a legal entity.
-- [objects/ftm-Row](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Row/definition.json) - .
+- [objects/ftm-Row](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Row/definition.json) - Row.
 - [objects/ftm-Sanction](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Sanction/definition.json) - A sanction designation.
 - [objects/ftm-Succession](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Succession/definition.json) - Two entities that legally succeed each other.
-- [objects/ftm-Table](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Table/definition.json) - .
+- [objects/ftm-Table](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Table/definition.json) - Table.
 - [objects/ftm-TaxRoll](https://github.com/MISP/misp-objects/blob/main/objects/ftm-TaxRoll/definition.json) - A tax declaration of an individual.
-- [objects/ftm-UnknownLink](https://github.com/MISP/misp-objects/blob/main/objects/ftm-UnknownLink/definition.json) - .
-- [objects/ftm-UserAccount](https://github.com/MISP/misp-objects/blob/main/objects/ftm-UserAccount/definition.json) - .
-- [objects/ftm-Vehicle](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Vehicle/definition.json) - .
+- [objects/ftm-UnknownLink](https://github.com/MISP/misp-objects/blob/main/objects/ftm-UnknownLink/definition.json) - Unknown Link.
+- [objects/ftm-UserAccount](https://github.com/MISP/misp-objects/blob/main/objects/ftm-UserAccount/definition.json) - User Account.
+- [objects/ftm-Vehicle](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Vehicle/definition.json) - Vehicle.
 - [objects/ftm-Vessel](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Vessel/definition.json) - A boat or ship.
-- [objects/ftm-Video](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Video/definition.json) - .
-- [objects/ftm-Workbook](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Workbook/definition.json) - .
+- [objects/ftm-Video](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Video/definition.json) - Video.
+- [objects/ftm-Workbook](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Workbook/definition.json) - Workbook.
 - [objects/game-cheat](https://github.com/MISP/misp-objects/blob/main/objects/game-cheat/definition.json) - Describes a game cheat or a cheatware.
 - [objects/geolocation](https://github.com/MISP/misp-objects/blob/main/objects/geolocation/definition.json) - An object to describe a geographic location.
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
@@ -298,6 +299,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/process](https://github.com/MISP/misp-objects/blob/main/objects/process/definition.json) - Object describing a system process.
 - [objects/publication](https://github.com/MISP/misp-objects/blob/main/objects/publication/definition.json) - An object to describe a book, journal, or academic publication.
 - [objects/python-etvx-event-log](https://github.com/MISP/misp-objects/blob/main/objects/python-etvx-event-log/definition.json) - Event log object template to share information of the activities conducted on a system. .
+- [objects/query](https://github.com/MISP/misp-objects/blob/main/objects/query/definition.json) - An object describing a query, along with its format.
 - [objects/r2graphity](https://github.com/MISP/misp-objects/blob/main/objects/r2graphity/definition.json) - Indicators extracted from files using radare2 and graphml.
 - [objects/ransom-negotiation](https://github.com/MISP/misp-objects/blob/main/objects/ransom-negotiation/definition.json) - An object to describe ransom negotiations, as seen in ransomware incidents.
 - [objects/reddit-account](https://github.com/MISP/misp-objects/blob/main/objects/reddit-account/definition.json) - Reddit account.
@@ -328,6 +330,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/sandbox-report](https://github.com/MISP/misp-objects/blob/main/objects/sandbox-report/definition.json) - Sandbox report.
 - [objects/sb-signature](https://github.com/MISP/misp-objects/blob/main/objects/sb-signature/definition.json) - Sandbox detection signature.
 - [objects/scheduled-event](https://github.com/MISP/misp-objects/blob/main/objects/scheduled-event/definition.json) - Event object template describing a gathering of individuals in meatspace.
+- [objects/scheduled-task](https://github.com/MISP/misp-objects/blob/main/objects/scheduled-task/definition.json) - Windows scheduled task description.
 - [objects/scrippsco2-c13-daily](https://github.com/MISP/misp-objects/blob/main/objects/scrippsco2-c13-daily/definition.json) - Daily average C13 concentrations (ppm) derived from flask air samples.
 - [objects/scrippsco2-c13-monthly](https://github.com/MISP/misp-objects/blob/main/objects/scrippsco2-c13-monthly/definition.json) - Monthly average C13 concentrations (ppm) derived from flask air samples.
 - [objects/scrippsco2-co2-daily](https://github.com/MISP/misp-objects/blob/main/objects/scrippsco2-co2-daily/definition.json) - Daily average CO2 concentrations (ppm) derived from flask air samples.
@@ -340,6 +343,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/shodan-report](https://github.com/MISP/misp-objects/blob/main/objects/shodan-report/definition.json) - Shodan Report for a given IP.
 - [objects/short-message-service](https://github.com/MISP/misp-objects/blob/main/objects/short-message-service/definition.json) - Short Message Service (SMS) object template describing one or more SMS message. Restriction of the initial format 3GPP 23.038 GSM character set doesn't apply.
 - [objects/shortened-link](https://github.com/MISP/misp-objects/blob/main/objects/shortened-link/definition.json) - Shortened link and its redirect target.
+- [objects/sigma](https://github.com/MISP/misp-objects/blob/main/objects/sigma/definition.json) - An object describing a Sigma rule (or a Sigma rule name).
 - [objects/social-media-group](https://github.com/MISP/misp-objects/blob/main/objects/social-media-group/definition.json) - Social media group object template describing a public or private group or channel.
 - [objects/software](https://github.com/MISP/misp-objects/blob/main/objects/software/definition.json) - The Software object represents high-level properties associated with software, including software products. STIX 2.1 - 6.14.
 - [objects/spearphishing-attachment](https://github.com/MISP/misp-objects/blob/main/objects/spearphishing-attachment/definition.json) - Spearphishing Attachment.
