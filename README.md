@@ -413,6 +413,15 @@ Every object needs a **uuid** which can be created using **uuidgen -r** on a lin
 
 When the object is created, the `validate_all.sh` and `jq_all_the_things.sh` is run for validation, pull a request on this project. We usually merge the objects if it fits existing use-cases.
 
+### Best practices when creating MISP object templates
+
+- Use lower-case name without underscore or special characters (except minus) for the field names
+- Add a description in the object template explaining the scope and use-cases of your object templates
+- If the object is the mapping of an existing format, add a reference into the description of the object template
+- `first-seen` and `last-seen` are not required in a object template as an object has those fields by default. If you need additional temporal information, add new specific field(s).
+- Be lax on the number of fields required by default (e.g. use `requiredOneOf`). 
+- Review existing object templates before creating a new one. When doing a pull-request, don't hesitate to add the logic why a new template is required.
+
 ## MISP objects documentation
 
 The MISP objects are documented at the following location in [HTML](https://www.misp-project.org/objects.html) and [PDF](https://www.misp-project.org/objects.pdf).
