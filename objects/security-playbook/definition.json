@@ -53,7 +53,7 @@
       "ui-priority": 1
     },
     "playbook-id": {
-      "description": "A value that uniquely identifies the playbook. If the playbook itself embeds an identifier then the playbook-id SHOULD use the same identifier (value). If not, the producer MAY generate a unique identifier for the playbook.",
+      "description": "A value that (uniquely) identifies the playbook. If the playbook itself embeds an identifier then the playbook-id SHOULD use the same identifier (value) for correlation purposes.",
       "disable_correlation": false,
       "misp-attribute": "text",
       "ui-priority": 1
@@ -134,9 +134,6 @@
   "description": "The security-playbook object provides meta-information and allows managing, storing, and sharing cybersecurity playbooks and orchestration workflows.",
   "meta-category": "misc",
   "name": "security-playbook",
-  "required": [
-    "playbook-id"
-  ],
   "requiredOneOf": [
     "playbook-file",
     "playbook-base64"
