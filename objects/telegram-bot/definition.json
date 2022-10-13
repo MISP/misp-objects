@@ -20,6 +20,11 @@
       "description": "Telegram Token",
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "username": {
+      "description": "Telegram bot username, must end with \"bot\"",
+      "misp-attribute": "text",
+      "ui-priority": 1
     }
   },
   "description": "Information related to a telegram bot",
@@ -29,8 +34,9 @@
     "token",
     "chat-id",
     "name",
+    "username",
     "comment"
   ],
   "uuid": "e2cb6c8f-45fa-429d-9cdb-05298ab21f46",
-  "version": 1
+  "version": 2
 }
