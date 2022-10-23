@@ -1,0 +1,48 @@
+{
+  "attributes": {
+    "cpe": {
+      "description": "Specifies the Common Platform Enumeration (CPE) entry for the software, if available. The value for this property MUST be a CPE v2.3 entry from the official NVD CPE Dictionary [NVD] .  While the CPE dictionary does not contain entries for all software, whenever it does contain an identifier for a given instance of software, this property SHOULD be present.",
+      "misp-attribute": "cpe",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "language": {
+      "description": "Specifies the languages supported by the software. The value of each list member MUST be a language code conformant to [RFC5646].",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "name": {
+      "description": "Specifies the name of the software.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "swid": {
+      "description": "Specifies the Software Identification (SWID) Tags [SWID] entry for the software, if available. The tag attribute, tagId, a globally unique identifier, SHOULD be used as a proxy identifier of the tagged product.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "vendor": {
+      "description": "Specifies the name of the vendor of the software.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "version": {
+      "description": "Specifies the version of the software.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    }
+  },
+  "description": "The Software object represents high-level properties associated with software, including software products. STIX 2.1 - 6.14",
+  "meta-category": "misc",
+  "name": "software",
+  "requiredOneOf": [
+    "name"
+  ],
+  "uuid": "b1b5dc0e-73fe-443c-8d9d-0e208de3951e",
+  "version": 1
+}

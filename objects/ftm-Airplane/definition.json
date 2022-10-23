@@ -239,12 +239,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "An airplane, helicopter or other flying vehicle.",
   "meta-category": "followthemoney",
   "name": "ftm-Airplane",
   "required": [
     "name"
   ],
   "uuid": "ea720b4a-8849-44a5-a150-eab87b86de2c",
-  "version": 1
+  "version": 2
 }

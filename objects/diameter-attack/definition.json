@@ -78,12 +78,12 @@
       "ui-priority": 0
     }
   },
-  "description": "Attack as seen on diameter authentication against a GSM, UMTS or LTE network",
+  "description": "Attack as seen on the diameter signaling protocol supporting LTE networks.",
   "meta-category": "network",
   "name": "diameter-attack",
   "requiredOneOf": [
     "text"
   ],
   "uuid": "a3fdce4c-8e21-4acc-ab8e-9976e9165a12",
-  "version": 1
+  "version": 2
 }

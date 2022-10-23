@@ -455,10 +455,41 @@
     {
       "description": "This relationship describes an object which is used by another object.",
       "format": [
-        "cert-eu"
+        "cert-eu",
+        "stix-2.1"
       ],
       "name": "used-by",
       "opposite": "uses"
+    },
+    {
+      "description": "This relationship describes an object which hosts another object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "hosts",
+      "opposite": "hosted-by"
+    },
+    {
+      "description": "This relatiobship describes an object hosted by another object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "hosted-by",
+      "opposite": "hosts"
+    },
+    {
+      "description": "This relationship describes an object which consists of one or more object(s).",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "consists"
+    },
+    {
+      "description": "This relationship describes an object which delivers to one or more object(s).",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "delivers"
     },
     {
       "description": "This relationship describes an object which is affiliated with another object.",
@@ -1235,7 +1266,93 @@
         "misp"
       ],
       "name": "drives"
+    },
+    {
+      "description": "The referenced source object is a friend of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "friend-of"
+    },
+    {
+      "description": "The referenced source object is an acquaintance of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "acquaintance-of"
+    },
+    {
+      "description": "The referenced source object is a sibling of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "sibling-of"
+    },
+    {
+      "description": "The referenced source object is a grandchild of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "grandchild-of"
+    },
+    {
+      "description": "The referenced source object is a spouse of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "spouse-of"
+    },
+    {
+      "description": "The referenced source object is an ennemy of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "ennemy-of"
+    },
+    {
+      "description": "The referenced source object is an antagonist of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "antagonist-of"
+    },
+    {
+      "description": "The referenced source object is an ambivalent of the target object.",
+      "format": [
+        "foaf"
+      ],
+      "name": "ambivalient-of"
+    },
+    {
+      "description": "The referenced source object is a translation of the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-a-translation-of"
+    },
+    {
+      "description": "The referenced source object has met with the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "has-met"
+    },
+    {
+      "description": "The referenced source object submitted the referenced target object (to an online anti virus scanner).",
+      "format": [
+        "misp"
+      ],
+      "name": "submitted",
+      "opposite": "submitted-by"
+    },
+    {
+      "description": "The referenced source object was submitted (to an online anti virus scanner) by the referenced target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "submitted-by",
+      "opposite": "submitted"
     }
   ],
-  "version": 28
+  "version": 34
 }

@@ -1,0 +1,153 @@
+{
+  "attributes": {
+    "Remarks": {
+      "description": "Remarks",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 860
+    },
+    "annual_revenue_EUR": {
+      "description": "Annual revenue of the targeted organisation in EUR",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 920
+    },
+    "chatsite": {
+      "description": "Chatsite where the negotiations take place",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 835
+    },
+    "chatsite_id_private": {
+      "description": "Second, private, chat ID given by actor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 833
+    },
+    "chatsite_id_public": {
+      "description": "Initial chat ID given by actor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 834
+    },
+    "currency": {
+      "description": "The currency of the initial demand. Often USD or BTC.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 960
+    },
+    "data_leaked": {
+      "description": "Was data leaked in this incident?",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 890
+    },
+    "data_stolen": {
+      "description": "Was data exfiltrated in this incident?",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 900
+    },
+    "discount": {
+      "description": "Discount after negotiations",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 970
+    },
+    "email_address": {
+      "description": "Contact address, if any",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 870
+    },
+    "final_ransom": {
+      "description": "Final ransom amount after negotiations, in the currency as displayed in field 'currency'",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 980
+    },
+    "initial_ransom": {
+      "description": "Initial ransom demand in the currency as displayed in field 'currency'",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 900
+    },
+    "negotiations_screenshot": {
+      "description": "Screenshot of the negotiations",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 840
+    },
+    "negotiations_transcript": {
+      "description": "Transcript of the negotiations",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 850
+    },
+    "pay_for_deletion": {
+      "description": "Does the target need/want to pay for data deletion",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 906
+    },
+    "pay_for_encryptor": {
+      "description": "Does the target need/want to pay for the decryptor",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 908
+    },
+    "percentage_of_revenue": {
+      "description": "Percentage of the annual revenue that the ransom demand amounts to",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 910
+    },
+    "time": {
+      "description": "Date and time of transaction",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 940
+    },
+    "url_leaksite": {
+      "description": "URL of the leaksite",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "ui-priority": 880
+    },
+    "value_EUR": {
+      "description": "Value in EUR of the final ransom amount, with conversion rate as of date/time displayed in field 'time'",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 950
+    },
+    "wallet-address": {
+      "description": "A cryptocoin wallet address",
+      "disable_correlation": false,
+      "misp-attribute": "btc",
+      "ui-priority": 930
+    }
+  },
+  "description": "An object to describe ransom negotiations, as seen in ransomware incidents.",
+  "meta-category": "financial",
+  "name": "ransom-negotiation",
+  "uuid": "FB72F951-DE2E-4B54-A570-8FC560A74B06",
+  "version": 2
+}

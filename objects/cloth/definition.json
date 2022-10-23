@@ -1,0 +1,104 @@
+{
+  "attributes": {
+    "bottom-accessories": {
+      "description": "Cloth and accessories on the bottom part of the body",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "trousers",
+        "skirt",
+        "underpants / panties",
+        "shorts",
+        "boxer shorts",
+        "body stocking",
+        "sock",
+        "shoe",
+        "boot",
+        "sandal",
+        "slipper",
+        "sneaker",
+        "hiking boot",
+        "high tops"
+      ]
+    },
+    "cloth-color": {
+      "description": "Cloth's colors",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "black",
+        "white",
+        "red",
+        "green",
+        "blue",
+        "cyan",
+        "orange",
+        "violet",
+        "pink",
+        "yellow",
+        "brown",
+        "grey"
+      ]
+    },
+    "cloth-picture": {
+      "description": "Cloth's pictures",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Cloth's Description of a natural person",
+      "misp-attribute": "text",
+      "ui-priority": 50
+    },
+    "head-accessories": {
+      "description": "Cloth and accessories on the head",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "hat",
+        "cap",
+        "bonnet",
+        "glasses",
+        "bandeau"
+      ]
+    },
+    "top-accessories": {
+      "description": "Cloth and accessories on the top part of the body",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10,
+      "values_list": [
+        "jacket",
+        "coat",
+        "dress",
+        "shirt",
+        "top",
+        "pullover",
+        "sweatshirt",
+        "suit",
+        "tie",
+        "bow tie",
+        "lady's suit",
+        "waistcoat",
+        "cardigan",
+        "undershirt",
+        "t-shirt",
+        "bra",
+        "scarf",
+        "glove"
+      ]
+    }
+  },
+  "description": "Describes clothes a natural person wears",
+  "meta-category": "misc",
+  "name": "cloth",
+  "required": [
+    "description"
+  ],
+  "uuid": "31a49e4f-49bc-4bae-a9c7-c6058180ba6f",
+  "version": 1
+}

@@ -1,0 +1,47 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "A description of the Sigma rule.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "context": {
+      "description": "Context where the Sigma rule can be applied",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "all",
+        "disk",
+        "memory",
+        "network",
+        "dns"
+      ],
+      "ui-priority": 0
+    },
+    "reference": {
+      "description": "Reference/origin of the Sigma rule.",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "sigma": {
+      "description": "Sigma rule.",
+      "misp-attribute": "sigma",
+      "ui-priority": 0
+    },
+    "sigma-rule-name": {
+      "description": "Sigma rule name.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing a Sigma rule (or a Sigma rule name).",
+  "meta-category": "misc",
+  "name": "sigma",
+  "requiredOneOf": [
+    "sigma",
+    "sigma-rule-name"
+  ],
+  "uuid": "aa21a3cd-ab2c-442a-9999-a5e6626591ec",
+  "version": 1
+}

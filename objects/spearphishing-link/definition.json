@@ -1,0 +1,61 @@
+{
+  "attributes": {
+    "date": {
+      "description": "Date and time e-mail was sent.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "email-sender": {
+      "description": "The source address from which the e-mail was sent.",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "embedded-link": {
+      "description": "The malicious URL in the e-mail body.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "redirect-url": {
+      "description": "The redirect URL, if any, from the malicious embedded link.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "research-links": {
+      "description": "A link to an external analysis (VirusTotal, urlscan, etc.).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sender-ip": {
+      "description": "The source IP from which the e-mail was sent.",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "subject": {
+      "description": "The subject line of the e-mail.",
+      "misp-attribute": "email-subject",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "supporting-evidence": {
+      "description": "Description of the spearphish e-mail.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Spearphishing Link",
+  "meta-category": "network",
+  "name": "spearphishing-link",
+  "required": [
+    "email-sender",
+    "subject",
+    "embedded-link"
+  ],
+  "uuid": "4e758e53-6c84-47b0-a19b-362f587059e2",
+  "version": 20220825
+}

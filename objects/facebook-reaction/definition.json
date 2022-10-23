@@ -1,0 +1,37 @@
+{
+  "attributes": {
+    "link": {
+      "description": "Link to the user account which did the reaction.",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "The name of A user account which did the reaction.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Type of reaction.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "like",
+        "love",
+        "sad",
+        "haha",
+        "wow",
+        "care"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "Reaction to facebook posts.",
+  "meta-category": "misc",
+  "name": "facebook-reaction",
+  "requiredOneOf": [
+    "name",
+    "link"
+  ],
+  "uuid": "f219f784-38b8-47f4-a676-e32efd7df0c3",
+  "version": 1
+}

@@ -106,9 +106,9 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Membership",
   "meta-category": "followthemoney",
   "name": "ftm-Membership",
   "uuid": "42dbbf3a-8c60-483c-a395-44aaaefc77d1",
-  "version": 1
+  "version": 2
 }

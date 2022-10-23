@@ -190,12 +190,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "User Account",
   "meta-category": "followthemoney",
   "name": "ftm-UserAccount",
   "required": [
     "name"
   ],
   "uuid": "094943f5-41c5-4fad-9d61-60d82bce49b1",
-  "version": 1
+  "version": 2
 }

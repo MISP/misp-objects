@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "author": {
+      "description": "Author of the query",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "comment": {
+      "description": "A description of the query rule.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "format": {
+      "description": "Format of the query.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "event query language (eql)",
+        "keyword query language (kql)",
+        "Kusto Query Language",
+        "Query DSL",
+        "Query (Elastic Search)",
+        "Search Processing Language - SPL (Splunk)",
+        "Sigma",
+        "Lucene query",
+        "Google search query",
+        "Ariel Query Language (qradar)",
+        "Grep",
+        "Devo LINQ"
+      ],
+      "ui-priority": 0
+    },
+    "query": {
+      "description": "Query rule in the format specified in the format field.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "query-rule-name": {
+      "description": "Query rule name.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing a query, along with its format.",
+  "meta-category": "misc",
+  "name": "query",
+  "requiredOneOf": [
+    "query"
+  ],
+  "uuid": "006539b3-f68a-4a02-a213-e600762d39b5",
+  "version": 3
+}

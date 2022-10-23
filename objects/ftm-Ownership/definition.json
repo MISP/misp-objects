@@ -155,9 +155,9 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Ownership",
   "meta-category": "followthemoney",
   "name": "ftm-Ownership",
   "uuid": "2a09b445-c638-40e1-8f52-b95c9156f4d8",
-  "version": 1
+  "version": 2
 }

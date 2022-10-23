@@ -63,6 +63,11 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "id": {
+      "description": "Unique identified of the group.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "link": {
       "description": "Original link to the group (supposed harmless).",
       "misp-attribute": "link",
@@ -94,5 +99,5 @@
     "link"
   ],
   "uuid": "165c5507-1cba-4cec-9be4-66e21b590ee6",
-  "version": 1
+  "version": 2
 }

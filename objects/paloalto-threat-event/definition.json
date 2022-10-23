@@ -87,5 +87,5 @@
   "meta-category": "network",
   "name": "paloalto-threat-event",
   "uuid": "e6fa7a87-1173-43d6-86c2-b4d02af5fc74",
-  "version": 5
+  "version": 6
 }

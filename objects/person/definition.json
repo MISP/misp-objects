@@ -70,10 +70,43 @@
         "Unknown"
       ]
     },
+    "handle": {
+      "description": "Handle used by the user in application.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 11
+    },
     "identity-card-number": {
       "description": "The identity card number of a natural person.",
       "misp-attribute": "identity-card-number",
       "ui-priority": 0
+    },
+    "instant-messaging-used": {
+      "description": "The IM application used by this person.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "WhatsApp",
+        "Google Hangouts",
+        "Facebook Messenger",
+        "Telegram",
+        "Signal",
+        "WeChat",
+        "BlackBerry Messenger",
+        "TeamSpeak",
+        "TorChat",
+        "Tox",
+        "RetroShare",
+        "Slack",
+        "Wire",
+        "Threema",
+        "Discord",
+        "Mumble",
+        "Jabber",
+        "Twitter"
+      ],
+      "ui-priority": 10
     },
     "last-name": {
       "description": "Last name of a natural person.",
@@ -212,8 +245,9 @@
     "first-name",
     "last-name",
     "full-name",
-    "alias"
+    "alias",
+    "handle"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 14
+  "version": 18
 }

@@ -1,5 +1,23 @@
 {
   "attributes": {
+    "backscatter-threshold": {
+      "description": "The minimum amount of backscatter received in 5 minutes / day. This field is only used when the capture origin is indirect network capture such as backscatter.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "capture-origin": {
+      "description": "Origin of the (D)DoS evidences",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Direct network capture",
+        "Logs",
+        "Indirect network capture (e.g. backscatter)",
+        "Unknown"
+      ],
+      "ui-priority": 0
+    },
     "domain-dst": {
       "categories": [
         "Network activity",
@@ -52,6 +70,7 @@
     },
     "protocol": {
       "description": "Protocol used for the attack",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0,
       "values_list": [
@@ -78,17 +97,60 @@
       "ui-priority": 0
     },
     "total-bps": {
-      "description": "Bits per second",
+      "description": "Bits per second (maximum rate of bits per second measured)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "total-bytes-sent": {
+      "description": "Total number of bytes sent by the sources mentioned",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "total-packets-sent": {
+      "description": "Total number of packets sent by the source mentioned",
+      "disable_correlation": true,
       "misp-attribute": "counter",
       "ui-priority": 0
     },
     "total-pps": {
-      "description": "Packets per second",
+      "description": "Packets per second (maximum rate of packets per second measured)",
+      "disable_correlation": true,
       "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Type(s) or Technique(s) of Denial of Service",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "amplification-attack",
+        "reflected-spoofed-attack",
+        "slow-read-attack",
+        "flooding-attack",
+        "post-attack",
+        "chargen-amplification",
+        "dns",
+        "dns-amplification",
+        "ip-fragmentation",
+        "ip-private",
+        "icmp",
+        "memcached-amplification",
+        "ms-sql-rs-amplification",
+        "ntp-amplification",
+        "snmp-amplification",
+        "ssdp-amplification",
+        "tcp-null",
+        "tcp-rst",
+        "tcp-syn",
+        "udp"
+      ],
       "ui-priority": 0
     }
   },
-  "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy",
+  "description": "DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy or using the type field.",
   "meta-category": "network",
   "name": "ddos",
   "requiredOneOf": [
@@ -97,5 +159,5 @@
     "domain-dst"
   ],
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
-  "version": 7
+  "version": 9
 }

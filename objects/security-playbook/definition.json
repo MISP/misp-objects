@@ -1,145 +1,127 @@
 {
   "attributes": {
-    "created": {
-      "categories": [
-        "Other"
-      ],
-      "description": "The time at which the playbook was originally created.",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 1
-    },
-    "creator": {
-      "categories": [
-        "Other"
-      ],
-      "description": "The entity that created this playbook. It can be a natural person or an organization. It may be represented using an id that identifies the creator.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "description": {
-      "categories": [
-        "Other"
-      ],
-      "description": "More details, context, and possibly an explanation about what this playbook does and tries to accomplish.",
+      "description": "An explanation, details, and more context about what this playbook does and tries to accomplish.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
-    "id": {
-      "categories": [
-        "Other"
-      ],
-      "description": "A value that uniquely identifies the playbook.",
-      "disable_correlation": false,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "impact": {
-      "categories": [
-        "Other"
-      ],
-      "description": "An integer that represents the impact the playbook has on the organization from 0 to 100. A value of 0 means specifically undefined. Values range from 1, the lowest impact, to a value of 100, the highest. For example, a purely investigative playbook that is non-invasive would have a low impact value of 1, whereas a playbook that performs changes such as adding rules into a firewall would have a higher impact value.",
-      "disable_correlation": true,
-      "misp-attribute": "counter",
-      "ui-priority": 1
-    },
-    "label": {
-      "categories": [
-        "Other"
-      ],
-      "description": "An optional set of terms, labels or tags associated with this playbook (e.g., aliases of adversary groups or operations that this playbook is related to).",
+    "labels": {
+      "description": "Labels for this playbook (e.g., adversary persona names, associated groups, malware family/variant/name that this playbook is related to). Another option is to use MISP tags, taxonomies, and galaxies.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
     },
-    "modified": {
-      "categories": [
-        "Other"
-      ],
-      "description": "The time that this particular version of the playbook was last modified.",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 1
-    },
     "organization-type": {
-      "categories": [
-        "Other"
-      ],
-      "description": "Type of an organization, that the playbook is intended for. This can be an industry sector.",
+      "description": "The type of organization that the playbook is intended for. This can be an industry sector. Another option is to use MISP tags, taxonomies, and galaxies.",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "playbook": {
-      "categories": [
-        "Payload delivery"
-      ],
-      "description": "The whole playbook in its native format (e.g., CACAO JSON). Producers and consumers of playbooks use this property to share and retrieve playbooks.",
-      "misp-attribute": "attachment",
+      "multiple": true,
       "ui-priority": 1
     },
     "playbook-abstraction": {
-      "categories": [
-        "Other"
-      ],
-      "description": "Identifies the level of completeness of the playbook.",
+      "description": "The playbook’s level of abstraction (with regards to consumption).",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1,
       "values_list": [
-        "guideline",
-        "playbook template",
-        "playbook",
-        "partial workflow",
-        "full workflow",
-        "fully scripted"
+        "template",
+        "executable"
       ]
     },
+    "playbook-base64": {
+      "description": "The entire playbook file/document encoded in base64.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "playbook-creation-time": {
+      "description": "The date and time at which the playbook was originally created.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "playbook-creator": {
+      "description": "The entity that created the playbook. It can be a natural person or an organization. It may be represented using a unique identifier that identifies the creator.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "playbook-file": {
+      "description": "The entire playbook file/document in its native format (e.g., CACAO JSON or BPMN).",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "playbook-id": {
+      "description": "A value that (uniquely) identifies the playbook. If the playbook itself embeds an identifier then the playbook-id SHOULD use the same identifier (value) for correlation purposes.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "playbook-impact": {
+      "description": "From 0 to 100, a value representing the impact the playbook has on the organization. A value of 0 means specifically undefined. Impact values range from 1, the lowest impact, to a value of 100, the highest. For example, a purely investigative playbook that is non-invasive could have a low impact value of 1. In contrast, a playbook that performs changes such as adding rules into a firewall should have a higher impact value.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "playbook-modification-time": {
+      "description": "The date and time at which the playbook was last modified.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "playbook-priority": {
+      "description": "From 0 to 100, a value representing the priority of this playbook relative to other defined playbooks. A value of 0 means specifically undefined. Priority values range from 1, the highest priority, to a value of 100, the lowest.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "playbook-severity": {
+      "description": "From 0 to 100, a value representing the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Severity values range from 1, the lowest severity, to a value of 100, the highest.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "playbook-standard": {
-      "categories": [
-        "Other"
-      ],
-      "description": "Identification of the playbook standard.",
+      "description": "The standard/format/notation the playbook conforms to (e.g., CACAO, BPMN).",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "playbook-type": {
-      "categories": [
-        "Other"
-      ],
-      "description": "The security operational functions the playbook addresses. A playbook may account for multiple types (e.g., detection, investigation).",
+      "description": "The security-related functions the playbook supports. A playbook may account for multiple types (e.g., detection and investigation). The listed options are based on the CACAO standard and NIST SP 800-61 rev2. Another option is to use MISP tags, taxonomies, and galaxies.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1,
       "values_list": [
-        "notification playbook",
-        "detection playbook",
-        "investigation playbook",
-        "prevention playbook",
-        "mitigation playbook",
-        "remediation playbook",
-        "attack playbook"
+        "notification",
+        "detection",
+        "investigation",
+        "prevention",
+        "mitigation",
+        "remediation",
+        "analysis",
+        "containment",
+        "eradication",
+        "recovery",
+        "attack"
       ]
     },
-    "priority": {
-      "categories": [
-        "Other"
-      ],
-      "description": "An integer that represents the priority of this playbook relative to other defined playbooks. A value of 0 means specifically undefined. Values range from 1, the highest priority, to a value of 100, the lowest.",
+    "playbook-valid-from": {
+      "description": "The date and time from which the playbook is considered valid and the steps that it contains can be executed.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "playbook-valid-until": {
+      "description": "The date and time from which the playbook should no longer be considered a valid playbook to be executed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
       "ui-priority": 1
     },
     "revoked": {
-      "categories": [
-        "Other"
-      ],
-      "description": "A boolean that identifies if the playbook creator deems that this playbook is no longer valid.",
+      "description": "A boolean that identifies if the playbook is no longer valid (revoked).",
       "disable_correlation": true,
       "misp-attribute": "boolean",
       "sane_default": [
@@ -147,43 +129,15 @@
         "False"
       ],
       "ui-priority": 1
-    },
-    "severity": {
-      "categories": [
-        "Other"
-      ],
-      "description": "A positive integer that represents the seriousness of the conditions that this playbook addresses. A value of 0 means specifically undefined. Values range from 1, the lowest severity, to a value of 100, the highest.",
-      "disable_correlation": true,
-      "misp-attribute": "counter",
-      "ui-priority": 1
-    },
-    "valid-from": {
-      "categories": [
-        "Other"
-      ],
-      "description": "The time from which the playbook is considered valid and the steps that it contains can be executed.",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 1
-    },
-    "valid-until": {
-      "categories": [
-        "Other"
-      ],
-      "description": "The time at which this playbook should no longer be considered a valid playbook to be executed.",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 1
     }
   },
-  "description": "An object to manage, represent, and share course of action playbooks (security playbooks) for cyberspace defense.",
+  "description": "The security-playbook object provides meta-information and allows managing, storing, and sharing cybersecurity playbooks and orchestration workflows.",
   "meta-category": "misc",
   "name": "security-playbook",
-  "required": [
-    "playbook",
-    "playbook-standard",
-    "playbook-type"
+  "requiredOneOf": [
+    "playbook-file",
+    "playbook-base64"
   ],
   "uuid": "48894c92-447b-4abe-b093-360c4d823e9d",
-  "version": 2
+  "version": 3
 }

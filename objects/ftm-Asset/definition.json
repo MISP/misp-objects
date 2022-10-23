@@ -183,12 +183,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "A piece of property which can be owned and assigned a monetary value.",
   "meta-category": "followthemoney",
   "name": "ftm-Asset",
   "required": [
     "name"
   ],
   "uuid": "ece6a00c-2f42-4186-bc96-5254aec002a7",
-  "version": 1
+  "version": 2
 }

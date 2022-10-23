@@ -36,14 +36,46 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
-        "Report",
         "Alert",
+        "Artwork",
+        "Attachment",
+        "Audio",
+        "Bill",
+        "Blog",
+        "Book",
+        "Case",
+        "Conference",
+        "Dictionary",
+        "Document",
+        "Email",
+        "Encyclopedia",
+        "Film",
+        "Forum",
+        "Hearing",
         "Incident",
+        "Instant",
+        "Interview",
+        "Journal",
+        "Letter",
+        "Magazine",
+        "Manuscript",
+        "Map",
+        "Newspaper",
+        "Note",
+        "Online",
         "Operation",
-        "Press Article",
-        "Press Release",
-        "Online Article",
-        "Blog post"
+        "Patent",
+        "Podcast",
+        "Presentation",
+        "Press",
+        "Radio",
+        "Report",
+        "Software",
+        "Statute",
+        "Thesis",
+        "TV",
+        "Video",
+        "Webpage"
       ],
       "ui-priority": 100
     }
@@ -56,5 +88,5 @@
     "link"
   ],
   "uuid": "70a68471-df22-4e3f-aa1a-5a3be19f82df",
-  "version": 5
+  "version": 7
 }

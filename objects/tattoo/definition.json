@@ -1,0 +1,108 @@
+{
+  "attributes": {
+    "tattoo-body-part": {
+      "description": "Describe the body part where the tattoo is located.",
+      "misp-attribute": "text",
+      "ui-priority": 4,
+      "values_list": [
+        "head",
+        "forehead",
+        "face",
+        "ear",
+        "eye",
+        "mouth/lips",
+        "neck",
+        "shoulder",
+        "chest",
+        "elbow",
+        "arm",
+        "forearm",
+        "hand",
+        "finger",
+        "thigh",
+        "knee",
+        "calf",
+        "heel",
+        "foot",
+        "toe"
+      ]
+    },
+    "tattoo-color": {
+      "description": "Colors of the tattoo",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "black",
+        "white",
+        "red",
+        "green",
+        "blue",
+        "cyan",
+        "orange",
+        "violet",
+        "pink",
+        "yellow",
+        "brown",
+        "grey"
+      ]
+    },
+    "tattoo-description": {
+      "description": "Description of the tattoo,its composition.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tattoo-picture": {
+      "description": "Picture of the tattoo",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "tattoo-size": {
+      "description": "Size of the tattoo",
+      "misp-attribute": "text",
+      "multiple": false,
+      "ui-priority": 0,
+      "values_list": [
+        "tiny",
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "tattoo-style": {
+      "description": "Style of the tattoo",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "traditional",
+        "realism",
+        "watercolor",
+        "tribal",
+        "new school",
+        "japanese",
+        "blackwork",
+        "lettering",
+        "dotwork",
+        "abstract",
+        "celtic",
+        "geometric",
+        "mandala",
+        "minimalist",
+        "neo-traditional",
+        "portrait",
+        "sketch"
+      ]
+    }
+  },
+  "description": "Describes tattoos on a natural person's body",
+  "meta-category": "misc",
+  "name": "tattoo",
+  "required": [
+    "tattoo-body-part"
+  ],
+  "uuid": "747976fc-d637-4730-8b64-93f7f2814506",
+  "version": 1
+}
