@@ -10,6 +10,7 @@ do
   cat ${dir} | jq . >/dev/null
   rc=$?
   if [[ $rc != 0 ]]; then exit $rc; fi
+  cat ${dir} | jq -r .uuid | uuidparse
 done
 
 set -e
