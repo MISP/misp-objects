@@ -1,5 +1,10 @@
 {
   "attributes": {
+    "acd-element": {
+      "description": "lists the steps required to generate a representative true positive event which triggers this alert.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "additional_resources": {
       "description": "Any other internal, external, or technical references that may be useful for understanding the ADS.",
       "misp-attribute": "url",
@@ -61,11 +66,6 @@
       "description": "lists the steps required to generate a representative true positive event which triggers this alert.",
       "misp-attribute": "text",
       "ui-priority": 5
-    },
-    "acd-element": {
-      "description": "lists the steps required to generate a representative true positive event which triggers this alert.",
-      "misp-attribute": "text",
-      "ui-priority": 0
     }
   },
   "description": "An object defining ADS - Alerting and Detection Strategy by PALANTIR. Can be used for detection engineering.",
