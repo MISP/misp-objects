@@ -28,7 +28,7 @@
       "multiple": true,
       "ui-priority": 3
     },
-    "names": {
+    "name": {
       "description": "Names or nicknames for group.",
       "disable_correlation": false,
       "misp-attribute": "text",
@@ -59,7 +59,7 @@
   },
   "description": "Adversary group cards inspired by ThaiCERT",
   "meta-category": "misc",
-  "name": "Group Cards",
+  "name": "groups",
   "required": [
     "name"
   ],
