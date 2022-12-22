@@ -59,10 +59,10 @@
   },
   "description": "Adversary group cards inspired by ThaiCERT",
   "meta-category": "misc",
-  "name": "Group Cards",
+  "name": "thaicert-group-cards",
   "required": [
     "name"
   ],
   "uuid": "f42db88d-1889-4c2f-a903-971cf8e65174",
-  "version": 1
+  "version": 2
 }
