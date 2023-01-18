@@ -386,6 +386,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/twitter-account](https://github.com/MISP/misp-objects/blob/main/objects/twitter-account/definition.json) - Twitter account.
 - [objects/twitter-list](https://github.com/MISP/misp-objects/blob/main/objects/twitter-list/definition.json) - Twitter list.
 - [objects/twitter-post](https://github.com/MISP/misp-objects/blob/main/objects/twitter-post/definition.json) - Twitter post (tweet).
+- [objects/typosquatting-finder](https://github.com/MISP/misp-objects/blob/main/objects/typosquatting-finder/definition.json) - Typosquatting info.
+- [objects/typosquatting-finder-result](https://github.com/MISP/misp-objects/blob/main/objects/typosquatting-finder-result/definition.json) - Typosquatting result.
 - [objects/url](https://github.com/MISP/misp-objects/blob/main/objects/url/definition.json) - url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.
 - [objects/user-account](https://github.com/MISP/misp-objects/blob/main/objects/user-account/definition.json) - User-account object, defining aspects of user identification, authentication, privileges and other relevant data points.
 - [objects/vehicle](https://github.com/MISP/misp-objects/blob/main/objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
