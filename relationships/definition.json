@@ -1361,18 +1361,18 @@
       "name": "do-not-target"
     },
    {
-      "description": "This relationship describes that the source object is targetted by the target object.",
+      "description": "This relationship describes that the source object is targeted by the target object.",
       "format": [
         "misp",
       ],
-      "name": "is-targetted-by"
+      "name": "is-targeted-by"
     },
    {
-      "description": "This relationship describes that the source object is not targetted by the target object.",
+      "description": "This relationship describes that the source object is not targeted by the target object.",
       "format": [
         "misp",
       ],
-      "name": "is-not-targetted-by"
+      "name": "is-not-targeted-by"
     }
   ],
   "version": 35
