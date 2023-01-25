@@ -1,0 +1,81 @@
+{
+  "attributes": {
+    "acd-element": {
+      "description": "lists the steps required to generate a representative true positive event which triggers this alert.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "additional_resources": {
+      "description": "Any other internal, external, or technical references that may be useful for understanding the ADS.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "blind_spots_and_assumptions": {
+      "description": "Recognized issues, assumptions, and areas where an ADS may not fire.",
+      "misp-attribute": "text",
+      "ui-priority": 7
+    },
+    "categorization": {
+      "description": "Provides a mapping of the ADS to the relevant entry in the Att&CK.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "date": {
+      "description": "Enter date, when ADS has been created or edited.",
+      "misp-attribute": "datetime",
+      "ui-priority": 12
+    },
+    "false_positives": {
+      "description": "Known instances of an ADS misfiring due to a misconfiguration, idiosyncrasy in the environment, or other non-malicious scenario.",
+      "misp-attribute": "text",
+      "ui-priority": 6
+    },
+    "goal": {
+      "description": "Short, plaintext description of the type of behavior the ADS is supposed to detect.",
+      "misp-attribute": "text",
+      "ui-priority": 11
+    },
+    "priority": {
+      "description": "Describes the various alerting levels that an ADS may be tagged with.",
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "responses": {
+      "description": "General response steps in the event that this alert fired.",
+      "misp-attribute": "text",
+      "ui-priority": 3
+    },
+    "sigma_rule": {
+      "description": "Rule in SIGMA format.",
+      "misp-attribute": "sigma",
+      "ui-priority": 1
+    },
+    "strategy_abstract": {
+      "description": "High-level walkthrough of how the ADS functions.",
+      "misp-attribute": "text",
+      "ui-priority": 9
+    },
+    "technical_context": {
+      "description": "Detailed information and background needed for a responder to understand all components of the alert. ",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "validation": {
+      "description": "lists the steps required to generate a representative true positive event which triggers this alert.",
+      "misp-attribute": "text",
+      "ui-priority": 5
+    }
+  },
+  "description": "An object defining ADS - Alerting and Detection Strategy by PALANTIR. Can be used for detection engineering.",
+  "meta-category": "misc",
+  "name": "ADS",
+  "required": [
+    "date",
+    "goal",
+    "categorization"
+  ],
+  "uuid": "07a7f4cf-e738-47ad-b045-34c3b382f3b4",
+  "version": 1
+}

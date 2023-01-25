@@ -19,7 +19,7 @@
       "ui-priority": 0
     },
     "exterior-color": {
-      "description": "Exterior color of the vehicule",
+      "description": "Exterior color of the vehicle",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
@@ -49,7 +49,7 @@
       "ui-priority": 0
     },
     "interior-color": {
-      "description": "Interior color of the vehicule",
+      "description": "Interior color of the vehicle",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
@@ -73,13 +73,13 @@
       "ui-priority": 0
     },
     "state": {
-      "description": "State of the vehicule (stolen or recovered)",
+      "description": "State of the vehicle (stolen or recovered)",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
     "type": {
-      "description": "Type of the vehicule",
+      "description": "Type of the vehicle",
       "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
@@ -125,5 +125,5 @@
     "indicative-value"
   ],
   "uuid": "683c076c-f695-4ff2-8efa-e98a418049f4",
-  "version": 3
+  "version": 4
 }
