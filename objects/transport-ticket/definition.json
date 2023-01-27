@@ -68,6 +68,17 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "type-of-ticket": {
+      "description": "Type of ticket",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Purchase ticket",
+        "Boarding pass",
+        "Other"
+      ],
+      "ui-priority": 1
+    },
     "type-of-transport": {
       "description": "Type of transport",
       "disable_correlation": true,
@@ -92,5 +103,5 @@
     "origin"
   ],
   "uuid": "8d6bd699-86f8-477c-aac3-a7f273c19266",
-  "version": 1
+  "version": 2
 }
