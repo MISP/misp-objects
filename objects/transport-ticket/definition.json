@@ -1,63 +1,5 @@
 {
   "attributes": {
-    "origin": {
-      "description": "Origin",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "destination": {
-      "description": "Destination",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "type-of-transport": {
-      "description": "Type of transport",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "sane_default": [
-        "Plane",
-        "Train",
-        "Bus",
-        "Metro",
-        "Taxi",
-        "Ferry",
-        "Other"
-      ],
-      "ui-priority": 1
-    },
-    "description": {
-      "description": "Description",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "date-of-departure": {
-      "description": "Date of departure",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 1
-    },
-    "date-of-arrival": {
-      "description": "Date of arrival",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 1
-    },
-    "date-of-purchase": {
-      "description": "Date of purchase",
-      "disable_correlation": true,
-      "misp-attribute": "datetime",
-      "ui-priority": 1
-    },
-    "ticket-number": {
-      "description": "Ticket Number",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "multiple": true
-    },
     "class": {
       "description": "Class of the ticket",
       "disable_correlation": true,
@@ -73,8 +15,8 @@
     },
     "company": {
       "description": "Street name",
-      "misp-attribute": "text",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 1
     },
     "copy": {
@@ -82,6 +24,64 @@
       "misp-attribute": "attachment",
       "multiple": true,
       "ui-priority": 10
+    },
+    "date-of-arrival": {
+      "description": "Date of arrival",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "date-of-departure": {
+      "description": "Date of departure",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "date-of-purchase": {
+      "description": "Date of purchase",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Description",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "destination": {
+      "description": "Destination",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "origin": {
+      "description": "Origin",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ticket-number": {
+      "description": "Ticket Number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "type-of-transport": {
+      "description": "Type of transport",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Plane",
+        "Train",
+        "Bus",
+        "Metro",
+        "Taxi",
+        "Ferry",
+        "Other"
+      ],
+      "ui-priority": 1
     }
   },
   "description": "A transport ticket.",
