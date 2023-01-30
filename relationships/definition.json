@@ -1352,7 +1352,28 @@
       ],
       "name": "submitted-by",
       "opposite": "submitted"
+    },
+    {
+      "description": "This relationship describes that the source object does not target the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "does-not-target"
+    },
+    {
+      "description": "This relationship describes that the source object is targeted by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-targeted-by"
+    },
+    {
+      "description": "This relationship describes that the source object is not targeted by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-not-targeted-by"
     }
   ],
-  "version": 34
+  "version": 35
 }
