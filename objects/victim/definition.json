@@ -94,6 +94,7 @@
         "government regional",
         "healthcare",
         "hospitality leisure",
+		"information and cultural industries",
         "infrastructure",
         "insurance",
         "legal",
@@ -125,5 +126,5 @@
     "sectors"
   ],
   "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
-  "version": 7
+  "version": 8
 }
