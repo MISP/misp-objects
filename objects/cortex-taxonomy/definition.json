@@ -53,7 +53,7 @@
       "ui-priority": 2
     }
   },
-  "description": "Cortex object describing an Cortex Taxonomy (or mini report)",
+  "description": "Cortex object describing a Cortex Taxonomy (or mini report)",
   "meta-category": "misc",
   "name": "cortex-taxonomy",
   "required": [
@@ -63,5 +63,5 @@
     "level"
   ],
   "uuid": "bef7d23b-e796-4d46-803a-32e317896894",
-  "version": 5
+  "version": 6
 }
