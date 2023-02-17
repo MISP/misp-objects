@@ -1,0 +1,34 @@
+{
+  "attributes": {
+    "date": {
+      "description": "Last update of the post as seen on the ransomware group blog. Different than the first/last seen from the crawling.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Raw post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Original URL location of the post.",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "title": {
+      "description": "Title of blog post.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Ransomware group post as monitored by ransomlook.io",
+  "meta-category": "misc",
+  "name": "ransomware-group-post",
+  "requiredOneOf": [
+    "title",
+    "description",
+    "link"
+  ],
+  "uuid": "52a0e179-4942-41e6-90f5-7db856fd6f39",
+  "version": 1
+}
