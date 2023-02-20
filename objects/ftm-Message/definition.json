@@ -407,7 +407,7 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Message",
   "meta-category": "followthemoney",
   "name": "ftm-Message",
   "required": [

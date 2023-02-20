@@ -365,12 +365,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Table",
   "meta-category": "followthemoney",
   "name": "ftm-Table",
   "required": [
     "name"
   ],
   "uuid": "5ac61342-9fa9-4f07-a578-261709633358",
-  "version": 1
+  "version": 2
 }

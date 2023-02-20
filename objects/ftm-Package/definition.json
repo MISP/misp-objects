@@ -344,12 +344,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Package",
   "meta-category": "followthemoney",
   "name": "ftm-Package",
   "required": [
     "name"
   ],
   "uuid": "f9f13fd9-797c-4e2e-aa17-0ca4a0a60f5c",
-  "version": 1
+  "version": 2
 }

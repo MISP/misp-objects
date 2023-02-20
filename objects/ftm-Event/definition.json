@@ -267,7 +267,7 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Event",
   "meta-category": "followthemoney",
   "name": "ftm-Event",
   "required": [

@@ -165,8 +165,14 @@
       "misp-attribute": "passport-country",
       "ui-priority": 0
     },
+    "passport-creation": {
+      "description": "The creation date of the passport.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "passport-expiration": {
-      "description": "The expiration date of a passport.",
+      "description": "The expiration date of the passport.",
       "disable_correlation": true,
       "misp-attribute": "passport-expiration",
       "ui-priority": 0
@@ -249,5 +255,5 @@
     "handle"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 18
+  "version": 19
 }

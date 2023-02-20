@@ -30,12 +30,12 @@
       "ui-priority": 0
     }
   },
-  "description": "An object to describe a Bitcoin wallet. Best to be used with bitcoin-transactions.",
+  "description": "An object to describe a Bitcoin wallet. Best to be used with btc-transaction object.",
   "meta-category": "financial",
   "name": "btc-wallet",
   "requiredOneOf": [
     "wallet-address"
   ],
   "uuid": "22910C83-DD0E-4ED2-9823-45F8CAD562A4",
-  "version": 2
+  "version": 3
 }

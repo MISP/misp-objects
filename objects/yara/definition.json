@@ -17,6 +17,11 @@
       ],
       "ui-priority": 0
     },
+    "reference": {
+      "description": "Reference or origin of the YARA rule.",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
     "version": {
       "description": "Version of the YARA rule depending where the yara rule is known to work as expected.",
       "disable_correlation": true,
@@ -45,5 +50,5 @@
     "yara-rule-name"
   ],
   "uuid": "b5acf82e-ecca-4868-82fe-9dbdf4d808c3",
-  "version": 5
+  "version": 6
 }

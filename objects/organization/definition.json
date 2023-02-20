@@ -20,7 +20,7 @@
     },
     "date-of-inception": {
       "description": "Date of inception of the organization",
-      "misp-attribute": "date-of-birth",
+      "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "description": {
@@ -51,6 +51,11 @@
       "misp-attribute": "phone-number",
       "multiple": true,
       "ui-priority": 10
+    },
+    "registration-number": {
+      "description": "Registration number of the organization",
+      "misp-attribute": "text",
+      "ui-priority": 15
     },
     "role": {
       "description": "The role of the organization.",
@@ -86,5 +91,5 @@
     "alias"
   ],
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
-  "version": 5
+  "version": 6
 }

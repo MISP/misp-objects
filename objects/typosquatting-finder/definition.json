@@ -1,0 +1,37 @@
+{
+  "attributes": {
+    "research-domain": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Research domain name",
+      "disable_correlation": false,
+      "misp-attribute": "domain",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "variations-found-number": {
+      "description": "Number of variations for the research domain that some info is found.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "variations-number": {
+      "description": "Number of variations for the research domain.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Typosquatting info",
+  "meta-category": "network",
+  "name": "typosquatting-finder",
+  "required": [
+    "research-domain"
+  ],
+  "uuid": "3414fbe7-6f8c-4ed5-bc51-9a11a3a29822",
+  "version": 1
+}

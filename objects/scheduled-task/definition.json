@@ -1,0 +1,112 @@
+{
+  "attributes": {
+    "Start-time": {
+      "description": "Time when the task is triggered",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "author": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Who created the task",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Description of the task ",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "highest-privileges": {
+      "description": "Should the task run with the highest privileges",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "location": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Location (Path including filename) of the scheduled task on the computer",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "name": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Name of the scheduled task",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "password-stored": {
+      "description": "Should the password be stored (Only if log on is not mandatory)",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "repeat": {
+      "categories": [
+        "Other"
+      ],
+      "description": "condition to repeat the task",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "run-when-user-logged-on-only": {
+      "description": "Should the task run if the user is logged on only",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "running-account": {
+      "categories": [
+        "Other"
+      ],
+      "description": "User account used when running the task",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "trigger": {
+      "categories": [
+        "Other"
+      ],
+      "description": "when should the task being triggered",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "On a schedule",
+        "At log on",
+        "At startup",
+        "On idle",
+        "On an event",
+        "At task creation/modification",
+        "On connection to user session",
+        "On disconnect from user session",
+        "On workstation lock",
+        "On workstation unlock"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Windows scheduled task description",
+  "meta-category": "misc",
+  "name": "scheduled-task",
+  "requiredOneOf": [
+    "name",
+    "description",
+    "location"
+  ],
+  "uuid": "076f9362-23f7-4326-b370-a98e47531a44",
+  "version": 1
+}

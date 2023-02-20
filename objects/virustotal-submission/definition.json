@@ -1,0 +1,77 @@
+{
+  "attributes": {
+    "city": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The city a file was uploaded from.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "country": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The country a file was uploaded from.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "date": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The upload date.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "filename": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "The filename used to submit a file.",
+      "disable_correlation": false,
+      "misp-attribute": "filename",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "interface": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The interface used to upload a file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0,
+      "values_list": [
+        "web",
+        "api",
+        "email"
+      ]
+    },
+    "submitter-id": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Submitter ID, given as source_key via the VT API.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "VirusTotal Submission",
+  "meta-category": "misc",
+  "name": "virustotal-submission",
+  "required": [
+    "submitter-id"
+  ],
+  "uuid": "473d289b-f1d4-4f02-a4fe-3b69f534ed45",
+  "version": 1
+}

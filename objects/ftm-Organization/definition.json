@@ -316,7 +316,7 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Organization",
   "meta-category": "followthemoney",
   "name": "ftm-Organization",
   "required": [

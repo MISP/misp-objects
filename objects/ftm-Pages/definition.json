@@ -351,12 +351,12 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Pages",
   "meta-category": "followthemoney",
   "name": "ftm-Pages",
   "required": [
     "name"
   ],
   "uuid": "8e567eab-d893-4a38-9dd9-73442f15ede7",
-  "version": 1
+  "version": 2
 }

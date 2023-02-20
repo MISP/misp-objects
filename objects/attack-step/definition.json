@@ -1,0 +1,83 @@
+{
+  "attributes": {
+    "command-line": {
+      "description": "Command line used to execute attack step, if any.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Description of the attack step",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "detections": {
+      "description": "Detections by the victim's monitoring capabilities.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "dst-domain": {
+      "description": "Domain destination of the attack step, if any.",
+      "disable_correlation": true,
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "dst-ip": {
+      "description": "IP destination of the attack step, if any.",
+      "disable_correlation": true,
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "dst-misc": {
+      "description": "Other type of source of the attack step, if any. This can be e.g. localhost.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "expected-response": {
+      "description": "Response or detection expected (in case of purple teaming)",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "key-step": {
+      "description": "Was this attack step object a key step within the context of the incident/event?",
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "source-domain": {
+      "description": "Domain source of the attack step, if any.",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "source-ip": {
+      "description": "IP source of the attack step, if any.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "source-misc": {
+      "description": "Other type of source of the attack step, if any. This can be e.g. rotating ip from cloud providers such as AWS, or localhost.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "succesful": {
+      "description": "Was this attack step succesful?",
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.",
+  "meta-category": "misc",
+  "name": "attack-step",
+  "requiredOneOf": [
+    "description"
+  ],
+  "uuid": "F86CD6C4-B89D-454A-95C1-165D456D8A74",
+  "version": 1
+}

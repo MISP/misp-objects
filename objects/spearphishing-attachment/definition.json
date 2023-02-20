@@ -1,0 +1,124 @@
+{
+  "attributes": {
+    "artifact-dropped-md5": {
+      "description": "The MD5 of an additional file that was either extracted from or downloaded by the attachment.",
+      "misp-attribute": "md5",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "artifact-dropped-name": {
+      "description": "Name of an additional file that was either extracted from or downloaded by the attachment.",
+      "misp-attribute": "filename",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "artifact-dropped-sha1": {
+      "description": "The SHA1 of an additional file that was either extracted from or downloaded by the attachment.",
+      "misp-attribute": "sha1",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "artifact-dropped-sha256": {
+      "description": "The SHA256 of an additional file that was either extracted from or downloaded by the attachment.",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment-md5": {
+      "description": "The MD5 of the file that was attached to the e-mail itself.",
+      "misp-attribute": "md5",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment-name": {
+      "description": "The name of the file that was attached to the e-mail itself.",
+      "misp-attribute": "filename",
+      "ui-priority": 0
+    },
+    "attachment-sha1": {
+      "description": "The SHA1 of the file that was attached to the e-mail itself.",
+      "misp-attribute": "sha1",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "attachment-sha256": {
+      "description": "The SHA256 of the file that was attached to the e-mail itself.",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "c2-domain": {
+      "description": "Command and control domain detected during analysis.",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "c2-ip": {
+      "description": "Command and control IP address detected during analysis.",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "c2-url": {
+      "description": "Command and control URL detected during analysis.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "date": {
+      "description": "Date and time the e-mail was sent.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "email-sender": {
+      "description": "The source address from which the e-mail was sent.",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "malicious-url": {
+      "description": "Malicious URL that downloaded additional malware.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "research-links": {
+      "description": "A link to an external analysis (VirusTotal, urlscan, etc.).",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sender-ip": {
+      "description": "The source IP from which the e-mail was sent.",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "subject": {
+      "description": "The subject line of the e-mail.",
+      "misp-attribute": "email-subject",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "supporting-evidence": {
+      "description": "Description of the spearphish e-mail.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Spearphishing Attachment",
+  "meta-category": "network",
+  "name": "spearphishing-attachment",
+  "required": [
+    "email-sender",
+    "subject"
+  ],
+  "requiredOneOf": [
+    "attachment-md5",
+    "attachment-sha1",
+    "attachment-sha256"
+  ],
+  "uuid": "5dfcd9a9-d10c-48ae-9ba4-13c2428a994a",
+  "version": 20220825
+}

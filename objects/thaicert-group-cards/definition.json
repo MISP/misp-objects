@@ -1,0 +1,68 @@
+{
+  "attributes": {
+    "country": {
+      "description": "Country of group - group location where it operates from.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Description of group activities or TTP used for group actions.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": false,
+      "ui-priority": 4
+    },
+    "more informations": {
+      "description": "List more informations by url - reports, group links etc..",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "motivation": {
+      "description": "Motivation behind group ie. espionage, ransomware, other criminal activity, hacktivism . . .",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "name": {
+      "description": "Names or nicknames for group.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "observed": {
+      "description": "What sector is this group active at? Government, telecommunication etc and country of activity.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "sponsor": {
+      "description": "Sponsor of group ie. country, state, criminal ring, cartel etc..",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "tools used": {
+      "description": "What known tools are used by group.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 6
+    }
+  },
+  "description": "Adversary group cards inspired by ThaiCERT",
+  "meta-category": "misc",
+  "name": "thaicert-group-cards",
+  "required": [
+    "name"
+  ],
+  "uuid": "f42db88d-1889-4c2f-a903-971cf8e65174",
+  "version": 3
+}

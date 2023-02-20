@@ -1,0 +1,89 @@
+{
+  "attributes": {
+    "a-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IPv4 address associated with A record",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "aaaa-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IPv6 address associated with AAAA record",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mx-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with MX record",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ns-record": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain associated with NS record",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "queried-domain": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Domain name",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "ratio-similarity": {
+      "description": "Similarity probability",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "website-ressource-diff": {
+      "description": "Difference of website's ressources between both, research and current variations domain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "website-similarity": {
+      "description": "Similarity between website of both research and current variations domain",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "website-title": {
+      "description": "Website's title of the current queried domain",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "recommended": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Typosquatting result",
+  "meta-category": "network",
+  "name": "typosquatting-finder-result",
+  "required": [
+    "queried-domain"
+  ],
+  "uuid": "22151d90-b39b-498c-86c7-126ddd2e1a55",
+  "version": 1
+}

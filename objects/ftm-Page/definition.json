@@ -29,9 +29,9 @@
       "ui-priority": 0
     }
   },
-  "description": "",
+  "description": "Page",
   "meta-category": "followthemoney",
   "name": "ftm-Page",
   "uuid": "2d9d7605-5105-445e-9ee8-9e39ad34c5c9",
-  "version": 1
+  "version": 2
 }

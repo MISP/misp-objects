@@ -1,0 +1,42 @@
+{
+  "attributes": {
+    "chat-id": {
+      "description": "Telegram chat id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "comment": {
+      "description": "Phone associated with the telegram user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Telegram bot name",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "token": {
+      "description": "Telegram Token",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "Telegram bot username, must end with \"bot\"",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Information related to a telegram bot",
+  "meta-category": "misc",
+  "name": "telegram-bot",
+  "requiredOneOf": [
+    "token",
+    "chat-id",
+    "name",
+    "username",
+    "comment"
+  ],
+  "uuid": "e2cb6c8f-45fa-429d-9cdb-05298ab21f46",
+  "version": 2
+}
