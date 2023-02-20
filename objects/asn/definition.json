@@ -58,12 +58,12 @@
       "ui-priority": 0
     }
   },
-  "description": "Autonomous system object describing an autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.",
+  "description": "Autonomous system object describing an autonomous system which can include one or more network operators managing an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.",
   "meta-category": "network",
   "name": "asn",
   "requiredOneOf": [
     "asn"
   ],
   "uuid": "4ec55cc6-9e49-4c64-b794-03c25c1a6587",
-  "version": 4
+  "version": 5
 }

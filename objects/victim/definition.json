@@ -77,8 +77,8 @@
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
-        "agriculture",
         "aerospace",
+        "agriculture",
         "automotive",
         "communications",
         "construction",
@@ -88,14 +88,16 @@
         "engineering",
         "entertainment",
         "financial services",
-        "government national",
-        "government regional",
         "government local",
+        "government national",
         "government public services",
+        "government regional",
         "healthcare",
         "hospitality leisure",
+        "information and cultural industries",
         "infrastructure",
         "insurance",
+        "legal",
         "manufacturing",
         "mining",
         "non profit",
@@ -124,5 +126,5 @@
     "sectors"
   ],
   "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
-  "version": 6
+  "version": 8
 }
