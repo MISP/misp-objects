@@ -1,0 +1,103 @@
+{
+  "attributes": {
+    "actions": {
+      "description": "Actions by this PersNOna or engagement with adversary or relateda party.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "alias": {
+      "description": "Aliases or Nicknames of fake PesNOna on differenet media.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "background": {
+      "description": "Background of operation, PersNOna or actions, which needs to be explain to other party in case of share of this profile.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "conversations": {
+      "description": "Conversations with targets",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "critical_tasks": {
+      "description": "Critical Tasks or tasks which this PersNOna has to accomplish.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 6
+    },
+    "goals": {
+      "description": "Goals of creating of this PersNOna.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "location": {
+      "description": "Location, where PersNOna is right now at home, home town, county, country etc.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "media": {
+      "description": "Media where is PersNOna active ie. facebook, telegram etc.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "name": {
+      "description": "Name - full name of PersNOna.",
+      "disable_correlation": false,
+      "misp-attribute": "full-name",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "oppportunities": {
+      "description": "Opportunities for another development, introducing another PersNOna etc.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "photo": {
+      "description": "Photo of PersNOna, url where is photo uploaded or website of fake profile as LinkedIn etc.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "multiple": false,
+      "ui-priority": 0
+    },
+    "questions": {
+      "description": "Questions, which have to be answered by this profile goal.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 8
+    },
+    "responsi": {
+      "description": "Responsibilities of PersNOna, who this PersNOna communicates with, what should discuss and how far.",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    }
+  },
+  "description": "Fake persona with tasks",
+  "meta-category": "misc",
+  "name": "Deception PersNOna",
+  "required": [
+    "name"
+  ],
+  "uuid": "a80828dc-07bf-4d5c-ab82-8160ee5bdd6d",
+  "version": 1
+}

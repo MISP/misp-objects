@@ -33,7 +33,7 @@
       "ui-priority": 0
     }
   },
-  "description": "The Artifact object permits capturing an array of bytes (8-bits), as a base64-encoded string, or linking to a file-like payload. from STIX 2.1 (6.1)",
+  "description": "The Artifact object permits capturing an array of bytes (8-bits), as a base64-encoded string, or linking to a file-like payload. From STIX 2.1 (6.1)",
   "meta-category": "file",
   "name": "artifact",
   "requiredOneOf": [
@@ -41,5 +41,5 @@
     "url"
   ],
   "uuid": "0a46df3a-bd9b-472c-a1e7-6aede7094483",
-  "version": 1
+  "version": 2
 }

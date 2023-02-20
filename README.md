@@ -2,7 +2,7 @@
 
 ![Python application](https://github.com/MISP/misp-objects/workflows/Python%20application/badge.svg)
 
-MISP objects used in MISP system and can be used by other information sharing tool. MISP objects
+MISP objects used in MISP system and can be used by other information sharing tools. MISP objects
 are in addition to MISP attributes to allow advanced combinations of attributes. The creation of these objects
 and their associated attributes are based on real cyber security use-cases and existing practices in information sharing.
 
@@ -83,27 +83,28 @@ Feel free to propose your own MISP objects template to be included in MISP. The 
 }
 ~~~~
 
-A MISP object is described in a simple JSON file containing the following element.
+A MISP object is described in a simple JSON file containing the following elements.
 
 * **name** is the name of the your object.
 * **meta-category** is the category where the object falls into. (such as file, network, financial, misc, internal...)
 * **description** is a summary of the object description.
 * **version** is the version number as a decimal value.
 * **required** is an array containing the minimal required attributes to describe the object.
-* **requiredOneOf** is an array containing the attributes where at least one need to be present to describe the object.
+* **requiredOneOf** is an array containing the attributes where at least one needs to be present to describe the object.
 * **attributes** contains another JSON object listing all the attributes composing the object.
 
 Each attribute must contain a reference **misp-attribute** to reference an existing attribute definition in MISP (MISP attributes types are case-sensitive).
-An array **categories** shall be used to described in which categories the attribute is. The **ui-priority**
+An array **categories** shall be used to describe in which categories the attribute is. The **ui-priority**
 describes the usage frequency of an attribute. This helps to only display the most frequently used attributes and
 allowing advanced users to show all the attributes depending of their configuration. An optional **multiple** field
 shall be set to true if multiple elements of the same key can be used in the object. An optional **values_list**
-where this list of value can be selected as a value for an attribute. An optional **sane_default** where this list of value recommend
+where this list of values can be selected as a value for an attribute. An optional **sane_default** where this list of value recommend
 potential a sane default for an attribute. An optional **disable_correlation** boolean field to suggest the disabling of correlation
 for a specific attribute. An optional **to_ids** boolean field to disable the IDS flag of an attribute.
 
 ## Existing MISP objects
 
+- [objects/ADS](https://github.com/MISP/misp-objects/blob/main/objects/ADS/definition.json) - An object defining ADS - Alerting and Detection Strategy by PALANTIR. Can be used for detection engineering.
 - [objects/ail-leak](https://github.com/MISP/misp-objects/blob/main/objects/ail-leak/definition.json) - An information leak as defined by the AIL Analysis Information Leak framework.
 - [objects/ais-info](https://github.com/MISP/misp-objects/blob/main/objects/ais-info/definition.json) - Automated Indicator Sharing (AIS) Information Source Markings.
 - [objects/android-app](https://github.com/MISP/misp-objects/blob/main/objects/android-app/definition.json) - Indicators related to an Android app.
@@ -111,8 +112,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/annotation](https://github.com/MISP/misp-objects/blob/main/objects/annotation/definition.json) - An annotation object allowing analysts to add annotations, comments, executive summary to a MISP event, objects or attributes.
 - [objects/anonymisation](https://github.com/MISP/misp-objects/blob/main/objects/anonymisation/definition.json) - Anonymisation object describing an anonymisation technique used to encode MISP attribute values. Reference: https://www.caida.org/tools/taxonomy/anonymization.xml.
 - [objects/apivoid-email-verification](https://github.com/MISP/misp-objects/blob/main/objects/apivoid-email-verification/definition.json) - Apivoid email verification API result. Reference: https://www.apivoid.com/api/email-verify/.
-- [objects/artifact](https://github.com/MISP/misp-objects/blob/main/objects/artifact/definition.json) - The Artifact object permits capturing an array of bytes (8-bits), as a base64-encoded string, or linking to a file-like payload. from STIX 2.1 (6.1).
-- [objects/asn](https://github.com/MISP/misp-objects/blob/main/objects/asn/definition.json) - Autonomous system object describing an autonomous system which can include one or more network operators management an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
+- [objects/artifact](https://github.com/MISP/misp-objects/blob/main/objects/artifact/definition.json) - The Artifact object permits capturing an array of bytes (8-bits), as a base64-encoded string, or linking to a file-like payload. From STIX 2.1 (6.1).
+- [objects/asn](https://github.com/MISP/misp-objects/blob/main/objects/asn/definition.json) - Autonomous system object describing an autonomous system which can include one or more network operators managing an entity (e.g. ISP) along with their routing policy, routing prefixes or alike.
 - [objects/attack-pattern](https://github.com/MISP/misp-objects/blob/main/objects/attack-pattern/definition.json) - Attack pattern describing a common attack pattern enumeration and classification.
 - [objects/attack-step](https://github.com/MISP/misp-objects/blob/main/objects/attack-step/definition.json) - An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.
 - [objects/authentication-failure-report](https://github.com/MISP/misp-objects/blob/main/objects/authentication-failure-report/definition.json) - Authentication Failure Report.
@@ -124,7 +125,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/blog](https://github.com/MISP/misp-objects/blob/main/objects/blog/definition.json) - Blog post like Medium or WordPress.
 - [objects/boleto](https://github.com/MISP/misp-objects/blob/main/objects/boleto/definition.json) - A common form of payment used in Brazil.
 - [objects/btc-transaction](https://github.com/MISP/misp-objects/blob/main/objects/btc-transaction/definition.json) - An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.
-- [objects/btc-wallet](https://github.com/MISP/misp-objects/blob/main/objects/btc-wallet/definition.json) - An object to describe a Bitcoin wallet. Best to be used with bitcoin-transactions.
+- [objects/btc-wallet](https://github.com/MISP/misp-objects/blob/main/objects/btc-wallet/definition.json) - An object to describe a Bitcoin wallet. Best to be used with bitcoin-transaction.
 - [objects/cap-alert](https://github.com/MISP/misp-objects/blob/main/objects/cap-alert/definition.json) - Common Alerting Protocol Version (CAP) alert object.
 - [objects/cap-info](https://github.com/MISP/misp-objects/blob/main/objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
 - [objects/cap-resource](https://github.com/MISP/misp-objects/blob/main/objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
@@ -133,9 +134,9 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/command](https://github.com/MISP/misp-objects/blob/main/objects/command/definition.json) - Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.
 - [objects/command-line](https://github.com/MISP/misp-objects/blob/main/objects/command-line/definition.json) - Command line and options related to a specific command executed by a program, whether it is malicious or not.
 - [objects/concordia-mtmf-intrusion-set](https://github.com/MISP/misp-objects/blob/main/objects/concordia-mtmf-intrusion-set/definition.json) - Intrusion Set - Phase Description.
-- [objects/cookie](https://github.com/MISP/misp-objects/blob/main/objects/cookie/definition.json) - An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server. Typically, it's used to tell if two requests came from the same browser — keeping a user logged-in, for example. It remembers stateful information for the stateless HTTP protocol. (as defined by the Mozilla foundation.
-- [objects/cortex](https://github.com/MISP/misp-objects/blob/main/objects/cortex/definition.json) - Cortex object describing a complete cortex analysis. Observables would be attribute with a relationship from this object.
-- [objects/cortex-taxonomy](https://github.com/MISP/misp-objects/blob/main/objects/cortex-taxonomy/definition.json) - Cortex object describing an Cortex Taxonomy (or mini report).
+- [objects/cookie](https://github.com/MISP/misp-objects/blob/main/objects/cookie/definition.json) - An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server. Typically, it's used to tell if two requests came from the same browser — keeping a user logged-in, for example. It remembers stateful information for the stateless HTTP protocol. As defined by the Mozilla foundation.
+- [objects/cortex](https://github.com/MISP/misp-objects/blob/main/objects/cortex/definition.json) - Cortex object describing a complete Cortex analysis. Observables would be attribute with a relationship from this object.
+- [objects/cortex-taxonomy](https://github.com/MISP/misp-objects/blob/main/objects/cortex-taxonomy/definition.json) - Cortex object describing a Cortex Taxonomy (or mini report).
 - [objects/course-of-action](https://github.com/MISP/misp-objects/blob/main/objects/course-of-action/definition.json) - An object describing a specific measure taken to prevent or respond to an attack.
 - [objects/covid19-csse-daily-report](https://github.com/MISP/misp-objects/blob/main/objects/covid19-csse-daily-report/definition.json) - CSSE COVID-19 Daily report.
 - [objects/covid19-dxy-live-city](https://github.com/MISP/misp-objects/blob/main/objects/covid19-dxy-live-city/definition.json) - COVID 19 from dxy.cn - Aggregation by city.
@@ -161,11 +162,13 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/email](https://github.com/MISP/misp-objects/blob/main/objects/email/definition.json) - Email object describing an email with meta-information.
 - [objects/employee](https://github.com/MISP/misp-objects/blob/main/objects/employee/definition.json) - An employee and related data points.
 - [objects/error-message](https://github.com/MISP/misp-objects/blob/main/objects/error-message/definition.json) - An error message which can be related to the processing of data such as import, export scripts from the original MISP instance.
+- [objects/exploit](https://github.com/MISP/misp-objects/blob/main/objects/exploit/definition.json) - Exploit object describes a program in binary or source code form used to abuse one or more vulnerabilities.
 - [objects/exploit-poc](https://github.com/MISP/misp-objects/blob/main/objects/exploit-poc/definition.json) - Exploit-poc object describing a proof of concept or exploit of a vulnerability. This object has often a relationship with a vulnerability object.
 - [objects/facebook-account](https://github.com/MISP/misp-objects/blob/main/objects/facebook-account/definition.json) - Facebook account.
 - [objects/facebook-group](https://github.com/MISP/misp-objects/blob/main/objects/facebook-group/definition.json) - Public or private facebook group.
 - [objects/facebook-page](https://github.com/MISP/misp-objects/blob/main/objects/facebook-page/definition.json) - Facebook page.
 - [objects/facebook-post](https://github.com/MISP/misp-objects/blob/main/objects/facebook-post/definition.json) - Post on a Facebook wall.
+- [objects/facebook-reaction](https://github.com/MISP/misp-objects/blob/main/objects/facebook-reaction/definition.json) - Reaction to facebook posts.
 - [objects/facial-composite](https://github.com/MISP/misp-objects/blob/main/objects/facial-composite/definition.json) - An object which describes a facial composite.
 - [objects/fail2ban](https://github.com/MISP/misp-objects/blob/main/objects/fail2ban/definition.json) - Fail2ban event.
 - [objects/favicon](https://github.com/MISP/misp-objects/blob/main/objects/favicon/definition.json) - A favicon, also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons, associated with a particular website or web page. The object template can include the murmur3 hash of the favicon to facilitate correlation.
@@ -247,6 +250,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/intelmq_report](https://github.com/MISP/misp-objects/blob/main/objects/intelmq_report/definition.json) - IntelMQ Report.
 - [objects/internal-reference](https://github.com/MISP/misp-objects/blob/main/objects/internal-reference/definition.json) - Internal reference.
 - [objects/interpol-notice](https://github.com/MISP/misp-objects/blob/main/objects/interpol-notice/definition.json) - An object which describes a Interpol notice.
+- [objects/intrusion-set](https://github.com/MISP/misp-objects/blob/main/objects/intrusion-set/definition.json) - A object template describing an Intrusion Set as defined in STIX 2.1. An Intrusion Set is a grouped set of adversarial behaviors and resources with common properties that is believed to be orchestrated by a single organization. An Intrusion Set may capture multiple Campaigns or other activities that are all tied together by shared attributes indicating a commonly known or unknown Threat Actor. New activity can be attributed to an Intrusion Set even if the Threat Actors behind the attack are not known. Threat Actors can move from supporting one Intrusion Set to supporting another, or they may support multiple Intrusion Sets.  Where a Campaign is a set of attacks over a period of time against a specific set of targets to achieve some objective, an Intrusion Set is the entire attack package and may be used over a very long period of time in multiple Campaigns to achieve potentially multiple purposes.  While sometimes an Intrusion Set is not active, or changes focus, it is usually difficult to know if it has truly disappeared or ended. Analysts may have varying level of fidelity on attributing an Intrusion Set back to Threat Actors and may be able to only attribute it back to a nation state or perhaps back to an organization within that nation state.
 - [objects/iot-device](https://github.com/MISP/misp-objects/blob/main/objects/iot-device/definition.json) - An IoT device.
 - [objects/iot-firmware](https://github.com/MISP/misp-objects/blob/main/objects/iot-firmware/definition.json) - A firmware for an IoT device.
 - [objects/ip-api-address](https://github.com/MISP/misp-objects/blob/main/objects/ip-api-address/definition.json) - IP Address information. Useful if you are pulling your ip information from ip-api.com.
@@ -288,6 +292,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/pcap-metadata](https://github.com/MISP/misp-objects/blob/main/objects/pcap-metadata/definition.json) - Network packet capture metadata.
 - [objects/pe](https://github.com/MISP/misp-objects/blob/main/objects/pe/definition.json) - Object describing a Portable Executable.
 - [objects/pe-section](https://github.com/MISP/misp-objects/blob/main/objects/pe-section/definition.json) - Object describing a section of a Portable Executable.
+- [objects/Deception PersNOna](https://github.com/MISP/misp-objects/blob/main/objects/Deception PersNOna/definition.json) - Fake persona with tasks.
 - [objects/person](https://github.com/MISP/misp-objects/blob/main/objects/person/definition.json) - An object which describes a person or an identity.
 - [objects/personification](https://github.com/MISP/misp-objects/blob/main/objects/personification/definition.json) - An object which describes a person or an identity.
 - [objects/pgp-meta](https://github.com/MISP/misp-objects/blob/main/objects/pgp-meta/definition.json) - Metadata extracted from a PGP keyblock, message or signature.
@@ -358,7 +363,9 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/target-system](https://github.com/MISP/misp-objects/blob/main/objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromissed internal system.
 - [objects/tattoo](https://github.com/MISP/misp-objects/blob/main/objects/tattoo/definition.json) - Describes tattoos on a natural person's body.
 - [objects/telegram-account](https://github.com/MISP/misp-objects/blob/main/objects/telegram-account/definition.json) - Information related to a telegram account.
+- [objects/telegram-bot](https://github.com/MISP/misp-objects/blob/main/objects/telegram-bot/definition.json) - Information related to a telegram bot.
 - [objects/temporal-event](https://github.com/MISP/misp-objects/blob/main/objects/temporal-event/definition.json) - A temporal event consists of some temporal and spacial boundaries. Spacial boundaries can be physical, virtual or hybrid.
+- [objects/thaicert-group-cards](https://github.com/MISP/misp-objects/blob/main/objects/thaicert-group-cards/definition.json) - Adversary group cards inspired by ThaiCERT.
 - [objects/threatgrid-report](https://github.com/MISP/misp-objects/blob/main/objects/threatgrid-report/definition.json) - ThreatGrid report.
 - [objects/timecode](https://github.com/MISP/misp-objects/blob/main/objects/timecode/definition.json) - Timecode object to describe a start of video sequence (e.g. CCTV evidence) and the end of the video sequence.
 - [objects/timesketch-timeline](https://github.com/MISP/misp-objects/blob/main/objects/timesketch-timeline/definition.json) - A timesketch timeline object based on mandatory field in timesketch to describe a log entry.
@@ -379,6 +386,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/twitter-account](https://github.com/MISP/misp-objects/blob/main/objects/twitter-account/definition.json) - Twitter account.
 - [objects/twitter-list](https://github.com/MISP/misp-objects/blob/main/objects/twitter-list/definition.json) - Twitter list.
 - [objects/twitter-post](https://github.com/MISP/misp-objects/blob/main/objects/twitter-post/definition.json) - Twitter post (tweet).
+- [objects/typosquatting-finder](https://github.com/MISP/misp-objects/blob/main/objects/typosquatting-finder/definition.json) - Typosquatting info.
+- [objects/typosquatting-finder-result](https://github.com/MISP/misp-objects/blob/main/objects/typosquatting-finder-result/definition.json) - Typosquatting result.
 - [objects/url](https://github.com/MISP/misp-objects/blob/main/objects/url/definition.json) - url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.
 - [objects/user-account](https://github.com/MISP/misp-objects/blob/main/objects/user-account/definition.json) - User-account object, defining aspects of user identification, authentication, privileges and other relevant data points.
 - [objects/vehicle](https://github.com/MISP/misp-objects/blob/main/objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
@@ -407,9 +416,9 @@ The MISP object model is open and allows user to use their own relationships. MI
 ## How to contribute MISP objects?
 
 Fork the project, create a new directory in the [objects directory](objects/) matching your object name. Objects must be composed
-of existing MISP attributes. If you are missing a specific attributes, feel free to open an issue in the [MISP project](https://www.github.com/MISP/MISP).
+of existing MISP attributes. If you are missing any specific attributes, feel free to open an issue in the [MISP project](https://www.github.com/MISP/MISP).
 
-We recommend to add a **text** attribute in a object to allow users to add comments or correlating text.
+We recommend to add a **text** attribute in an object to allow users to add comments or correlate text.
 
 If the unparsed object can be included, a **raw-base64** attribute can be used in the object to import the whole object.
 
@@ -419,7 +428,7 @@ When the object is created, the `validate_all.sh` and `jq_all_the_things.sh` is 
 
 ### Best practices when creating MISP object templates
 
-- Use lower-case name without underscore or special characters (except minus) for the field names
+- Use lower-case names without underscore or special characters (except minus) for the field names
 - Add a description in the object template explaining the scope and use-cases of your object templates
 - If the object is the mapping of an existing format, add a reference into the description of the object template
 - `first-seen` and `last-seen` are not required in a object template as an object has those fields by default. If you need additional temporal information, add new specific field(s).
@@ -438,7 +447,7 @@ MISP objects are dynamically used objects that are contributed by users of MISP 
 
 The aim is to allow a dynamic update of objects definition in operational distributed sharing systems like MISP. Security threats and their related indicators are quite dynamic, standardized formats are quite static and new indicators require a significant time before being standardized.
 
-The MISP objects model allows to add new combined indicators format based on their usage without changing the underlying code base of MISP or other threat sharing platform using it. The definition of the objects can be then propagated along with the indicators itself.
+The MISP object model allows for adding new combined indicator formats based on their usage without changing the underlying code base of MISP or other threat sharing platform using it. The definition of the objects can then be propagated along with the indicators itself.
 
 ## License
 
