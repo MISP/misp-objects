@@ -1,5 +1,10 @@
 {
   "attributes": {
+    "access-time": {
+      "description": "The last time the file was accessed",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "attachment": {
       "description": "A non-malicious file.",
       "misp-attribute": "attachment",
@@ -18,6 +23,11 @@
     },
     "compilation-timestamp": {
       "description": "Compilation timestamp",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "creation-time": {
+      "description": "Creation time of the file",
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
@@ -332,6 +342,11 @@
       "description": "Mime type",
       "disable_correlation": true,
       "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "modification-time": {
+      "description": "Last time the file was modified",
+      "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "path": {
