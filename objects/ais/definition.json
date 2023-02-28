@@ -128,8 +128,8 @@
   "meta-category": "marine",
   "name": "ais",
   "requiredOneOf": [
-    "mmsi"
+    "MMSI"
   ],
   "uuid": "ef90551a-ff34-472c-9fba-c272c4435baa",
-  "version": 2
+  "version": 3
 }
