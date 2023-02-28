@@ -126,10 +126,10 @@
   },
   "description": "Automatic Identification System (AIS) is an automatic tracking system that uses transceivers on ships.",
   "meta-category": "marine",
-  "name": "AIS",
+  "name": "ais",
   "requiredOneOf": [
     "mmsi"
   ],
   "uuid": "ef90551a-ff34-472c-9fba-c272c4435baa",
-  "version": 1
+  "version": 2
 }
