@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "data": {
+      "categories": [
+        "Persistence mechanism"
+      ],
+      "description": "Data stored in the registry key value",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "data-type": {
+      "categories": [
+        "Persistence mechanism"
+      ],
+      "description": "Registry key value type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "REG_NONE",
+        "REG_SZ",
+        "REG_EXPAND_SZ",
+        "REG_BINARY",
+        "REG_DWORD",
+        "REG_DWORD_LITTLE_ENDIAN",
+        "REG_DWORD_BIG_ENDIAN",
+        "REG_LINK",
+        "REG_MULTI_SZ",
+        "REG_RESOURCE_LIST",
+        "REG_FULL_RESOURCE_DESCRIPTOR",
+        "REG_RESOURCE_REQUIREMENTS_LIST",
+        "REG_QWORD",
+        "REG_QWORD_LITTLE_ENDIAN"
+      ],
+      "ui-priority": 0
+    },
+    "name": {
+      "categories": [
+        "Persistence mechanism"
+      ],
+      "description": "Name of the registry key value",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Registry key value object describing a Windows registry key value, with its data, data type and name values. To be used when a registry key has multiple values.",
+  "meta-category": "file",
+  "name": "registry-key-value",
+  "requiredOneOf": [
+    "data"
+  ],
+  "uuid": "4626a273-72c1-48d3-8595-ff48ea2277f7",
+  "version": 1
+}
