@@ -85,6 +85,16 @@
       ],
       "ui-priority": 0
     },
+    "mac-dst": {
+      "description": "Destination MAC address of the network connection.",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
+    "mac-src": {
+      "description": "Source MAC address of the network connection.",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
     "src-port": {
       "categories": [
         "Network activity",
@@ -107,5 +117,5 @@
     "community-id"
   ],
   "uuid": "af16764b-f8e5-4603-9de1-de34d272f80b",
-  "version": 4
+  "version": 5
 }
