@@ -53,6 +53,12 @@
       "misp-attribute": "ip-src",
       "ui-priority": 1
     },
+    "last-packet-seen": {
+      "description": "Datetime of the last packet seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
     "layer3-protocol": {
       "description": "Layer 3 protocol of the network connection.",
       "disable_correlation": true,
