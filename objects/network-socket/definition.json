@@ -120,6 +120,12 @@
       "misp-attribute": "filename",
       "ui-priority": 1
     },
+    "first-packet-seen": {
+      "description": "Datetime of the first packet seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
     "hostname-dst": {
       "description": "Destination hostname of the network socket connection.",
       "misp-attribute": "hostname",
@@ -148,6 +154,12 @@
       "misp-attribute": "ip-src",
       "ui-priority": 1
     },
+    "last-packet-seen": {
+      "description": "Datetime of the last packet seen.",
+      "disable_correlatioin": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
     "option": {
       "description": "Option on the socket connection.",
       "misp-attribute": "text",
@@ -157,6 +169,7 @@
     "protocol": {
       "description": "Protocol used by the network socket.",
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0,
       "values_list": [
         "TCP",
