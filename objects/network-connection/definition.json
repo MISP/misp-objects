@@ -10,7 +10,7 @@
       "misp-attribute": "counter",
       "ui-priority": 1
     },
-    "dst-byte-count": {
+    "dst-bytes-count": {
       "description": "Number of bytes sent from the source to the destination.",
       "disable_correlation": true,
       "misp-attribute": "counter",
@@ -113,7 +113,7 @@
       "misp-attribute": "mac-address",
       "ui-priority": 1
     },
-    "src-byte-count": {
+    "src-bytes-count": {
       "description": "Number of bytes sent from the destination to the source.",
       "disable_correlation": true,
       "misp-attribute": "counter",
