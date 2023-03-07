@@ -168,7 +168,7 @@
     },
     "last-packet-seen": {
       "description": "Datetime of the last packet seen.",
-      "disable_correlatioin": true,
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 1
     },
