@@ -106,6 +106,18 @@
       ],
       "ui-priority": 1
     },
+    "dst-byte-count": {
+      "description": "Number of bytes sent from the source to the destination.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "dst-packet-count": {
+      "description": "Number of packets sent from the source to the destination.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "dst-port": {
       "categories": [
         "Network activity",
@@ -190,6 +202,18 @@
       ],
       "ui-priority": 1
     },
+    "src-byte-count": {
+      "description": "Number of bytes sent from the destination to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "src-packet-count": {
+      "description": "Number of packets sent from the destination to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "src-port": {
       "categories": [
         "Network activity",
@@ -220,5 +244,5 @@
     "dst-port"
   ],
   "uuid": "48bbfd72-ef8e-4649-b14d-41b4b5a0eba2",
-  "version": 3
+  "version": 4
 }
