@@ -1,0 +1,71 @@
+{
+  "attributes": {
+    "actor": {
+      "description": "GreyNoise Actor",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "classification": {
+      "description": "GreyNoise Classification",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "First Seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 2
+    },
+    "ip-src": {
+      "description": "Source IP address of the network connection.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "last-seen": {
+      "description": "Last Seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "GreyNoise Visualizer Link",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 2
+    },
+    "noise": {
+      "description": "GreyNoise Internet Scanning Flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "provider": {
+      "description": "GreyNoise Service Provider",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "riot": {
+      "description": "GreyNoise Common Business Service Flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "trust-level": {
+      "description": "GreyNoise RIOT Trust Level",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "GreyNoise IP Information",
+  "meta-category": "network",
+  "name": "greynoise-ip",
+  "requiredOneOf": [
+    "ip-src"
+  ],
+  "uuid": "6B14A94A-46E4-4B82-B24D-0DBF8E8B3FD9",
+  "version": 1
+}
