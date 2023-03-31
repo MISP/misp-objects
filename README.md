@@ -187,6 +187,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/ftm-Call](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Call/definition.json) - Phone call object template including the call and all associated meta-data.
 - [objects/ftm-Company](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Company/definition.json) - A legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective.
 - [objects/ftm-Contract](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Contract/definition.json) - An contract or contract lot issued by an authority. Multiple lots may be awarded to different suppliers (see ContractAward).
+.
 - [objects/ftm-ContractAward](https://github.com/MISP/misp-objects/blob/main/objects/ftm-ContractAward/definition.json) - A contract or contract lot as awarded to a supplier.
 - [objects/ftm-CourtCase](https://github.com/MISP/misp-objects/blob/main/objects/ftm-CourtCase/definition.json) - Court case.
 - [objects/ftm-CourtCaseParty](https://github.com/MISP/misp-objects/blob/main/objects/ftm-CourtCaseParty/definition.json) - Court Case Party.
@@ -234,6 +235,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
 - [objects/github-user](https://github.com/MISP/misp-objects/blob/main/objects/github-user/definition.json) - GitHub user.
 - [objects/gitlab-user](https://github.com/MISP/misp-objects/blob/main/objects/gitlab-user/definition.json) - GitLab user. Gitlab.com user or self-hosted GitLab instance.
+- [objects/greynoise-ip](https://github.com/MISP/misp-objects/blob/main/objects/greynoise-ip/definition.json) - GreyNoise IP Information.
 - [objects/gtp-attack](https://github.com/MISP/misp-objects/blob/main/objects/gtp-attack/definition.json) - GTP attack object as attack as seen on the GTP signaling protocol supporting GPRS/LTE networks.
 - [objects/hashlookup](https://github.com/MISP/misp-objects/blob/main/objects/hashlookup/definition.json) - hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup.
 - [objects/http-request](https://github.com/MISP/misp-objects/blob/main/objects/http-request/definition.json) - A single HTTP request header.
@@ -315,7 +317,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/reddit-subreddit](https://github.com/MISP/misp-objects/blob/main/objects/reddit-subreddit/definition.json) - Public or private subreddit.
 - [objects/regexp](https://github.com/MISP/misp-objects/blob/main/objects/regexp/definition.json) - An object describing a regular expression (regex or regexp). The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a regular expression.
 - [objects/registry-key](https://github.com/MISP/misp-objects/blob/main/objects/registry-key/definition.json) - Registry key object describing a Windows registry key with value and last-modified timestamp.
-- [objects/registry-key-value](https://github.com/MISP/misp-objects/blob/main/objects/registry-key-value/definition.json) - Registry key value object describing a Windows registry key value with its data, data type and name, to be used when a registry key has multiple values
+- [objects/registry-key-value](https://github.com/MISP/misp-objects/blob/main/objects/registry-key-value/definition.json) - Registry key value object describing a Windows registry key value, with its data, data type and name values. To be used when a registry key has multiple values.
 - [objects/regripper-NTUser](https://github.com/MISP/misp-objects/blob/main/objects/regripper-NTUser/definition.json) - Regripper Object template designed to present user specific configuration details extracted from the NTUSER.dat hive.
 - [objects/regripper-sam-hive-single-user](https://github.com/MISP/misp-objects/blob/main/objects/regripper-sam-hive-single-user/definition.json) - Regripper Object template designed to present user profile details extracted from the SAM hive.
 - [objects/regripper-sam-hive-user-group](https://github.com/MISP/misp-objects/blob/main/objects/regripper-sam-hive-user-group/definition.json) - Regripper Object template designed to present group profile details extracted from the SAM hive.
@@ -464,11 +466,11 @@ The MISP objects (JSON files) are dual-licensed under:
 or
 
 ~~~~
- Copyright (c) 2016-2021 Alexandre Dulaunoy - a@foo.be
- Copyright (c) 2016-2021 CIRCL - Computer Incident Response Center Luxembourg
- Copyright (c) 2016-2021 Andras Iklody
- Copyright (c) 2016-2021 Raphael Vinot
- Copyright (c) 2016-2021 Various contributors to MISP Project
+ Copyright (c) 2016-2023 Alexandre Dulaunoy - a@foo.be
+ Copyright (c) 2016-2023 CIRCL - Computer Incident Response Center Luxembourg
+ Copyright (c) 2016-2023 Andras Iklody
+ Copyright (c) 2016-2023 Raphael Vinot
+ Copyright (c) 2016-2023 Various contributors to MISP Project
 
  Redistribution and use in source and binary forms, with or without modification,
  are permitted provided that the following conditions are met:
@@ -498,9 +500,9 @@ If a specific author of a taxonomy wants to license it under a different license
 
 ~~~~
 
-Copyright (C) 2016-2021 Andras Iklody
-Copyright (C) 2016-2021 Alexandre Dulaunoy
-Copyright (C) 2016-2021 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2023 Andras Iklody
+Copyright (C) 2016-2023 Alexandre Dulaunoy
+Copyright (C) 2016-2023 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
