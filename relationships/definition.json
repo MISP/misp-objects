@@ -1268,6 +1268,13 @@
       "name": "drives"
     },
     {
+      "description": "The referenced source object is a rewrite specified in the target object. The rewrite can be for a computer program text but also any rewrite of a text.",
+      "format": [
+        "misp"
+      ],
+      "name": "rewrite"
+    },
+    {
       "description": "The referenced source object is a friend of the target object.",
       "format": [
         "foaf"
@@ -1501,5 +1508,5 @@
       "name": "Me"
     }
   ],
-  "version": 35
+  "version": 36
 }
