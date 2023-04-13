@@ -1,0 +1,55 @@
+{
+  "attributes": {
+    "case-number": {
+      "categories": [
+        "Internal reference",
+        "Other"
+      ],
+      "description": "Case number",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Link to the report mentioned",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 100
+    },
+    "report-file": {
+      "description": "Attachment(s) that is related to the report in human readable format (PDF)",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 99
+    },
+    "summary": {
+      "categories": [
+        "Other",
+        "Internal reference"
+      ],
+      "description": "Free text summary of the risk assessment report",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 100
+    },
+    "type": {
+      "description": "Source of the risk assessment report",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "MONARC",
+        "Serima"
+      ],
+      "ui-priority": 100
+    }
+  },
+  "description": "Risk assessment report object which includes the assessment report from a risk assessment platform such as MONARC",
+  "meta-category": "misc",
+  "name": "risk-assessment-report",
+  "requiredOneOf": [
+    "summary",
+    "link",
+    "report-file"
+  ],
+  "uuid": "72989321-6866-40c6-a9b5-4c5869ec2a76",
+  "version": 1
+}
