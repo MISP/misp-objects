@@ -9,7 +9,8 @@
         "IT Expert",
         "Cyber Security Specialists",
         "Technical Writer"
-      ]
+      ],
+      "ui-priority": 5
     },
     "comment": {
       "description": "Comment associated to the AI chat prompt.",
@@ -28,20 +29,22 @@
         "GPT4ALL",
         "Bing AI",
         "Google Bard AI"
-      ]
+      ],
+      "ui-priority": 3
     },
     "prompt": {
       "description": "Prompt text used for a specific AI chat.",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 2
     },
     "result": {
       "description": "Result",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
-      "ui-priority": 0,
+      "ui-priority": 4,
       "values_list": [
         "Unknown",
         "Harmless",
