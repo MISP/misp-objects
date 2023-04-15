@@ -1,0 +1,62 @@
+{
+  "attributes": {
+    "act-as": {
+      "description": "Act as a specific person.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "Security Analysts",
+        "Incident Responder",
+        "IT Expert",
+        "Cyber Security Specialists",
+        "Technical Writer"
+      ]
+    },
+    "comment": {
+      "description": "Comment associated to the AI chat prompt.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "model": {
+      "description": "AI chatbot model used for the prompt.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "ChatGPT",
+        "BioGPT",
+        "LLaMA",
+        "GPT4ALL",
+        "Bing AI",
+        "Google Bard AI"
+      ]
+    },
+    "prompt": {
+      "description": "Prompt text used for a specific AI chat.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true
+    },
+    "result": {
+      "description": "Result",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0,
+      "values_list": [
+        "Unknown",
+        "Harmless",
+        "Correct",
+        "Dangerous",
+        "Incorrect"
+      ]
+    }
+  },
+  "description": "Object describing an AI prompt such as ChatGPT.",
+  "meta-category": "misc",
+  "name": "ai-chat-prompt",
+  "requiredOneOf": [
+    "prompt"
+  ],
+  "uuid": "a78f4156-0bb7-405c-aa25-ba16a73f68e4",
+  "version": 1
+}
