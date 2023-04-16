@@ -23,7 +23,14 @@
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
-        "ChatGPT",
+        "GPT 3.5",
+        "GPT 4.0",
+        "GPT 3.0",
+        "DALL-E",
+        "Whisper",
+        "Embeddings",
+        "Moderation",
+        "Codex",
         "BioGPT",
         "LLaMA",
         "GPT4ALL",
@@ -52,6 +59,16 @@
         "Dangerous",
         "Incorrect"
       ]
+    },
+    "role": {
+      "description": "Role as defined in OpenAI or similar API.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "system",
+        "user",
+        "assistant"
+      ],
+      "ui-priority": 7
     }
   },
   "description": "Object describing an AI prompt such as ChatGPT.",
@@ -61,5 +78,5 @@
     "prompt"
   ],
   "uuid": "a78f4156-0bb7-405c-aa25-ba16a73f68e4",
-  "version": 1
+  "version": 2
 }
