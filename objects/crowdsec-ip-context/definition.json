@@ -1,0 +1,153 @@
+{
+  "attributes": {
+    "as-num": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Autonomous system number",
+      "disable_correlation": true,
+      "misp-attribute": "AS",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "as-name": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Autonomous system name",
+      "disable_correlation": true,
+      "misp-attribute": "AS",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "country-code": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Country Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "reverse-dns": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Reverse DNS name",
+      "misp-attribute": "hostname",
+      "ui-priority": 1
+    },
+    "dst-port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Destination port",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ip": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "IP Address",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "ip-range": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "destination IP address",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "ip-range-score": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "destination IP address",
+      "misp-attribute": "float",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "country": {
+      "description": "Country of origin",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "city": {
+      "description": "City of origin",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "latitude": {
+      "description": "Latitude of origin",
+      "misp-attribute": "float",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "longitude": {
+      "description": "Longitude of origin",
+      "misp-attribute": "float",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "behaviors": {
+      "description": "Attack categories",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "disable_correlation": true,
+      "multiple": true
+    },
+    "attack-details": {
+      "description": "Triggered scenarios",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "target-countries": {
+      "description": "Target countries (top 10)",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "trust": {
+      "description": "Trust level",
+      "misp-attribute": "float",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "background-noise": {
+      "description": "Background noise",
+      "misp-attribute": "float",
+      "ui-priority": 1,
+      "disable_correlation": true
+    },
+    "scores": {
+      "description": "Scores",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "disable_correlation": true
+    }
+  },
+  "description": "CrowdSec Threat Intelligence - IP CTI search",
+  "meta-category": "network",
+  "name": "crowdsec-ip-context",
+  "requiredOneOf": [
+    "ip"
+  ],
+  "uuid": "0f0a6def-a351-4d3b-9868-d732f6f4666f",
+  "version": 1
+}
