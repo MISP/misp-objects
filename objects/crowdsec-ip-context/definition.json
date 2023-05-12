@@ -54,10 +54,6 @@
       "ui-priority": 1
     },
     "country-code": {
-      "categories": [
-        "Network activity",
-        "External analysis"
-      ],
       "description": "Country Code",
       "disable_correlation": true,
       "misp-attribute": "text",
@@ -149,5 +145,5 @@
     "ip"
   ],
   "uuid": "0f0a6def-a351-4d3b-9868-d732f6f4666f",
-  "version": 1
+  "version": 2
 }
