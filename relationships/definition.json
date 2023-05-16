@@ -1382,6 +1382,13 @@
       "name": "is-not-targeted-by"
     },
     {
+      "description": "This relationship describes that the source object provides services described in the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "serves"
+    },
+    {
       "description": "The source object considers the target object as a friend. Is not necessarily symmetric.",
       "format": [
         "XFN"
@@ -1508,5 +1515,5 @@
       "name": "Me"
     }
   ],
-  "version": 36
+  "version": 37
 }
