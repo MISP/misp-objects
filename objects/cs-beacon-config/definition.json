@@ -1,0 +1,73 @@
+{
+  "attributes": {
+    "c2": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "The C2 sample communicates with",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "jar-md5": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "MD5 of adversary cobaltstrike.jar file",
+      "misp-attribute": "md5",
+      "ui-priority": 0
+    },
+    "md5": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "MD5 of sample containing the Cobalt Strike shellcode",
+      "misp-attribute": "md5",
+      "ui-priority": 1
+    },
+    "sha1": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "SHA1 of sample containing the Cobalt Strike shellcode",
+      "misp-attribute": "sha1",
+      "ui-priority": 1
+    },
+    "sha256": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "SHA256 of sample containing the Cobalt Strike shellcode",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "vt-sha256": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "SHA256 of sample uploaded to VirusTotal",
+      "misp-attribute": "sha256",
+      "ui-priority": 0
+    },
+    "watermark": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The watermark of sample",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Cobalt Strike Beacon Config",
+  "meta-category": "file",
+  "name": "cs-beacon-config",
+  "required": [
+    "jar-md5",
+    "md5",
+    "sha1",
+    "sha256",
+    "watermark"
+  ],
+  "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
+  "version": 1
+}
