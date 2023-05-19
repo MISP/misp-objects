@@ -1310,11 +1310,11 @@
       "name": "spouse-of"
     },
     {
-      "description": "The referenced source object is an ennemy of the target object.",
+      "description": "The referenced source object is an enemy of the target object.",
       "format": [
         "foaf"
       ],
-      "name": "ennemy-of"
+      "name": "enemy-of"
     },
     {
       "description": "The referenced source object is an antagonist of the target object.",
