@@ -1,0 +1,91 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the scanning performed in this scan-result",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "scan-end": {
+      "description": "End of scanning activity",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "scan-result": {
+      "description": "The scan-result as a file (in machine-readable or human-readable format). The file is always consider non-malicious.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "scan-result-format": {
+      "description": "Format used for the scan-result.",
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "free-text output",
+        "XML",
+        "JSON",
+        "CSV",
+        "HTML",
+        "PDF",
+        "Unknown"
+      ]
+    },
+    "scan-result-tool": {
+      "description": "Tool used which generated the scan-result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Nessus",
+        "OpenVAS",
+        "Nmap",
+        "Nikto",
+        "masscan",
+        "zmap",
+        "Qualys",
+        "dnscan",
+        "dnsrecon",
+        "striker",
+        "rhawk",
+        "sslyze",
+        "wafw00f",
+        "sqlmap",
+        "wig",
+        "knock",
+        "wpscan",
+        "joomscan",
+        "arachni",
+        "nuclei"
+      ],
+      "ui-priority": 0
+    },
+    "scan-start": {
+      "description": "Start of scanning activity",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "scan-type": {
+      "description": "Type of scanning in the scan-result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0,
+      "values_list": [
+        "Network",
+        "System",
+        "Unknown"
+      ]
+    }
+  },
+  "description": "Scan result object to add meta-data and the output of the scan result by itself.",
+  "meta-category": "network",
+  "name": "scan-result",
+  "required": [
+    "scan-result"
+  ],
+  "uuid": "ebe2a359-8f5b-4a45-8106-d1678935b4c4",
+  "version": 1
+}
