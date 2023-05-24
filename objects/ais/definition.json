@@ -1,0 +1,135 @@
+{
+  "attributes": {
+    "ETA": {
+      "description": "Estimated time of arrival at destination",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "IMO-number": {
+      "description": "IMO ship identification number: a seven digit number that remains unchanged upon transfer of the ship's registration to another country",
+      "misp-attribute": "text",
+      "ui-priority": 90
+    },
+    "MMSI": {
+      "description": "Vessel Maritime Maritime Mobile Service Identity (MMSI): a unique nine digit identification number.",
+      "misp-attribute": "text",
+      "ui-priority": 99
+    },
+    "call-sign": {
+      "description": "International radio call-sign, up to 7 characters.",
+      "misp-attribute": "text",
+      "ui-priority": 97
+    },
+    "course-over-ground": {
+      "description": "The course of the vessel, relative to true north to 0.1 degree",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 78
+    },
+    "destination": {
+      "description": "Destination of the vessel in max 20 characters",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "dimension-a": {
+      "description": "Distance in meters from Forward Perpendicular (FP)",
+      "misp-attribute": "float",
+      "ui-priority": 24
+    },
+    "dimension-b": {
+      "description": "Distance in meters from After Perpendicular (AP)",
+      "misp-attribute": "float",
+      "ui-priority": 23
+    },
+    "dimension-c": {
+      "description": "Distance in meters inboard from port side",
+      "misp-attribute": "float",
+      "ui-priority": 22
+    },
+    "dimension-d": {
+      "description": "Distance in meters inboard from starboard side",
+      "misp-attribute": "float",
+      "ui-priority": 21
+    },
+    "draught": {
+      "description": "Draught of ship. 0.1-25.5 meters",
+      "misp-attribute": "float",
+      "ui-priority": 20
+    },
+    "first-seen": {
+      "description": "When the location was seen for the first time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 87
+    },
+    "last-seen": {
+      "description": "When the location was seen for the last time.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 86
+    },
+    "latitude": {
+      "description": "The latitude is the decimal value of the latitude in the World Geodetic System 84 (WGS84) reference.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 89
+    },
+    "longitude": {
+      "description": "The longitude is the decimal value of the longitude in the World Geodetic System 84 (WGS84) reference",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 88
+    },
+    "name": {
+      "description": "20 characters to represent the name of the vessel",
+      "misp-attribute": "text",
+      "ui-priority": 98
+    },
+    "navigational-status": {
+      "description": "1. at anchor, 2. under command, 3. Restricted Manoeuvrability, etc.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 80
+    },
+    "rate-of-turn": {
+      "description": "right or left, from 0 to 720 degrees per minute",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 75
+    },
+    "speed-over-ground": {
+      "description": "0.1 knot resolution from 0 to 102 knots",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 79
+    },
+    "true-heading": {
+      "description": "The true heading of the vessel. 0 to 359 degrees",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 77
+    },
+    "true-heading-at-own-position": {
+      "description": "The true heading at own position of the vessel. 0 to 359 degrees",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 76
+    },
+    "type-of-ship": {
+      "description": "Type of ship/cargo",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 91
+    }
+  },
+  "description": "Automatic Identification System (AIS) is an automatic tracking system that uses transceivers on ships.",
+  "meta-category": "marine",
+  "name": "ais",
+  "requiredOneOf": [
+    "MMSI"
+  ],
+  "uuid": "ef90551a-ff34-472c-9fba-c272c4435baa",
+  "version": 3
+}

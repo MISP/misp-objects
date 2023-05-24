@@ -1268,6 +1268,13 @@
       "name": "drives"
     },
     {
+      "description": "The referenced source object is a rewrite specified in the target object. The rewrite can be for a computer program text but also any rewrite of a text.",
+      "format": [
+        "misp"
+      ],
+      "name": "rewrite"
+    },
+    {
       "description": "The referenced source object is a friend of the target object.",
       "format": [
         "foaf"
@@ -1303,11 +1310,11 @@
       "name": "spouse-of"
     },
     {
-      "description": "The referenced source object is an ennemy of the target object.",
+      "description": "The referenced source object is an enemy of the target object.",
       "format": [
         "foaf"
       ],
-      "name": "ennemy-of"
+      "name": "enemy-of"
     },
     {
       "description": "The referenced source object is an antagonist of the target object.",
@@ -1373,6 +1380,13 @@
         "misp"
       ],
       "name": "is-not-targeted-by"
+    },
+    {
+      "description": "This relationship describes that the source object provides services described in the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "serves"
     },
     {
       "description": "The source object considers the target object as a friend. Is not necessarily symmetric.",
@@ -1501,5 +1515,5 @@
       "name": "Me"
     }
   ],
-  "version": 35
+  "version": 37
 }

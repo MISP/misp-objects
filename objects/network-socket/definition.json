@@ -106,6 +106,18 @@
       ],
       "ui-priority": 1
     },
+    "dst-bytes-count": {
+      "description": "Number of bytes sent from the source to the destination.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "dst-packets-count": {
+      "description": "Number of packets sent from the source to the destination.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "dst-port": {
       "categories": [
         "Network activity",
@@ -118,6 +130,12 @@
     "filename": {
       "description": "Socket using filename",
       "misp-attribute": "filename",
+      "ui-priority": 1
+    },
+    "first-packet-seen": {
+      "description": "Datetime of the first packet seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
       "ui-priority": 1
     },
     "hostname-dst": {
@@ -148,6 +166,22 @@
       "misp-attribute": "ip-src",
       "ui-priority": 1
     },
+    "last-packet-seen": {
+      "description": "Datetime of the last packet seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "mac-dst": {
+      "description": "Destination MAC address as it is included in the packets sent",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
+    "mac-src": {
+      "description": "Source (local) MAC address as it is included in the packets sent",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
     "option": {
       "description": "Option on the socket connection.",
       "misp-attribute": "text",
@@ -157,6 +191,7 @@
     "protocol": {
       "description": "Protocol used by the network socket.",
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0,
       "values_list": [
         "TCP",
@@ -176,6 +211,18 @@
         "SOCK_SEQPACKET"
       ],
       "ui-priority": 1
+    },
+    "src-bytes-count": {
+      "description": "Number of bytes sent from the destination to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "src-packets-count": {
+      "description": "Number of packets sent from the destination to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "src-port": {
       "categories": [
@@ -207,5 +254,5 @@
     "dst-port"
   ],
   "uuid": "48bbfd72-ef8e-4649-b14d-41b4b5a0eba2",
-  "version": 3
+  "version": 4
 }

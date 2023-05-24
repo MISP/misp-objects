@@ -10,6 +10,18 @@
       "misp-attribute": "counter",
       "ui-priority": 1
     },
+    "dst-bytes-count": {
+      "description": "Number of bytes sent from the source to the destination.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "dst-packets-count": {
+      "description": "Number of packets sent from the source to the destination.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "dst-port": {
       "categories": [
         "Network activity",
@@ -53,6 +65,12 @@
       "misp-attribute": "ip-src",
       "ui-priority": 1
     },
+    "last-packet-seen": {
+      "description": "Datetime of the last packet seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
     "layer3-protocol": {
       "description": "Layer 3 protocol of the network connection.",
       "disable_correlation": true,
@@ -85,6 +103,28 @@
       ],
       "ui-priority": 0
     },
+    "mac-dst": {
+      "description": "Destination MAC address of the network connection.",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
+    "mac-src": {
+      "description": "Source MAC address of the network connection.",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
+    "src-bytes-count": {
+      "description": "Number of bytes sent from the destination to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "src-packets-count": {
+      "description": "Number of packets sent from the destination to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "src-port": {
       "categories": [
         "Network activity",
@@ -107,5 +147,5 @@
     "community-id"
   ],
   "uuid": "af16764b-f8e5-4603-9de1-de34d272f80b",
-  "version": 4
+  "version": 6
 }

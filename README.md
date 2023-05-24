@@ -105,7 +105,9 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 ## Existing MISP objects
 
 - [objects/ADS](https://github.com/MISP/misp-objects/blob/main/objects/ADS/definition.json) - An object defining ADS - Alerting and Detection Strategy by PALANTIR. Can be used for detection engineering.
+- [objects/ai-chat-prompt](https://github.com/MISP/misp-objects/blob/main/objects/ai-chat-prompt/definition.json) - Object describing an AI prompt such as ChatGPT.
 - [objects/ail-leak](https://github.com/MISP/misp-objects/blob/main/objects/ail-leak/definition.json) - An information leak as defined by the AIL Analysis Information Leak framework.
+- [objects/ais](https://github.com/MISP/misp-objects/blob/main/objects/ais/definition.json) - Automatic Identification System (AIS) is an automatic tracking system that uses transceivers on ships.
 - [objects/ais-info](https://github.com/MISP/misp-objects/blob/main/objects/ais-info/definition.json) - Automated Indicator Sharing (AIS) Information Source Markings.
 - [objects/android-app](https://github.com/MISP/misp-objects/blob/main/objects/android-app/definition.json) - Indicators related to an Android app.
 - [objects/android-permission](https://github.com/MISP/misp-objects/blob/main/objects/android-permission/definition.json) - A set of android permissions - one or more permission(s) which can be linked to other objects (e.g. malware, app).
@@ -125,7 +127,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/blog](https://github.com/MISP/misp-objects/blob/main/objects/blog/definition.json) - Blog post like Medium or WordPress.
 - [objects/boleto](https://github.com/MISP/misp-objects/blob/main/objects/boleto/definition.json) - A common form of payment used in Brazil.
 - [objects/btc-transaction](https://github.com/MISP/misp-objects/blob/main/objects/btc-transaction/definition.json) - An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.
-- [objects/btc-wallet](https://github.com/MISP/misp-objects/blob/main/objects/btc-wallet/definition.json) - An object to describe a Bitcoin wallet. Best to be used with bitcoin-transaction.
+- [objects/btc-wallet](https://github.com/MISP/misp-objects/blob/main/objects/btc-wallet/definition.json) - An object to describe a Bitcoin wallet. Best to be used with btc-transaction object.
 - [objects/cap-alert](https://github.com/MISP/misp-objects/blob/main/objects/cap-alert/definition.json) - Common Alerting Protocol Version (CAP) alert object.
 - [objects/cap-info](https://github.com/MISP/misp-objects/blob/main/objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
 - [objects/cap-resource](https://github.com/MISP/misp-objects/blob/main/objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
@@ -152,6 +154,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/ddos](https://github.com/MISP/misp-objects/blob/main/objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy or using the type field.
 - [objects/device](https://github.com/MISP/misp-objects/blob/main/objects/device/definition.json) - An object to define a device.
 - [objects/diameter-attack](https://github.com/MISP/misp-objects/blob/main/objects/diameter-attack/definition.json) - Attack as seen on the diameter signaling protocol supporting LTE networks.
+- [objects/directory](https://github.com/MISP/misp-objects/blob/main/objects/directory/definition.json) - Directory object describing a directory with meta-information.
 - [objects/dkim](https://github.com/MISP/misp-objects/blob/main/objects/dkim/definition.json) - DomainKeys Identified Mail - DKIM.
 - [objects/dns-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
 - [objects/domain-crawled](https://github.com/MISP/misp-objects/blob/main/objects/domain-crawled/definition.json) - A domain crawled over time.
@@ -233,6 +236,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
 - [objects/github-user](https://github.com/MISP/misp-objects/blob/main/objects/github-user/definition.json) - GitHub user.
 - [objects/gitlab-user](https://github.com/MISP/misp-objects/blob/main/objects/gitlab-user/definition.json) - GitLab user. Gitlab.com user or self-hosted GitLab instance.
+- [objects/greynoise-ip](https://github.com/MISP/misp-objects/blob/main/objects/greynoise-ip/definition.json) - GreyNoise IP Information.
 - [objects/gtp-attack](https://github.com/MISP/misp-objects/blob/main/objects/gtp-attack/definition.json) - GTP attack object as attack as seen on the GTP signaling protocol supporting GPRS/LTE networks.
 - [objects/hashlookup](https://github.com/MISP/misp-objects/blob/main/objects/hashlookup/definition.json) - hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup.
 - [objects/http-request](https://github.com/MISP/misp-objects/blob/main/objects/http-request/definition.json) - A single HTTP request header.
@@ -307,12 +311,14 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/query](https://github.com/MISP/misp-objects/blob/main/objects/query/definition.json) - An object describing a query, along with its format.
 - [objects/r2graphity](https://github.com/MISP/misp-objects/blob/main/objects/r2graphity/definition.json) - Indicators extracted from files using radare2 and graphml.
 - [objects/ransom-negotiation](https://github.com/MISP/misp-objects/blob/main/objects/ransom-negotiation/definition.json) - An object to describe ransom negotiations, as seen in ransomware incidents.
+- [objects/ransomware-group-post](https://github.com/MISP/misp-objects/blob/main/objects/ransomware-group-post/definition.json) - Ransomware group post as monitored by ransomlook.io.
 - [objects/reddit-account](https://github.com/MISP/misp-objects/blob/main/objects/reddit-account/definition.json) - Reddit account.
 - [objects/reddit-comment](https://github.com/MISP/misp-objects/blob/main/objects/reddit-comment/definition.json) - A Reddit post comment.
 - [objects/reddit-post](https://github.com/MISP/misp-objects/blob/main/objects/reddit-post/definition.json) - A Reddit post.
 - [objects/reddit-subreddit](https://github.com/MISP/misp-objects/blob/main/objects/reddit-subreddit/definition.json) - Public or private subreddit.
 - [objects/regexp](https://github.com/MISP/misp-objects/blob/main/objects/regexp/definition.json) - An object describing a regular expression (regex or regexp). The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a regular expression.
 - [objects/registry-key](https://github.com/MISP/misp-objects/blob/main/objects/registry-key/definition.json) - Registry key object describing a Windows registry key with value and last-modified timestamp.
+- [objects/registry-key-value](https://github.com/MISP/misp-objects/blob/main/objects/registry-key-value/definition.json) - Registry key value object describing a Windows registry key value, with its data, data type and name values. To be used when a registry key has multiple values.
 - [objects/regripper-NTUser](https://github.com/MISP/misp-objects/blob/main/objects/regripper-NTUser/definition.json) - Regripper Object template designed to present user specific configuration details extracted from the NTUSER.dat hive.
 - [objects/regripper-sam-hive-single-user](https://github.com/MISP/misp-objects/blob/main/objects/regripper-sam-hive-single-user/definition.json) - Regripper Object template designed to present user profile details extracted from the SAM hive.
 - [objects/regripper-sam-hive-user-group](https://github.com/MISP/misp-objects/blob/main/objects/regripper-sam-hive-user-group/definition.json) - Regripper Object template designed to present group profile details extracted from the SAM hive.
@@ -330,6 +336,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/regripper-system-hive-services-drivers](https://github.com/MISP/misp-objects/blob/main/objects/regripper-system-hive-services-drivers/definition.json) - Regripper Object template designed to gather information regarding the services/drivers from the system-hive.
 - [objects/report](https://github.com/MISP/misp-objects/blob/main/objects/report/definition.json) - Metadata used to generate an executive level report.
 - [objects/research-scanner](https://github.com/MISP/misp-objects/blob/main/objects/research-scanner/definition.json) - Information related to known scanning activity (e.g. from research projects).
+- [objects/risk-assessment-report](https://github.com/MISP/misp-objects/blob/main/objects/risk-assessment-report/definition.json) - Risk assessment report object which includes the assessment report from a risk assessment platform such as MONARC.
 - [objects/rogue-dns](https://github.com/MISP/misp-objects/blob/main/objects/rogue-dns/definition.json) - Rogue DNS as defined by CERT.br.
 - [objects/rtir](https://github.com/MISP/misp-objects/blob/main/objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 - [objects/sandbox-report](https://github.com/MISP/misp-objects/blob/main/objects/sandbox-report/definition.json) - Sandbox report.
@@ -376,6 +383,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/tracking-id](https://github.com/MISP/misp-objects/blob/main/objects/tracking-id/definition.json) - Analytics and tracking ID such as used in Google Analytics or other analytic platform.
 - [objects/transaction](https://github.com/MISP/misp-objects/blob/main/objects/transaction/definition.json) - An object to describe a financial transaction.
 - [objects/translation](https://github.com/MISP/misp-objects/blob/main/objects/translation/definition.json) - Used to keep a text and its translation.
+- [objects/transport-ticket](https://github.com/MISP/misp-objects/blob/main/objects/transport-ticket/definition.json) - A transport ticket.
 - [objects/trustar_report](https://github.com/MISP/misp-objects/blob/main/objects/trustar_report/definition.json) - TruStar Report.
 - [objects/tsk-chats](https://github.com/MISP/misp-objects/blob/main/objects/tsk-chats/definition.json) - An Object Template to gather information from evidential or interesting exchange of messages identified during a digital forensic investigation.
 - [objects/tsk-web-bookmark](https://github.com/MISP/misp-objects/blob/main/objects/tsk-web-bookmark/definition.json) - An Object Template to add evidential bookmarks identified during a digital forensic investigation.
@@ -460,11 +468,11 @@ The MISP objects (JSON files) are dual-licensed under:
 or
 
 ~~~~
- Copyright (c) 2016-2021 Alexandre Dulaunoy - a@foo.be
- Copyright (c) 2016-2021 CIRCL - Computer Incident Response Center Luxembourg
- Copyright (c) 2016-2021 Andras Iklody
- Copyright (c) 2016-2021 Raphael Vinot
- Copyright (c) 2016-2021 Various contributors to MISP Project
+ Copyright (c) 2016-2023 Alexandre Dulaunoy - a@foo.be
+ Copyright (c) 2016-2023 CIRCL - Computer Incident Response Center Luxembourg
+ Copyright (c) 2016-2023 Andras Iklody
+ Copyright (c) 2016-2023 Raphael Vinot
+ Copyright (c) 2016-2023 Various contributors to MISP Project
 
  Redistribution and use in source and binary forms, with or without modification,
  are permitted provided that the following conditions are met:
@@ -494,9 +502,9 @@ If a specific author of a taxonomy wants to license it under a different license
 
 ~~~~
 
-Copyright (C) 2016-2021 Andras Iklody
-Copyright (C) 2016-2021 Alexandre Dulaunoy
-Copyright (C) 2016-2021 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2023 Andras Iklody
+Copyright (C) 2016-2023 Alexandre Dulaunoy
+Copyright (C) 2016-2023 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by

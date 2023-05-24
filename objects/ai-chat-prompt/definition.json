@@ -1,0 +1,82 @@
+{
+  "attributes": {
+    "act-as": {
+      "description": "Act as a specific person.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "Security Analysts",
+        "Incident Responder",
+        "IT Expert",
+        "Cyber Security Specialists",
+        "Technical Writer"
+      ],
+      "ui-priority": 5
+    },
+    "comment": {
+      "description": "Comment associated to the AI chat prompt.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "model": {
+      "description": "AI chatbot model used for the prompt.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "GPT 3.5",
+        "GPT 4.0",
+        "GPT 3.0",
+        "DALL-E",
+        "Whisper",
+        "Embeddings",
+        "Moderation",
+        "Codex",
+        "BioGPT",
+        "LLaMA",
+        "GPT4ALL",
+        "Bing AI",
+        "Google Bard AI"
+      ],
+      "ui-priority": 3
+    },
+    "prompt": {
+      "description": "Prompt text used for a specific AI chat.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "result": {
+      "description": "Result",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4,
+      "values_list": [
+        "Unknown",
+        "Harmless",
+        "Correct",
+        "Dangerous",
+        "Incorrect"
+      ]
+    },
+    "role": {
+      "description": "Role as defined in OpenAI or similar API.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "system",
+        "user",
+        "assistant"
+      ],
+      "ui-priority": 7
+    }
+  },
+  "description": "Object describing an AI prompt such as ChatGPT.",
+  "meta-category": "misc",
+  "name": "ai-chat-prompt",
+  "requiredOneOf": [
+    "prompt"
+  ],
+  "uuid": "a78f4156-0bb7-405c-aa25-ba16a73f68e4",
+  "version": 2
+}
