@@ -47,6 +47,13 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "classifications": {
+      "description": "Classification category of the IP address",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "country": {
       "description": "Country of origin",
       "disable_correlation": true,
@@ -67,6 +74,13 @@
       "description": "Destination port",
       "disable_correlation": true,
       "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "false-positives": {
+      "description": "False positive category of the IP address",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
     },
@@ -145,5 +159,5 @@
     "ip"
   ],
   "uuid": "0f0a6def-a351-4d3b-9868-d732f6f4666f",
-  "version": 2
+  "version": 3
 }
