@@ -48,7 +48,7 @@
       "ui-priority": 1
     },
     "classifications": {
-      "description": "Classifications",
+      "description": "Classification category of the IP address",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
@@ -74,6 +74,13 @@
       "description": "Destination port",
       "disable_correlation": true,
       "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "false-positives": {
+      "description": "False positive category of the IP address",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
     },
