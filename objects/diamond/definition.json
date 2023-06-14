@@ -1,0 +1,106 @@
+{
+  "attributes": {
+    "Advesary": {
+      "description": "The advesary who attacks the victim",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Capability": {
+      "description": "The capability used to attack the victim",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Description": {
+      "description": "Further context to the event",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Direction": {
+      "description": "The network-based direction of the event",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "Victim-to-Infrastructure",
+        "Infrastructure-to-Victim",
+        "Infrastructure-to-Infrastructure",
+        "Adversary-to-Infrastructure",
+        "Infrastructure-to-Adversary",
+        "Bidirectional",
+        "Unknown"
+      ]
+    },
+    "EventID": {
+      "description": "Id of the event",
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "Infrastructure": {
+      "description": "The infrastructure used in the attack",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Methodology": {
+      "description": "Mitre-Attack mapping of the event",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Phase": {
+      "description": "The event mapped to a phase of the killchain",
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "Reconnaissance",
+        "Weaponization",
+        "Delivery",
+        "Exploitation",
+        "Installation",
+        "C2",
+        "Action on Objectives"
+      ]
+    },
+    "Resources": {
+      "description": "The resources the attacker needed for the event to succeed",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Result": {
+      "description": "The result of the event",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "Timestamp": {
+      "description": "Timestamp when the event happened",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "Victim": {
+      "description": "The attacked victim",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ioc": {
+      "description": "Generic IOC",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "textfield": {
+      "description": "Generic textfield",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "A diamond model event object consisting of the four diamond features advesary, infrastructure, capability and victim, several meta-features and ioc attributes.",
+  "meta-category": "internal",
+  "name": "diamond-event",
+  "required": [
+    "EventID",
+    "Advesary",
+    "Capability",
+    "Infrastructure",
+    "Victim"
+  ],
+  "uuid": "a9618450-694d-4c73-9f76-35ea0150c19e",
+  "version": 1
+}
