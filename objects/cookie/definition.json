@@ -71,8 +71,10 @@
   "meta-category": "network",
   "name": "cookie",
   "required": [
-    "cookie"
+    "cookie",
+    "cookie-name",
+    "cookie-value"
   ],
   "uuid": "7755ad19-55c7-4da4-805e-197cf81bbcb8",
-  "version": 5
+  "version": 6
 }
