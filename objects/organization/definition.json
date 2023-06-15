@@ -18,6 +18,11 @@
       "multiple": true,
       "ui-priority": 99
     },
+    "contact_information": {
+      "description": "Generic contact information (e-mail, phone number, etc.) for this Organization, with no specific format requirement.",
+      "misp-attribute": "text",
+      "ui-priority": 18
+    },
     "date-of-inception": {
       "description": "Date of inception of the organization",
       "misp-attribute": "datetime",
@@ -76,6 +81,48 @@
         "Informant",
         "Emitter"
       ]
+    },
+    "sector": {
+      "description": "Description of the organization sector"
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "agriculture",
+        "aerospace",
+        "automotive",
+        "chemical",
+        "commercial",
+        "communication",
+        "construction",
+        "defense",
+        "education",
+        "energy",
+        "entertainment",
+        "financial-services",
+        "government",
+        "government emergency-services",
+        "government government-local",
+        "government-national",
+        "government-public-services",
+        "government-regional",
+        "healthcare",
+        "hospitality-leasure",
+        "infrastructure",
+        "infrastructure dams",
+        "infrastructure nuclear",
+        "infrastructure water",
+        "insurance",
+        "manufacturing",
+        "mining",
+        "non-profit",
+        "pharmaceuticals",
+        "retail",
+        "technology",
+        "telecommunication",
+        "transportation",
+        "utilities"
+      ],
+      "ui-priority": 17
     },
     "type-of-organization": {
       "description": "Type of the organization",
