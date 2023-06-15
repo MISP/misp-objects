@@ -83,7 +83,7 @@
       ]
     },
     "sector": {
-      "description": "Description of the organization sector"
+      "description": "Describing the organization's sector of activity.",
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
