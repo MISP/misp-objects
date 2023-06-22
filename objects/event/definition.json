@@ -1,0 +1,172 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the event.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "end_time": {
+      "description": "The date and time the event was last recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "end_time_fidelity": {
+      "description": "Level of fidelity that the `end_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "event_type": {
+      "description": "Type of event.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "aggregation-information-phishing-schemes",
+        "benign",
+        "blocked",
+        "brute-force-attempt",
+        "c&c-server-hosting",
+        "compromised-system",
+        "confirmed",
+        "connection-malware-port",
+        "connection-malware-system",
+        "content-forbidden-by-law",
+        "control-system-bypass",
+        "copyrighted-content",
+        "data-exfiltration",
+        "deferred",
+        "deletion-information",
+        "denial-of-service",
+        "destruction",
+        "dictionary-attack-attempt",
+        "discarded",
+        "disruption-data-transmission",
+        "dissemination-malware-email",
+        "dissemination-phishing-emails",
+        "dns-cache-poisoning",
+        "dns-local-resolver-hijacking",
+        "dns-spoofing-registered",
+        "dns-rebinding",
+        "dns-server-compromise",
+        "dns-spoofing-unregistered",
+        "dns-stub-resolver-hijacking",
+        "dns-zone-transfer",
+        "domain-name-compromise",
+        "duplicate",
+        "email-flooding",
+        "equipment-loss",
+        "equipment-theft",
+        "exploit",
+        "exploit-attempt",
+        "exploit-framework-exhausting-resources",
+        "exploit-tool-exhausting-resources",
+        "failed",
+        "file-inclusion",
+        "file-inclusion-attempt",
+        "hosting-malware-webpage",
+        "hosting-phishing-sites",
+        "illegitimate-use-name",
+        "illegitimate-use-resources",
+        "infected-by-known-malware",
+        "insufficient-data",
+        "known-malware",
+        "lame-delegations",
+        "major",
+        "modification-information",
+        "misconfiguration",
+        "natural",
+        "network-scanning",
+        "no-apt",
+        "packet-flood",
+        "password-cracking-attempt",
+        "ransomware",
+        "refuted",
+        "scan-probe",
+        "silently-discarded",
+        "supply-chain-customer",
+        "supply-chain-vendor",
+        "spam",
+        "sql-injection",
+        "sql-injection-attempt",
+        "successful",
+        "system-probe",
+        "theft-access-credentials",
+        "unattributed",
+        "unauthorized-access-information",
+        "unauthorized-access-system",
+        "unauthorized-equipment",
+        "unauthorized-release",
+        "unauthorized-use",
+        "undetermined",
+        "unintentional",
+        "unknown-apt",
+        "unspecified",
+        "vandalism",
+        "wiretapping",
+        "worm-spreading",
+        "xss",
+        "xss-attempt"
+      ],
+      "ui-priority": 0
+    },
+    "goal": {
+      "description": "The assumed objective of the event.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name of the event.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "start_time": {
+      "description": "The date and time the event was first recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "start_time_fidelity": {
+      "description": "Level of fidelity that the `start_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "status": {
+      "description": "Current status of the event.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "not-occurred",
+        "ongoing",
+        "occurred",
+        "pending",
+        "undetermined"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "Event object as described in STIX 2.1 Incident object extension.",
+  "meta-category": "misc",
+  "name": "event",
+  "required": [
+    "status"
+  ],
+  "uuid": "3853b726-6a9c-43b3-8ffb-23839b07d5a9",
+  "version": 1
+}
