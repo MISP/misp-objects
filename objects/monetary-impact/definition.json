@@ -1,0 +1,135 @@
+{
+  "attributes": {
+    "conversion_rate": {
+      "description": "Conversion rate between currency and currency_actual (if needed).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "conversion_time": {
+      "description": "Timestamp when the conversion rate was queried.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "criticality": {
+      "description": "Criticality of the impact",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not Specified",
+        "False Positive",
+        "Low",
+        "Moderate",
+        "High",
+        "Extreme"
+      ],
+      "ui-priority": 0
+    },
+    "currency": {
+      "description": "Currency used to describe the max and min amount of the impact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "currency_actual": {
+      "description": "Currency that the impact actually used.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Additional details about the impact.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "end_time": {
+      "description": "The date and time the impact was last recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "end_time_fidelity": {
+      "description": "Level of fidelity that the `end_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "max_amount": {
+      "description": "Maximum damage estimate.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "min_amount": {
+      "description": "Minimum damage estimate.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "recoverability": {
+      "description": "Recoverability of this particular impact with respect to feasibility and required time and resources.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "extended",
+        "not-applicable",
+        "not-recoverable",
+        "regular",
+        "supplemented"
+      ],
+      "ui-priority": 0
+    },
+    "start_time": {
+      "description": "The date and time the impact was first recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "start_time_fidelity": {
+      "description": "Level of fidelity that the `start_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "variety": {
+      "description": "Variety of the moneraty impact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "asset-and-fraud",
+        "brand-damage",
+        "business-disruption",
+        "competitive-advantage",
+        "legal-and-regulatory",
+        "operating-costs",
+        "ransom-demand",
+        "ransom-payment",
+        "response-and-recovery",
+        "uncategorized"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Monetary Impact object as described in STIX 2.1 Incident object extension.",
+  "meta-category": "misc",
+  "name": "monetary-impact",
+  "required": [
+    "variety"
+  ],
+  "uuid": "3376296c-c1ef-4847-979f-2bfc49aa983e",
+  "version": 1
+}
