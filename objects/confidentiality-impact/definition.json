@@ -72,13 +72,13 @@
     "record_count": {
       "description": "The number of records of this type that were compromised.",
       "disable_correlation": true,
-      "misp_attribute": "counter",
+      "misp-attribute": "counter",
       "ui-priority": 0
     },
     "record_size": {
       "description": "The amount of data that was compromised in bytes.",
       "disable_correlation": true,
-      "misp_attribute": "size-in-bytes",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "recoverability": {
