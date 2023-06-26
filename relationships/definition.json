@@ -1513,7 +1513,14 @@
         "XFN"
       ],
       "name": "Me"
+    },
+    {
+      "description": "The source object is redirected to the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "redirects-to"
     }
   ],
-  "version": 37
+  "version": 38
 }
