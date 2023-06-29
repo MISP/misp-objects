@@ -1520,7 +1520,21 @@
         "misp"
       ],
       "name": "redirects-to"
+    },
+    {
+      "description": "The source object is rendered to the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "rendered-as"
+    },
+    {
+      "description": "The source object is known as the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "known-as"
     }
   ],
-  "version": 38
+  "version": 39
 }
