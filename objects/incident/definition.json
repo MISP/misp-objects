@@ -169,6 +169,12 @@
         "supplemented"
       ],
       "ui-priority": 0
+    },
+    "score": {
+      "description": "Incident score, with a name, an optional description and the numeric score value.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
     }
   },
   "description": "Incident object template as described in STIX 2.1 Incident object and its core extension.",
