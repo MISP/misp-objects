@@ -36,6 +36,13 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "fft-plot": {
+      "description": "FFT plot of the signal",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "geolocation_alt": {
       "description": "The location of the Recording system (altitude).",
       "disable_correlation": true,
@@ -125,6 +132,13 @@
       "description": "The version of the SigMF specification used to create the Metadata file.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "waterfall-plot": {
+      "description": "Waterfall plot of the signal",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
       "ui-priority": 0
     }
   },
