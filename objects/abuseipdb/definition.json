@@ -5,6 +5,11 @@
       "misp-attribute": "counter",
       "ui-priority": 0
     },
+    "is-malicious": {
+      "description": "If the IP is malicious based on the abuse-confidence-score and threshold",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
     "is-public": {
       "description": "If an IP is public",
       "misp-attribute": "boolean",
