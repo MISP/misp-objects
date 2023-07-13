@@ -1,5 +1,10 @@
 {
   "attributes": {
+    "is-malicious": {
+      "description": "If the IP is malicious based on the abuse-confidence-score and threshold",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
     "abuse-confidence-score": {
       "description": "Rating (0-100) of how confident AbuseIPDB is that an IP address is entirely malicious",
       "misp-attribute": "counter",
