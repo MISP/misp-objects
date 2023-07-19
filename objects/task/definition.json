@@ -1,0 +1,122 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the task.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "end_time": {
+      "description": "The date and time the event was last recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "end_time_fidelity": {
+      "description": "Level of fidelity that the `end_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "error": {
+      "description": "Details about any failure or deviation that occurred in the task.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name of the task.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "outcome": {
+      "description": "Outcome of the task",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "cancelled",
+        "failed",
+        "ongoing",
+        "pending",
+        "successful",
+        "unknown"
+      ],
+      "ui-priority": 0
+    },
+    "priority": {
+      "description": "Priority or importance of the task.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not Specified",
+        "False Positive",
+        "Low",
+        "Moderate",
+        "High",
+        "Extreme"
+      ],
+      "ui-priority": 0
+    },
+    "start_time": {
+      "description": "The date and time the event was first recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "start_time_fidelity": {
+      "description": "Level of fidelity that the `start_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "task_type": {
+      "description": "Type of task.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "administrative",
+        "attribution",
+        "containment",
+        "declared",
+        "detected",
+        "eradication",
+        "escalated",
+        "exercised-control",
+        "external-intelligence",
+        "external-outreach",
+        "external-support",
+        "implemented-control",
+        "negotiation",
+        "playbook-execution",
+        "playbook-step-execution",
+        "recovery",
+        "reported",
+        "routine-updates",
+        "victim-notification"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Task object as described in STIX 2.1 Incident object extension.",
+  "meta-category": "misc",
+  "name": "task",
+  "required": [
+    "outcome"
+  ],
+  "uuid": "384734e7-8710-4ab0-901a-6f0e73a551e6",
+  "version": 1
+}

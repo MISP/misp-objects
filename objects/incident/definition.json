@@ -1,0 +1,188 @@
+{
+  "attributes": {
+    "criticality": {
+      "description": "Criticality of the incident",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not Specified",
+        "False Positive",
+        "Low",
+        "Moderate",
+        "High",
+        "Extreme"
+      ],
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the incident.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "detection_method": {
+      "description": "Methods used to detect the activity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "automated-tool",
+        "human-review",
+        "message-from-attacker",
+        "system-outage",
+        "user-reporting"
+      ],
+      "ui-priority": 0
+    },
+    "determination": {
+      "description": "Determination on the outcome of the incident.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "blocked",
+        "successful-attempt",
+        "failed-attempt",
+        "false-positive",
+        "low-value",
+        "suspected"
+      ],
+      "ui-priority": 0
+    },
+    "incident_type": {
+      "description": "Type of incident",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "aggregation-information-phishing-schemes",
+        "benign",
+        "blocked",
+        "brute-force-attempt",
+        "c&c-server-hosting",
+        "compromised-system",
+        "confirmed",
+        "connection-malware-port",
+        "connection-malware-system",
+        "content-forbidden-by-law",
+        "control-system-bypass",
+        "copyrighted-content",
+        "data-exfiltration",
+        "deferred",
+        "deletion-information",
+        "denial-of-service",
+        "destruction",
+        "dictionary-attack-attempt",
+        "discarded",
+        "disruption-data-transmission",
+        "dissemination-malware-email",
+        "dissemination-phishing-emails",
+        "dns-cache-poisoning",
+        "dns-local-resolver-hijacking",
+        "dns-spoofing-registered",
+        "dns-rebinding",
+        "dns-server-compromise",
+        "dns-spoofing-unregistered",
+        "dns-stub-resolver-hijacking",
+        "dns-zone-transfer",
+        "domain-name-compromise",
+        "duplicate",
+        "email-flooding",
+        "equipment-loss",
+        "equipment-theft",
+        "exploit",
+        "exploit-attempt",
+        "exploit-framework-exhausting-resources",
+        "exploit-tool-exhausting-resources",
+        "failed",
+        "file-inclusion",
+        "file-inclusion-attempt",
+        "hosting-malware-webpage",
+        "hosting-phishing-sites",
+        "illegitimate-use-name",
+        "illegitimate-use-resources",
+        "infected-by-known-malware",
+        "insufficient-data",
+        "known-malware",
+        "lame-delegations",
+        "major",
+        "modification-information",
+        "misconfiguration",
+        "natural",
+        "network-scanning",
+        "no-apt",
+        "packet-flood",
+        "password-cracking-attempt",
+        "ransomware",
+        "refuted",
+        "scan-probe",
+        "silently-discarded",
+        "supply-chain-customer",
+        "supply-chain-vendor",
+        "spam",
+        "sql-injection",
+        "sql-injection-attempt",
+        "successful",
+        "system-probe",
+        "theft-access-credentials",
+        "unattributed",
+        "unauthorized-access-information",
+        "unauthorized-access-system",
+        "unauthorized-equipment",
+        "unauthorized-release",
+        "unauthorized-use",
+        "undetermined",
+        "unintentional",
+        "unknown-apt",
+        "unspecified",
+        "vandalism",
+        "wiretapping",
+        "worm-spreading",
+        "xss",
+        "xss-attempt"
+      ],
+      "ui-priority": 0
+    },
+    "investigation_status": {
+      "description": "Current status of the incident investigation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "closed",
+        "new",
+        "open"
+      ],
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name of the incident.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "recoverability": {
+      "description": "Recoverability of the incident, with respect to feasibility and required time and resources.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "extended",
+        "not-applicable",
+        "not-recoverable",
+        "regular",
+        "supplemented"
+      ],
+      "ui-priority": 0
+    },
+    "score": {
+      "description": "Incident score, with a name, an optional description and the numeric score value.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Incident object template as described in STIX 2.1 Incident object and its core extension.",
+  "meta-category": "misc",
+  "name": "incident",
+  "required": [
+    "name"
+  ],
+  "uuid": "38597424-f9bb-4865-9b4b-819172df0334",
+  "version": 1
+}

@@ -1,0 +1,124 @@
+{
+  "attributes": {
+    "asset_type": {
+      "description": "The type or property or system that was affected by this impact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "building-doors",
+        "building-windows",
+        "buildings",
+        "computers-mobile",
+        "computers-personal",
+        "computers-server",
+        "environment",
+        "ics-actuator",
+        "ics-engineering-workstation",
+        "ics-historian",
+        "ics-hmi",
+        "ics-other",
+        "ics-plc",
+        "ics-safety-system",
+        "ics-sensor",
+        "inventory",
+        "network-device",
+        "private-infrastructure",
+        "public-infrastructure",
+        "security-containers",
+        "vehicles"
+      ],
+      "ui-priority": 0
+    },
+    "criticality": {
+      "description": "Criticality of the impact",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not Specified",
+        "False Positive",
+        "Low",
+        "Moderate",
+        "High",
+        "Extreme"
+      ],
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Additional details about the impact.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "end_time": {
+      "description": "The date and time the impact was last recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "end_time_fidelity": {
+      "description": "Level of fidelity that the `end_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "impact_type": {
+      "description": "Type of physical impact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "damaged-functional",
+        "damaged-nonfunctional",
+        "destruction",
+        "none",
+        "unknown"
+      ],
+      "ui-priority": 0
+    },
+    "recoverability": {
+      "description": "Recoverability of this particular impact with respect to feasibility and required time and resources.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "extended",
+        "not-applicable",
+        "not-recoverable",
+        "regular",
+        "supplemented"
+      ],
+      "ui-priority": 0
+    },
+    "start_time": {
+      "description": "The date and time the impact was first recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "start_time_fidelity": {
+      "description": "Level of fidelity that the `start_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Physical Impact object as described in STIX 2.1 Incident object extension.",
+  "meta-category": "misc",
+  "name": "physical-impact",
+  "required": [
+    "impact_type"
+  ],
+  "uuid": "ae979b91-5896-46f7-ad70-4f3036d79251",
+  "version": 1
+}
