@@ -5,11 +5,21 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "domain": {
+      "description": "Destination domain",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
     "first-seen": {
       "description": "First seen of the SSL/TLS handshake",
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
+    },
+    "hostname": {
+      "description": "Destination hostname",
+      "misp-attribute": "hostname",
+      "ui-priority": 1
     },
     "ip-dst": {
       "description": "Destination IP address",
@@ -46,5 +56,5 @@
     "ja3s-fingerprint-md5"
   ],
   "uuid": "7f377f66-d128-4b97-897f-592d06ba2ff7",
-  "version": 4
+  "version": 5
 }
