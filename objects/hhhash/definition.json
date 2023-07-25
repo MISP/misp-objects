@@ -1,0 +1,48 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "A description of the HHHash object.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "hhhash": {
+      "description": "HHHash hash in format hhh:version:hash_value",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hhhash-headers": {
+      "description": "HHHash value before being hash in the format each header is separated by a :.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hhhash-query-headers": {
+      "description": "Set of headers used for the query in the format where each header is separated by a : .",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hhhash-tool": {
+      "description": "HHHash crawling infrastructure or tool used to produce the HHHash value. ",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "python-hhhash",
+        "c-hhhash",
+        "go-hhhash",
+        "r-hhhash",
+        "lacus",
+        "Common Crawl",
+        "other"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing a HHHash object with the hash value along with the crawling parameters. For more information: https://www.foo.be/2023/07/HTTP-Headers-Hashing_HHHash",
+  "meta-category": "misc",
+  "name": "hhhash",
+  "requiredOneOf": [
+    "hhhash"
+  ],
+  "uuid": "4dbcde93-a4e0-4bee-913c-0988b5259d14",
+  "version": 1
+}

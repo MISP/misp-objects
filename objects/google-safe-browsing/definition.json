@@ -1,0 +1,24 @@
+{
+  "attributes": {
+    "malicious": {
+      "description": "If the URL comes back as malicious",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "platforms": {
+      "description": "The platform identified (windows, linux, etc...)",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "threats": {
+      "description": "The threat type related to that URL (malware, social engineering, etc...)",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Google Safe checks a URL against Google's constantly updated list of unsafe web resources.",
+  "meta-category": "network",
+  "name": "google-safe-browsing",
+  "uuid": "1f8af312-dfbb-4572-b894-dabe7c8798d8",
+  "version": 1
+}
