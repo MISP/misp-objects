@@ -18,7 +18,6 @@
       "misp-attribute": "attachment",
       "ui-priority": 1
     },
-
     "scan-result-format": {
       "description": "Format used for the scan-result.",
       "misp-attribute": "text",
