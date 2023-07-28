@@ -18,6 +18,7 @@
       "misp-attribute": "attachment",
       "ui-priority": 1
     },
+
     "scan-result-format": {
       "description": "Format used for the scan-result.",
       "misp-attribute": "text",
@@ -54,6 +55,7 @@
         "AuditJS Scan",
         "Azure Security Center Recommendations Scan",
         "Bandit Scan",
+        "BinaryEdge",
         "BlackDuck API",
         "Blackduck Component Risk",
         "Blackduck Hub Scan",
@@ -66,6 +68,7 @@
         "Burp REST API",
         "Burp Scan",
         "CargoAudit Scan",
+        "Censys",
         "Checkmarx OSA",
         "Checkmarx Scan",
         "Checkmarx Scan detailed",
@@ -133,6 +136,7 @@
         "Nmap Scan",
         "Node Security Platform Scan",
         "Nuclei Scan",
+        "ONYPHE",
         "ORT evaluated model Importer",
         "OpenVAS CSV",
         "Openscap Vulnerability Scan",
@@ -156,6 +160,7 @@
         "Scantist Scan",
         "Scout Suite Scan",
         "Semgrep JSON Report",
+        "Shodan",
         "Snyk Scan",
         "Solar Appscreener Scan",
         "SonarQube API Import",
@@ -191,11 +196,17 @@
         "Xanitizer Scan",
         "Yarn Audit Scan",
         "ZAP Scan",
+        "ZoomEye",
         "docker-bench-security Scan",
         "kube-bench Scan",
         "pip-audit Scan"
       ],
       "ui-priority": 0
+    },
+    "scan-result-query": {
+      "description": "Query or parameters provided to scan-result-tool to generate the scan-result.",
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "scan-start": {
       "description": "Start of scanning activity",
