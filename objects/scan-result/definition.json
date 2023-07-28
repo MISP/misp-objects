@@ -32,6 +32,11 @@
         "Unknown"
       ]
     },
+    "scan-result-query": {
+      "description": "Query or parameters provided to scan-result-tool to generate the scan-result.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "scan-result-tool": {
       "description": "Tool used which generated the scan-result.",
       "disable_correlation": true,
@@ -201,11 +206,6 @@
         "pip-audit Scan"
       ],
       "ui-priority": 0
-    },
-    "scan-result-query": {
-      "description": "Query or parameters provided to scan-result-tool to generate the scan-result.",
-      "misp-attribute": "text",
-      "ui-priority": 1
     },
     "scan-start": {
       "description": "Start of scanning activity",
