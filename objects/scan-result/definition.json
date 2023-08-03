@@ -232,8 +232,8 @@
   "name": "scan-result",
   "requiredOneOf": [
     "scan-result",
-    "scan-result-query",
+    "scan-result-query"
   ],
   "uuid": "ebe2a359-8f5b-4a45-8106-d1678935b4c4",
-  "version": 2
+  "version": 3
 }
