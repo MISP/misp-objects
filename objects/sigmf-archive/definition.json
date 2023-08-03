@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "SigMF-archive": {
+      "description": "tar archive (.sigmf)",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    }
+  },
+  "description": "An object representing an archive containing one or multiple recordings in the Signal Metadata Format Specification (SigMF)",
+  "meta-category": "misc",
+  "name": "sigmf-archive",
+  "required": [
+    "SigMF-archive"
+  ],
+  "uuid": "5985d34d-3657-4828-9788-470175bcc3b1",
+  "version": 1
+}
