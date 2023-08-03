@@ -4,7 +4,6 @@
       "description": "Binary file of IQ or RF samples (.sigmf-data)",
       "disable_correlation": true,
       "misp-attribute": "attachment",
-      "multiple": true,
       "ui-priority": 1
     },
     "SigMF-meta": {
@@ -14,7 +13,7 @@
       "ui-priority": 0
     }
   },
-  "description": "An object representing  a single IQ/RF sample in the Signal Metadata Format Specification (SigMF)",
+  "description": "An object representing a single IQ/RF sample in the Signal Metadata Format Specification (SigMF)",
   "meta-category": "misc",
   "name": "sigmf-recording",
   "required": [

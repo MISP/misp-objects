@@ -40,7 +40,6 @@
       "description": "FFT plot of the signal",
       "disable_correlation": true,
       "misp-attribute": "attachment",
-      "multiple": true,
       "ui-priority": 0
     },
     "geolocation_alt": {
@@ -71,7 +70,6 @@
       "description": "Binary file of IQ samples",
       "disable_correlation": true,
       "misp-attribute": "attachment",
-      "multiple": true,
       "ui-priority": 0
     },
     "license": {
@@ -138,7 +136,6 @@
       "description": "Waterfall plot of the signal",
       "disable_correlation": true,
       "misp-attribute": "attachment",
-      "multiple": true,
       "ui-priority": 0
     }
   },
