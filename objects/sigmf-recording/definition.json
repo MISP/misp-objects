@@ -1,0 +1,24 @@
+{
+  "attributes": {
+    "SigMF-data": {
+      "description": "Binary file of IQ or RF samples (.sigmf-data)",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "SigMF-meta": {
+      "description": "Metadata file in SigMF format (.sigmf-meta)",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object representing a single IQ/RF sample in the Signal Metadata Format Specification (SigMF)",
+  "meta-category": "misc",
+  "name": "sigmf-recording",
+  "required": [
+    "SigMF-meta"
+  ],
+  "uuid": "0ca64648-38ca-4e48-99ce-2e655cdac02c",
+  "version": 1
+}
