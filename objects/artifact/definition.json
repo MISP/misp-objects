@@ -10,11 +10,11 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "hashes": {
-      "description": "Specifies a dictionary of hashes for the contents of the url or the payload_bin.  This property MUST be present when the url property is present. (should be file with relationships?)",
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
+    "md5": {
+      "description": "[Insecure] MD5 hash (128 bits)",
+      "misp-attribute": "md5",
+      "recommended": false,
+      "ui-priority": 1
     },
     "mime_type": {
       "description": "Whenever feasible, this value SHOULD be one of the values defined in the Template column in the IANA media type registry [Media Types]. Maintaining a comprehensive universal catalog of all extant file types is obviously not possible. When specifying a MIME Type not included in the IANA registry, implementers should use their best judgement so as to facilitate interoperability.",
@@ -27,8 +27,46 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "sha1": {
+      "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
+      "misp-attribute": "sha1",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "sha256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "sha3-256": {
+      "description": "Secure Hash Algorithm 3 (256 bits)",
+      "misp-attribute": "sha3-256",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha3-512": {
+      "description": "Secure Hash Algorithm 3 (512 bits)",
+      "misp-attribute": "sha3-512",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha512": {
+      "description": "Secure Hash Algorithm 2 (512 bits)",
+      "misp-attribute": "sha512",
+      "ui-priority": 1
+    },
+    "ssdeep": {
+      "description": "Fuzzy hash using context triggered piecewise hashes (CTPH)",
+      "misp-attribute": "ssdeep",
+      "ui-priority": 0
+    },
+    "tlsh": {
+      "description": "Fuzzy hash by Trend Micro: Locality Sensitive Hash",
+      "misp-attribute": "tlsh",
+      "ui-priority": 0
+    },
     "url": {
-      "description": "The value of this property MUST be a valid URL that resolves to the unencoded content.",
+      "description": "The value of this property MUST be a valid URL that resolves to the unencoded content. When present, at least one hash value MUST be present too.",
       "misp-attribute": "url",
       "ui-priority": 0
     }
@@ -41,5 +79,5 @@
     "url"
   ],
   "uuid": "0a46df3a-bd9b-472c-a1e7-6aede7094483",
-  "version": 2
+  "version": 3
 }
