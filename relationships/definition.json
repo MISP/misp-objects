@@ -17,7 +17,8 @@
       "format": [
         "misp"
       ],
-      "name": "executes"
+      "name": "executes",
+      "opposite": "executed-by"
     },
     {
       "description": "The referenced source and target objects are semantically duplicates of each other.",
@@ -219,7 +220,17 @@
         "misp",
         "stix-2.0"
       ],
-      "name": "indicates"
+      "name": "indicates",
+      "opposite": "indicated-by"
+    },
+    {
+      "description": "This relationship describes that the source object is indicated by the target object.",
+      "format": [
+        "misp",
+        "stix-2.1"
+      ],
+      "name": "indicated-by",
+      "opposite": "indicates"
     },
     {
       "description": "This relationship describes that the source object mentions the target object.",
@@ -332,15 +343,25 @@
       "format": [
         "misp"
       ],
-      "name": "executed-by"
+      "name": "executed-by",
+      "opposite": "executes"
     },
     {
-      "description": "This relationship describes an object affected by another object.",
+      "description": "This relationship describes an object that affects another object.",
       "format": [
         "misp",
         "alfred"
       ],
-      "name": "affects"
+      "name": "affects",
+      "opposite": "affected-by"
+    },
+    {
+      "description": "This relationship describes an object affected by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "affected-by",
+      "opposite": "affects"
     },
     {
       "description": "This relationship describes an object beaconing to another object.",
@@ -1697,6 +1718,13 @@
       ],
       "name": "created-by",
       "opposite": "creates"
+    },
+    {
+      "description": "The source object is the sample of the target object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "sample-of"
     }
   ],
   "version": 40
