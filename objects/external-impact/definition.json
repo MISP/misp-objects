@@ -1,0 +1,97 @@
+{
+  "attributes": {
+    "criticality": {
+      "description": "Criticality of the impact",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not Specified",
+        "False Positive",
+        "Low",
+        "Moderate",
+        "High",
+        "Extreme"
+      ],
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Additional details about the impact.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "end_time": {
+      "description": "The date and time the impact was last recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "end_time_fidelity": {
+      "description": "Level of fidelity that the `end_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "impact_type": {
+      "description": "Type of impact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "economic",
+        "emergency-services",
+        "foreign-relations",
+        "national-secuirty",
+        "public-confidence",
+        "public-health",
+        "public-safety"
+      ],
+      "ui-priority": 0
+    },
+    "recoverability": {
+      "description": "Recoverability of this particular impact with respect to feasibility and required time and resources.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "extended",
+        "not-applicable",
+        "not-recoverable",
+        "regular",
+        "supplemented"
+      ],
+      "ui-priority": 0
+    },
+    "start_time": {
+      "description": "The date and time the impact was first recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "start_time_fidelity": {
+      "description": "Level of fidelity that the `start_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "External Impact object as described in STIX 2.1 Incident object extension.",
+  "meta-category": "misc",
+  "name": "external-impact",
+  "required": [
+    "impact_type"
+  ],
+  "uuid": "4ac36991-9333-4ada-8e17-bcbeb988160a",
+  "version": 1
+}

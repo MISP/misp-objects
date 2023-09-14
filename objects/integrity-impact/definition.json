@@ -1,0 +1,127 @@
+{
+  "attributes": {
+    "alteration": {
+      "description": "",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "potential-destruction",
+        "potential-modification",
+        "partial-destruction",
+        "partial-modification",
+        "full-destruction",
+        "full-modification",
+        "none"
+      ],
+      "ui-priority": 0
+    },
+    "criticality": {
+      "description": "Criticality of the impact",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not Specified",
+        "False Positive",
+        "Low",
+        "Moderate",
+        "High",
+        "Extreme"
+      ],
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Additional details about the impact.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "end_time": {
+      "description": "The date and time the impact was last recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "end_time_fidelity": {
+      "description": "Level of fidelity that the `end_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    },
+    "information_type": {
+      "description": "Type of information that had its confidentiality compromised.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "classified-material",
+        "communication",
+        "credentials-admin",
+        "credentials-user",
+        "financial",
+        "leval",
+        "payment",
+        "phi",
+        "pii",
+        "proprietary"
+      ],
+      "ui-priority": 0
+    },
+    "record_count": {
+      "description": "The number of records of this type that were compromised.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "record_size": {
+      "description": "The amount of data that was compromised in bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "recoverability": {
+      "description": "Recoverability of this particular impact with respect to feasibility and required time and resources.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "extended",
+        "not-applicable",
+        "not-recoverable",
+        "regular",
+        "supplemented"
+      ],
+      "ui-priority": 0
+    },
+    "start_time": {
+      "description": "The date and time the impact was first recorded.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "start_time_fidelity": {
+      "description": "Level of fidelity that the `start_time` is recorded in.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "day",
+        "hour",
+        "minute",
+        "month",
+        "second",
+        "year"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Integrity Impact object as described in STIX 2.1 Incident object extension.",
+  "meta-category": "misc",
+  "name": "integrity-impact",
+  "required": [
+    "alteration"
+  ],
+  "uuid": "604830f2-8035-4454-aa32-7f6eee1f04c6",
+  "version": 1
+}

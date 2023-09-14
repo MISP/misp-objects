@@ -32,6 +32,11 @@
         "Unknown"
       ]
     },
+    "scan-result-query": {
+      "description": "Query or parameters provided to scan-result-tool to generate the scan-result.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "scan-result-tool": {
       "description": "Tool used which generated the scan-result.",
       "disable_correlation": true,
@@ -54,6 +59,7 @@
         "AuditJS Scan",
         "Azure Security Center Recommendations Scan",
         "Bandit Scan",
+        "BinaryEdge",
         "BlackDuck API",
         "Blackduck Component Risk",
         "Blackduck Hub Scan",
@@ -66,6 +72,7 @@
         "Burp REST API",
         "Burp Scan",
         "CargoAudit Scan",
+        "Censys",
         "Checkmarx OSA",
         "Checkmarx Scan",
         "Checkmarx Scan detailed",
@@ -133,6 +140,7 @@
         "Nmap Scan",
         "Node Security Platform Scan",
         "Nuclei Scan",
+        "ONYPHE",
         "ORT evaluated model Importer",
         "OpenVAS CSV",
         "Openscap Vulnerability Scan",
@@ -156,6 +164,7 @@
         "Scantist Scan",
         "Scout Suite Scan",
         "Semgrep JSON Report",
+        "Shodan",
         "Snyk Scan",
         "Solar Appscreener Scan",
         "SonarQube API Import",
@@ -191,6 +200,7 @@
         "Xanitizer Scan",
         "Yarn Audit Scan",
         "ZAP Scan",
+        "ZoomEye",
         "docker-bench-security Scan",
         "kube-bench Scan",
         "pip-audit Scan"
@@ -220,9 +230,10 @@
   "description": "Scan result object to add meta-data and the output of the scan result by itself.",
   "meta-category": "network",
   "name": "scan-result",
-  "required": [
-    "scan-result"
+  "requiredOneOf": [
+    "scan-result",
+    "scan-result-query"
   ],
   "uuid": "ebe2a359-8f5b-4a45-8106-d1678935b4c4",
-  "version": 2
+  "version": 3
 }

@@ -1,0 +1,34 @@
+{
+  "attributes": {
+    "abuse-confidence-score": {
+      "description": "Rating (0-100) of how confident AbuseIPDB is that an IP address is entirely malicious",
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "is-malicious": {
+      "description": "If the IP is malicious based on the abuse-confidence-score and threshold",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "is-public": {
+      "description": "If an IP is public",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "is-tor": {
+      "description": "If Tor (The Onion Router) was used",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "is-whitelisted": {
+      "description": "If an IP is spotted in any of AbuseIPDB's whitelists",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    }
+  },
+  "description": "AbuseIPDB checks an ip address, domain name, or subnet against a central blacklist",
+  "meta-category": "network",
+  "name": "abuseipdb",
+  "uuid": "cccdaaf6-c140-461c-8d1c-aa79bbd029e0",
+  "version": 1
+}

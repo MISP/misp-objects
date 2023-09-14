@@ -1,0 +1,147 @@
+{
+  "attributes": {
+    "author": {
+      "description": "A text identifier for the author potentially including name, handle, email, and/or other ID like Amateur Call Sign.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "collection": {
+      "description": "The base filename of a collection with which this Recording is associated.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "data_doi": {
+      "description": "The registered DOI (ISO 26324) for a Recording's Dataset file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "dataset": {
+      "description": "The full filename of the Dataset file this Metadata file describes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "datatype": {
+      "description": "",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "A text description of the SigMF Recording.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "fft-plot": {
+      "description": "FFT plot of the signal",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "geolocation_alt": {
+      "description": "The location of the Recording system (altitude).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "geolocation_lat": {
+      "description": "The location of the Recording system (latitude).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "geolocation_long": {
+      "description": "The location of the Recording system (longitude).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hw": {
+      "description": "A text description of the hardware used to make the Recording.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "iq-sample": {
+      "description": "Binary file of IQ samples",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "license": {
+      "description": "A URL for the license document under which the Recording is offered.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "meta_doi": {
+      "description": "The registered DOI (ISO 26324) for a Recording's Metadata file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "metadata_only": {
+      "description": "Indicates the Metadata file is intentionally distributed without the Dataset.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "num_channels": {
+      "description": "Total number of interleaved channels in the Dataset file. If omitted, this defaults to one.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "offset": {
+      "description": "The index number of the first sample in the Dataset. If not provided, this value defaults to zero. Typically used when a Recording is split over multiple files. All sample indices in SigMF are absolute, and so all other indices referenced in metadata for this recording SHOULD be greater than or equal to this value.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "recorder": {
+      "description": "The name of the software used to make this SigMF Recording.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "sample_rate": {
+      "description": "The sample rate of the signal in samples per second.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "sha512": {
+      "description": "The SHA512 hash of the Dataset file associated with the SigMF file.",
+      "disable_correlation": true,
+      "misp-attribute": "sha512",
+      "ui-priority": 0
+    },
+    "trailing_bytes": {
+      "description": "The number of bytes to ignore at the end of a Non-Conforming Dataset file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "The version of the SigMF specification used to create the Metadata file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "waterfall-plot": {
+      "description": "Waterfall plot of the signal",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object representing a single IQ/RF sample in the Signal Metadata Format Specification (SigMF)",
+  "meta-category": "misc",
+  "name": "sigmf-expanded-recording",
+  "uuid": "f1c2c4e1-d3bf-46b1-b34d-f5e9544a4795",
+  "version": 1
+}

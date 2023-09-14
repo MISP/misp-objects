@@ -200,7 +200,8 @@
         "misp",
         "stix-2.0"
       ],
-      "name": "targets"
+      "name": "targets",
+      "opposite": "targeted-by"
     },
     {
       "description": "This relationship describes the use by the source object of the target object.",
@@ -400,14 +401,14 @@
         "misp"
       ],
       "name": "followed-by",
-      "opposite": "preceding-by"
+      "opposite": "preceded-by"
     },
     {
       "description": "This relationship describes an object which is preceded by another object. This can be used when a time reference is missing but a sequence is known.",
       "format": [
         "misp"
       ],
-      "name": "preceding-by",
+      "name": "preceded-by",
       "opposite": "followed-by"
     },
     {
@@ -1058,7 +1059,8 @@
         "misp",
         "haxpak"
       ],
-      "name": "creates"
+      "name": "creates",
+      "opposite": "created-by"
     },
     {
       "description": "Represents an object being the screenshot of something.",
@@ -1513,7 +1515,189 @@
         "XFN"
       ],
       "name": "Me"
+    },
+    {
+      "description": "The source object is redirected to the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "redirects-to"
+    },
+    {
+      "description": "The source object is rendered to the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "rendered-as"
+    },
+    {
+      "description": "The source object is known as the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "known-as"
+    },
+    {
+      "description": "The source object is led to the target object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "led-to"
+    },
+    {
+      "description": "The source object has an impact on the target.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "impacts",
+      "opposite": "impacted-by"
+    },
+    {
+      "description": "The source object is impacted by the target.",
+      "format": [
+        "misp"
+      ],
+      "name": "impacted-by",
+      "opposite": "impacts"
+    },
+    {
+      "description": "An object occured at a specific location.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "located-at"
+    },
+    {
+      "description": "The source object should be considered a point of contact for the target.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "contact-for"
+    },
+    {
+      "description": "The source object was responsible for detecting the target object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "detects",
+      "opposite": "detected-by"
+    },
+    {
+      "description": "The source object is detected by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "detected-by",
+      "opposite": "detects"
+    },
+    {
+      "description": "The target object was observed as part of a source event.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "observed",
+      "opposite": "observed-by"
+    },
+    {
+      "description": "The source object was observed by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "observed-by",
+      "opposite": "observed"
+    },
+    {
+      "description": "The source object is based on the target.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "based-on"
+    },
+    {
+      "description": "The source object performed the target event.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "performed",
+      "opposite": "performed-by"
+    },
+    {
+      "description": "The source object was performed by the target.",
+      "format": [
+        "misp"
+      ],
+      "name": "performed-by",
+      "opposite": "performed"
+    },
+    {
+      "description": "The source object blocks the target object.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "blocks",
+      "opposite": "blocked-by"
+    },
+    {
+      "description": "The source object is blocked by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "blocked-by",
+      "opposite": "blocks"
+    },
+    {
+      "description": "The source object causes the target event.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "causes",
+      "opposite": "caused-by"
+    },
+    {
+      "description": "The source object is caused by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "caused-by",
+      "opposite": "causes"
+    },
+    {
+      "description": "The source object is followed by the target because of an error.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "errored-to"
+    },
+    {
+      "description": "The source object has been assigned the target.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "assigned"
+    },
+    {
+      "description": "The source object participated in the target task.",
+      "format": [
+        "stix-2.1"
+      ],
+      "name": "participated-in"
+    },
+    {
+      "description": "The source object is targeted by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "targeted-by",
+      "opposite": "targets"
+    },
+    {
+      "description": "The source object was created by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "created-by",
+      "opposite": "creates"
     }
   ],
-  "version": 37
+  "version": 40
 }

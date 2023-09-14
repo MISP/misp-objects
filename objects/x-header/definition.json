@@ -1,0 +1,24 @@
+{
+  "attributes": {
+    "x-header-name": {
+      "description": "X header name is the value of the header key. The name is case sensitive.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "x-value": {
+      "description": "X value is the value of the specified header name.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "X header generic object for SMTP, HTTP or any other protocols using X headers.",
+  "meta-category": "network",
+  "name": "x-header",
+  "requiredOneOf": [
+    "x-header-name",
+    "x-value"
+  ],
+  "uuid": "9a7028df-e238-45e8-893c-8e67d273fb61",
+  "version": 1
+}

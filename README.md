@@ -271,6 +271,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/macho](https://github.com/MISP/misp-objects/blob/main/objects/macho/definition.json) - Object describing a file in Mach-O format.
 - [objects/macho-section](https://github.com/MISP/misp-objects/blob/main/objects/macho-section/definition.json) - Object describing a section of a file in Mach-O format.
 - [objects/mactime-timeline-analysis](https://github.com/MISP/misp-objects/blob/main/objects/mactime-timeline-analysis/definition.json) - Mactime template, used in forensic investigations to describe the timeline of a file activity.
+- [objects/malware](https://github.com/MISP/misp-objects/blob/main/objects/malware/definition.json) - Malware object to describe a malware instance. From STIX 2.1, 
+- [objects/malware-analysis](https://github.com/MISP/misp-objects/blob/main/objects/malware-analysis/definition.json) - Malware analysis object to capture the metadata and results of a particular static or dynamic analysis performed on a malware instance or family. From STIX 2.1
 - [objects/malware-config](https://github.com/MISP/misp-objects/blob/main/objects/malware-config/definition.json) - Malware configuration recovered or extracted from a malicious binary.
 - [objects/meme-image](https://github.com/MISP/misp-objects/blob/main/objects/meme-image/definition.json) - Object describing a meme (image).
 - [objects/microblog](https://github.com/MISP/misp-objects/blob/main/objects/microblog/definition.json) - Microblog post like a Twitter tweet or a post on a Facebook wall.
