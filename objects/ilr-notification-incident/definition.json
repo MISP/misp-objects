@@ -24,7 +24,7 @@
       "misp-attribute": "text",
       "ui-priority": 0,
       "values_list": [
-        "rreur humaine",
+        "Erreur humaine",
         "Defaut systeme 'hardware', 'software', 'procedures'",
         "Attaque malveillante",
         "Defaut d’une partie tierce ou externe",
