@@ -1,6 +1,6 @@
 {
   "attributes": {
-    "c2": {
+    "c2-ipport": {
       "categories": [
         "Network activity"
       ],
@@ -9,6 +9,15 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "c2-ip": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "IP of C2 server with unknown port",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },    
     "report-url": {
       "description": "URL of source of information, e.g. blog post, ransomware analysis",
       "disable_correlation": true,
@@ -33,7 +42,8 @@
     "threat"
   ],
   "requiredOneOf": [
-    "c2"
+    "c2-ipport",
+    "c2-ip"
   ],
   "uuid": "12456351-ceb7-4d43-9a7e-d2275d8b5785",
   "version": 20230919
