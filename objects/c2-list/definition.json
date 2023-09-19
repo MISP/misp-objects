@@ -1,5 +1,14 @@
 {
   "attributes": {
+    "c2-ip": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "IP of C2 server with unknown port",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "c2-ipport": {
       "categories": [
         "Network activity"
@@ -9,15 +18,6 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "c2-ip": {
-      "categories": [
-        "Network activity"
-      ],
-      "description": "IP of C2 server with unknown port",
-      "misp-attribute": "ip-src",
-      "multiple": true,
-      "ui-priority": 1
-    },    
     "report-url": {
       "description": "URL of source of information, e.g. blog post, ransomware analysis",
       "disable_correlation": true,
