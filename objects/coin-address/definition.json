@@ -5,6 +5,11 @@
       "misp-attribute": "btc",
       "ui-priority": 1
     },
+    "address-crypto": {
+      "description": "Generic cryptocurrency address if the format is not a standard BTC or XMR address",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "address-xmr": {
       "description": "Monero address used as a payment destination in a cryptocurrency",
       "misp-attribute": "xmr",
@@ -103,8 +108,9 @@
   "name": "coin-address",
   "requiredOneOf": [
     "address",
-    "address-xmr"
+    "address-xmr",
+    "address-crypto"
   ],
   "uuid": "d0e6997e-78da-4815-a6a1-cfc1c1cb8a46",
-  "version": 5
+  "version": 6
 }
