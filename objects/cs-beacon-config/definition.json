@@ -9,6 +9,12 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "ip": {
+      "description": "IP of the C2",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "jar-md5": {
       "categories": [
         "External analysis"
@@ -16,6 +22,11 @@
       "description": "MD5 of adversary cobaltstrike.jar file",
       "misp-attribute": "md5",
       "ui-priority": 0
+    },
+    "license-id": {
+      "description": "License ID of the Colbalt Strike",
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "md5": {
       "categories": [
@@ -69,5 +80,5 @@
     "watermark"
   ],
   "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
-  "version": 1
+  "version": 2
 }

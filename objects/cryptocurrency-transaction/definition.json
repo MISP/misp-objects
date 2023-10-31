@@ -1,0 +1,84 @@
+{
+  "attributes": {
+    "address": {
+      "description": "A cryptocurrency transactional address",
+      "misp-attribute": "btc",
+      "ui-priority": 0
+    },
+    "symbol": {
+      "description": "The (uppercase) symbol of the cryptocurrency used. Symbol should be from https://coinmarketcap.com/all/views/all/",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "BTC",
+        "ETH",
+        "BCH",
+        "XRP",
+        "MIOTA",
+        "DASH",
+        "BTG",
+        "LTC",
+        "ADA",
+        "XMR",
+        "ETC",
+        "NEO",
+        "NEM",
+        "EOS",
+        "XLM",
+        "BCC",
+        "LSK",
+        "OMG",
+        "QTUM",
+        "ZEC",
+        "USDT",
+        "HSR",
+        "STRAT",
+        "WAVES",
+        "PPT",
+        "ETN"
+      ],
+      "ui-priority": 1
+    },
+    "time": {
+      "description": "Date and time of transaction",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "transaction-number": {
+      "description": "A transaction number in a sequence of transactions",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "value": {
+      "description": "Value in cryptocurrency at date/time displayed in field 'time'",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "value_EUR": {
+      "description": "Value in EUR with conversion rate as of date/time displayed in field 'time'",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "value_USD": {
+      "description": "Value in USD with conversion rate as of date/time displayed in field 'time'",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object to describe a cryptocurrency transaction.",
+  "meta-category": "financial",
+  "name": "cryptocurrency-transaction",
+  "requiredOneOf": [
+    "transaction-number",
+    "time",
+    "value",
+    "address"
+  ],
+  "uuid": "a4aab70f-e43a-48cb-bf82-505de8228dd6",
+  "version": 1
+}
