@@ -55,6 +55,12 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "email": {
+      "description": "Email addresses for the account.",
+      "misp-attribute": "email",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "expires": {
       "description": "Expiration time of the account",
       "disable_correlation": true,
