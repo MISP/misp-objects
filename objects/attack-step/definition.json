@@ -26,11 +26,13 @@
       "description": "IP destination of the attack step, if any.",
       "disable_correlation": true,
       "misp-attribute": "ip-dst",
+      "multiple": true,
       "ui-priority": 1
     },
     "dst-misc": {
-      "description": "Other type of source of the attack step, if any. This can be e.g. localhost.",
+      "description": "Other type of destination of the attack step, if any. This can be e.g. localhost.",
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 1
     },
     "expected-response": {
@@ -50,16 +52,19 @@
     "source-domain": {
       "description": "Domain source of the attack step, if any.",
       "misp-attribute": "domain",
+      "multiple": true,
       "ui-priority": 1
     },
     "source-ip": {
       "description": "IP source of the attack step, if any.",
       "misp-attribute": "ip-src",
+      "multiple": true,
       "ui-priority": 1
     },
     "source-misc": {
       "description": "Other type of source of the attack step, if any. This can be e.g. rotating ip from cloud providers such as AWS, or localhost.",
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 1
     },
     "succesful": {
