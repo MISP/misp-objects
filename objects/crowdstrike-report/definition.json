@@ -36,7 +36,7 @@
       },
       "file-hash": {
         "description": "Unique file hash",
-        "misp-attribute": "text",
+        "misp-attribute": "sha256",
         "ui-priority": 1
       },
       "ip": {
