@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "command": {
+      "description": "Commandline triggering the detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "file-hash": {
+      "description": "Unique file hash",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "filename": {
+      "description": "Filename on disk",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "fullpath": {
+      "description": "Complete path of the filename including the filename",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "Source IP address",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "parent-command": {
+      "description": "Commandline of the parent process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "process-name": {
+      "description": "Name of the process trigerring the detection",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "An Object Template to encode an Crowdstrike detection report",
+  "meta-category": "misc",
+  "name": "crowdstrike-report",
+  "uuid": "805b327c-8f1b-4d76-a3ba-c8bc4964e740",
+  "version": 1
+}
