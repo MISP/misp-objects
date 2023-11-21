@@ -105,6 +105,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 ## Existing MISP objects
 
 - [objects/ADS](https://github.com/MISP/misp-objects/blob/main/objects/ADS/definition.json) - An object defining ADS - Alerting and Detection Strategy by PALANTIR. Can be used for detection engineering.
+- [objects/abuseipdb](https://github.com/MISP/misp-objects/blob/main/objects/abuseipdb/definition.json) - AbuseIPDB checks an ip address, domain name, or subnet against a central blacklist.
 - [objects/ai-chat-prompt](https://github.com/MISP/misp-objects/blob/main/objects/ai-chat-prompt/definition.json) - Object describing an AI prompt such as ChatGPT.
 - [objects/ail-leak](https://github.com/MISP/misp-objects/blob/main/objects/ail-leak/definition.json) - An information leak as defined by the AIL Analysis Information Leak framework.
 - [objects/ais](https://github.com/MISP/misp-objects/blob/main/objects/ais/definition.json) - Automatic Identification System (AIS) is an automatic tracking system that uses transceivers on ships.
@@ -121,6 +122,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/authentication-failure-report](https://github.com/MISP/misp-objects/blob/main/objects/authentication-failure-report/definition.json) - Authentication Failure Report.
 - [objects/authenticode-signerinfo](https://github.com/MISP/misp-objects/blob/main/objects/authenticode-signerinfo/definition.json) - Authenticode Signer Info.
 - [objects/av-signature](https://github.com/MISP/misp-objects/blob/main/objects/av-signature/definition.json) - Antivirus detection signature.
+- [objects/availability-impact](https://github.com/MISP/misp-objects/blob/main/objects/availability-impact/definition.json) - Availability Impact object as described in STIX 2.1 Incident object extension.
 - [objects/bank-account](https://github.com/MISP/misp-objects/blob/main/objects/bank-account/definition.json) - An object describing bank account information based on account description from goAML 4.0.
 - [objects/bgp-hijack](https://github.com/MISP/misp-objects/blob/main/objects/bgp-hijack/definition.json) - Object encapsulating BGP Hijack description as specified, for example, by bgpstream.com.
 - [objects/bgp-ranking](https://github.com/MISP/misp-objects/blob/main/objects/bgp-ranking/definition.json) - BGP Ranking object describing the ranking of an ASN for a given day, along with its position, 1 being the most malicious ASN of the day, with the highest ranking. This object is meant to have a relationship with the corresponding ASN object and represents its ranking for a specific date.
@@ -128,6 +130,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/boleto](https://github.com/MISP/misp-objects/blob/main/objects/boleto/definition.json) - A common form of payment used in Brazil.
 - [objects/btc-transaction](https://github.com/MISP/misp-objects/blob/main/objects/btc-transaction/definition.json) - An object to describe a Bitcoin transaction. Best to be used with bitcoin-wallet.
 - [objects/btc-wallet](https://github.com/MISP/misp-objects/blob/main/objects/btc-wallet/definition.json) - An object to describe a Bitcoin wallet. Best to be used with btc-transaction object.
+- [objects/c2-list](https://github.com/MISP/misp-objects/blob/main/objects/c2-list/definition.json) - List of C2-servers with common ground, e.g. extracted from a blog post or ransomware analysis.
 - [objects/cap-alert](https://github.com/MISP/misp-objects/blob/main/objects/cap-alert/definition.json) - Common Alerting Protocol Version (CAP) alert object.
 - [objects/cap-info](https://github.com/MISP/misp-objects/blob/main/objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
 - [objects/cap-resource](https://github.com/MISP/misp-objects/blob/main/objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
@@ -136,6 +139,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/command](https://github.com/MISP/misp-objects/blob/main/objects/command/definition.json) - Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.
 - [objects/command-line](https://github.com/MISP/misp-objects/blob/main/objects/command-line/definition.json) - Command line and options related to a specific command executed by a program, whether it is malicious or not.
 - [objects/concordia-mtmf-intrusion-set](https://github.com/MISP/misp-objects/blob/main/objects/concordia-mtmf-intrusion-set/definition.json) - Intrusion Set - Phase Description.
+- [objects/confidentiality-impact](https://github.com/MISP/misp-objects/blob/main/objects/confidentiality-impact/definition.json) - Confidentiality Impact object as described in STIX 2.1 Incident object extension.
 - [objects/cookie](https://github.com/MISP/misp-objects/blob/main/objects/cookie/definition.json) - An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server. Typically, it's used to tell if two requests came from the same browser — keeping a user logged-in, for example. It remembers stateful information for the stateless HTTP protocol. As defined by the Mozilla foundation.
 - [objects/cortex](https://github.com/MISP/misp-objects/blob/main/objects/cortex/definition.json) - Cortex object describing a complete Cortex analysis. Observables would be attribute with a relationship from this object.
 - [objects/cortex-taxonomy](https://github.com/MISP/misp-objects/blob/main/objects/cortex-taxonomy/definition.json) - Cortex object describing a Cortex Taxonomy (or mini report).
@@ -147,13 +151,18 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/cpe-asset](https://github.com/MISP/misp-objects/blob/main/objects/cpe-asset/definition.json) - An asset which can be defined by a CPE. This can be a generic asset. CPE is a structured naming scheme for information technology systems, software, and packages.
 - [objects/credential](https://github.com/MISP/misp-objects/blob/main/objects/credential/definition.json) - Credential describes one or more credential(s) including password(s), api key(s) or decryption key(s).
 - [objects/credit-card](https://github.com/MISP/misp-objects/blob/main/objects/credit-card/definition.json) - A payment card like credit card, debit card or any similar cards which can be used for financial transactions.
+- [objects/crowdsec-ip-context](https://github.com/MISP/misp-objects/blob/main/objects/crowdsec-ip-context/definition.json) - CrowdSec Threat Intelligence - IP CTI search.
+- [objects/crowdstrike-report](https://github.com/MISP/misp-objects/blob/main/objects/crowdstrike-report/definition.json) - An Object Template to encode an Crowdstrike detection report.
 - [objects/crypto-material](https://github.com/MISP/misp-objects/blob/main/objects/crypto-material/definition.json) - Cryptographic materials such as public or/and private keys.
+- [objects/cryptocurrency-transaction](https://github.com/MISP/misp-objects/blob/main/objects/cryptocurrency-transaction/definition.json) - An object to describe a cryptocurrency transaction.
+- [objects/cs-beacon-config](https://github.com/MISP/misp-objects/blob/main/objects/cs-beacon-config/definition.json) - Cobalt Strike Beacon Config.
 - [objects/cytomic-orion-file](https://github.com/MISP/misp-objects/blob/main/objects/cytomic-orion-file/definition.json) - Cytomic Orion File Detection.
 - [objects/cytomic-orion-machine](https://github.com/MISP/misp-objects/blob/main/objects/cytomic-orion-machine/definition.json) - Cytomic Orion File at Machine Detection.
 - [objects/dark-pattern-item](https://github.com/MISP/misp-objects/blob/main/objects/dark-pattern-item/definition.json) - An Item whose User Interface implements a dark pattern.
 - [objects/ddos](https://github.com/MISP/misp-objects/blob/main/objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy or using the type field.
 - [objects/device](https://github.com/MISP/misp-objects/blob/main/objects/device/definition.json) - An object to define a device.
 - [objects/diameter-attack](https://github.com/MISP/misp-objects/blob/main/objects/diameter-attack/definition.json) - Attack as seen on the diameter signaling protocol supporting LTE networks.
+- [objects/diamond-event](https://github.com/MISP/misp-objects/blob/main/objects/diamond-event/definition.json) - A diamond model event object consisting of the four diamond features advesary, infrastructure, capability and victim, several meta-features and ioc attributes.
 - [objects/directory](https://github.com/MISP/misp-objects/blob/main/objects/directory/definition.json) - Directory object describing a directory with meta-information.
 - [objects/dkim](https://github.com/MISP/misp-objects/blob/main/objects/dkim/definition.json) - DomainKeys Identified Mail - DKIM.
 - [objects/dns-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
@@ -165,8 +174,10 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/email](https://github.com/MISP/misp-objects/blob/main/objects/email/definition.json) - Email object describing an email with meta-information.
 - [objects/employee](https://github.com/MISP/misp-objects/blob/main/objects/employee/definition.json) - An employee and related data points.
 - [objects/error-message](https://github.com/MISP/misp-objects/blob/main/objects/error-message/definition.json) - An error message which can be related to the processing of data such as import, export scripts from the original MISP instance.
+- [objects/event](https://github.com/MISP/misp-objects/blob/main/objects/event/definition.json) - Event object as described in STIX 2.1 Incident object extension.
 - [objects/exploit](https://github.com/MISP/misp-objects/blob/main/objects/exploit/definition.json) - Exploit object describes a program in binary or source code form used to abuse one or more vulnerabilities.
 - [objects/exploit-poc](https://github.com/MISP/misp-objects/blob/main/objects/exploit-poc/definition.json) - Exploit-poc object describing a proof of concept or exploit of a vulnerability. This object has often a relationship with a vulnerability object.
+- [objects/external-impact](https://github.com/MISP/misp-objects/blob/main/objects/external-impact/definition.json) - External Impact object as described in STIX 2.1 Incident object extension.
 - [objects/facebook-account](https://github.com/MISP/misp-objects/blob/main/objects/facebook-account/definition.json) - Facebook account.
 - [objects/facebook-group](https://github.com/MISP/misp-objects/blob/main/objects/facebook-group/definition.json) - Public or private facebook group.
 - [objects/facebook-page](https://github.com/MISP/misp-objects/blob/main/objects/facebook-page/definition.json) - Facebook page.
@@ -236,9 +247,11 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
 - [objects/github-user](https://github.com/MISP/misp-objects/blob/main/objects/github-user/definition.json) - GitHub user.
 - [objects/gitlab-user](https://github.com/MISP/misp-objects/blob/main/objects/gitlab-user/definition.json) - GitLab user. Gitlab.com user or self-hosted GitLab instance.
+- [objects/google-safe-browsing](https://github.com/MISP/misp-objects/blob/main/objects/google-safe-browsing/definition.json) - Google Safe checks a URL against Google's constantly updated list of unsafe web resources.
 - [objects/greynoise-ip](https://github.com/MISP/misp-objects/blob/main/objects/greynoise-ip/definition.json) - GreyNoise IP Information.
 - [objects/gtp-attack](https://github.com/MISP/misp-objects/blob/main/objects/gtp-attack/definition.json) - GTP attack object as attack as seen on the GTP signaling protocol supporting GPRS/LTE networks.
 - [objects/hashlookup](https://github.com/MISP/misp-objects/blob/main/objects/hashlookup/definition.json) - hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup.
+- [objects/hhhash](https://github.com/MISP/misp-objects/blob/main/objects/hhhash/definition.json) - An object describing a HHHash object with the hash value along with the crawling parameters. For more information: https://www.foo.be/2023/07/HTTP-Headers-Hashing_HHHash.
 - [objects/http-request](https://github.com/MISP/misp-objects/blob/main/objects/http-request/definition.json) - A single HTTP request header.
 - [objects/identity](https://github.com/MISP/misp-objects/blob/main/objects/identity/definition.json) - Identities can represent actual individuals, organizations, or groups (e.g., ACME, Inc.) as well as classes of individuals, organizations, systems or groups (e.g., the finance sector).  The Identity SDO can capture basic identifying information, contact information, and the sectors that the Identity belongs to. Identity is used in STIX to represent, among other things, targets of attacks, information sources, object creators, and threat actor identities. (ref. STIX 2.1 - 4.5).
 - [objects/ilr-impact](https://github.com/MISP/misp-objects/blob/main/objects/ilr-impact/definition.json) - Institut Luxembourgeois de Regulation - Impact.
@@ -246,9 +259,11 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/image](https://github.com/MISP/misp-objects/blob/main/objects/image/definition.json) - Object describing an image file.
 - [objects/impersonation](https://github.com/MISP/misp-objects/blob/main/objects/impersonation/definition.json) - Represent an impersonating account.
 - [objects/imsi-catcher](https://github.com/MISP/misp-objects/blob/main/objects/imsi-catcher/definition.json) - IMSI Catcher entry object based on the open source IMSI cather.
+- [objects/incident](https://github.com/MISP/misp-objects/blob/main/objects/incident/definition.json) - Incident object template as described in STIX 2.1 Incident object and its core extension.
 - [objects/infrastructure](https://github.com/MISP/misp-objects/blob/main/objects/infrastructure/definition.json) - The Infrastructure object represents a type of TTP and describes any systems, software services and any associated physical or virtual resources intended to support some purpose (e.g., C2 servers used as part of an attack, device or server that are part of defense, database servers targeted by an attack, etc.). While elements of an attack can be represented by other objects, the Infrastructure object represents a named group of related data that constitutes the infrastructure. STIX 2.1 - 4.8.
 - [objects/instant-message](https://github.com/MISP/misp-objects/blob/main/objects/instant-message/definition.json) - Instant Message (IM) object template describing one or more IM message.
 - [objects/instant-message-group](https://github.com/MISP/misp-objects/blob/main/objects/instant-message-group/definition.json) - Instant Message (IM) group object template describing a public or private IM group, channel or conversation.
+- [objects/integrity-impact](https://github.com/MISP/misp-objects/blob/main/objects/integrity-impact/definition.json) - Integrity Impact object as described in STIX 2.1 Incident object extension.
 - [objects/intel471-vulnerability-intelligence](https://github.com/MISP/misp-objects/blob/main/objects/intel471-vulnerability-intelligence/definition.json) - Intel 471 vulnerability intelligence object.
 - [objects/intelmq_event](https://github.com/MISP/misp-objects/blob/main/objects/intelmq_event/definition.json) - IntelMQ Event.
 - [objects/intelmq_report](https://github.com/MISP/misp-objects/blob/main/objects/intelmq_report/definition.json) - IntelMQ Report.
@@ -271,11 +286,12 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/macho](https://github.com/MISP/misp-objects/blob/main/objects/macho/definition.json) - Object describing a file in Mach-O format.
 - [objects/macho-section](https://github.com/MISP/misp-objects/blob/main/objects/macho-section/definition.json) - Object describing a section of a file in Mach-O format.
 - [objects/mactime-timeline-analysis](https://github.com/MISP/misp-objects/blob/main/objects/mactime-timeline-analysis/definition.json) - Mactime template, used in forensic investigations to describe the timeline of a file activity.
-- [objects/malware](https://github.com/MISP/misp-objects/blob/main/objects/malware/definition.json) - Malware object to describe a malware instance. From STIX 2.1, 
-- [objects/malware-analysis](https://github.com/MISP/misp-objects/blob/main/objects/malware-analysis/definition.json) - Malware analysis object to capture the metadata and results of a particular static or dynamic analysis performed on a malware instance or family. From STIX 2.1
+- [objects/malware](https://github.com/MISP/misp-objects/blob/main/objects/malware/definition.json) - Malware is a type of TTP that represents malicious code.
+- [objects/malware-analysis](https://github.com/MISP/misp-objects/blob/main/objects/malware-analysis/definition.json) - Malware Analysis captures the metadata and results of a particular static or dynamic analysis performed on a malware instance or family.
 - [objects/malware-config](https://github.com/MISP/misp-objects/blob/main/objects/malware-config/definition.json) - Malware configuration recovered or extracted from a malicious binary.
 - [objects/meme-image](https://github.com/MISP/misp-objects/blob/main/objects/meme-image/definition.json) - Object describing a meme (image).
 - [objects/microblog](https://github.com/MISP/misp-objects/blob/main/objects/microblog/definition.json) - Microblog post like a Twitter tweet or a post on a Facebook wall.
+- [objects/monetary-impact](https://github.com/MISP/misp-objects/blob/main/objects/monetary-impact/definition.json) - Monetary Impact object as described in STIX 2.1 Incident object extension.
 - [objects/mutex](https://github.com/MISP/misp-objects/blob/main/objects/mutex/definition.json) - Object to describe mutual exclusion locks (mutex) as seen in memory or computer program.
 - [objects/narrative](https://github.com/MISP/misp-objects/blob/main/objects/narrative/definition.json) - Object describing a narrative.
 - [objects/netflow](https://github.com/MISP/misp-objects/blob/main/objects/netflow/definition.json) - Netflow object describes an network object based on the Netflowv5/v9 minimal definition.
@@ -305,6 +321,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/phishing](https://github.com/MISP/misp-objects/blob/main/objects/phishing/definition.json) - Phishing template to describe a phishing website and its analysis.
 - [objects/phishing-kit](https://github.com/MISP/misp-objects/blob/main/objects/phishing-kit/definition.json) - Object to describe a phishing-kit.
 - [objects/phone](https://github.com/MISP/misp-objects/blob/main/objects/phone/definition.json) - A phone or mobile phone object which describe a phone.
+- [objects/physical-impact](https://github.com/MISP/misp-objects/blob/main/objects/physical-impact/definition.json) - Physical Impact object as described in STIX 2.1 Incident object extension.
 - [objects/postal-address](https://github.com/MISP/misp-objects/blob/main/objects/postal-address/definition.json) - A postal address.
 - [objects/probabilistic-data-structure](https://github.com/MISP/misp-objects/blob/main/objects/probabilistic-data-structure/definition.json) - Probabilistic data structure object describe a space-efficient data structure such as Bloom filter or similar structure.
 - [objects/process](https://github.com/MISP/misp-objects/blob/main/objects/process/definition.json) - Object describing a system process.
@@ -343,6 +360,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/rtir](https://github.com/MISP/misp-objects/blob/main/objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
 - [objects/sandbox-report](https://github.com/MISP/misp-objects/blob/main/objects/sandbox-report/definition.json) - Sandbox report.
 - [objects/sb-signature](https://github.com/MISP/misp-objects/blob/main/objects/sb-signature/definition.json) - Sandbox detection signature.
+- [objects/scan-result](https://github.com/MISP/misp-objects/blob/main/objects/scan-result/definition.json) - Scan result object to add meta-data and the output of the scan result by itself.
 - [objects/scheduled-event](https://github.com/MISP/misp-objects/blob/main/objects/scheduled-event/definition.json) - Event object template describing a gathering of individuals in meatspace.
 - [objects/scheduled-task](https://github.com/MISP/misp-objects/blob/main/objects/scheduled-task/definition.json) - Windows scheduled task description.
 - [objects/scrippsco2-c13-daily](https://github.com/MISP/misp-objects/blob/main/objects/scrippsco2-c13-daily/definition.json) - Daily average C13 concentrations (ppm) derived from flask air samples.
@@ -358,6 +376,9 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/short-message-service](https://github.com/MISP/misp-objects/blob/main/objects/short-message-service/definition.json) - Short Message Service (SMS) object template describing one or more SMS message. Restriction of the initial format 3GPP 23.038 GSM character set doesn't apply.
 - [objects/shortened-link](https://github.com/MISP/misp-objects/blob/main/objects/shortened-link/definition.json) - Shortened link and its redirect target.
 - [objects/sigma](https://github.com/MISP/misp-objects/blob/main/objects/sigma/definition.json) - An object describing a Sigma rule (or a Sigma rule name).
+- [objects/sigmf-archive](https://github.com/MISP/misp-objects/blob/main/objects/sigmf-archive/definition.json) - An object representing an archive containing one or multiple recordings in the Signal Metadata Format Specification (SigMF).
+- [objects/sigmf-expanded-recording](https://github.com/MISP/misp-objects/blob/main/objects/sigmf-expanded-recording/definition.json) - An object representing a single IQ/RF sample in the Signal Metadata Format Specification (SigMF).
+- [objects/sigmf-recording](https://github.com/MISP/misp-objects/blob/main/objects/sigmf-recording/definition.json) - An object representing a single IQ/RF sample in the Signal Metadata Format Specification (SigMF).
 - [objects/social-media-group](https://github.com/MISP/misp-objects/blob/main/objects/social-media-group/definition.json) - Social media group object template describing a public or private group or channel.
 - [objects/software](https://github.com/MISP/misp-objects/blob/main/objects/software/definition.json) - The Software object represents high-level properties associated with software, including software products. STIX 2.1 - 6.14.
 - [objects/spearphishing-attachment](https://github.com/MISP/misp-objects/blob/main/objects/spearphishing-attachment/definition.json) - Spearphishing Attachment.
@@ -370,6 +391,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/submarine](https://github.com/MISP/misp-objects/blob/main/objects/submarine/definition.json) - Submarine description.
 - [objects/suricata](https://github.com/MISP/misp-objects/blob/main/objects/suricata/definition.json) - An object describing one or more Suricata rule(s) along with version and contextual information.
 - [objects/target-system](https://github.com/MISP/misp-objects/blob/main/objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromissed internal system.
+- [objects/task](https://github.com/MISP/misp-objects/blob/main/objects/task/definition.json) - Task object as described in STIX 2.1 Incident object extension.
 - [objects/tattoo](https://github.com/MISP/misp-objects/blob/main/objects/tattoo/definition.json) - Describes tattoos on a natural person's body.
 - [objects/telegram-account](https://github.com/MISP/misp-objects/blob/main/objects/telegram-account/definition.json) - Information related to a telegram account.
 - [objects/telegram-bot](https://github.com/MISP/misp-objects/blob/main/objects/telegram-bot/definition.json) - Information related to a telegram bot.
@@ -382,6 +404,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/timestamp](https://github.com/MISP/misp-objects/blob/main/objects/timestamp/definition.json) - A generic timestamp object to represent time including first time and last time seen. Relationship will then define the kind of time relationship.
 - [objects/tor-hiddenservice](https://github.com/MISP/misp-objects/blob/main/objects/tor-hiddenservice/definition.json) - Tor hidden service (onion service) object.
 - [objects/tor-node](https://github.com/MISP/misp-objects/blob/main/objects/tor-node/definition.json) - Tor node (which protects your privacy on the internet by hiding the connection between users Internet address and the services used by the users) description which are part of the Tor network at a time.
+- [objects/traceability-impact](https://github.com/MISP/misp-objects/blob/main/objects/traceability-impact/definition.json) - Traceability Impact object as described in STIX 2.1 Incident object extension.
 - [objects/tracking-id](https://github.com/MISP/misp-objects/blob/main/objects/tracking-id/definition.json) - Analytics and tracking ID such as used in Google Analytics or other analytic platform.
 - [objects/transaction](https://github.com/MISP/misp-objects/blob/main/objects/transaction/definition.json) - An object to describe a financial transaction.
 - [objects/translation](https://github.com/MISP/misp-objects/blob/main/objects/translation/definition.json) - Used to keep a text and its translation.
@@ -409,6 +432,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/weakness](https://github.com/MISP/misp-objects/blob/main/objects/weakness/definition.json) - Weakness object describing a common weakness enumeration which can describe usable, incomplete, draft or deprecated weakness for software, equipment of hardware.
 - [objects/whois](https://github.com/MISP/misp-objects/blob/main/objects/whois/definition.json) - Whois records information for a domain name or an IP address.
 - [objects/windows-service](https://github.com/MISP/misp-objects/blob/main/objects/windows-service/definition.json) - Windows service and detailed about a service running a Windows operating system.
+- [objects/x-header](https://github.com/MISP/misp-objects/blob/main/objects/x-header/definition.json) - X header generic object for SMTP, HTTP or any other protocols using X headers.
 - [objects/x509](https://github.com/MISP/misp-objects/blob/main/objects/x509/definition.json) - x509 object describing a X.509 certificate.
 - [objects/yabin](https://github.com/MISP/misp-objects/blob/main/objects/yabin/definition.json) - yabin.py generates Yara rules from function prologs, for matching and hunting binaries. ref: https://github.com/AlienVault-OTX/yabin.
 - [objects/yara](https://github.com/MISP/misp-objects/blob/main/objects/yara/definition.json) - An object describing a YARA rule (or a YARA rule name) along with its version.
