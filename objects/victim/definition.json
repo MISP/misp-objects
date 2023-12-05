@@ -77,12 +77,14 @@
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
+        "academia - university",
         "aerospace",
         "agriculture",
         "automotive",
         "communications",
         "construction",
         "defence",
+        "dissident",
         "education",
         "energy",
         "engineering",
@@ -97,14 +99,17 @@
         "information and cultural industries",
         "infrastructure",
         "insurance",
+        "international organization",
         "legal",
         "manufacturing",
         "mining",
         "non profit",
         "pharmaceuticals",
+        "political party",
         "retail",
         "technology",
         "telecommunications",
+        "think tank",
         "transportation",
         "utilities"
       ],
@@ -126,5 +131,5 @@
     "sectors"
   ],
   "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
-  "version": 8
+  "version": 9
 }
