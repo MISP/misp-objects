@@ -77,7 +77,7 @@
       "misp-attribute": "text",
       "multiple": true,
       "sane_default": [
-        "academic research",
+        "academia - university",
         "aerospace",
         "agriculture",
         "automotive",
