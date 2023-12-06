@@ -31,6 +31,12 @@
       "multiple": true,
       "ui-priority": 100
     },
+    "title": {
+      "description:": "Title of the report",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 100
+    },
     "type": {
       "description": "Type of report",
       "disable_correlation": true,
@@ -80,13 +86,14 @@
       "ui-priority": 100
     }
   },
-  "description": "Metadata used to generate an executive level report",
+  "description": "Report object to describe a report along with its metadata.",
   "meta-category": "misc",
   "name": "report",
   "requiredOneOf": [
+    "title",
     "summary",
     "link"
   ],
   "uuid": "70a68471-df22-4e3f-aa1a-5a3be19f82df",
-  "version": 7
+  "version": 8
 }
