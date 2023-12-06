@@ -32,7 +32,7 @@
       "ui-priority": 100
     },
     "title": {
-      "description:": "Title of the report",
+      "description": "Title of the report",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 100
