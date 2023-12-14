@@ -12,6 +12,12 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "case-uuid": {
+      "description": "UUID of the case",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "creation-date": {
       "description": "Creation date of the case",
       "disable_correlation": true,
@@ -36,6 +42,12 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "origin-url": {
+      "description": "Origin of the case",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
     "recurring-type": {
       "description": "Recurring type",
       "disable_correlation": true,
@@ -54,7 +66,7 @@
       "misp-attribute": "text",
       "sane_default": [
         "created",
-        "on going",
+        "ongoing",
         "recurring",
         "unavailable",
         "rejected",

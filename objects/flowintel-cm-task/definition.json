@@ -37,19 +37,31 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "origin-url": {
+      "description": "Origin of the task",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "ui-priority": 1
+    },
     "status": {
       "description": "Status of the task",
       "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "created",
-        "on going",
+        "ongoing",
         "recurring",
         "unavailable",
         "rejected",
         "finished"
       ],
       "ui-priority": 0
+    },
+    "task-uuid": {
+      "description": "UUID of the task",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "title": {
       "description": "Title of the task",
