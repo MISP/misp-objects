@@ -41,6 +41,7 @@
       "description": "Origin of the task",
       "disable_correlation": true,
       "misp-attribute": "url",
+      "to_ids": false,
       "ui-priority": 1
     },
     "status": {
@@ -73,6 +74,7 @@
       "description": "An url to an external tool",
       "disable_correlation": true,
       "misp-attribute": "url",
+      "to_ids": false,
       "ui-priority": 0
     }
   },
@@ -80,5 +82,5 @@
   "meta-category": "misc",
   "name": "flowintel-cm-task",
   "uuid": "2f525f6e-d3f2-4cb9-9ca0-f1160d99397d",
-  "version": 1
+  "version": 2
 }

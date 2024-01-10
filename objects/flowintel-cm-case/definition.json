@@ -46,6 +46,7 @@
       "description": "Origin of the case",
       "disable_correlation": true,
       "misp-attribute": "url",
+      "to_ids": false,
       "ui-priority": 1
     },
     "recurring-type": {
@@ -85,5 +86,5 @@
   "meta-category": "misc",
   "name": "flowintel-cm-case",
   "uuid": "19df57c7-b315-4fd2-84e5-d81ab221425e",
-  "version": 1
+  "version": 2
 }
