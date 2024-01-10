@@ -41,7 +41,8 @@
       "description": "Origin of the task",
       "disable_correlation": true,
       "misp-attribute": "url",
-      "ui-priority": 1
+      "ui-priority": 1,
+      "to_ids": false
     },
     "status": {
       "description": "Status of the task",
@@ -73,7 +74,8 @@
       "description": "An url to an external tool",
       "disable_correlation": true,
       "misp-attribute": "url",
-      "ui-priority": 0
+      "ui-priority": 0,
+      "to_ids": false
     }
   },
   "description": "A task as defined by flowintel-cm.",
