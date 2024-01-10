@@ -45,8 +45,8 @@
     "origin-url": {
       "description": "Origin of the case",
       "disable_correlation": true,
-      "to_ids": false,
       "misp-attribute": "url",
+      "to_ids": false,
       "ui-priority": 1
     },
     "recurring-type": {
