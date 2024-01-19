@@ -1,5 +1,11 @@
 {
   "attributes": {
+    "asn": {
+      "description": "Originating ASN for the CS Beacon Config",
+      "disable_correlation": true,
+      "misp-attribute": "AS",
+      "ui-priority": 0
+    },
     "c2": {
       "categories": [
         "Network activity"
@@ -8,6 +14,18 @@
       "misp-attribute": "url",
       "multiple": true,
       "ui-priority": 1
+    },
+    "city": {
+      "description": "City location of the CS Beacon Config in question",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "geo": {
+      "description": "Country location of the CS Beacon Config",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "ip": {
       "description": "IP of the C2",
@@ -35,6 +53,20 @@
       "description": "MD5 of sample containing the Cobalt Strike shellcode",
       "misp-attribute": "md5",
       "ui-priority": 1
+    },
+    "naics": {
+      "description": "North American Industry Classification System Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sector": {
+      "description": "Sector of for the CS Beacon Config in question",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
     },
     "sha1": {
       "categories": [
@@ -80,5 +112,5 @@
     "watermark"
   ],
   "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
-  "version": 2
+  "version": 3
 }

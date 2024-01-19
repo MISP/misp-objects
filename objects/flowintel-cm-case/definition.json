@@ -1,0 +1,90 @@
+{
+  "attributes": {
+    "case-owner-org-name": {
+      "description": "Name of the organisation that created the case.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "case-owner-org-uuid": {
+      "description": "UUID of the organisation that created the case.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "case-uuid": {
+      "description": "UUID of the case",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "creation-date": {
+      "description": "Creation date of the case",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "deadline": {
+      "description": "Deadline of the case",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "A description of the case",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "finish-date": {
+      "description": "Finish date of the case",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "origin-url": {
+      "description": "Origin of the case",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "recurring-type": {
+      "description": "Recurring type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "once",
+        "weekly",
+        "daily",
+        "monthly"
+      ],
+      "ui-priority": 0
+    },
+    "status": {
+      "description": "Status of the case",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "created",
+        "ongoing",
+        "recurring",
+        "unavailable",
+        "rejected",
+        "finished"
+      ],
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "Title of the case",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "A case as defined by flowintel-cm.",
+  "meta-category": "misc",
+  "name": "flowintel-cm-case",
+  "uuid": "19df57c7-b315-4fd2-84e5-d81ab221425e",
+  "version": 2
+}
