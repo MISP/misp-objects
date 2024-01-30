@@ -30,6 +30,12 @@
       "misp-attribute": "text",
       "ui-priority": 2
     },
+    "environment-variables": {
+      "description": "Environment variables associated to the process",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "fake-process-name": {
       "description": "Is the process spawned under a false name.",
       "disable_correlation": true,
