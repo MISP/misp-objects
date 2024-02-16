@@ -1739,7 +1739,7 @@
         "misp"
       ],
       "name": "acquires",
-      "opposite": "is-acquired"
+      "opposite": "is-acquired-by"
     },
     {
       "description": "The source object is acquired by the target object.",
