@@ -24,7 +24,7 @@
     },
     "payload_bin": {
       "description": "Specifies the binary data contained in the artifact as a base64-encoded string.",
-      "misp-attribute": "text",
+      "misp-attribute": "attachment",
       "ui-priority": 0
     },
     "sha1": {

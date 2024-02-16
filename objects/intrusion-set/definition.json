@@ -11,12 +11,22 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "first_seen": {
+      "description": "The time that the intrusion set was first seen.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "goals": {
       "description": "The high-level goals of this Intrusion Set, namely, what are they trying to do. For example, they may be motivated by personal gain, but their goal is to steal credit card numbers. To do this, they may execute specific Campaigns that have detailed objectives like compromising point of sale systems at a large retailer.  Another example: to gain information about latest merger and IPO information from ACME Bank.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
+    },
+    "last_seen": {
+      "description": "The time that the intrusion set was last seen.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
     },
     "name": {
       "description": "A name used to identify this Intrusion Set.",

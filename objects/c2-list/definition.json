@@ -1,0 +1,50 @@
+{
+  "attributes": {
+    "c2-ip": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "IP of C2 server with unknown port",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "c2-ipport": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "IP:Port of C2 server",
+      "misp-attribute": "ip-src|port",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "report-url": {
+      "description": "URL of source of information, e.g. blog post, ransomware analysis",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "threat": {
+      "categories": [
+        "Attribution",
+        "Payload type"
+      ],
+      "description": "threat actor or malware",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "List of C2-servers with common ground, e.g. extracted from a blog post or ransomware analysis",
+  "meta-category": "network",
+  "name": "c2-list",
+  "required": [
+    "threat"
+  ],
+  "requiredOneOf": [
+    "c2-ipport",
+    "c2-ip"
+  ],
+  "uuid": "12456351-ceb7-4d43-9a7e-d2275d8b5785",
+  "version": 20230919
+}
