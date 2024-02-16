@@ -1725,7 +1725,30 @@
         "stix-2.1"
       ],
       "name": "sample-of"
+    },
+    {
+      "description": "This relationship describes an object which is allied with another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-allied-with "
+    },
+    {
+      "description": "The source object acquires the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "acquires",
+      "opposite": "is-acquired"
+    },
+    {
+      "description": "The source object is acquired by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-acquired-by",
+      "opposite": "acquires"
     }
   ],
-  "version": 40
+  "version": 41
 }
