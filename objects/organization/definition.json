@@ -79,7 +79,8 @@
         "Source",
         "Originator",
         "Informant",
-        "Emitter"
+        "Emitter",
+        "Impersonated"
       ]
     },
     "sector": {
@@ -138,5 +139,5 @@
     "alias"
   ],
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
-  "version": 6
+  "version": 7
 }
