@@ -405,11 +405,13 @@
     },
     "time.observation": {
       "description": "The time the collector of the local instance processed (observed) the event.",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 1
     },
     "time.source": {
       "description": "The time of occurence of the event as reported the feed (source).",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 1
     },
