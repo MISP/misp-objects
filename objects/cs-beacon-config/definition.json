@@ -105,11 +105,9 @@
   "meta-category": "file",
   "name": "cs-beacon-config",
   "required": [
-    "jar-md5",
     "md5",
     "sha1",
-    "sha256",
-    "watermark"
+    "sha256"
   ],
   "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
   "version": 3
