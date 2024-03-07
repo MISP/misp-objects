@@ -7,7 +7,7 @@
       ],
       "description": "Autonomous system name",
       "disable_correlation": true,
-      "misp-attribute": "AS",
+      "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
