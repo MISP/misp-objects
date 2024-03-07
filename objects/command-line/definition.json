@@ -12,7 +12,7 @@
       "ui-priority": 1
     },
     "software": {
-      "description": "type of shell (bash,zsh,powershell,cmd.exe",
+      "description": "type of shell (bash/sh,powershell,cmd.exe)",
       "misp-attribute": "text",
       "ui-priority": 1
     }
