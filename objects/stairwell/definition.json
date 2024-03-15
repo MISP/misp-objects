@@ -72,7 +72,7 @@
     "yara-rule-match": {
       "description": "Stairwell yara rule resource names which have matched on this object",
       "misp-attribute": "comment",
-      "multiple": true
+      "multiple": true,
       "ui-priority": 0
     }
   },
