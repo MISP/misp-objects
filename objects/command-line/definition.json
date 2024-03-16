@@ -1,7 +1,7 @@
 {
   "attributes": {
     "command_line": {
-      "description": "command code",
+      "description": "command code line",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
@@ -14,6 +14,13 @@
     "software": {
       "description": "type of shell (bash/sh,powershell,cmd.exe)",
       "misp-attribute": "text",
+      "sane_default": [
+        "Shell",
+        "Bash",
+        "zsh",
+        "Powershell",
+        "cmd.exe"
+      ],
       "ui-priority": 1
     }
   },
