@@ -156,8 +156,9 @@
   "requiredOneOf": [
     "ip-dst",
     "ip-src",
-    "domain-dst"
+    "domain-dst",
+    "type"
   ],
   "uuid": "e2f124d6-f57c-4f93-99e6-8450545fa05d",
-  "version": 9
+  "version": 10
 }
