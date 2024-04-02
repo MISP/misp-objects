@@ -104,7 +104,7 @@
   "description": "Cobalt Strike Beacon Config",
   "meta-category": "file",
   "name": "cs-beacon-config",
-  "required": [
+  "requiredOneOf": [
     "jar-md5",
     "md5",
     "sha1",
@@ -112,5 +112,5 @@
     "watermark"
   ],
   "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
-  "version": 3
+  "version": 4
 }
