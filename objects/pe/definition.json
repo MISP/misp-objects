@@ -178,7 +178,7 @@
     "size-of-optional-header": {
       "description": "Size of the optional header and the data directories which follow this header",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "text": {
