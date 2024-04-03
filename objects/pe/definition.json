@@ -131,13 +131,13 @@
     "number-of-symbols": {
       "description": "Number of entries in the symbol table",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "ui-priority": 0
     },
     "number-sections": {
       "description": "Number of sections",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "ui-priority": 0
     },
     "original-filename": {
