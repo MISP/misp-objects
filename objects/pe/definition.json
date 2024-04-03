@@ -10,7 +10,7 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
-      "sane_defaults": [
+      "sane_default": [
         "AGGRESSIVE_WS_TRIM",
         "BYTES_REVERSED_HI",
         "BYTES_REVERSED_LO",
@@ -214,5 +214,5 @@
     "impfuzzy"
   ],
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
-  "version": 8
+  "version": 9
 }
