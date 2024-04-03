@@ -131,13 +131,13 @@
     "number-of-symbols": {
       "description": "Number of entries in the symbol table",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "number-sections": {
       "description": "Number of sections",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "original-filename": {
@@ -178,7 +178,7 @@
     "size-of-optional-header": {
       "description": "Size of the optional header and the data directories which follow this header",
       "disable_correlation": true,
-      "misp-attribute": "float",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "text": {
