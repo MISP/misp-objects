@@ -315,6 +315,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/paste](https://github.com/MISP/misp-objects/blob/main/objects/paste/definition.json) - Paste or similar post from a website allowing to share privately or publicly posts.
 - [objects/pcap-metadata](https://github.com/MISP/misp-objects/blob/main/objects/pcap-metadata/definition.json) - Network packet capture metadata.
 - [objects/pe](https://github.com/MISP/misp-objects/blob/main/objects/pe/definition.json) - Object describing a Portable Executable.
+- [objects/pe-optional-header](https://github.com/MISP/misp-objects/blob/main/objects/pe-optional-header/definition.json) - Object describing the Optional Header of a Portable Executable.
 - [objects/pe-section](https://github.com/MISP/misp-objects/blob/main/objects/pe-section/definition.json) - Object describing a section of a Portable Executable.
 - [objects/Deception PersNOna](https://github.com/MISP/misp-objects/blob/main/objects/Deception PersNOna/definition.json) - Fake persona with tasks.
 - [objects/person](https://github.com/MISP/misp-objects/blob/main/objects/person/definition.json) - An object which describes a person or an identity.
