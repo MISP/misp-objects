@@ -7,7 +7,7 @@
     },
     "html-structure": {
       "description": "HTML tags defining the structure of the HTML page.",
-      "disable-correlation": true,
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
