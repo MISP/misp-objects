@@ -134,6 +134,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/cap-alert](https://github.com/MISP/misp-objects/blob/main/objects/cap-alert/definition.json) - Common Alerting Protocol Version (CAP) alert object.
 - [objects/cap-info](https://github.com/MISP/misp-objects/blob/main/objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
 - [objects/cap-resource](https://github.com/MISP/misp-objects/blob/main/objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
+- [objects/cert-pl-phishing](https://github.com/MISP/misp-objects/blob/main/objects/cert-pl-phishing/definition.json) - cert.pl phishing object template representing an url along with some metadata as such phash, html-structure or partial-hash.
 - [objects/cloth](https://github.com/MISP/misp-objects/blob/main/objects/cloth/definition.json) - Describes clothes a natural person wears.
 - [objects/coin-address](https://github.com/MISP/misp-objects/blob/main/objects/coin-address/definition.json) - An address used in a cryptocurrency.
 - [objects/command](https://github.com/MISP/misp-objects/blob/main/objects/command/definition.json) - Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.
@@ -300,6 +301,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/network-connection](https://github.com/MISP/misp-objects/blob/main/objects/network-connection/definition.json) - A local or remote network connection.
 - [objects/network-profile](https://github.com/MISP/misp-objects/blob/main/objects/network-profile/definition.json) - Elements that can be used to profile, pivot or identify a network infrastructure, including domains, ip and urls.
 - [objects/network-socket](https://github.com/MISP/misp-objects/blob/main/objects/network-socket/definition.json) - Network socket object describes a local or remote network connections based on the socket data structure.
+- [objects/network-traffic](https://github.com/MISP/misp-objects/blob/main/objects/network-traffic/definition.json) - Generic network traffic that originates from a source and is addressed to a destination.
 - [objects/news-agency](https://github.com/MISP/misp-objects/blob/main/objects/news-agency/definition.json) - News agencies compile news and disseminate news in bulk.
 - [objects/news-media](https://github.com/MISP/misp-objects/blob/main/objects/news-media/definition.json) - News media are forms of mass media delivering news to the general public.
 - [objects/open-data-security](https://github.com/MISP/misp-objects/blob/main/objects/open-data-security/definition.json) - An object describing an open dataset available and described under the open data security model. ref. https://github.com/CIRCL/open-data-security.
@@ -315,7 +317,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/paste](https://github.com/MISP/misp-objects/blob/main/objects/paste/definition.json) - Paste or similar post from a website allowing to share privately or publicly posts.
 - [objects/pcap-metadata](https://github.com/MISP/misp-objects/blob/main/objects/pcap-metadata/definition.json) - Network packet capture metadata.
 - [objects/pe](https://github.com/MISP/misp-objects/blob/main/objects/pe/definition.json) - Object describing a Portable Executable.
-- [objects/pe-optional-header](https://github.com/MISP/misp-objects/blob/main/objects/pe-optional-header/definition.json) - Object describing the Optional Header of a Portable Executable.
+- [objects/pe-optional-header](https://github.com/MISP/misp-objects/blob/main/objects/pe-optional-header/definition.json) - Object describing a Portable Executable Optional Header.
 - [objects/pe-section](https://github.com/MISP/misp-objects/blob/main/objects/pe-section/definition.json) - Object describing a section of a Portable Executable.
 - [objects/Deception PersNOna](https://github.com/MISP/misp-objects/blob/main/objects/Deception PersNOna/definition.json) - Fake persona with tasks.
 - [objects/person](https://github.com/MISP/misp-objects/blob/main/objects/person/definition.json) - An object which describes a person or an identity.
@@ -390,6 +392,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/splunk](https://github.com/MISP/misp-objects/blob/main/objects/splunk/definition.json) - Splunk / Splunk ES object.
 - [objects/ss7-attack](https://github.com/MISP/misp-objects/blob/main/objects/ss7-attack/definition.json) - SS7 object of an attack as seen on the SS7 signaling protocol supporting GSM/GPRS/UMTS networks.
 - [objects/ssh-authorized-keys](https://github.com/MISP/misp-objects/blob/main/objects/ssh-authorized-keys/definition.json) - An object to store ssh authorized keys file.
+- [objects/stairwell](https://github.com/MISP/misp-objects/blob/main/objects/stairwell/definition.json) - Stairwell leverages automated analysis, YARA rule libraries, shared malware feeds, privately run AV verdicts, static & dynamic analysis, malware unpacking, and variant discovery.
 - [objects/stix2-pattern](https://github.com/MISP/misp-objects/blob/main/objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
 - [objects/stock](https://github.com/MISP/misp-objects/blob/main/objects/stock/definition.json) - Object to describe stock market.
 - [objects/submarine](https://github.com/MISP/misp-objects/blob/main/objects/submarine/definition.json) - Submarine description.
@@ -498,11 +501,12 @@ The MISP objects (JSON files) are dual-licensed under:
 or
 
 ~~~~
- Copyright (c) 2016-2023 Alexandre Dulaunoy - a@foo.be
- Copyright (c) 2016-2023 CIRCL - Computer Incident Response Center Luxembourg
- Copyright (c) 2016-2023 Andras Iklody
- Copyright (c) 2016-2023 Raphael Vinot
- Copyright (c) 2016-2023 Various contributors to MISP Project
+ Copyright (c) 2016-2024 Alexandre Dulaunoy - a@foo.be
+ Copyright (c) 2016-2024 CIRCL - Computer Incident Response Center Luxembourg
+ Copyright (c) 2016-2024 Andras Iklody
+ Copyright (c) 2016-2024 Raphael Vinot
+ Copyright (c) 2016-2024 Christian Studer
+ Copyright (c) 2016-2024 Various contributors to MISP Project
 
  Redistribution and use in source and binary forms, with or without modification,
  are permitted provided that the following conditions are met:
@@ -532,9 +536,9 @@ If a specific author of a taxonomy wants to license it under a different license
 
 ~~~~
 
-Copyright (C) 2016-2023 Andras Iklody
-Copyright (C) 2016-2023 Alexandre Dulaunoy
-Copyright (C) 2016-2023 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2024 Andras Iklody
+Copyright (C) 2016-2024 Alexandre Dulaunoy
+Copyright (C) 2016-2024 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
