@@ -44,8 +44,8 @@
       "misp-attribute": "boolean",
       "ui-priority": 0
     },
-    "protocols": {
-      "description": "Protocols observed in the network traffic",
+    "protocol": {
+      "description": "Protocol observed in the network traffic",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
