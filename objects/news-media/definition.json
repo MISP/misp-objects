@@ -88,6 +88,8 @@
         "Pressure Group",
         "Staging",
         "Trade Site",
+        "Governmental Communication",
+        "Alert",
         "Other"
       ]
     },
@@ -117,6 +119,8 @@
         "Radio (Online)",
         "Podcast",
         "Alternative Media",
+        "Governmental",
+        "News agency",
         "Other"
       ],
       "ui-priority": 1
@@ -146,5 +150,5 @@
     "attachment"
   ],
   "uuid": "691463c5-5302-4847-9bec-4c56ccfec677",
-  "version": 2
+  "version": 3
 }
