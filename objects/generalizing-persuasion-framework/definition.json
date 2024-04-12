@@ -1,0 +1,107 @@
+{
+  "attributes": {
+    "actors_receiver": {
+      "description": "Assessments across weighted dimensions. Effort, motivation, prior attitudes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "actors_speaker": {
+      "description": "Types (e.g., elites, media, opinion leaders, friends/family). Motivations in crafting messages",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "outcomes_attitude": {
+      "description": "General evaluation of an object (where the 'object' is broadly construed).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 6
+    },
+    "outcomes_behavior": {
+      "description": "Does not always follow from an attitude. Depends on attitude attributes, injunctive and descriptive norms, behavioral control, and emotions.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "outcomes_emotion": {
+      "description": "Can inform conscious evaluations or override them.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 8
+    },
+    "outcomes_identity": {
+      "description": "A dimension of evaluation. Often activated when threatened.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "settings_competition": {
+      "description": "Number of speakers. Number of receivers. Observers.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "settings_culture": {
+      "description": "Shapes understandings of topics. Alters salience of different values.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 14
+    },
+    "settings_process": {
+      "description": "Threatening settings. Political (conflictual) settings versus deliberative settings",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 13
+    },
+    "settings_space": {
+      "description": "Attitude or behavioral change in one setting may not generalize to other settings.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 11
+    },
+    "settings_time": {
+      "description": "Pretreatment effects—what happened prior to the persuasive message. Posttreatment duration—how long an effect lasts. Time between exposure and outcome measurement.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 12
+    },
+    "treatments_medium": {
+      "description": "Alters frames, processing goals, and/or effort. Interactions with other persuasion variables.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "treatments_message_content": {
+      "description": "Argument strength (and inadequacy). Framing and evaluations. Matching to receivers' goals. Altering receivers' motivations (e.g., using narratives).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "treatments_topic": {
+      "description": "Persons/groups, issues, institutions, products. Variation within a topic (e.g., different policy issues)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    }
+  },
+  "description": "By placing their work within the GP Framework, scholars will help the field resolve inconsistencies, identify and address open questions, and ensure collective progress. The GP Framework is not meant to compete with other theories (such as the ELM) but rather to fill in two gaps. First, it allows one to consider how individual persuasion studies connect to one another and why studies may arrive at contradictory conclusions. Second, it highlights the sources of variations that should be studied. (James N. Druckman)",
+  "meta-category": "misc",
+  "name": "Generalizing Persuasion Framework",
+  "uuid": "dc6cdc5f-17d7-4d7b-95fe-86478990c910",
+  "version": 1
+}
