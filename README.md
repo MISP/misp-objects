@@ -153,7 +153,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/credential](https://github.com/MISP/misp-objects/blob/main/objects/credential/definition.json) - Credential describes one or more credential(s) including password(s), api key(s) or decryption key(s).
 - [objects/credit-card](https://github.com/MISP/misp-objects/blob/main/objects/credit-card/definition.json) - A payment card like credit card, debit card or any similar cards which can be used for financial transactions.
 - [objects/crowdsec-ip-context](https://github.com/MISP/misp-objects/blob/main/objects/crowdsec-ip-context/definition.json) - CrowdSec Threat Intelligence - IP CTI search.
-- [objects/crowdstrike-report](https://github.com/MISP/misp-objects/blob/main/objects/crowdstrike-report/definition.json) - An Object Template to encode an Crowdstrike detection report.
+- [objects/crowdstrike-report](https://github.com/MISP/misp-objects/blob/main/objects/crowdstrike-report/definition.json) - An Object Template to encode an Crowdstrike detection report.
 - [objects/crypto-material](https://github.com/MISP/misp-objects/blob/main/objects/crypto-material/definition.json) - Cryptographic materials such as public or/and private keys.
 - [objects/cryptocurrency-transaction](https://github.com/MISP/misp-objects/blob/main/objects/cryptocurrency-transaction/definition.json) - An object to describe a cryptocurrency transaction.
 - [objects/cs-beacon-config](https://github.com/MISP/misp-objects/blob/main/objects/cs-beacon-config/definition.json) - Cobalt Strike Beacon Config.
@@ -169,7 +169,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/dns-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
 - [objects/domain-crawled](https://github.com/MISP/misp-objects/blob/main/objects/domain-crawled/definition.json) - A domain crawled over time.
 - [objects/domain-ip](https://github.com/MISP/misp-objects/blob/main/objects/domain-ip/definition.json) - A domain/hostname and IP address seen as a tuple in a specific time frame.
-- [objects/edr-report](https://github.com/MISP/misp-objects/blob/main/objects/edr-report/definition.json) - An Object Template to encode an EDR detection report.
+- [objects/edr-report](https://github.com/MISP/misp-objects/blob/main/objects/edr-report/definition.json) - An Object Template to encode an EDR detection report.
 - [objects/elf](https://github.com/MISP/misp-objects/blob/main/objects/elf/definition.json) - Object describing a Executable and Linkable Format.
 - [objects/elf-section](https://github.com/MISP/misp-objects/blob/main/objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format.
 - [objects/email](https://github.com/MISP/misp-objects/blob/main/objects/email/definition.json) - Email object describing an email with meta-information.
@@ -246,6 +246,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/ftm-Video](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Video/definition.json) - Video.
 - [objects/ftm-Workbook](https://github.com/MISP/misp-objects/blob/main/objects/ftm-Workbook/definition.json) - Workbook.
 - [objects/game-cheat](https://github.com/MISP/misp-objects/blob/main/objects/game-cheat/definition.json) - Describes a game cheat or a cheatware.
+- [objects/Generalizing Persuasion Framework](https://github.com/MISP/misp-objects/blob/main/objects/Generalizing Persuasion Framework/definition.json) - By placing their work within the GP Framework, scholars will help the field resolve inconsistencies, identify and address open questions, and ensure collective progress. The GP Framework is not meant to compete with other theories (such as the ELM) but rather to fill in two gaps. First, it allows one to consider how individual persuasion studies connect to one another and why studies may arrive at contradictory conclusions. Second, it highlights the sources of variations that should be studied. (James N. Druckman).
 - [objects/geolocation](https://github.com/MISP/misp-objects/blob/main/objects/geolocation/definition.json) - An object to describe a geographic location.
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
 - [objects/github-user](https://github.com/MISP/misp-objects/blob/main/objects/github-user/definition.json) - GitHub user.
@@ -473,7 +474,7 @@ When the object is created, the `validate_all.sh` and `jq_all_the_things.sh` is 
 - Add a description in the object template explaining the scope and use-cases of your object templates
 - If the object is the mapping of an existing format, add a reference into the description of the object template
 - `first-seen` and `last-seen` are not required in a object template as an object has those fields by default. If you need additional temporal information, add new specific field(s).
-- Be lax on the number of fields required by default (e.g. use `requiredOneOf`). 
+- Be lax on the number of fields required by default (e.g. use `requiredOneOf`).
 - Review existing object templates before creating a new one. When doing a pull-request, don't hesitate to add the logic why a new template is required.
 
 ## MISP objects documentation
