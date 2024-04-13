@@ -13,12 +13,28 @@
       "name": "derived-from"
     },
     {
-      "description": "This relationship describes an object which executes another object",
+      "description": "This relationship describes an object which executes another object.",
       "format": [
         "misp"
       ],
       "name": "executes",
       "opposite": "executed-by"
+    },
+    {
+      "description": "This relationship describes an object which shares another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "shares",
+      "opposite": "shared-by"
+    },
+    {
+      "description": "This relationship describes an object which was shared by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "shared-by",
+      "opposite": "shares"
     },
     {
       "description": "The referenced source and target objects are semantically duplicates of each other.",
@@ -1750,5 +1766,5 @@
       "opposite": "acquires"
     }
   ],
-  "version": 41
+  "version": 43
 }
