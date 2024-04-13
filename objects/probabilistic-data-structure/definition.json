@@ -21,13 +21,13 @@
     "total-bits": {
       "description": "The number of bits used by this probabilistic data structure.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 1
     },
     "total-capacity": {
       "description": "The total capacity of the total set represented in this probabilistic data structure.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 1
     },
     "type": {
@@ -59,7 +59,7 @@
     "used-capacity": {
       "description": "The used capacity (and cardinality) of the set represented in this probabilistic data structure.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 1
     },
     "vendor-implementation-ref": {
