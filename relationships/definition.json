@@ -1764,7 +1764,46 @@
       ],
       "name": "is-acquired-by",
       "opposite": "acquires"
+    },
+    {
+      "description": "The source object supports the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "supports",
+      "opposite": "supported-by"
+    },
+    {
+      "description": "The source object is supported by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "supported-by",
+      "opposite": "supports"
+    },
+    {
+      "description": "The source object sponsors the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "sponsors",
+      "opposite": "sponsored-by"
+    },
+    {
+      "description": "The source object is sponsored by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "sponsored-by",
+      "opposite": "sponsors"
+    },
+    {
+      "description": "The source object operates from the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "operates-from"
     }
   ],
-  "version": 43
+  "version": 44
 }
