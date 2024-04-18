@@ -1,0 +1,35 @@
+{
+  "attributes": {
+    "note": {
+      "description": "Notes of the task",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "note-uuid": {
+      "description": "UUID of the note",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "origin-url": {
+      "description": "Origin of the task",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "task-uuid": {
+      "description": "UUID of the parent task",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    }
+  },
+  "description": "A task's note as defined by flowintel-cm.",
+  "meta-category": "misc",
+  "name": "flowintel-cm-task-note",
+  "uuid": "2c6f6aba-48b6-482f-a810-81934d29be9a",
+  "version": 1
+}
