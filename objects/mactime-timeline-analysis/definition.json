@@ -39,7 +39,7 @@
     "file_size": {
       "description": "Determines the file size in bytes",
       "disable_correlation": true,
-      "misp-attribute": "text",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     }
   },

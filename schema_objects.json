@@ -127,6 +127,7 @@
             "identity-card-number",
             "impfuzzy",
             "imphash",
+            "integer",
             "ip-dst",
             "ip-dst|port",
             "ip-src",

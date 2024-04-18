@@ -1,0 +1,89 @@
+{
+  "attributes": {
+    "entropy": {
+      "description": "Measure of the information contained in a object as opposed to the portion of the object that is determined (or predictable)",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "environment": {
+      "description": "Stairwell environments that this object has been seen within",
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "imphash": {
+      "description": "The Mandiant import hash (imphash) of the object",
+      "misp-attribute": "imphash",
+      "ui-priority": 0
+    },
+    "magic": {
+      "description": "Magic number as determined by yara rule based identification",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "malEval-probability": {
+      "description": "Confidence that the label applies on the object",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "malEval-severity": {
+      "description": "Severity of malware detected",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "md5": {
+      "description": "The md5 hash signature of an object",
+      "misp-attribute": "md5",
+      "ui-priority": 1
+    },
+    "mime-type": {
+      "description": "MIME type as determined by yara rule based identification",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "sha1": {
+      "description": "The sha1 hash signature of an object",
+      "misp-attribute": "sha1",
+      "ui-priority": 1
+    },
+    "sha256": {
+      "description": "The sha256 hash signature of an object",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "size-in-bytes": {
+      "description": "The size of the file in bytes",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "stairwell-first-seen": {
+      "description": "The timestamp at which an object was first observed by Stairwell",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "tlsh": {
+      "description": "The TLSH of the object",
+      "misp-attribute": "tlsh",
+      "ui-priority": 0
+    },
+    "yara-rule-match": {
+      "description": "Stairwell yara rule resource names which have matched on this object",
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Stairwell leverages automated analysis, YARA rule libraries, shared malware feeds, privately run AV verdicts, static & dynamic analysis, malware unpacking, and variant discovery.",
+  "meta-category": "file",
+  "name": "stairwell",
+  "requiredOneOf": [
+    "md5",
+    "sha1",
+    "sha256"
+  ],
+  "uuid": "113d31ab-6eea-46df-976c-e955c369acd2",
+  "version": 1
+}

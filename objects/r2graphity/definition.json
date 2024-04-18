@@ -3,13 +3,13 @@
     "callback-average": {
       "description": "Average size of a callback",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "callback-largest": {
       "description": "Largest callback",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "callbacks": {
@@ -105,7 +105,7 @@
     "shortest-path-to-create-thread": {
       "description": "Shortest path to the first time the binary calls CreateThread",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "text": {

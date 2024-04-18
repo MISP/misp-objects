@@ -109,7 +109,7 @@
     "dst-bytes-count": {
       "description": "Number of bytes sent from the source to the destination.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "dst-packets-count": {
@@ -215,7 +215,7 @@
     "src-bytes-count": {
       "description": "Number of bytes sent from the destination to the source.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "src-packets-count": {

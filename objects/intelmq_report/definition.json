@@ -42,11 +42,12 @@
     },
     "rtir_id": {
       "description": "Request Tracker Incident Response ticket id.",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 1
     },
     "time.observation": {
       "description": "The time the collector of the local instance processed (observed) the event.",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 1
     }

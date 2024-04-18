@@ -1,0 +1,108 @@
+{
+  "attributes": {
+    "dst_bytes_count": {
+      "description": "Number of bytes sent from the destination to the source",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "dst_hostname": {
+      "description": "Destination hostname of the network traffic",
+      "misp-attribute": "hostname",
+      "ui-priority": 1
+    },
+    "dst_ip": {
+      "description": "Destination IP address of the network traffic",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "dst_mac": {
+      "description": "Destination MAC address of the network traffic",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
+    "dst_packets": {
+      "description": "Number of packets sent from the destination to the source",
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "dst_port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Destination port of the nework connection",
+      "misp-attribute": "port",
+      "ui-priority": 1
+    },
+    "end_time": {
+      "description": "Time the network traffic ended",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "is_active": {
+      "description": "Indicates whether the network traffic is still ongoing. Must be False if the end_time attribute is present",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "protocol": {
+      "description": "Protocol observed in the network traffic",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "src_bytes_count": {
+      "description": "Number of bytes sent from the source to the destination",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "src_hostname": {
+      "description": "Destination hostname of the network traffic",
+      "misp-attribute": "hostname",
+      "ui-priority": 1
+    },
+    "src_ip": {
+      "description": "Source IP address of the network traffic",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 1
+    },
+    "src_mac": {
+      "description": "Source MAC address of the network traffic",
+      "misp-attribute": "mac-address",
+      "ui-priority": 1
+    },
+    "src_packets": {
+      "description": "Number of packets sent from the source to the destination",
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "src_port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Source port of the nework connection",
+      "misp-attribute": "port",
+      "ui-priority": 1
+    },
+    "start_time": {
+      "description": "Time the network traffic started",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Generic network traffic that originates from a source and is addressed to a destination.",
+  "meta-category": "network",
+  "name": "network-traffic",
+  "requiredOneOf": [
+    "dst_hostname",
+    "dst_ip",
+    "dst_mac",
+    "dst_port",
+    "src_hostname",
+    "src_ip",
+    "src_mac",
+    "src_port"
+  ],
+  "uuid": "16290b18-9af5-4a43-b195-75fe1eef0c35",
+  "version": 1
+}

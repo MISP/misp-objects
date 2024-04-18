@@ -13,12 +13,28 @@
       "name": "derived-from"
     },
     {
-      "description": "This relationship describes an object which executes another object",
+      "description": "This relationship describes an object which executes another object.",
       "format": [
         "misp"
       ],
       "name": "executes",
       "opposite": "executed-by"
+    },
+    {
+      "description": "This relationship describes an object which shares another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "shares",
+      "opposite": "shared-by"
+    },
+    {
+      "description": "This relationship describes an object which was shared by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "shared-by",
+      "opposite": "shares"
     },
     {
       "description": "The referenced source and target objects are semantically duplicates of each other.",
@@ -1750,6 +1766,45 @@
       "opposite": "acquires"
     },
     {
+      "description": "The source object supports the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "supports",
+      "opposite": "supported-by"
+    },
+    {
+      "description": "The source object is supported by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "supported-by",
+      "opposite": "supports"
+    },
+    {
+      "description": "The source object sponsors the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "sponsors",
+      "opposite": "sponsored-by"
+    },
+    {
+      "description": "The source object is sponsored by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "sponsored-by",
+      "opposite": "sponsors"
+    },
+    {
+      "description": "The source object operates from the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "operates-from"
+    },
+    {
       "description": "The source object deploys the target object.",
       "format": [
         "misp"
@@ -1766,5 +1821,5 @@
       "opposite": "deploys"
     }
   ],
-  "version": 42
+  "version": 45
 }

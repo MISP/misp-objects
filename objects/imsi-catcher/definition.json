@@ -56,7 +56,7 @@
     "seq": {
       "description": "A sequence number for the collection",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "text": {
