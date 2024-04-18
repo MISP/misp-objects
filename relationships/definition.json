@@ -1748,7 +1748,23 @@
       ],
       "name": "is-acquired-by",
       "opposite": "acquires"
+    },
+    {
+      "description": "The source object deploys the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "deploys",
+      "opposite": "is-deployed-by"
+    },
+    {
+      "description": "The source object is deployed by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-deployed-by",
+      "opposite": "deploys"
     }
   ],
-  "version": 41
+  "version": 42
 }
