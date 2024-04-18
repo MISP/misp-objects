@@ -31,7 +31,7 @@
     },
     "EventID": {
       "description": "Id of the event",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "Infrastructure": {

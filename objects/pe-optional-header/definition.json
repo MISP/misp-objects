@@ -1,0 +1,217 @@
+{
+  "attributes": {
+    "address_of_entrypoint": {
+      "description": "The address of the entry point relative to the image base when the executable file is loaded into memory",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 1
+    },
+    "base_of_code": {
+      "description": "Address relative to the imagebase where the binary's code starts",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "base_of_data": {
+      "description": "Address relative to the imagebase where the binary's data starts",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "checksum": {
+      "description": "The image file checksum",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
+      "ui-priority": 0
+    },
+    "dll_characteristics": {
+      "description": "Some characteristics of the underlying binary",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "APPCONTAINER",
+        "DYNAMIC_BASE",
+        "FORCE_INTEGRITY",
+        "GUARD_CF",
+        "HIGH_ENTROPY_VA",
+        "NO_BIND",
+        "NO_ISOLATION",
+        "NO_SEH",
+        "NX_COMPAT",
+        "TERMINAL_SERVER_AWARE",
+        "WDM_DRIVER"
+      ],
+      "ui-priority": 0
+    },
+    "dll_characteristics_hex": {
+      "description": "The DLL characteristics in a single hex value",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
+      "ui-priority": 0
+    },
+    "file_alignment": {
+      "description": "The alignment factor (in bytes) that is used to align the raw data of sections in the image file",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "image_base": {
+      "description": "The preferred base address when mapping the binary in memory",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "loader_flags": {
+      "description": "According to the PE specifications, this value is reserved and should be 0",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
+      "ui-priority": 0
+    },
+    "magic": {
+      "description": "Magic value (PE_TYPE) that identifies a PE32 from a PE64",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
+      "ui-priority": 0
+    },
+    "major_image_version": {
+      "description": "The major version number of the image",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "major_linker_version": {
+      "description": "The linker major version number",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "major_os_version": {
+      "description": "The major version number of the required operating system",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "major_subsystem_version": {
+      "description": "The major version number of the subsystem",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "minor_image_version": {
+      "description": "The minor version number of the image",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "minor_linker_version": {
+      "description": "The linker minor version number",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "minor_os_version": {
+      "description": "The minor version number of the required operating system",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "minor_subsystem_version": {
+      "description": "The minor version number of the subsystem",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "number_of_rva_and_size": {
+      "description": "The number of DataDirectory that follow this header",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "section_alignment": {
+      "description": "The alignment (in bytes) of sections when they are loaded into memory. It must be greater than or equal to file_alignment and the default is the page size for the architecture",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_code": {
+      "description": "The size of the code .text section or the sum of all the sections that contain code",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_headers": {
+      "description": "The combined size of an MS-DOS stub, PE header, and section headers rounded up to a multiple of file_alignment",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_heap_commit": {
+      "description": "The size of the local heap space to commit",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_heap_reserve": {
+      "description": "The size of the local heap space to reserve",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_image": {
+      "description": "The size (in bytes) of the image, including all headers, as the image is loaded in memory",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_initialised_data": {
+      "description": "The size of the initialized data which are usually located in the .data section. If the initialized data are split across multiple sections, it is the sum of the sections",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_stack_commit": {
+      "description": "The size of the stack to commit",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_stack_reserve": {
+      "description": "The size of the stack to reserve",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "size_of_uninitialised_data": {
+      "description": "The size of the uninitialized data which are usually located in the .bss section. If the uninitialized data are split across multiple sections, it is the sum of the sections",
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "subsystem": {
+      "description": "Target subsystem",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "EFI_APPLICATION",
+        "EFI_BOOT_SERVICE_DRIVER",
+        "EFI_ROM",
+        "EFI_RUNTIME_DRIVER",
+        "NATIVE",
+        "NATIVE_WINDOWS",
+        "OS2_CUI",
+        "POSIX_CUI",
+        "UNKNOWN",
+        "WINDOWS_BOOT_APPLICATION",
+        "WINDOWS_CE_GUI",
+        "WINDOWS_CUI",
+        "WINDOWS_GUI",
+        "XBOX"
+      ],
+      "ui-priority": 0
+    },
+    "win32_version_value": {
+      "description": "Specifies the reserved win32 version value (must be zero)",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing a Portable Executable Optional Header",
+  "meta-category": "file",
+  "name": "pe-optional-header",
+  "requiredOneOf": [
+    "address_of_entrypoint"
+  ],
+  "uuid": "ebde65ab-ce98-413d-a518-8f37bc79bcb9",
+  "version": 1
+}

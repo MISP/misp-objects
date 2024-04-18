@@ -1,0 +1,151 @@
+{
+  "attributes": {
+    "actors_receiver": {
+      "description": "Assessments across weighted dimensions. Effort, motivation, prior attitudes",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 20
+    },
+    "actors_speaker_motivation": {
+      "description": "Motivations in crafting messages",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 11
+    },
+    "actors_speaker_type": {
+      "description": "Types (e.g., elites, media, opinion leaders, friends/family).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Politician",
+        "Government Official",
+        "Law Enforcement",
+        "Media",
+        "Religious Leader",
+        "CEO/Executive",
+        "Community Leader",
+        "Teacher/Professor",
+        "Coache/Mentor",
+        "Expert in a specific field",
+        "Celebrity",
+        "Athlete",
+        "Social Media Personality",
+        "Trendsetter",
+        "Salesperson",
+        "Marketeer",
+        "Friend/Family",
+        "Lobbyist",
+        "Advocacy Group",
+        "Professional Association",
+        "Leaked document",
+        "Whistle-blower",
+        "Online forum",
+        "Algorithm"
+      ],
+      "ui-priority": 10
+    },
+    "outcomes_attitude": {
+      "description": "General evaluation of an object (where the 'object' is broadly construed).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 60
+    },
+    "outcomes_behavior": {
+      "description": "Does not always follow from an attitude. Depends on attitude attributes, injunctive and descriptive norms, behavioral control, and emotions.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 70
+    },
+    "outcomes_emotion": {
+      "description": "Can inform conscious evaluations or override them.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 80
+    },
+    "outcomes_identity": {
+      "description": "A dimension of evaluation. Often activated when threatened.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 90
+    },
+    "settings_competition_observers": {
+      "description": "Number of observers.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 102
+    },
+    "settings_competition_receivers": {
+      "description": "Number of receivers.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 101
+    },
+    "settings_competition_speakers": {
+      "description": "Number of speakers.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 100
+    },
+    "settings_culture": {
+      "description": "Shapes understandings of topics. Alters salience of different values.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 140
+    },
+    "settings_process": {
+      "description": "Threatening settings. Political (conflictual) settings versus deliberative settings",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 130
+    },
+    "settings_space": {
+      "description": "Attitude or behavioral change in one setting may not generalize to other settings.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 110
+    },
+    "settings_time": {
+      "description": "Pretreatment effects—what happened prior to the persuasive message. Posttreatment duration—how long an effect lasts. Time between exposure and outcome measurement.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 120
+    },
+    "treatments_medium": {
+      "description": "Alters frames, processing goals, and/or effort. Interactions with other persuasion variables.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 50
+    },
+    "treatments_message_content": {
+      "description": "Argument strength (and inadequacy). Framing and evaluations. Matching to receivers' goals. Altering receivers' motivations (e.g., using narratives).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 40
+    },
+    "treatments_topic": {
+      "description": "Persons/groups, issues, institutions, products. Variation within a topic (e.g., different policy issues)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 30
+    }
+  },
+  "description": "By placing their work within the GP Framework, scholars will help the field resolve inconsistencies, identify and address open questions, and ensure collective progress. The GP Framework is not meant to compete with other theories (such as the ELM) but rather to fill in two gaps. First, it allows one to consider how individual persuasion studies connect to one another and why studies may arrive at contradictory conclusions. Second, it highlights the sources of variations that should be studied. (James N. Druckman)",
+  "meta-category": "misc",
+  "name": "Generalizing Persuasion Framework",
+  "uuid": "dc6cdc5f-17d7-4d7b-95fe-86478990c910",
+  "version": 1
+}

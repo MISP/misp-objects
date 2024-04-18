@@ -10,14 +10,14 @@
     "CMTMF_ATCKID": {
       "description": "Identifier of the Attack",
       "disable_correlation": false,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "recommended": true,
       "ui-priority": 1
     },
     "FeedbackLoop": {
       "description": "Feedback Loop Sequence",
       "disable_correlation": false,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "PhName": {
@@ -30,7 +30,7 @@
     "PhSequence": {
       "description": "Phase Sequence",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "recommended": true,
       "ui-priority": 0
     },
