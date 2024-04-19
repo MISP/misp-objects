@@ -42,6 +42,12 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "notes": {
+      "description": "Notes of the case",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "origin-url": {
       "description": "Origin of the case",
       "disable_correlation": true,
@@ -86,5 +92,5 @@
   "meta-category": "misc",
   "name": "flowintel-cm-case",
   "uuid": "19df57c7-b315-4fd2-84e5-d81ab221425e",
-  "version": 2
+  "version": 3
 }
