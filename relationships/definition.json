@@ -1819,7 +1819,30 @@
       ],
       "name": "is-deployed-by",
       "opposite": "deploys"
+    },
+    {
+      "description": "The source object interacts with the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "interacts-with"
+    },
+    {
+      "description": "The source object injects the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "injects",
+      "opposite": "is-injected-by"
+    },
+    {
+      "description": "The source object is injected by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-injected-by",
+      "opposite": "injects"
     }
   ],
-  "version": 45
+  "version": 46
 }
