@@ -37,6 +37,22 @@
       "opposite": "shares"
     },
     {
+      "description": "This relationship describes an object which publishes another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "publishes",
+      "opposite": "published-by"
+    },
+    {
+      "description": "This relationship describes an object which was published by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "published-by",
+      "opposite": "publishes"
+    },
+    {
       "description": "The referenced source and target objects are semantically duplicates of each other.",
       "format": [
         "misp",
@@ -1844,5 +1860,5 @@
       "opposite": "injects"
     }
   ],
-  "version": 46
+  "version": 47
 }
