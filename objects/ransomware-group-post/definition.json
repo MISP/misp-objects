@@ -66,6 +66,13 @@
       "description": "Severity of the post mentioned.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "sane_default": [
+        "critical",
+        "high",
+        "medium",
+        "low",
+        "info"
+      ],
       "ui-priority": 1
     },
     "title": {
@@ -90,5 +97,5 @@
     "leak-site-url"
   ],
   "uuid": "52a0e179-4942-41e6-90f5-7db856fd6f39",
-  "version": 2
+  "version": 3
 }
