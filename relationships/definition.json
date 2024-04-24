@@ -1842,7 +1842,23 @@
       ],
       "name": "is-injected-by",
       "opposite": "injects"
+    },
+    {
+      "description": "The source object interviews the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "interviews",
+      "opposite": "is-interviewed-by"
+    },
+    {
+      "description": "The source object is interviewed by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-interviewed-by",
+      "opposite": "interviews"
     }
   ],
-  "version": 46
+  "version": 47
 }
