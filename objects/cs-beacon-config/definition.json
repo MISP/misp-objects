@@ -141,9 +141,10 @@
       "ui-priority": 1
     },
     "naics": {
-      "description": "NAICS code",
+      "description": "North American Industry Classification System Code (NAICS)",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0
     },
     "sector": {
@@ -197,5 +198,5 @@
     "watermark"
   ],
   "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
-  "version": 5
+  "version": 6
 }
