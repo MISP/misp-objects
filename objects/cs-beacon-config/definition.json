@@ -69,6 +69,7 @@
       "ui-priority": 0
     },
     "content-length": {
+      "description": "Content length of the payload",
       "disable_correlation": true,
       "misp-attribute": "size-in-bytes",
       "ui-priority": 0
