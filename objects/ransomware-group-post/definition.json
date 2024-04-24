@@ -1,13 +1,13 @@
 {
   "attributes": {
     "actor-geo-stats-30d": {
-      "description": "actor-geo-stats-30d",
+      "description": "Count of how many other victims were publicly leaked by the same ransomware actor in the country of the victim during the past 30 days",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
     },
     "actor-total-stats-30d": {
-      "description": "actor-total-stats-30d",
+      "description": "Count of how many other victims were publicly leaked by the same ransomware actor worldwide during the past 30 days",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
@@ -97,5 +97,5 @@
     "leak-site-url"
   ],
   "uuid": "52a0e179-4942-41e6-90f5-7db856fd6f39",
-  "version": 3
+  "version": 4
 }
