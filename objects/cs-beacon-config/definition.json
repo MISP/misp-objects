@@ -1,9 +1,41 @@
 {
   "attributes": {
+    "architecture": {
+      "description": "Hardware architecture of the sample",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "asn": {
       "description": "Originating ASN for the CS Beacon Config",
       "disable_correlation": true,
       "misp-attribute": "AS",
+      "ui-priority": 0
+    },
+    "beacon-host": {
+      "description": "Beacon host IP",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 0
+    },
+    "beacon-type": {
+      "description": "Beacon type used",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "binary-md5": {
+      "description": "MD5 of the binary delivered",
+      "misp-attribute": "md5",
+      "ui-priority": 0
+    },
+    "binary-sha1": {
+      "description": "SHA1 of the binary delivered",
+      "misp-attribute": "sha1",
+      "ui-priority": 0
+    },
+    "binary-sha256": {
+      "description": "SHA256 of the binary delivered",
+      "misp-attribute": "sha256",
       "ui-priority": 0
     },
     "c2": {
@@ -21,9 +53,63 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "config-md5": {
+      "description": "MD5 of the configuration",
+      "misp-attribute": "md5",
+      "ui-priority": 0
+    },
+    "config-sha1": {
+      "description": "SHA1 of the configuration",
+      "misp-attribute": "sha1",
+      "ui-priority": 0
+    },
+    "config-sha256": {
+      "description": "SHA256 of the configuration",
+      "misp-attribute": "sha256",
+      "ui-priority": 0
+    },
+    "content-length": {
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
+    "content-type": {
+      "description": "Content/type received",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "encoded-data": {
+      "description": "Encoded payload data in Base64",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "encoded-length": {
+      "description": "Length of the encoded data",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 0
+    },
     "geo": {
       "description": "Country location of the CS Beacon Config",
       "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "http": {
+      "description": "HTTP protocol used",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "http-code": {
+      "description": "HTTP return code",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "http-url": {
+      "description": "HTTP url path of the beacon",
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -55,10 +141,9 @@
       "ui-priority": 1
     },
     "naics": {
-      "description": "North American Industry Classification System Code",
+      "description": "NAICS code",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "multiple": true,
       "ui-priority": 0
     },
     "sector": {
@@ -112,5 +197,5 @@
     "watermark"
   ],
   "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
-  "version": 4
+  "version": 5
 }
