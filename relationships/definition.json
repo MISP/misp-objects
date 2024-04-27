@@ -882,9 +882,19 @@
     {
       "description": "Represents the semantic link of a communication initiating an event.",
       "format": [
-        "alfred"
+        "alfred",
+        "misp"
       ],
-      "name": "initiates"
+      "name": "initiates",
+      "opposite": "initiated-by"
+    },
+    {
+      "description": "The source object initiated the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "initiated-by",
+      "opposite": "initiates"
     },
     {
       "description": "Represents the semantic link between a FILE and FILE_BINARY.",
@@ -1874,7 +1884,23 @@
       ],
       "name": "is-interviewed-by",
       "opposite": "interviews"
+    },
+    {
+      "description": "The source object summarizes the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "summarizes",
+      "opposite": "summarized-by"
+    },
+    {
+      "description": "The source object is summarized by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "summarized-by",
+      "opposite": "summarizes"
     }
   ],
-  "version": 48
+  "version": 49
 }
