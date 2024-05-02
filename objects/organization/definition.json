@@ -117,6 +117,7 @@
         "mining",
         "non-profit",
         "pharmaceuticals",
+        "private",
         "retail",
         "technology",
         "telecommunication",
@@ -139,5 +140,5 @@
     "alias"
   ],
   "uuid": "f750e12b-127a-432c-b022-b3f9153c4e2a",
-  "version": 7
+  "version": 8
 }
