@@ -81,8 +81,8 @@
       "ui-priority": 0
     },
     "encoded-data": {
-      "description": "Encoded payload data in Base64",
-      "misp-attribute": "text",
+      "description": "Encoded payload data in Base64 as file attachment",
+      "misp-attribute": "attachment",
       "ui-priority": 0
     },
     "encoded-length": {
@@ -199,5 +199,5 @@
     "watermark"
   ],
   "uuid": "d17355ef-ca1f-4b5a-86cd-65d877991f54",
-  "version": 6
+  "version": 7
 }
