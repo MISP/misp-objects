@@ -43,6 +43,16 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "scanning_host": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "Scanning host used by project",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "scanning_ip": {
       "categories": [
         "Network activity",
