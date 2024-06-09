@@ -1,0 +1,72 @@
+{
+  "attributes": {
+    "country-code": {
+      "category": "Person",
+      "description": "Country code in text format (e.g., US)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": false,
+      "object_relation": "country-code",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "country-code-numeric": {
+      "category": "Person",
+      "description": "Country code as per the E.164 numbering plan (e.g., +1)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": false,
+      "object_relation": "country-code-numeric",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "national-destination-code": {
+      "category": "Person",
+      "description": "National destination code as per the E.164 numbering plan (e.g., 415)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": false,
+      "object_relation": "national-destination-code",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "phone-number": {
+      "category": "Person",
+      "description": "Phone number in E.164 format (e.g., +14155552671)",
+      "disable_correlation": false,
+      "misp-attribute": "phone-number",
+      "multiple": false,
+      "object_relation": "phone-number",
+      "to_ids": false,
+      "ui-priority": 3
+    },
+    "subscriber-number": {
+      "category": "Person",
+      "description": "Subscriber number as per the E.164 numbering plan (e.g., 5552671)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": false,
+      "object_relation": "subscriber-number",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "text": {
+      "category": "Person",
+      "description": "Description or additional information about the phone number.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": false,
+      "object_relation": "text",
+      "to_ids": false,
+      "ui-priority": 2
+    }
+  },
+  "description": "Phone number based on the E.164 international public telecommunication numbering plan",
+  "meta-category": "mobile",
+  "name": "phone-number",
+  "required": [
+    "phone-number"
+  ],
+  "uuid": "c4b5a67c-63d2-11ec-90d6-0242ac120003",
+  "version": 1
+}
