@@ -1,7 +1,7 @@
 {
   "attributes": {
     "claim-validity": {
-      "description": "Validity of the claim. Valid means the target confirmed the detection of DDoS activities.",
+      "description": "Validity of the claim. Valid means, a trusted entity having the technical capabilities to perform analysis confirmed the detection of DDoS activities.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
