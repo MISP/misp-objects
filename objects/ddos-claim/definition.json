@@ -12,14 +12,14 @@
       "ui-priority": 0
     },
     "proof": {
-      "description": "Proof of the claim in text format.",
+      "description": "The claim in text format.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
     "proof-screenshot": {
-      "description": "Proof of the screenshot.",
+      "description": "Screenshot of the claim.",
       "misp-attribute": "attachment",
       "multiple": true,
       "ui-priority": 0
@@ -47,5 +47,5 @@
     "reference"
   ],
   "uuid": "2722ac76-1f1f-43b7-bc68-ba5465ec5c04",
-  "version": 1
+  "version": 2
 }
