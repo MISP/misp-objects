@@ -1,0 +1,51 @@
+{
+  "attributes": {
+    "claim-validity": {
+      "description": "Validity of the claim. Valid means, a trusted entity having the technical capabilities to perform analysis confirmed the detection of DDoS activities.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Unknown",
+        "Valid",
+        "Invalid"
+      ],
+      "ui-priority": 0
+    },
+    "proof": {
+      "description": "The claim in text format.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "proof-screenshot": {
+      "description": "Screenshot of the claim.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "reference": {
+      "description": "Reference to the DDoS claim.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "target": {
+      "description": "Target of the DDoS claim.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "DDoS-claim object describes a current claim of DDoS activity.",
+  "meta-category": "network",
+  "name": "ddos-claim",
+  "requiredOneOf": [
+    "target",
+    "proof",
+    "reference"
+  ],
+  "uuid": "2722ac76-1f1f-43b7-bc68-ba5465ec5c04",
+  "version": 2
+}

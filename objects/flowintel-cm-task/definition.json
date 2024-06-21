@@ -37,12 +37,6 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
-    "notes": {
-      "description": "Notes of the task",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
     "origin-url": {
       "description": "Origin of the task",
       "disable_correlation": true,
@@ -88,5 +82,5 @@
   "meta-category": "misc",
   "name": "flowintel-cm-task",
   "uuid": "2f525f6e-d3f2-4cb9-9ca0-f1160d99397d",
-  "version": 3
+  "version": 4
 }

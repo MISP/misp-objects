@@ -2,7 +2,8 @@
   "attributes": {
     "data": {
       "categories": [
-        "Persistence mechanism"
+        "Persistence mechanism",
+        "Artifacts dropped"
       ],
       "description": "Data stored in the registry key",
       "misp-attribute": "text",
@@ -10,7 +11,8 @@
     },
     "data-type": {
       "categories": [
-        "Persistence mechanism"
+        "Persistence mechanism",
+        "Artifacts dropped"
       ],
       "description": "Registry value type",
       "disable_correlation": true,
@@ -35,7 +37,8 @@
     },
     "hive": {
       "categories": [
-        "Persistence mechanism"
+        "Persistence mechanism",
+        "Artifacts dropped"
       ],
       "description": "Hive used to store the registry key (file on disk)",
       "disable_correlation": true,
@@ -44,7 +47,8 @@
     },
     "key": {
       "categories": [
-        "Persistence mechanism"
+        "Persistence mechanism",
+        "Artifacts dropped"
       ],
       "description": "Full key path",
       "misp-attribute": "regkey",
@@ -60,7 +64,8 @@
     },
     "name": {
       "categories": [
-        "Persistence mechanism"
+        "Persistence mechanism",
+        "Artifacts dropped"
       ],
       "description": "Name of the registry key",
       "misp-attribute": "text",
@@ -98,5 +103,5 @@
     "data"
   ],
   "uuid": "8b3228ad-6d82-4fe6-b2ae-05426308f1d5",
-  "version": 4
+  "version": 5
 }

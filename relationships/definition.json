@@ -37,6 +37,22 @@
       "opposite": "shares"
     },
     {
+      "description": "This relationship describes an object which publishes another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "publishes",
+      "opposite": "published-by"
+    },
+    {
+      "description": "This relationship describes an object which was published by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "published-by",
+      "opposite": "publishes"
+    },
+    {
       "description": "The referenced source and target objects are semantically duplicates of each other.",
       "format": [
         "misp",
@@ -866,9 +882,19 @@
     {
       "description": "Represents the semantic link of a communication initiating an event.",
       "format": [
-        "alfred"
+        "alfred",
+        "misp"
       ],
-      "name": "initiates"
+      "name": "initiates",
+      "opposite": "initiated-by"
+    },
+    {
+      "description": "The source object initiated the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "initiated-by",
+      "opposite": "initiates"
     },
     {
       "description": "Represents the semantic link between a FILE and FILE_BINARY.",
@@ -1764,7 +1790,117 @@
       ],
       "name": "is-acquired-by",
       "opposite": "acquires"
+    },
+    {
+      "description": "The source object supports the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "supports",
+      "opposite": "supported-by"
+    },
+    {
+      "description": "The source object is supported by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "supported-by",
+      "opposite": "supports"
+    },
+    {
+      "description": "The source object sponsors the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "sponsors",
+      "opposite": "sponsored-by"
+    },
+    {
+      "description": "The source object is sponsored by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "sponsored-by",
+      "opposite": "sponsors"
+    },
+    {
+      "description": "The source object operates from the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "operates-from"
+    },
+    {
+      "description": "The source object deploys the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "deploys",
+      "opposite": "is-deployed-by"
+    },
+    {
+      "description": "The source object is deployed by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-deployed-by",
+      "opposite": "deploys"
+    },
+    {
+      "description": "The source object interacts with the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "interacts-with"
+    },
+    {
+      "description": "The source object injects the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "injects",
+      "opposite": "is-injected-by"
+    },
+    {
+      "description": "The source object is injected by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-injected-by",
+      "opposite": "injects"
+    },
+    {
+      "description": "The source object interviews the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "interviews",
+      "opposite": "is-interviewed-by"
+    },
+    {
+      "description": "The source object is interviewed by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-interviewed-by",
+      "opposite": "interviews"
+    },
+    {
+      "description": "The source object summarizes the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "summarizes",
+      "opposite": "summarized-by"
+    },
+    {
+      "description": "The source object is summarized by the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "summarized-by",
+      "opposite": "summarizes"
     }
   ],
-  "version": 43
+  "version": 49
 }
