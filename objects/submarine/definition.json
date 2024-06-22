@@ -36,7 +36,7 @@
     },
     "complement": {
       "description": "Crew size",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "recommended": false,
       "ui-priority": 0
     },
@@ -46,8 +46,8 @@
       "ui-priority": 1
     },
     "displacement": {
-      "description": "Displacement in tonns",
-      "misp-attribute": "counter",
+      "description": "Displacement in tonnes",
+      "misp-attribute": "integer",
       "recommended": true,
       "ui-priority": 0
     },
@@ -64,12 +64,12 @@
     },
     "in_service_from": {
       "description": "The year the submarine entered service",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "in_service_until": {
       "description": "The year the submarine left service",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "length": {

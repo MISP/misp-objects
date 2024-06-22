@@ -5,6 +5,36 @@
       "misp-attribute": "authentihash",
       "ui-priority": 1
     },
+    "characteristics": {
+      "description": "The characteristics that indicate the attributes of the file",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "AGGRESSIVE_WS_TRIM",
+        "BYTES_REVERSED_HI",
+        "BYTES_REVERSED_LO",
+        "DEBUG_STRIPPED",
+        "DLL",
+        "EXECUTABLE_IMAGE",
+        "LARGE_ADDRESS_AWARE",
+        "LINE_NUMS_STRIPPED",
+        "LOCAL_SYMS_STRIPPED",
+        "NEED_32BIT_MACHINE",
+        "NET_RUN_FROM_SWAP",
+        "RELOCS_STRIPPED",
+        "REMOVABLE_RUN_FROM_SWAP",
+        "SYSTEM",
+        "UP_SYSTEM_ONLY"
+      ],
+      "ui-priority": 0
+    },
+    "characteristics_hex": {
+      "description": "The characteristics in a single hex value",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
+      "ui-priority": 0
+    },
     "company-name": {
       "description": "CompanyName in the resources",
       "disable_correlation": true,
@@ -68,6 +98,42 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "machine-type": {
+      "description": "Type of machine",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "AM33",
+        "AMD64",
+        "ARM",
+        "ARM64",
+        "ARMNT",
+        "EBC",
+        "I386",
+        "IA64",
+        "M32R",
+        "MIPS16",
+        "MIPSFPU",
+        "MIPSFPU16",
+        "POWERPC",
+        "POWERPCFP",
+        "R4000",
+        "SH3",
+        "SH3DSP",
+        "SH4",
+        "SH5",
+        "THUMB",
+        "UNKNOWN",
+        "WCEMIPSV2"
+      ],
+      "ui-priority": 0
+    },
+    "number-of-symbols": {
+      "description": "Number of entries in the symbol table",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "number-sections": {
       "description": "Number of sections",
       "disable_correlation": true,
@@ -83,6 +149,12 @@
     "pehash": {
       "description": "Hash of the structural information about a sample. See https://www.usenix.org/legacy/event/leet09/tech/full_papers/wicherski/wicherski_html/",
       "misp-attribute": "pehash",
+      "ui-priority": 0
+    },
+    "pointer-to-symbol-table": {
+      "description": "The file offset of the COFF symbol table.",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
       "ui-priority": 0
     },
     "product-name": {
@@ -101,6 +173,11 @@
       "description": "RichPE metadata hash",
       "misp-attribute": "md5",
       "multiple": true,
+      "ui-priority": 0
+    },
+    "size-of-optional-header": {
+      "description": "Size of the optional header and the data directories which follow this header",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "text": {
@@ -136,5 +213,5 @@
     "impfuzzy"
   ],
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
-  "version": 7
+  "version": 9
 }

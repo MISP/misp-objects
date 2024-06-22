@@ -42,7 +42,7 @@
     },
     "rtir_id": {
       "description": "Request Tracker Incident Response ticket id.",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 1
     },
     "time.observation": {

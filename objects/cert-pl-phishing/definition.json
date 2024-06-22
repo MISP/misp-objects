@@ -1,0 +1,42 @@
+{
+  "attributes": {
+    "favicon-mmh3": {
+      "description": "Favicon of the phishing url in Murmurhash3 format (base64).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "html-structure": {
+      "description": "HTML tags defining the structure of the HTML page.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "phash-dct-base64": {
+      "description": "pHash (DCT hash) - as described in https://github.com/thorn-oss/perception.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "truncated-hash-html-structure": {
+      "description": "Truncated hash value of the html-structure.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "url": {
+      "description": "Full URL of the phishing object.",
+      "misp-attribute": "url",
+      "ui-priority": 1
+    }
+  },
+  "description": "cert.pl phishing object template representing an url along with some metadata as such phash, html-structure or partial-hash",
+  "meta-category": "network",
+  "name": "cert-pl-phishing",
+  "requiredOneOf": [
+    "url",
+    "phash-dct-base64",
+    "html-structure",
+    "truncated-hash-html-structure",
+    "favicon-mmh3"
+  ],
+  "uuid": "4c37c9af-ca71-4365-bcfb-6393c22dd88e",
+  "version": 1
+}

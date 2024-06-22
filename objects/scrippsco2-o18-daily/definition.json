@@ -3,7 +3,7 @@
     "flag": {
       "description": "Flag (see taxonomy for details).",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "number-flask": {

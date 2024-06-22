@@ -112,7 +112,7 @@
     },
     "destination.port": {
       "description": "The port to which the connection headed.",
-      "misp-attribute": "counter",
+      "misp-attribute": "port",
       "ui-priority": 1
     },
     "destination.registry": {
@@ -256,7 +256,7 @@
     },
     "rtir_id": {
       "description": "Request Tracker Incident Response ticket id.",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 1
     },
     "screenshot_url": {
@@ -366,7 +366,7 @@
     },
     "source.port": {
       "description": "The port from which the connection originated.",
-      "misp-attribute": "counter",
+      "misp-attribute": "port",
       "ui-priority": 1
     },
     "source.registry": {

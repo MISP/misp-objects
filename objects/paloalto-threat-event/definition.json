@@ -15,7 +15,7 @@
     "dport": {
       "description": "The port to which the connection headed.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "port",
       "ui-priority": 1
     },
     "dst": {
@@ -38,7 +38,7 @@
     "sport": {
       "description": "The port from which the connection originated.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "port",
       "ui-priority": 1
     },
     "src": {

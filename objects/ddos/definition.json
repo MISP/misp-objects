@@ -3,7 +3,7 @@
     "backscatter-threshold": {
       "description": "The minimum amount of backscatter received in 5 minutes / day. This field is only used when the capture origin is indirect network capture such as backscatter.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "capture-origin": {
@@ -99,13 +99,13 @@
     "total-bps": {
       "description": "Bits per second (maximum rate of bits per second measured)",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "total-bytes-sent": {
       "description": "Total number of bytes sent by the sources mentioned",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "total-packets-sent": {
@@ -117,7 +117,7 @@
     "total-pps": {
       "description": "Packets per second (maximum rate of packets per second measured)",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "type": {

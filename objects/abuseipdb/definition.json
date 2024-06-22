@@ -2,7 +2,7 @@
   "attributes": {
     "abuse-confidence-score": {
       "description": "Rating (0-100) of how confident AbuseIPDB is that an IP address is entirely malicious",
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "is-malicious": {

@@ -1,7 +1,26 @@
 {
   "attributes": {
+    "actor-geo-stats-30d": {
+      "description": "Count of how many other victims were publicly leaked by the same ransomware actor in the country of the victim during the past 30 days",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "actor-total-stats-30d": {
+      "description": "Count of how many other victims were publicly leaked by the same ransomware actor worldwide during the past 30 days",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "date": {
       "description": "Last update of the post as seen on the ransomware group blog. Different than the first/last seen from the crawling.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "date-published": {
+      "description": "Initial published date of the post on the ransomware group blog.",
+      "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
@@ -10,25 +29,73 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "entity-name": {
+      "description": "Entity name of the victim referenced in the post of the ransomware group.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "geo": {
+      "description": "Geographic (main) location of the victim referenced in the post of the ransomware group.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "leak-site-url": {
+      "description": "Link to the post.",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
     "link": {
       "description": "Original URL location of the post.",
       "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "ransomware-group": {
+      "description": "Ransomware group where the post is mentioned.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sector": {
+      "description": "Sector (main) of the victim referenced in the post of the ransomware group.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "severity": {
+      "description": "Severity of the post mentioned.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "critical",
+        "high",
+        "medium",
+        "low",
+        "info"
+      ],
       "ui-priority": 1
     },
     "title": {
       "description": "Title of blog post.",
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "website": {
+      "description": "Website of the victim referenced in the post of the ransomware group.",
+      "misp-attribute": "link",
+      "ui-priority": 1
     }
   },
-  "description": "Ransomware group post as monitored by ransomlook.io",
+  "description": "Ransomware group post as monitored by ransomlook.io or others",
   "meta-category": "misc",
   "name": "ransomware-group-post",
   "requiredOneOf": [
     "title",
     "description",
-    "link"
+    "link",
+    "website",
+    "leak-site-url"
   ],
   "uuid": "52a0e179-4942-41e6-90f5-7db856fd6f39",
-  "version": 1
+  "version": 4
 }

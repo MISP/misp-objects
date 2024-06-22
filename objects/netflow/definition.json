@@ -3,7 +3,7 @@
     "byte-count": {
       "description": "Bytes counted in this flow",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "community-id": {
@@ -73,7 +73,7 @@
     "ip-protocol-number": {
       "description": "IP protocol number of this flow",
       "disable_correlation": true,
-      "misp-attribute": "size-in-bytes",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "ip-src": {
@@ -88,7 +88,7 @@
     "ip_version": {
       "description": "IP version of this flow",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "last-packet-seen": {

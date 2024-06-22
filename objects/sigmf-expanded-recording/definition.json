@@ -99,7 +99,7 @@
     "offset": {
       "description": "The index number of the first sample in the Dataset. If not provided, this value defaults to zero. Typically used when a Recording is split over multiple files. All sample indices in SigMF are absolute, and so all other indices referenced in metadata for this recording SHOULD be greater than or equal to this value.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "recorder": {
@@ -123,7 +123,7 @@
     "trailing_bytes": {
       "description": "The number of bytes to ignore at the end of a Non-Conforming Dataset file.",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
     "version": {

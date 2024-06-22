@@ -21,7 +21,7 @@
     "county": {
       "description": "US County (US Only)",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "death": {
@@ -33,7 +33,7 @@
     "fips": {
       "description": "Federal Information Processing Standard county code (US Only)",
       "disable_correlation": true,
-      "misp-attribute": "counter",
+      "misp-attribute": "integer",
       "ui-priority": 0
     },
     "latitude": {

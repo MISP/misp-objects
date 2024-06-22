@@ -22,7 +22,8 @@
         "Discord",
         "Mumble",
         "Jabber",
-        "Twitter"
+        "Twitter",
+        "Mattermost"
       ],
       "ui-priority": 1
     },
