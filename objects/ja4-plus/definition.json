@@ -35,7 +35,7 @@
   },
   "description": "JA4 is a technique for creating network fingerprints that are easy to produce and can be easily shared for threat intelligence. https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/README.md",
   "meta-category": "network",
-  "name": "ja3",
+  "name": "ja4-plus",
   "required": [
     "ja4-fingerprint",
     "ja4-type"
