@@ -8,13 +8,17 @@
     "ip-src": {
       "description": "IP address related to this JA4+ fingerprint.",
       "misp-attribute": "ip-src",
-      "ui-priority": 1,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ja4-fingerprint": {
+      "description": "A JA4+ fingerprint as defined by the JA4+ standard in textual format.",
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "ja4-type": {
       "description": "One of the JA4+ type expressed as short name.",
       "misp-attribute": "text",
-      "ui-priority": 1,
       "sane_default": [
         "JA4",
         "JA4S",
@@ -25,11 +29,7 @@
         "JA4T",
         "JA4TS",
         "JA4TScan"
-      ]
-    },
-    "ja4-fingerprint": {
-      "description": "A JA4+ fingerprint as defined by the JA4+ standard in textual format.",
-      "misp-attribute": "text",
+      ],
       "ui-priority": 1
     }
   },
