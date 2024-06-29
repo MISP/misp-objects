@@ -1,0 +1,45 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the JA4+ fingerprint including scope, collection or specific notes which could help an analyst to reproduce the calculation.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ip-src": {
+      "description": "IP address related to this JA4+ fingerprint.",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ja4-fingerprint": {
+      "description": "A JA4+ fingerprint as defined by the JA4+ standard in textual format.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ja4-type": {
+      "description": "One of the JA4+ type expressed as short name.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "JA4",
+        "JA4S",
+        "JA4H",
+        "JA4L",
+        "JA4X",
+        "JA4SSH",
+        "JA4T",
+        "JA4TS",
+        "JA4TScan"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "JA4 is a technique for creating network fingerprints that are easy to produce and can be easily shared for threat intelligence. https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/README.md",
+  "meta-category": "network",
+  "name": "ja4-plus",
+  "required": [
+    "ja4-fingerprint",
+    "ja4-type"
+  ],
+  "uuid": "2c15c75e-e7db-4b62-8d17-633e7571818f",
+  "version": 2
+}

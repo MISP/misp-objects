@@ -14,6 +14,12 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "ip": {
+      "description": "IP address of the phishing website",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "online": {
       "description": "If the phishing is online and operational, by default is yes",
       "disable_correlation": true,
@@ -113,5 +119,5 @@
     "url"
   ],
   "uuid": "2dad6f9d-d425-4217-8fda-0b0a2d815307",
-  "version": 6
+  "version": 7
 }
