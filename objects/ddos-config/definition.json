@@ -3,7 +3,8 @@
     "body": {
       "description": "Payload used for the DDos",
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "ddos-tool": {
       "description": "",
@@ -18,7 +19,8 @@
     "headers": {
       "description": "Headers used in the DDoS requests",
       "misp-attribute": "text",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "host": {
       "description": "Hostname used as target of the DDoS attack",
@@ -47,7 +49,8 @@
         "SYN",
         "syn_ack",
         "udp_flood"
-      ]
+      ],
+      "ui-priority": 0
     },
     "path": {
       "description": "URL path used for the DDoS attack (excluded hostname)",
@@ -58,7 +61,8 @@
     "port": {
       "description": "Port used for attack (when the type and method requires it)",
       "disable_correlation": true,
-      "misp-attribute": "port"
+      "misp-attribute": "port",
+      "ui-priority": 0
     },
     "request-id": {
       "description": "request id",
@@ -83,7 +87,8 @@
         "tcp",
         "type",
         "udp"
-      ]
+      ],
+      "ui-priority": 0
     },
     "use-ssl": {
       "description": "TLS/SSL used for the attack",
@@ -92,7 +97,8 @@
       "sane_default": [
         "true",
         "false"
-      ]
+      ],
+      "ui-priority": 0
     }
   },
   "description": "DDoS-claim object describes a current claim of DDoS activity.",
@@ -102,5 +108,5 @@
     "ddos-tool"
   ],
   "uuid": "e56d7f93-258e-4ba5-bd8a-463acd6d98c4",
-  "version": 1
+  "version": 2
 }
