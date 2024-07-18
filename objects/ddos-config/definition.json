@@ -2,8 +2,10 @@
   "attributes": {
     "body": {
       "description": "Payload used for the DDos",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
+      "to_ids": false,
       "ui-priority": 0
     },
     "ddos-tool": {
@@ -18,6 +20,7 @@
     },
     "headers": {
       "description": "Headers used in the DDoS requests",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
@@ -27,12 +30,15 @@
       "disable_correlation": true,
       "misp-attribute": "hostname",
       "multiple": true,
+      "to_ids": false,
       "ui-priority": 0
     },
     "ip": {
       "description": "IP address used as target of the DDoS attack",
+      "disable_correlation": true,
       "misp-attribute": "ip-dst",
       "multiple": true,
+      "to_ids": false,
       "ui-priority": 0
     },
     "method": {
@@ -54,8 +60,10 @@
     },
     "path": {
       "description": "URL path used for the DDoS attack (excluded hostname)",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
+      "to_ids": false,
       "ui-priority": 0
     },
     "port": {
@@ -66,6 +74,7 @@
     },
     "request-id": {
       "description": "request id",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -108,5 +117,5 @@
     "ddos-tool"
   ],
   "uuid": "e56d7f93-258e-4ba5-bd8a-463acd6d98c4",
-  "version": 2
+  "version": 3
 }
