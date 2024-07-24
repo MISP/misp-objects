@@ -29,7 +29,7 @@
       ],
       "ui-priority": 0
     },
-    "characteristics_hex": {
+    "characteristics-hex": {
       "description": "The characteristics in a single hex value",
       "disable_correlation": true,
       "misp-attribute": "hex",
@@ -128,6 +128,12 @@
       ],
       "ui-priority": 0
     },
+    "machine-type-hex": {
+      "description": "Type of machine in a simple hex value",
+      "disable_correlation": true,
+      "misp-attribute": "hex",
+      "ui-priority": 0
+    },
     "number-of-symbols": {
       "description": "Number of entries in the symbol table",
       "disable_correlation": true,
@@ -213,5 +219,5 @@
     "impfuzzy"
   ],
   "uuid": "cf7adecc-d4f0-4e88-9d90-f978ee151a07",
-  "version": 9
+  "version": 10
 }
