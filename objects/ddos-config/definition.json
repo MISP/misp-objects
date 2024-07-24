@@ -1,0 +1,121 @@
+{
+  "attributes": {
+    "body": {
+      "description": "Payload used for the DDos",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "ddos-tool": {
+      "description": "",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "DDoSia-go",
+        "unknown"
+      ],
+      "ui-priority": 0
+    },
+    "headers": {
+      "description": "Headers used in the DDoS requests",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "host": {
+      "description": "Hostname used as target of the DDoS attack",
+      "disable_correlation": true,
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "IP address used as target of the DDoS attack",
+      "disable_correlation": true,
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "method": {
+      "description": "Method of DDoS attack used",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "ack",
+        "GET",
+        "method",
+        "PING",
+        "POST",
+        "syn",
+        "SYN",
+        "syn_ack",
+        "udp_flood"
+      ],
+      "ui-priority": 0
+    },
+    "path": {
+      "description": "URL path used for the DDoS attack (excluded hostname)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "port": {
+      "description": "Port used for attack (when the type and method requires it)",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "ui-priority": 0
+    },
+    "request-id": {
+      "description": "request id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "target-id": {
+      "description": "target id",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Type of network protocol used for the DDoS attack",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "http",
+        "http2",
+        "http3",
+        "nginx_loris",
+        "tcp",
+        "type",
+        "udp"
+      ],
+      "ui-priority": 0
+    },
+    "use-ssl": {
+      "description": "TLS/SSL used for the attack",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "true",
+        "false"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "DDoS-claim object describes a current claim of DDoS activity.",
+  "meta-category": "network",
+  "name": "ddos-config",
+  "requiredOneOf": [
+    "ddos-tool"
+  ],
+  "uuid": "e56d7f93-258e-4ba5-bd8a-463acd6d98c4",
+  "version": 3
+}
