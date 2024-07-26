@@ -194,6 +194,7 @@
     },
     "size-of-uninitialised-data": {
       "description": "The size of the uninitialized data which are usually located in the .bss section. If the uninitialized data are split across multiple sections, it is the sum of the sections",
+      "disable_correlation": true,
       "misp-attribute": "size-in-bytes",
       "ui-priority": 0
     },
