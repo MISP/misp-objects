@@ -129,7 +129,8 @@
         "Google",
         "DuckDNS",
         "Cloudflare",
-        "AWS"
+        "AWS",
+        "Yandex"
       ]
     },
     "subdomain": {
@@ -214,5 +215,5 @@
     "url"
   ],
   "uuid": "f0f9e287-8067-49a4-b0f8-7a0fed8d4e43",
-  "version": 5
+  "version": 6
 }
