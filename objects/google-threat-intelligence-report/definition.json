@@ -1,0 +1,75 @@
+{
+  "attributes": {
+    "detection-ratio": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Detection Ratio",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "first-submission": {
+      "categories": [
+        "Other"
+      ],
+      "description": "First Submission",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-submission": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Last Submission",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "permalink": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Permalink Reference",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 2
+    },
+    "severity": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "GTI Severity",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "threat-score": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "GTI Threat Score",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 1
+    },
+    "verdict": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "GTI Verdict",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Google Threat Intelligence report that provides an assessment (verdict, severity and scoring) and combined information from VirusTotal and Mandiant",
+  "meta-category": "misc",
+  "name": "google-threat-intelligence-report",
+  "required": [
+    "permalink"
+  ],
+  "uuid": "e288e533-2736-438a-8136-26cac06be1e7",
+  "version": 1
+}
