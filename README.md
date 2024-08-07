@@ -162,6 +162,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/dark-pattern-item](https://github.com/MISP/misp-objects/blob/main/objects/dark-pattern-item/definition.json) - An Item whose User Interface implements a dark pattern.
 - [objects/ddos](https://github.com/MISP/misp-objects/blob/main/objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy or using the type field.
 - [objects/ddos-claim](https://github.com/MISP/misp-objects/blob/main/objects/ddos-claim/definition.json) - DDoS-claim object describes a current claim of DDoS activity.
+- [objects/ddos-config](https://github.com/MISP/misp-objects/blob/main/objects/ddos-config/definition.json) - DDoS-claim object describes a current claim of DDoS activity.
 - [objects/device](https://github.com/MISP/misp-objects/blob/main/objects/device/definition.json) - An object to define a device.
 - [objects/diameter-attack](https://github.com/MISP/misp-objects/blob/main/objects/diameter-attack/definition.json) - Attack as seen on the diameter signaling protocol supporting LTE networks.
 - [objects/diamond-event](https://github.com/MISP/misp-objects/blob/main/objects/diamond-event/definition.json) - A diamond model event object consisting of the four diamond features advesary, infrastructure, capability and victim, several meta-features and ioc attributes.
@@ -254,6 +255,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/github-user](https://github.com/MISP/misp-objects/blob/main/objects/github-user/definition.json) - GitHub user.
 - [objects/gitlab-user](https://github.com/MISP/misp-objects/blob/main/objects/gitlab-user/definition.json) - GitLab user. Gitlab.com user or self-hosted GitLab instance.
 - [objects/google-safe-browsing](https://github.com/MISP/misp-objects/blob/main/objects/google-safe-browsing/definition.json) - Google Safe checks a URL against Google's constantly updated list of unsafe web resources.
+- [objects/google-threat-intelligence-report](https://github.com/MISP/misp-objects/blob/main/objects/google-threat-intelligence-report/definition.json) - Google Threat Intelligence report that provides an assessment (verdict, severity and scoring) and combined information from VirusTotal and Mandiant.
 - [objects/greynoise-ip](https://github.com/MISP/misp-objects/blob/main/objects/greynoise-ip/definition.json) - GreyNoise IP Information.
 - [objects/gtp-attack](https://github.com/MISP/misp-objects/blob/main/objects/gtp-attack/definition.json) - GTP attack object as attack as seen on the GTP signaling protocol supporting GPRS/LTE networks.
 - [objects/hashlookup](https://github.com/MISP/misp-objects/blob/main/objects/hashlookup/definition.json) - hashlookup object as described on hashlookup services from circl.lu - https://www.circl.lu/services/hashlookup.
