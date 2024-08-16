@@ -22,6 +22,12 @@
       "multiple": true,
       "ui-priority": 10
     },
+    "categorization_others": {
+      "description": "Provides a mapping of the ADS to the relevant entry in the Att&CK if 'categorization is not sufficient'.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 13
+    },
     "date": {
       "description": "Enter date, when ADS has been created or edited.",
       "misp-attribute": "datetime",
@@ -76,6 +82,6 @@
     "goal",
     "categorization"
   ],
-  "uuid": "07a7f4cf-e738-47ad-b045-34c3b382f3b4",
-  "version": 1
+  "uuid": "4f2a8d9a-6c3b-4e3b-9076-fc2c0a9246b7",
+  "version": 2
 }
