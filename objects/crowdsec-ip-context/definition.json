@@ -29,7 +29,7 @@
       "ui-priority": 1
     },
     "background-noise": {
-      "description": "Background noise",
+      "description": "High background noise scores highlight untargeted, mild threat mass-attacks",
       "disable_correlation": true,
       "misp-attribute": "float",
       "ui-priority": 1
@@ -65,6 +65,13 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
+    },
+    "cves": {
+      "description": "CVEs exploited by the observed IP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
     },
     "dst-port": {
       "categories": [
@@ -124,6 +131,19 @@
       "misp-attribute": "float",
       "ui-priority": 1
     },
+    "mitre-techniques": {
+      "description": "MITRE ATT&CK techniques used by the observed IP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "reputation": {
+      "description": "Real-time, actionable IP reputation score derived from trusted reports and consensus-validated data in CrowdSec CTI",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "reverse-dns": {
       "categories": [
         "Network activity",
@@ -159,5 +179,5 @@
     "ip"
   ],
   "uuid": "0f0a6def-a351-4d3b-9868-d732f6f4666f",
-  "version": 3
+  "version": 4
 }
