@@ -1,0 +1,185 @@
+{
+  "attributes": {
+    "asn": {
+      "description": "ASN where the IP resides",
+      "misp-attribute": "AS",
+      "ui-priority": 0
+    },
+    "city": {
+      "description": "City location of the IP in question",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "connection": {
+      "description": "Control options for the current connection and list of hop-by-hop request fields",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "content_length": {
+      "description": "The length of the response body in octets",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "content_type": {
+      "description": "The MIME type of the body of the request",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "geo": {
+      "description": "Country location of the IP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hostname": {
+      "description": "Any of the capabilities identified for the malware instance or family.",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hostname_source": {
+      "description": "Hostname source",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "http": {
+      "description": "Hypertext Transfer Protocol Version",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "http_code": {
+      "description": "HTTP Response code: e.g., 200, 401, 404",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "http_date": {
+      "description": "The date and time that the message was sent",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "http_reason": {
+      "description": "The text reason to go with the HTTP Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "The IP address of the device in question",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "naics": {
+      "description": "North American Industry Classification System Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "port": {
+      "description": "Port the response came from",
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "protocol": {
+      "description": "Protocol observed in the network traffic",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "proxy_authenticate": {
+      "description": "The authentication method that should be used to gain access to a resource behind a proxy server",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "region": {
+      "description": "Regional location of the IP in question",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sector": {
+      "description": "Sector of the IP in question",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "server": {
+      "description": "HTTP Server type",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "severity": {
+      "description": "Severity leve",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "critical",
+        "high",
+        "medium",
+        "low",
+        "info"
+      ],
+      "ui-priority": 0
+    },
+    "tag": {
+      "description": "Array of tags associated with the URL if any. In this report typically it will be a CVE entry, for example CVE-2021-44228. This allows for better understanding of the URL context observed (ie. usage associated with a particular CVE).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "timestamp": {
+      "description": "Time that the IP was probed in UTC+0",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "transfer_encoding": {
+      "description": "The form of encoding used to safely transfer the entity to the user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "via": {
+      "description": "General header added by proxies",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "This report identifies open HTTP proxy servers on multiple ports. While HTTP proxies have legitimate uses, they are also used for attacks or other forms of abuse. https://www.shadowserver.org/what-we-do/network-reporting/open-http-proxy-report/",
+  "meta-category": "misc",
+  "name": "shadowserver-scan-http-proxy",
+  "required": [
+    "timestamp",
+    "ip",
+    "port",
+    "tag"
+  ],
+  "uuid": "ad0c83d5-56bf-4300-8743-ed2b4caf6206",
+  "version": 1
+}
