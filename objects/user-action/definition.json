@@ -18,6 +18,7 @@
     "description": {
       "description": "Description of the action performed by the user",
       "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 1
     }
   },
