@@ -35,14 +35,14 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "Origin-Host-OperatorName": {
-      "description": "Origin-Host Operator Name",
+    "Origin-Host-CountryISO2": {
+      "description": "Origin-Host Country ISO2",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
-    "Origin-Host-CountryISO2": {
-      "description": "Origin-Host Country ISO2",
+    "Origin-Host-OperatorName": {
+      "description": "Origin-Host Operator Name",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
@@ -59,14 +59,14 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "Origin-Realm-OperatorName": {
-      "description": "Origin-Realm Operator Name",
+    "Origin-Realm-CountryISO2": {
+      "description": "Origin-Realm Country ISO2",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
-    "Origin-Realm-CountryISO2": {
-      "description": "Origin-Realm Country ISO2",
+    "Origin-Realm-OperatorName": {
+      "description": "Origin-Realm Operator Name",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
