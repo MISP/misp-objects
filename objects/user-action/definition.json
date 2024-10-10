@@ -1,0 +1,30 @@
+{
+  "attributes": {
+    "action": {
+      "description": "Action performed by the user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Click",
+        "Install",
+        "Execute",
+        "Plug",
+        "Scan",
+        "Unknown"
+      ],
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Description of the action performed by the user",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Represent an user action",
+  "meta-category": "misc",
+  "name": "user-action",
+  "uuid": "699dcf9d-2fa2-4200-a5cf-1d1e124e28c1",
+  "version": 1
+}

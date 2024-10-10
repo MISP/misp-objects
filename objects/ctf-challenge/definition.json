@@ -1,0 +1,79 @@
+{
+  "attributes": {
+    "attachment": {
+      "description": "Any relevant supporting files or resources that are attached to the challenge",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "category": {
+      "description": "The type of challenge (e.g., web, binary, forensics)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3,
+      "values_list": [
+        "Web",
+        "Reverse Engineering",
+        "Binary Exploitation",
+        "Forensics",
+        "Networking",
+        "Cryptography",
+        "OSINT",
+        "Misc"
+      ]
+    },
+    "description": {
+      "description": "A brief explanation of the challenge",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "flag": {
+      "description": "Submitted and accepted CTF Challenge's flag",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hints": {
+      "description": "Clues to help solve the challenge",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "max_attempts": {
+      "description": "Maximum tries allowed",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "points": {
+      "description": "The rewarded points for completing the challenge",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "solves": {
+      "description": "Number of people who solved the challenge",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "title": {
+      "description": "The name of the challenge",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    }
+  },
+  "description": "Capture-the-flag challenge object as defined by Rectifyq",
+  "meta-category": "misc",
+  "name": "ctf-challenge",
+  "required": [
+    "title"
+  ],
+  "uuid": "f9bb5d47-ff5b-4569-9987-4bb970639a55",
+  "version": 1
+}

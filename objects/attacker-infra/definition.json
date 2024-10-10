@@ -1,0 +1,327 @@
+{
+  "attributes": {
+    "architecture": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "The CPU architecture of the beacon.  Either x86 or x64",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "asn": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "ASN where the IP resides",
+      "misp-attribute": "AS",
+      "ui-priority": 0
+    },
+    "beacon_host": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "C2 of the beacon IP/hostname. (often matches the host that was scanned)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "beacon_http_get": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Path that the beacon uses for the GET method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "beacon_http_post": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Path that the beacon uses for the POST method",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "beacon_type": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Protocol that the beacon speaks.  Usually HTTP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "binary_md5": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "MD5 of the PE binary",
+      "disable_correlation": true,
+      "misp-attribute": "md5",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "binary_sha1": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "SHA1 of the PE binary",
+      "disable_correlation": true,
+      "misp-attribute": "sha1",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "binary_sha256": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "SHA256 of the PE binary",
+      "disable_correlation": true,
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "city": {
+      "categories": [
+        "Other"
+      ],
+      "description": "City location of the IP in question",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "config_md5": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "MD5 of the config file",
+      "disable_correlation": true,
+      "misp-attribute": "md5",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "config_sha1": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "SHA1 of the config file",
+      "disable_correlation": true,
+      "misp-attribute": "sha1",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "config_sha256": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "SHA256 of the config file",
+      "disable_correlation": true,
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "content_length": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The length of the response body in octets",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "content_type": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The MIME type of the body of the request",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "encoded_data": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Base64 encoded config file",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "encoded_length": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Length of the base64 decoded raw config",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "geo": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Country location of the IP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hostname": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Reverse DNS name of the device in question",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hostname_source": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Source of the hostname field contents",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "http": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP version in used in response, e.g HTTP/1.1",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "http_code": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "HTTP Response code: e.g., 200, 401, 404",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "http_url": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "URL used to illicit the server response",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ip": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "IP of the of the URL",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "license_id": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "The license number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "naics": {
+      "categories": [
+        "Other"
+      ],
+      "description": "North American Industry Classification System Code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "port": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Port that the response came from",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "protocol": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Protocol the response came in on",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "region": {
+      "categories": [
+        "Other"
+      ],
+      "description": "State / Province / Administrative region where the device in question resides",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "sector": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Sector of the device in question",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "severity": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Severity of the event",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tag": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Attribute tags",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "timestamp": {
+      "description": "Time that the IP was probed in UTC+0",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Attacker Infrastructure",
+  "meta-category": "misc",
+  "name": "attacker-infra",
+  "required": [
+    "ip",
+    "port"
+  ],
+  "uuid": "0211496c-dbcf-465b-a147-3d965da016cd",
+  "version": 2
+}

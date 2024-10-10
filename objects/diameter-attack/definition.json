@@ -35,8 +35,44 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "Origin-Host-CountryISO2": {
+      "description": "Origin-Host Country ISO2",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "Origin-Host-OperatorName": {
+      "description": "Origin-Host Operator Name",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "Origin-Host-TADIG": {
+      "description": "Origin-Host Operator TADIG",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "Origin-Realm": {
       "description": "Origin-Realm.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "Origin-Realm-CountryISO2": {
+      "description": "Origin-Realm Country ISO2",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "Origin-Realm-OperatorName": {
+      "description": "Origin-Realm Operator Name",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "Origin-Realm-TADIG": {
+      "description": "Origin-Realm Operator TADIG",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0

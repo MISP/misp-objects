@@ -237,7 +237,7 @@
   "meta-category": "file",
   "name": "pe-optional-header",
   "requiredOneOf": [
-    "address_of_entrypoint"
+    "address-of-entrypoint"
   ],
   "uuid": "ebde65ab-ce98-413d-a518-8f37bc79bcb9",
   "version": 2
