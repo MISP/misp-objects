@@ -70,7 +70,7 @@
             "dns-soa-email",
             "domain",
             "domain|ip",
-	    "dom-hash",
+            "dom-hash",
             "email",
             "email-attachment",
             "email-body",
