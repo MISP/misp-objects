@@ -89,6 +89,7 @@
         "energy",
         "engineering",
         "entertainment",
+        "faith-based organization",
         "financial services",
         "government local",
         "government national",
@@ -100,6 +101,8 @@
         "infrastructure",
         "insurance",
         "international organization",
+        "justice",
+        "law enforcement",
         "legal",
         "manufacturing",
         "mining",
@@ -109,6 +112,9 @@
         "retail",
         "technology",
         "telecommunications",
+        "telecommunications - internet service provider",
+        "telecommunications - managed service provider",
+        "telecommunications - hosting provider",
         "think tank",
         "transportation",
         "utilities"
@@ -131,5 +137,5 @@
     "sectors"
   ],
   "uuid": "a8806e40-39ad-435f-be02-ac2a13d6fc7d",
-  "version": 9
+  "version": 10
 }
