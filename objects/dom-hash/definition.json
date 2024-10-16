@@ -13,12 +13,12 @@
     }
   },
   "description": "dom-hash object to describe similar structure of HTML pages.",
-  "meta-category": "dom-hash",
+  "meta-category": "file",
   "name": "url",
   "requiredOneOf": [
     "url",
     "dom-hash"
   ],
   "uuid": "c7771a39-afa5-4ecb-8d67-ca87ff60236d",
-  "version": 1
+  "version": 2
 }
