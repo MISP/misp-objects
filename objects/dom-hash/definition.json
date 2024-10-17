@@ -1,0 +1,24 @@
+{
+  "attributes": {
+    "dom-hash": {
+      "description": "dom-hash value of the url(s)",
+      "misp-attribute": "dom-hash",
+      "ui-priority": 0
+    },
+    "url": {
+      "description": "Full URL of the dom-hashed HTML structure",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "dom-hash object to describe similar structure of HTML pages.",
+  "meta-category": "file",
+  "name": "url",
+  "requiredOneOf": [
+    "url",
+    "dom-hash"
+  ],
+  "uuid": "c7771a39-afa5-4ecb-8d67-ca87ff60236d",
+  "version": 2
+}
