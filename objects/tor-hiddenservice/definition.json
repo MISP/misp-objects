@@ -1,8 +1,8 @@
 {
   "attributes": {
     "address": {
-      "description": "onion address of the Tor node seen.",
-      "misp-attribute": "text",
+      "description": "Onion address of the Tor node seen.",
+      "misp-attribute": "onion-address",
       "ui-priority": 1
     },
     "description": {
@@ -17,10 +17,24 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "language": {
+      "description": "Language(s) detected on the onion address.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "last-seen": {
       "description": "When the Tor hidden service was seen for the last time.",
       "disable_correlation": true,
       "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "Known title(s) of the Tor onion address.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0
     }
   },
@@ -37,5 +51,5 @@
     "description"
   ],
   "uuid": "cbac07d6-fbe9-43b8-8d91-d515812ce330",
-  "version": 1
+  "version": 2
 }
