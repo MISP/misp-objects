@@ -8,11 +8,12 @@
     "opentide-object": {
       "description": "YAML Content of the Opentide Object",
       "misp-attribute": "text",
-      "ui-priority": 0
+      "ui-priority": 2
     },
     "opentide-type": {
       "description": "Type of the OpenTIDE Object",
       "misp-attribute": "text",
+      "ui-priority": 1,
       "disable_correlation": true,
       "multiple": false,
       "values_list": [
@@ -24,7 +25,7 @@
   },
   "description": "Object that is a container for threat or detection data, in accordance with the OpenTIDE Framework",
   "meta-category": "misc",
-  "name": "sigma",
+  "name": "opentide",
   "required": [
     "uuid",
     "opentide-object",
