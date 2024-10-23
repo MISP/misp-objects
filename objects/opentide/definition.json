@@ -23,7 +23,7 @@
       ]
     }
   },
-  "description": "Object that is a container for threat or detection data, in accordance with the OpenTIDE Framework",
+  "description": "Object that is a container for threat or detection data, in accordance with the OpenTIDE Framework (https://code.europa.eu/ec-digit-s2/opentide)",
   "meta-category": "misc",
   "name": "opentide",
   "required": [
