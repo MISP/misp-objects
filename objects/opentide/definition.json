@@ -1,10 +1,5 @@
 {
   "attributes": {
-    "uuid": {
-      "description": "UUID of the OpenTIDE Object",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "name": {
       "description": "Name of the OpenTIDE Object",
       "misp-attribute": "text",
@@ -17,15 +12,20 @@
     },
     "opentide-type": {
       "description": "Type of the OpenTIDE Object",
-      "misp-attribute": "text",
-      "ui-priority": 2,
       "disable_correlation": true,
+      "misp-attribute": "text",
       "multiple": false,
+      "ui-priority": 2,
       "values_list": [
         "tvm",
         "cdm",
         "mdr"
       ]
+    },
+    "uuid": {
+      "description": "UUID of the OpenTIDE Object",
+      "misp-attribute": "text",
+      "ui-priority": 1
     }
   },
   "description": "Object that is a container for threat or detection data, in accordance with the OpenTIDE Framework (https://code.europa.eu/ec-digit-s2/opentide)",
