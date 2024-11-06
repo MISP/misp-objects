@@ -1900,7 +1900,14 @@
       ],
       "name": "summarized-by",
       "opposite": "summarizes"
+    },
+    {
+      "description": "The source object is releasable to the target object.",
+      "name": "releasable-to",
+      "format": [
+        "misp"
+      ]
     }
   ],
-  "version": 49
+  "version": 50
 }
