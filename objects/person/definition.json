@@ -108,6 +108,12 @@
       ],
       "ui-priority": 10
     },
+    "ip-src": {
+      "description": "Source IP address used by this person.",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 10
+    },
     "last-name": {
       "description": "Last name of a natural person.",
       "misp-attribute": "last-name",
