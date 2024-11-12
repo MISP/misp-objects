@@ -8,14 +8,14 @@
     "opentide-object": {
       "description": "YAML Content of the Opentide Object",
       "misp-attribute": "text",
-      "ui-priority": 3
+      "ui-priority": 4
     },
     "opentide-type": {
       "description": "Type of the OpenTIDE Object",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": false,
-      "ui-priority": 2,
+      "ui-priority": 3,
       "values_list": [
         "tvm",
         "cdm",
@@ -26,6 +26,13 @@
       "description": "UUID of the OpenTIDE Object",
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "version": {
+      "description": "Version of the OpenTIDE Object",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": "1",
+      "ui-priority": 2
     }
   },
   "description": "Object that is a container for threat or detection data, in accordance with the OpenTIDE Framework (https://code.europa.eu/ec-digit-s2/opentide)",
