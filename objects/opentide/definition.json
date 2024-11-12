@@ -3,19 +3,19 @@
     "name": {
       "description": "Name of the OpenTIDE Object",
       "misp-attribute": "text",
-      "ui-priority": 0
+      "ui-priority": 4
     },
     "opentide-object": {
       "description": "YAML Content of the Opentide Object",
       "misp-attribute": "text",
-      "ui-priority": 4
+      "ui-priority": 0
     },
     "opentide-type": {
       "description": "Type of the OpenTIDE Object",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": false,
-      "ui-priority": 3,
+      "ui-priority": 1,
       "values_list": [
         "tvm",
         "cdm",
@@ -25,7 +25,7 @@
     "uuid": {
       "description": "UUID of the OpenTIDE Object",
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 3
     },
     "version": {
       "description": "Version of the OpenTIDE Object",
@@ -44,5 +44,5 @@
     "opentide-type"
   ],
   "uuid": "892fd46a-f69e-455c-8c4f-843a4b8f4295",
-  "version": 1
+  "version": 2
 }
