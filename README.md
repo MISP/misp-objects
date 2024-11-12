@@ -312,6 +312,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/news-agency](https://github.com/MISP/misp-objects/blob/main/objects/news-agency/definition.json) - News agencies compile news and disseminate news in bulk.
 - [objects/news-media](https://github.com/MISP/misp-objects/blob/main/objects/news-media/definition.json) - News media are forms of mass media delivering news to the general public.
 - [objects/open-data-security](https://github.com/MISP/misp-objects/blob/main/objects/open-data-security/definition.json) - An object describing an open dataset available and described under the open data security model. ref. https://github.com/CIRCL/open-data-security.
+- [objects/opentide](https://github.com/MISP/misp-objects/blob/main/objects/opentide/definition.json) - Describes an Open Threat Informed Detection Engineering object. See https://code.europa.eu/ec-digit-s2/opentide
 - [objects/organization](https://github.com/MISP/misp-objects/blob/main/objects/organization/definition.json) - An object which describes an organization.
 - [objects/original-imported-file](https://github.com/MISP/misp-objects/blob/main/objects/original-imported-file/definition.json) - Object describing the original file used to import data in MISP.
 - [objects/paloalto-threat-event](https://github.com/MISP/misp-objects/blob/main/objects/paloalto-threat-event/definition.json) - Palo Alto Threat Log Event.
