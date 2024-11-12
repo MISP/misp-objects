@@ -31,7 +31,9 @@
       "description": "Version of the OpenTIDE Object",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "sane_default": "1",
+      "sane_default": [
+        "1"
+      ],
       "ui-priority": 2
     }
   },
@@ -39,7 +41,9 @@
   "meta-category": "misc",
   "name": "opentide",
   "required": [
+    "name",
     "uuid",
+    "version",
     "opentide-object",
     "opentide-type"
   ],
