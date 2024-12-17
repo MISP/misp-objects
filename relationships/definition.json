@@ -1909,7 +1909,7 @@
       "name": "releasable-to"
     },
     {
-      "desription": "The source object is weakened by the target weakness.",
+      "description": "The source object is weakened by the target weakness.",
       "format": [
         "misp"
       ],
