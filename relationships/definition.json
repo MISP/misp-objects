@@ -1907,7 +1907,23 @@
         "misp"
       ],
       "name": "releasable-to"
+    },
+    {
+      "desription": "The source object is weakened by the target weakness.",
+      "format": [
+        "misp"
+      ],
+      "name": "weakened-by",
+      "opposite": "weakens"
+    },
+    {
+      "description": "The source weakness weakens the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "weakens",
+      "opposite": "weakened-by"
     }
   ],
-  "version": 50
+  "version": 51
 }
