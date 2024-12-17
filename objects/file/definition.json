@@ -31,6 +31,11 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "dom-hash": {
+      "description": "Dom-hash of the file",
+      "misp-attribute": "dom-hash",
+      "ui-priority": 0
+    },
     "entropy": {
       "description": "Entropy of the whole file",
       "disable_correlation": true,
@@ -512,5 +517,5 @@
     "fullpath"
   ],
   "uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
-  "version": 24
+  "version": 25
 }

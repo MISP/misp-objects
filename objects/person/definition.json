@@ -108,6 +108,12 @@
       ],
       "ui-priority": 10
     },
+    "ip-src": {
+      "description": "Source IP address used by this person.",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 10
+    },
     "last-name": {
       "description": "Last name of a natural person.",
       "misp-attribute": "last-name",
@@ -256,5 +262,5 @@
     "handle"
   ],
   "uuid": "a15b0477-e9d1-4b9c-9546-abe78a4f4248",
-  "version": 20
+  "version": 21
 }

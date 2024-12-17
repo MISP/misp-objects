@@ -5,6 +5,12 @@
       "misp-attribute": "dom-hash",
       "ui-priority": 0
     },
+    "ref": {
+      "description": "Reference link for the complete analysis of this dom-hash",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "url": {
       "description": "Full URL of the dom-hashed HTML structure",
       "misp-attribute": "url",
@@ -20,5 +26,5 @@
     "dom-hash"
   ],
   "uuid": "c7771a39-afa5-4ecb-8d67-ca87ff60236d",
-  "version": 2
+  "version": 3
 }

@@ -151,6 +151,7 @@
             "mutex",
             "named pipe",
             "nationality",
+            "onion-address",
             "other",
             "passenger-name-record-locator-number",
             "passport-country",

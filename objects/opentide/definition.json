@@ -1,0 +1,58 @@
+{
+  "attributes": {
+    "name": {
+      "description": "Name of the OpenTIDE Object",
+      "misp-attribute": "text",
+      "ui-priority": 5
+    },
+    "opentide-object": {
+      "description": "YAML Content of the Opentide Object",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "opentide-relation": {
+      "description": "UUID of other OpenTIDE Objects with a relation to this Object",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "opentide-type": {
+      "description": "Type of the OpenTIDE Object",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": false,
+      "ui-priority": 1,
+      "values_list": [
+        "tvm",
+        "cdm",
+        "mdr"
+      ]
+    },
+    "uuid": {
+      "description": "UUID of the OpenTIDE Object",
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "version": {
+      "description": "Version of the OpenTIDE Object",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "1"
+      ],
+      "ui-priority": 3
+    }
+  },
+  "description": "Object that is a container for threat or detection data, in accordance with the OpenTIDE Framework (https://code.europa.eu/ec-digit-s2/opentide)",
+  "meta-category": "misc",
+  "name": "opentide",
+  "required": [
+    "name",
+    "opentide-object",
+    "opentide-type",
+    "uuid",
+    "version"
+  ],
+  "uuid": "892fd46a-f69e-455c-8c4f-843a4b8f4295",
+  "version": 3
+}

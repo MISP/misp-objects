@@ -5,6 +5,11 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "dom-hash": {
+      "description": "Dom-hash of the URL",
+      "misp-attribute": "dom-hash",
+      "ui-priority": 0
+    },
     "domain": {
       "description": "Full domain",
       "misp-attribute": "domain",
@@ -106,5 +111,5 @@
     "resource_path"
   ],
   "uuid": "60efb77b-40b5-4c46-871b-ed1ed999fce5",
-  "version": 9
+  "version": 10
 }
