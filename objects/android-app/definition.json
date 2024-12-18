@@ -7,8 +7,14 @@
       "ui-priority": 1
     },
     "certificate": {
-      "description": "Android certificate",
+      "description": "Android certificate (SHA1)",
       "misp-attribute": "sha1",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "certificate-sha256": {
+      "description": "Android certificate (SHA256)",
+      "misp-attribute": "sha256",
       "multiple": true,
       "ui-priority": 1
     },
@@ -39,5 +45,5 @@
     "sha256"
   ],
   "uuid": "92836f23-4730-4eae-82ac-9f00d5299735",
-  "version": 1
+  "version": 2
 }
