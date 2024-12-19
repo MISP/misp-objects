@@ -3,25 +3,25 @@
     "feedback-requested": {
       "description": "User has requested feedback",
       "disable-correlation": true,
-      "misp-atrubute": "boolean",
+      "misp-attribute": "boolean",
       "ui-priority": 0
     },
     "feedback-sent": {
       "description": "Feedback has been sent to user",
       "disable-correlation": true,
-      "misp-atrubute": "boolean",
+      "misp-attribute": "boolean",
       "ui-priority": 0
     },
     "feedback-time": {
       "description": "Timestamp of the feedback",
       "disable-correlation": true,
-      "misp-atrubute": "datetime",
+      "misp-attribute": "datetime",
       "ui-priority": 0
     },
     "privacy": {
       "description": "User has requested privacy",
       "disable-correlation": true,
-      "misp-atrubute": "boolean",
+      "misp-attribute": "boolean",
       "ui-priority": 0
     },
     "report-status": {
@@ -30,7 +30,7 @@
       ],
       "description": "Result of the Spambee analysis for the submitted email",
       "disable-correlation": true,
-      "misp-atrubute": "text",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "report-uid": {
@@ -39,7 +39,7 @@
       ],
       "description": "Internal reference to the Spambee report",
       "disable-correlation": true,
-      "misp-atrubute": "text",
+      "misp-attribute": "text",
       "ui-priority": 0
     }
   },
@@ -50,5 +50,5 @@
     "report-uid"
   ],
   "uuid": "305d6e6c-bb4d-4b9a-abf5-9f34d1322352",
-  "version": 1
+  "version": 2
 }
