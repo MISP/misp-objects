@@ -1,36 +1,27 @@
 {
   "attributes": {
-    "privacy": {
-      "description": "User has requested privacy",
-      "misp-atrubute": "boolean",
-      "disable-correlation": true,
-      "ui-priority": 0
-    },
     "feedback-requested": {
       "description": "User has requested feedback",
-      "misp-atrubute": "boolean",
       "disable-correlation": true,
+      "misp-atrubute": "boolean",
       "ui-priority": 0
     },
     "feedback-sent": {
       "description": "Feedback has been sent to user",
-      "misp-atrubute": "boolean",
       "disable-correlation": true,
+      "misp-atrubute": "boolean",
       "ui-priority": 0
     },
     "feedback-time": {
       "description": "Timestamp of the feedback",
-      "misp-atrubute": "datetime",
       "disable-correlation": true,
+      "misp-atrubute": "datetime",
       "ui-priority": 0
     },
-    "report-uid": {
-      "categories": [
-        "Internal reference"
-      ],
-      "description": "Internal reference to the Spambee report",
-      "misp-atrubute": "text",
+    "privacy": {
+      "description": "User has requested privacy",
       "disable-correlation": true,
+      "misp-atrubute": "boolean",
       "ui-priority": 0
     },
     "report-status": {
@@ -38,8 +29,17 @@
         "External analysis"
       ],
       "description": "Result of the Spambee analysis for the submitted email",
-      "misp-atrubute": "text",
       "disable-correlation": true,
+      "misp-atrubute": "text",
+      "ui-priority": 0
+    },
+    "report-uid": {
+      "categories": [
+        "Internal reference"
+      ],
+      "description": "Internal reference to the Spambee report",
+      "disable-correlation": true,
+      "misp-atrubute": "text",
       "ui-priority": 0
     }
   },
