@@ -1,0 +1,54 @@
+{
+  "attributes": {
+    "feedback-requested": {
+      "description": "User has requested feedback",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "feedback-sent": {
+      "description": "Feedback has been sent to user",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "feedback-time": {
+      "description": "Timestamp of the feedback",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "privacy": {
+      "description": "User has requested privacy",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "report-status": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Result of the Spambee analysis for the submitted email",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "report-uid": {
+      "categories": [
+        "Internal reference"
+      ],
+      "description": "Internal reference to the Spambee report",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "A Spambee analysis report",
+  "meta-category": "network",
+  "name": "spambee-report",
+  "requiredOneOf": [
+    "report-uid"
+  ],
+  "uuid": "305d6e6c-bb4d-4b9a-abf5-9f34d1322352",
+  "version": 3
+}

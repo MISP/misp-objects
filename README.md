@@ -396,6 +396,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/sigmf-recording](https://github.com/MISP/misp-objects/blob/main/objects/sigmf-recording/definition.json) - An object representing a single IQ/RF sample in the Signal Metadata Format Specification (SigMF).
 - [objects/social-media-group](https://github.com/MISP/misp-objects/blob/main/objects/social-media-group/definition.json) - Social media group object template describing a public or private group or channel.
 - [objects/software](https://github.com/MISP/misp-objects/blob/main/objects/software/definition.json) - The Software object represents high-level properties associated with software, including software products. STIX 2.1 - 6.14.
+- [objects/spambee-report](https://github.com/MISP/misp-objects/main/objects/spambee-report/definition.json) - A Spambee analysis report.
 - [objects/spearphishing-attachment](https://github.com/MISP/misp-objects/blob/main/objects/spearphishing-attachment/definition.json) - Spearphishing Attachment.
 - [objects/spearphishing-link](https://github.com/MISP/misp-objects/blob/main/objects/spearphishing-link/definition.json) - Spearphishing Link.
 - [objects/splunk](https://github.com/MISP/misp-objects/blob/main/objects/splunk/definition.json) - Splunk / Splunk ES object.
