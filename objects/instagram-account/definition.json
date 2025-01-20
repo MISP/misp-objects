@@ -50,6 +50,7 @@
       "multiple": true,
       "ui-priority": 1
     }
+  },
   "description": "Instagram account.",
   "meta-category": "misc",
   "name": "instagram-account",
