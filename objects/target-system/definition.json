@@ -28,12 +28,12 @@
       "ui-priority": 1
     }
   },
-  "description": "Description about an targeted system, this could potentially be a compromissed internal system",
+  "description": "Description about an targeted system, this could potentially be a compromised internal system",
   "meta-category": "internal",
   "name": "target-system",
   "requiredOneOf": [
     "targeted_machine"
   ],
   "uuid": "3110944f-eca0-4c94-9d61-a84d022228a4",
-  "version": 1
+  "version": 2
 }
