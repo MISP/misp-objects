@@ -259,8 +259,8 @@
     },
     "text": {
       "description": "Free text value to attach to the file",
-      "disable_correlation": false,
-	  "multiple": true,
+      "disable_correlation": true,
+      "multiple": true,
       "misp-attribute": "text",
       "recommended": false,
       "ui-priority": 1
