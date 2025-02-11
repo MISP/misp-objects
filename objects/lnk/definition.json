@@ -150,7 +150,7 @@
       "ui-priority": 0
     },
     "lnk-mft-object": {
-      "description": "LinkTargetIDList MFT entry. Name:MFTID|SeqID",
+      "description": "LinkTargetIDList MFT entry. Name:MFTID|SeqID|BTimestamp",
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
