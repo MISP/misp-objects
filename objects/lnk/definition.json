@@ -149,6 +149,17 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "lnk-mft-object": {
+      "description": "LinkTargetIDList MFT entry. Name:MFTID|SeqID",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "lnk-mft-sid": {
+      "description": "SID reference in ExtraData.PropertyStore",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "machine-identifier": {
       "description": "Machine identifier",
       "misp-attribute": "text",
@@ -248,7 +259,8 @@
     },
     "text": {
       "description": "Free text value to attach to the file",
-      "disable_correlation": true,
+      "disable_correlation": false,
+	  "multiple": true,
       "misp-attribute": "text",
       "recommended": false,
       "ui-priority": 1
@@ -274,6 +286,6 @@
     "sha512/224",
     "sha512/256"
   ],
-  "uuid": "ad13533e-1853-4da0-a111-33a7ce7e6c09",
-  "version": 1
+  "uuid": "5dd53220-c774-4d43-9fd7-8b95226182d1",
+  "version": 1.1
 }
