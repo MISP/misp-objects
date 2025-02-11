@@ -155,7 +155,7 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "lnk-mft-sid": {
+    "lnk-propertystore-sid": {
       "description": "SID reference in ExtraData.PropertyStore",
       "misp-attribute": "text",
       "ui-priority": 0
