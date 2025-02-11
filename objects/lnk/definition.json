@@ -116,6 +116,12 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "lnk-mft-object": {
+      "description": "LinkTargetIDList MFT entry. Name:MFTID|SeqID|BTimestamp",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "lnk-modification-time": {
       "categories": [
         "Other"
@@ -123,6 +129,11 @@
       "description": "Modification time of the LNK",
       "disable_correlation": true,
       "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "lnk-propertystore-sid": {
+      "description": "SID reference in ExtraData.PropertyStore",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "lnk-relative-path": {
@@ -250,6 +261,7 @@
       "description": "Free text value to attach to the file",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "multiple": true,
       "recommended": false,
       "ui-priority": 1
     },
@@ -275,5 +287,5 @@
     "sha512/256"
   ],
   "uuid": "ad13533e-1853-4da0-a111-33a7ce7e6c09",
-  "version": 1
+  "version": 2
 }
