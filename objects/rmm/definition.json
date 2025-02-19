@@ -7,7 +7,7 @@
     },
     "guid": {
       "description": "GUID or reference of the RMM agent.",
-      "misp-attribute": "link",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "hostname": {
@@ -74,5 +74,5 @@
     "hostname"
   ],
   "uuid": "2cdcfb2a-dd74-4d88-ae02-6f381b312666",
-  "version": 1
+  "version": 2
 }
