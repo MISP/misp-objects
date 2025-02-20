@@ -76,7 +76,7 @@
   "meta-category": "misc",
   "name": "rmm",
   "requiredOneOf": [
-    "common",
+    "comment",
     "rmm-type",
     "guid",
     "url",
