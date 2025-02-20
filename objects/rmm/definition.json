@@ -1,13 +1,20 @@
 {
   "attributes": {
+    "api-key": {
+      "description": "Authentication or API key used by the RMM agent",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "comment": {
       "description": "A description of the RMM.",
       "misp-attribute": "comment",
       "ui-priority": 0
     },
     "guid": {
-      "description": "GUID or reference of the RMM agent.",
+      "description": "GUID or reference of the RMM agent or deployment ID.",
       "misp-attribute": "text",
+      "multiple": true,
       "ui-priority": 0
     },
     "hostname": {
@@ -38,6 +45,7 @@
         "Level.io",
         "Logmein",
         "ManageEngine",
+        "MeshCentral",
         "N-Able",
         "Pulseway",
         "RattyRat",
@@ -48,6 +56,7 @@
         "ScreenConnect",
         "Splashtop",
         "SSH",
+        "Tactical RMM",
         "Teamviewer",
         "TightVNC",
         "TrendMicro",
@@ -71,8 +80,9 @@
     "rmm-type",
     "guid",
     "url",
-    "hostname"
+    "hostname",
+    "api-key"
   ],
   "uuid": "2cdcfb2a-dd74-4d88-ae02-6f381b312666",
-  "version": 2
+  "version": 3
 }
