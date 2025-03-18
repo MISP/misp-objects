@@ -134,9 +134,9 @@
   "name": "github-repo",
   "requiredOneOf": [
     "name",
-    "fullname",
+    "full-name",
     "link"
   ],
   "uuid": "d2e93321-3d0c-4215-88a7-62ccb56fef89",
-  "version": 1
+  "version": 2
 }
