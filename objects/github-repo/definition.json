@@ -1,0 +1,142 @@
+{
+  "attributes": {
+    "archived": {
+      "description": "Is the repository archived?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "created-at": {
+      "description": "Date of the repository creation",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Repository description",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "disabled": {
+      "description": "Is the repository disabled?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "fork": {
+      "description": "Is the repository a forked repository?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "forks-count": {
+      "description": "Number of forks",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "full-name": {
+      "description": "Full name of the repository. [Username/Repository name]",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "has-downloads": {
+      "description": "Have the repository been downloaded?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "has-wiki": {
+      "description": "Does the repository have a wiki?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "id": {
+      "description": "Repository id",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "languages": {
+      "description": "Languages used in the repository",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Link to the GitHub repository.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "name of the repository. [Repository name]",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "open-issues": {
+      "description": "Number of open issues",
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "private": {
+      "description": "Is the repository private?",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 1
+    },
+    "pushed-at": {
+      "description": "Date of last push",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "topics": {
+      "description": "Topics linked to the repository",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "updated-at": {
+      "description": "Date of the last update",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "username": {
+      "description": "Owner of the repository. [Username]",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "GitHub repository",
+  "meta-category": "misc",
+  "name": "github-repo",
+  "requiredOneOf": [
+    "name",
+    "full-name",
+    "link"
+  ],
+  "uuid": "d2e93321-3d0c-4215-88a7-62ccb56fef89",
+  "version": 2
+}
