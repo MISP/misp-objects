@@ -96,6 +96,7 @@
       "description": "Layer 7 protocol of the network connection.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "multiple": true,
       "sane_default": [
         "HTTP",
         "HTTPS",
