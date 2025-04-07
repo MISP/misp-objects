@@ -1,0 +1,59 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Action description",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "filters": {
+      "description": "Restrictions on the trigger",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "inputs": {
+      "description": "Inputs of the workflow",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "jobs": {
+      "description": "Jobs defined in the workflow",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Name of the action.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "notes": {
+      "description": "Any other informations",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "outputs": {
+      "description": "Outputs generated in the workflow",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "trigger": {
+      "description": "How is the action trigerred.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "GitHub Actions",
+  "meta-category": "misc",
+  "name": "github-action",
+  "requiredOneOf": [
+    "name",
+    "description"
+  ],
+  "uuid": "3331aaf4-1007-454e-ba7b-6f39ad67decb",
+  "version": 1
+}
