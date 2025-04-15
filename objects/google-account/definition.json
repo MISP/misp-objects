@@ -1,0 +1,116 @@
+{
+  "attributes": {
+    "account-id": {
+      "description": "Google Account ID.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "alternate-e-mails": {
+      "description": "Alternate e-mails associated with the main e-mail.",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "contact-e-mail": {
+      "description": "Account recovery contact e-mail.",
+      "misp-attribute": "email-src",
+      "ui-priority": 1
+    },
+    "created-on": {
+      "description": "The date and time the account was created.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "creation-ip": {
+      "description": "The IP address used to create the account.",
+      "disable_correlation": false,
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "deletion-date": {
+      "description": "The date and time the account was deleted.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "e-mail": {
+      "description": "The main e-mail associated with the Google ID.",
+      "misp-attribute": "email-src",
+      "ui-priority": 1
+    },
+    "end-of-service-date": {
+      "description": "The date and time the service was terminated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "last-logins-date": {
+      "description": "The dates and times of the user's most recent logins.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "last-updated-date": {
+      "description": "The date and time the account was last updated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "login-ip": {
+      "description": "The IP addresses used to login into the account.",
+      "disable_correlation": false,
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "The full name of the person associated with the Google ID.",
+      "misp-attribute": "full-name",
+      "ui-priority": 1
+    },
+    "recovery-e-mail": {
+      "description": "Account recovery e-mail.",
+      "misp-attribute": "email-src",
+      "ui-priority": 1
+    },
+    "recovery-sms": {
+      "description": "Account recovery phone number.",
+      "misp-attribute": "phone-number",
+      "ui-priority": 1
+    },
+    "related-links": {
+      "description": "Any link to a page containing information about this Google user.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "services": {
+      "description": "Services associated with the Google Account ID.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "user-avatar": {
+      "description": "A user profile picture or avatar.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "user-description": {
+      "description": "A description of the user.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "An object containing subscriber information received from Google.",
+  "meta-category": "misc",
+  "name": "google-account",
+  "requiredOneOf": [
+    "account-id",
+    "e-mail"
+  ],
+  "uuid": "1d795bfa-29ae-433c-b23a-bb5a1c77e944",
+  "version": 1
+}
