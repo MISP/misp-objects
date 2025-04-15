@@ -105,7 +105,7 @@
     }
   },
   "description": "An object containing subscriber information received from Google.",
-  "meta-category": "account",
+  "meta-category": "misc",
   "name": "google-account",
   "requiredOneOf": [
     "account-id",
