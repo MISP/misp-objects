@@ -1,0 +1,188 @@
+{
+  "attributes": {
+    "malware-sample": {
+      "description": "The file itself (binary)",
+      "misp-attribute": "malware-sample",
+      "ui-priority": 1
+    },
+    "filename": {
+      "categories": [
+        "Payload delivery",
+        "Artifacts dropped",
+        "Payload installation",
+        "External analysis"
+      ],
+      "description": "Filename on disk",
+      "misp-attribute": "filename",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "md5": {
+      "description": "[Insecure] MD5 hash (128 bits)",
+      "misp-attribute": "md5",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "sha256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "sha1": {
+    "description": "[Insecure] Secure Hash Algorithm 1 (160 bits)",
+    "misp-attribute": "sha1",
+    "recommended": false,
+    "ui-priority": 1
+    },
+    "ssdeep": {
+    "description": "Fuzzy hash using context triggered piecewise hashes (CTPH)",
+    "misp-attribute": "ssdeep",
+    "ui-priority": 1
+    },
+    "tlsh": {
+    "description": "Fuzzy hash by Trend Micro: Locality Sensitive Hash",
+    "misp-attribute": "tlsh",
+    "ui-priority": 1
+    },
+    "sha224": {
+      "description": "Secure Hash Algorithm 2 (224 bits)",
+      "misp-attribute": "sha224",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "sha384": {
+      "description": "Secure Hash Algorithm 2 (384 bits)",
+      "misp-attribute": "sha384",
+      "recommended": false,
+      "ui-priority": 1
+    },
+    "sha512": {
+      "description": "Secure Hash Algorithm 2 (512 bits)",
+      "misp-attribute": "sha512",
+      "ui-priority": 1
+    },
+    "size-in-bytes": {
+      "description": "Size of the file, in bytes",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 1
+    },
+    "state": {
+      "description": "State of the file",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1,
+      "values_list": [
+        "Malicious",
+        "Harmless",
+        "Signed",
+        "Revoked",
+        "Expired",
+        "Trusted"
+      ]
+    },
+    "package-name": {
+      "description": "The package name of an Android app",
+      "misp-attribute": "text",
+      "recommended": true,
+      "ui-priority": 1
+    },
+    "sha3-224": {
+      "description": "Secure Hash Algorithm 3 (224 bits)",
+      "misp-attribute": "sha3-224",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha3-256": {
+      "description": "Secure Hash Algorithm 3 (256 bits)",
+      "misp-attribute": "sha3-256",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha3-384": {
+      "description": "Secure Hash Algorithm 3 (384 bits)",
+      "misp-attribute": "sha3-384",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha3-512": {
+      "description": "Secure Hash Algorithm 3 (512 bits)",
+      "misp-attribute": "sha3-512",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha512/224": {
+      "description": "Secure Hash Algorithm 2 (224 bits)",
+      "misp-attribute": "sha512/224",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "sha512/256": {
+      "description": "Secure Hash Algorithm 2 (256 bits)",
+      "misp-attribute": "sha512/256",
+      "recommended": false,
+      "ui-priority": 0
+    },
+    "mimetype": {
+      "description": "Mime type",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 0
+    },
+    "url": {
+      "categories": [
+        "Payload delivery"
+      ],
+      "description": "Malware delivery url",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "vhash": {
+      "description": "vhash by VirusTotal",
+      "misp-attribute": "vhash",
+      "ui-priority": 0
+    },
+    "access-time": {
+      "description": "The last time the file was accessed",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "creation-time": {
+      "description": "Creation time of the file",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "modification-time": {
+      "description": "Last time the file was modified",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Apk object describing a file with meta-information",
+  "meta-category": "file",
+  "name": "apk",
+  "requiredOneOf": [
+    "filename",
+    "size-in-bytes",
+    "ssdeep",
+    "md5",
+    "sha1",
+    "sha224",
+    "sha256",
+    "sha384",
+    "sha512",
+    "sha512/224",
+    "sha512/256",
+    "sha3-224",
+    "sha3-256",
+    "sha3-384",
+    "sha3-512",
+    "tlsh",
+    "malware-sample",
+    "url"
+  ],
+  "uuid": "501bf5cf-28e0-4a5a-8056-e811c6447cfa",
+  "version": 2
+}
