@@ -1,0 +1,90 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the text summarised.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "original-text": {
+      "description": "Original text before any processing.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 0
+    },
+    "original-text-timestamp": {
+      "description": "Publication date of the original text (not related to the processing).",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "original-url": {
+      "description": "URL of the original text.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "summariser-model": {
+      "description": "Model used for the summariser",
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "gpt-3.5-turbo",
+        "gpt-3.5-turbo-16k",
+        "gpt-3.5-turbo-0125 (16k)",
+        "gpt-4",
+        "gpt-4-turbo",
+        "gpt-4-o",
+        "gpt-4o-mini",
+        "o3-mini"
+      ],
+      "ui-priority": 0
+    },
+    "summariser-timestamp": {
+      "description": "Date when the summary was produced.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "summariser-version": {
+      "description": "Version of the code used for the summariser.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "summary": {
+      "description": "Summary of the original text by the AI-based or NLP-based summariser.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tcode": {
+      "description": "MITRE ATT&CK Technique ID extracted by the AI-based or NLP-based summariser.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "Title of the text summarised.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ttp": {
+      "description": "TTP of the original text extracted by the AI-based or NLP-based summariser.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Summariser output from an AI-based or NLP summariser.",
+  "meta-category": "misc",
+  "name": "summariser-output",
+  "required": [
+    "summary"
+  ],
+  "uuid": "38633d19-123a-4b0f-bc4a-ccb381e58e49",
+  "version": 1
+}
