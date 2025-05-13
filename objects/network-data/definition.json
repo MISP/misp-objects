@@ -1,0 +1,167 @@
+{
+  "attributes": {
+    "counter": {
+      "description": "counter (ex.: bytes, packets, flows, events, etc)",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "data": {
+      "description": "network traffic (ex.: payload, log lines, etc)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "describe type/content of the network data",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 15
+    },
+    "dst_ASN": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "destination autonomous system number",
+      "disable_correlation": true,
+      "misp-attribute": "AS",
+      "multiple": true,
+      "ui-priority": 8
+    },
+    "dst_CC": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "destination country code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "dst_IP": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "destination IP address",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "dst_hostname": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "destination hostname",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "dst_port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "destination port",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 6
+    },
+    "first_seen": {
+      "description": "timestamp of the first data seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 2
+    },
+    "last_seen": {
+      "description": "timestamp of the last data seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "protocol": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "protocol (ex.: TCP, UDP, ICMP, TLS, HTTP, HTTPS, SIP, etc)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "src_ASN": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "source autonomous system number",
+      "disable_correlation": true,
+      "misp-attribute": "AS",
+      "multiple": true,
+      "ui-priority": 13
+    },
+    "src_CC": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "source country code",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 14
+    },
+    "src_IP": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "source IP address",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 12
+    },
+    "src_hostname": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "source hostname",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "src_port": {
+      "categories": [
+        "Network activity",
+        "External analysis"
+      ],
+      "description": "source port",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 11
+    }
+  },
+  "description": "network data, including payloads/logs, relevant timestamps, data volume and enrichment of the TCP/IP 5-tuple connection information.",
+  "meta-category": "network",
+  "name": "network-data",
+  "requiredOneOf": [
+    "src_IP",
+    "data"
+  ],
+  "uuid": "64d5949b-98ac-459d-83b8-4688f45795de",
+  "version": 2
+}
