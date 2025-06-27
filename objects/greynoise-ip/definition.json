@@ -4,59 +4,107 @@
       "description": "GreyNoise Actor",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "asn": {
+      "description": "GreyNoise ASN",
+      "disable_correlation": true,
+      "misp-attribute": "AS",
+      "ui-priority": 3
+    },
+    "bot": {
+      "description": "GreyNoise Is Bot Flag",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
       "ui-priority": 1
     },
     "classification": {
       "description": "GreyNoise Classification",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 6
+    },
+    "domain": {
+      "description": "GreyNoise Domain",
+      "disable_correlation": false,
+      "misp-attribute": "domain",
+      "ui-priority": 6
     },
     "first-seen": {
       "description": "First Seen",
       "disable_correlation": true,
       "misp-attribute": "datetime",
-      "ui-priority": 2
+      "ui-priority": 5
     },
     "ip-src": {
       "description": "Source IP address of the network connection.",
       "misp-attribute": "ip-src",
-      "ui-priority": 1
+      "ui-priority": 7
     },
     "last-seen": {
       "description": "Last Seen",
       "disable_correlation": true,
       "misp-attribute": "datetime",
-      "ui-priority": 1
+      "ui-priority": 5
     },
     "link": {
       "description": "GreyNoise Visualizer Link",
       "disable_correlation": true,
       "misp-attribute": "link",
-      "ui-priority": 2
+      "ui-priority": 4
     },
     "noise": {
       "description": "GreyNoise Internet Scanning Flag",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 4
     },
     "provider": {
       "description": "GreyNoise Service Provider",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 4
+    },
+    "rdns": {
+      "description": "GreyNoise Reverse DNS Hostname",
+      "disable_correlation": false,
+      "misp-attribute": "hostname",
+      "ui-priority": 2
+    },
+    "rdns_parent": {
+      "description": "GreyNoise Reverse DNS Domain",
+      "disable_correlation": true,
+      "misp-attribute": "domain",
+      "ui-priority": 2
     },
     "riot": {
       "description": "GreyNoise Common Business Service Flag",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "source_country": {
+      "description": "GreyNoise Source Country",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 3
+    },
+    "tor": {
+      "description": "GreyNoise Is Tor Flag",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
       "ui-priority": 1
     },
     "trust-level": {
       "description": "GreyNoise RIOT Trust Level",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "vpn": {
+      "description": "GreyNoise Is VPN Flag",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
       "ui-priority": 1
     }
   },
@@ -67,5 +115,5 @@
     "ip-src"
   ],
   "uuid": "6B14A94A-46E4-4B82-B24D-0DBF8E8B3FD9",
-  "version": 1
+  "version": 2
 }
