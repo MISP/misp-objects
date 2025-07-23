@@ -9,6 +9,7 @@
         "STIX 1.1",
         "STIX 1.2",
         "STIX 2.0",
+        "STIX 2.1",
         "OpenIOC"
       ],
       "ui-priority": 1
