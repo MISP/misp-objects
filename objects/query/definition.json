@@ -27,7 +27,9 @@
         "Google search query",
         "Ariel Query Language (qradar)",
         "Grep",
-        "Devo LINQ"
+        "Devo LINQ",
+        "Microsoft Defender XDR",
+        "Sentinel Advanced Security Information Model"
       ],
       "ui-priority": 0
     },
@@ -49,5 +51,5 @@
     "query"
   ],
   "uuid": "006539b3-f68a-4a02-a213-e600762d39b5",
-  "version": 3
+  "version": 4
 }
