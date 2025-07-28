@@ -193,9 +193,9 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/fail2ban](https://github.com/MISP/misp-objects/blob/main/objects/fail2ban/definition.json) - Fail2ban event.
 - [objects/favicon](https://github.com/MISP/misp-objects/blob/main/objects/favicon/definition.json) - A favicon, also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons, associated with a particular website or web page. The object template can include the murmur3 hash of the favicon to facilitate correlation.
 - [objects/file](https://github.com/MISP/misp-objects/blob/main/objects/file/definition.json) - File object describing a file with meta-information.
-- [objects/flowintel-cm-case](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-cm-case/definition.json) - A case as defined by flowintel-cm.
-- [objects/flowintel-cm-task](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-cm-task/definition.json) - A task as defined by flowintel-cm.
-- [objects/flowintel-cm-task-note](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-cm-task-note/definition.json) - A task's note as defined by flowintel-cm.
+- [objects/flowintel-case](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-case/definition.json) - A case as defined by flowintel.
+- [objects/flowintel-task](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-task/definition.json) - A task as defined by flowintel.
+- [objects/flowintel-task-note](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-task-note/definition.json) - A task's note as defined by flowintel.
 - [objects/forensic-case](https://github.com/MISP/misp-objects/blob/main/objects/forensic-case/definition.json) - An object template to describe a digital forensic case.
 - [objects/forensic-evidence](https://github.com/MISP/misp-objects/blob/main/objects/forensic-evidence/definition.json) - An object template to describe a digital forensic evidence.
 - [objects/forged-document](https://github.com/MISP/misp-objects/blob/main/objects/forged-document/definition.json) - Object describing a forged document.
@@ -255,8 +255,11 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/Generalizing Persuasion Framework](https://github.com/MISP/misp-objects/blob/main/objects/Generalizing Persuasion Framework/definition.json) - By placing their work within the GP Framework, scholars will help the field resolve inconsistencies, identify and address open questions, and ensure collective progress. The GP Framework is not meant to compete with other theories (such as the ELM) but rather to fill in two gaps. First, it allows one to consider how individual persuasion studies connect to one another and why studies may arrive at contradictory conclusions. Second, it highlights the sources of variations that should be studied. (James N. Druckman).
 - [objects/geolocation](https://github.com/MISP/misp-objects/blob/main/objects/geolocation/definition.json) - An object to describe a geographic location.
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
+- [objects/github-action](https://github.com/MISP/misp-objects/blob/main/objects/github-action/definition.json) - GitHub Actions.
+- [objects/github-repo](https://github.com/MISP/misp-objects/blob/main/objects/github-repo/definition.json) - GitHub repository.
 - [objects/github-user](https://github.com/MISP/misp-objects/blob/main/objects/github-user/definition.json) - GitHub user.
 - [objects/gitlab-user](https://github.com/MISP/misp-objects/blob/main/objects/gitlab-user/definition.json) - GitLab user. Gitlab.com user or self-hosted GitLab instance.
+- [objects/google-account](https://github.com/MISP/misp-objects/blob/main/objects/google-account/definition.json) - An object containing subscriber information received from Google.
 - [objects/google-safe-browsing](https://github.com/MISP/misp-objects/blob/main/objects/google-safe-browsing/definition.json) - Google Safe checks a URL against Google's constantly updated list of unsafe web resources.
 - [objects/google-threat-intelligence-report](https://github.com/MISP/misp-objects/blob/main/objects/google-threat-intelligence-report/definition.json) - Google Threat Intelligence report that provides an assessment (verdict, severity and scoring) and combined information from VirusTotal and Mandiant.
 - [objects/greynoise-ip](https://github.com/MISP/misp-objects/blob/main/objects/greynoise-ip/definition.json) - GreyNoise IP Information.
@@ -309,6 +312,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/narrative](https://github.com/MISP/misp-objects/blob/main/objects/narrative/definition.json) - Object describing a narrative.
 - [objects/netflow](https://github.com/MISP/misp-objects/blob/main/objects/netflow/definition.json) - Netflow object describes an network object based on the Netflowv5/v9 minimal definition.
 - [objects/network-connection](https://github.com/MISP/misp-objects/blob/main/objects/network-connection/definition.json) - A local or remote network connection.
+- [objects/network-data](https://github.com/MISP/misp-objects/blob/main/objects/network-data/definition.json) - network data, including payloads/logs, relevant timestamps, data volume and enrichment of the TCP/IP 5-tuple connection information.
 - [objects/network-profile](https://github.com/MISP/misp-objects/blob/main/objects/network-profile/definition.json) - Elements that can be used to profile, pivot or identify a network infrastructure, including domains, ip and urls.
 - [objects/network-socket](https://github.com/MISP/misp-objects/blob/main/objects/network-socket/definition.json) - Network socket object describes a local or remote network connections based on the socket data structure.
 - [objects/network-traffic](https://github.com/MISP/misp-objects/blob/main/objects/network-traffic/definition.json) - Generic network traffic that originates from a source and is addressed to a destination.
@@ -411,6 +415,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/stix2-pattern](https://github.com/MISP/misp-objects/blob/main/objects/stix2-pattern/definition.json) - An object describing a STIX pattern. The object can be linked via a relationship to other attributes or objects to describe how it can be represented as a STIX pattern.
 - [objects/stock](https://github.com/MISP/misp-objects/blob/main/objects/stock/definition.json) - Object to describe stock market.
 - [objects/submarine](https://github.com/MISP/misp-objects/blob/main/objects/submarine/definition.json) - Submarine description.
+- [objects/summariser-output](https://github.com/MISP/misp-objects/blob/main/objects/summariser-output/definition.json) - Summariser output from an AI-based or NLP summariser.
 - [objects/suricata](https://github.com/MISP/misp-objects/blob/main/objects/suricata/definition.json) - An object describing one or more Suricata rule(s) along with version and contextual information.
 - [objects/target-system](https://github.com/MISP/misp-objects/blob/main/objects/target-system/definition.json) - Description about an targeted system, this could potentially be a compromised internal system.
 - [objects/task](https://github.com/MISP/misp-objects/blob/main/objects/task/definition.json) - Task object as described in STIX 2.1 Incident object extension.
@@ -517,12 +522,12 @@ The MISP objects (JSON files) are dual-licensed under:
 or
 
 ~~~~
- Copyright (c) 2016-2024 Alexandre Dulaunoy - a@foo.be
- Copyright (c) 2016-2024 CIRCL - Computer Incident Response Center Luxembourg
- Copyright (c) 2016-2024 Andras Iklody
- Copyright (c) 2016-2024 Raphael Vinot
- Copyright (c) 2016-2024 Christian Studer
- Copyright (c) 2016-2024 Various contributors to MISP Project
+ Copyright (c) 2016-2025 Alexandre Dulaunoy - a@foo.be
+ Copyright (c) 2016-2025 CIRCL - Computer Incident Response Center Luxembourg
+ Copyright (c) 2016-2025 Andras Iklody
+ Copyright (c) 2016-2025 Raphael Vinot
+ Copyright (c) 2016-2025 Christian Studer
+ Copyright (c) 2016-2025 Various contributors to MISP Project
 
  Redistribution and use in source and binary forms, with or without modification,
  are permitted provided that the following conditions are met:
