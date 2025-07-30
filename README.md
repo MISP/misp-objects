@@ -196,6 +196,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/flowintel-case](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-case/definition.json) - A case as defined by flowintel.
 - [objects/flowintel-task](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-task/definition.json) - A task as defined by flowintel.
 - [objects/flowintel-task-note](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-task-note/definition.json) - A task's note as defined by flowintel.
+- [objects/flowintel-task-resource](https://github.com/MISP/misp-objects/blob/main/objects/flowintel-task-resource/definition.json) - A task's resource as defined by flowintel.
 - [objects/forensic-case](https://github.com/MISP/misp-objects/blob/main/objects/forensic-case/definition.json) - An object template to describe a digital forensic case.
 - [objects/forensic-evidence](https://github.com/MISP/misp-objects/blob/main/objects/forensic-evidence/definition.json) - An object template to describe a digital forensic evidence.
 - [objects/forged-document](https://github.com/MISP/misp-objects/blob/main/objects/forged-document/definition.json) - Object describing a forged document.
