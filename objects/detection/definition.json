@@ -1,0 +1,300 @@
+{
+    "name": "detection-playbook",
+    "description": "A comprehensive object to document a detection analytic, its logic, robustness, validation, and associated response playbooks. It is based on an advanced detection engineering template that integrates concepts like 'Summiting the Pyramid' for robustness scoring and a 'Funnel of Fidelity' for validation, along with structured SOAR automation steps.",
+    "meta-category": "detection",
+    "uuid": "7a6a7c8e-4a44-4b0a-8d2a-9e7f8a9b0c1d",
+    "version": 1,
+    "required": [
+        "analytic-title",
+        "id",
+        "status",
+        "hypothesis"
+    ],
+    "attributes": {
+        "analytic-title": {
+            "misp-attribute": "text",
+            "description": "(Section 1) A clear, descriptive title of the detection rule (e.g., 'LSASS Memory Access via OpenProcess').",
+            "ui-priority": 1,
+            "disable_correlation": true
+        },
+        "id": {
+            "misp-attribute": "text",
+            "description": "(Section 1) A unique identifier for tracking the analytic (e.g., DE-TA0006-T1003.001-001).",
+            "ui-priority": 1,
+            "disable_correlation": true
+        },
+        "version": {
+            "misp-attribute": "text",
+            "description": "(Section 1) The semantic version of the analytic (e.g., 1.0, 1.1, 2.0).",
+            "ui-priority": 1,
+            "disable_correlation": true
+        },
+        "status": {
+            "misp-attribute": "text",
+            "description": "(Section 1) The current maturity status of the analytic.",
+            "ui-priority": 1,
+            "disable_correlation": true,
+            "values_list": [
+                "Experimental",
+                "Test",
+                "Production",
+                "Deprecated"
+            ]
+        },
+        "author": {
+            "misp-attribute": "text",
+            "description": "(Section 1) The name or team responsible for creating/maintaining the analytic.",
+            "ui-priority": 0,
+            "disable_correlation": true
+        },
+        "date-created": {
+            "misp-attribute": "datetime",
+            "description": "(Section 1) The date the analytic was initially created.",
+            "ui-priority": 0,
+            "disable_correlation": true
+        },
+        "date-modified": {
+            "misp-attribute": "datetime",
+            "description": "(Section 1) The date the analytic was last modified.",
+            "ui-priority": 0,
+            "disable_correlation": true
+        },
+        "description": {
+            "misp-attribute": "text",
+            "description": "(Section 2) A brief, high-level summary of the detection's purpose. What threat or behavior is this designed to catch? Why is it important?",
+            "ui-priority": 1
+        },
+        "hypothesis": {
+            "misp-attribute": "text",
+            "description": "(Section 2) The scientific hypothesis for the detection. E.g., 'We hypothesize that an adversary performing will execute [Procedure]. This can be observed through [Observables]...'",
+            "ui-priority": 1
+        },
+        "mitre-attack-tactic": {
+            "misp-attribute": "text",
+            "description": "(Section 2) The MITRE ATT&CK Tactic(s) this analytic addresses (e.g., 'Credential Access (TA0006)'). Use the attack-pattern object for full mapping.",
+            "ui-priority": 0,
+            "multiple": true
+        },
+        "mitre-attack-technique": {
+            "misp-attribute": "text",
+            "description": "(Section 2) The MITRE ATT&CK Technique(s) this analytic addresses (e.g., 'OS Credential Dumping (T1003)'). Use the attack-pattern object for full mapping.",
+            "ui-priority": 0,
+            "multiple": true
+        },
+        "mitre-attack-subtechnique": {
+            "misp-attribute": "text",
+            "description": "(Section 2) The MITRE ATT&CK Sub-technique(s) this analytic addresses (e.g., 'LSASS Memory (T1003.001)'). Use the attack-pattern object for full mapping.",
+            "ui-priority": 0,
+            "multiple": true
+        },
+        "analytic-robustness-level": {
+            "misp-attribute": "text",
+            "description": "(Section 3) The robustness level of the analytic based on the 'Summiting the Pyramid' model.",
+            "ui-priority": 1,
+            "disable_correlation": true,
+            "values_list": [
+                "Level 1: Ephemeral",
+                "Level 2: Core to Adversary-Brought Tool",
+                "Level 3: Core to Pre-Existing Tool",
+                "Level 4: Core to Some Implementations of a (Sub-)Technique",
+                "Level 5: Core to a (Sub-)Technique (Invariant Behavior)"
+            ]
+        },
+        "analytic-robustness-justification": {
+            "misp-attribute": "text",
+            "description": "(Section 3) Justification for the chosen robustness level.",
+            "ui-priority": 0
+        },
+        "data-platform": {
+            "misp-attribute": "text",
+            "description": "(Section 3) The platform where the data is sourced (e.g., Windows, Linux, Network).",
+            "ui-priority": 1,
+            "disable_correlation": true
+        },
+        "data-source": {
+            "misp-attribute": "text",
+            "description": "(Section 3) The specific data source (e.g., EDR, Sysmon, Zeek).",
+            "ui-priority": 1,
+            "disable_correlation": true
+        },
+        "data-event": {
+            "misp-attribute": "text",
+            "description": "(Section 3) The specific event(s) required (e.g., Sysmon Event ID 10).",
+            "ui-priority": 1,
+            "disable_correlation": true
+        },
+        "event-robustness-column": {
+            "misp-attribute": "text",
+            "description": "(Section 3) The robustness of the event source telemetry.",
+            "ui-priority": 1,
+            "disable_correlation": true,
+            "values_list": [
+                "Host-Based: Application (A)",
+                "Host-Based: User-Mode (U)",
+                "Host-Based: Kernel-Mode (K)",
+                "Network-Based: Protocol Payload (P)",
+                "Network-Based: Protocol Header (H)"
+            ]
+        },
+        "event-robustness-justification": {
+            "misp-attribute": "text",
+            "description": "(Section 3) Justification for the chosen event robustness column.",
+            "ui-priority": 0
+        },
+        "final-summiting-score": {
+            "misp-attribute": "text",
+            "description": "(Section 3) The combined robustness score (e.g., 4K, 3U).",
+            "ui-priority": 1,
+            "disable_correlation": true
+        },
+        "detection-logic": {
+            "misp-attribute": "sigma",
+            "description": "(Section 4) The detection logic, preferably in the vendor-agnostic SIGMA format. Include heavy commenting to explain the logic.",
+            "ui-priority": 1
+        },
+        "known-false-positives": {
+            "misp-attribute": "text",
+            "description": "(Section 4) A list of any legitimate activities or tools that may trigger this alert.",
+            "ui-priority": 0
+        },
+        "exclusion-strategy": {
+            "misp-attribute": "text",
+            "description": "(Section 4) The strategy for filtering out false positives. Focus on robust, context-rich attributes.",
+            "ui-priority": 0
+        },
+        "test-case-type": {
+            "misp-attribute": "text",
+            "description": "(Section 5) The type of validation test performed (e.g., Functional Synonym). Add one set of test-case attributes per test.",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true,
+            "values_list": [
+                "Functional Synonym",
+                "Procedural Synonym",
+                "Sub-Technical Synonym"
+            ]
+        },
+        "test-case-tool": {
+            "misp-attribute": "text",
+            "description": "(Section 5) The tool or procedure used for the validation test.",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true
+        },
+        "test-case-result": {
+            "misp-attribute": "text",
+            "description": "(Section 5) The result of the validation test.",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true,
+            "values_list": [
+                "Detected",
+                "Not Detected"
+            ]
+        },
+        "triage-steps": {
+            "misp-attribute": "text",
+            "description": "(Section 5) A clear, step-by-step checklist for initial triage by a responding analyst.",
+            "ui-priority": 0
+        },
+        "investigation-steps": {
+            "misp-attribute": "text",
+            "description": "(Section 5) A clear, step-by-step checklist for deeper investigation by a responding analyst.",
+            "ui-priority": 0
+        },
+        "response-remediation-steps": {
+            "misp-attribute": "text",
+            "description": "(Section 5) Immediate, standard response and remediation actions if the activity is confirmed malicious.",
+            "ui-priority": 0
+        },
+        "alert-trigger-condition": {
+            "misp-attribute": "text",
+            "description": "(Section 6) The condition that triggers the automated playbook (e.g., IF 'detection-logic' RETURNS 'true').",
+            "ui-priority": 1
+        },
+        "alert-severity-default": {
+            "misp-attribute": "text",
+            "description": "(Section 6) The default severity level of the alert.",
+            "ui-priority": 1,
+            "disable_correlation": true,
+            "values_list": [
+                "Low",
+                "Medium",
+                "High",
+                "Critical"
+            ]
+        },
+        "soar-step-type": {
+            "misp-attribute": "text",
+            "description": "(Section 6) The type of SOAR step (Enrichment, Triage, Containment, Notification). Add one full set of 'soar-step-*' attributes for each logical step.",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true,
+            "values_list": [
+                "Enrichment",
+                "Triage Logic",
+                "Containment",
+                "Notification"
+            ]
+        },
+        "soar-step-action": {
+            "misp-attribute": "text",
+            "description": "(Section 6) The automated action to perform (e.g., Get-UserDetails, Isolate-Host, Create-Ticket).",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true
+        },
+        "soar-step-input": {
+            "misp-attribute": "text",
+            "description": "(Section 6) The entity from the alert used as input for the action (e.g., event.AccountName).",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true
+        },
+        "soar-step-output": {
+            "misp-attribute": "text",
+            "description": "(Section 6) The new information to be added or the expected result (e.g., user.title, host.os).",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true
+        },
+        "soar-step-source-system": {
+            "misp-attribute": "text",
+            "description": "(Section 6) The source or destination system for the action (e.g., VirusTotal, Jira, ServiceNow).",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true
+        },
+        "soar-step-execute-flag": {
+            "misp-attribute": "boolean",
+            "description": "(Section 6) For containment actions, specifies if execution is automatic (true) or requires manual approval (false). Default should be false.",
+            "ui-priority": 0,
+            "multiple": true,
+            "disable_correlation": true
+        },
+        "mitre-engage-goal": {
+            "misp-attribute": "text",
+            "description": "(Section 7) The MITRE Engage Goal this analytic supports (e.g., Disrupt (G0009)).",
+            "ui-priority": 0,
+            "disable_correlation": true
+        },
+        "mitre-engage-approach": {
+            "misp-attribute": "text",
+            "description": "(Section 7) The MITRE Engage Approach this analytic uses (e.g., Detect (A0001)).",
+            "ui-priority": 0,
+            "disable_correlation": true
+        },
+        "d3fend-tactic": {
+            "misp-attribute": "text",
+            "description": "(Section 7) The D3FEND Tactic this analytic maps to (e.g., Detect (D3-DET)).",
+            "ui-priority": 0,
+            "disable_correlation": true
+        },
+        "d3fend-technique": {
+            "misp-attribute": "text",
+            "description": "(Section 7) The D3FEND Technique this analytic maps to (e.g., Process Spawn Analysis (D3-PSA)).",
+            "ui-priority": 0,
+            "disable_correlation": true
+        }
+    }
+}
