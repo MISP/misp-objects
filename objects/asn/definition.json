@@ -5,6 +5,16 @@
       "misp-attribute": "AS",
       "ui-priority": 1
     },
+    "name": {
+      "description": "The official name of the autonomous system",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "organization": {
+      "description": "The organization who the ASN is registered to",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "country": {
       "description": "Country code of the main location of the autonomous system",
       "misp-attribute": "text",
@@ -65,5 +75,5 @@
     "asn"
   ],
   "uuid": "4ec55cc6-9e49-4c64-b794-03c25c1a6587",
-  "version": 5
+  "version": 6
 }
