@@ -88,9 +88,9 @@
       "ui-priority": 1
     }
   },
-  "description": "A case as defined by flowintel-cm.",
+  "description": "A case as defined by flowintel.",
   "meta-category": "misc",
-  "name": "flowintel-cm-case",
+  "name": "flowintel-case",
   "uuid": "19df57c7-b315-4fd2-84e5-d81ab221425e",
-  "version": 3
+  "version": 4
 }

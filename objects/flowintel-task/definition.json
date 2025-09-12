@@ -78,9 +78,9 @@
       "ui-priority": 0
     }
   },
-  "description": "A task as defined by flowintel-cm.",
+  "description": "A task as defined by flowintel.",
   "meta-category": "misc",
-  "name": "flowintel-cm-task",
+  "name": "flowintel-task",
   "uuid": "2f525f6e-d3f2-4cb9-9ca0-f1160d99397d",
-  "version": 4
+  "version": 5
 }

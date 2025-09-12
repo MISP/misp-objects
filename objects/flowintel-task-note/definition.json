@@ -27,9 +27,9 @@
       "ui-priority": 2
     }
   },
-  "description": "A task's note as defined by flowintel-cm.",
+  "description": "A task's note as defined by flowintel.",
   "meta-category": "misc",
-  "name": "flowintel-cm-task-note",
+  "name": "flowintel-task-note",
   "uuid": "2c6f6aba-48b6-482f-a810-81934d29be9a",
-  "version": 1
+  "version": 2
 }
