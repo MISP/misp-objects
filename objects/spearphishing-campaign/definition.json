@@ -1,0 +1,70 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "Free text comments about the campaign",
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "email-embedded-link": {
+      "description": "The malicious URL in the e-mail body.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "email-sender": {
+      "description": "The source address from which the e-mail was sent.",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "email-sender-ip": {
+      "description": "The source IP from which the e-mail was sent.",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "email-subject": {
+      "description": "The subject line of the e-mail.",
+      "misp-attribute": "email-subject",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mitm-connect-back-ip": {
+      "description": "IP from where the TA attempts to log in",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mitm-connect-back-useragent": {
+      "description": "User-agent used by the TA for log in attempts",
+      "misp-attribute": "user-agent",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "phishing-domain": {
+      "description": "Domain where the phishing stages are hosted",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "phishing-ip": {
+      "description": "IP address where the phishing stages are hosted",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "phishing-url": {
+      "description": "URLs of the various phishing stages",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Spearphishing template to describe a campaign from the email to the TA connect back IOC",
+  "meta-category": "network",
+  "name": "spearphishing-campaign",
+  "required": [],
+  "uuid": "20241206-9e59-4b7d-9e88-951458f10a5f",
+  "version": 20250902
+}
