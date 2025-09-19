@@ -5,16 +5,6 @@
       "misp-attribute": "AS",
       "ui-priority": 1
     },
-    "name": {
-      "description": "The official name of the autonomous system",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "organization": {
-      "description": "The organization who the ASN is registered to",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
     "country": {
       "description": "Country code of the main location of the autonomous system",
       "misp-attribute": "text",
@@ -60,6 +50,16 @@
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
+    },
+    "name": {
+      "description": "The official name of the autonomous system",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "organization": {
+      "description": "The organization who the ASN is registered to",
+      "misp-attribute": "text",
+      "ui-priority": 1
     },
     "subnet-announced": {
       "description": "Subnet announced",
