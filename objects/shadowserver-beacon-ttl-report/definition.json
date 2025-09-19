@@ -1,0 +1,110 @@
+{
+  "attributes": {
+    "asn": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "ASN where the IP resides",
+      "misp-attribute": "AS",
+      "ui-priority": 0
+    },
+    "asn_ttl": {
+      "categories": [
+        "Other"
+      ],
+      "description": "TTL for the ASN and tag pair",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "geo": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Country location of the IP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hostname": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Reverse DNS name of the device in question",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ip": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "IP of the of the URL",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ip_ttl": {
+      "categories": [
+        "Other"
+      ],
+      "description": "TTL for the IP and tag pair",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "registrar": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Registrar responsible for the hostname",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "registrar_ttl": {
+      "categories": [
+        "Other"
+      ],
+      "description": "TTL for the registrar and tag pair",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tag": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Attribute tags",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "tld": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Top level domain of the hostname",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tld_ttl": {
+      "categories": [
+        "Other"
+      ],
+      "description": "TTL for the TLD and tag pair",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Shadowserver beacon TTL report",
+  "meta-category": "misc",
+  "name": "shadowserver-beacon-ttl-report",
+  "required": [
+    "ip",
+    "tag"
+  ],
+  "uuid": "c3ae42bd-ab36-4c62-8154-e4f46a01135f",
+  "version": 1
+}
