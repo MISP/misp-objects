@@ -64,7 +64,13 @@
   "description": "Spearphishing template to describe a campaign from the email to the TA connect back IOC",
   "meta-category": "network",
   "name": "spearphishing-campaign",
-  "required": [],
+  "requiredOneOf": [
+    "email-sender",
+    "email-subject",
+    "phishing-url",
+    "phishing-ip",
+    "phishing-domain"
+  ],
   "uuid": "20241206-9e59-4b7d-9e88-951458f10a5f",
-  "version": 20250902
+  "version": 20250919
 }
