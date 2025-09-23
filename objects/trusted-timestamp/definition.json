@@ -1,0 +1,74 @@
+{
+  "attributes": {
+    "format": {
+      "categories": [
+        "Other"
+      ],
+      "description": "The format of the TSR, most probaly RFC3161.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "RFC3161",
+        "RFC5816",
+        "X9.95",
+        "ISO18014"
+      ],
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "hash-sha256": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "The signed hash (sha256)",
+      "misp-attribute": "sha256",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "hash-sha512": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "The signed hash (sha512)",
+      "misp-attribute": "sha512",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "timestamp": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "The timestamp of the request",
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "trusted-timestamp-response": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Trusted timestamp response (TSR).",
+      "misp-attribute": "attachment",
+      "multiple": false,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "tsa-certificates": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "The certificate(s) used to sign the (TSR), in PEM format.",
+      "misp-attribute": "attachment",
+      "multiple": false,
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A trusted timestamp.",
+  "meta-category": "file",
+  "name": "trusted-timestamp",
+  "required": [
+    "trusted-timestamp-response"
+  ],
+  "uuid": "cb84ff28-a488-432e-8ba4-f0d54cc91172",
+  "version": 1
+}
