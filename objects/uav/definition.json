@@ -22,6 +22,7 @@
     },
     "country-of-operation": {
       "description": "Country where the UAV is primarily operated.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 8
     },
@@ -30,8 +31,14 @@
       "misp-attribute": "text",
       "ui-priority": 8
     },
+    "firmware-hash-sha256": {
+      "description": "Hash of the firmware installed on the UAV (SHA256).",
+      "misp-attribute": "sha256",
+      "ui-priority": 8
+    },
     "firmware-version": {
       "description": "Firmware version installed on the UAV.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 8
     },
@@ -41,9 +48,10 @@
       "misp-attribute": "datetime",
       "ui-priority": 2
     },
-    "geolocation": {
-      "description": "Geographical location where the UAV was observed or operated (longitude, latitude).",
-      "misp-attribute": "text",
+    "flight-path": {
+      "description": "KML/GPX file or text with known flight path coordinates.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
       "multiple": true,
       "ui-priority": 4
     },
@@ -65,16 +73,48 @@
     },
     "manufacturer": {
       "description": "Manufacturer (e.g., DJI, Parrot).",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 10
     },
+    "mission-intent": {
+      "description": "Intended purpose of the UAV mission (e.g., commercial, military, hobbyist).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "hostile",
+        "neutral",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "mission-type": {
+      "description": "Type of mission the UAV is used for (e.g., surveillance, delivery, recreational).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "surveillance",
+        "delivery",
+        "recreational",
+        "agricultural",
+        "mapping",
+        "search-and-rescue",
+        "attack",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
     "model": {
       "description": "Model of the UAV (e.g., “Mavic 3”, “Anafi USA”).",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 10
     },
     "notes": {
       "description": "Additional notes or comments about the UAV.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -85,6 +125,7 @@
     },
     "payload": {
       "description": "Description of any payload the UAV is carrying (e.g., sensors, delivery package).",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 6
     },
@@ -136,11 +177,13 @@
     },
     "variant": {
       "description": "Specific variant (e.g., “Mavic 3 Classic”).",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 10
     },
     "year-of-manufacture": {
       "description": "Year the UAV was manufactured.",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 8
     }
