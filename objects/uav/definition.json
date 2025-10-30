@@ -41,7 +41,7 @@
       "misp-attribute": "datetime",
       "ui-priority": 2
     },
-    "geo-location": {
+    "geolocation": {
       "description": "Geographical location where the UAV was observed or operated (longitude, latitude).",
       "misp-attribute": "text",
       "multiple": true,
