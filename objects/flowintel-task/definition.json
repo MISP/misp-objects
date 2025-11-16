@@ -37,10 +37,17 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "flowintel-url": {
+      "description": "FlowIntel link referencing this object",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "to_ids": false,
+      "ui-priority": 1
+    },
     "origin-url": {
       "description": "Origin of the task",
       "disable_correlation": true,
-      "misp-attribute": "url",
+      "misp-attribute": "link",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -82,5 +89,5 @@
   "meta-category": "misc",
   "name": "flowintel-task",
   "uuid": "2f525f6e-d3f2-4cb9-9ca0-f1160d99397d",
-  "version": 5
+  "version": 6
 }
