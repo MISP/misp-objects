@@ -50,7 +50,11 @@
         "PPT",
         "STRAT",
         "HSR",
-        "BCC"
+        "BCC",
+        "BSC",
+        "TRX",
+        "APTOS",
+        "TRON"
       ],
       "ui-priority": 1
     },
@@ -95,5 +99,5 @@
     "address"
   ],
   "uuid": "a4aab70f-e43a-48cb-bf82-505de8228dd6",
-  "version": 2
+  "version": 3
 }
