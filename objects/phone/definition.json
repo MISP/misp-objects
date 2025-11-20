@@ -25,8 +25,8 @@
     "imei": {
       "description": "International Mobile Equipment Identity (IMEI) is a number, usually unique, to identify 3GPP and iDEN mobile phones, as well as some satellite phones.",
       "misp-attribute": "text",
-      "ui-priority": 1,
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 1
     },
     "imsi": {
       "description": "A usually unique International Mobile Subscriber Identity (IMSI) is allocated to each mobile subscriber in the GSM/UMTS/EPS system. IMSI can also refer to International Mobile Station Identity in the ITU nomenclature.",
