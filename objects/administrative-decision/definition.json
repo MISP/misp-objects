@@ -1,58 +1,58 @@
 {
-    "attributes": {
-        "caseNumber": {
-            "description": "Case number",
-            "disable_correlation": false,
-            "misp-attribute": "text",
-            "multiple": true,
-            "ui-priority": 1
-        },
-        "creation-date": {
-            "description": "Creation Date",
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "modification-date": {
-            "description": "Modification Date",
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "close-date": {
-            "description": "Close Date",
-            "misp-attribute": "datetime",
-            "ui-priority": 0
-        },
-        "attachment": {
-            "description": "A file.",
-            "misp-attribute": "attachment",
-            "ui-priority": 1
-        },
-        "text": {
-            "description": "Free text value",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "multiple": true,
-            "recommended": false,
-            "ui-priority": 1
-        },
-        "language": {
-            "description": "Language",
-            "disable_correlation": true,
-            "misp-attribute": "text",
-            "sane_default": [
-                "French",
-                "Dutch"
-            ],
-            "ui-priority": 1
-        }
+  "attributes": {
+    "attachment": {
+      "description": "A file.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
     },
-    "description": "Administrative Decision",
-    "meta-category": "misc",
-    "name": "administrative-decision",
-    "requiredOneOf": [
-        "caseNumber",
-        "creation-date"
-    ],
-    "uuid": "9d0ac25c-f1cd-425c-87a4-b28bbb15ee2d",
-    "version": 1
+    "caseNumber": {
+      "description": "Case number",
+      "disable_correlation": false,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "close-date": {
+      "description": "Close Date",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "creation-date": {
+      "description": "Creation Date",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "language": {
+      "description": "Language",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "French",
+        "Dutch"
+      ],
+      "ui-priority": 1
+    },
+    "modification-date": {
+      "description": "Modification Date",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "Free text value",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "recommended": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Administrative Decision",
+  "meta-category": "misc",
+  "name": "administrative-decision",
+  "requiredOneOf": [
+    "caseNumber",
+    "creation-date"
+  ],
+  "uuid": "9d0ac25c-f1cd-425c-87a4-b28bbb15ee2d",
+  "version": 1
 }
