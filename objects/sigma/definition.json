@@ -32,7 +32,7 @@
     "sigma-rule-name": {
       "description": "Sigma rule name.",
       "misp-attribute": "text",
-      "ui-priority": 0
+      "ui-priority": 1
     }
   },
   "description": "An object describing a Sigma rule (or a Sigma rule name).",
