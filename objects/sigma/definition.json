@@ -1,5 +1,15 @@
 {
   "attributes": {
+    "sigma-rule-name": {
+      "description": "Sigma rule name.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sigma": {
+      "description": "Sigma rule.",
+      "misp-attribute": "sigma",
+      "ui-priority": 0
+    },
     "comment": {
       "description": "A description of the Sigma rule.",
       "misp-attribute": "comment",
@@ -23,16 +33,6 @@
       "description": "Reference/origin of the Sigma rule.",
       "misp-attribute": "link",
       "ui-priority": 0
-    },
-    "sigma": {
-      "description": "Sigma rule.",
-      "misp-attribute": "sigma",
-      "ui-priority": 0
-    },
-    "sigma-rule-name": {
-      "description": "Sigma rule name.",
-      "misp-attribute": "text",
-      "ui-priority": 1
     }
   },
   "description": "An object describing a Sigma rule (or a Sigma rule name).",
@@ -43,5 +43,5 @@
     "sigma-rule-name"
   ],
   "uuid": "aa21a3cd-ab2c-442a-9999-a5e6626591ec",
-  "version": 2
+  "version": 3
 }
