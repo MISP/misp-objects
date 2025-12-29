@@ -1,15 +1,5 @@
 {
   "attributes": {
-    "yara-rule-name": {
-      "description": "YARA rule name.",
-      "misp-attribute": "text",
-      "ui-priority": 1
-    },
-    "yara": {
-      "description": "YARA rule.",
-      "misp-attribute": "yara",
-      "ui-priority": 0
-    },
     "comment": {
       "description": "A description of the YARA rule.",
       "misp-attribute": "comment",
@@ -40,6 +30,16 @@
         "3.7.1"
       ],
       "ui-priority": 0
+    },
+    "yara": {
+      "description": "YARA rule.",
+      "misp-attribute": "yara",
+      "ui-priority": 0
+    },
+    "yara-rule-name": {
+      "description": "YARA rule name.",
+      "misp-attribute": "text",
+      "ui-priority": 1
     }
   },
   "description": "An object describing a YARA rule (or a YARA rule name) along with its version.",
