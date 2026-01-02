@@ -1,0 +1,201 @@
+{
+  "attributes": {
+    "battery-type": {
+      "description": "Type of battery used in the UAV (e.g., LiPo, Li-ion, NiMH).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "LiPo",
+        "Li-ion",
+        "NiMH",
+        "NiCd",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "camera-present": {
+      "description": "Indicates whether the UAV is equipped with a camera.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 6
+    },
+    "country-of-operation": {
+      "description": "Country where the UAV is primarily operated.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "fcc-id": {
+      "description": "FCC ID assigned to the UAV.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "firmware-hash-sha256": {
+      "description": "Hash of the firmware installed on the UAV (SHA256).",
+      "misp-attribute": "sha256",
+      "ui-priority": 8
+    },
+    "firmware-version": {
+      "description": "Firmware version installed on the UAV.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "first-seen": {
+      "description": "First time this UAV has been seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 2
+    },
+    "flight-path": {
+      "description": "KML/GPX file or text with known flight path coordinates.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "imei": {
+      "description": "International Mobile Equipment Identity (IMEI) number of the UAV, if applicable.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "last-seen": {
+      "description": "Last time this UAV has been seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 2
+    },
+    "mac-address": {
+      "description": "MAC address of the UAV's communication module.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "manufacturer": {
+      "description": "Manufacturer (e.g., DJI, Parrot).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "mission-intent": {
+      "description": "Intended purpose of the UAV mission (e.g., commercial, military, hobbyist).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "hostile",
+        "neutral",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "mission-type": {
+      "description": "Type of mission the UAV is used for (e.g., surveillance, delivery, recreational).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "surveillance",
+        "delivery",
+        "recreational",
+        "agricultural",
+        "mapping",
+        "search-and-rescue",
+        "attack",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "model": {
+      "description": "Model of the UAV (e.g., “Mavic 3”, “Anafi USA”).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "notes": {
+      "description": "Additional notes or comments about the UAV.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "operator": {
+      "description": "Entity or individual operating the UAV.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "payload": {
+      "description": "Description of any payload the UAV is carrying (e.g., sensors, delivery package).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 6
+    },
+    "power-plant": {
+      "description": "Type of power plant used in the UAV (e.g., electric, fuel-based).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "electric",
+        "fuel-based",
+        "hybrid",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "registration-id": {
+      "description": "Official registration ID assigned to the UAV by aviation authorities.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "remote-controller-id": {
+      "description": "Identifier of the remote controller paired with the UAV.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "serial-number": {
+      "description": "Manufacturer's serial number (unique identifier).",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "type": {
+      "description": "Type of the UAV (e.g., quadcopter, fixed-wing, etc.)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "fixed-wing",
+        "quadcopter",
+        "hexacopter",
+        "octocopter",
+        "helicopter",
+        "VTOL",
+        "blimp",
+        "hybrid",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "variant": {
+      "description": "Specific variant (e.g., “Mavic 3 Classic”).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "year-of-manufacture": {
+      "description": "Year the UAV was manufactured.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    }
+  },
+  "description": "Unmanned Aerial Vehicle (UAV) or drone asset details.",
+  "meta-category": "misc",
+  "name": "uav",
+  "requiredOneOf": [
+    "model",
+    "manufacturer",
+    "serial-number"
+  ],
+  "uuid": "1d103a64-e30d-4c8c-931c-3e86b83db992",
+  "version": 1
+}

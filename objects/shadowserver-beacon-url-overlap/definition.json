@@ -1,0 +1,83 @@
+{
+  "attributes": {
+    "asn": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "ASN where the IP resides",
+      "misp-attribute": "AS",
+      "ui-priority": 0
+    },
+    "first_seen": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Timestamp the URL was first seen",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "geo": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Country location of the IP",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hostname": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "Reverse DNS name of the device in question",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ip": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "IP of the of the URL",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "last_seen": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Timestamp the URL was last seen",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tag": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Attribute tags",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "url": {
+      "categories": [
+        "Other"
+      ],
+      "description": "Matching malware URL",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Shadowserver beacon malware URL overlap",
+  "meta-category": "misc",
+  "name": "shadowserver-beacon-url-overlap",
+  "required": [
+    "ip",
+    "tag"
+  ],
+  "uuid": "30731e98-fdfd-4753-ae55-b71187ccee6c",
+  "version": 1
+}

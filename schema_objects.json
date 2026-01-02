@@ -210,6 +210,7 @@
             "uri",
             "url",
             "user-agent",
+            "uuid",
             "vhash",
             "visa-number",
             "vulnerability",
