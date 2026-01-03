@@ -287,7 +287,7 @@
     }
   },
   "description": "A comprehensive object to document a detection analytic, its logic, robustness, validation, and associated response playbooks. It is based on an advanced detection engineering template that integrates concepts like 'Summiting the Pyramid' for robustness scoring and a 'Funnel of Fidelity' for validation, along with structured SOAR automation steps.",
-  "meta-category": "detection",
+  "meta-category": "misc",
   "name": "detection",
   "required": [
     "analytic-title",
@@ -296,5 +296,5 @@
     "hypothesis"
   ],
   "uuid": "7a6a7c8e-4a44-4b0a-8d2a-9e7f8a9b0c1d",
-  "version": 1
+  "version": 2
 }
