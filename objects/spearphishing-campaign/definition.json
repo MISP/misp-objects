@@ -36,6 +36,24 @@
       "multiple": true,
       "ui-priority": 1
     },
+    "mitm-connect-back-ja4": {
+      "description": "JA4 signature used by the TA for log in attempts",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mitm-connect-back-ja4http": {
+      "description": "JA4HTTP signature used by the TA for log in attempts",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mitm-connect-back-ja4tcp": {
+      "description": "JA4TCP signature used by the TA for log in attempts",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "mitm-connect-back-useragent": {
       "description": "User-agent used by the TA for log in attempts",
       "misp-attribute": "user-agent",
@@ -72,5 +90,5 @@
     "phishing-domain"
   ],
   "uuid": "20241206-9e59-4b7d-9e88-951458f10a5f",
-  "version": 20250919
+  "version": 20260112
 }
