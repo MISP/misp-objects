@@ -36,12 +36,6 @@
       "multiple": true,
       "ui-priority": 1
     },
-    "mitm-connect-back-useragent": {
-      "description": "User-agent used by the TA for log in attempts",
-      "misp-attribute": "user-agent",
-      "multiple": true,
-      "ui-priority": 1
-    },
     "mitm-connect-back-ja4": {
       "description": "JA4 signature used by the TA for log in attempts",
       "misp-attribute": "text",
@@ -57,6 +51,12 @@
     "mitm-connect-back-ja4tcp": {
       "description": "JA4TCP signature used by the TA for log in attempts",
       "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mitm-connect-back-useragent": {
+      "description": "User-agent used by the TA for log in attempts",
+      "misp-attribute": "user-agent",
       "multiple": true,
       "ui-priority": 1
     },
