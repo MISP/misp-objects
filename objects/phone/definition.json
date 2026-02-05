@@ -22,6 +22,11 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "iccid": {
+      "description": "E.118 - Integrated Circuit Card Identifier (ICCID) number to identify associated SIM or eSIM.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "imei": {
       "description": "International Mobile Equipment Identity (IMEI) is a number, usually unique, to identify 3GPP and iDEN mobile phones, as well as some satellite phones.",
       "misp-attribute": "text",
@@ -78,8 +83,9 @@
     "imsi",
     "msisdn",
     "tmsi",
-    "guti"
+    "guti",
+    "iccid"
   ],
   "uuid": "d7e4fbdd-b551-4862-bddb-a0b470a38509",
-  "version": 5
+  "version": 6
 }
