@@ -129,6 +129,12 @@
       "misp-attribute": "text",
       "ui-priority": 6
     },
+    "picture": {
+      "description": "Picture related to the Unmanned Aerial Vehicle (UAV)",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 11
+    },
     "power-plant": {
       "description": "Type of power plant used in the UAV (e.g., electric, fuel-based).",
       "disable_correlation": true,
@@ -197,5 +203,5 @@
     "serial-number"
   ],
   "uuid": "1d103a64-e30d-4c8c-931c-3e86b83db992",
-  "version": 1
+  "version": 4
 }
