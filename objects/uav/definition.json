@@ -26,18 +26,23 @@
       "misp-attribute": "text",
       "ui-priority": 8
     },
+    "craftname": {
+      "description": "Configured Craft name or reference.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
     "fcc-id": {
       "description": "FCC ID assigned to the UAV.",
       "misp-attribute": "text",
       "ui-priority": 8
     },
     "firmware-hash-sha256": {
-      "description": "Hash of the firmware installed on the UAV (SHA256).",
+      "description": "Hash of the flight controller installed on the UAV (SHA256).",
       "misp-attribute": "sha256",
       "ui-priority": 8
     },
     "firmware-version": {
-      "description": "Firmware version installed on the UAV.",
+      "description": "Flight Controller version installed on the UAV.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 8
