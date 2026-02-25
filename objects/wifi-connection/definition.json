@@ -1,0 +1,148 @@
+{
+  "attributes": {
+    "authentication-type": {
+      "description": "Authentication method used by the wireless network",
+      "misp-attribute": "text",
+      "multiple": false,
+      "ui-priority": 1,
+      "values_list": [
+        "open",
+        "wep",
+        "wpa-personal",
+        "wpa2-personal",
+        "wpa3-personal",
+        "wpa-enterprise",
+        "wpa2-enterprise",
+        "wpa3-enterprise",
+        "802.1x",
+        "unknown"
+      ]
+    },
+    "bssid": {
+      "description": "Access Point MAC address (BSSID)",
+      "misp-attribute": "mac-address",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "captive-portal-url": {
+      "description": "Captive portal URL associated with the WiFi network",
+      "misp-attribute": "url",
+      "multiple": true
+    },
+    "channel": {
+      "description": "WiFi channel number",
+      "misp-attribute": "integer",
+      "multiple": false
+    },
+    "comment": {
+      "description": "Additional contextual information",
+      "misp-attribute": "comment",
+      "multiple": false
+    },
+    "country-code": {
+      "description": "Regulatory country code advertised by the AP",
+      "misp-attribute": "text",
+      "multiple": false
+    },
+    "device-model": {
+      "description": "Wireless access point model",
+      "misp-attribute": "text",
+      "multiple": false
+    },
+    "encryption": {
+      "description": "Encryption algorithm used",
+      "misp-attribute": "text",
+      "multiple": false,
+      "ui-priority": 0,
+      "values_list": [
+        "none",
+        "wep",
+        "tkip",
+        "ccmp-aes",
+        "gcpm",
+        "unknown"
+      ]
+    },
+    "essid-hidden": {
+      "description": "Indicates whether the SSID is hidden",
+      "misp-attribute": "boolean",
+      "multiple": false,
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "description": "First observation timestamp",
+      "misp-attribute": "datetime",
+      "multiple": false
+    },
+    "frequency": {
+      "description": "Operating frequency band",
+      "misp-attribute": "text",
+      "values_list": [
+        "2.4ghz",
+        "5ghz",
+        "6ghz"
+      ]
+    },
+    "hostname": {
+      "description": "Hostname of the wireless access point",
+      "misp-attribute": "hostname",
+      "multiple": true
+    },
+    "ip-address": {
+      "description": "IP address assigned to the access point",
+      "misp-attribute": "ip-dst",
+      "multiple": true
+    },
+    "last-seen": {
+      "description": "Last observation timestamp",
+      "misp-attribute": "datetime",
+      "multiple": false
+    },
+    "password": {
+      "description": "WiFi pre-shared key or password (sensitive information)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": false,
+      "ui-priority": 0
+    },
+    "security-protocol": {
+      "description": "Wireless security protocol",
+      "misp-attribute": "text",
+      "multiple": false,
+      "values_list": [
+        "802.11a",
+        "802.11b",
+        "802.11g",
+        "802.11n",
+        "802.11ac",
+        "802.11ax",
+        "802.11be"
+      ]
+    },
+    "signal-strength": {
+      "description": "Observed signal strength (RSSI in dBm)",
+      "misp-attribute": "integer",
+      "multiple": false
+    },
+    "ssid": {
+      "description": "WiFi network SSID (Service Set Identifier)",
+      "misp-attribute": "text",
+      "multiple": false,
+      "ui-priority": 1
+    },
+    "vendor": {
+      "description": "Access point vendor or manufacturer",
+      "misp-attribute": "text",
+      "multiple": false
+    }
+  },
+  "description": "Wireless network connection parameters including SSID, authentication, encryption and configuration details.",
+  "meta-category": "network",
+  "name": "wifi-connection",
+  "requiredOneOf": [
+    "ssid",
+    "bssid"
+  ],
+  "uuid": "107695a8-0ce0-4c9c-be51-5b21ea32257a",
+  "version": 1
+}
