@@ -27,27 +27,32 @@
     "captive-portal-url": {
       "description": "Captive portal URL associated with the WiFi network",
       "misp-attribute": "url",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "channel": {
       "description": "WiFi channel number",
       "misp-attribute": "integer",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     },
     "comment": {
       "description": "Additional contextual information",
       "misp-attribute": "comment",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     },
     "country-code": {
       "description": "Regulatory country code advertised by the AP",
       "misp-attribute": "text",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     },
     "device-model": {
       "description": "Wireless access point model",
       "misp-attribute": "text",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     },
     "encryption": {
       "description": "Encryption algorithm used",
@@ -72,11 +77,13 @@
     "first-seen": {
       "description": "First observation timestamp",
       "misp-attribute": "datetime",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     },
     "frequency": {
       "description": "Operating frequency band",
       "misp-attribute": "text",
+      "ui-priority": 0,
       "values_list": [
         "2.4ghz",
         "5ghz",
@@ -86,17 +93,20 @@
     "hostname": {
       "description": "Hostname of the wireless access point",
       "misp-attribute": "hostname",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "ip-address": {
       "description": "IP address assigned to the access point",
       "misp-attribute": "ip-dst",
-      "multiple": true
+      "multiple": true,
+      "ui-priority": 0
     },
     "last-seen": {
       "description": "Last observation timestamp",
       "misp-attribute": "datetime",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     },
     "password": {
       "description": "WiFi pre-shared key or password (sensitive information)",
@@ -109,6 +119,7 @@
       "description": "Wireless security protocol",
       "misp-attribute": "text",
       "multiple": false,
+      "ui-priority": 0,
       "values_list": [
         "802.11a",
         "802.11b",
@@ -122,18 +133,20 @@
     "signal-strength": {
       "description": "Observed signal strength (RSSI in dBm)",
       "misp-attribute": "integer",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     },
     "ssid": {
       "description": "WiFi network SSID (Service Set Identifier)",
       "misp-attribute": "text",
       "multiple": false,
-      "ui-priority": 1
+      "ui-priority": 10
     },
     "vendor": {
       "description": "Access point vendor or manufacturer",
       "misp-attribute": "text",
-      "multiple": false
+      "multiple": false,
+      "ui-priority": 0
     }
   },
   "description": "Wireless network connection parameters including SSID, authentication, encryption and configuration details.",
@@ -144,5 +157,5 @@
     "bssid"
   ],
   "uuid": "107695a8-0ce0-4c9c-be51-5b21ea32257a",
-  "version": 1
+  "version": 2
 }
