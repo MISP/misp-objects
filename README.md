@@ -108,6 +108,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 
 - [objects/ADS](https://github.com/MISP/misp-objects/blob/main/objects/ADS/definition.json) - An object defining ADS - Alerting and Detection Strategy by PALANTIR. Can be used for detection engineering.
 - [objects/abuseipdb](https://github.com/MISP/misp-objects/blob/main/objects/abuseipdb/definition.json) - AbuseIPDB checks an ip address, domain name, or subnet against a central blacklist.
+- [objects/administrative-decision](https://github.com/MISP/misp-objects/blob/main/objects/administrative-decision/definition.json) - Administrative Decision.
 - [objects/ai-chat-prompt](https://github.com/MISP/misp-objects/blob/main/objects/ai-chat-prompt/definition.json) - Object describing an AI prompt such as ChatGPT.
 - [objects/ail-leak](https://github.com/MISP/misp-objects/blob/main/objects/ail-leak/definition.json) - An information leak as defined by the AIL Analysis Information Leak framework.
 - [objects/ais](https://github.com/MISP/misp-objects/blob/main/objects/ais/definition.json) - Automatic Identification System (AIS) is an automatic tracking system that uses transceivers on ships.
@@ -164,9 +165,11 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/cytomic-orion-file](https://github.com/MISP/misp-objects/blob/main/objects/cytomic-orion-file/definition.json) - Cytomic Orion File Detection.
 - [objects/cytomic-orion-machine](https://github.com/MISP/misp-objects/blob/main/objects/cytomic-orion-machine/definition.json) - Cytomic Orion File at Machine Detection.
 - [objects/dark-pattern-item](https://github.com/MISP/misp-objects/blob/main/objects/dark-pattern-item/definition.json) - An Item whose User Interface implements a dark pattern.
+- [objects/data-url](https://github.com/MISP/misp-objects/blob/main/objects/data-url/definition.json) - URL prefixed with the data: scheme, used to embed inline files in documents.
 - [objects/ddos](https://github.com/MISP/misp-objects/blob/main/objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy or using the type field.
 - [objects/ddos-claim](https://github.com/MISP/misp-objects/blob/main/objects/ddos-claim/definition.json) - DDoS-claim object describes a current claim of DDoS activity.
 - [objects/ddos-config](https://github.com/MISP/misp-objects/blob/main/objects/ddos-config/definition.json) - DDoS-claim object describes a current claim of DDoS activity.
+- [objects/detection](https://github.com/MISP/misp-objects/blob/main/objects/detection/definition.json) - A comprehensive object to document a detection analytic, its logic, robustness, validation, and associated response playbooks. It is based on an advanced detection engineering template that integrates concepts like 'Summiting the Pyramid' for robustness scoring and a 'Funnel of Fidelity' for validation, along with structured SOAR automation steps.
 - [objects/device](https://github.com/MISP/misp-objects/blob/main/objects/device/definition.json) - An object to define a device.
 - [objects/diameter-attack](https://github.com/MISP/misp-objects/blob/main/objects/diameter-attack/definition.json) - Attack as seen on the diameter signaling protocol supporting LTE networks.
 - [objects/diamond-event](https://github.com/MISP/misp-objects/blob/main/objects/diamond-event/definition.json) - A diamond model event object consisting of the four diamond features advesary, infrastructure, capability and victim, several meta-features and ioc attributes.
@@ -377,6 +380,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/regripper-system-hive-general-configuration](https://github.com/MISP/misp-objects/blob/main/objects/regripper-system-hive-general-configuration/definition.json) - Regripper Object template designed to present general system properties extracted from the system-hive.
 - [objects/regripper-system-hive-network-information](https://github.com/MISP/misp-objects/blob/main/objects/regripper-system-hive-network-information/definition.json) - Regripper object template designed to gather network information from the system-hive.
 - [objects/regripper-system-hive-services-drivers](https://github.com/MISP/misp-objects/blob/main/objects/regripper-system-hive-services-drivers/definition.json) - Regripper Object template designed to gather information regarding the services/drivers from the system-hive.
+- [objects/remote-controller](https://github.com/MISP/misp-objects/blob/main/objects/remote-controller/definition.json) - Remote controller.
 - [objects/report](https://github.com/MISP/misp-objects/blob/main/objects/report/definition.json) - Report object to describe a report along with its metadata.
 - [objects/research-scanner](https://github.com/MISP/misp-objects/blob/main/objects/research-scanner/definition.json) - Information related to known scanning activity (e.g. from research projects).
 - [objects/risk-assessment-report](https://github.com/MISP/misp-objects/blob/main/objects/risk-assessment-report/definition.json) - Risk assessment report object which includes the assessment report from a risk assessment platform such as MONARC.
@@ -469,6 +473,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/vulnerability](https://github.com/MISP/misp-objects/blob/main/objects/vulnerability/definition.json) - Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.
 - [objects/weakness](https://github.com/MISP/misp-objects/blob/main/objects/weakness/definition.json) - Weakness object describing a common weakness enumeration which can describe usable, incomplete, draft or deprecated weakness for software, equipment of hardware.
 - [objects/whois](https://github.com/MISP/misp-objects/blob/main/objects/whois/definition.json) - Whois records information for a domain name or an IP address.
+- [objects/wifi-connection](https://github.com/MISP/misp-objects/blob/main/objects/wifi-connection/definition.json) - Wireless network connection parameters including SSID, authentication, encryption and configuration details.
 - [objects/windows-service](https://github.com/MISP/misp-objects/blob/main/objects/windows-service/definition.json) - Windows service and detailed about a service running a Windows operating system.
 - [objects/x-header](https://github.com/MISP/misp-objects/blob/main/objects/x-header/definition.json) - X header generic object for SMTP, HTTP or any other protocols using X headers.
 - [objects/x509](https://github.com/MISP/misp-objects/blob/main/objects/x509/definition.json) - x509 object describing a X.509 certificate.
