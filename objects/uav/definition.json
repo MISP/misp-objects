@@ -37,7 +37,7 @@
       "ui-priority": 8
     },
     "firmware-hash-sha256": {
-      "description": "Hash of the fligth controller installed on the UAV (SHA256).",
+      "description": "Hash of the flight controller installed on the UAV (SHA256).",
       "misp-attribute": "sha256",
       "ui-priority": 8
     },
