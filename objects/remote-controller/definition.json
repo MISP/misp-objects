@@ -1,0 +1,100 @@
+{
+  "attributes": {
+    "battery-type": {
+      "description": "Type of battery used in the remote controller (e.g., LiPo, Li-ion, NiMH).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "LiPo",
+        "Li-ion",
+        "NiMH",
+        "NiCd",
+        "other",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "fcc-id": {
+      "description": "FCC ID assigned to the remote controller.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "firmware-hash-sha256": {
+      "description": "Hash of controller firmware (SHA256).",
+      "misp-attribute": "sha256",
+      "ui-priority": 8
+    },
+    "firmware-version": {
+      "description": "Firmware version installed on the remote controller.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "first-seen": {
+      "description": "First time this remote controller has been seen",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 2
+    },
+    "imei": {
+      "description": "International Mobile Equipment Identity (IMEI) number of the remote controller, if applicable.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "mac-address": {
+      "description": "MAC address of the remote controller communication module.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "manufacturer": {
+      "description": "Manufacturer (e.g., DJI, Radiomaster).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "model": {
+      "description": "Model of the remote controller.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "notes": {
+      "description": "Additional notes or comments about the remote controller.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "picture": {
+      "description": "Picture related to the remote controller",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 11
+    },
+    "remote-controller-id": {
+      "description": "Identifier of the remote controller.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "serial-number": {
+      "description": "Manufacturer's serial number (unique identifier).",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "year-of-manufacture": {
+      "description": "Year the remote controller was manufactured.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    }
+  },
+  "description": "Remote controller",
+  "meta-category": "misc",
+  "name": "remote-controller",
+  "requiredOneOf": [
+    "model",
+    "manufacturer",
+    "serial-number"
+  ],
+  "uuid": "8f3b2a7d-6b14-4e2a-9c5d-8c7e3f1b2d4a",
+  "version": 1
+}
