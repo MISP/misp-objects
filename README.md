@@ -1,5 +1,7 @@
 # misp-objects
 
+![Logo MISP Objects](https://raw.githubusercontent.com/MISP/misp-objects/refs/heads/main/docs/images/logo.jpg)
+
 ![Python application](https://github.com/MISP/misp-objects/workflows/Python%20application/badge.svg)
 
 MISP objects used in MISP system and can be used by other information sharing tools. MISP objects
