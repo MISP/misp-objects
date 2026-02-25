@@ -1927,451 +1927,451 @@
       "opposite": "weakened-by"
     },
     {
-      "name": "takes-off-from",
       "description": "This relationship describes an object taking off from a location, platform, or site.",
       "format": [
         "misp"
       ],
+      "name": "takes-off-from",
       "opposite": "is-takeoff-site-for"
     },
     {
-      "name": "is-takeoff-site-for",
       "description": "This relationship describes a location, platform, or site being the takeoff origin for an object.",
       "format": [
         "misp"
       ],
+      "name": "is-takeoff-site-for",
       "opposite": "takes-off-from"
     },
     {
-      "name": "launches-from",
       "description": "This relationship describes an object being launched from a location, platform, or site (e.g., catapult/vehicle launch).",
       "format": [
         "misp"
       ],
+      "name": "launches-from",
       "opposite": "is-launch-site-for"
     },
     {
-      "name": "is-launch-site-for",
       "description": "This relationship describes a location, platform, or site being the launch origin for an object.",
       "format": [
         "misp"
       ],
+      "name": "is-launch-site-for",
       "opposite": "launches-from"
     },
     {
-      "name": "departs-from",
       "description": "This relationship describes an object departing from a location (e.g., airfield, helipad, vessel).",
       "format": [
         "misp"
       ],
+      "name": "departs-from",
       "opposite": "is-departure-point-for"
     },
     {
-      "name": "is-departure-point-for",
       "description": "This relationship describes a location being the departure point for an object.",
       "format": [
         "misp"
       ],
+      "name": "is-departure-point-for",
       "opposite": "departs-from"
     },
     {
-      "name": "lands-at",
       "description": "This relationship describes an object landing at a location, platform, or site.",
       "format": [
         "misp"
       ],
+      "name": "lands-at",
       "opposite": "is-landing-site-for"
     },
     {
-      "name": "is-landing-site-for",
       "description": "This relationship describes a location, platform, or site being the landing destination for an object.",
       "format": [
         "misp"
       ],
+      "name": "is-landing-site-for",
       "opposite": "lands-at"
     },
     {
-      "name": "recovers-at",
       "description": "This relationship describes an object being recovered at a location or by a recovery system (e.g., net, arresting gear).",
       "format": [
         "misp"
       ],
+      "name": "recovers-at",
       "opposite": "is-recovery-site-for"
     },
     {
-      "name": "is-recovery-site-for",
       "description": "This relationship describes a location or system being used to recover an object.",
       "format": [
         "misp"
       ],
+      "name": "is-recovery-site-for",
       "opposite": "recovers-at"
     },
     {
-      "name": "returns-to",
       "description": "This relationship describes an object returning to a location or platform (e.g., return-to-home).",
       "format": [
         "misp"
       ],
+      "name": "returns-to",
       "opposite": "is-return-destination-for"
     },
     {
-      "name": "is-return-destination-for",
       "description": "This relationship describes a location or platform being the return destination for an object.",
       "format": [
         "misp"
       ],
+      "name": "is-return-destination-for",
       "opposite": "returns-to"
     },
     {
-      "name": "aborts-landing-at",
       "description": "This relationship describes an object aborting a landing at a location (go-around / wave-off).",
       "format": [
         "misp"
       ],
+      "name": "aborts-landing-at",
       "opposite": "is-aborted-landing-site-for"
     },
     {
-      "name": "is-aborted-landing-site-for",
       "description": "This relationship describes a location where an attempted landing was aborted.",
       "format": [
         "misp"
       ],
+      "name": "is-aborted-landing-site-for",
       "opposite": "aborts-landing-at"
     },
     {
-      "name": "intercepted-by",
       "description": "This relationship describes an object being intercepted by another object (e.g., counter-UAS, aircraft, air defense).",
       "format": [
         "misp"
       ],
+      "name": "intercepted-by",
       "opposite": "intercepts"
     },
     {
-      "name": "shadowed-by",
       "description": "This relationship describes an object being shadowed/escorted/monitored closely by another object.",
       "format": [
         "misp"
       ],
+      "name": "shadowed-by",
       "opposite": "shadows"
     },
     {
-      "name": "shadows",
       "description": "This relationship describes an object shadowing/escorting/monitoring another object closely.",
       "format": [
         "misp"
       ],
+      "name": "shadows",
       "opposite": "shadowed-by"
     },
     {
-      "name": "tracked-by",
       "description": "This relationship describes an object being tracked by another object (e.g., radar, sensor, platform).",
       "format": [
         "misp"
       ],
+      "name": "tracked-by",
       "opposite": "tracks"
     },
     {
-      "name": "tracks",
       "description": "This relationship describes an object tracking another object.",
       "format": [
         "misp"
       ],
+      "name": "tracks",
       "opposite": "tracked-by"
     },
     {
-      "name": "identified-by",
       "description": "This relationship describes an object being identified (positively identified / classified) by another object.",
       "format": [
         "misp"
       ],
+      "name": "identified-by",
       "opposite": "identifies"
     },
     {
-      "name": "jammed-by",
       "description": "This relationship describes an object being jammed by another object (electronic attack, RF jamming).",
       "format": [
         "misp"
       ],
+      "name": "jammed-by",
       "opposite": "jams"
     },
     {
-      "name": "jams",
       "description": "This relationship describes an object jamming another object (electronic attack, RF jamming).",
       "format": [
         "misp"
       ],
+      "name": "jams",
       "opposite": "jammed-by"
     },
     {
-      "name": "spoofed-by",
       "description": "This relationship describes an object being spoofed by another object (e.g., GNSS spoofing, identity/radio spoofing).",
       "format": [
         "misp"
       ],
+      "name": "spoofed-by",
       "opposite": "spoofs"
     },
     {
-      "name": "spoofs",
       "description": "This relationship describes an object spoofing another object (e.g., GNSS spoofing, identity/radio spoofing).",
       "format": [
         "misp"
       ],
+      "name": "spoofs",
       "opposite": "spoofed-by"
     },
     {
-      "name": "neutralized-by",
       "description": "This relationship describes an object being neutralized (non-necessarily destroyed) by another object (e.g., countermeasure).",
       "format": [
         "misp"
       ],
+      "name": "neutralized-by",
       "opposite": "neutralizes"
     },
     {
-      "name": "neutralizes",
       "description": "This relationship describes an object neutralizing another object (non-necessarily destroyed) via a countermeasure.",
       "format": [
         "misp"
       ],
+      "name": "neutralizes",
       "opposite": "neutralized-by"
     },
     {
-      "name": "crashed-at",
       "description": "This relationship describes an object crashing at a location.",
       "format": [
         "misp"
       ],
+      "name": "crashed-at",
       "opposite": "is-crash-site-for"
     },
     {
-      "name": "is-crash-site-for",
       "description": "This relationship describes a location being the crash site for an object.",
       "format": [
         "misp"
       ],
+      "name": "is-crash-site-for",
       "opposite": "crashed-at"
     },
     {
-      "name": "crashed-into",
       "description": "This relationship describes an object crashing into another object.",
       "format": [
         "misp"
       ],
+      "name": "crashed-into",
       "opposite": "was-crashed-into-by"
     },
     {
-      "name": "was-crashed-into-by",
       "description": "This relationship describes an object being impacted by another object that crashed into it.",
       "format": [
         "misp"
       ],
+      "name": "was-crashed-into-by",
       "opposite": "crashed-into"
     },
     {
-      "name": "forced-down-by",
       "description": "This relationship describes an object being forced down (forced landing / compelled to land) by another object.",
       "format": [
         "misp"
       ],
+      "name": "forced-down-by",
       "opposite": "forces-down"
     },
     {
-      "name": "forces-down",
       "description": "This relationship describes an object forcing another object down (forced landing / compelled to land).",
       "format": [
         "misp"
       ],
+      "name": "forces-down",
       "opposite": "forced-down-by"
     },
     {
-      "name": "shot-down-by",
       "description": "This relationship describes an object being shot down by another object.",
       "format": [
         "misp"
       ],
+      "name": "shot-down-by",
       "opposite": "shoots-down"
     },
     {
-      "name": "shoots-down",
       "description": "This relationship describes an object shooting down another object.",
       "format": [
         "misp"
       ],
+      "name": "shoots-down",
       "opposite": "shot-down-by"
     },
     {
-      "name": "destroyed-by",
       "description": "This relationship describes an object being destroyed by another object.",
       "format": [
         "misp"
       ],
+      "name": "destroyed-by",
       "opposite": "destroys"
     },
     {
-      "name": "destroys",
       "description": "This relationship describes an object destroying another object.",
       "format": [
         "misp"
       ],
+      "name": "destroys",
       "opposite": "destroyed-by"
     },
     {
-      "name": "lost-contact-with",
       "description": "This relationship describes an object losing contact with another object (telemetry/command link loss).",
       "format": [
         "misp"
       ],
+      "name": "lost-contact-with",
       "opposite": "contact-lost-by"
     },
     {
-      "name": "contact-lost-by",
       "description": "This relationship describes an object for which contact was lost by another object.",
       "format": [
         "misp"
       ],
+      "name": "contact-lost-by",
       "opposite": "lost-contact-with"
     },
     {
-      "name": "malfunctioned-during",
       "description": "This relationship describes an object malfunctioning during a specific phase, operation, or event.",
       "format": [
         "misp"
       ],
+      "name": "malfunctioned-during",
       "opposite": "had-malfunction"
     },
     {
-      "name": "had-malfunction",
       "description": "This relationship describes a phase, operation, or event during which an object malfunctioned.",
       "format": [
         "misp"
       ],
+      "name": "had-malfunction",
       "opposite": "malfunctioned-during"
     },
     {
-      "name": "recovered-from",
       "description": "This relationship describes recovery of an object from a location or context (e.g., wreckage recovered from field).",
       "format": [
         "misp"
       ],
+      "name": "recovered-from",
       "opposite": "is-recovery-origin-for"
     },
     {
-      "name": "is-recovery-origin-for",
       "description": "This relationship describes a location or context from which an object was recovered.",
       "format": [
         "misp"
       ],
+      "name": "is-recovery-origin-for",
       "opposite": "recovered-from"
     },
     {
-      "name": "taken-over-by",
       "description": "This relationship describes an object being taken over (control hijacked) by another object.",
       "format": [
         "misp"
       ],
+      "name": "taken-over-by",
       "opposite": "takes-over"
     },
     {
-      "name": "takes-over",
       "description": "This relationship describes an object taking over control of another object.",
       "format": [
         "misp"
       ],
+      "name": "takes-over",
       "opposite": "taken-over-by"
     },
     {
-      "name": "commandeered-by",
       "description": "This relationship describes an object being commandeered by another object (unauthorized control).",
       "format": [
         "misp"
       ],
+      "name": "commandeered-by",
       "opposite": "commandeers"
     },
     {
-      "name": "commandeers",
       "description": "This relationship describes an object commandeering another object (unauthorized control).",
       "format": [
         "misp"
       ],
+      "name": "commandeers",
       "opposite": "commandeered-by"
     },
     {
-      "name": "disabled-by",
       "description": "This relationship describes an object being disabled by another object.",
       "format": [
         "misp"
       ],
+      "name": "disabled-by",
       "opposite": "disables"
     },
     {
-      "name": "disables",
       "description": "This relationship describes an object disabling another object.",
       "format": [
         "misp"
       ],
+      "name": "disables",
       "opposite": "disabled-by"
     },
     {
-      "name": "diverted-by",
       "description": "This relationship describes an object being diverted (flight path altered) by another object.",
       "format": [
         "misp"
       ],
+      "name": "diverted-by",
       "opposite": "diverts"
     },
     {
-      "name": "diverts",
       "description": "This relationship describes an object diverting another object (flight path altered).",
       "format": [
         "misp"
       ],
+      "name": "diverts",
       "opposite": "diverted-by"
     },
     {
-      "name": "prepared-at",
       "description": "This relationship describes an object being prepared at a location (pre-flight setup, staging).",
       "format": [
         "misp"
       ],
+      "name": "prepared-at",
       "opposite": "is-preparation-site-for"
     },
     {
-      "name": "is-preparation-site-for",
       "description": "This relationship describes a location being used to prepare an object (pre-flight setup, staging).",
       "format": [
         "misp"
       ],
+      "name": "is-preparation-site-for",
       "opposite": "prepared-at"
     },
     {
-      "name": "maintained-at",
       "description": "This relationship describes an object being maintained at a location.",
       "format": [
         "misp"
       ],
+      "name": "maintained-at",
       "opposite": "is-maintenance-site-for"
     },
     {
-      "name": "is-maintenance-site-for",
       "description": "This relationship describes a location being used to maintain an object.",
       "format": [
         "misp"
       ],
+      "name": "is-maintenance-site-for",
       "opposite": "maintained-at"
     },
     {
-      "name": "inspected-by",
       "description": "This relationship describes an object being inspected by another object (authority, operator, maintenance org).",
       "format": [
         "misp"
       ],
+      "name": "inspected-by",
       "opposite": "inspects"
     },
     {
-      "name": "inspects",
       "description": "This relationship describes an object inspecting another object.",
       "format": [
         "misp"
       ],
+      "name": "inspects",
       "opposite": "inspected-by"
     }
   ],
