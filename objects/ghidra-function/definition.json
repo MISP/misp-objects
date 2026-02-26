@@ -1,61 +1,43 @@
 {
   "attributes": {
-    "function-name":{
-      "description": "function name",
-      "misp-attribute": "text",
-      "ui-priority": 1,
-      "disable_correlation": true
-    },
-    "label": {
-      "description": "ghidra symbol label(s) associated with the function",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "multiple": true
-    },
-    "function-scope": {
-      "description": "ghidra function scope (export, import, internal)",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true,
-      "sane_default": [
-        "export",
-        "import",
-        "internal"
-      ]
-    },
-    "is-thunk": {
-      "description": "identifies a thunk function",
-      "misp-attribute": "boolean",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "external-library": {
-      "description": "external library name if the function is an import",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "entrypoint-address": {
-      "description": "function entrypoint address (integer in a text for consistency with the entrypoint-address in ELF/PE/Mach-O Objects)",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "instruction-count": {
-      "description": "Instruction count",
-      "misp-attribute": "integer",
-      "ui-priority": 0,
-      "disable_correlation": true
+    "bsim-signature": {
+      "description": "BSIM signature of the vector",
+      "misp-attribute": "hex",
+      "ui-priority": 0
     },
     "bsim-vector": {
       "description": "comma separated BSIM Feature Vector",
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "bsim-signature": {
-      "description": "BSIM signature of the vector",
-      "misp-attribute": "hex",
+    "calling-convention": {
+      "description": "The calling convention used by the function (e.g., cdecl, stdcall)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "decompiled-function": {
+      "description": "Ghidra decompiled function",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "decompiler-id": {
+      "description": "ghidra's decompiler version used to generate the FID and BSIM hashes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "entrypoint-address": {
+      "description": "function entrypoint address (integer in a text for consistency with the entrypoint-address in ELF/PE/Mach-O Objects)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "external-library": {
+      "description": "external library name if the function is an import",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "fid-fh-hash": {
@@ -73,45 +55,63 @@
       "misp-attribute": "hex",
       "ui-priority": 0
     },
-    "decompiled-function": {
-      "description": "Ghidra decompiled function",
+    "function-name": {
+      "description": "function name",
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
+      "ui-priority": 1
+    },
+    "function-scope": {
+      "description": "ghidra function scope (export, import, internal)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "export",
+        "import",
+        "internal"
+      ],
+      "ui-priority": 0
     },
     "function-signature": {
       "description": "Function signature",
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
+      "ui-priority": 0
+    },
+    "instruction-count": {
+      "description": "Instruction count",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "is-thunk": {
+      "description": "identifies a thunk function",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "label": {
+      "description": "ghidra symbol label(s) associated with the function",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "language-id": {
+      "description": "Language id of the program (architecture, compiler, etc.)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
     },
     "return-type": {
       "description": "The data type returned by the function",
+      "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-      "calling-convention": {
-      "description": "The calling convention used by the function (e.g., cdecl, stdcall)",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-      "language-id": {
-      "description": "Language id of the program (architecture, compiler, etc.)",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
-    },
-    "decompiler-id": {
-      "description": "ghidra's decompiler version used to generate the FID and BSIM hashes.",
-      "misp-attribute": "text",
-      "ui-priority": 0,
-      "disable_correlation": true
+      "ui-priority": 0
     }
   },
   "description": "ghidra function",
-  "meta-category": "ghidra",
+  "meta-category": "misc",
   "name": "ghidra-function",
   "required": [
     "function-name",
