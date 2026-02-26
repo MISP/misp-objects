@@ -158,7 +158,7 @@
       "ui-priority": 0
     }
   },
-  "description": "Event log object template to share information of the activities conducted on a system. ",
+  "description": "Event log object template to share information of the activities conducted on a system. The object template is mapped with the python-etvx module. https://github.com/williballenthin/python-evtx",
   "meta-category": "misc",
   "name": "python-evtx-event-log",
   "required": [
