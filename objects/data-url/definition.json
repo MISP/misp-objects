@@ -1,0 +1,33 @@
+{
+  "attributes": {
+    "base64": {
+      "description": "Is the data base64 encoded or not",
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "data": {
+      "description": "The data, as-is, not decoded.",
+      "misp-attribute": "malware-sample",
+      "ui-priority": 1
+    },
+    "media-type": {
+      "description": "The mimetype indicating the type of data, without the parameter",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 1
+    },
+    "mime-type-parameter": {
+      "description": "A parameter associated to the mimetype, generally a charset or a boundary.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "URL prefixed with the data: scheme, used to embed inline files in documents",
+  "meta-category": "file",
+  "name": "data-url",
+  "required": [
+    "data"
+  ],
+  "uuid": "8b478c14-bfe7-4f99-b370-753637bf60fe",
+  "version": 1
+}

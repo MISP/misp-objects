@@ -42,6 +42,13 @@
       "misp-attribute": "datetime",
       "ui-priority": 0
     },
+    "flowintel-url": {
+      "description": "FlowIntel link referencing this object",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "to_ids": false,
+      "ui-priority": 1
+    },
     "notes": {
       "description": "Notes of the case",
       "disable_correlation": true,
@@ -51,7 +58,7 @@
     "origin-url": {
       "description": "Origin of the case",
       "disable_correlation": true,
-      "misp-attribute": "url",
+      "misp-attribute": "link",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -92,5 +99,5 @@
   "meta-category": "misc",
   "name": "flowintel-case",
   "uuid": "19df57c7-b315-4fd2-84e5-d81ab221425e",
-  "version": 4
+  "version": 5
 }

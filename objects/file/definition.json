@@ -332,6 +332,12 @@
       "misp-attribute": "imphash",
       "ui-priority": 0
     },
+    "magic": {
+      "description": "Magic file detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "malware-sample": {
       "description": "The file itself (binary)",
       "misp-attribute": "malware-sample",

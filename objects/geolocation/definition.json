@@ -20,7 +20,7 @@
     "city": {
       "description": "City.",
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 91
     },
     "country": {
       "description": "Country.",
@@ -107,5 +107,5 @@
     "epsg"
   ],
   "uuid": "cd6f2238-ba55-4888-82c4-104e6e1acf21",
-  "version": 7
+  "version": 8
 }

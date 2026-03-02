@@ -24,7 +24,7 @@
       "ui-priority": 1,
       "values_list": [
         "tvm",
-        "cdm",
+        "dom",
         "mdr"
       ]
     },
@@ -54,5 +54,5 @@
     "version"
   ],
   "uuid": "892fd46a-f69e-455c-8c4f-843a4b8f4295",
-  "version": 3
+  "version": 4
 }

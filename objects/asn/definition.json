@@ -51,6 +51,16 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "name": {
+      "description": "The official name of the autonomous system",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "organization": {
+      "description": "The organization who the ASN is registered to",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "subnet-announced": {
       "description": "Subnet announced",
       "misp-attribute": "ip-src",
@@ -65,5 +75,5 @@
     "asn"
   ],
   "uuid": "4ec55cc6-9e49-4c64-b794-03c25c1a6587",
-  "version": 5
+  "version": 6
 }

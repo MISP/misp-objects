@@ -1,9 +1,16 @@
 {
   "attributes": {
+    "flowintel-url": {
+      "description": "FlowIntel link referencing this object",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "to_ids": false,
+      "ui-priority": 1
+    },
     "origin-url": {
       "description": "Origin of the task",
       "disable_correlation": true,
-      "misp-attribute": "url",
+      "misp-attribute": "link",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -31,5 +38,5 @@
   "meta-category": "misc",
   "name": "flowintel-task-resource",
   "uuid": "dc1d5bae-3611-499c-bbd6-1ca3ad4048dd",
-  "version": 1
+  "version": 2
 }

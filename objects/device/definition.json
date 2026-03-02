@@ -342,6 +342,17 @@
       "misp-attribute": "text",
       "ui-priority": 101
     },
+    "perspective": {
+      "description": "Perspective of the device",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Victim",
+        "Adversary",
+        "Unknown"
+      ],
+      "ui-priority": 0
+    },
     "status": {
       "description": "Status of the device",
       "disable_correlation": true,
@@ -369,5 +380,5 @@
     "alias"
   ],
   "uuid": "0c64b41a-e583-4f4d-ac92-d484163b9e52",
-  "version": 9
+  "version": 10
 }

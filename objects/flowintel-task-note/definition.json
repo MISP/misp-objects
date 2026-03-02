@@ -1,5 +1,12 @@
 {
   "attributes": {
+    "flowintel-url": {
+      "description": "FlowIntel link referencing this object",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "to_ids": false,
+      "ui-priority": 1
+    },
     "note": {
       "description": "Notes of the task",
       "disable_correlation": true,
@@ -16,7 +23,7 @@
     "origin-url": {
       "description": "Origin of the task",
       "disable_correlation": true,
-      "misp-attribute": "url",
+      "misp-attribute": "link",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -31,5 +38,5 @@
   "meta-category": "misc",
   "name": "flowintel-task-note",
   "uuid": "2c6f6aba-48b6-482f-a810-81934d29be9a",
-  "version": 2
+  "version": 3
 }

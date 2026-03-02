@@ -30,6 +30,7 @@
     },
     "format": {
       "description": "Format of the firmware",
+      "disable_correlation": true,
       "misp-attribute": "text",
       "sane_default": [
         "raw",
@@ -95,5 +96,5 @@
     "binwalk-output"
   ],
   "uuid": "8bafb8fc-d986-4a58-b22b-6b8c7c0e8b70",
-  "version": 1
+  "version": 2
 }

@@ -10,7 +10,7 @@
       "description": "Description of the vehicle",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 1
+      "ui-priority": 4
     },
     "dyno-power": {
       "description": "Dyno power output",
@@ -58,19 +58,19 @@
       "description": "License plate number",
       "misp-attribute": "text",
       "multiple": true,
-      "ui-priority": 0
+      "ui-priority": 5
     },
     "make": {
       "description": "Manufacturer of the vehicle",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 0
+      "ui-priority": 3
     },
     "model": {
       "description": "Model of the vehicle",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "ui-priority": 0
+      "ui-priority": 3
     },
     "state": {
       "description": "State of the vehicle (stolen or recovered)",
@@ -125,5 +125,5 @@
     "indicative-value"
   ],
   "uuid": "683c076c-f695-4ff2-8efa-e98a418049f4",
-  "version": 4
+  "version": 5
 }
