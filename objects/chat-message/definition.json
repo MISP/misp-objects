@@ -1,0 +1,109 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Optional server of the chat application. If no network is specified, the address is assumed to be reachable on the public Internet.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "chat-id": {
+      "description": "Identifier of the chat, room, channel, guild, or conversation containing the message.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "content": {
+      "description": "Content of the message.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "forwarded-from-chat-id": {
+      "description": "Identifier of the original chat or conversation from which the message was forwarded.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "forwarded-from-message-id": {
+      "description": "Identifier of the original forwarded message.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "language": {
+      "description": "Language of the message.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "message-id": {
+      "description": "Unique identifier of the message.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "network": {
+      "description": "Optional network used to access the chat application, such as Tor or I2P. It is only used when the service is not reachable on the public Internet.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "protocol": {
+      "description": "Name of the chat protocol or application, such as matrix, xmpp, or telegram.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "protocol-instance-uuid": {
+      "description": "UUIDv5 identifier of the chat application, generated from the protocol name and, when specified, the network and address.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "reaction": {
+      "description": "Reaction or emoji attached to the message.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "reply-to-channel-id": {
+      "description": "Identifier of the channel or conversation containing the replied-to message.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "reply-to-message-id": {
+      "description": "Identifier of the message this message replies to.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subchannel-id": {
+      "description": "Identifier of a subchannel or subchat.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "thread-id": {
+      "description": "Identifier of the discussion thread containing the message.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "timestamp": {
+      "description": "Timestamp of when the message was created or sent.",
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Permalink or external URL pointing to the message, if available.",
+      "misp-attribute": "url",
+      "ui-priority": 0
+    },
+    "user-account-id": {
+      "description": "Identifier of the user account that authored or posted the message.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "A message exchanged on a chat or messaging platform",
+  "meta-category": "misc",
+  "name": "chat-message",
+  "required": [
+    "message-id",
+    "timestamp"
+  ],
+  "uuid": "2273e7ab-9cf7-43d3-9eb6-e69697dcc7d5",
+  "version": 1
+}
