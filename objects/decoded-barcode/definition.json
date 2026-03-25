@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "barcode-image": {
+      "description": "Original image containing the barcode.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "barcode-type": {
+      "description": "Detected barcode symbology.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "CODE128",
+        "CODE39",
+        "CODE93",
+        "CODABAR",
+        "EAN8",
+        "EAN13",
+        "ITF",
+        "UPC-A",
+        "UPC-E",
+        "PDF417",
+        "DATAMATRIX",
+        "AZTEC"
+      ],
+      "ui-priority": 1
+    },
+    "decoded-value": {
+      "description": "Decoded content extracted from the barcode.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Human-readable description or context about the decoded barcode.",
+      "misp-attribute": "comment",
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Reference or link related to the decoded barcode artifact.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 2
+    },
+    "source": {
+      "description": "Source system or project that produced the decoded barcode.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "AIL"
+      ],
+      "ui-priority": 2
+    }
+  },
+  "description": "Object describing a decoded barcode, including its decoded value, barcode type, original image, and contextual description.",
+  "meta-category": "misc",
+  "name": "decoded-barcode",
+  "required": [
+    "decoded-value",
+    "barcode-image"
+  ],
+  "uuid": "31b5ffde-bb65-47ae-a5cd-7f72b9975687",
+  "version": 1
+}
