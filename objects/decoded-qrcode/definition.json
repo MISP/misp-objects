@@ -33,7 +33,7 @@
     }
   },
   "description": "Object describing a decoded QR code, including its decoded value, original image, and contextual description.",
-  "meta-category": "artifacts",
+  "meta-category": "misc",
   "name": "decoded-qrcode",
   "requiredOneOf": [
     "decoded-value",
