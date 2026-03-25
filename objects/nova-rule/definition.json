@@ -1,0 +1,116 @@
+{
+  "attributes": {
+    "author": {
+      "description": "Rule author from the meta section.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "category": {
+      "description": "Rule category from the meta section, such as jailbreak, injection, unicode, OWASP LLM, or incident.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "condition": {
+      "description": "Boolean condition expression defining when the rule matches.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Human-readable description from the meta section.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "file": {
+      "description": "Source .nov filename containing the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 2
+    },
+    "keyword": {
+      "description": "Keyword selector from the keywords section, including exact strings or regex patterns.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "keyword-id": {
+      "description": "Identifier of a keyword selector, such as $keyword1.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "llm-check": {
+      "description": "Natural-language LLM evaluation prompt from the llm section.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "llm-threshold": {
+      "description": "Threshold associated with an LLM selector.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "raw-rule": {
+      "description": "Original raw NOVA rule content.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 3
+    },
+    "reference": {
+      "description": "Reference URL for the NOVA rule, repository, documentation, or related detection category.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "rule-name": {
+      "description": "Name of the NOVA rule declared after the rule keyword.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "semantic-pattern": {
+      "description": "Semantic selector text from the semantics section.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "semantic-threshold": {
+      "description": "Threshold associated with a semantic selector.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "severity": {
+      "description": "Rule severity from the meta section.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    }
+  },
+  "description": "NOVA prompt detection rule metadata and logic for a single NOVA rule.",
+  "meta-category": "artifacts",
+  "name": "nova-rule",
+  "requiredOneOf": [
+    "keyword",
+    "semantic-pattern",
+    "llm-check",
+    "raw-rule",
+    "file",
+    "description"
+  ],
+  "uuid": "3c4669ee-c659-40c7-93ea-d4149bded584",
+  "version": 1
+}
