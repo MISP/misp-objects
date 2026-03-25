@@ -101,7 +101,7 @@
     }
   },
   "description": "NOVA prompt detection rule metadata and logic for a single NOVA rule.",
-  "meta-category": "artifacts",
+  "meta-category": "detection",
   "name": "nova-rule",
   "requiredOneOf": [
     "keyword",
