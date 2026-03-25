@@ -92,12 +92,12 @@
     }
   },
   "description": "An object describing an Nmap NSE script using the standard NSE script format fields.",
-  "meta-category": "misc",
+  "meta-category": "network",
   "name": "nse",
   "requiredOneOf": [
     "nse",
     "nse-script-name"
   ],
   "uuid": "e9f7ab8a-a9f1-473a-a6a9-ae0b303a836a",
-  "version": 2
+  "version": 3
 }
