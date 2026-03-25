@@ -139,6 +139,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/cap-info](https://github.com/MISP/misp-objects/blob/main/objects/cap-info/definition.json) - Common Alerting Protocol Version (CAP) info object.
 - [objects/cap-resource](https://github.com/MISP/misp-objects/blob/main/objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
 - [objects/cert-pl-phishing](https://github.com/MISP/misp-objects/blob/main/objects/cert-pl-phishing/definition.json) - cert.pl phishing object template representing an url along with some metadata as such phash, html-structure or partial-hash.
+- [objects/chat-message](https://github.com/MISP/misp-objects/blob/main/objects/chat-message/definition.json) - A message exchanged on a chat or messaging platform.
 - [objects/cloth](https://github.com/MISP/misp-objects/blob/main/objects/cloth/definition.json) - Describes clothes a natural person wears.
 - [objects/coin-address](https://github.com/MISP/misp-objects/blob/main/objects/coin-address/definition.json) - An address used in a cryptocurrency.
 - [objects/command](https://github.com/MISP/misp-objects/blob/main/objects/command/definition.json) - Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.
@@ -169,6 +170,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/ddos](https://github.com/MISP/misp-objects/blob/main/objects/ddos/definition.json) - DDoS object describes a current DDoS activity from a specific or/and to a specific target. Type of DDoS can be attached to the object as a taxonomy or using the type field.
 - [objects/ddos-claim](https://github.com/MISP/misp-objects/blob/main/objects/ddos-claim/definition.json) - DDoS-claim object describes a current claim of DDoS activity.
 - [objects/ddos-config](https://github.com/MISP/misp-objects/blob/main/objects/ddos-config/definition.json) - DDoS-claim object describes a current claim of DDoS activity.
+- [objects/decoded-barcode](https://github.com/MISP/misp-objects/blob/main/objects/decoded-barcode/definition.json) - Object describing a decoded barcode, including its decoded value, barcode type, original image, and contextual description.
+- [objects/decoded-qrcode](https://github.com/MISP/misp-objects/blob/main/objects/decoded-qrcode/definition.json) - Object describing a decoded QR code, including its decoded value, original image, and contextual description.
 - [objects/detection](https://github.com/MISP/misp-objects/blob/main/objects/detection/definition.json) - A comprehensive object to document a detection analytic, its logic, robustness, validation, and associated response playbooks. It is based on an advanced detection engineering template that integrates concepts like 'Summiting the Pyramid' for robustness scoring and a 'Funnel of Fidelity' for validation, along with structured SOAR automation steps.
 - [objects/device](https://github.com/MISP/misp-objects/blob/main/objects/device/definition.json) - An object to define a device.
 - [objects/diameter-attack](https://github.com/MISP/misp-objects/blob/main/objects/diameter-attack/definition.json) - Attack as seen on the diameter signaling protocol supporting LTE networks.
@@ -260,6 +263,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/game-cheat](https://github.com/MISP/misp-objects/blob/main/objects/game-cheat/definition.json) - Describes a game cheat or a cheatware.
 - [objects/Generalizing Persuasion Framework](https://github.com/MISP/misp-objects/blob/main/objects/Generalizing Persuasion Framework/definition.json) - By placing their work within the GP Framework, scholars will help the field resolve inconsistencies, identify and address open questions, and ensure collective progress. The GP Framework is not meant to compete with other theories (such as the ELM) but rather to fill in two gaps. First, it allows one to consider how individual persuasion studies connect to one another and why studies may arrive at contradictory conclusions. Second, it highlights the sources of variations that should be studied. (James N. Druckman).
 - [objects/geolocation](https://github.com/MISP/misp-objects/blob/main/objects/geolocation/definition.json) - An object to describe a geographic location.
+- [objects/ghidra-function](https://github.com/MISP/misp-objects/blob/main/objects/ghidra-function/definition.json) - ghidra function.
 - [objects/git-vuln-finder](https://github.com/MISP/misp-objects/blob/main/objects/git-vuln-finder/definition.json) - Export from git-vuln-finder.
 - [objects/github-action](https://github.com/MISP/misp-objects/blob/main/objects/github-action/definition.json) - GitHub Actions.
 - [objects/github-repo](https://github.com/MISP/misp-objects/blob/main/objects/github-repo/definition.json) - GitHub repository.
@@ -324,10 +328,14 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/network-traffic](https://github.com/MISP/misp-objects/blob/main/objects/network-traffic/definition.json) - Generic network traffic that originates from a source and is addressed to a destination.
 - [objects/news-agency](https://github.com/MISP/misp-objects/blob/main/objects/news-agency/definition.json) - News agencies compile news and disseminate news in bulk.
 - [objects/news-media](https://github.com/MISP/misp-objects/blob/main/objects/news-media/definition.json) - News media are forms of mass media delivering news to the general public.
+- [objects/nova-rule](https://github.com/MISP/misp-objects/blob/main/objects/nova-rule/definition.json) - NOVA prompt detection rule metadata and logic for a single NOVA rule.
+- [objects/nse](https://github.com/MISP/misp-objects/blob/main/objects/nse/definition.json) - An object describing an Nmap NSE script using the standard NSE script format fields.
+- [objects/ocrized-image](https://github.com/MISP/misp-objects/blob/main/objects/ocrized-image/definition.json) - Object describing an OCRized image, including the original image, extracted text, and contextual description.
 - [objects/open-data-security](https://github.com/MISP/misp-objects/blob/main/objects/open-data-security/definition.json) - An object describing an open dataset available and described under the open data security model. ref. https://github.com/CIRCL/open-data-security.
 - [objects/opentide](https://github.com/MISP/misp-objects/blob/main/objects/opentide/definition.json) - Object that is a container for threat or detection data, in accordance with the OpenTIDE Framework (https://code.europa.eu/ec-digit-s2/opentide).
 - [objects/organization](https://github.com/MISP/misp-objects/blob/main/objects/organization/definition.json) - An object which describes an organization.
 - [objects/original-imported-file](https://github.com/MISP/misp-objects/blob/main/objects/original-imported-file/definition.json) - Object describing the original file used to import data in MISP.
+- [objects/owasp-crs-rule](https://github.com/MISP/misp-objects/blob/main/objects/owasp-crs-rule/definition.json) - OWASP Core Rule Set (CRS) rule metadata for a WAF detection rule.
 - [objects/paloalto-threat-event](https://github.com/MISP/misp-objects/blob/main/objects/paloalto-threat-event/definition.json) - Palo Alto Threat Log Event.
 - [objects/parler-account](https://github.com/MISP/misp-objects/blob/main/objects/parler-account/definition.json) - Parler account.
 - [objects/parler-comment](https://github.com/MISP/misp-objects/blob/main/objects/parler-comment/definition.json) - Parler comment.
@@ -353,7 +361,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/probabilistic-data-structure](https://github.com/MISP/misp-objects/blob/main/objects/probabilistic-data-structure/definition.json) - Probabilistic data structure object describe a space-efficient data structure such as Bloom filter or similar structure.
 - [objects/process](https://github.com/MISP/misp-objects/blob/main/objects/process/definition.json) - Object describing a system process.
 - [objects/publication](https://github.com/MISP/misp-objects/blob/main/objects/publication/definition.json) - An object to describe a book, journal, or academic publication.
-- [objects/python-etvx-event-log](https://github.com/MISP/misp-objects/blob/main/objects/python-etvx-event-log/definition.json) - Event log object template to share information of the activities conducted on a system. .
+- [objects/python-evtx-event-log](https://github.com/MISP/misp-objects/blob/main/objects/python-evtx-event-log/definition.json) - Event log object template to share information of the activities conducted on a system. The object template is mapped with the python-etvx module. https://github.com/williballenthin/python-evtx.
 - [objects/query](https://github.com/MISP/misp-objects/blob/main/objects/query/definition.json) - An object describing a query, along with its format.
 - [objects/r2graphity](https://github.com/MISP/misp-objects/blob/main/objects/r2graphity/definition.json) - Indicators extracted from files using radare2 and graphml.
 - [objects/ransom-negotiation](https://github.com/MISP/misp-objects/blob/main/objects/ransom-negotiation/definition.json) - An object to describe ransom negotiations, as seen in ransomware incidents.
@@ -537,12 +545,12 @@ The MISP objects (JSON files) are dual-licensed under:
 or
 
 ~~~~
- Copyright (c) 2016-2025 Alexandre Dulaunoy - a@foo.be
- Copyright (c) 2016-2025 CIRCL - Computer Incident Response Center Luxembourg
- Copyright (c) 2016-2025 Andras Iklody
- Copyright (c) 2016-2025 Raphael Vinot
- Copyright (c) 2016-2025 Christian Studer
- Copyright (c) 2016-2025 Various contributors to MISP Project
+ Copyright (c) 2016-2026 Alexandre Dulaunoy - a@foo.be
+ Copyright (c) 2016-2026 CIRCL - Computer Incident Response Center Luxembourg
+ Copyright (c) 2016-2026 Andras Iklody
+ Copyright (c) 2016-2026 Raphael Vinot
+ Copyright (c) 2016-2026 Christian Studer
+ Copyright (c) 2016-2026 Various contributors to MISP Project
 
  Redistribution and use in source and binary forms, with or without modification,
  are permitted provided that the following conditions are met:
@@ -573,8 +581,8 @@ If a specific author of a taxonomy wants to license it under a different license
 ~~~~
 
 Copyright (C) 2016-2024 Andras Iklody
-Copyright (C) 2016-2024 Alexandre Dulaunoy
-Copyright (C) 2016-2024 CIRCL - Computer Incident Response Center Luxembourg
+Copyright (C) 2016-2026 Alexandre Dulaunoy
+Copyright (C) 2016-2026 CIRCL - Computer Incident Response Center Luxembourg
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
