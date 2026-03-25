@@ -1,19 +1,12 @@
 {
   "attributes": {
-    "wazuh-rule": {
-      "description": "Full Wazuh rule XML content.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
+    "comment": {
+      "description": "Comment or analyst note about the Wazuh rule.",
+      "misp-attribute": "comment",
       "ui-priority": 0
     },
-    "rule-id": {
-      "description": "Wazuh rule identifier from the rule id attribute.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "level": {
-      "description": "Wazuh alert level from the rule level attribute.",
+    "decoded_as": {
+      "description": "Decoder name required for the rule to match.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
@@ -24,21 +17,21 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "group": {
-      "description": "Wazuh group or groups associated with the rule.",
+    "field": {
+      "description": "Decoded field condition used by the rule.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 0
     },
-    "decoded_as": {
-      "description": "Decoder name required for the rule to match.",
+    "frequency": {
+      "description": "Number of times the rule must match before alerting.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "if_sid": {
-      "description": "Parent or prerequisite rule ID list.",
+    "group": {
+      "description": "Wazuh group or groups associated with the rule.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
@@ -57,6 +50,13 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "if_matched_group": {
+      "description": "Previously matched group required within a time window.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "if_matched_sid": {
       "description": "Previously matched rule ID required within a time window.",
       "disable_correlation": true,
@@ -64,11 +64,23 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "if_matched_group": {
-      "description": "Previously matched group required within a time window.",
+    "if_sid": {
+      "description": "Parent or prerequisite rule ID list.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
+      "ui-priority": 0
+    },
+    "ignore": {
+      "description": "Time interval during which repeated alerts are ignored.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "level": {
+      "description": "Wazuh alert level from the rule level attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "match": {
@@ -78,36 +90,11 @@
       "multiple": true,
       "ui-priority": 0
     },
-    "field": {
-      "description": "Decoded field condition used by the rule.",
+    "mitre-id": {
+      "description": "MITRE ATT&CK technique ID associated with the rule.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
-      "ui-priority": 0
-    },
-    "options": {
-      "description": "Additional Wazuh rule options.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "multiple": true,
-      "ui-priority": 0
-    },
-    "frequency": {
-      "description": "Number of times the rule must match before alerting.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "timeframe": {
-      "description": "Time window used with frequency-based matching.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "ignore": {
-      "description": "Time interval during which repeated alerts are ignored.",
-      "disable_correlation": true,
-      "misp-attribute": "text",
       "ui-priority": 0
     },
     "noalert": {
@@ -116,8 +103,8 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "mitre-id": {
-      "description": "MITRE ATT&CK technique ID associated with the rule.",
+    "options": {
+      "description": "Additional Wazuh rule options.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
@@ -128,13 +115,26 @@
       "misp-attribute": "link",
       "ui-priority": 0
     },
-    "comment": {
-      "description": "Comment or analyst note about the Wazuh rule.",
-      "misp-attribute": "comment",
+    "rule-id": {
+      "description": "Wazuh rule identifier from the rule id attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "timeframe": {
+      "description": "Time window used with frequency-based matching.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "version": {
       "description": "Version of Wazuh or ruleset associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "wazuh-rule": {
+      "description": "Full Wazuh rule XML content.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
