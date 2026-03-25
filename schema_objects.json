@@ -293,7 +293,8 @@
         "climate",
         "iot",
         "health",
-        "followthemoney"
+        "followthemoney",
+        "detection"
       ],
       "type": "string"
     },
