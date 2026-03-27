@@ -32,6 +32,7 @@
         "r-hhhash",
         "lacus",
         "Common Crawl",
+        "AIL",
         "other"
       ],
       "ui-priority": 0
@@ -44,5 +45,5 @@
     "hhhash"
   ],
   "uuid": "4dbcde93-a4e0-4bee-913c-0988b5259d14",
-  "version": 1
+  "version": 2
 }
