@@ -1,0 +1,112 @@
+{
+  "attributes": {
+    "attachment": {
+      "description": "The GeoJSON file itself as an attachment.",
+      "misp-attribute": "attachment",
+      "ui-priority": 95
+    },
+    "description-text": {
+      "description": "Description of the GeoJSON dataset.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 70
+    },
+    "feature-count": {
+      "description": "Number of Feature elements in the GeoJSON FeatureCollection.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 75
+    },
+    "filename": {
+      "description": "Filename of the GeoJSON file.",
+      "misp-attribute": "filename",
+      "ui-priority": 100
+    },
+    "geometry-types": {
+      "description": "Geometry types present in the GeoJSON file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 80,
+      "values_list": [
+        "Point",
+        "MultiPoint",
+        "LineString",
+        "MultiLineString",
+        "Polygon",
+        "MultiPolygon",
+        "GeometryCollection"
+      ]
+    },
+    "max-latitude": {
+      "description": "Maximum latitude of the GeoJSON bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "max-longitude": {
+      "description": "Maximum longitude of the GeoJSON bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "md5": {
+      "description": "MD5 hash of the GeoJSON file.",
+      "misp-attribute": "md5",
+      "ui-priority": 70
+    },
+    "mime-type": {
+      "description": "MIME type of the file, typically application/geo+json.",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 90
+    },
+    "min-latitude": {
+      "description": "Minimum latitude of the GeoJSON bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "min-longitude": {
+      "description": "Minimum longitude of the GeoJSON bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "name": {
+      "description": "Name of the GeoJSON dataset.",
+      "misp-attribute": "text",
+      "ui-priority": 85
+    },
+    "sha1": {
+      "description": "SHA1 hash of the GeoJSON file.",
+      "misp-attribute": "sha1",
+      "ui-priority": 70
+    },
+    "sha256": {
+      "description": "SHA256 hash of the GeoJSON file.",
+      "misp-attribute": "sha256",
+      "ui-priority": 85
+    },
+    "size-in-bytes": {
+      "description": "Size of the GeoJSON file in bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 80
+    },
+    "text": {
+      "description": "Free text comment or analyst note about the GeoJSON file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 20
+    }
+  },
+  "description": "An object to describe a GeoJSON file containing geographic data structures such as points, lines, and polygons as defined in RFC 7946.",
+  "meta-category": "file",
+  "name": "geojson",
+  "requiredOneOf": [
+    "attachment"
+  ],
+  "uuid": "b6d67c8b-8d8c-4231-8830-7a159e5195e5",
+  "version": 1
+}
