@@ -1,13 +1,53 @@
 {
   "attributes": {
-    "user": {
-      "description": "Anonymized user identifier associated with the MFA event.",
-      "misp-attribute": "anonymised",
+    "2fa-device-ip": {
+      "description": "IP address of the device used to respond to or complete the MFA challenge.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 0
+    },
+    "2fa-device-location": {
+      "description": "Geographic location associated with the MFA device IP (e.g., city, region, country).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "access-device-browser": {
+      "description": "Web browser or client application used on the access device.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "access-device-ip": {
+      "description": "IP address of the device initiating the authentication request.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 0
+    },
+    "access-device-location": {
+      "description": "Geographic location associated with the access device IP (e.g., city, region, country).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "access-device-os": {
+      "description": "Operating system of the device initiating the authentication request.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "analysis-note": {
+      "description": "Additional contextual notes or summary of the investigation and findings.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "factor": {
+      "description": "Authentication factor or method used for MFA (e.g., push notification, SMS, phone call, hardware token).",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "incident-datetime": {
       "description": "UTC timestamp indicating when the MFA authentication event occurred.",
       "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "integration": {
+      "description": "Application, service, or system being accessed during the MFA event (e.g., VPN, SSO, cloud service).",
+      "misp-attribute": "text",
       "ui-priority": 0
     },
     "outcome": {
@@ -20,49 +60,9 @@
       "misp-attribute": "text",
       "ui-priority": 0
     },
-    "integration": {
-      "description": "Application, service, or system being accessed during the MFA event (e.g., VPN, SSO, cloud service).",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "factor": {
-      "description": "Authentication factor or method used for MFA (e.g., push notification, SMS, phone call, hardware token).",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "access-device-ip": {
-      "description": "IP address of the device initiating the authentication request.",
-      "misp-attribute": "ip-src",
-      "ui-priority": 0
-    },
-    "2fa-device-ip": {
-      "description": "IP address of the device used to respond to or complete the MFA challenge.",
-      "misp-attribute": "ip-src",
-      "ui-priority": 0
-    },
-    "access-device-os": {
-      "description": "Operating system of the device initiating the authentication request.",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "access-device-browser": {
-      "description": "Web browser or client application used on the access device.",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "access-device-location": {
-      "description": "Geographic location associated with the access device IP (e.g., city, region, country).",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "2fa-device-location": {
-      "description": "Geographic location associated with the MFA device IP (e.g., city, region, country).",
-      "misp-attribute": "text",
-      "ui-priority": 0
-    },
-    "analysis-note": {
-      "description": "Additional contextual notes or summary of the investigation and findings.",
-      "misp-attribute": "comment",
+    "user": {
+      "description": "Anonymized user identifier associated with the MFA event.",
+      "misp-attribute": "anonymised",
       "ui-priority": 0
     }
   },
