@@ -347,6 +347,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/parler-account](https://github.com/MISP/misp-objects/blob/main/objects/parler-account/definition.json) - Parler account.
 - [objects/parler-comment](https://github.com/MISP/misp-objects/blob/main/objects/parler-comment/definition.json) - Parler comment.
 - [objects/parler-post](https://github.com/MISP/misp-objects/blob/main/objects/parler-post/definition.json) - Parler post (parley).
+- [objects/packet-filter-rule](https://github.com/MISP/misp-objects/blob/main/objects/packet-filter-rule/definition.json) - Packet filter, firewall, or ACL rule metadata across network security platforms.
 - [objects/passive-dns](https://github.com/MISP/misp-objects/blob/main/objects/passive-dns/definition.json) - Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html.
 - [objects/passive-dns-dnsdbflex](https://github.com/MISP/misp-objects/blob/main/objects/passive-dns-dnsdbflex/definition.json) - DNSDBFLEX object. This object is used at farsight security. Roughly based on Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html.
 - [objects/passive-ssh](https://github.com/MISP/misp-objects/blob/main/objects/passive-ssh/definition.json) - Passive-ssh object as described on passive-ssh services from circl.lu - https://github.com/D4-project/passive-ssh.
