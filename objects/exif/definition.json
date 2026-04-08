@@ -1,0 +1,130 @@
+{
+  "attributes": {
+    "artist": {
+      "description": "Creator/author information stored in EXIF Artist.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "attachment": {
+      "description": "The source image file used for EXIF extraction.",
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "copyright": {
+      "description": "Copyright string from EXIF metadata.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "datetime-digitized": {
+      "description": "Timestamp when the image was digitized (EXIF DateTimeDigitized).",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "datetime-original": {
+      "description": "Timestamp when the image was originally captured (EXIF DateTimeOriginal).",
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "exposure-time": {
+      "description": "Exposure time (EXIF ExposureTime).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "f-number": {
+      "description": "F-number/aperture value (EXIF FNumber).",
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "flash": {
+      "description": "Flash status from EXIF metadata.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "focal-length": {
+      "description": "Lens focal length in millimeters (EXIF FocalLength).",
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "gps-altitude": {
+      "description": "GPS altitude in meters from EXIF metadata.",
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "gps-date-stamp": {
+      "description": "Date associated with EXIF GPS record.",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "gps-latitude": {
+      "description": "GPS latitude in decimal degrees from EXIF metadata.",
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "gps-longitude": {
+      "description": "GPS longitude in decimal degrees from EXIF metadata.",
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "image-description": {
+      "description": "Image description or caption stored in EXIF metadata.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "iso-speed-ratings": {
+      "description": "ISO speed setting from EXIF metadata.",
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "lens-model": {
+      "description": "Lens model used to capture the image.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "make": {
+      "description": "Camera or device manufacturer (EXIF Make).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "model": {
+      "description": "Camera or device model (EXIF Model).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "orientation": {
+      "description": "Image orientation as stored in EXIF metadata.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "raw-output": {
+      "description": "Raw EXIF output (e.g. JSON/text from extraction tool).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "software": {
+      "description": "Software or firmware used to process the image.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tool": {
+      "description": "Tool used to extract EXIF metadata (e.g. exiftool).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "user-comment": {
+      "description": "User comment stored in EXIF metadata.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing EXIF metadata extracted from image files.",
+  "meta-category": "file",
+  "name": "exif",
+  "requiredOneOf": [
+    "attachment",
+    "raw-output",
+    "datetime-original",
+    "model"
+  ],
+  "uuid": "cb355d27-e481-42e1-8c2b-fb6998289426",
+  "version": 1
+}
