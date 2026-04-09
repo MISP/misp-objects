@@ -69,7 +69,6 @@ Feel free to propose your own MISP objects template to be included in MISP. The 
       "description": "A description of the tuple",
       "disable_correlation": true,
       "misp-attribute": "text",
-      "recommended": false,
       "ui-priority": 1
     }
   },
