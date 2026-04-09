@@ -1,0 +1,228 @@
+{
+  "attributes": {
+    "alias": {
+      "description": "Known aliases used by the wanted subject.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 80
+    },
+    "api-source": {
+      "description": "Source API endpoint used to retrieve this entry.",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "ui-priority": 20
+    },
+    "build": {
+      "description": "Physical build of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    },
+    "caution": {
+      "description": "Caution statement published on the wanted poster.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 60
+    },
+    "complexion": {
+      "description": "Complexion of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    },
+    "dates-of-birth-used": {
+      "description": "Date(s) of birth used by the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "date-of-birth",
+      "multiple": true,
+      "ui-priority": 70
+    },
+    "details": {
+      "description": "Additional details from the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 55
+    },
+    "eyes": {
+      "description": "Eye color of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    },
+    "field-office": {
+      "description": "FBI field office(s) associated with the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 50
+    },
+    "files": {
+      "description": "FBI URL(s) to downloadable files related to the entry.",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 20
+    },
+    "hair": {
+      "description": "Hair color of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    },
+    "height": {
+      "description": "Height of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    },
+    "images": {
+      "description": "Image URL(s) from the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 30
+    },
+    "languages": {
+      "description": "Language(s) spoken by the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 45
+    },
+    "legal-name": {
+      "description": "Legal name listed in the FBI wanted entry.",
+      "misp-attribute": "full-name",
+      "ui-priority": 90
+    },
+    "modified": {
+      "description": "Last modification time of the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 10
+    },
+    "nationality": {
+      "description": "Nationality of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "nationality",
+      "multiple": true,
+      "ui-priority": 45
+    },
+    "ncic": {
+      "description": "National Crime Information Center (NCIC) classification in the FBI entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 50
+    },
+    "occupations": {
+      "description": "Known occupation(s) of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 45
+    },
+    "path": {
+      "description": "Relative FBI path of the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 20
+    },
+    "person-classification": {
+      "description": "Person classification published by the FBI.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 50
+    },
+    "place-of-birth": {
+      "description": "Place of birth of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "place-of-birth",
+      "ui-priority": 60
+    },
+    "publication": {
+      "description": "Publication date and time of the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 10
+    },
+    "race": {
+      "description": "Race listed in the FBI wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    },
+    "remarks": {
+      "description": "Remarks listed on the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 55
+    },
+    "reward-text": {
+      "description": "Reward details announced for the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 65
+    },
+    "scars-and-marks": {
+      "description": "Scars and marks listed for the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    },
+    "sex": {
+      "description": "Sex listed in the FBI wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "gender",
+      "ui-priority": 45
+    },
+    "status": {
+      "description": "Status of the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 75
+    },
+    "subjects": {
+      "description": "Subject category assigned by the FBI.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 75
+    },
+    "title": {
+      "description": "Title of the FBI wanted entry.",
+      "misp-attribute": "text",
+      "ui-priority": 100
+    },
+    "uid": {
+      "description": "Unique identifier of the FBI wanted entry.",
+      "misp-attribute": "text",
+      "ui-priority": 95
+    },
+    "url": {
+      "description": "Direct URL to the FBI wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "url",
+      "ui-priority": 90
+    },
+    "warning-message": {
+      "description": "Warning message highlighted in the wanted entry.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 65
+    },
+    "weight": {
+      "description": "Weight of the wanted subject.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 40
+    }
+  },
+  "description": "FBI Most Wanted entry as published by the FBI Wanted API v1.",
+  "meta-category": "misc",
+  "name": "fbi-most-wanted",
+  "required": [
+    "uid",
+    "title"
+  ],
+  "uuid": "e1f497fd-4387-4ac0-be6d-0a8e25556516",
+  "version": 1
+}
