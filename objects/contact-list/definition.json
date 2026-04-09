@@ -1,0 +1,168 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Postal address associated with the contact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "contact-count": {
+      "description": "Number of contacts represented in the extracted contact list.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "contact-id": {
+      "description": "Identifier of the contact in the source platform or extraction output.",
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "e-mail": {
+      "description": "Email address associated with the contact.",
+      "misp-attribute": "email-src",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "extracted-at": {
+      "description": "Date and time when the contact list was extracted.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "extraction-reference": {
+      "description": "Reference to extraction artifact, report or case record.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "extraction-tool": {
+      "description": "Tool used to extract the contact list from the device, SIM or cloud backup.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Cellebrite UFED",
+        "Cellebrite Physical Analyzer",
+        "MSAB XRY",
+        "Magnet AXIOM",
+        "Oxygen Forensic Detective",
+        "Belkasoft X",
+        "Elcomsoft iOS Forensic Toolkit",
+        "Other"
+      ],
+      "ui-priority": 0
+    },
+    "extraction-type": {
+      "description": "Acquisition type used to obtain the contact list.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Manual",
+        "Logical extraction",
+        "File system extraction",
+        "Physical extraction",
+        "Cloud extraction",
+        "SIM extraction",
+        "Other"
+      ],
+      "ui-priority": 0
+    },
+    "first-name": {
+      "description": "First name of the contact.",
+      "misp-attribute": "first-name",
+      "ui-priority": 3
+    },
+    "full-name": {
+      "description": "Display or full name of the contact.",
+      "misp-attribute": "full-name",
+      "ui-priority": 4
+    },
+    "handle": {
+      "description": "Username, account handle or identifier linked to the contact.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "job-title": {
+      "description": "Job title or role associated with the contact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "last-modified": {
+      "description": "Date and time when the contact entry was last modified on the source.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-name": {
+      "description": "Last name of the contact.",
+      "misp-attribute": "last-name",
+      "ui-priority": 3
+    },
+    "note": {
+      "description": "Additional notes stored with the contact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "organisation": {
+      "description": "Company or organisation associated with the contact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "phone-number": {
+      "description": "Phone number associated with the contact.",
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "raw-base64": {
+      "description": "Raw contact-list record or export encoded in base64.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "source-device": {
+      "description": "Device, SIM card or account where the contact list was extracted from.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "source-platform": {
+      "description": "Platform or operating system of the source device/account.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Android",
+        "iOS",
+        "Feature phone",
+        "SIM card",
+        "Google account",
+        "iCloud",
+        "Microsoft account",
+        "Other"
+      ],
+      "ui-priority": 0
+    },
+    "text": {
+      "description": "Description and context of the extracted contact list.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "Contact list object template for contact entries or aggregated contact-list extractions produced during forensic analysis (e.g. mobile extraction with Cellebrite, XRY or similar tools).",
+  "meta-category": "misc",
+  "name": "contact-list",
+  "requiredOneOf": [
+    "full-name",
+    "phone-number",
+    "e-mail",
+    "contact-id"
+  ],
+  "uuid": "92ead745-afda-4a59-ba59-7566d7c356bd",
+  "version": 1
+}
