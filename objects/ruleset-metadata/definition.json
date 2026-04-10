@@ -1,0 +1,126 @@
+{
+  "attributes": {
+    "author": {
+      "description": "Rule set author name or handle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "creation-date": {
+      "description": "Creation date of the rule set metadata record.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "cve-id": {
+      "description": "CVE identifier(s) associated with the rule set.",
+      "disable_correlation": true,
+      "misp-attribute": "vulnerability",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the rule set.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "editor": {
+      "description": "Name of the user who last edited or maintains the rule set.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "format": {
+      "description": "Rule set format (for example YARA, NSE, Sigma).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "github-path": {
+      "description": "Path or URL pointing to the rule set source in GitHub.",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "is-favorited": {
+      "description": "Indicates whether the rule set is marked as favorited.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "last-modif": {
+      "description": "Last modification date of the rule set metadata record.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "license": {
+      "description": "License applied to the rule set.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "original-uuid": {
+      "description": "Original UUID of the rule set in its source system.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "source": {
+      "description": "Source platform or provider of the rule set metadata.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "title": {
+      "description": "Human-readable title of the rule set.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "to-string": {
+      "description": "Serialized string representation of the rule set metadata.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "user-id": {
+      "description": "Identifier of the user associated with the rule set metadata.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "uuid": {
+      "description": "UUID of the rule set metadata record.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "version": {
+      "description": "Version identifier of the rule set.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "vote-down": {
+      "description": "Number of downvotes for the rule set.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "vote-up": {
+      "description": "Number of upvotes for the rule set.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    }
+  },
+  "description": "Rule set metadata object meant to be linked to rule content objects such as YARA, NSE, Sigma or similar templates.",
+  "meta-category": "misc",
+  "name": "ruleset-metadata",
+  "required": [
+    "title",
+    "uuid"
+  ],
+  "uuid": "5f4a076e-5e48-4534-b84d-f161de838851",
+  "version": 1
+}
