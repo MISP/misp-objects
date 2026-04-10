@@ -286,6 +286,7 @@
         "network",
         "financial",
         "marine",
+        "transport",
         "misc",
         "mobile",
         "internal",
@@ -293,7 +294,8 @@
         "climate",
         "iot",
         "health",
-        "followthemoney"
+        "followthemoney",
+        "detection"
       ],
       "type": "string"
     },

@@ -1,0 +1,172 @@
+{
+  "attributes": {
+    "altitude-m": {
+      "description": "Observed altitude in meters (reference according to the chosen profile).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 96
+    },
+    "auth-claim": {
+      "description": "Identity assurance hint associated with the RID data (for example DRIP or local signature checks).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 83,
+      "values_list": [
+        "none",
+        "unsigned",
+        "signature-present-unverified",
+        "signature-verified",
+        "drip-end-entity-present",
+        "other"
+      ]
+    },
+    "broadcast-tech": {
+      "description": "Physical broadcast technology used by direct RID.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 91,
+      "values_list": [
+        "Wi-Fi NAN",
+        "Wi-Fi Beacon",
+        "Bluetooth 4 Legacy",
+        "Bluetooth 5 Extended",
+        "other"
+      ]
+    },
+    "comment": {
+      "description": "Free-text analyst notes about this observation.",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "ui-priority": 70
+    },
+    "confidence": {
+      "description": "Analyst confidence score from 0 to 100 for correctness and attribution of the RID observation.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 81
+    },
+    "emergency-status": {
+      "description": "Emergency or abnormal status reported by RID.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 84,
+      "values_list": [
+        "none",
+        "lost-link",
+        "low-battery",
+        "navigation-failure",
+        "collision-avoidance-active",
+        "operator-emergency",
+        "other"
+      ]
+    },
+    "heading-deg": {
+      "description": "Observed heading in degrees (0-359).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 94
+    },
+    "height-reference": {
+      "description": "Reference used for the reported height or altitude.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 85,
+      "values_list": [
+        "takeoff-point",
+        "ground-level",
+        "mean-sea-level",
+        "other"
+      ]
+    },
+    "latitude": {
+      "description": "Observed drone latitude in decimal degrees (WGS84).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 98
+    },
+    "longitude": {
+      "description": "Observed drone longitude in decimal degrees (WGS84).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 97
+    },
+    "observation-time": {
+      "description": "Timestamp when the direct remote identification broadcast was observed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 100
+    },
+    "operator-id": {
+      "description": "Operator identifier if present in the RID data.",
+      "misp-attribute": "text",
+      "ui-priority": 82
+    },
+    "operator-latitude": {
+      "description": "Operator or control-station latitude when available in the RID message.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 93
+    },
+    "operator-longitude": {
+      "description": "Operator or control-station longitude when available in the RID message.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 92
+    },
+    "raw-message": {
+      "description": "Raw RID payload or decoded fragment for forensic re-processing.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 87
+    },
+    "receiver-id": {
+      "description": "Identifier of the sensor, handset, or probe collecting this RID observation.",
+      "misp-attribute": "text",
+      "ui-priority": 88
+    },
+    "rid-standard-profile": {
+      "description": "Regulatory or technical profile used by the observed broadcast RID message.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 90,
+      "values_list": [
+        "ASTM F3411",
+        "ASTM F3586 / FAA Part 89 MoC",
+        "EU EN 4709-002",
+        "EU 2019/945 + 2019/947",
+        "IETF DRIP-enhanced",
+        "other"
+      ]
+    },
+    "session-id": {
+      "description": "Session or message set identifier used to correlate RID messages belonging to the same flight.",
+      "misp-attribute": "text",
+      "ui-priority": 80
+    },
+    "speed-mps": {
+      "description": "Observed horizontal speed in meters per second.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 95
+    },
+    "uas-id": {
+      "description": "Unmanned aircraft identifier as observed in the RID payload (serial number, CAA-issued identifier, or equivalent).",
+      "misp-attribute": "text",
+      "ui-priority": 99
+    }
+  },
+  "description": "Simple direct remote identification (RID) observation object for drones/UAS, covering common ASTM/FAA and EU broadcast fields with optional DRIP-oriented identity assurance hints.",
+  "meta-category": "transport",
+  "name": "drone-rid-observation",
+  "required": [
+    "observation-time"
+  ],
+  "requiredOneOf": [
+    "uas-id",
+    "operator-id",
+    "session-id"
+  ],
+  "uuid": "cb36a578-feb2-4516-a57b-b2b3f23e6029",
+  "version": 1
+}

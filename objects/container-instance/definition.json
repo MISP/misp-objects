@@ -1,0 +1,126 @@
+{
+  "attributes": {
+    "capabilities": {
+      "description": "Additional Linux capabilities granted to the container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "command": {
+      "description": "Command used to start the container.",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "container-id": {
+      "description": "Identifier of the container instance.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "created": {
+      "description": "Date and time when the container was created.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 7
+    },
+    "environment-variables": {
+      "description": "Environment variables configured for the container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "finished": {
+      "description": "Date and time when the container finished.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 7
+    },
+    "hostname": {
+      "description": "Hostname configured for the container.",
+      "disable_correlation": true,
+      "misp-attribute": "hostname",
+      "ui-priority": 6
+    },
+    "image": {
+      "description": "Reference to image used by the container.",
+      "misp-attribute": "text",
+      "ui-priority": 9
+    },
+    "ip-address": {
+      "description": "IP address assigned to the container.",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "mounts": {
+      "description": "Mount points attached to the container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "network-mode": {
+      "description": "Networking mode configured for the container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "ports": {
+      "description": "Exposed or mapped ports for the container.",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "privileged": {
+      "description": "Indicates whether the container was run in privileged mode.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "1",
+        "0"
+      ],
+      "ui-priority": 6
+    },
+    "security-opt": {
+      "description": "Security options applied to the container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "started": {
+      "description": "Date and time when the container was started.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 7
+    },
+    "state": {
+      "description": "Runtime state of the container (e.g., running, exited, paused).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "running",
+        "exited",
+        "paused"
+      ],
+      "ui-priority": 8
+    },
+    "user": {
+      "description": "User configured to run inside the container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 6
+    }
+  },
+  "description": "Generic container-instance object template to represent runtime container details.",
+  "meta-category": "misc",
+  "name": "container-instance",
+  "requiredOneOf": [
+    "container-id",
+    "image"
+  ],
+  "uuid": "abbf4433-be8f-409e-8a9b-20cf0cc5bb48",
+  "version": 1
+}

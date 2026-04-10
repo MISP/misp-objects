@@ -1,0 +1,41 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Human-readable description or context about the OCRized image.",
+      "misp-attribute": "comment",
+      "ui-priority": 1
+    },
+    "image": {
+      "description": "Original image submitted for OCR processing.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "ocr-text": {
+      "description": "Text extracted from the image by OCR.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Reference or link related to the OCRized image artifact.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 2
+    },
+    "source": {
+      "description": "Source system or project that produced the OCR result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    }
+  },
+  "description": "Object describing an OCRized image, including the original image, extracted text, and contextual description.",
+  "meta-category": "misc",
+  "name": "ocrized-image",
+  "required": [
+    "image",
+    "ocr-text"
+  ],
+  "uuid": "fc2abf07-1228-4a14-8633-f39030b0220c",
+  "version": 1
+}

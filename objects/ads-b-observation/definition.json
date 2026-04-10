@@ -1,0 +1,143 @@
+{
+  "attributes": {
+    "attack-type": {
+      "description": "Suspected attack or manipulation type affecting this ADS-B observation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 30,
+      "values_list": [
+        "none",
+        "spoofing",
+        "replay",
+        "jamming",
+        "message-injection",
+        "ghost-aircraft",
+        "position-manipulation",
+        "identity-hijack",
+        "mlat-discrepancy",
+        "other"
+      ]
+    },
+    "barometric-altitude-ft": {
+      "description": "Barometric altitude in feet.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 95
+    },
+    "callsign": {
+      "description": "Flight callsign observed in ADS-B messages.",
+      "misp-attribute": "text",
+      "ui-priority": 99
+    },
+    "detection-method": {
+      "description": "Method used to detect the anomaly (rule, multilateration, radar cross-check, etc.).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 28
+    },
+    "discrepancy-detail": {
+      "description": "Structured human-readable details explaining why this observation appears suspicious.",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 27
+    },
+    "first-seen": {
+      "description": "First timestamp this observation was seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 88
+    },
+    "geometric-altitude-ft": {
+      "description": "Geometric (GNSS) altitude in feet.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 94
+    },
+    "ground-speed-kt": {
+      "description": "Ground speed in knots.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 93
+    },
+    "icao24": {
+      "description": "24-bit ICAO aircraft address represented as 6 hexadecimal characters.",
+      "misp-attribute": "text",
+      "ui-priority": 100
+    },
+    "last-seen": {
+      "description": "Last timestamp this observation was seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 87
+    },
+    "latitude": {
+      "description": "Observed latitude (WGS84).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 97
+    },
+    "longitude": {
+      "description": "Observed longitude (WGS84).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 96
+    },
+    "on-ground": {
+      "description": "True if the aircraft is reported as on ground.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 89
+    },
+    "raw-message": {
+      "description": "Raw ADS-B / Mode-S frame content when available.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 85
+    },
+    "receiver-id": {
+      "description": "Identifier of the receiver or sensor producing this observation.",
+      "misp-attribute": "text",
+      "ui-priority": 86
+    },
+    "registration": {
+      "description": "Aircraft registration (tail number).",
+      "misp-attribute": "text",
+      "ui-priority": 98
+    },
+    "squawk": {
+      "description": "4-digit transponder squawk code.",
+      "misp-attribute": "text",
+      "ui-priority": 90
+    },
+    "suspicion-score": {
+      "description": "Analyst or system confidence score (0-100) that the observation is malicious or manipulated.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 29
+    },
+    "track-deg": {
+      "description": "Ground track in degrees (0-359).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 92
+    },
+    "vertical-rate-ft-min": {
+      "description": "Vertical rate in feet per minute.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 91
+    }
+  },
+  "description": "Observation object for ADS-B telemetry, including fields to flag spoofing and other ADS-B attacks.",
+  "meta-category": "transport",
+  "name": "ads-b-observation",
+  "requiredOneOf": [
+    "icao24"
+  ],
+  "uuid": "e8d9de0f-fb0d-44f4-8d83-7368fb64e9d6",
+  "version": 1
+}
