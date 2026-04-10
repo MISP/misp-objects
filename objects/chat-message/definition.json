@@ -40,12 +40,21 @@
       "description": "Optional network used to access the chat application, such as Tor or I2P. It is only used when the service is not reachable on the public Internet.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "sane_default": [
+        "Tor",
+        "I2P"
+      ],
       "ui-priority": 0
     },
     "protocol": {
       "description": "Name of the chat protocol or application, such as matrix, xmpp, or telegram.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "sane_default": [
+        "Discord",
+        "Matrix",
+        "Teleram"
+      ],
       "ui-priority": 1
     },
     "protocol-instance-uuid": {
@@ -105,5 +114,5 @@
     "timestamp"
   ],
   "uuid": "2273e7ab-9cf7-43d3-9eb6-e69697dcc7d5",
-  "version": 1
+  "version": 2
 }
