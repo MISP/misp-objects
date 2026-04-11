@@ -1,5 +1,41 @@
 {
   "attributes": {
+    "capture-application": {
+      "description": "Name of the application used to perform the packet capture.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "tcpdump",
+        "dumpcap",
+        "Wireshark",
+        "tshark",
+        "WinDump",
+        "Npcap",
+        "netsniff-ng",
+        "ngrep",
+        "snort",
+        "suricata",
+        "Zeek",
+        "Arkime",
+        "NetworkMiner",
+        "Kismet",
+        "CloudShark",
+        "termshark"
+      ],
+      "ui-priority": 1
+    },
+    "capture-filter": {
+      "description": "Capture filter used when recording packets.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "capture-hardware": {
+      "description": "Hardware details of the capture device.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
     "capture-interface": {
       "description": "Interface name where the packet capture was running.",
       "disable_correlation": true,
@@ -10,6 +46,84 @@
       "description": "Capture length set on the captured interface.",
       "disable_correlation": true,
       "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "capture-operating-system": {
+      "description": "Operating system used by the capture device.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "captured-packets": {
+      "description": "Number of packets captured in the packet capture file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "displayed-packets": {
+      "description": "Number of displayed packets.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "dropped-packets": {
+      "description": "Number of dropped packets during capture.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "elapsed-time": {
+      "description": "Elapsed time between first and last packet seen.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "encapsulation": {
+      "description": "Packet encapsulation format used in the capture.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "file-format": {
+      "description": "Capture file format.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "file-hash-md5": {
+      "description": "MD5 hash of the packet capture file.",
+      "disable_correlation": true,
+      "misp-attribute": "md5",
+      "ui-priority": 1
+    },
+    "file-hash-ripemd160": {
+      "description": "RIPEMD160 hash of the packet capture file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "file-hash-sha1": {
+      "description": "SHA1 hash of the packet capture file.",
+      "disable_correlation": true,
+      "misp-attribute": "sha1",
+      "ui-priority": 1
+    },
+    "file-hash-sha256": {
+      "description": "SHA256 hash of the packet capture file.",
+      "disable_correlation": true,
+      "misp-attribute": "sha256",
+      "ui-priority": 1
+    },
+    "file-name": {
+      "description": "Name of the packet capture file.",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 1
+    },
+    "file-size-in-bytes": {
+      "description": "Size of the packet capture file in bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
       "ui-priority": 1
     },
     "first-packet-seen": {
@@ -23,6 +137,18 @@
       "disable_correlation": true,
       "misp-attribute": "datetime",
       "ui-priority": 0
+    },
+    "marked-packets": {
+      "description": "Number of marked packets.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "packet-size-limit": {
+      "description": "Packet size limit (snapshot length) in bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 1
     },
     "protocol": {
       "description": "Capture protocol (linktype name).",
@@ -238,6 +364,12 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "time-span-seconds": {
+      "description": "Time span of the packet capture in seconds.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
     }
   },
   "description": "Network packet capture metadata",
@@ -249,5 +381,5 @@
     "last-packet-seen"
   ],
   "uuid": "0784aefa-ec3a-4eca-a431-c31ed7058bd3",
-  "version": 2
+  "version": 3
 }
