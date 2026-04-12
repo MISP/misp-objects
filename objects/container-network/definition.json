@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "connected-containers": {
+      "description": "Connected container identifiers or references.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 6
+    },
+    "dns": {
+      "description": "DNS server(s) configured for the network.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "driver": {
+      "description": "Network driver type (e.g., bridge, overlay).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 9
+    },
+    "gateway": {
+      "description": "Gateway address for the container network.",
+      "misp-attribute": "ip-dst",
+      "ui-priority": 7
+    },
+    "internal": {
+      "description": "Indicates whether the network is internal-only.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "1",
+        "0"
+      ],
+      "ui-priority": 5
+    },
+    "network-name": {
+      "description": "Name of the container network.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "subnet": {
+      "description": "Subnet used by the container network.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 8
+    }
+  },
+  "description": "Generic container-network object template to represent container networking settings.",
+  "meta-category": "network",
+  "name": "container-network",
+  "requiredOneOf": [
+    "network-name",
+    "subnet"
+  ],
+  "uuid": "2e821b9d-3a49-4dd8-b0bd-2b266a8cb98a",
+  "version": 1
+}
