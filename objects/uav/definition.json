@@ -20,6 +20,11 @@
       "misp-attribute": "boolean",
       "ui-priority": 6
     },
+    "chipset": {
+      "description": "Flight Controller chipset",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
     "country-of-operation": {
       "description": "Country where the UAV is primarily operated.",
       "disable_correlation": true,
@@ -34,6 +39,11 @@
     "fcc-id": {
       "description": "FCC ID assigned to the UAV.",
       "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "firmware-hash-md5": {
+      "description": "Hash of the flight controller installed on the UAV (MD5).",
+      "misp-attribute": "md5",
       "ui-priority": 8
     },
     "firmware-hash-sha256": {
@@ -122,6 +132,11 @@
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
+    },
+    "operating-system": {
+      "description": "Flight Controller OS installed on the UAV",
+      "misp-attribute": "text",
+      "ui-prority": 10
     },
     "operator": {
       "description": "Entity or individual operating the UAV.",
