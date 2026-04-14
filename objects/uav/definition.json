@@ -136,7 +136,7 @@
     "operating-system": {
       "description": "Flight Controller OS installed on the UAV",
       "misp-attribute": "text",
-      "ui-prority": 10
+      "ui-priority": 10
     },
     "operator": {
       "description": "Entity or individual operating the UAV.",
