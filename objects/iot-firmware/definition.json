@@ -19,7 +19,7 @@
     },
     "filename": {
       "description": "Filename of the firmware",
-      "misp-attribute": "text",
+      "misp-attribute": "filename",
       "ui-priority": 10
     },
     "firmware": {
