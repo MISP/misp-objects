@@ -12,7 +12,7 @@
     },
     "suricata": {
       "description": "Suricata rule.",
-      "misp-attribute": "snort",
+      "misp-attribute": "suricata",
       "multiple": true,
       "ui-priority": 0
     },
