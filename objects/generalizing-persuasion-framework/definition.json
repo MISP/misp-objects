@@ -115,7 +115,7 @@
       "ui-priority": 110
     },
     "settings_time": {
-      "description": "Pretreatment effects\u2014what happened prior to the persuasive message. Posttreatment duration\u2014how long an effect lasts. Time between exposure and outcome measurement.",
+      "description": "Pretreatment effects—what happened prior to the persuasive message. Posttreatment duration—how long an effect lasts. Time between exposure and outcome measurement.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
