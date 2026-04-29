@@ -93,7 +93,7 @@
   },
   "description": "An object describing an Nmap NSE script using the standard NSE script format fields.",
   "meta-category": "network",
-  "name": "nse",
+  "name": "nse-script",
   "requiredOneOf": [
     "nse",
     "nse-script-name"

@@ -116,7 +116,7 @@
   },
   "description": "Rule set metadata object meant to be linked to rule content objects such as YARA, NSE, Sigma or similar templates.",
   "meta-category": "misc",
-  "name": "ruleset-metadata",
+  "name": "rulezet-metadata",
   "required": [
     "title",
     "uuid"
