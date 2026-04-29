@@ -1,0 +1,50 @@
+{
+  "attributes": {
+    "connecting-country": {
+      "description": "The country from which the bot connection originated.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "connecting-isp": {
+      "description": "The ISP for the source IP address of the bad bot.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "device-os": {
+      "description": "The operating system of the device used by the bad bot, as inferred from the user-agent or other signals.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "ip-src": {
+      "description": "The source IP address of the bad bot.",
+      "misp-attribute": "ip-src",
+      "ui-priority": 0
+    },
+    "risk-rule": {
+      "description": "A risk rule or detection rule that matched this bot, such as a warninglist hit, threat intel rule, or custom detection signature.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "user-agent": {
+      "description": "The user-agent string presented by the bad bot. Multiple user-agents may be observed from the same source IP.",
+      "disable_correlation": true,
+      "misp-attribute": "user-agent",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "A bad bot observed making requests, including its source IP, user-agent strings, connecting country, device OS, connecting ISP, and associated risk rules.",
+  "meta-category": "network",
+  "name": "bad-bot",
+  "requiredOneOf": [
+    "ip-src"
+  ],
+  "uuid": "d411f723-1651-425b-915a-200a51e19cdb",
+  "version": 20260429
+}
