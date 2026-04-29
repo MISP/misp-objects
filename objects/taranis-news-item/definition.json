@@ -60,7 +60,7 @@
   },
   "description": "An object describing a news item from Taranis AI",
   "meta-category": "misc",
-  "name": "Taranis AI News Item",
+  "name": "taranis-news-item",
   "uuid": "e4b7e5e3-2c4c-4edf-b9a3-2c2a32844e62",
   "version": 2
 }

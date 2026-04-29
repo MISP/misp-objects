@@ -115,7 +115,7 @@
       "ui-priority": 110
     },
     "settings_time": {
-      "description": "Pretreatment effects—what happened prior to the persuasive message. Posttreatment duration—how long an effect lasts. Time between exposure and outcome measurement.",
+      "description": "Pretreatment effects\u2014what happened prior to the persuasive message. Posttreatment duration\u2014how long an effect lasts. Time between exposure and outcome measurement.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
@@ -145,7 +145,7 @@
   },
   "description": "By placing their work within the GP Framework, scholars will help the field resolve inconsistencies, identify and address open questions, and ensure collective progress. The GP Framework is not meant to compete with other theories (such as the ELM) but rather to fill in two gaps. First, it allows one to consider how individual persuasion studies connect to one another and why studies may arrive at contradictory conclusions. Second, it highlights the sources of variations that should be studied. (James N. Druckman)",
   "meta-category": "misc",
-  "name": "Generalizing Persuasion Framework",
+  "name": "generalizing-persuasion-framework",
   "uuid": "dc6cdc5f-17d7-4d7b-95fe-86478990c910",
   "version": 1
 }
