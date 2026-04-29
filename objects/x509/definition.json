@@ -12,6 +12,13 @@
       "multiple": true,
       "ui-priority": 0
     },
+    "extended_key_usage": {
+      "description": "Extended key usage values",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "ip": {
       "description": "Subject Alternative Name - IP",
       "misp-attribute": "ip-dst",
@@ -28,14 +35,133 @@
       ],
       "ui-priority": 0
     },
+    "is_self_signed": {
+      "description": "Self-signed certificate (alias of self_signed)",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 0
+    },
     "issuer": {
       "description": "Issuer of the certificate",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 0
     },
+    "issuer-common-name": {
+      "description": "Issuer common name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-country": {
+      "description": "Issuer country",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-distinguished-name-qualifier": {
+      "description": "Issuer distinguished name qualifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-generation-qualifier": {
+      "description": "Issuer generation qualifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-given-name": {
+      "description": "Issuer given name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-initials": {
+      "description": "Issuer initials",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-key-id": {
+      "description": "Issuer key identifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-locality": {
+      "description": "Issuer locality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-organization": {
+      "description": "Issuer organization",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-organizational-unit": {
+      "description": "Issuer organizational unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-pseudonym": {
+      "description": "Issuer pseudonym",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-serial-number": {
+      "description": "Issuer serial number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-state-or-province-name": {
+      "description": "Issuer state or province name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-surname": {
+      "description": "Issuer surname",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer-title": {
+      "description": "Issuer title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuing_certificate": {
+      "description": "Issuing certificate URL",
+      "misp-attribute": "uri",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "key_usage": {
+      "description": "Key usage values",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ocsp_server": {
+      "description": "Online Certificate Status Protocol (OCSP) server URL",
+      "misp-attribute": "uri",
+      "multiple": true,
+      "ui-priority": 0
+    },
     "pem": {
-      "description": "Raw certificate in PEM formati (Unix-like newlines)",
+      "description": "Raw certificate in PEM format (Unix-like newlines)",
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -102,6 +228,96 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "subject-common-name": {
+      "description": "Subject common name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-country": {
+      "description": "Subject country",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-distinguished-name-qualifier": {
+      "description": "Subject distinguished name qualifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-generation-qualifier": {
+      "description": "Subject generation qualifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-given-name": {
+      "description": "Subject given name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-initials": {
+      "description": "Subject initials",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-key-id": {
+      "description": "Subject key identifier",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-locality": {
+      "description": "Subject locality",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-organization": {
+      "description": "Subject organization",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-organizational-unit": {
+      "description": "Subject organizational unit",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-pseudonym": {
+      "description": "Subject pseudonym",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-serial-number": {
+      "description": "Subject serial number",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-state-or-province-name": {
+      "description": "Subject state or province name",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-surname": {
+      "description": "Subject surname",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "subject-title": {
+      "description": "Subject title",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "text": {
       "description": "Free text description of the certificate",
       "misp-attribute": "text",
@@ -160,5 +376,5 @@
     "issuer"
   ],
   "uuid": "d1ab756a-26b5-4349-9f43-765630f0911c",
-  "version": 13
+  "version": 14
 }

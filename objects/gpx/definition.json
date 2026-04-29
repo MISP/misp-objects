@@ -1,0 +1,166 @@
+{
+  "attributes": {
+    "attachment": {
+      "description": "The GPX file itself as an attachment.",
+      "misp-attribute": "attachment",
+      "ui-priority": 95
+    },
+    "author": {
+      "description": "Author of the GPX file, if present in metadata.",
+      "misp-attribute": "text",
+      "ui-priority": 60
+    },
+    "creator": {
+      "description": "Creator software or device as declared in the gpx root element.",
+      "misp-attribute": "text",
+      "ui-priority": 90
+    },
+    "description-text": {
+      "description": "Description of the GPX dataset.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 70
+    },
+    "end-time": {
+      "description": "Latest timestamp observed among route or track points.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 70
+    },
+    "filename": {
+      "description": "Filename of the GPX file.",
+      "misp-attribute": "filename",
+      "ui-priority": 100
+    },
+    "gpx-version": {
+      "description": "GPX format version declared in the gpx root element, for example 1.0 or 1.1.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 95
+    },
+    "keywords": {
+      "description": "Keywords present in the GPX metadata.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 40
+    },
+    "link": {
+      "description": "Associated link present in GPX metadata.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 30
+    },
+    "max-latitude": {
+      "description": "Maximum latitude of the GPX bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "max-longitude": {
+      "description": "Maximum longitude of the GPX bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "md5": {
+      "description": "MD5 hash of the GPX file.",
+      "misp-attribute": "md5",
+      "ui-priority": 70
+    },
+    "mime-type": {
+      "description": "MIME type of the file, typically application/gpx+xml.",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "ui-priority": 90
+    },
+    "min-latitude": {
+      "description": "Minimum latitude of the GPX bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "min-longitude": {
+      "description": "Minimum longitude of the GPX bounding box in WGS84.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 60
+    },
+    "name": {
+      "description": "Name of the GPX dataset or activity.",
+      "misp-attribute": "text",
+      "ui-priority": 85
+    },
+    "point-count": {
+      "description": "Total number of geographic points contained in the GPX file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 70
+    },
+    "route-count": {
+      "description": "Number of route elements in the GPX file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 75
+    },
+    "sha1": {
+      "description": "SHA1 hash of the GPX file.",
+      "misp-attribute": "sha1",
+      "ui-priority": 70
+    },
+    "sha256": {
+      "description": "SHA256 hash of the GPX file.",
+      "misp-attribute": "sha256",
+      "ui-priority": 85
+    },
+    "size-in-bytes": {
+      "description": "Size of the GPX file in bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "ui-priority": 80
+    },
+    "start-time": {
+      "description": "Earliest timestamp observed among route or track points.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 70
+    },
+    "text": {
+      "description": "Free text comment or analyst note about the GPX file.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 20
+    },
+    "time": {
+      "description": "Timestamp associated with the GPX metadata or activity.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 80
+    },
+    "track-count": {
+      "description": "Number of track elements in the GPX file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 75
+    },
+    "track-segment-count": {
+      "description": "Number of track segment elements in the GPX file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 65
+    },
+    "waypoint-count": {
+      "description": "Number of waypoint elements in the GPX file.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 75
+    }
+  },
+  "description": "An object to describe a GPX (GPS Exchange Format) file, including file metadata, GPX metadata, spatial bounds, and counts of waypoints, routes, and tracks.",
+  "meta-category": "file",
+  "name": "gpx",
+  "requiredOneOf": [
+    "attachment"
+  ],
+  "uuid": "64ee6f19-f154-45c0-bd9c-e659ff0e30f7",
+  "version": 1
+}

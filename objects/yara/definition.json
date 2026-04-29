@@ -17,9 +17,48 @@
       ],
       "ui-priority": 0
     },
+    "false-positive": {
+      "description": "Set to true if the related test sample is a false-positive hit for this YARA rule. If omitted, samples are treated as true-positive by default.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "false"
+      ],
+      "ui-priority": 0
+    },
+    "md5": {
+      "description": "MD5 hash of a file observed when testing the YARA rule (true positives or false positives).",
+      "misp-attribute": "md5",
+      "ui-priority": 0
+    },
     "reference": {
       "description": "Reference or origin of the YARA rule.",
       "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "sha1": {
+      "description": "SHA1 hash of a file observed when testing the YARA rule (true positives or false positives).",
+      "misp-attribute": "sha1",
+      "ui-priority": 0
+    },
+    "sha256": {
+      "description": "SHA256 hash of a file observed when testing the YARA rule (true positives or false positives).",
+      "misp-attribute": "sha256",
+      "ui-priority": 0
+    },
+    "sha512": {
+      "description": "SHA512 hash of a file observed when testing the YARA rule (true positives or false positives).",
+      "misp-attribute": "sha512",
+      "ui-priority": 0
+    },
+    "ssdeep": {
+      "description": "SSDEEP hash of a file observed when testing the YARA rule (true positives or false positives).",
+      "misp-attribute": "ssdeep",
+      "ui-priority": 0
+    },
+    "tlsh": {
+      "description": "TLSH hash of a file observed when testing the YARA rule (true positives or false positives).",
+      "misp-attribute": "tlsh",
       "ui-priority": 0
     },
     "version": {
@@ -42,7 +81,7 @@
       "ui-priority": 1
     }
   },
-  "description": "An object describing a YARA rule (or a YARA rule name) along with its version.",
+  "description": "An object describing a YARA rule (or a YARA rule name), its supported YARA version, and optional test-sample hashes. Test samples are true-positive by default; set false-positive=true when needed.",
   "meta-category": "misc",
   "name": "yara",
   "requiredOneOf": [
@@ -50,5 +89,5 @@
     "yara-rule-name"
   ],
   "uuid": "b5acf82e-ecca-4868-82fe-9dbdf4d808c3",
-  "version": 7
+  "version": 9
 }
