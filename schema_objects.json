@@ -191,6 +191,7 @@
             "sigma",
             "size-in-bytes",
             "snort",
+            "suricata",
             "special-service-request",
             "ssdeep",
             "ssh-fingerprint",
