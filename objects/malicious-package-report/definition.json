@@ -1,0 +1,103 @@
+{
+  "attributes": {
+    "affected-range": {
+      "description": "Affected version range expression from affected[].ranges.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "affected-version": {
+      "description": "Known malicious or impacted package version from affected[].versions.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 8
+    },
+    "analysis": {
+      "description": "Behavioral details explaining why the package is malicious (payload, trigger, campaign, impact).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7
+    },
+    "ecosystem": {
+      "description": "Package ecosystem from OSV package.ecosystem (e.g. npm, PyPI, Maven, Go).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "ioc-domain": {
+      "description": "Domain IoC extracted from database_specific.iocs.domains.",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "ioc-ip": {
+      "description": "IP IoC extracted from database_specific.iocs.ips.",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "ioc-url": {
+      "description": "URL IoC extracted from database_specific.iocs.urls.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 9
+    },
+    "origin-sha256": {
+      "description": "SHA-256 digest representing original source report content.",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "origin-source": {
+      "description": "Data source identifier from database_specific.malicious-packages-origins[].source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "package-name": {
+      "description": "Name of the affected package from OSV package.name.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "reference": {
+      "description": "Reference URL to advisories, source reports, or related analysis.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 6
+    },
+    "report-id": {
+      "description": "OSV report identifier (e.g. MAL-2025-XXXX).",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "report-modified": {
+      "description": "OSV report modified timestamp.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 5
+    },
+    "state": {
+      "description": "Lifecycle state of the report in the feed.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "active",
+        "withdrawn",
+        "unknown"
+      ],
+      "ui-priority": 6
+    }
+  },
+  "description": "Object describing a malicious open source package report from an OSV-style feed such as OpenSSF malicious-packages.",
+  "meta-category": "misc",
+  "name": "malicious-package-report",
+  "requiredOneOf": [
+    "package-name",
+    "report-id"
+  ],
+  "uuid": "2f8a8711-6ef8-4a9d-89de-f547670573cb",
+  "version": 1
+}
