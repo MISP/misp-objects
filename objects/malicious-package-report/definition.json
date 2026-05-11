@@ -14,10 +14,36 @@
       "ui-priority": 8
     },
     "analysis": {
-      "description": "Behavioral details explaining why the package is malicious (payload, trigger, campaign, impact).",
+      "description": "Behavioral details explaining why the package is malicious (payload, trigger, campaign, impact), typically sourced from OSV summary/details and related contextual fields.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 7
+    },
+    "credit": {
+      "description": "Credit entry from OSV credits[].name (person, team, or organization acknowledged for discovery, analysis, or remediation).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "credit-role": {
+      "description": "Role annotation from OSV credits[].type (e.g. FINDER, ANALYST, COORDINATOR, REMEDIATION_DEVELOPER, REMEDIATION_REVIEWER, REMEDIATION_VERIFIER, TOOL, SPONSOR, OTHER).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "ANALYST",
+        "COORDINATOR",
+        "FINDER",
+        "OTHER",
+        "REMEDIATION_DEVELOPER",
+        "REMEDIATION_REVIEWER",
+        "REMEDIATION_VERIFIER",
+        "REPORTER",
+        "SPONSOR",
+        "TOOL"
+      ],
+      "ui-priority": 5
     },
     "ecosystem": {
       "description": "Package ecosystem from OSV package.ecosystem (e.g. npm, PyPI, Maven, Go).",
@@ -61,11 +87,36 @@
       "misp-attribute": "text",
       "ui-priority": 10
     },
+    "package-purl": {
+      "description": "Package URL from OSV package.purl (preferred package identifier for correlation across advisories and ecosystems).",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
     "reference": {
       "description": "Reference URL to advisories, source reports, or related analysis.",
       "disable_correlation": true,
       "misp-attribute": "link",
       "multiple": true,
+      "ui-priority": 6
+    },
+    "reference-type": {
+      "description": "Reference kind from OSV references[].type (e.g. ADVISORY, ARTICLE, REPORT, DETECTION, FIX, INTRODUCED, EVIDENCE, WEB).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "ADVISORY",
+        "ARTICLE",
+        "DETECTION",
+        "DISCUSSION",
+        "EVIDENCE",
+        "FIX",
+        "GIT",
+        "INTRODUCED",
+        "PACKAGE",
+        "REPORT",
+        "WEB"
+      ],
       "ui-priority": 6
     },
     "report-id": {
@@ -99,5 +150,5 @@
     "report-id"
   ],
   "uuid": "2f8a8711-6ef8-4a9d-89de-f547670573cb",
-  "version": 1
+  "version": 4
 }
