@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "data-sensitivity": {
+      "description": "Data sensitivity classification (e.g., personal, confidential). Example: Personal data - pseudonymized.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "dataset-identifier": {
+      "description": "Unique dataset identifier such as DOI or URI. Example: https://doi.org/10.1234/example-dataset.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "dataset-license": {
+      "description": "License terms for dataset usage. Example: ODC-BY-1.0.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "dataset-name": {
+      "description": "Name of the dataset component. Example: Example Instruction Dataset.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "dataset-origin": {
+      "description": "Source provenance information for the dataset. Example: Curated from public web crawl 2025-Q4.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "dataset-provider": {
+      "description": "Organization or source providing the dataset. Example: Example Data Foundation.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "dataset-version": {
+      "description": "Version or release identifier of the dataset. Example: 2025.12.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "integrity-hash": {
+      "description": "Cryptographic hash of dataset artifact. Example: SHA-256 b94d27b9934d3e08a52e52d7da7dabfac484efe3.",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Dataset component entry for an AI SBOM. Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
+  "meta-category": "file",
+  "name": "ai-dataset-component",
+  "required": [
+    "dataset-name"
+  ],
+  "uuid": "2a7519c7-dbc9-441f-abd1-d1fc9e8e46ea",
+  "version": 1
+}
