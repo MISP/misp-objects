@@ -1,0 +1,69 @@
+{
+  "attributes": {
+    "ai-system-name": {
+      "description": "Name of the AI system covered by the SBOM. Example: Fraud Detection Assistant.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ai-system-version": {
+      "description": "Version or release identifier of the AI system. Example: 2.3.1.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "author": {
+      "description": "Entity creating or assembling the AI SBOM. Example: AI Governance Office, Example Corp.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "license": {
+      "description": "Applicable license statement for the AI SBOM artifact. Example: CC-BY-4.0.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sbom-id": {
+      "description": "Unique identifier of the AI SBOM document. Example: urn:uuid:123e4567-e89b-12d3-a456-426614174000.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sbom-version": {
+      "description": "Version of the AI SBOM document. Example: 1.0.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "standard": {
+      "description": "Serialization or specification used for the AI SBOM. Example: CycloneDX 1.6 with AI profile.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "supplier": {
+      "description": "Entity producing or supplying the AI system. Example: Example Corp.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "timestamp": {
+      "description": "Date and time when the AI SBOM was generated. Example: 2026-05-12T09:30:00Z.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    }
+  },
+  "description": "Top-level AI SBOM metadata aligned with BSI minimum elements for SBOM for AI. Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
+  "meta-category": "misc",
+  "name": "ai-sbom",
+  "required": [
+    "sbom-id",
+    "ai-system-name",
+    "timestamp"
+  ],
+  "uuid": "204b7f7e-f65b-424f-852d-465f40c6add6",
+  "version": 1
+}

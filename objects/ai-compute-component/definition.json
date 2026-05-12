@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "component-identifier": {
+      "description": "Unique identifier (e.g. CPE, purl, image digest). Example: cpe:2.3:a:nvidia:cudnn:9.1:*:*:*:*:*:*:*.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "component-name": {
+      "description": "Name of compute/runtime component used by the AI system. Example: NVIDIA CUDA Runtime.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "component-type": {
+      "description": "Type of component (hardware, runtime, container, accelerator). Example: runtime.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "component-version": {
+      "description": "Version identifier for the component. Example: 12.4.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "dependency-relationship": {
+      "description": "Relationship of this component to the AI system. Example: required-at-inference.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "integrity-hash": {
+      "description": "Hash of immutable component artifact where applicable. Example: SHA-256 d4735e3a265e16eee03f59718b9b5d03.",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "supplier": {
+      "description": "Supplier or manufacturer of the compute component. Example: NVIDIA.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Runtime and compute dependency component for an AI SBOM. Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
+  "meta-category": "software",
+  "name": "ai-compute-component",
+  "required": [
+    "component-name",
+    "component-type"
+  ],
+  "uuid": "7d8496fd-a74a-4bd7-bec0-ce8e326df894",
+  "version": 1
+}
