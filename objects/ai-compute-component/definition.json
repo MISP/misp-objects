@@ -42,7 +42,7 @@
     }
   },
   "description": "Runtime and compute dependency component for an AI SBOM. Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
-  "meta-category": "software",
+  "meta-category": "file",
   "name": "ai-compute-component",
   "required": [
     "component-name",

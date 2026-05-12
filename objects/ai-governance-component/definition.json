@@ -44,7 +44,7 @@
     }
   },
   "description": "Governance and transparency artifacts linked from an AI SBOM (e.g., model cards, risk docs). Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
-  "meta-category": "misc",
+  "meta-category": "file",
   "name": "ai-governance-component",
   "required": [
     "document-type",

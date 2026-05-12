@@ -50,7 +50,7 @@
     }
   },
   "description": "AI model component entry for an AI SBOM. Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
-  "meta-category": "software",
+  "meta-category": "file",
   "name": "ai-model-component",
   "required": [
     "model-name",
