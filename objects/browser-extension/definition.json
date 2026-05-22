@@ -1,0 +1,145 @@
+{
+    "name": "browser-extension",
+    "meta-category": "misc",
+    "description": "Browser extension supply chain threat intelligence. Captures compromised or malicious extension release events, including permission escalation diffs, C2 infrastructure, and analysis verdicts.",
+    "uuid": "7749dcb5-57d7-4337-99e1-1d9448f1739e",
+    "version": 1,
+    "attributes": {
+        "id": {
+            "misp-attribute": "text",
+            "ui-priority": 0,
+            "description": "Extension store identifier — Chrome Web Store item ID or Firefox AMO slug. Use the raw ID, not the full store URL, to enable deduplication across events."
+        },
+        "name": {
+            "misp-attribute": "text",
+            "ui-priority": 10,
+            "description": "Human-readable extension name as shown in the store."
+        },
+        "ecosystem": {
+            "misp-attribute": "text",
+            "ui-priority": 20,
+            "disable_correlation": true,
+            "description": "Distribution channel for the extension.",
+            "sane_default": [
+                "chrome",
+                "firefox",
+                "edge"
+            ]
+        },
+        "version-malicious": {
+            "misp-attribute": "text",
+            "ui-priority": 30,
+            "disable_correlation": true,
+            "description": "First version observed with malicious behaviour."
+        },
+        "version-clean": {
+            "misp-attribute": "text",
+            "ui-priority": 40,
+            "disable_correlation": true,
+            "description": "Last known-clean version immediately before the malicious update."
+        },
+        "publisher": {
+            "misp-attribute": "text",
+            "ui-priority": 50,
+            "description": "Publisher or developer account name as shown in the store."
+        },
+        "store-url": {
+            "misp-attribute": "url",
+            "ui-priority": 60,
+            "description": "Direct link to the extension's store listing page."
+        },
+        "manifest-version": {
+            "misp-attribute": "text",
+            "ui-priority": 70,
+            "disable_correlation": true,
+            "description": "Chrome extension manifest version of the malicious release.",
+            "sane_default": [
+                "mv2",
+                "mv3"
+            ]
+        },
+        "permissions-added": {
+            "misp-attribute": "text",
+            "ui-priority": 80,
+            "multiple": true,
+            "description": "Permission strings newly introduced in the malicious version. One entry per permission; use the canonical permission string as defined in the browser extension API (e.g. webRequest, tabs, cookies)."
+        },
+        "host-permissions-added": {
+            "misp-attribute": "text",
+            "ui-priority": 90,
+            "multiple": true,
+            "description": "Host permission patterns newly introduced in the malicious version (MV3 host_permissions or MV2 match patterns). One entry per pattern. Tracked separately from permissions because broad host access is the primary exfiltration enabler."
+        },
+        "malicious-file": {
+            "misp-attribute": "filename",
+            "ui-priority": 100,
+            "multiple": true,
+            "description": "File within the extension package containing malicious code, as the path appears inside the CRX/XPI archive (e.g. background.js, content_scripts/inject.js)."
+        },
+        "c2-url": {
+            "misp-attribute": "url",
+            "ui-priority": 110,
+            "multiple": true,
+            "description": "Command-and-control URL contacted by the malicious extension."
+        },
+        "exfil-url": {
+            "misp-attribute": "url",
+            "ui-priority": 120,
+            "multiple": true,
+            "description": "Data exfiltration endpoint if distinct from the C2 URL."
+        },
+        "attack-pattern": {
+            "misp-attribute": "text",
+            "ui-priority": 130,
+            "description": "Short label describing the primary attack technique (e.g. webRequest credential intercept, session cookie theft, postinstall beacon, content-script keylogger)."
+        },
+        "crx-sha256": {
+            "misp-attribute": "sha256",
+            "ui-priority": 140,
+            "description": "SHA-256 hash of the malicious CRX or XPI package file."
+        },
+        "verdict": {
+            "misp-attribute": "text",
+            "ui-priority": 150,
+            "disable_correlation": true,
+            "description": "Analysis verdict for the malicious version.",
+            "values_list": [
+                "suspicious",
+                "malicious",
+                "clean",
+                "insufficient_data"
+            ]
+        },
+        "confidence": {
+            "misp-attribute": "float",
+            "ui-priority": 160,
+            "disable_correlation": true,
+            "description": "Analyst or automated confidence score for the verdict (0.0 to 1.0)."
+        },
+        "analysis-source": {
+            "misp-attribute": "text",
+            "ui-priority": 170,
+            "disable_correlation": true,
+            "description": "Origin of the verdict.",
+            "sane_default": [
+                "manual",
+                "automated",
+                "vendor"
+            ]
+        },
+        "first-seen": {
+            "misp-attribute": "datetime",
+            "ui-priority": 180,
+            "description": "Timestamp when the malicious version was first observed in the wild."
+        },
+        "description": {
+            "misp-attribute": "text",
+            "ui-priority": 190,
+            "disable_correlation": true,
+            "description": "Free-text summary of the threat behaviour and impact."
+        }
+    },
+    "requiredOneOf": [
+        "id"
+    ]
+}
