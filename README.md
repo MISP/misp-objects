@@ -167,6 +167,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/cryptocurrency-transaction](https://github.com/MISP/misp-objects/blob/main/objects/cryptocurrency-transaction/definition.json) - An object to describe a cryptocurrency transaction.
 - [objects/cs-beacon-config](https://github.com/MISP/misp-objects/blob/main/objects/cs-beacon-config/definition.json) - Cobalt Strike Beacon Config.
 - [objects/ctf-challenge](https://github.com/MISP/misp-objects/blob/main/objects/ctf-challenge/definition.json) - Capture-the-flag challenge object as defined by Rectifyq.
+- [objects/cti-transmute-conversion](https://github.com/MISP/misp-objects/blob/main/objects/cti-transmute-conversion/definition.json) - CTI Transmute conversion record describing MISP to STIX or STIX to MISP conversion metadata, inputs, outputs, status, and detail link.
 - [objects/cytomic-orion-file](https://github.com/MISP/misp-objects/blob/main/objects/cytomic-orion-file/definition.json) - Cytomic Orion File Detection.
 - [objects/cytomic-orion-machine](https://github.com/MISP/misp-objects/blob/main/objects/cytomic-orion-machine/definition.json) - Cytomic Orion File at Machine Detection.
 - [objects/dark-pattern-item](https://github.com/MISP/misp-objects/blob/main/objects/dark-pattern-item/definition.json) - An Item whose User Interface implements a dark pattern.
