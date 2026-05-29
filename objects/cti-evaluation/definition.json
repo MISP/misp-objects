@@ -1,0 +1,429 @@
+{
+  "attributes": {
+    "accuracy": {
+      "description": "Whether assertions are based on reliable, verified, and corroborated data. Qualitative score aligned with cti-evaluation:accuracy.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "accuracy-score": {
+      "description": "Whether assertions are based on reliable, verified, and corroborated data. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "accuracy-weight": {
+      "description": "Whether assertions are based on reliable, verified, and corroborated data. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "calculation-formula": {
+      "description": "Formula or explanation of how the overall score was calculated from the dimension scores and weights.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 6
+    },
+    "clarity": {
+      "description": "Whether CTI is understandable, unambiguous, and actionable for intended audiences. Qualitative score aligned with cti-evaluation:clarity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "clarity-score": {
+      "description": "Whether CTI is understandable, unambiguous, and actionable for intended audiences. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "clarity-weight": {
+      "description": "Whether CTI is understandable, unambiguous, and actionable for intended audiences. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "confidence": {
+      "description": "Analyst or reviewer confidence in the CTI judgments. Qualitative score aligned with cti-evaluation:confidence.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "confidence-score": {
+      "description": "Analyst or reviewer confidence in the CTI judgments. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "confidence-weight": {
+      "description": "Analyst or reviewer confidence in the CTI judgments. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "conversion-fidelity": {
+      "description": "How faithfully intelligence survives format conversion, such as MISP to STIX and back. Qualitative score aligned with cti-evaluation:conversion-fidelity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "conversion-fidelity-score": {
+      "description": "How faithfully intelligence survives format conversion, such as MISP to STIX and back. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "conversion-fidelity-weight": {
+      "description": "How faithfully intelligence survives format conversion, such as MISP to STIX and back. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "cti-transmute-conversion-id": {
+      "description": "Identifier of the CTI Transmute conversion associated with this evaluation, when applicable.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 6
+    },
+    "cti-transmute-link": {
+      "description": "Link to CTI Transmute or to a CTI Transmute conversion detail associated with this evaluation.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "sane_default": [
+        "https://cti-transmute.org/"
+      ],
+      "ui-priority": 9
+    },
+    "evaluated-artifact": {
+      "description": "Name, identifier, or short description of the CTI artifact that was evaluated.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 9
+    },
+    "evaluated-artifact-link": {
+      "description": "Link to the evaluated CTI artifact, report, MISP event, STIX bundle, or conversion result.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 8
+    },
+    "evaluation-date": {
+      "description": "Date and time when the CTI evaluation was calculated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 7
+    },
+    "evaluation-id": {
+      "description": "Identifier for this CTI evaluation run or calculation result.",
+      "disable_correlation": true,
+      "misp-attribute": "uuid",
+      "ui-priority": 10
+    },
+    "evaluation-name": {
+      "description": "Human-readable name or title of the CTI evaluation result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "evaluation-profile": {
+      "description": "Profile, policy, weighting model, or rubric used to calculate the CTI evaluation result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 6
+    },
+    "evaluator": {
+      "description": "Person, organisation, tool, or workflow that produced the CTI evaluation result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 5
+    },
+    "evidence": {
+      "description": "Evidence, observations, or notes supporting the assigned scores.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "evidence-strength": {
+      "description": "Strength and sufficiency of supporting evidence for the claims. Qualitative score aligned with cti-evaluation:evidence-strength.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "evidence-strength-score": {
+      "description": "Strength and sufficiency of supporting evidence for the claims. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "evidence-strength-weight": {
+      "description": "Strength and sufficiency of supporting evidence for the claims. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "format-validity": {
+      "description": "Conformance of CTI artifacts to expected schema/syntax, such as STIX or MISP structures. Qualitative score aligned with cti-evaluation:format-validity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "format-validity-score": {
+      "description": "Conformance of CTI artifacts to expected schema/syntax, such as STIX or MISP structures. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "format-validity-weight": {
+      "description": "Conformance of CTI artifacts to expected schema/syntax, such as STIX or MISP structures. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "limitations": {
+      "description": "Known limitations, caveats, missing inputs, or assumptions affecting the evaluation result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "overall-score": {
+      "description": "Overall weighted assessment of the CTI artifact quality, aligned with cti-evaluation:overall-score.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "overall-score-value": {
+      "description": "Numeric overall CTI evaluation score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 10
+    },
+    "recommendation": {
+      "description": "Recommended remediation, enrichment, review, or conversion action based on the evaluation result.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "relevance": {
+      "description": "Whether the CTI pertains directly to user mission and decision-making needs. Qualitative score aligned with cti-evaluation:relevance.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "relevance-score": {
+      "description": "Whether the CTI pertains directly to user mission and decision-making needs. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "relevance-weight": {
+      "description": "Whether the CTI pertains directly to user mission and decision-making needs. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "source-format": {
+      "description": "Source CTI format used as input to the evaluation or conversion workflow.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 6,
+      "values_list": [
+        "MISP",
+        "STIX 1.x",
+        "STIX 2.0",
+        "STIX 2.1",
+        "Other"
+      ]
+    },
+    "source-reliability": {
+      "description": "Reliability of primary and secondary sources underpinning the CTI. Qualitative score aligned with cti-evaluation:source-reliability.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "source-reliability-score": {
+      "description": "Reliability of primary and secondary sources underpinning the CTI. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "source-reliability-weight": {
+      "description": "Reliability of primary and secondary sources underpinning the CTI. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "specificity": {
+      "description": "Whether CTI contains concrete details (what, where, when, who, how) needed to act. Qualitative score aligned with cti-evaluation:specificity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "specificity-score": {
+      "description": "Whether CTI contains concrete details (what, where, when, who, how) needed to act. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "specificity-weight": {
+      "description": "Whether CTI contains concrete details (what, where, when, who, how) needed to act. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "target-format": {
+      "description": "Target CTI format produced or reviewed in the evaluation or conversion workflow.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 6,
+      "values_list": [
+        "MISP",
+        "STIX 1.x",
+        "STIX 2.0",
+        "STIX 2.1",
+        "Other"
+      ]
+    },
+    "taxonomy-reference": {
+      "description": "Reference link to the MISP cti-evaluation taxonomy used to express score labels.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "sane_default": [
+        "https://github.com/MISP/misp-taxonomies/blob/main/cti-evaluation/machinetag.json"
+      ],
+      "ui-priority": 8
+    },
+    "taxonomy-tag": {
+      "description": "Applied cti-evaluation machine tag, for example cti-evaluation:overall-score=\"high\".",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "timeliness": {
+      "description": "Whether CTI is delivered with enough lead time for effective action. Qualitative score aligned with cti-evaluation:timeliness.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "timeliness-score": {
+      "description": "Whether CTI is delivered with enough lead time for effective action. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "timeliness-weight": {
+      "description": "Whether CTI is delivered with enough lead time for effective action. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    },
+    "usefulness": {
+      "description": "Practical utility of CTI for operations, detection, response, or strategic decisions. Qualitative score aligned with cti-evaluation:usefulness.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7,
+      "values_list": [
+        "very-low",
+        "low",
+        "moderate",
+        "high",
+        "very-high"
+      ]
+    },
+    "usefulness-score": {
+      "description": "Practical utility of CTI for operations, detection, response, or strategic decisions. Numeric score, typically from 0 to 100.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 7
+    },
+    "usefulness-weight": {
+      "description": "Practical utility of CTI for operations, detection, response, or strategic decisions. Weight applied to this dimension when calculating the overall score.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 3
+    }
+  },
+  "description": "CTI evaluation result object for recording calculated quality and conversion-quality scores aligned with the MISP cti-evaluation taxonomy, including optional references to CTI Transmute conversion workflows.",
+  "meta-category": "misc",
+  "name": "cti-evaluation",
+  "uuid": "7ef56e58-03de-40e5-9958-c7649d8eebf1",
+  "version": 1
+}
