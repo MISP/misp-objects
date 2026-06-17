@@ -13,7 +13,7 @@ OUTPUT="objects.md"
         icon_path="${dir}icon.svg"
 
         if [ -f "$icon_path" ]; then
-            echo "| ${name} | ![](${icon_path#./}) |"
+            echo "| ${name} | <img src=\"${icon_path#./}\" width=\"24\"> |"
         else
             echo "| ${name} | |"
         fi
