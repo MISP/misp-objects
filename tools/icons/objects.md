@@ -422,3 +422,48 @@
 | youtube-comment | <img src="../../objects/youtube-comment/icon/icon.svg" width="24"> |
 | youtube-playlist | <img src="../../objects/youtube-playlist/icon/icon.svg" width="24"> |
 | youtube-video | <img src="../../objects/youtube-video/icon/icon.svg" width="24"> |
+
+## File type icons
+
+| File Type | Icon |
+|-----------|------|
+| 7z | <img src="../../objects/file/icon/file-7z.svg" width="24"> |
+| apk | <img src="../../objects/file/icon/file-apk.svg" width="24"> |
+| bat | <img src="../../objects/file/icon/file-bat.svg" width="24"> |
+| css | <img src="../../objects/file/icon/file-css.svg" width="24"> |
+| csv | <img src="../../objects/file/icon/file-csv.svg" width="24"> |
+| dll | <img src="../../objects/file/icon/file-dll.svg" width="24"> |
+| doc | <img src="../../objects/file/icon/file-doc.svg" width="24"> |
+| docx | <img src="../../objects/file/icon/file-docx.svg" width="24"> |
+| elf | <img src="../../objects/file/icon/file-elf.svg" width="24"> |
+| eml | <img src="../../objects/file/icon/file-eml.svg" width="24"> |
+| exe | <img src="../../objects/file/icon/file-exe.svg" width="24"> |
+| gif | <img src="../../objects/file/icon/file-gif.svg" width="24"> |
+| gz | <img src="../../objects/file/icon/file-gz.svg" width="24"> |
+| html | <img src="../../objects/file/icon/file-html.svg" width="24"> |
+| iso | <img src="../../objects/file/icon/file-iso.svg" width="24"> |
+| jar | <img src="../../objects/file/icon/file-jar.svg" width="24"> |
+| jpg | <img src="../../objects/file/icon/file-jpg.svg" width="24"> |
+| json | <img src="../../objects/file/icon/file-json.svg" width="24"> |
+| js | <img src="../../objects/file/icon/file-js.svg" width="24"> |
+| lnk | <img src="../../objects/file/icon/file-lnk.svg" width="24"> |
+| mp3 | <img src="../../objects/file/icon/file-mp3.svg" width="24"> |
+| mp4 | <img src="../../objects/file/icon/file-mp4.svg" width="24"> |
+| msg | <img src="../../objects/file/icon/file-msg.svg" width="24"> |
+| pcap | <img src="../../objects/file/icon/file-pcap.svg" width="24"> |
+| pdf | <img src="../../objects/file/icon/file-pdf.svg" width="24"> |
+| png | <img src="../../objects/file/icon/file-png.svg" width="24"> |
+| ppt | <img src="../../objects/file/icon/file-ppt.svg" width="24"> |
+| pptx | <img src="../../objects/file/icon/file-pptx.svg" width="24"> |
+| ps1 | <img src="../../objects/file/icon/file-ps1.svg" width="24"> |
+| py | <img src="../../objects/file/icon/file-py.svg" width="24"> |
+| rar | <img src="../../objects/file/icon/file-rar.svg" width="24"> |
+| rtf | <img src="../../objects/file/icon/file-rtf.svg" width="24"> |
+| sh | <img src="../../objects/file/icon/file-sh.svg" width="24"> |
+| svg | <img src="../../objects/file/icon/file-svg.svg" width="24"> |
+| txt | <img src="../../objects/file/icon/file-txt.svg" width="24"> |
+| vbs | <img src="../../objects/file/icon/file-vbs.svg" width="24"> |
+| xls | <img src="../../objects/file/icon/file-xls.svg" width="24"> |
+| xlsx | <img src="../../objects/file/icon/file-xlsx.svg" width="24"> |
+| xml | <img src="../../objects/file/icon/file-xml.svg" width="24"> |
+| zip | <img src="../../objects/file/icon/file-zip.svg" width="24"> |

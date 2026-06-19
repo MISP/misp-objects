@@ -80,6 +80,7 @@ From `tools/`:
 Icon tooling lives in `tools/icons/` (usage docs: `tools/icons/README.md`):
 - `./gen-icon-list.sh` — regenerates `tools/icons/objects.md` (object → icon table). Must be run from inside `tools/icons/` (it uses relative `../../objects/`).
 - `file-type-label.js` — runtime generator that stamps a file-type label (e.g. `csv`, `json`) into the base `file` icon as pixel art knocked out of the document body (`fileTypeLabel.fileIcon('csv')`); keeps the icon monochrome/`currentColor`.
+- `gen-file-type-icons.js` — pre-renders that same output to static `objects/file/icon/file-<type>.svg` files (run `node tools/icons/gen-file-type-icons.js`); the type set lives in the script. The base `objects/file/icon/icon.svg` is left untouched.
 
 ## Commit messages
 

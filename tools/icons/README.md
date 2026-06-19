@@ -2,7 +2,8 @@
 
 Helpers for the per-object icons stored at `objects/<name>/icon/icon.svg`.
 
-- [`file-type-label.js`](#file-type-label) — stamp a file type (`csv`, `json`, …) into the base `file` icon.
+- [`file-type-label.js`](#file-type-label) — stamp a file type (`csv`, `json`, …) into the base `file` icon at runtime.
+- [`gen-file-type-icons.js`](#gen-file-type-icons) — pre-render static `file-<type>.svg` icons for common file types.
 - [`gen-icon-list.sh`](#gen-icon-list) — regenerate the `objects.md` object → icon table.
 
 ---
@@ -87,9 +88,29 @@ Supported glyphs: `A–Z` and `0–9` (5×7 pixel font defined in `FONT`).
 
 ---
 
+## <a name="gen-file-type-icons"></a>`gen-file-type-icons.js` — pre-rendered static icons
+
+For contexts where running JS isn't an option (the MISP UI, docs, an `<img src>`), a fixed
+set of file types is pre-rendered to standalone SVGs at `objects/file/icon/file-<type>.svg`
+(e.g. `file-csv.svg`, `file-pdf.svg`). They're produced from the **same** pixel font as the
+runtime helper — `gen-file-type-icons.js` just calls `fileIcon()` and writes one file per
+type, with a stable per-type mask id.
+
+```bash
+node tools/icons/gen-file-type-icons.js   # regenerate the file-<type>.svg set
+```
+
+The covered types are the 30 most common on a threat-intel platform (executables, maldocs,
+archives, email, IOC data, captures) plus the 10 most-used types worldwide (images, media,
+presentations, web). Edit the `CTI_TYPES` / `COMMON_TYPES` arrays in the script to change the
+set, then rerun. The base `objects/file/icon/icon.svg` is never touched.
+
+---
+
 ## <a name="gen-icon-list"></a>`gen-icon-list.sh` — regenerate the icon table
 
-Writes `objects.md`, a table of every object and its icon (if any). Run it **from this
+Writes `objects.md`: a table of every object and its icon (if any), followed by a **File type
+icons** table listing every `objects/file/icon/file-*.svg` variant. Run it **from this
 directory** (it resolves objects via the relative path `../../objects/`):
 
 ```bash
