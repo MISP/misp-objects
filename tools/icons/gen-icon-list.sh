@@ -6,7 +6,7 @@ OUTPUT="objects.md"
     echo "| Object Name | Icon |"
     echo "|------------|------|"
 
-    for dir in ../objects/*/; do
+    for dir in ../../objects/*/; do
         [ -d "$dir" ] || continue
 
         name="$(basename "$dir")"

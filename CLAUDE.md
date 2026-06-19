@@ -75,8 +75,11 @@ See the README's `domain-ip` example for a canonical, fully-formed object.
 
 From `tools/`:
 - `python3 list_of_objects.py` — prints the markdown bullet list used in the README's "Existing MISP objects" section.
-- `./gen-icon-list.sh` — regenerates `tools/objects.md` (object → icon table). Must be run from inside `tools/` (it uses relative `../objects/`).
 - `adoc_objects.py` + `updated.sh` — render the asciidoctor HTML/PDF docs published to the MISP website.
+
+Icon tooling lives in `tools/icons/`:
+- `./gen-icon-list.sh` — regenerates `tools/icons/objects.md` (object → icon table). Must be run from inside `tools/icons/` (it uses relative `../../objects/`).
+- `file-type-label.js` — runtime generator that stamps a file-type label (e.g. `csv`, `json`) into the base `file` icon as pixel art knocked out of the document body (`fileTypeLabel.fileIcon('csv')`); keeps the icon monochrome/`currentColor`.
 
 ## Commit messages
 
