@@ -16,19 +16,19 @@
 | ais-observation | |
 | android-app | <img src="../objects/android-app/icon/icon.svg" width="24"> |
 | android-permission | <img src="../objects/android-permission/icon/icon.svg" width="24"> |
-| annotation | |
+| annotation | <img src="../objects/annotation/icon/icon.svg" width="24"> |
 | anonymisation | |
 | apivoid-email-verification | |
 | apk | <img src="../objects/apk/icon/icon.svg" width="24"> |
-| artifact | |
+| artifact | <img src="../objects/artifact/icon/icon.svg" width="24"> |
 | asn | <img src="../objects/asn/icon/icon.svg" width="24"> |
 | attacker-infra | |
-| attack-pattern | |
+| attack-pattern | <img src="../objects/attack-pattern/icon/icon.svg" width="24"> |
 | attack-step | |
 | authentication-failure-report | |
 | authenticode-signerinfo | |
 | availability-impact | |
-| av-signature | |
+| av-signature | <img src="../objects/av-signature/icon/icon.svg" width="24"> |
 | bad-bot | |
 | bank-account | <img src="../objects/bank-account/icon/icon.svg" width="24"> |
 | bgp-hijack | |
@@ -57,12 +57,12 @@
 | cookie | <img src="../objects/cookie/icon/icon.svg" width="24"> |
 | cortex | |
 | cortex-taxonomy | |
-| course-of-action | |
+| course-of-action | <img src="../objects/course-of-action/icon/icon.svg" width="24"> |
 | covid19-csse-daily-report | |
 | covid19-dxy-live-city | |
 | covid19-dxy-live-province | |
 | cowrie | |
-| cpe-asset | |
+| cpe-asset | <img src="../objects/cpe-asset/icon/icon.svg" width="24"> |
 | credential | <img src="../objects/credential/icon/icon.svg" width="24"> |
 | credit-card | <img src="../objects/credit-card/icon/icon.svg" width="24"> |
 | crowdsec-ip-context | |
@@ -86,24 +86,24 @@
 | device | <img src="../objects/device/icon/icon.svg" width="24"> |
 | dga-domain | |
 | diameter-attack | |
-| diamond | |
-| directory | |
-| dkim | |
+| diamond | <img src="../objects/diamond/icon/icon.svg" width="24"> |
+| directory | <img src="../objects/directory/icon/icon.svg" width="24"> |
+| dkim | <img src="../objects/dkim/icon/icon.svg" width="24"> |
 | dns-record | <img src="../objects/dns-record/icon/icon.svg" width="24"> |
 | domain-crawled | |
 | domain-ip | <img src="../objects/domain-ip/icon/icon.svg" width="24"> |
 | dom-hash | |
 | drone-rid-observation | |
 | edr-report | |
-| elf | |
+| elf | <img src="../objects/elf/icon/icon.svg" width="24"> |
 | elf-section | |
 | email | <img src="../objects/email/icon/icon.svg" width="24"> |
-| employee | |
+| employee | <img src="../objects/employee/icon/icon.svg" width="24"> |
 | error-message | |
-| event | |
+| event | <img src="../objects/event/icon/icon.svg" width="24"> |
 | exif | |
-| exploit | |
-| exploit-poc | |
+| exploit | <img src="../objects/exploit/icon/icon.svg" width="24"> |
+| exploit-poc | <img src="../objects/exploit-poc/icon/icon.svg" width="24"> |
 | external-impact | |
 | facebook-account | <img src="../objects/facebook-account/icon/icon.svg" width="24"> |
 | facebook-group | <img src="../objects/facebook-group/icon/icon.svg" width="24"> |
@@ -191,7 +191,7 @@
 | gtp-attack | |
 | hashlookup | |
 | hhhash | |
-| http-request | |
+| http-request | <img src="../objects/http-request/icon/icon.svg" width="24"> |
 | identity | <img src="../objects/identity/icon/icon.svg" width="24"> |
 | ilr-impact | |
 | ilr-notification-incident | |
@@ -206,19 +206,19 @@
 | integrity-impact | |
 | intel471-vulnerability-intelligence | |
 | intelligence-dissemination | |
-| intelligence-report | |
+| intelligence-report | <img src="../objects/intelligence-report/icon/icon.svg" width="24"> |
 | intelligence-source-assessment | |
 | intelmq_event | |
 | intelmq_report | |
 | internal-reference | |
 | interpol-notice | |
-| intrusion-set | |
+| intrusion-set | <img src="../objects/intrusion-set/icon/icon.svg" width="24"> |
 | iot-device | <img src="../objects/iot-device/icon/icon.svg" width="24"> |
 | iot-firmware | <img src="../objects/iot-firmware/icon/icon.svg" width="24"> |
 | ip-api-address | |
 | ip-port | <img src="../objects/ip-port/icon/icon.svg" width="24"> |
-| irc | |
-| ja3 | |
+| irc | <img src="../objects/irc/icon/icon.svg" width="24"> |
+| ja3 | <img src="../objects/ja3/icon/icon.svg" width="24"> |
 | ja3s | |
 | ja4-plus | |
 | jarm | |
@@ -226,21 +226,21 @@
 | language-content | |
 | leaked-document | <img src="../objects/leaked-document/icon/icon.svg" width="24"> |
 | legal-entity | <img src="../objects/legal-entity/icon/icon.svg" width="24"> |
-| lnk | |
-| macho | |
+| lnk | <img src="../objects/lnk/icon/icon.svg" width="24"> |
+| macho | <img src="../objects/macho/icon/icon.svg" width="24"> |
 | macho-section | |
 | mactime-timeline-analysis | |
 | malicious-package-report | |
-| malicious-website | |
+| malicious-website | <img src="../objects/malicious-website/icon/icon.svg" width="24"> |
 | malware | <img src="../objects/malware/icon/icon.svg" width="24"> |
-| malware-analysis | |
+| malware-analysis | <img src="../objects/malware-analysis/icon/icon.svg" width="24"> |
 | malware-config | <img src="../objects/malware-config/icon/icon.svg" width="24"> |
 | meme-image | |
 | mfa-auth | |
 | microblog | <img src="../objects/microblog/icon/icon.svg" width="24"> |
 | monetary-impact | |
 | muonfp | |
-| mutex | |
+| mutex | <img src="../objects/mutex/icon/icon.svg" width="24"> |
 | narrative | |
 | netflow | <img src="../objects/netflow/icon/icon.svg" width="24"> |
 | network-connection | <img src="../objects/network-connection/icon/icon.svg" width="24"> |
@@ -266,14 +266,14 @@
 | passive-dns | <img src="../objects/passive-dns/icon/icon.svg" width="24"> |
 | passive-dns-dnsdbflex | <img src="../objects/passive-dns-dnsdbflex/icon/icon.svg" width="24"> |
 | passive-ssh | <img src="../objects/passive-ssh/icon/icon.svg" width="24"> |
-| paste | |
+| paste | <img src="../objects/paste/icon/icon.svg" width="24"> |
 | pcap-metadata | |
-| pe | |
+| pe | <img src="../objects/pe/icon/icon.svg" width="24"> |
 | pe-optional-header | |
 | persnona | |
 | person | <img src="../objects/person/icon/icon.svg" width="24"> |
 | personification | <img src="../objects/personification/icon/icon.svg" width="24"> |
-| pe-section | |
+| pe-section | <img src="../objects/pe-section/icon/icon.svg" width="24"> |
 | pgp-meta | |
 | phishing | <img src="../objects/phishing/icon/icon.svg" width="24"> |
 | phishing-kit | <img src="../objects/phishing-kit/icon/icon.svg" width="24"> |
@@ -284,10 +284,10 @@
 | physical-object | |
 | postal-address | <img src="../objects/postal-address/icon/icon.svg" width="24"> |
 | probabilistic-data-structure | |
-| process | |
+| process | <img src="../objects/process/icon/icon.svg" width="24"> |
 | publication | |
 | python-evtx-event-log | |
-| query | |
+| query | <img src="../objects/query/icon/icon.svg" width="24"> |
 | r2graphity | |
 | ransom-negotiation | |
 | ransomware-group-post | |
@@ -322,7 +322,7 @@
 | rtir | |
 | rulezet-bundle | <img src="../objects/rulezet-bundle/icon/icon.svg" width="24"> |
 | rulezet-metadata | <img src="../objects/rulezet-metadata/icon/icon.svg" width="24"> |
-| sandbox-report | |
+| sandbox-report | <img src="../objects/sandbox-report/icon/icon.svg" width="24"> |
 | sb-signature | |
 | scan-result | <img src="../objects/scan-result/icon/icon.svg" width="24"> |
 | scheduled-event | <img src="../objects/scheduled-event/icon/icon.svg" width="24"> |
@@ -335,14 +335,14 @@
 | scrippsco2-o18-monthly | |
 | script | <img src="../objects/script/icon/icon.svg" width="24"> |
 | security-playbook | |
-| service | |
+| service | <img src="../objects/service/icon/icon.svg" width="24"> |
 | shadowserver-beacon-ttl-report | |
 | shadowserver-beacon-url-overlap | |
 | shadowserver-malware-url-report | |
 | shadowserver-scan-http-proxy | |
 | shell-commands | <img src="../objects/shell-commands/icon/icon.svg" width="24"> |
 | shodan-report | |
-| shortened-link | |
+| shortened-link | <img src="../objects/shortened-link/icon/icon.svg" width="24"> |
 | short-message-service | |
 | sigma | |
 | sigmf-archive | |
@@ -359,15 +359,15 @@
 | ss7-attack | |
 | ssh-authorized-keys | <img src="../objects/ssh-authorized-keys/icon/icon.svg" width="24"> |
 | stairwell | |
-| stix2-pattern | |
+| stix2-pattern | <img src="../objects/stix2-pattern/icon/icon.svg" width="24"> |
 | stock | |
 | submarine | |
 | summariser-output | |
-| suricata | |
+| suricata | <img src="../objects/suricata/icon/icon.svg" width="24"> |
 | taranis-news-item | |
 | taranis-story | |
 | target-system | |
-| task | |
+| task | <img src="../objects/task/icon/icon.svg" width="24"> |
 | tattoo | |
 | telegram-account | <img src="../objects/telegram-account/icon/icon.svg" width="24"> |
 | telegram-bot | <img src="../objects/telegram-bot/icon/icon.svg" width="24"> |
@@ -402,9 +402,9 @@
 | uav | <img src="../objects/uav/icon/icon.svg" width="24"> |
 | url | <img src="../objects/url/icon/icon.svg" width="24"> |
 | user-account | <img src="../objects/user-account/icon/icon.svg" width="24"> |
-| user-action | |
+| user-action | <img src="../objects/user-action/icon/icon.svg" width="24"> |
 | vehicle | <img src="../objects/vehicle/icon/icon.svg" width="24"> |
-| victim | |
+| victim | <img src="../objects/victim/icon/icon.svg" width="24"> |
 | virustotal-graph | <img src="../objects/virustotal-graph/icon/icon.svg" width="24"> |
 | virustotal-report | <img src="../objects/virustotal-report/icon/icon.svg" width="24"> |
 | virustotal-submission | <img src="../objects/virustotal-submission/icon/icon.svg" width="24"> |
@@ -415,7 +415,7 @@
 | wifi-connection | <img src="../objects/wifi-connection/icon/icon.svg" width="24"> |
 | windows-service | <img src="../objects/windows-service/icon/icon.svg" width="24"> |
 | x509 | <img src="../objects/x509/icon/icon.svg" width="24"> |
-| x-header | |
+| x-header | <img src="../objects/x-header/icon/icon.svg" width="24"> |
 | yabin | |
 | yara | <img src="../objects/yara/icon/icon.svg" width="24"> |
 | youtube-channel | <img src="../objects/youtube-channel/icon/icon.svg" width="24"> |
