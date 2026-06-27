@@ -1,0 +1,131 @@
+{
+  "attributes": {
+    "asn": {
+      "description": "Autonomous system of the indicator (AS number, ISP, org) — IP indicators.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "cve": {
+      "description": "CVE associated with the indicator.",
+      "misp-attribute": "vulnerability",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Human-readable RST Cloud description of the indicator.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "dns": {
+      "description": "DNS resolution summary (A / CNAME / alias) — domain indicators.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "false-positive": {
+      "description": "RST Cloud false-positive alarm flag (true / possible / false) and optional note.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "filename": {
+      "description": "Filename associated with the file hash — hash indicators.",
+      "misp-attribute": "filename",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "First time RST Cloud observed the indicator.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "geo": {
+      "description": "Geolocation of the indicator (country, region, city) — IP indicators.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "http-status": {
+      "description": "HTTP status observed for the resolved URL — URL indicators.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "industry": {
+      "description": "Industry targeted, per RST Cloud.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "description": "Most recent time RST Cloud observed the indicator.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "ref": {
+      "description": "Source report / reference URL backing the RST Cloud verdict.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "score-confidence": {
+      "description": "RST context sub-score (0-1); triage signal banded to rstcloud:context-confidence (very-low / low / medium / high / very-high). Reflects corroborating intelligence and threat-type impact.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "score-relevance": {
+      "description": "RST frequency sub-score (0-1); triage signal banded to rstcloud:relevance (very-low / low / medium / high / very-high). Active-threat likelihood relative to category and novelty/freshness.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "score-total": {
+      "description": "RST Cloud overall confidence score (0-100); base score of the RST decaying models. Computed as 100 * (source-confidence * context-confidence * relevance), each sub-score in [0,1]. Operational bands: <15 very-low, 15-30 low, 30-45 medium, 45-70 high (45+ real-time detection, 50+ blocking), 70+ very-high.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "tag": {
+      "description": "RST Cloud descriptive tag for the indicator (e.g. malware, stealer, phishing).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "threat": {
+      "description": "Threat attributed to the indicator (malware family, actor, tool, campaign).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ttp": {
+      "description": "Technique / TTP associated with the indicator.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "whois": {
+      "description": "Inline WHOIS summary (registrar, registrant, dates, age) — domain indicators.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "RST Cloud IoC Lookup enrichment: score, attribution and type-specific context (geo/ASN for IPs, DNS/WHOIS for domains, HTTP status for URLs, filenames for hashes) for an indicator looked up in RST Cloud. Reference it to the enriched attribute.",
+  "meta-category": "misc",
+  "name": "rst-ioc",
+  "requiredOneOf": [
+    "score-total"
+  ],
+  "uuid": "9b8e1d2a-3c4f-4a5b-8c6d-7e8f9a0b1c2d",
+  "version": 1
+}
