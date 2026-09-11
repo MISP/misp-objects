@@ -1,0 +1,151 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "A description of what the analytics rule detects.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "data-connector": {
+      "description": "Required data connector(s) or table(s) the query depends on.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "entity-field": {
+      "description": "Query result field mapped to an entity, paired with entity-type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "entity-type": {
+      "description": "Entity type mapped from the query results (e.g. Account, Host, IP).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "kind": {
+      "description": "Analytics rule kind.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "Scheduled",
+        "NRT",
+        "MicrosoftSecurityIncidentCreation",
+        "Fusion",
+        "MLBehaviorAnalytics",
+        "ThreatIntelligence"
+      ]
+    },
+    "mitre-attack-tactic": {
+      "description": "MITRE ATT&CK tactic(s) associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mitre-attack-technique": {
+      "description": "MITRE ATT&CK technique(s) associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "product": {
+      "description": "Microsoft product the KQL analytics rule is deployed on.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "Microsoft Sentinel",
+        "Microsoft Defender XDR"
+      ]
+    },
+    "query": {
+      "description": "KQL (Kusto Query Language) query implementing the detection.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "query-frequency": {
+      "description": "How often the query runs (ISO 8601 duration, e.g. PT1H).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "query-period": {
+      "description": "Look-back period searched by the query (ISO 8601 duration, e.g. PT1H).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "reference": {
+      "description": "Reference URL for the rule source or documentation.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "rule-id": {
+      "description": "Unique identifier (GUID) of the analytics rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rule-name": {
+      "description": "Human-readable name of the analytics rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "severity": {
+      "description": "Severity assigned to the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "Informational",
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "trigger-operator": {
+      "description": "Operator used to compare the result count against trigger-threshold.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2,
+      "values_list": [
+        "gt",
+        "lt",
+        "eq",
+        "ne"
+      ]
+    },
+    "trigger-threshold": {
+      "description": "Result count threshold that triggers an alert.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 2
+    },
+    "version": {
+      "description": "Version of the analytics rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing a Microsoft Sentinel or Microsoft Defender XDR KQL analytics rule (Scheduled/NRT), including scheduling, alert thresholds, entity mappings, and MITRE ATT&CK mapping.",
+  "meta-category": "misc",
+  "name": "kql-analytics-rule",
+  "requiredOneOf": [
+    "query",
+    "rule-id",
+    "rule-name"
+  ],
+  "uuid": "f23e6424-ce43-410d-a3b3-7c15e79cf1ac",
+  "version": 1
+}
