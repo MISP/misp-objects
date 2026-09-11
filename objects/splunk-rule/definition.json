@@ -1,0 +1,128 @@
+{
+  "attributes": {
+    "analytic-story": {
+      "description": "Splunk Security Content analytic story / use case grouping this detection belongs to.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "app": {
+      "description": "Splunk app or add-on namespace the search runs in (e.g. Splunk Enterprise Security, ES Content Update).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "author": {
+      "description": "Author(s) of the detection search.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "comment": {
+      "description": "A description of the Splunk detection/correlation search.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "data-source": {
+      "description": "Sourcetype(s), index(es), or data model(s) queried by the search.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "known-false-positives": {
+      "description": "Known false positives or limitations of the detection.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "mitre-attack-id": {
+      "description": "MITRE ATT&CK technique ID(s) associated with the detection.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Reference URL for the detection source or documentation.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "risk-score": {
+      "description": "Risk score assigned to the detection (0-100).",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "rule-id": {
+      "description": "Unique identifier of the detection, such as the Splunk Security Content id field.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rule-name": {
+      "description": "Human-readable name of the Splunk detection/correlation search.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "schedule": {
+      "description": "Search schedule or cron_schedule the detection runs on.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "severity": {
+      "description": "Severity assigned to the detection.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "informational",
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "spl": {
+      "description": "Search Processing Language (SPL) query implementing the detection.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "type": {
+      "description": "Splunk Security Content detection type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "TTP",
+        "Hunting",
+        "Anomaly",
+        "Correlation",
+        "Baseline"
+      ]
+    },
+    "version": {
+      "description": "Version of the detection search.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing a Splunk detection/correlation search (SPL query), its scheduling, risk scoring, and MITRE ATT&CK mapping, following the Splunk Security Content (ESCU) detection format.",
+  "meta-category": "misc",
+  "name": "splunk-rule",
+  "requiredOneOf": [
+    "spl",
+    "rule-id",
+    "rule-name"
+  ],
+  "uuid": "13071b9d-d35b-465c-8e35-f47bc0d29f09",
+  "version": 1
+}
