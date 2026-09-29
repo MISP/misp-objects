@@ -40,7 +40,7 @@
       "disable_correlation": true,
       "misp-attribute": "port",
       "multiple": true,
-      "ui-priority": 1
+      "ui-priority": 2
     },
     "first-seen": {
       "description": "First time the tuple has been seen",
@@ -66,7 +66,7 @@
       "description": "IP Address",
       "misp-attribute": "ip-dst",
       "multiple": true,
-      "ui-priority": 1
+      "ui-priority": 3
     },
     "ip-dst": {
       "categories": [
@@ -140,5 +140,5 @@
     "ip-dst"
   ],
   "uuid": "9f8cea74-16fe-4968-a2b4-026676949ac6",
-  "version": 10
+  "version": 11
 }
