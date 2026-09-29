@@ -1,0 +1,78 @@
+{
+  "attributes": {
+    "architecture": {
+      "description": "CPU architecture for the image (e.g., amd64, arm64).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7
+    },
+    "created": {
+      "description": "Date and time at which the image was created.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 6
+    },
+    "digest": {
+      "description": "Image digest.",
+      "misp-attribute": "sha256",
+      "ui-priority": 9
+    },
+    "image-name": {
+      "description": "Name of the image (e.g., nginx).",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "labels": {
+      "description": "Metadata labels attached to the image.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "layers": {
+      "description": "List of image layers or references to them.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "os": {
+      "description": "Base OS of the image (e.g., alpine, debian).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 7
+    },
+    "registry": {
+      "description": "Container registry URL or name (e.g., docker.io, ghcr.io).",
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "signature": {
+      "description": "Signing information for the image (e.g., cosign metadata).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "size": {
+      "description": "Image size in bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 6
+    },
+    "tag": {
+      "description": "Image tag (e.g., latest, 1.21-alpine).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 9
+    }
+  },
+  "description": "Generic container-image object template to represent container images across platforms.",
+  "meta-category": "misc",
+  "name": "container-image",
+  "requiredOneOf": [
+    "image-name",
+    "digest"
+  ],
+  "uuid": "4aa82e67-ed3d-48a2-8ecd-7a39cf2c3f3c",
+  "version": 1
+}

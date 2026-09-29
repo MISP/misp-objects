@@ -1,0 +1,162 @@
+{
+  "attributes": {
+    "author": {
+      "description": "Author(s) of the detection rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Human-readable description of what the rule detects.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "false-positive": {
+      "description": "Known false positive scenario for the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "from": {
+      "description": "Look-back window the rule searches from on each run (e.g. now-6m).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "index": {
+      "description": "Index pattern(s) queried by the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "interval": {
+      "description": "Interval at which the rule is executed (e.g. 5m).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "language": {
+      "description": "Query language used by the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "kuery",
+        "lucene",
+        "eql",
+        "esql"
+      ]
+    },
+    "license": {
+      "description": "License applied to the detection rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "max-signals": {
+      "description": "Maximum number of alerts the rule can create per execution.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "mitre-attack-tactic": {
+      "description": "MITRE ATT&CK tactic(s) associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "mitre-attack-technique": {
+      "description": "MITRE ATT&CK technique(s) associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "query": {
+      "description": "Query (KQL, Lucene, EQL, or ES|QL depending on language) implementing the detection.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "reference": {
+      "description": "Reference URL for the rule source or documentation.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "risk-score": {
+      "description": "Risk score assigned to the rule (0-100).",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "rule-id": {
+      "description": "Unique identifier of the rule (the rule_id UUID field in Elastic).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rule-name": {
+      "description": "Human-readable name of the detection rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "severity": {
+      "description": "Severity assigned to the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "tag": {
+      "description": "Free-text tag associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "type": {
+      "description": "Elastic detection rule type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "query",
+        "eql",
+        "esql",
+        "threshold",
+        "machine_learning",
+        "threat_match",
+        "new_terms",
+        "saved_query"
+      ]
+    },
+    "version": {
+      "description": "Version of the detection rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing an Elastic Security detection rule (KQL/Lucene/EQL/ES|QL query), its scheduling, risk scoring, and MITRE ATT&CK mapping, following the Elastic detection-rules schema.",
+  "meta-category": "misc",
+  "name": "elastic-detection-rule",
+  "requiredOneOf": [
+    "query",
+    "rule-id",
+    "rule-name"
+  ],
+  "uuid": "5867f36d-b252-4cc6-b939-34e125274547",
+  "version": 1
+}

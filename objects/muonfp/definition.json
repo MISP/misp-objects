@@ -1,0 +1,76 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the MuonFP fingerprint, including scope, collection context or notes which could help an analyst to reproduce the calculation.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "first-seen": {
+      "description": "First time the MuonFP fingerprint has been observed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "ip-dst": {
+      "description": "Destination IP address associated with this MuonFP fingerprint observation.",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "ip-src": {
+      "description": "Source IP address associated with this MuonFP fingerprint observation.",
+      "misp-attribute": "ip-src",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "last-seen": {
+      "description": "Last time the MuonFP fingerprint has been observed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "muonfp-fingerprint": {
+      "description": "MuonFP fingerprint computed from TCP SYN/SYN-ACK packet attributes, expressed as 'TCPWindowSize:TCPOptions:TCPMSS:TCPWindowScale' (e.g. 26847:2-4-8-1-3:1460:8).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Reference to the source, tool or report associated with this MuonFP fingerprint.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "tcp-mss": {
+      "description": "TCP Maximum Segment Size (MSS) component of the MuonFP fingerprint.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "tcp-options": {
+      "description": "Ordered list of TCP option KIND values used in the MuonFP fingerprint, dash-separated as observed during the TCP handshake (e.g. 2-4-8-1-3).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "tcp-window-scale": {
+      "description": "TCP Window Scale factor component of the MuonFP fingerprint.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "tcp-window-size": {
+      "description": "TCP Window Size component of the MuonFP fingerprint.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    }
+  },
+  "description": "MuonFP is an open-source TCP fingerprinting standard built from TCP SYN/SYN-ACK packet attributes (TCP Window Size, ordered TCP Options KIND list, TCP MSS and TCP Window Scale), inspired by p0f. The fingerprint is expressed as 'TCPWindowSize:TCPOptions:TCPMSS:TCPWindowScale'. https://github.com/sundruid/muonfp",
+  "meta-category": "network",
+  "name": "muonfp",
+  "requiredOneOf": [
+    "muonfp-fingerprint"
+  ],
+  "uuid": "ea8eb2d5-22d4-4ab9-a66e-323ed3887cbb",
+  "version": 1
+}

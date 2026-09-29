@@ -1,0 +1,127 @@
+{
+  "attributes": {
+    "conversion_type": {
+      "description": "Direction of the CTI conversion.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "MISP_TO_STIX",
+        "STIX_TO_MISP"
+      ],
+      "ui-priority": 1,
+      "values_list": [
+        "MISP_TO_STIX",
+        "STIX_TO_MISP"
+      ]
+    },
+    "created_at": {
+      "description": "Date and time when the conversion was created.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "deleted_at": {
+      "description": "Date and time when the conversion was deleted, if it has been moved to trash or removed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description or analyst notes for the conversion.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "detail_url": {
+      "description": "URL linking to the conversion detail page.",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "input_text": {
+      "description": "Input CTI content submitted for conversion, typically MISP JSON or a STIX bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "MISP JSON input",
+        "STIX JSON input"
+      ],
+      "ui-priority": 1
+    },
+    "is_active": {
+      "description": "Boolean flag indicating whether the conversion is active and not in trash.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "true"
+      ],
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Title or name of the conversion.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "output_text": {
+      "description": "Output CTI content produced by the conversion, typically a STIX bundle or MISP JSON.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "STIX JSON output",
+        "MISP JSON output"
+      ],
+      "ui-priority": 1
+    },
+    "output_type": {
+      "description": "Expected output CTI format produced by the conversion.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "STIX",
+        "MISP"
+      ],
+      "ui-priority": 1,
+      "values_list": [
+        "STIX",
+        "MISP"
+      ]
+    },
+    "public": {
+      "description": "Visibility flag indicating whether the conversion is public.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "false"
+      ],
+      "ui-priority": 1
+    },
+    "updated_at": {
+      "description": "Date and time when the conversion was last updated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "user_id": {
+      "description": "Identifier of the user or author who performed or owns the CTI Transmute conversion.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 1
+    },
+    "uuid": {
+      "description": "UUID of the conversion record.",
+      "misp-attribute": "uuid",
+      "ui-priority": 1
+    }
+  },
+  "description": "CTI Transmute conversion record describing MISP to STIX or STIX to MISP conversion metadata, inputs, outputs, status, and detail link.",
+  "meta-category": "misc",
+  "name": "cti-transmute-conversion",
+  "required": [
+    "name",
+    "input_text",
+    "conversion_type",
+    "output_text"
+  ],
+  "uuid": "feb1cf21-a557-454d-89ed-4716afa183aa",
+  "version": 1
+}

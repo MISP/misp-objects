@@ -1,0 +1,48 @@
+{
+  "attributes": {
+    "benign": {
+      "description": "Raw RST Noise Control benign flag (true / false).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "category": {
+      "description": "rstcloud:noise-category value: free-form category the verdict came from (scanner / CDN / cloud provider name or path), verbatim from RST Noise Control.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ioc-type": {
+      "description": "Indicator type the verdict applies to (ip / domain / url / hash).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ref": {
+      "description": "Reference URL backing the verdict, when provided.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "verdict": {
+      "description": "RST Noise Control verdict. Maps to rstcloud:noise-control: BENIGN - known-good → drop (safe to suppress); NOISY - reduce score → change-score (noisy infra, reduce score only); Not flagged → not in database.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not flagged",
+        "NOISY - reduce score",
+        "BENIGN - known-good"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "RST Cloud Noise Control verdict for an indicator (IP, domain, URL or hash): known-good / noisy infrastructure (rstcloud:noise-control drop / change-score) and category (rstcloud:noise-category). Reference it to the enriched attribute.",
+  "meta-category": "misc",
+  "name": "rst-noise",
+  "requiredOneOf": [
+    "verdict"
+  ],
+  "uuid": "a1b2c3d4-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+  "version": 1
+}

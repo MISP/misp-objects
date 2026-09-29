@@ -1,0 +1,137 @@
+{
+  "attributes": {
+    "collection-method": {
+      "description": "Collection method, interview, sensor, liaison, exploitation or observation method used.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "collection-time": {
+      "description": "Date-time group (DTG) or timestamp when information was collected.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "collector-unit": {
+      "description": "Unit, organization or collector element that collected or reported the information.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "comment": {
+      "description": "Additional analyst or operator comments.",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "confidence": {
+      "description": "Analytic confidence or certainty assigned to the assessed information.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "low",
+        "medium",
+        "high",
+        "unknown"
+      ]
+    },
+    "evaluation": {
+      "description": "Evaluation of source, information, BDA, bias, access, timeliness or corroboration.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "information-credibility": {
+      "description": "Information credibility rating, including Admiralty/NATO-style 1-6 ratings where applicable.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "1 - Confirmed by other sources",
+        "2 - Probably true",
+        "3 - Possibly true",
+        "4 - Doubtfully true",
+        "5 - Improbable",
+        "6 - Truth cannot be judged"
+      ]
+    },
+    "raw-assessment": {
+      "description": "Original source evaluation, collector note, grading record or supporting file.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "related-report": {
+      "description": "Related INTREP, intelligence report, message or MISP event/object identifier.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "related-requirement": {
+      "description": "Related PIR, IR, RFI, tasking or collection requirement identifier.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "source-id": {
+      "description": "Identifier, code name or local reference for the source, collector or reporting channel.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "source-reliability": {
+      "description": "Source reliability rating, including Admiralty/NATO-style A-F ratings where applicable.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "A - Completely reliable",
+        "B - Usually reliable",
+        "C - Fairly reliable",
+        "D - Not usually reliable",
+        "E - Unreliable",
+        "F - Reliability cannot be judged"
+      ]
+    },
+    "source-summary": {
+      "description": "Non-sensitive summary of the source, access, placement or reporting channel.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "source-type": {
+      "description": "Type of source or collection discipline.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "HUMINT",
+        "CI",
+        "SIGINT",
+        "ELINT",
+        "IMINT",
+        "OSINT",
+        "MASINT",
+        "TECHINT",
+        "FININT",
+        "SOCMINT",
+        "All-source",
+        "Other"
+      ]
+    }
+  },
+  "description": "Object template to capture source reliability, information credibility and evaluation details supporting an INTREP or similar intelligence report.",
+  "meta-category": "misc",
+  "name": "intelligence-source-assessment",
+  "requiredOneOf": [
+    "source-id",
+    "source-summary",
+    "information-credibility",
+    "raw-assessment"
+  ],
+  "uuid": "2d3a5895-6c54-50b5-bd25-ce33e974c50a",
+  "version": 1
+}

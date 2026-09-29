@@ -1,0 +1,112 @@
+{
+  "attributes": {
+    "case-number": {
+      "description": "Case number associated with this item.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "collection-date": {
+      "description": "Date when the item was collected.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 2
+    },
+    "collector": {
+      "description": "Person or unit that collected the item.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "currency": {
+      "description": "Currency used for estimated value.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "EUR",
+        "USD",
+        "GBP",
+        "CHF",
+        "JPY",
+        "other"
+      ],
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Narrative description of the item.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "estimated-value": {
+      "description": "Estimated monetary value of the item.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 0
+    },
+    "item-number": {
+      "description": "Unique item number as listed by an analyst.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "item-picture": {
+      "description": "Picture or scan of the item.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 4
+    },
+    "item-status": {
+      "description": "Current handling status of the item.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "collected",
+        "in-analysis",
+        "stored",
+        "transferred",
+        "returned",
+        "destroyed",
+        "unknown"
+      ],
+      "ui-priority": 3
+    },
+    "owner": {
+      "description": "Known owner or possessor of the item.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "packaging": {
+      "description": "How the item is packaged or sealed.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "recovered-from": {
+      "description": "Place, object, or person from which the item was recovered.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "seal-number": {
+      "description": "Seal or evidence bag number used for custody.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "storage-location": {
+      "description": "Current storage location of the item.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "A generic item object for analysts to track collection, custody, and contextual details of a physical item.",
+  "meta-category": "misc",
+  "name": "physical-item",
+  "required": [
+    "item-number",
+    "description"
+  ],
+  "uuid": "9d239b58-0be6-410f-836d-6634802f08ca",
+  "version": 1
+}

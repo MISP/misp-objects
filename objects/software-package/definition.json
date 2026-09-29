@@ -1,0 +1,46 @@
+{
+  "attributes": {
+    "description": {
+      "description": "Description of the software package.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "name": {
+      "description": "Name of the software package.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "state": {
+      "description": "Known state of the package (e.g., valid, backdoored, unknown).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "valid",
+        "backdoored",
+        "unknown"
+      ],
+      "ui-priority": 7
+    },
+    "vendor": {
+      "description": "Vendor or maintainer of the software package.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "version": {
+      "description": "Version of the software package.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 9
+    }
+  },
+  "description": "Generic software package object template to represent software packages and their state.",
+  "meta-category": "misc",
+  "name": "software-package",
+  "requiredOneOf": [
+    "name"
+  ],
+  "uuid": "77038ecf-89e3-4115-a86f-4d00f0308e1e",
+  "version": 1
+}

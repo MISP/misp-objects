@@ -1,0 +1,66 @@
+{
+  "attributes": {
+    "comment": {
+      "description": "Notes on tuning, thresholds, or known exclusions.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "data-source": {
+      "description": "Index, sourcetype, or table the query runs against.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hypothesis-id": {
+      "description": "Local hypothesis-id this query tests, e.g. H1. Also link formally via an Object Reference of type 'tests' to the threat-hunt-hypothesis object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "platform": {
+      "description": "Platform the query is written for.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Splunk",
+        "Microsoft Sentinel",
+        "Elastic",
+        "CrowdStrike",
+        "Chronicle",
+        "osquery"
+      ],
+      "ui-priority": 0
+    },
+    "query": {
+      "description": "The literal query or search.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "query-language": {
+      "description": "Language/dialect of the query.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "SPL",
+        "KQL",
+        "EQL",
+        "OSQuery SQL",
+        "YARA-L",
+        "STIX Pattern",
+        "Other"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "A platform-native hunting query used to test a hypothesis. Use this object for SPL, KQL, EQL, and similar query languages. When the detection logic is portable, prefer the standard MISP sigma or yara object instead and link it to the hypothesis with a 'tests' Object Reference.",
+  "meta-category": "threat-hunting",
+  "name": "threat-hunt-query",
+  "required": [
+    "query",
+    "query-language"
+  ],
+  "uuid": "0fc943ec-c8fd-4311-b748-249bdef0f7d8",
+  "version": 1
+}

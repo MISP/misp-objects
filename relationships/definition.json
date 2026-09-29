@@ -712,9 +712,11 @@
     {
       "description": "This relationship describes an object which is an operator of another object.",
       "format": [
-        "cert-eu"
+        "cert-eu",
+        "misp"
       ],
-      "name": "operator-of"
+      "name": "operator-of",
+      "opposite": "operated-by"
     },
     {
       "description": "This relationship describes an object which overlaps another object.",
@@ -727,9 +729,11 @@
       "description": "This relationship describes an object which owns another object.",
       "format": [
         "cert-eu",
-        "alfred"
+        "alfred",
+        "misp"
       ],
-      "name": "owner-of"
+      "name": "owner-of",
+      "opposite": "owned-by"
     },
     {
       "description": "This relationship describes an object which publishes method for another object.",
@@ -785,7 +789,8 @@
       "format": [
         "misp"
       ],
-      "name": "controls"
+      "name": "controls",
+      "opposite": "controlled-by"
     },
     {
       "description": "This relationships describes an object which annotates another object.",
@@ -2373,7 +2378,47 @@
       ],
       "name": "inspects",
       "opposite": "inspected-by"
+    },
+    {
+      "description": "This relationship describes an object which is operated by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "operated-by",
+      "opposite": "operator-of"
+    },
+    {
+      "description": "This relationship describes an object which is owned by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "owned-by",
+      "opposite": "owner-of"
+    },
+    {
+      "description": "This relationship describes an object which is controlled by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "controlled-by",
+      "opposite": "controls"
+    },
+    {
+      "description": "This relationship describes an object which manufactures another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "manufactures",
+      "opposite": "manufactured-by"
+    },
+    {
+      "description": "This relationship describes an object which is manufactured by another object.",
+      "format": [
+        "misp"
+      ],
+      "name": "manufactured-by",
+      "opposite": "manufactures"
     }
   ],
-  "version": 52
+  "version": 54
 }

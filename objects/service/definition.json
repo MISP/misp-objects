@@ -1,0 +1,36 @@
+{
+  "attributes": {
+    "command-line": {
+      "description": "Command line used to run the service.",
+      "misp-attribute": "text",
+      "ui-priority": 7
+    },
+    "function": {
+      "description": "Function or purpose of the service.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "name": {
+      "description": "Name of the service.",
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "port": {
+      "description": "Port used by the service.",
+      "disable_correlation": true,
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 9
+    }
+  },
+  "description": "Generic service object template to represent services that may be attacked or compromised.",
+  "meta-category": "misc",
+  "name": "service",
+  "requiredOneOf": [
+    "name",
+    "command-line"
+  ],
+  "uuid": "c69bd10e-0829-451d-8fe5-9ee4dda4492a",
+  "version": 1
+}

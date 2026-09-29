@@ -93,7 +93,7 @@
   },
   "description": "A diamond model event object consisting of the four diamond features advesary, infrastructure, capability and victim, several meta-features and ioc attributes.",
   "meta-category": "internal",
-  "name": "diamond-event",
+  "name": "diamond",
   "required": [
     "EventID",
     "Advesary",

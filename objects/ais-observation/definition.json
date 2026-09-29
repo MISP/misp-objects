@@ -1,0 +1,162 @@
+{
+  "attributes": {
+    "ETA": {
+      "description": "Estimated time of arrival at destination.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 89
+    },
+    "IMO-number": {
+      "description": "IMO ship identification number.",
+      "misp-attribute": "text",
+      "ui-priority": 99
+    },
+    "MMSI": {
+      "description": "Maritime Mobile Service Identity (MMSI): unique 9-digit vessel identity.",
+      "misp-attribute": "text",
+      "ui-priority": 100
+    },
+    "attack-type": {
+      "description": "Suspected attack or manipulation type affecting this AIS observation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 30,
+      "values_list": [
+        "none",
+        "spoofing",
+        "replay",
+        "jamming",
+        "message-injection",
+        "ghost-vessel",
+        "position-manipulation",
+        "identity-hijack",
+        "route-manipulation",
+        "other"
+      ]
+    },
+    "call-sign": {
+      "description": "International radio call-sign.",
+      "misp-attribute": "text",
+      "ui-priority": 97
+    },
+    "course-over-ground": {
+      "description": "Observed course over ground in degrees.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 93
+    },
+    "destination": {
+      "description": "Destination declared in AIS static/voyage data.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 90
+    },
+    "detection-method": {
+      "description": "Method used to detect the anomaly (geofence, impossible movement, sensor fusion, etc.).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 28
+    },
+    "discrepancy-detail": {
+      "description": "Structured human-readable details explaining why this observation appears suspicious.",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 27
+    },
+    "first-seen": {
+      "description": "First timestamp this observation was seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 88
+    },
+    "last-seen": {
+      "description": "Last timestamp this observation was seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 87
+    },
+    "latitude": {
+      "description": "Observed latitude (WGS84).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 96
+    },
+    "longitude": {
+      "description": "Observed longitude (WGS84).",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 95
+    },
+    "name": {
+      "description": "Vessel name as broadcast over AIS.",
+      "misp-attribute": "text",
+      "ui-priority": 98
+    },
+    "navigational-status": {
+      "description": "Navigational status transmitted by AIS.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 91
+    },
+    "observation-type": {
+      "description": "Classification of the shared record to distinguish routine telemetry from security-focused observations.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 84,
+      "values_list": [
+        "telemetry-snapshot",
+        "security-alert",
+        "correlation-result"
+      ]
+    },
+    "raw-message": {
+      "description": "Raw NMEA AIS message payload when available.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 85
+    },
+    "receiver-id": {
+      "description": "Identifier of the receiver or sensor producing this observation.",
+      "misp-attribute": "text",
+      "ui-priority": 86
+    },
+    "related-ais-object-uuid": {
+      "description": "UUID of a related ais object containing baseline vessel telemetry context for this observation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 83
+    },
+    "speed-over-ground": {
+      "description": "Observed speed over ground in knots.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 94
+    },
+    "suspicion-score": {
+      "description": "Analyst or system confidence score (0-100) that the observation is malicious or manipulated.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 29
+    },
+    "true-heading": {
+      "description": "Observed true heading in degrees.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 92
+    }
+  },
+  "description": "Observation object for AIS telemetry and security anomalies, including spoofing and other AIS attacks. This template complements ais (baseline vessel data) and ais-info (source/provenance markings).",
+  "meta-category": "marine",
+  "name": "ais-observation",
+  "requiredOneOf": [
+    "MMSI",
+    "IMO-number",
+    "raw-message"
+  ],
+  "uuid": "7aef2fc4-6d89-4293-94f2-f2010b7e3ad0",
+  "version": 2
+}

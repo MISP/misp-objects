@@ -1,0 +1,117 @@
+{
+  "attributes": {
+    "action": {
+      "description": "Primary action of the rule, such as block, deny, pass, or log.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "category": {
+      "description": "High-level rule category, such as SQL injection, XSS, LFI, or protocol attack.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "crs-version": {
+      "description": "OWASP CRS version associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "file": {
+      "description": "CRS rule file where the rule is defined, such as REQUEST-942-APPLICATION-ATTACK-SQLI.conf.",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "ui-priority": 2
+    },
+    "message": {
+      "description": "Rule message / description.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "operator": {
+      "description": "Operator used by the rule, such as rx, pm, detectSQLi.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "paranoia-level": {
+      "description": "CRS paranoia level for the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "phase": {
+      "description": "Processing phase where the rule is evaluated.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2,
+      "values_list": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "raw-rule": {
+      "description": "Original raw SecRule content.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 3
+    },
+    "reference": {
+      "description": "Reference URL for the rule or documentation.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "rule-id": {
+      "description": "Unique OWASP CRS rule identifier.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "severity": {
+      "description": "Severity assigned to the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "CRITICAL",
+        "ERROR",
+        "WARNING",
+        "NOTICE"
+      ]
+    },
+    "tag": {
+      "description": "CRS metadata tag, such as paranoia-level/2 or OWASP_CRS/WEB_ATTACK/SQL_INJECTION.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "target": {
+      "description": "Target variable(s) inspected by the rule, such as REQUEST_HEADERS or ARGS.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    }
+  },
+  "description": "OWASP Core Rule Set (CRS) rule metadata for a WAF detection rule.",
+  "meta-category": "network",
+  "name": "owasp-crs-rule",
+  "requiredOneOf": [
+    "rule-id",
+    "message"
+  ],
+  "uuid": "8f0a7d9a-7b5d-4d6e-9d7b-2b2d9d9d1001",
+  "version": 1
+}

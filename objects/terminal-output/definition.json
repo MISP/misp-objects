@@ -1,0 +1,113 @@
+{
+  "attributes": {
+    "capture-method": {
+      "description": "How the terminal output was captured.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 9,
+      "values_list": [
+        "Terminal session logging",
+        "Interactive shell history",
+        "Scripted collection",
+        "EDR telemetry",
+        "Remote command execution logs",
+        "SIEM ingested logs",
+        "Screen capture",
+        "Clipboard capture",
+        "Unknown"
+      ]
+    },
+    "capture-tool": {
+      "description": "Tool or subsystem used to capture terminal output (for example script, agent, terminal multiplexer, or EDR sensor).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "command": {
+      "description": "Command line or statement that generated the terminal output.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "comment": {
+      "description": "Contextual information about the terminal output.",
+      "misp-attribute": "comment",
+      "ui-priority": 1
+    },
+    "encoding": {
+      "description": "Character encoding used in the terminal output.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "UTF-8",
+        "UTF-16LE",
+        "UTF-16BE",
+        "US-ASCII",
+        "ISO-8859-1",
+        "Windows-1252",
+        "Shift_JIS",
+        "GB18030"
+      ],
+      "ui-priority": 7
+    },
+    "output": {
+      "description": "Terminal output text.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 10
+    },
+    "output-reference": {
+      "description": "Reference to the terminal context, such as host, TTY/PTS identifier, session ID, or log source path.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 6
+    },
+    "output-stream": {
+      "description": "Output stream where the text was observed.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 3,
+      "values_list": [
+        "stdout",
+        "stderr",
+        "combined",
+        "unknown"
+      ]
+    },
+    "return-code": {
+      "description": "Return or exit code associated with the executed command.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 4
+    },
+    "terminal-type": {
+      "description": "Terminal family or operating-system context of the output.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2,
+      "values_list": [
+        "Unix",
+        "Linux",
+        "Windows",
+        "macOS",
+        "BSD",
+        "Other"
+      ]
+    },
+    "timestamp": {
+      "description": "Timestamp when the terminal output was observed or collected.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object describing captured terminal output, including platform context, encoding, capture method, and resulting text.",
+  "meta-category": "misc",
+  "name": "terminal-output",
+  "required": [
+    "output"
+  ],
+  "uuid": "a67796b8-d2c5-4d83-87bc-93baec8e39c4",
+  "version": 1
+}

@@ -1,0 +1,63 @@
+{
+  "attributes": {
+    "analysis": {
+      "description": "Analytic reasoning applied when testing the hypothesis: thought process, pivoting logic, baseline used (Execute > Analysis).",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "attack-id": {
+      "description": "MITRE ATT&CK technique/sub-technique ID(s) this hypothesis targets, e.g. T1110.003. Pair with a mitre-attack-pattern galaxy tag on this object for machine-readable correlation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "hypothesis": {
+      "description": "The hypothesis statement.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hypothesis-id": {
+      "description": "Short local identifier (e.g. H1) used to cross-reference this hypothesis from threat-hunt-query and threat-hunt-finding objects within the same event.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rationale": {
+      "description": "Why the hypothesis was included or excluded from scope.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "scope": {
+      "description": "Whether this hypothesis was included or excluded from the hunt (Scope section).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "In-Scope",
+        "Out-of-Scope"
+      ],
+      "ui-priority": 0
+    },
+    "status": {
+      "description": "Execution status of this hypothesis.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Not Started",
+        "In Progress",
+        "Tested",
+        "Deferred"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "A single testable hypothesis from the Scope and Execute sections of a hunt: its scoping decision, targeted ATT&CK technique(s), and analytic reasoning. One instance per hypothesis.",
+  "meta-category": "threat-hunting",
+  "name": "threat-hunt-hypothesis",
+  "required": [
+    "hypothesis",
+    "scope"
+  ],
+  "uuid": "4136cd18-3edd-49fb-90ba-24cbacacc662",
+  "version": 1
+}

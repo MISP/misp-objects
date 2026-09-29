@@ -94,7 +94,7 @@
   },
   "description": "Fake persona with tasks",
   "meta-category": "misc",
-  "name": "Deception PersNOna",
+  "name": "persnona",
   "required": [
     "name"
   ],

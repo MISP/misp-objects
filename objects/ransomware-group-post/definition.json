@@ -50,6 +50,11 @@
       "misp-attribute": "link",
       "ui-priority": 1
     },
+    "proof": {
+      "description": "Link to a proof (usually a screenshot).",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
     "ransomware-group": {
       "description": "Ransomware group where the post is mentioned.",
       "disable_correlation": true,
@@ -97,5 +102,5 @@
     "leak-site-url"
   ],
   "uuid": "52a0e179-4942-41e6-90f5-7db856fd6f39",
-  "version": 4
+  "version": 5
 }

@@ -1,0 +1,214 @@
+{
+  "attributes": {
+    "activity-time": {
+      "description": "Date-time group (DTG) or timestamp of the observed activity.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "authentication": {
+      "description": "Report authentication, release authority or validating official.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "classification": {
+      "description": "Classification, marking or traffic-light protocol applied to the report.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "UNCLASSIFIED",
+        "CONFIDENTIAL",
+        "SECRET",
+        "TOP SECRET",
+        "NATO RESTRICTED",
+        "NATO CONFIDENTIAL",
+        "NATO SECRET",
+        "TLP:CLEAR",
+        "TLP:GREEN",
+        "TLP:AMBER",
+        "TLP:AMBER+STRICT",
+        "TLP:RED"
+      ]
+    },
+    "comment": {
+      "description": "Additional analyst or operator comments.",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "conclusion": {
+      "description": "Reporter analysis of what the reported information means.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "date-time": {
+      "description": "Date-time group (DTG) or timestamp when the report was made.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "disseminated-to": {
+      "description": "Unit, organization, staff section or distribution list that received the report.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "dissemination-time": {
+      "description": "Date-time group (DTG) or timestamp when the report was disseminated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "enemy-activity": {
+      "description": "Enemy activity description, including direction and speed if moving.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "enemy-equipment": {
+      "description": "Major enemy equipment observed or assessed.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "enemy-location": {
+      "description": "Enemy location such as UTM, MGRS grid, coordinate, place or area.",
+      "misp-attribute": "target-location",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "enemy-size": {
+      "description": "Enemy strength, size or number observed or assessed.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "enemy-unit": {
+      "description": "Enemy nationality, unit designator, name or type.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "evaluation": {
+      "description": "Evaluation of source, information, BDA or confidence.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "format-reference": {
+      "description": "Doctrine, STANAG, SOP or other format reference used to produce the report.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "handling-instructions": {
+      "description": "Caveats, releasability or handling instructions for the report.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "narrative": {
+      "description": "Free text for additional information required for clarification of the report.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "precedence": {
+      "description": "Message precedence assigned for transmission or dissemination.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0,
+      "values_list": [
+        "ROUTINE",
+        "PRIORITY",
+        "IMMEDIATE",
+        "FLASH",
+        "FLASH OVERRIDE"
+      ]
+    },
+    "raw-report": {
+      "description": "Original INTREP message, form, attachment or supporting file.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "related-report": {
+      "description": "Related message, report or MISP event/object identifier.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "related-requirement": {
+      "description": "Related PIR, IR, RFI, tasking or collection requirement identifier.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "report-id": {
+      "description": "Local, organizational or message identifier for the INTREP.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "report-number": {
+      "description": "Report format number, for example I001 or 1001 for INTREP.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "I001",
+        "1001"
+      ]
+    },
+    "report-type": {
+      "description": "Report or message type name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "INTREP",
+        "Intelligence Report"
+      ]
+    },
+    "reporting-unit": {
+      "description": "Unit, organization or collector element making the report.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sources": {
+      "description": "Reliability rating of source and credibility rating of information, or a source summary.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "usmtf-message-id": {
+      "description": "USMTF message identifier, for example C110 for INTREP.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "C110"
+      ]
+    }
+  },
+  "description": "Object template for an Intelligence Report (INTREP) based on FM 34-35, FM 101-5-2 and FM 6-99 report/message formats for tactical intelligence reporting and dissemination.",
+  "meta-category": "misc",
+  "name": "intelligence-report",
+  "requiredOneOf": [
+    "report-id",
+    "date-time",
+    "narrative",
+    "raw-report"
+  ],
+  "uuid": "a88289fe-9afb-54b7-97a6-f51c6a004942",
+  "version": 1
+}

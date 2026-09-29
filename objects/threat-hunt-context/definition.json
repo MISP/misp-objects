@@ -1,0 +1,96 @@
+{
+  "attributes": {
+    "contributor": {
+      "description": "Person, team, or organisation that contributed to the hunt (Equip > Contributors).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "data-source": {
+      "description": "Data source examined during the hunt (Equip > Data Sources Examined).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Network Logs",
+        "Sysmon Logs",
+        "Event Logs",
+        "EDR Telemetry",
+        "Cloud Audit Logs",
+        "DNS Logs",
+        "Proxy Logs"
+      ],
+      "ui-priority": 0
+    },
+    "hunt-title": {
+      "description": "Title of the hunt.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "methodology": {
+      "description": "Hunt methodology, per the PEAK framework. Mirror on the event as a hunt:methodology tag.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "structured-hypothesis-driven",
+        "unstructured-baseline",
+        "situational-ioc-driven",
+        "model-assisted"
+      ],
+      "ui-priority": 0
+    },
+    "period-end": {
+      "description": "End of the data window examined by the hunt.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "period-start": {
+      "description": "Start of the data window examined by the hunt.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "purpose": {
+      "description": "Why the hunt is being conducted: the trigger, driving intelligence, or business question (Purpose section).",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "status": {
+      "description": "Lifecycle state of the hunt. Mirror on the event as a workflow:state tag.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Planned",
+        "In Progress",
+        "Concluded",
+        "Recurring"
+      ],
+      "ui-priority": 0
+    },
+    "tool": {
+      "description": "Tooling or platform used to execute the hunt (Equip > Tools Utilized).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Splunk",
+        "Microsoft Sentinel",
+        "Elastic",
+        "CrowdStrike",
+        "Chronicle"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "Metadata describing the purpose, methodology, and resourcing of a threat hunt. One instance per MISP event; corresponds to the Purpose and Equip sections of the hunt report.",
+  "meta-category": "threat-hunting",
+  "name": "threat-hunt-context",
+  "required": [
+    "hunt-title",
+    "purpose"
+  ],
+  "uuid": "6dec94ff-b74b-4cab-ad38-3d3c8308bdb3",
+  "version": 1
+}

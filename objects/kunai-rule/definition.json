@@ -1,0 +1,114 @@
+{
+  "attributes": {
+    "action": {
+      "description": "Action(s) triggered when the rule matches (e.g. kill, scan-files).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "author": {
+      "description": "Author(s) of the rule (meta.authors).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "comment": {
+      "description": "A description of what the Kunai rule detects (meta.comments).",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "decision": {
+      "description": "Decision applied to matching events, controlling whether they are logged.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2,
+      "values_list": [
+        "include",
+        "exclude"
+      ]
+    },
+    "disabled": {
+      "description": "Set to true if the rule is disabled (params.disable).",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "false"
+      ],
+      "ui-priority": 2
+    },
+    "event-type": {
+      "description": "Kunai event type(s) the rule matches on (match-on.events.kunai), e.g. execve. Prefix with '-' to exclude an event type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "kunai": {
+      "description": "Kunai detection, filter, or dependency rule (YAML).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "mitre-attack-id": {
+      "description": "MITRE ATT&CK technique ID(s) associated with the rule (meta.attack).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Reference URL for the rule source or documentation.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "rule-name": {
+      "description": "Unique identifier of the Kunai rule (the top-level name field).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rule-type": {
+      "description": "Kunai rule type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "detection",
+        "filter",
+        "dependency"
+      ]
+    },
+    "severity": {
+      "description": "Severity score assigned to the rule (1-10, detection rules only).",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "tag": {
+      "description": "Free-text tag associated with the rule (meta.tags).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "version": {
+      "description": "Version of the Kunai rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing a Kunai rule (detection, filter, or dependency), its event matching, severity, and MITRE ATT&CK mapping, following the Kunai rule syntax (https://why.kunai.rocks/docs/next/advanced/rule_syntax_reference).",
+  "meta-category": "misc",
+  "name": "kunai-rule",
+  "requiredOneOf": [
+    "kunai",
+    "rule-name"
+  ],
+  "uuid": "234781be-628d-4735-beca-75b49dbce78f",
+  "version": 1
+}

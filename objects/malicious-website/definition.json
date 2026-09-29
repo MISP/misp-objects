@@ -1,0 +1,84 @@
+{
+  "attributes": {
+    "domain": {
+      "description": "Domain used by the malicious website.",
+      "misp-attribute": "domain",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "external-analysis": {
+      "description": "Reference URL(s) to external analysis or sandbox reports.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "hostname": {
+      "description": "Hostname used by the malicious website.",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "IP address used to host the malicious website.",
+      "misp-attribute": "ip-dst",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "reason": {
+      "description": "Context explaining why this website is considered malicious.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "source": {
+      "description": "Source of the intelligence about the malicious website.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "status": {
+      "description": "Current known operational status of the website.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "online",
+        "offline",
+        "sinkholed",
+        "takedown"
+      ],
+      "ui-priority": 0
+    },
+    "threat-type": {
+      "description": "Threat category associated with the malicious website.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "malware",
+        "phishing",
+        "scam",
+        "c2",
+        "exploit"
+      ],
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "URL of the malicious website.",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Object describing a malicious website outside of phishing-specific use-cases.",
+  "meta-category": "network",
+  "name": "malicious-website",
+  "requiredOneOf": [
+    "url",
+    "domain",
+    "hostname",
+    "ip"
+  ],
+  "uuid": "779a74c9-4d0f-4fd4-ac4e-9f278df9659c",
+  "version": 1
+}

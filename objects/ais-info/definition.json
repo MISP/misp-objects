@@ -41,7 +41,7 @@
       "ui-priority": 1
     }
   },
-  "description": "Automated Indicator Sharing (AIS) Information Source Markings.",
+  "description": "Automated Indicator Sharing (AIS) information source markings. This object complements ais or ais-observation by documenting sharing provenance/context and is not related to maritime Automatic Identification System protocol fields.",
   "meta-category": "misc",
   "name": "ais-info",
   "requiredOneOf": [
@@ -51,5 +51,5 @@
     "country"
   ],
   "uuid": "1f3f466d-465f-4c3a-8cce-933642c9ea83",
-  "version": 1
+  "version": 2
 }

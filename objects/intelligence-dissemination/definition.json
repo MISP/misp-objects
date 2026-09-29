@@ -1,0 +1,157 @@
+{
+  "attributes": {
+    "acknowledgement-required": {
+      "description": "Whether the recipient must acknowledge receipt.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "acknowledgement-time": {
+      "description": "Date-time group (DTG) or timestamp when receipt was acknowledged.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "classification": {
+      "description": "Classification, marking or traffic-light protocol applied to the disseminated information.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "UNCLASSIFIED",
+        "CONFIDENTIAL",
+        "SECRET",
+        "TOP SECRET",
+        "NATO RESTRICTED",
+        "NATO CONFIDENTIAL",
+        "NATO SECRET",
+        "TLP:CLEAR",
+        "TLP:GREEN",
+        "TLP:AMBER",
+        "TLP:AMBER+STRICT",
+        "TLP:RED"
+      ]
+    },
+    "comment": {
+      "description": "Additional analyst or operator comments.",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "dissemination-id": {
+      "description": "Local, organizational or message identifier for this dissemination action.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "dissemination-time": {
+      "description": "Date-time group (DTG) or timestamp when the information was disseminated.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "follow-up-action": {
+      "description": "Requested recipient action, follow-up tasking or next step.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "handling-instructions": {
+      "description": "Caveats, releasability, dissemination restrictions or handling instructions.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "information-copy": {
+      "description": "Information-copy addressee or secondary recipient.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "method": {
+      "description": "Dissemination method or channel.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "message",
+        "voice",
+        "email",
+        "chat",
+        "web portal",
+        "API",
+        "briefing",
+        "document",
+        "radio",
+        "courier",
+        "other"
+      ]
+    },
+    "originator": {
+      "description": "Unit, organization, staff section or system that originated the dissemination.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "precedence": {
+      "description": "Message precedence assigned for transmission or dissemination.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1,
+      "values_list": [
+        "ROUTINE",
+        "PRIORITY",
+        "IMMEDIATE",
+        "FLASH",
+        "FLASH OVERRIDE"
+      ]
+    },
+    "raw-dissemination": {
+      "description": "Original disseminated message, cover note, distribution record or supporting file.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "recipient": {
+      "description": "Unit, organization, staff section, system, distribution list or individual recipient.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Doctrine, SOP, message, URL or external reference supporting the dissemination.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "related-report": {
+      "description": "Related INTREP, intelligence report, message or MISP event/object identifier.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "release-authority": {
+      "description": "Authority, owner or approver authorizing dissemination or release.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "Object template to document dissemination, distribution, precedence, acknowledgments and follow-up handling for INTREP and similar intelligence reporting.",
+  "meta-category": "misc",
+  "name": "intelligence-dissemination",
+  "requiredOneOf": [
+    "dissemination-id",
+    "related-report",
+    "recipient",
+    "dissemination-time"
+  ],
+  "uuid": "fca90ca9-b3a9-52c2-972f-6617b75665f6",
+  "version": 1
+}

@@ -1,0 +1,255 @@
+{
+  "attributes": {
+    "action": {
+      "description": "Primary action of the packet filter rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "allow",
+        "deny",
+        "drop",
+        "accept",
+        "reject",
+        "pass",
+        "permit",
+        "block",
+        "log",
+        "count",
+        "queue",
+        "return"
+      ],
+      "ui-priority": 1
+    },
+    "comment": {
+      "description": "Comment, rationale, or analyst note associated with the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "comment",
+      "ui-priority": 3
+    },
+    "destination": {
+      "description": "Destination selector (IP, CIDR, object/group, or keyword such as any).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "destination-port": {
+      "description": "Destination port or port range targeted by the rule.",
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "direction": {
+      "description": "Traffic direction the rule applies to.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "ingress",
+        "egress",
+        "inbound",
+        "outbound",
+        "forward",
+        "input",
+        "output",
+        "any"
+      ],
+      "ui-priority": 2
+    },
+    "enabled": {
+      "description": "Whether the rule is enabled/active in policy.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "true",
+        "false"
+      ],
+      "ui-priority": 2
+    },
+    "interface": {
+      "description": "Interface, zone, or security context where the rule is enforced.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "logging": {
+      "description": "Whether matching traffic should be logged.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "true",
+        "false"
+      ],
+      "ui-priority": 3
+    },
+    "product": {
+      "description": "Firewall/packet-filter product implementing the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "netfilter",
+        "nftables",
+        "OpenBSD PF",
+        "Cisco IOS",
+        "Palo Alto PAN-OS",
+        "Fortinet FortiGate",
+        "Check Point Gaia",
+        "Windows Defender Firewall",
+        "AWS Security Group",
+        "Azure Network Security Group",
+        "Google Cloud VPC Firewall",
+        "pfSense",
+        "OPNsense",
+        "Cisco ASA",
+        "Cisco Firepower",
+        "Juniper SRX",
+        "SonicWall",
+        "MikroTik RouterOS",
+        "VyOS",
+        "ipfw",
+        "AWS Network ACL",
+        "Kubernetes NetworkPolicy"
+      ],
+      "ui-priority": 2
+    },
+    "protocol": {
+      "description": "L3/L4 protocol matched by the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "tcp",
+        "udp",
+        "icmp",
+        "ip",
+        "icmpv6",
+        "sctp",
+        "gre",
+        "esp",
+        "ah",
+        "any"
+      ],
+      "ui-priority": 2
+    },
+    "raw-rule": {
+      "description": "Original packet-filter rule string or policy stanza.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "reference": {
+      "description": "Reference URL for the rule source, policy export, or documentation.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "rule-format": {
+      "description": "Rule syntax or policy format used by the platform.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "netfilter-iptables",
+        "nftables",
+        "pf",
+        "cisco-ios-acl",
+        "cisco-asa-acl",
+        "juniper-junos-firewall-filter",
+        "paloalto-pan-os-security-policy",
+        "fortinet-fortios-policy",
+        "checkpoint-access-control-policy",
+        "windows-defender-firewall-powershell",
+        "aws-security-group",
+        "azure-network-security-group",
+        "gcp-vpc-firewall",
+        "netfilter-ip6tables",
+        "ipfw",
+        "cisco-fmc-acp",
+        "sonicwall-access-rule",
+        "mikrotik-routeros-firewall-filter",
+        "vyos-firewall",
+        "windows-netsh-advfirewall",
+        "aws-network-acl",
+        "kubernetes-network-policy"
+      ],
+      "ui-priority": 1
+    },
+    "rule-id": {
+      "description": "Identifier, number, or handle of the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "rule-name": {
+      "description": "Human-readable name or label of the rule.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "sequence-number": {
+      "description": "Rule order or sequence position in the policy table.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "source": {
+      "description": "Source selector (IP, CIDR, object/group, or keyword such as any).",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 2
+    },
+    "source-port": {
+      "description": "Source port or port range matched by the rule.",
+      "misp-attribute": "port",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "vendor": {
+      "description": "Firewall or network security vendor associated with this rule syntax.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "Cisco",
+        "Juniper",
+        "Palo Alto Networks",
+        "Fortinet",
+        "Check Point",
+        "Microsoft",
+        "Linux Netfilter Project",
+        "OpenBSD",
+        "Amazon Web Services",
+        "Microsoft Azure",
+        "Google Cloud",
+        "SonicWall",
+        "Netgate",
+        "Deciso",
+        "MikroTik",
+        "VyOS",
+        "FreeBSD",
+        "Huawei",
+        "H3C",
+        "Arista",
+        "Nokia",
+        "Stormshield",
+        "Sophos",
+        "WatchGuard",
+        "Barracuda",
+        "Forcepoint",
+        "Zscaler",
+        "PFSense Community",
+        "OPNsense Project"
+      ],
+      "ui-priority": 1
+    }
+  },
+  "description": "Packet filter, firewall, or ACL rule metadata across network security platforms (for example netfilter, PF, and Cisco ACL syntax).",
+  "meta-category": "network",
+  "name": "packet-filter-rule",
+  "requiredOneOf": [
+    "raw-rule",
+    "rule-id",
+    "rule-name"
+  ],
+  "uuid": "2f06d31e-cc48-4e50-bd3a-9f97c0c71e6a",
+  "version": 1
+}

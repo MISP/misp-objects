@@ -1,0 +1,61 @@
+{
+  "attributes": {
+    "artifact-hash": {
+      "description": "Cryptographic hash for model artifact integrity. Example: SHA-256 3f786850e387550fdab836ed7e6dc881de23001b.",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "license": {
+      "description": "License applying to the model component. Example: Apache-2.0.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "model-identifier": {
+      "description": "Unique identifier such as URI, digest, or package URL. Example: huggingface://org/model@v1.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "model-name": {
+      "description": "Name of the AI model component. Example: Example-LLM-7B.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "model-type": {
+      "description": "Model family or architecture type. Example: Transformer decoder-only.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "model-version": {
+      "description": "Version or release of the model. Example: 2026.04.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "provider": {
+      "description": "Organization that developed or publishes the model. Example: Example AI Labs.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "training-framework": {
+      "description": "Framework used to train or package the model. Example: PyTorch 2.4.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "AI model component entry for an AI SBOM. Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
+  "meta-category": "file",
+  "name": "ai-model-component",
+  "required": [
+    "model-name",
+    "model-version"
+  ],
+  "uuid": "e5162e7f-ca79-49b4-b997-9873521f05d9",
+  "version": 1
+}

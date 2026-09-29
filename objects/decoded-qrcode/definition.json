@@ -1,0 +1,44 @@
+{
+  "attributes": {
+    "decoded-value": {
+      "description": "Decoded content extracted from the QR code.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Human-readable description or context about the decoded QR code.",
+      "misp-attribute": "comment",
+      "ui-priority": 1
+    },
+    "qr-image": {
+      "description": "Original image containing the QR code.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Reference or link related to the decoded QR code artifact.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 2
+    },
+    "source": {
+      "description": "Source system or project that produced the decoded QR code.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "AIL"
+      ],
+      "ui-priority": 2
+    }
+  },
+  "description": "Object describing a decoded QR code, including its decoded value, original image, and contextual description.",
+  "meta-category": "misc",
+  "name": "decoded-qrcode",
+  "requiredOneOf": [
+    "decoded-value",
+    "qr-image"
+  ],
+  "uuid": "f87410c2-59f4-4d2f-bc0e-81deb3b93b25",
+  "version": 1
+}

@@ -1,0 +1,103 @@
+{
+  "attributes": {
+    "action": {
+      "description": "Action function containing the instructions executed when a rule triggers.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "author": {
+      "description": "Script author name or contact reference.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "categories": {
+      "description": "One or more NSE categories assigned to the script.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "comment": {
+      "description": "Comment or analyst note about the NSE script.",
+      "misp-attribute": "comment",
+      "ui-priority": 0
+    },
+    "dependencies": {
+      "description": "Names of scripts that should run before this script if also selected.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Brief synopsis and optional detailed description of the NSE script.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "hostrule": {
+      "description": "Rule function determining whether the script runs against a host.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "license": {
+      "description": "License of the NSE script.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "nse": {
+      "description": "Full NSE script content.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "nse-script-name": {
+      "description": "NSE script name.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "portrule": {
+      "description": "Rule function determining whether the script runs against a port.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "postrule": {
+      "description": "Rule function executed after scanning is complete.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "prerule": {
+      "description": "Rule function executed before host discovery or port scanning.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "reference": {
+      "description": "Reference or origin of the NSE script.",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "version": {
+      "description": "Version of Nmap or NSE the script is associated with.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "An object describing an Nmap NSE script using the standard NSE script format fields.",
+  "meta-category": "network",
+  "name": "nse-script",
+  "requiredOneOf": [
+    "nse",
+    "nse-script-name"
+  ],
+  "uuid": "e9f7ab8a-a9f1-473a-a6a9-ae0b303a836a",
+  "version": 3
+}

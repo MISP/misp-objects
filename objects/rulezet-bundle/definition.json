@@ -1,0 +1,121 @@
+{
+  "attributes": {
+    "access": {
+      "description": "Access level of the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "author": {
+      "description": "Author name associated with the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "created-at": {
+      "description": "Bundle creation timestamp.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "created-by": {
+      "description": "Creator identifier of the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Description of the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "download-count": {
+      "description": "Number of times the bundle has been downloaded.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "is-verified": {
+      "description": "Whether the bundle has been verified.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Name of the bundle.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "number-of-rules": {
+      "description": "Total number of rules in the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "rule-format": {
+      "description": "Format used by rules within the bundle (for example Sigma, YARA, Suricata).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "updated-at": {
+      "description": "Timestamp of the last bundle update.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "user-id": {
+      "description": "User identifier owning the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "user-name": {
+      "description": "Display name of the user owning the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "uuid": {
+      "description": "UUID assigned to the bundle.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "view-count": {
+      "description": "Number of views for the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "vote-down": {
+      "description": "Number of downvotes for the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "vote-up": {
+      "description": "Number of upvotes for the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "vulnerability-identifier": {
+      "description": "Vulnerability identifiers associated with the bundle.",
+      "disable_correlation": true,
+      "misp-attribute": "vulnerability",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "Rulezet bundle metadata object representing bundle ownership, activity metrics, verification status and related vulnerabilities.",
+  "meta-category": "misc",
+  "name": "rulezet-bundle",
+  "required": [
+    "name",
+    "uuid"
+  ],
+  "uuid": "0c637129-cf3f-4f74-a517-af20185cbd2a",
+  "version": 1
+}

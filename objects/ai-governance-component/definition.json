@@ -1,0 +1,55 @@
+{
+  "attributes": {
+    "coverage": {
+      "description": "AI lifecycle phase covered by the governance artifact. Example: development and deployment phases.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "document-link": {
+      "description": "URL or location of the governance artifact. Example: https://example.org/model-card.pdf.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "document-name": {
+      "description": "Name of policy, card, report, or assurance artifact. Example: Model Card - Example-LLM-7B.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "document-type": {
+      "description": "Type of governance document referenced by the AI SBOM. Example: model-card.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "document-version": {
+      "description": "Version of the governance artifact. Example: v1.2.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "issuer": {
+      "description": "Entity issuing the governance artifact. Example: Responsible AI Team, Example Corp.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "last-reviewed": {
+      "description": "Most recent review date for governance content. Example: 2026-04-30T00:00:00Z.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    }
+  },
+  "description": "Governance and transparency artifacts linked from an AI SBOM (e.g., model cards, risk docs). Reference: BSI, \"SBOM for AI — minimum elements\" (https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4).",
+  "meta-category": "file",
+  "name": "ai-governance-component",
+  "required": [
+    "document-type",
+    "document-name"
+  ],
+  "uuid": "1490a8e8-a3ca-4139-815d-abc9798e5868",
+  "version": 1
+}

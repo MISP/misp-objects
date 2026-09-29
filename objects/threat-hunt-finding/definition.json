@@ -1,0 +1,48 @@
+{
+  "attributes": {
+    "conclusion": {
+      "description": "Summary of what was found and how it was confirmed or ruled out.",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "detection-gap": {
+      "description": "True if the hunt revealed a missing, broken, or under-tuned detection that should be engineered.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 0
+    },
+    "hypothesis-id": {
+      "description": "Local hypothesis-id this finding concludes, e.g. H1. Also link formally via an Object Reference of type 'resulted-in' from the threat-hunt-hypothesis object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "outcome": {
+      "description": "Classification of the finding. Mirror as a hunt:outcome tag on this object for tag-based dashboards.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "True Positive",
+        "Benign True Positive",
+        "False Positive",
+        "Inconclusive",
+        "Detection Gap Identified"
+      ],
+      "ui-priority": 1
+    },
+    "recommendation": {
+      "description": "Suggested follow-up action, in free text. For structured, trackable remediation, link a course-of-action object instead via an Object Reference of type 'mitigated-by'.",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "The outcome of testing a hypothesis: conclusion, classification, and follow-up. Corresponds to the Feedback section of a hunt report. One instance per hypothesis.",
+  "meta-category": "threat-hunting",
+  "name": "threat-hunt-finding",
+  "required": [
+    "outcome",
+    "conclusion"
+  ],
+  "uuid": "ce3ab17c-9ac5-47fb-bad5-48d368568437",
+  "version": 1
+}

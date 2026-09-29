@@ -1,0 +1,152 @@
+{
+  "attributes": {
+    "acquisition-date": {
+      "description": "Date when the object was acquired or seized.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "barcode": {
+      "description": "Barcode value associated with the object.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "brand": {
+      "description": "Manufacturer or commercial brand of the object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "color": {
+      "description": "Color(s) of the object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "condition": {
+      "description": "Observed condition of the object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "new",
+        "used",
+        "damaged",
+        "modified",
+        "destroyed",
+        "unknown"
+      ],
+      "ui-priority": 6
+    },
+    "description": {
+      "description": "Narrative description of the physical object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "dimensions": {
+      "description": "Dimensions of the object (for example LxWxH and unit).",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    },
+    "estimated-value": {
+      "description": "Estimated value of the object in the specified currency.",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 9
+    },
+    "identifier": {
+      "description": "Internal identifier assigned by an analyst or team.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "location-found": {
+      "description": "Location where the object was observed or recovered.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 2
+    },
+    "material": {
+      "description": "Main material(s) of the object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 7
+    },
+    "model": {
+      "description": "Model name or model number.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 4
+    },
+    "name": {
+      "description": "Short name used to identify the object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 10
+    },
+    "object-picture": {
+      "description": "Photograph or scan of the object.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "object-type": {
+      "description": "Type or class of physical object.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "document",
+        "identity-item",
+        "electronic-device",
+        "weapon",
+        "tool",
+        "vehicle-part",
+        "clothing",
+        "container",
+        "key",
+        "currency",
+        "other"
+      ],
+      "ui-priority": 10
+    },
+    "quantity": {
+      "description": "Number of identical objects.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 8
+    },
+    "rfid": {
+      "description": "RFID value associated with the object.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 3
+    },
+    "serial-number": {
+      "description": "Serial number or manufacturer identifier.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 5
+    },
+    "weight": {
+      "description": "Weight of the object with unit.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 8
+    }
+  },
+  "description": "A generic object to describe a physical object recovered, observed, or seized in an investigation.",
+  "meta-category": "misc",
+  "name": "physical-object",
+  "requiredOneOf": [
+    "name",
+    "description",
+    "serial-number",
+    "identifier"
+  ],
+  "uuid": "dc786f86-4a8f-4da9-82d1-130fcefc1453",
+  "version": 1
+}
