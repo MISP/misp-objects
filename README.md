@@ -407,6 +407,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/rmm](https://github.com/MISP/misp-objects/blob/main/objects/rmm/definition.json) - An object describing a RMM agent.
 - [objects/rogue-dns](https://github.com/MISP/misp-objects/blob/main/objects/rogue-dns/definition.json) - Rogue DNS as defined by CERT.br.
 - [objects/rtir](https://github.com/MISP/misp-objects/blob/main/objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
+- [objects/rule-validation](https://github.com/MISP/misp-objects/blob/main/objects/rule-validation/definition.json) - Result of the syntax validation of a detection rule (YARA, Sigma, Suricata, Zeek...).
 - [objects/sandbox-report](https://github.com/MISP/misp-objects/blob/main/objects/sandbox-report/definition.json) - Sandbox report.
 - [objects/sb-signature](https://github.com/MISP/misp-objects/blob/main/objects/sb-signature/definition.json) - Sandbox detection signature.
 - [objects/scan-result](https://github.com/MISP/misp-objects/blob/main/objects/scan-result/definition.json) - Scan result object to add meta-data and the output of the scan result by itself.

@@ -1,0 +1,67 @@
+{
+  "attributes": {
+    "error": {
+      "description": "Syntax error reported by the validator",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "format": {
+      "description": "Format of the validated rule",
+      "misp-attribute": "text",
+      "sane_default": [
+        "yara",
+        "sigma",
+        "suricata",
+        "zeek",
+        "wazuh",
+        "nse",
+        "crs",
+        "nova",
+        "splunk",
+        "elastic",
+        "sagan",
+        "kql",
+        "atr",
+        "plum",
+        "kunai"
+      ],
+      "ui-priority": 1
+    },
+    "valid": {
+      "description": "Whether the rule is syntactically valid",
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "validation-date": {
+      "description": "Date of the validation",
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "validator": {
+      "description": "Name of the validator used",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "validator-url": {
+      "description": "URL of the validator instance used",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "warning": {
+      "description": "Warning reported by the validator",
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 0
+    }
+  },
+  "description": "Result of the syntax validation of a detection rule (YARA, Sigma, Suricata, Zeek...).",
+  "meta-category": "misc",
+  "name": "rule-validation",
+  "required": [
+    "format",
+    "valid"
+  ],
+  "uuid": "55712239-ddd6-4235-9848-5f103ebde55b",
+  "version": 1
+}

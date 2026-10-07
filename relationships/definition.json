@@ -2418,7 +2418,23 @@
       ],
       "name": "manufactured-by",
       "opposite": "manufactures"
+    },
+    {
+      "description": "The source object holds the validation result of the target object (e.g. the syntax validation of a detection rule).",
+      "format": [
+        "misp"
+      ],
+      "name": "validates",
+      "opposite": "validated-by"
+    },
+    {
+      "description": "The source object is validated by the target object, which holds the validation result.",
+      "format": [
+        "misp"
+      ],
+      "name": "validated-by",
+      "opposite": "validates"
     }
   ],
-  "version": 54
+  "version": 55
 }
