@@ -1,0 +1,243 @@
+{
+  "attributes": {
+    "abuse-address": {
+      "description": "Postal address of the abuse contact for the network the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "abuse-country": {
+      "description": "Country code of the abuse contact",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "abuse-email": {
+      "description": "Email address of the abuse contact",
+      "disable_correlation": true,
+      "misp-attribute": "email",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "abuse-name": {
+      "description": "Name of the abuse contact",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "abuse-organization": {
+      "description": "Organisation of the abuse contact, or its registry handle",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "abuse-phone": {
+      "description": "Phone number of the abuse contact",
+      "disable_correlation": true,
+      "misp-attribute": "phone-number",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "abuse-route": {
+      "description": "Network range (CIDR) the abuse contact is responsible for",
+      "disable_correlation": true,
+      "misp-attribute": "ip-src",
+      "ui-priority": 0
+    },
+    "bot-confidence-score": {
+      "description": "Confidence that the IP address is used by bots, from 0 to 100",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "bot-last-seen": {
+      "description": "Last time the IP address was seen used by bots",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "bot-operator": {
+      "description": "Name of the operator of the bot",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "bot-type": {
+      "description": "Type of bot, such as crawler or monitoring",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "cloud-provider": {
+      "description": "Name of the cloud or hosting provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company-domain": {
+      "description": "Domain of the company or ISP using the IP address",
+      "disable_correlation": true,
+      "misp-attribute": "domain",
+      "ui-priority": 0
+    },
+    "company-name": {
+      "description": "Name of the company or ISP using the IP address",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company-type": {
+      "description": "Type of the company using the IP address, such as ISP, hosting or business",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "corporate-gateway-provider": {
+      "description": "Name of the corporate gateway provider",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "corporate-gateway-type": {
+      "description": "Type of corporate gateway",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "ip": {
+      "description": "IP address the information refers to",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "is-anonymous": {
+      "description": "The IP address hides the identity of its user (VPN, proxy, Tor or relay)",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-bot": {
+      "description": "The IP address is used by bots",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-cloud-provider": {
+      "description": "The IP address belongs to a cloud or hosting provider",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-corporate-gateway": {
+      "description": "The IP address is a corporate gateway, such as a secure web gateway or zero-trust egress",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-known-attacker": {
+      "description": "The IP address has been seen attacking other systems",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-known-good-bot": {
+      "description": "The IP address belongs to a known legitimate crawler or bot, such as a search engine",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-proxy": {
+      "description": "The IP address is a proxy",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-relay": {
+      "description": "The IP address is part of a relay network, such as iCloud Private Relay",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-residential-proxy": {
+      "description": "The IP address is a residential proxy",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-spam": {
+      "description": "The IP address has been seen sending spam",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-tor": {
+      "description": "The IP address is a Tor exit node",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-vpn": {
+      "description": "The IP address is a VPN exit point",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "proxy-confidence-score": {
+      "description": "Confidence that the IP address is a proxy, from 0 to 100",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "proxy-last-seen": {
+      "description": "Last time the IP address was seen as a proxy",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "proxy-provider": {
+      "description": "Name of the proxy provider",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    },
+    "relay-provider": {
+      "description": "Name of the relay provider",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "threat-score": {
+      "description": "IPGeolocation.io threat score, from 0 to 100; higher is riskier",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 1
+    },
+    "vpn-confidence-score": {
+      "description": "Confidence that the IP address is a VPN exit point, from 0 to 100",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "ui-priority": 0
+    },
+    "vpn-last-seen": {
+      "description": "Last time the IP address was seen as a VPN exit point",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "vpn-provider": {
+      "description": "Name of the VPN provider",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "ui-priority": 1
+    }
+  },
+  "description": "IP address intelligence from IPGeolocation.io: threat score, anonymisation signals (VPN, proxy, Tor, relay), bot, spam and attacker flags, hosting provider, company and abuse contact.",
+  "meta-category": "network",
+  "name": "ipgeolocation-ip",
+  "required": [
+    "ip"
+  ],
+  "uuid": "e1bde989-c8dd-49b1-a45b-b63698dbfcaa",
+  "version": 1
+}
