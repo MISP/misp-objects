@@ -33,6 +33,8 @@ done
 jsonschema -i relationships/definition.json schema_relationships.json
 ./tools/validate_opposites.sh
 
+python3 -B -m unittest discover -s tests -v
+
 ./unique_uuid.py
 
 echo "Success: All is fine, please go ahead.".
