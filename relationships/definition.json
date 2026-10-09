@@ -194,22 +194,20 @@
       "name": "dropped-by"
     },
     {
-      "description": "The referenced source has downloaded the target object.",
+      "description": "The source object downloaded the target object, for example a process downloading a file. The target is the downloaded artifact, not its origin.",
       "format": [
         "misp",
         "stix-1.1"
       ],
-      "name": "downloaded",
-      "opposite": "downloaded-from"
+      "name": "downloaded"
     },
     {
-      "description": "The referenced source has been downloaded from the target object.",
+      "description": "The source object was downloaded from the target location, for example a file downloaded from a URL. The target is the origin, not the downloader.",
       "format": [
         "misp",
         "stix-1.1"
       ],
-      "name": "downloaded-from",
-      "opposite": "downloaded"
+      "name": "downloaded-from"
     },
     {
       "description": "The referenced source is resolved to the target object.",
@@ -304,7 +302,7 @@
       "name": "retrieved-from"
     },
     {
-      "description": "This relationship describes the author of a specific object.",
+      "description": "The source object was authored by the target object.",
       "format": [
         "misp"
       ],
@@ -312,7 +310,7 @@
       "opposite": "is-author-of"
     },
     {
-      "description": "This relationship describes an object being author by someone.",
+      "description": "The source object is the author of the target object.",
       "format": [
         "misp"
       ],
@@ -320,7 +318,7 @@
       "opposite": "authored-by"
     },
     {
-      "description": "This relationship describes the location (of any type) of a specific object.",
+      "description": "The source object is located at the location described by the target object.",
       "format": [
         "misp"
       ],
@@ -335,7 +333,7 @@
       "opposite": "includes"
     },
     {
-      "description": "This relationship describes an object that includes an other object.",
+      "description": "This relationship describes an object that includes another object.",
       "format": [
         "misp"
       ],
@@ -343,7 +341,7 @@
       "opposite": "included-in"
     },
     {
-      "description": "This relationship describes an object analysed by another object.",
+      "description": "The source object was analysed using the target tool or analysis object.",
       "format": [
         "misp"
       ],
@@ -437,7 +435,7 @@
       "opposite": "intercepted-by"
     },
     {
-      "description": "This relationship describes an object which calls another objects.",
+      "description": "This relationship describes an object which calls another object.",
       "format": [
         "misp"
       ],
@@ -526,7 +524,7 @@
       "opposite": "hosted-by"
     },
     {
-      "description": "This relatiobship describes an object hosted by another object.",
+      "description": "This relationship describes an object hosted by another object.",
       "format": [
         "stix-2.1"
       ],
@@ -541,7 +539,7 @@
       "name": "consists"
     },
     {
-      "description": "This relationship describes an object which delivers to one or more object(s).",
+      "description": "The source object delivers the target object, such as malware delivering another malware payload.",
       "format": [
         "stix-2.1"
       ],
@@ -757,7 +755,7 @@
       "name": "released-source-code"
     },
     {
-      "description": "This relationship describes an object which release another object.",
+      "description": "This relationship describes an object which releases another object.",
       "format": [
         "cert-eu"
       ],
@@ -778,7 +776,7 @@
       "name": "signed-by"
     },
     {
-      "description": "This relationship describes an object by another object (such as exploit kit, dropper).",
+      "description": "The source object is delivered by the target object, such as a payload delivered by an exploit kit or dropper.",
       "format": [
         "misp"
       ],
@@ -793,14 +791,14 @@
       "opposite": "controlled-by"
     },
     {
-      "description": "This relationships describes an object which annotates another object.",
+      "description": "This relationship describes an object which annotates another object.",
       "format": [
         "misp"
       ],
       "name": "annotates"
     },
     {
-      "description": "This relationships describes an object which references another object or attribute.",
+      "description": "This relationship describes an object which references another object or attribute.",
       "format": [
         "misp"
       ],
@@ -811,7 +809,8 @@
       "format": [
         "alfred"
       ],
-      "name": "child-of"
+      "name": "child-of",
+      "opposite": "parent-of"
     },
     {
       "description": "A parent semantic link to a child.",
@@ -819,7 +818,8 @@
         "alfred",
         "misp"
       ],
-      "name": "parent-of"
+      "name": "parent-of",
+      "opposite": "child-of"
     },
     {
       "description": "Represents the semantic link of having compromised something.",
@@ -857,20 +857,18 @@
       "name": "disclosed-to"
     },
     {
-      "description": "Represents the semantic link of one thing downloading another.",
+      "description": "The source object downloads the target object, for example a process downloading a file. The target is the downloaded artifact, not its origin.",
       "format": [
         "alfred"
       ],
-      "name": "downloads",
-      "opposite": "downloads-from"
+      "name": "downloads"
     },
     {
-      "description": "Represents the semantic link of malware being downloaded from a location.",
+      "description": "The source object is downloaded from the target location, for example malware downloaded from a URL. The target is the origin, not the downloader.",
       "format": [
         "alfred"
       ],
-      "name": "downloads-from",
-      "opposite": "downloads"
+      "name": "downloads-from"
     },
     {
       "description": "Represents the semantic link of an alert generated from a signature.",
@@ -896,7 +894,7 @@
       "opposite": "initiated-by"
     },
     {
-      "description": "The source object initiated the target object.",
+      "description": "The source object was initiated by the target object.",
       "format": [
         "misp"
       ],
@@ -933,7 +931,7 @@
       "name": "not-relevant-to"
     },
     {
-      "description": "Represents the semantic link that defines one thing to be part of another in a hierachial structure from the child to the parent.",
+      "description": "Represents the semantic link that defines one thing to be part of another in a hierarchical structure from the child to the parent.",
       "format": [
         "alfred"
       ],
@@ -1047,7 +1045,7 @@
       "name": "sends-to"
     },
     {
-      "description": "The represents the semantic link of having spoofed something.",
+      "description": "This represents the semantic link of having spoofed something.",
       "format": [
         "alfred"
       ],
@@ -1082,7 +1080,7 @@
       "name": "uploads"
     },
     {
-      "description": "The represents the semantic link of being the user of something.",
+      "description": "This represents the semantic link of being the user of something.",
       "format": [
         "alfred"
       ],
@@ -1161,7 +1159,7 @@
       "name": "extends"
     },
     {
-      "description": "Reprensents an object which writes towards another object or attribute",
+      "description": "Represents an object which writes towards another object or attribute",
       "format": [
         "misp"
       ],
@@ -1175,7 +1173,7 @@
       "name": "ranked-with"
     },
     {
-      "description": "owns",
+      "description": "The source object owns the target entity or asset.",
       "format": [
         "followthemoney"
       ],
@@ -1189,49 +1187,49 @@
       "name": "awarded-to"
     },
     {
-      "description": "directs",
+      "description": "The source object directs the target organisation or activity.",
       "format": [
         "followthemoney"
       ],
       "name": "directs"
     },
     {
-      "description": "involved-in",
+      "description": "The source object is involved in the target entity, activity or event.",
       "format": [
         "followthemoney"
       ],
       "name": "involved-in"
     },
     {
-      "description": "associated-with",
+      "description": "The source object is associated with the target object without specifying a more precise relationship.",
       "format": [
         "followthemoney"
       ],
       "name": "associated-with"
     },
     {
-      "description": "represents",
+      "description": "The source object represents the target object, for example a person acting on behalf of an organisation.",
       "format": [
         "followthemoney"
       ],
       "name": "represents"
     },
     {
-      "description": "owes",
+      "description": "The source object owes an obligation to the target object.",
       "format": [
         "followthemoney"
       ],
       "name": "owes"
     },
     {
-      "description": "preceeds",
+      "description": "The source object precedes the target object in a sequence or order. This is a legacy spelling; use precedes for new references.",
       "format": [
         "followthemoney"
       ],
       "name": "preceeds"
     },
     {
-      "description": "documents",
+      "description": "The source document records information about the target entity, activity or event.",
       "format": [
         "followthemoney"
       ],
@@ -1245,7 +1243,7 @@
       "name": "paid"
     },
     {
-      "description": "leaks",
+      "description": "The source object discloses the target information in a leak.",
       "format": [
         "misp"
       ],
@@ -1253,7 +1251,7 @@
       "opposite": "leaked-by"
     },
     {
-      "description": "leaked-by",
+      "description": "The source information was disclosed in a leak by the target object.",
       "format": [
         "misp"
       ],
@@ -1261,7 +1259,7 @@
       "opposite": "leaks"
     },
     {
-      "description": "doxed-by",
+      "description": "The source person or identity had their personal information disclosed in a doxing incident by the target object.",
       "format": [
         "misp"
       ],
@@ -1333,7 +1331,7 @@
       "name": "found-in"
     },
     {
-      "description": "The referenced source object drives the target described (often a vehicule).",
+      "description": "The referenced source object drives the target described (often a vehicle).",
       "format": [
         "misp"
       ],
@@ -1396,7 +1394,7 @@
       "name": "antagonist-of"
     },
     {
-      "description": "The referenced source object is an ambivalent of the target object.",
+      "description": "The source object has an ambivalent attitude toward the target object. This is a legacy spelling; use ambivalent-of for new references.",
       "format": [
         "foaf"
       ],
@@ -1437,7 +1435,8 @@
       "format": [
         "misp"
       ],
-      "name": "does-not-target"
+      "name": "does-not-target",
+      "opposite": "is-not-targeted-by"
     },
     {
       "description": "This relationship describes that the source object is targeted by the target object.",
@@ -1451,7 +1450,8 @@
       "format": [
         "misp"
       ],
-      "name": "is-not-targeted-by"
+      "name": "is-not-targeted-by",
+      "opposite": "does-not-target"
     },
     {
       "description": "This relationship describes that the source object provides services described in the target object.",
@@ -1468,21 +1468,21 @@
       "name": "Friend"
     },
     {
-      "description": "The source object considers the target object as a acquaintance. Is not necessarily symmetric.",
+      "description": "The source object considers the target object as an acquaintance. Is not necessarily symmetric.",
       "format": [
         "XFN"
       ],
       "name": "Acquaintance"
     },
     {
-      "description": "The source object have information to contact and/or get in touch with the target object.",
+      "description": "The source object has information to contact and/or get in touch with the target object.",
       "format": [
         "XFN"
       ],
       "name": "Contact"
     },
     {
-      "description": "The source object have physically met the target object.",
+      "description": "The source object has physically met the target object.",
       "format": [
         "XFN"
       ],
@@ -1521,17 +1521,19 @@
       "format": [
         "XFN"
       ],
-      "name": "Child"
+      "name": "Child",
+      "opposite": "Parent"
     },
     {
       "description": "The target object is the parent of the source object.",
       "format": [
         "XFN"
       ],
-      "name": "Parent"
+      "name": "Parent",
+      "opposite": "Child"
     },
     {
-      "description": "The source object share a parent with the target object. Brothers, sisters, half-brothers, and half-sisters are all examples of siblings.",
+      "description": "The source object shares a parent with the target object. Brothers, sisters, half-brothers, and half-sisters are all examples of siblings.",
       "format": [
         "XFN"
       ],
@@ -1608,7 +1610,7 @@
       "name": "known-as"
     },
     {
-      "description": "The source object is led to the target object.",
+      "description": "The source object led to the target object.",
       "format": [
         "stix-2.1"
       ],
@@ -1631,7 +1633,7 @@
       "opposite": "impacts"
     },
     {
-      "description": "An object occured at a specific location.",
+      "description": "The source event occurred at the location described by the target object.",
       "format": [
         "stix-2.1"
       ],
@@ -1669,7 +1671,7 @@
       "opposite": "observed-by"
     },
     {
-      "description": "The source object was observed by the target object.",
+      "description": "The source object was observed as part of the target event.",
       "format": [
         "misp"
       ],
@@ -1776,7 +1778,7 @@
       "name": "sample-of"
     },
     {
-      "description": "This relationship describes an object which is allied with another object.",
+      "description": "The source object is allied with the target object. This is a legacy spelling; use is-allied-with for new references.",
       "format": [
         "misp"
       ],
@@ -1909,7 +1911,7 @@
       "opposite": "summarizes"
     },
     {
-      "description": "The source object is releasable to the target object.",
+      "description": "The source object is releasable to the target recipient. This records release eligibility; it does not grant access or enforce permissions.",
       "format": [
         "misp"
       ],
@@ -2434,7 +2436,28 @@
       ],
       "name": "validated-by",
       "opposite": "validates"
+    },
+    {
+      "description": "The source object is allied with the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "is-allied-with"
+    },
+    {
+      "description": "The source object precedes the target object in a sequence or order.",
+      "format": [
+        "misp"
+      ],
+      "name": "precedes"
+    },
+    {
+      "description": "The source object has an ambivalent attitude toward the target object.",
+      "format": [
+        "misp"
+      ],
+      "name": "ambivalent-of"
     }
   ],
-  "version": 55
+  "version": 56
 }

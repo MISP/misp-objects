@@ -516,6 +516,8 @@ The MISP object model is open and allows user to use their own relationships. MI
 
 - [relationships](relationships/definition.json) - list of predefined default relationships which can be used to link MISP objects together and explain the context of the relationship.
 
+See the [relationship usage and compatibility guidance](relationships/README.md) for source/target directions, legacy spellings, and validation.
+
 ## How to contribute MISP objects?
 
 Fork the project, create a new directory in the [objects directory](objects/) matching your object name. Objects must be composed
