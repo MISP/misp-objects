@@ -187,6 +187,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/directory](https://github.com/MISP/misp-objects/blob/main/objects/directory/definition.json) - Directory object describing a directory with meta-information.
 - [objects/dkim](https://github.com/MISP/misp-objects/blob/main/objects/dkim/definition.json) - DomainKeys Identified Mail - DKIM.
 - [objects/dns-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
+- [objects/modat-dns-record](https://github.com/MISP/misp-objects/blob/main/objects/modat-dns-record/definition.json) - A single historical MODAT DNS resource record, including lifecycle and TTL. SOA rname remains DNS notation.
+- [objects/modat-service](https://github.com/MISP/misp-objects/blob/main/objects/modat-service/definition.json) - An observed MODAT Magnify service. Array leaf values share this observation; raw JSON retains their exact nesting.
 - [objects/url](https://github.com/MISP/misp-objects/blob/main/objects/url/definition.json) - dom-hash object to describe similar structure of HTML pages.
 - [objects/domain-crawled](https://github.com/MISP/misp-objects/blob/main/objects/domain-crawled/definition.json) - A domain crawled over time.
 - [objects/domain-ip](https://github.com/MISP/misp-objects/blob/main/objects/domain-ip/definition.json) - A domain/hostname and IP address seen as a tuple in a specific time frame.
