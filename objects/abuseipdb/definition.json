@@ -24,11 +24,23 @@
       "description": "If an IP is spotted in any of AbuseIPDB's whitelists",
       "misp-attribute": "boolean",
       "ui-priority": 0
+    },
+    "permalink": {
+      "categories": [
+        "External analysis"
+      ],
+      "description": "Permalink Reference",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "ui-priority": 1
     }
   },
   "description": "AbuseIPDB checks an ip address, domain name, or subnet against a central blacklist",
   "meta-category": "network",
   "name": "abuseipdb",
+  "required": [
+    "permalink"
+  ],
   "uuid": "cccdaaf6-c140-461c-8d1c-aa79bbd029e0",
-  "version": 1
+  "version": 2
 }

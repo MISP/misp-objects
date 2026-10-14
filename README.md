@@ -141,6 +141,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/cap-resource](https://github.com/MISP/misp-objects/blob/main/objects/cap-resource/definition.json) - Common Alerting Protocol Version (CAP) resource object.
 - [objects/cert-pl-phishing](https://github.com/MISP/misp-objects/blob/main/objects/cert-pl-phishing/definition.json) - cert.pl phishing object template representing an url along with some metadata as such phash, html-structure or partial-hash.
 - [objects/chat-message](https://github.com/MISP/misp-objects/blob/main/objects/chat-message/definition.json) - A message exchanged on a chat or messaging platform.
+- [objects/citizenship-document](https://github.com/MISP/misp-objects/blob/main/objects/citizenship-document/definition.json) - A document attesting a person's citizenship or nationality, including citizenship, naturalisation, registration and nationality certificates, and other documents serving as citizenship evidence in the relevant jurisdiction. Supports paper and electronic documents, local naming and numbering conventions, and incomplete records. A residence permit or a place of birth alone does not establish citizenship.
 - [objects/cloth](https://github.com/MISP/misp-objects/blob/main/objects/cloth/definition.json) - Describes clothes a natural person wears.
 - [objects/coin-address](https://github.com/MISP/misp-objects/blob/main/objects/coin-address/definition.json) - An address used in a cryptocurrency.
 - [objects/command](https://github.com/MISP/misp-objects/blob/main/objects/command/definition.json) - Command functionalities related to specific commands executed by a program, whether it is malicious or not. Command-line are attached to this object for the related commands.
@@ -186,6 +187,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/directory](https://github.com/MISP/misp-objects/blob/main/objects/directory/definition.json) - Directory object describing a directory with meta-information.
 - [objects/dkim](https://github.com/MISP/misp-objects/blob/main/objects/dkim/definition.json) - DomainKeys Identified Mail - DKIM.
 - [objects/dns-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
+- [objects/modat-dns-record](https://github.com/MISP/misp-objects/blob/main/objects/modat-dns-record/definition.json) - A single historical MODAT DNS resource record, including lifecycle and TTL. SOA rname remains DNS notation.
+- [objects/modat-service](https://github.com/MISP/misp-objects/blob/main/objects/modat-service/definition.json) - An observed MODAT Magnify service. Array leaf values share this observation; raw JSON retains their exact nesting.
 - [objects/url](https://github.com/MISP/misp-objects/blob/main/objects/url/definition.json) - dom-hash object to describe similar structure of HTML pages.
 - [objects/domain-crawled](https://github.com/MISP/misp-objects/blob/main/objects/domain-crawled/definition.json) - A domain crawled over time.
 - [objects/domain-ip](https://github.com/MISP/misp-objects/blob/main/objects/domain-ip/definition.json) - A domain/hostname and IP address seen as a tuple in a specific time frame.
@@ -194,6 +197,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/elf-section](https://github.com/MISP/misp-objects/blob/main/objects/elf-section/definition.json) - Object describing a section of an Executable and Linkable Format.
 - [objects/email](https://github.com/MISP/misp-objects/blob/main/objects/email/definition.json) - Email object describing an email with meta-information.
 - [objects/employee](https://github.com/MISP/misp-objects/blob/main/objects/employee/definition.json) - An employee and related data points.
+- [objects/epss-score](https://github.com/MISP/misp-objects/blob/main/objects/epss-score/definition.json) - An Exploit Prediction Scoring System (EPSS) probability and percentile for a vulnerability on a given date.
 - [objects/error-message](https://github.com/MISP/misp-objects/blob/main/objects/error-message/definition.json) - An error message which can be related to the processing of data such as import, export scripts from the original MISP instance.
 - [objects/event](https://github.com/MISP/misp-objects/blob/main/objects/event/definition.json) - Event object as described in STIX 2.1 Incident object extension.
 - [objects/exploit](https://github.com/MISP/misp-objects/blob/main/objects/exploit/definition.json) - Exploit object describes a program in binary or source code form used to abuse one or more vulnerabilities.
@@ -308,12 +312,14 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/iot-firmware](https://github.com/MISP/misp-objects/blob/main/objects/iot-firmware/definition.json) - A firmware for an IoT device.
 - [objects/ip-api-address](https://github.com/MISP/misp-objects/blob/main/objects/ip-api-address/definition.json) - IP Address information. Useful if you are pulling your ip information from ip-api.com.
 - [objects/ip-port](https://github.com/MISP/misp-objects/blob/main/objects/ip-port/definition.json) - An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.
+- [objects/ipgeolocation-ip](https://github.com/MISP/misp-objects/blob/main/objects/ipgeolocation-ip/definition.json) - IP address intelligence from IPGeolocation.io: threat score, anonymisation signals (VPN, proxy, Tor, relay), bot, spam and attacker flags, hosting provider, company and abuse contact.
 - [objects/irc](https://github.com/MISP/misp-objects/blob/main/objects/irc/definition.json) - An IRC object to describe an IRC server and the associated channels.
 - [objects/ja3](https://github.com/MISP/misp-objects/blob/main/objects/ja3/definition.json) - JA3 is a new technique for creating SSL client fingerprints that are easy to produce and can be easily shared for threat intelligence. Fingerprints are composed of Client Hello packet; SSL Version, Accepted Ciphers, List of Extensions, Elliptic Curves, and Elliptic Curve Formats. https://github.com/salesforce/ja3.
 - [objects/ja3s](https://github.com/MISP/misp-objects/blob/main/objects/ja3s/definition.json) - JA3S is JA3 for the Server side of the SSL/TLS communication and fingerprints how servers respond to particular clients. JA3S fingerprints are composed of Server Hello packet; SSL Version, Cipher, SSLExtensions. https://github.com/salesforce/ja3.
 - [objects/ja4-plus](https://github.com/MISP/misp-objects/blob/main/objects/ja4-plus/definition.json) - JA4 is a technique for creating network fingerprints that are easy to produce and can be easily shared for threat intelligence. https://github.com/FoxIO-LLC/ja4/blob/main/technical_details/README.md.
 - [objects/jarm](https://github.com/MISP/misp-objects/blob/main/objects/jarm/definition.json) - Jarm object to describe an TLS/SSL implementation used for malicious or legitimate use-case.
 - [objects/keybase-account](https://github.com/MISP/misp-objects/blob/main/objects/keybase-account/definition.json) - Information related to a keybase account, from API Users Object.
+- [objects/known-exploited-vulnerability](https://github.com/MISP/misp-objects/blob/main/objects/known-exploited-vulnerability/definition.json) - A known-exploited vulnerability assertion, including its status, origin and evidence. A false exploitation assertion is retained without treating it as an active KEV listing.
 - [objects/language-content](https://github.com/MISP/misp-objects/blob/main/objects/language-content/definition.json) - The Language Content object represents text content for objects represented in languages other than that of the original object. Language content may be a translation of the original object by a third-party, a first-source translation by the original publisher, or additional official language content provided at the time of creation. STIX 2.1 ref 7.1.
 - [objects/leaked-document](https://github.com/MISP/misp-objects/blob/main/objects/leaked-document/definition.json) - Object describing a leaked document.
 - [objects/legal-entity](https://github.com/MISP/misp-objects/blob/main/objects/legal-entity/definition.json) - An object to describe a legal entity.
@@ -372,6 +378,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/postal-address](https://github.com/MISP/misp-objects/blob/main/objects/postal-address/definition.json) - A postal address.
 - [objects/probabilistic-data-structure](https://github.com/MISP/misp-objects/blob/main/objects/probabilistic-data-structure/definition.json) - Probabilistic data structure object describe a space-efficient data structure such as Bloom filter or similar structure.
 - [objects/process](https://github.com/MISP/misp-objects/blob/main/objects/process/definition.json) - Object describing a system process.
+- [objects/ptrclassify](https://github.com/MISP/misp-objects/blob/main/objects/ptrclassify/definition.json) - Heuristic classification of one PTR-style hostname, including labels, confidence, evidence, rule IDs and potential location hints. Repeated classification fields are grouped by machine-tag comments; location fields are grouped by rule-ID/code comments. PTR names are operator-controlled and inferred locations are not verified geolocation.
 - [objects/publication](https://github.com/MISP/misp-objects/blob/main/objects/publication/definition.json) - An object to describe a book, journal, or academic publication.
 - [objects/python-evtx-event-log](https://github.com/MISP/misp-objects/blob/main/objects/python-evtx-event-log/definition.json) - Event log object template to share information of the activities conducted on a system. The object template is mapped with the python-etvx module. https://github.com/williballenthin/python-evtx.
 - [objects/query](https://github.com/MISP/misp-objects/blob/main/objects/query/definition.json) - An object describing a query, along with its format.
@@ -407,6 +414,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/rmm](https://github.com/MISP/misp-objects/blob/main/objects/rmm/definition.json) - An object describing a RMM agent.
 - [objects/rogue-dns](https://github.com/MISP/misp-objects/blob/main/objects/rogue-dns/definition.json) - Rogue DNS as defined by CERT.br.
 - [objects/rtir](https://github.com/MISP/misp-objects/blob/main/objects/rtir/definition.json) - RTIR - Request Tracker for Incident Response.
+- [objects/rule-validation](https://github.com/MISP/misp-objects/blob/main/objects/rule-validation/definition.json) - Result of the syntax validation of a detection rule (YARA, Sigma, Suricata, Zeek...).
 - [objects/sandbox-report](https://github.com/MISP/misp-objects/blob/main/objects/sandbox-report/definition.json) - Sandbox report.
 - [objects/sb-signature](https://github.com/MISP/misp-objects/blob/main/objects/sb-signature/definition.json) - Sandbox detection signature.
 - [objects/scan-result](https://github.com/MISP/misp-objects/blob/main/objects/scan-result/definition.json) - Scan result object to add meta-data and the output of the scan result by itself.
@@ -493,6 +501,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/virustotal-report](https://github.com/MISP/misp-objects/blob/main/objects/virustotal-report/definition.json) - VirusTotal report.
 - [objects/virustotal-submission](https://github.com/MISP/misp-objects/blob/main/objects/virustotal-submission/definition.json) - VirusTotal Submission.
 - [objects/vulnerability](https://github.com/MISP/misp-objects/blob/main/objects/vulnerability/definition.json) - Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.
+- [objects/vulnerability-sighting](https://github.com/MISP/misp-objects/blob/main/objects/vulnerability-sighting/definition.json) - An observation about a vulnerability, preserving exploitation, confirmation and patching assertions independently of native MISP sighting types.
 - [objects/wazuh-rule](https://github.com/MISP/misp-objects/blob/main/objects/wazuh-rule/definition.json) - An object describing a Wazuh XML rule using common fields from the official Wazuh rule syntax.
 - [objects/weakness](https://github.com/MISP/misp-objects/blob/main/objects/weakness/definition.json) - Weakness object describing a common weakness enumeration which can describe usable, incomplete, draft or deprecated weakness for software, equipment of hardware.
 - [objects/whois](https://github.com/MISP/misp-objects/blob/main/objects/whois/definition.json) - Whois records information for a domain name or an IP address.
@@ -512,6 +521,8 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 The MISP object model is open and allows user to use their own relationships. MISP provides a list of default relationships that can be used if you plan to share your events with other MISP communities.
 
 - [relationships](relationships/definition.json) - list of predefined default relationships which can be used to link MISP objects together and explain the context of the relationship.
+
+See the [relationship usage and compatibility guidance](relationships/README.md) for source/target directions, legacy spellings, and validation.
 
 ## How to contribute MISP objects?
 

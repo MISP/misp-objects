@@ -1,0 +1,271 @@
+{
+  "attributes": {
+    "acquisition-basis": {
+      "description": "Basis for acquiring the citizenship attested by the document. Use the terminology of the issuing jurisdiction when known.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "birth",
+        "descent",
+        "naturalisation",
+        "registration",
+        "adoption",
+        "restoration"
+      ],
+      "to_ids": false,
+      "ui-priority": 50
+    },
+    "address": {
+      "description": "Address of the holder as recorded on the document, without assuming a particular postal format.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "attachment": {
+      "description": "Scan, photograph, electronic original or other copy of the citizenship document. Multiple attachments can represent separate pages or sides.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 80
+    },
+    "citizenship": {
+      "description": "Country or jurisdiction whose citizenship or nationality is explicitly attested by the document. Record multiple values only when the document attests them; do not infer citizenship from birthplace, residence or issuing country.",
+      "disable_correlation": true,
+      "misp-attribute": "nationality",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 95
+    },
+    "citizenship-date": {
+      "description": "Date on which the attested citizenship took effect, when stated. This may differ from the document's issue date.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 50
+    },
+    "date-of-birth": {
+      "description": "Date of birth of the holder in YYYY-MM-DD format, when known.",
+      "disable_correlation": true,
+      "misp-attribute": "date-of-birth",
+      "to_ids": false,
+      "ui-priority": 70
+    },
+    "document-name": {
+      "description": "Official title of the document, preserving the original language or local designation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 60
+    },
+    "document-number": {
+      "description": "Identifier of this document, such as its certificate, card, passport or serial number. Preserve leading zeros, letters and punctuation; this is distinct from a person identifier or registry reference.",
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 100
+    },
+    "document-status": {
+      "description": "Reported administrative status of the document. Expiration or cancellation of the document does not by itself establish loss of citizenship.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "valid",
+        "expired",
+        "cancelled",
+        "revoked",
+        "replaced",
+        "unknown"
+      ],
+      "to_ids": false,
+      "ui-priority": 30
+    },
+    "document-text": {
+      "description": "Transcription or extracted text of the document, including original spellings, dates, annotations and fields not represented by other attributes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "document-type": {
+      "description": "Type of document attesting citizenship or nationality. Suggested values are non-exhaustive; use a local document type when appropriate. A passport, identity card or birth certificate belongs here only when it serves as evidence of citizenship in the relevant jurisdiction.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "citizenship certificate",
+        "naturalisation certificate",
+        "nationality certificate",
+        "citizenship registration certificate",
+        "citizenship confirmation letter",
+        "citizenship card",
+        "national identity card",
+        "passport",
+        "birth certificate",
+        "consular record of birth abroad"
+      ],
+      "to_ids": false,
+      "ui-priority": 90
+    },
+    "expiration-date": {
+      "description": "End of document validity, if an expiration date exists. Omit for documents without an expiration date; this is not the expiration of citizenship.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 40
+    },
+    "first-name": {
+      "description": "Given name of the holder, when the document identifies a separate given-name component. Do not force an undivided name into this field.",
+      "disable_correlation": true,
+      "misp-attribute": "first-name",
+      "to_ids": false,
+      "ui-priority": 40
+    },
+    "full-name": {
+      "description": "Complete name of the holder as recorded on the document, preserving name order and supporting mononyms without requiring separate name components.",
+      "misp-attribute": "full-name",
+      "to_ids": false,
+      "ui-priority": 95
+    },
+    "gender": {
+      "description": "Sex or gender marker exactly as recorded on the document. No fixed vocabulary is imposed.",
+      "disable_correlation": true,
+      "misp-attribute": "gender",
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "issue-date": {
+      "description": "Date on which this document was issued, distinct from the date citizenship took effect.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 60
+    },
+    "issuing-authority": {
+      "description": "Authority that issued the document, such as a ministry, civil registry, court, municipality or consulate.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 70
+    },
+    "issuing-country": {
+      "description": "Country or jurisdiction on whose behalf the document was issued, including documents issued by its consulates abroad. This is distinct from the physical place of issue and the citizenship attested.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 80
+    },
+    "language": {
+      "description": "Language or languages used in the document; use an ISO 639 language code when available.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 10
+    },
+    "last-name": {
+      "description": "Family name of the holder, when the document identifies a separate family-name component.",
+      "misp-attribute": "last-name",
+      "to_ids": false,
+      "ui-priority": 40
+    },
+    "legal-basis": {
+      "description": "Legal provision, decision or order cited by the document as the basis for the attested citizenship.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "middle-name": {
+      "description": "Middle name of the holder, when explicitly distinguished on the document.",
+      "disable_correlation": true,
+      "misp-attribute": "middle-name",
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "mrz": {
+      "description": "Machine-readable zone as printed on the document, if present. Preserve line breaks and filler characters.",
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "name-in-original-script": {
+      "description": "Name of the holder in an original or additional script as printed on the document, without requiring transliteration.",
+      "misp-attribute": "full-name",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 50
+    },
+    "parent-name": {
+      "description": "Name of a parent as recorded on the document. Use text for role labels or further context, and related person objects for detailed parent identities.",
+      "misp-attribute": "full-name",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "person-number": {
+      "description": "Personal or national identification number of the holder as recorded on the document, distinct from this document's number. Preserve its original representation.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 50
+    },
+    "place-of-birth": {
+      "description": "Place of birth of the holder as recorded on the document; do not infer citizenship from this value.",
+      "disable_correlation": true,
+      "misp-attribute": "place-of-birth",
+      "to_ids": false,
+      "ui-priority": 40
+    },
+    "place-of-issue": {
+      "description": "Physical place where the document was issued, which may be abroad or differ from the issuing authority's jurisdiction.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 30
+    },
+    "portrait": {
+      "description": "Portrait of the holder included in the document, if present.",
+      "misp-attribute": "attachment",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 20
+    },
+    "registry-reference": {
+      "description": "Reference to a citizenship register, case file, book, page or entry associated with the document. Preserve local reference formats.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 40
+    },
+    "text": {
+      "description": "Additional context, comments or uncertainty about the document and its interpretation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 10
+    },
+    "verification-url": {
+      "description": "URL provided for checking the document or retrieving its official electronic representation. Recording this URL does not establish authenticity.",
+      "misp-attribute": "link",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 20
+    }
+  },
+  "description": "A document attesting a person's citizenship or nationality, including citizenship, naturalisation, registration and nationality certificates, and other documents serving as citizenship evidence in the relevant jurisdiction. Supports paper and electronic documents, local naming and numbering conventions, and incomplete records. A residence permit or a place of birth alone does not establish citizenship.",
+  "meta-category": "misc",
+  "name": "citizenship-document",
+  "requiredOneOf": [
+    "document-number",
+    "registry-reference",
+    "full-name",
+    "name-in-original-script",
+    "attachment",
+    "document-text"
+  ],
+  "uuid": "ed53b890-e087-4743-a774-c95496e8825c",
+  "version": 1
+}
