@@ -1,0 +1,119 @@
+{
+  "attributes": {
+    "added-date": {
+      "description": "When the breach was added to the notification service - not when it happened",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "breach-date": {
+      "description": "When the breach occurred, as far as the service knows",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 1
+    },
+    "data-classes": {
+      "description": "A class of data exposed by the breach (e.g. `Email addresses`, `Passwords`, `Phone numbers`). One attribute per class",
+      "misp-attribute": "text",
+      "multiple": true,
+      "sane_default": [
+        "Email addresses",
+        "Passwords",
+        "Usernames",
+        "Names",
+        "IP addresses",
+        "Phone numbers",
+        "Physical addresses",
+        "Dates of birth",
+        "Genders",
+        "Geographic locations",
+        "Job titles",
+        "Employers",
+        "Social media profiles",
+        "Website activity",
+        "Password hints",
+        "Security questions and answers",
+        "Partial credit card data",
+        "Credit cards",
+        "Browser user agent details",
+        "Device information"
+      ],
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "The service's own description of the breach",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "domain": {
+      "description": "Domain of the breached service",
+      "misp-attribute": "domain",
+      "ui-priority": 1
+    },
+    "link": {
+      "description": "Link to the service's page for this breach",
+      "misp-attribute": "link",
+      "ui-priority": 0
+    },
+    "modification-date": {
+      "description": "When the service last changed its record of the breach",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "The breach as the service names it, stable across its API",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "pwn-count": {
+      "description": "How many accounts the breach exposed",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 1
+    },
+    "sensitive": {
+      "description": "Whether the service treats the breach as sensitive, meaning membership is not publicly searchable",
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 0
+    },
+    "source": {
+      "description": "The breach notification service the record came from",
+      "misp-attribute": "text",
+      "sane_default": [
+        "Have I Been Pwned",
+        "XposedOrNot",
+        "LeakCheck",
+        "DeHashed"
+      ],
+      "ui-priority": 1
+    },
+    "title": {
+      "description": "Display name of the breach, where the service gives one distinct from `name`",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "verified": {
+      "description": "Whether the service considers the breach verified rather than claimed",
+      "misp-attribute": "boolean",
+      "sane_default": [
+        "True",
+        "False"
+      ],
+      "ui-priority": 0
+    }
+  },
+  "description": "A data breach in which accounts or personal data were exposed, as published by a breach notification service. Describes the breach itself, so that an address or account found in one links to the breach rather than restating it; `credential` holds what was exposed and `ail-leak` holds a leak as an analysis framework saw it.",
+  "meta-category": "misc",
+  "name": "breach",
+  "required": [
+    "name"
+  ],
+  "uuid": "9a73cc75-6e1a-41dc-8a71-6f24e4db1f2d",
+  "version": 1
+}

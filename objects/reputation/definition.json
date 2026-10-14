@@ -1,0 +1,75 @@
+{
+  "attributes": {
+    "classification": {
+      "description": "The verdict the source gives, in its own word. `malicious`, `suspicious` and `benign` are the words MISP reads as a verdict; anything else, including `unknown`, is recorded as the source said it and read as no opinion.",
+      "misp-attribute": "text",
+      "sane_default": [
+        "malicious",
+        "suspicious",
+        "benign",
+        "safe",
+        "known",
+        "legitimate",
+        "unknown"
+      ],
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "First time the source saw the value on this list, or first observation behind the verdict",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "last-seen": {
+      "description": "Last time the source saw the value on this list, or most recent observation behind the verdict",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "link": {
+      "description": "Link to the source's own report for this value",
+      "misp-attribute": "link",
+      "ui-priority": 1
+    },
+    "list-name": {
+      "description": "The specific list or zone the value was found on, where the source publishes more than one (e.g. a DNSBL zone)",
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "score": {
+      "description": "How sure the source is, on its own scale. State the scale in `text` where it is not 0-100",
+      "disable_correlation": true,
+      "misp-attribute": "float",
+      "ui-priority": 1
+    },
+    "source": {
+      "description": "The service or list that gave the verdict",
+      "misp-attribute": "text",
+      "sane_default": [
+        "AbuseIPDB",
+        "GreyNoise",
+        "CrowdSec",
+        "VirusTotal",
+        "Google Threat Intelligence",
+        "Spamhaus",
+        "SpamCop"
+      ],
+      "ui-priority": 1
+    },
+    "text": {
+      "description": "Anything the source said that the fields above do not hold, including the scale a non-standard score is on",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "What an outside source thinks of a value: a classification, a score, or both. The generic counterpart to the vendor verdict objects (abuseipdb, greynoise-ip, crowdsec-ip-context, virustotal-report), for the sources that do not warrant a template of their own - blocklists, DNSBLs, scam lists - and a place for vendors to state a verdict beside their own richer object.",
+  "meta-category": "misc",
+  "name": "reputation",
+  "requiredOneOf": [
+    "classification",
+    "score"
+  ],
+  "uuid": "0a606d84-87ea-4a92-9bdb-528f899ff531",
+  "version": 1
+}

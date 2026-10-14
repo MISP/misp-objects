@@ -1,9 +1,9 @@
 {
   "attributes": {
     "btc-address": {
-      "description": "A Bitcoin transactional address",
-      "disable_correlation": true,
+      "description": "A Bitcoin address taking part in the transaction: the wallet the object describes, and the counterparties it exchanged value with",
       "misp-attribute": "btc",
+      "multiple": true,
       "ui-priority": 0
     },
     "time": {
@@ -47,5 +47,5 @@
     "value_BTC"
   ],
   "uuid": "B7341729-5A8A-439F-A775-6D814DA3C7B5",
-  "version": 4
+  "version": 5
 }
