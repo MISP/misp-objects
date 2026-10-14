@@ -1,0 +1,161 @@
+{
+  "attributes": {
+    "abuse-address": {
+      "description": "Postal address of the abuse contact for the network the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "abuse-email": {
+      "description": "Email address of the abuse contact",
+      "disable_correlation": true,
+      "misp-attribute": "email",
+      "ui-priority": 1
+    },
+    "abuse-name": {
+      "description": "Name of the abuse contact",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "abuse-phone": {
+      "description": "Phone number of the abuse contact",
+      "disable_correlation": true,
+      "misp-attribute": "phone-number",
+      "ui-priority": 0
+    },
+    "asn-abuser-score": {
+      "description": "Abuser score of the autonomous system announcing the IP address, over all its IPv4 routes: the share of its addresses seen in abuse, followed by a label from Very Low to Very High, such as 0.0327 (High)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "company-abuser-score": {
+      "description": "Abuser score of the network the IP address is registered in: the share of its addresses seen in abuse, followed by a label from Very Low to Very High, such as 0.3086 (Very High)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company-domain": {
+      "description": "Domain of the organisation the IP address is registered to",
+      "disable_correlation": true,
+      "misp-attribute": "domain",
+      "ui-priority": 0
+    },
+    "company-name": {
+      "description": "Name of the organisation the IP address is registered to, from WHOIS",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company-type": {
+      "description": "Type of the organisation the IP address is registered to: hosting, isp, education, government, banking or business",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "crawler": {
+      "description": "Name of the crawler or bot operating from the IP address, such as GoogleBot",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "datacenter": {
+      "description": "Name of the hosting, cloud or CDN provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "ip": {
+      "description": "IP address the information refers to",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "is-abuser": {
+      "description": "The IP address was recently seen in abuse (attacks, spam, scanning) by blocklists or honeypots",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-anycast": {
+      "description": "The IP address is anycast: it is announced from many sites and answers from the nearest one",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-crawler": {
+      "description": "The IP address is used by a crawler or bot, such as a search engine, SEO or AI crawler or an uptime monitor",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-datacenter": {
+      "description": "The IP address belongs to a hosting, cloud or CDN provider",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-mobile": {
+      "description": "The IP address belongs to a mobile carrier",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-proxy": {
+      "description": "The IP address is a known open proxy (HTTP, SOCKS4, SOCKS5)",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-satellite": {
+      "description": "The IP address belongs to a satellite ISP, such as Starlink or Viasat",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-tor": {
+      "description": "The IP address is a Tor exit node",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-vpn": {
+      "description": "The IP address is a VPN exit node or server",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "rir": {
+      "description": "Registry the WHOIS record of the IP address comes from, such as RIPE, ARIN or JPNIC",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "vpn-last-seen": {
+      "description": "Last time the IP address was seen as a VPN exit node or server",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "vpn-service": {
+      "description": "Name of the VPN provider; several providers sharing a range are joined with +",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "vpn-type": {
+      "description": "exit_node when VPN traffic was seen leaving from the IP address, vpn_server when the VPN provider lists it as one of its servers",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    }
+  },
+  "description": "IP address intelligence from ipapi.is: VPN (with the provider), proxy, Tor, datacenter, abuser, crawler, mobile, satellite and anycast detection, the organisation the address is registered to with its abuser score, and the abuse contact.",
+  "meta-category": "network",
+  "name": "ipapi-is-ip",
+  "required": [
+    "ip"
+  ],
+  "uuid": "2961a5dc-0c3c-4e68-8d65-1565c118c723",
+  "version": 1
+}
