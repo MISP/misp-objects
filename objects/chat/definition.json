@@ -87,7 +87,7 @@
       "ui-priority": 1
     }
   },
-  "description": "A chat container, a subchannel or a thread on a messaging service. Identifiers are local to their service instance and parent container. Represent hierarchy with part-of object references to separate chat objects. Use native object first_seen and last_seen for observations.",
+  "description": "A chat, subchannel or discussion thread on a messaging service, including its platform identifier, name, username, description and service context.",
   "meta-category": "misc",
   "name": "chat",
   "required": [
