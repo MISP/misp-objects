@@ -35,10 +35,9 @@
   "description": "Object describing a decoded QR code, including its decoded value, original image, and contextual description.",
   "meta-category": "misc",
   "name": "decoded-qrcode",
-  "requiredOneOf": [
-    "decoded-value",
-    "qr-image"
+  "required": [
+    "decoded-value"
   ],
   "uuid": "f87410c2-59f4-4d2f-bc0e-81deb3b93b25",
-  "version": 1
+  "version": 2
 }

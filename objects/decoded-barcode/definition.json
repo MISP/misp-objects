@@ -56,9 +56,8 @@
   "meta-category": "misc",
   "name": "decoded-barcode",
   "required": [
-    "decoded-value",
-    "barcode-image"
+    "decoded-value"
   ],
   "uuid": "31b5ffde-bb65-47ae-a5cd-7f72b9975687",
-  "version": 1
+  "version": 2
 }
