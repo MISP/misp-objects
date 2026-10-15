@@ -1,0 +1,98 @@
+{
+  "attributes": {
+    "address": {
+      "description": "Recorded service-instance address, when available. Preserve its source form without inventing a hostname or URL.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "created": {
+      "description": "Recorded creation time of this container on the source platform. This is distinct from observation first_seen and last_seen.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "description": {
+      "description": "Recorded description of the container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "id": {
+      "description": "Identifier assigned to this container by the source platform. Preserve it as text; it is scoped to its service instance and parent container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "kind": {
+      "description": "Container kind. When absent, interpret this object as a chat. A subchannel or thread must specify its kind.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "chat"
+      ],
+      "to_ids": false,
+      "ui-priority": 0,
+      "values_list": [
+        "chat",
+        "subchannel",
+        "thread"
+      ]
+    },
+    "language": {
+      "description": "Language observed in messages belonging to this container, expressed as a language code.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "name": {
+      "description": "Recorded display name of this chat, subchannel or thread.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "network": {
+      "description": "Logical network or deployment name recorded for the service instance. This is not restricted to transport networks such as Tor or I2P.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "protocol": {
+      "description": "Messaging service or protocol, such as rocket-chat, telegram, matrix or discord. Together with network and address, identifies the service instance.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 0
+    },
+    "url": {
+      "description": "Direct URL of this container on the source service, when known. Do not substitute a collector user-interface URL.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "username": {
+      "description": "Platform username assigned to this container, if any. This is not a participant username.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A chat, subchannel or discussion thread on a messaging service, including its platform identifier, name, username, description and service context.",
+  "meta-category": "misc",
+  "name": "chat",
+  "required": [
+    "id"
+  ],
+  "uuid": "c05abee9-1cd2-424e-a670-c1a28a87a55a",
+  "version": 1
+}
