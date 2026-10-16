@@ -326,6 +326,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/leaked-document](https://github.com/MISP/misp-objects/blob/main/objects/leaked-document/definition.json) - Object describing a leaked document.
 - [objects/legal-entity](https://github.com/MISP/misp-objects/blob/main/objects/legal-entity/definition.json) - An object to describe a legal entity.
 - [objects/lnk](https://github.com/MISP/misp-objects/blob/main/objects/lnk/definition.json) - LNK object describing a Windows LNK binary file (aka Windows shortcut).
+- [objects/lookyloo-capture](https://github.com/MISP/misp-objects/blob/main/objects/lookyloo-capture/definition.json) - A Lookyloo web capture with instance, UUID, timestamp, redirects, observed infrastructure and raw endpoint responses.
 - [objects/macho](https://github.com/MISP/misp-objects/blob/main/objects/macho/definition.json) - Object describing a file in Mach-O format.
 - [objects/macho-section](https://github.com/MISP/misp-objects/blob/main/objects/macho-section/definition.json) - Object describing a section of a file in Mach-O format.
 - [objects/mactime-timeline-analysis](https://github.com/MISP/misp-objects/blob/main/objects/mactime-timeline-analysis/definition.json) - Mactime template, used in forensic investigations to describe the timeline of a file activity.
