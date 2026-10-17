@@ -188,6 +188,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/directory](https://github.com/MISP/misp-objects/blob/main/objects/directory/definition.json) - Directory object describing a directory with meta-information.
 - [objects/dkim](https://github.com/MISP/misp-objects/blob/main/objects/dkim/definition.json) - DomainKeys Identified Mail - DKIM.
 - [objects/dns-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-record/definition.json) - A set of DNS records observed for a specific domain.
+- [objects/dns-resource-record](https://github.com/MISP/misp-objects/blob/main/objects/dns-resource-record/definition.json) - A single DNS resource record observed through active resolution, preserving its query name, owner, type, class, TTL and complete RDATA alongside extracted correlation pivots. Object first_seen and last_seen record observation time, not zone history.
 - [objects/modat-dns-record](https://github.com/MISP/misp-objects/blob/main/objects/modat-dns-record/definition.json) - A single historical MODAT DNS resource record, including lifecycle and TTL. SOA rname remains DNS notation.
 - [objects/modat-service](https://github.com/MISP/misp-objects/blob/main/objects/modat-service/definition.json) - An observed MODAT Magnify service. Array leaf values share this observation; raw JSON retains their exact nesting.
 - [objects/url](https://github.com/MISP/misp-objects/blob/main/objects/url/definition.json) - dom-hash object to describe similar structure of HTML pages.
