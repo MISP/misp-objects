@@ -53,8 +53,7 @@
         "forticloud-sandbox",
         "joe-sandbox-cloud",
         "symantec-cas-cloud",
-        "any.run",
-        "hatching-triage"
+        "any.run"
       ],
       "ui-priority": 1
     },
@@ -94,7 +93,8 @@
       "misp-attribute": "text",
       "sane_default": [
         "malwr",
-        "hybrid-analysis"
+        "hybrid-analysis",
+        "hatching-triage"
       ],
       "ui-priority": 1
     }
