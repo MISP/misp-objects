@@ -11,7 +11,10 @@
         "trendmicro-deep-discovery-analyzer",
         "fireeye-ax",
         "vmray",
-        "joe-sandbox-on-premise"
+        "joe-sandbox-on-premise",
+        "cape",
+        "fortisandbox",
+        "glimps-detect"
       ],
       "ui-priority": 1
     },
@@ -49,7 +52,8 @@
       "sane_default": [
         "forticloud-sandbox",
         "joe-sandbox-cloud",
-        "symantec-cas-cloud"
+        "symantec-cas-cloud",
+        "any.run"
       ],
       "ui-priority": 1
     },
@@ -89,7 +93,8 @@
       "misp-attribute": "text",
       "sane_default": [
         "malwr",
-        "hybrid-analysis"
+        "hybrid-analysis",
+        "hatching-triage"
       ],
       "ui-priority": 1
     }
@@ -106,5 +111,5 @@
     "saas-sandbox"
   ],
   "uuid": "4d3fffd2-cd07-4357-96e0-a51c988faaef",
-  "version": 2
+  "version": 3
 }
