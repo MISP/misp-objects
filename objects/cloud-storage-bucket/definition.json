@@ -1,0 +1,146 @@
+{
+  "attributes": {
+    "account-id": {
+      "description": "Containing cloud account identifier from the event context.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "alternate-id": {
+      "description": "Alternate identifier of the same bucket.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "backed-up": {
+      "description": "Whether a backup is enabled according to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "bucket-id": {
+      "description": "Provider identifier of the bucket or data container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "created": {
+      "description": "Bucket creation time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Source description of the data container.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "encrypted": {
+      "description": "Whether bucket encryption is enabled according to the source.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "encryption-algorithm": {
+      "description": "Algorithm used for bucket encryption.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "encryption-key-id": {
+      "description": "Identifier of the encryption key; exclude key material.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "modified": {
+      "description": "Bucket modification time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Bucket or data container name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "namespace": {
+      "description": "Namespace defining the bucket's scope.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "partition": {
+      "description": "Provider partition containing the bucket.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "provider": {
+      "description": "Cloud provider from the event context, when known.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "public": {
+      "description": "Whether the source reports the bucket as publicly accessible.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "region": {
+      "description": "Cloud region hosting the bucket.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "size-in-bytes": {
+      "description": "Bucket size in bytes as measured by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Source bucket or data container type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "zone": {
+      "description": "Availability zone, when applicable.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An object storage bucket or equivalent data container, including its cloud scope, public exposure and encryption state. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/databucket, https://schema.ocsf.io/1.9.0/objects/cloud.",
+  "meta-category": "misc",
+  "name": "cloud-storage-bucket",
+  "requiredOneOf": [
+    "bucket-id",
+    "name"
+  ],
+  "uuid": "24194d8e-1205-4027-9e5d-09622e6d964b",
+  "version": 1
+}
