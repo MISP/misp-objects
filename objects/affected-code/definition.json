@@ -1,0 +1,76 @@
+{
+  "attributes": {
+    "end-column": {
+      "description": "Last source column of the affected span, retaining the source numbering convention.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "end-line": {
+      "description": "Last source line of the affected span, retaining the source numbering convention.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "file-sha256": {
+      "description": "SHA-256 of the affected file, selected by the fingerprint algorithm; do not coerce another hash algorithm into this field.",
+      "disable_correlation": false,
+      "misp-attribute": "sha256",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "filename": {
+      "description": "Path of the file containing the affected code; fall back to file.name when a path is unavailable.",
+      "disable_correlation": true,
+      "misp-attribute": "filename",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "remediation": {
+      "description": "Recommended remediation for this code location.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "rule-id": {
+      "description": "Identifier of the scanner rule that identified this span.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "rule-name": {
+      "description": "Name of the scanner rule that identified this span.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "start-column": {
+      "description": "First source column of the affected span, retaining the source numbering convention.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "start-line": {
+      "description": "First source line of the affected span, retaining the source numbering convention.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A vulnerable source-code location, with one file and an optional line and column range, associated rule and remediation. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/affected_code.",
+  "meta-category": "vulnerability",
+  "name": "affected-code",
+  "requiredOneOf": [
+    "filename",
+    "file-sha256"
+  ],
+  "uuid": "5c7ff3ec-750d-497b-9185-408c4aa3b7d3",
+  "version": 1
+}
