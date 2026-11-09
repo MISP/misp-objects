@@ -3,7 +3,7 @@
     "alert": {
       "description": "TLS alert code observed by the source.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -25,7 +25,7 @@
     "handshake-duration-ms": {
       "description": "Handshake duration in milliseconds after TCP establishment, including source-observed client delays.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -46,7 +46,7 @@
     "key-length": {
       "description": "Negotiated encryption key length in bits.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -80,9 +80,14 @@
     "version",
     "cipher",
     "server-name",
+    "key-length",
+    "alert",
+    "handshake-duration-ms",
+    "client-cipher",
+    "server-cipher",
     "ja3",
     "ja3s"
   ],
   "uuid": "7de2fca6-f67f-44bf-94e9-3b355074f232",
-  "version": 1
+  "version": 2
 }
