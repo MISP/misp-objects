@@ -1,0 +1,107 @@
+{
+  "attributes": {
+    "authentication-protocol": {
+      "description": "Authentication protocol in use, retaining the source label.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "configuration-id": {
+      "description": "Source identifier for this SSO configuration.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "created": {
+      "description": "Configuration creation time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "duration-minutes": {
+      "description": "Configured SSO session duration in minutes.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "idle-timeout-minutes": {
+      "description": "Allowed inactivity in minutes before the SSO session expires.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "login-url": {
+      "description": "Login endpoint for this trust configuration.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "logout-url": {
+      "description": "Logout endpoint for this trust configuration.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "metadata-url": {
+      "description": "Federation metadata endpoint.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "modified": {
+      "description": "Configuration modification time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "SSO configuration display name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "protocol": {
+      "description": "SSO protocol name supplied by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "scope": {
+      "description": "One requested or configured scope per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "vendor": {
+      "description": "Vendor providing the SSO implementation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A single sign-on trust configuration, including its protocol, endpoints, scopes and timeouts. Useful for federation configuration and tampering investigations. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/sso.",
+  "meta-category": "misc",
+  "name": "sso-configuration",
+  "requiredOneOf": [
+    "configuration-id",
+    "name",
+    "metadata-url",
+    "login-url"
+  ],
+  "uuid": "49778d20-1fd4-433d-bf4b-2bbaca9648df",
+  "version": 1
+}
