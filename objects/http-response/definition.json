@@ -25,7 +25,7 @@
     "latency-ms": {
       "description": "Observed HTTP response latency in milliseconds.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -69,5 +69,5 @@
     "message"
   ],
   "uuid": "b059e3a8-3c9d-4689-962a-7a07e349c966",
-  "version": 1
+  "version": 2
 }
