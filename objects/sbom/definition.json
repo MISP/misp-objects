@@ -1,0 +1,48 @@
+{
+  "attributes": {
+    "created": {
+      "description": "SBOM generation time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "document": {
+      "description": "Original SBOM document attached as evidence; this is a MISP addition to the OCSF metadata.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "format": {
+      "description": "SBOM format such as SPDX, CycloneDX, or SWID.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "sbom-id": {
+      "description": "Identifier of the SBOM document or generation assigned by the producing tool.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "specification-version": {
+      "description": "Version of the SBOM specification, not the described software version.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Metadata for a software bill of materials document, including format, specification version, generation time and optional original document. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/sbom.",
+  "meta-category": "misc",
+  "name": "sbom",
+  "requiredOneOf": [
+    "sbom-id",
+    "document"
+  ],
+  "uuid": "16633f48-78e2-4739-8f30-c815e372e2ce",
+  "version": 1
+}
