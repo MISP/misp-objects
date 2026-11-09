@@ -17,7 +17,7 @@
     "encryption-key-length": {
       "description": "Encryption key length in bits, when reported.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -90,8 +90,13 @@
   "name": "authentication-token",
   "requiredOneOf": [
     "token-id",
-    "name"
+    "name",
+    "type",
+    "kerberos-flags",
+    "encryption-algorithm",
+    "created",
+    "expires"
   ],
   "uuid": "2d75ac40-d1b2-4e50-9b5e-d13b5bad4b0e",
-  "version": 1
+  "version": 2
 }
