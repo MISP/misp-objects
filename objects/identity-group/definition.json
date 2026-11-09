@@ -1,0 +1,63 @@
+{
+  "attributes": {
+    "alternate-id": {
+      "description": "Alternate identifier for the same group.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Description or purpose of the group.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "domain": {
+      "description": "Directory domain defining this group.",
+      "disable_correlation": false,
+      "misp-attribute": "domain",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "group-id": {
+      "description": "Group identifier assigned by the directory or control plane, for example a SID.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Group display name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "privilege": {
+      "description": "One group privilege per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Group kind as reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An access-control or directory group, with authority scope, identifiers and granted privileges. Model membership with object references. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/group.",
+  "meta-category": "misc",
+  "name": "identity-group",
+  "requiredOneOf": [
+    "group-id",
+    "name"
+  ],
+  "uuid": "c6117656-f091-4272-8842-954015cdd251",
+  "version": 1
+}
