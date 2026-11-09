@@ -1,0 +1,41 @@
+{
+  "attributes": {
+    "data": {
+      "description": "Clipboard bytes as an attachment; decode the OCSF base64 byte string into attachment data without changing the bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "attachment",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "mime-type": {
+      "description": "MIME type describing this item's content.",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "native-type": {
+      "description": "Operating system clipboard format, for example CF_TEXT or public.utf8-plain-text.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "text": {
+      "description": "Clipboard content decoded as UTF-8 text.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "One captured clipboard item, preserving its text or binary evidence, MIME type and native format for clipboard theft and replacement investigations. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/clipboard_item.",
+  "meta-category": "misc",
+  "name": "clipboard-item",
+  "requiredOneOf": [
+    "text",
+    "data"
+  ],
+  "uuid": "3b271513-0eb0-41de-a277-9402f3d76f40",
+  "version": 1
+}
