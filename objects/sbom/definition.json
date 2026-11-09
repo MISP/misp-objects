@@ -37,12 +37,12 @@
     }
   },
   "description": "Metadata for a software bill of materials document, including format, specification version, generation time and optional original document. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/sbom.",
-  "meta-category": "misc",
+  "meta-category": "file",
   "name": "sbom",
   "requiredOneOf": [
     "sbom-id",
     "document"
   ],
   "uuid": "16633f48-78e2-4739-8f30-c815e372e2ce",
-  "version": 1
+  "version": 2
 }
