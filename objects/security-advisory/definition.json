@@ -1,8 +1,8 @@
 {
   "attributes": {
     "advisory-id": {
-      "description": "Identifier assigned by the advisory publisher, for example a GHSA identifier or KB article number.",
-      "disable_correlation": true,
+      "description": "Publisher advisory identifier, for example GHSA-xxxx-yyyy-zzzz or a KB-prefixed Microsoft article ID; retain the publisher prefix for unambiguous correlation.",
+      "disable_correlation": false,
       "misp-attribute": "text",
       "to_ids": false,
       "ui-priority": 1
@@ -104,5 +104,5 @@
     "url"
   ],
   "uuid": "b0a254a8-833e-4a63-8a2a-25cf3323b2ce",
-  "version": 1
+  "version": 2
 }
