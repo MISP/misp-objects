@@ -1,0 +1,63 @@
+{
+  "attributes": {
+    "applied": {
+      "description": "Whether the policy was applied to the particular target or request being described; this is an observation, not an enablement flag.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Human-readable explanation of the policy.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "document": {
+      "description": "Policy document or source details serialized as JSON; retain the original structure.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Policy display name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "policy-id": {
+      "description": "Source identifier of this policy instance.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Policy kind, such as Identity Policy, Resource Policy, or Service Control Policy.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "version": {
+      "description": "Source policy revision or version.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A security policy instance and its observed application state, including an optional policy document. Suitable for identity, resource and organizational guardrail policies. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/policy.",
+  "meta-category": "misc",
+  "name": "security-policy",
+  "requiredOneOf": [
+    "policy-id",
+    "name",
+    "document"
+  ],
+  "uuid": "8ba2710e-ef02-4a58-b330-e741301ee3b1",
+  "version": 1
+}
