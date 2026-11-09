@@ -1,0 +1,71 @@
+{
+  "attributes": {
+    "ack-reason": {
+      "description": "Source numeric bind acknowledgement reason.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "ack-result": {
+      "description": "Source numeric bind acknowledgement result.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "command": {
+      "description": "Request command such as REQUEST or BIND.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "flag": {
+      "description": "One source RPC interface flag per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "interface-uuid": {
+      "description": "UUID identifying the RPC interface or service.",
+      "disable_correlation": true,
+      "misp-attribute": "uuid",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "interface-version": {
+      "description": "Interface version reported for this DCE/RPC interaction.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "operation-number": {
+      "description": "RPC operation number identifying the invoked method within its interface.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "response-command": {
+      "description": "Response command such as RESPONSE, BINDACK, or FAULT.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An observed DCE/RPC operation and its interface identity, including operation number, commands and bind acknowledgement information. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/dce_rpc, https://schema.ocsf.io/1.9.0/objects/rpc_interface.",
+  "meta-category": "network",
+  "name": "dce-rpc",
+  "requiredOneOf": [
+    "interface-uuid",
+    "operation-number",
+    "command"
+  ],
+  "uuid": "dc7970a3-8a28-476e-a767-0649afa3e688",
+  "version": 2
+}
