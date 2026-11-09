@@ -24,14 +24,14 @@
     "duration-minutes": {
       "description": "Configured SSO session duration in minutes.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
     "idle-timeout-minutes": {
       "description": "Allowed inactivity in minutes before the SSO session expires.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -100,8 +100,9 @@
     "configuration-id",
     "name",
     "metadata-url",
-    "login-url"
+    "login-url",
+    "logout-url"
   ],
   "uuid": "49778d20-1fd4-433d-bf4b-2bbaca9648df",
-  "version": 1
+  "version": 2
 }
