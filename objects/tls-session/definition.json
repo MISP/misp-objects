@@ -1,0 +1,88 @@
+{
+  "attributes": {
+    "alert": {
+      "description": "TLS alert code observed by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "cipher": {
+      "description": "Negotiated cipher suite.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "client-cipher": {
+      "description": "One client-advertised cipher suite per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "handshake-duration-ms": {
+      "description": "Handshake duration in milliseconds after TCP establishment, including source-observed client delays.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "ja3": {
+      "description": "Client JA3 MD5 fingerprint; populate only when the source fingerprint algorithm is MD5.",
+      "disable_correlation": false,
+      "misp-attribute": "ja3-fingerprint-md5",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "ja3s": {
+      "description": "Server JA3S MD5 fingerprint; populate only when the source fingerprint algorithm is MD5.",
+      "disable_correlation": false,
+      "misp-attribute": "ja3-fingerprint-md5",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "key-length": {
+      "description": "Negotiated encryption key length in bits.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "server-cipher": {
+      "description": "One server-advertised cipher suite per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "server-name": {
+      "description": "SNI hostname sent by the client; omit this typed field when the source value is not a hostname.",
+      "disable_correlation": false,
+      "misp-attribute": "hostname",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "version": {
+      "description": "Negotiated TLS protocol version.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Negotiated TLS session properties, including protocol, cipher, server name and handshake observations. Reference certificates and network flows separately. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/tls.",
+  "meta-category": "network",
+  "name": "tls-session",
+  "requiredOneOf": [
+    "version",
+    "cipher",
+    "server-name",
+    "ja3",
+    "ja3s"
+  ],
+  "uuid": "7de2fca6-f67f-44bf-94e9-3b355074f232",
+  "version": 1
+}
