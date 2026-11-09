@@ -1,0 +1,40 @@
+{
+  "attributes": {
+    "created": {
+      "description": "Delegation issuance time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "delegation-id": {
+      "description": "Stable delegation identifier issued by a trusted authority; scope it to issuer-id and do not treat a delegate's self-assertion as verified authority.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "issuer-id": {
+      "description": "Identifier of the authority that issued this delegation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "parent-id": {
+      "description": "Parent delegation identifier when this authority was re-delegated; this records authority lineage, not an agent orchestration hierarchy.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An authority-issued delegation context with issuer, issuance time and optional parent delegation, for tracing durable delegated authority across events. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/delegation.",
+  "meta-category": "misc",
+  "name": "delegation",
+  "requiredOneOf": [
+    "delegation-id"
+  ],
+  "uuid": "c4221a8d-7f3e-4125-9485-49a661c9bc12",
+  "version": 1
+}
