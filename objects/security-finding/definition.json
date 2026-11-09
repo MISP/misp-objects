@@ -1,0 +1,114 @@
+{
+  "attributes": {
+    "alternate-id": {
+      "description": "Alternate identifier for the same finding.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "created": {
+      "description": "Finding creation time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "data-source": {
+      "description": "One source telemetry or dataset name per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Source description of the observed finding.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "finding-id": {
+      "description": "Finding identifier assigned by the producing system.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "first-seen": {
+      "description": "First observation of the activity represented by the finding in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "last-seen": {
+      "description": "Last observation of the activity represented by the finding in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "modified": {
+      "description": "Finding update time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "product": {
+      "description": "Name of the product that produced the finding.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "product-id": {
+      "description": "Source identifier of the product instance that produced the finding.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "title": {
+      "description": "Human-readable finding title.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "One source finding type per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Source finding details URL.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "vendor": {
+      "description": "Vendor of the producing product.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Metadata for an observed security finding emitted by a product, including source identifiers, title, observation times and provenance. Keep the detection rule and evidence as linked objects. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/finding_info.",
+  "meta-category": "misc",
+  "name": "security-finding",
+  "requiredOneOf": [
+    "finding-id",
+    "title",
+    "url"
+  ],
+  "uuid": "77b08e72-c2e3-43e6-90a8-bfb58effea73",
+  "version": 1
+}
