@@ -1,0 +1,73 @@
+{
+  "attributes": {
+    "body-length": {
+      "description": "Actual response body size in bytes, independently of a Content-Length header.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "content-type": {
+      "description": "Media type of the response body.",
+      "disable_correlation": true,
+      "misp-attribute": "mime-type",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "header": {
+      "description": "One complete HTTP response header per attribute in name: value form; retain duplicate header lines as separate attributes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "latency-ms": {
+      "description": "Observed HTTP response latency in milliseconds.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "length": {
+      "description": "Size of the complete response in bytes.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "message": {
+      "description": "HTTP status line or reason phrase as recorded by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "status": {
+      "description": "Source response status label, such as OK.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "status-code": {
+      "description": "HTTP status code returned by the server, such as 200 or 404.",
+      "disable_correlation": true,
+      "misp-attribute": "integer",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "One observed HTTP response, including status, headers, sizes and response latency. Relate it to its request and network connection. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/http_response.",
+  "meta-category": "network",
+  "name": "http-response",
+  "requiredOneOf": [
+    "status-code",
+    "header",
+    "content-type",
+    "status",
+    "message"
+  ],
+  "uuid": "b059e3a8-3c9d-4689-962a-7a07e349c966",
+  "version": 2
+}
