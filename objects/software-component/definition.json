@@ -1,0 +1,76 @@
+{
+  "attributes": {
+    "author": {
+      "description": "Author or authors as reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "license": {
+      "description": "Component license or license expression as reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Component name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "purl": {
+      "description": "Package URL identifying this component, preserving the pkg: URI form.",
+      "disable_correlation": false,
+      "misp-attribute": "uri",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "related-component": {
+      "description": "PURL of the related component. Use one object per distinct dependency relation so its relationship and target remain paired.",
+      "disable_correlation": false,
+      "misp-attribute": "uri",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "relationship": {
+      "description": "Relationship from this component to related-component, for example Depends On.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "sha256": {
+      "description": "Component SHA-256 selected by the fingerprint algorithm; omit when another algorithm was supplied.",
+      "disable_correlation": false,
+      "misp-attribute": "sha256",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Component kind such as Library or Framework.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "version": {
+      "description": "Component version.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A component in a software bill of materials, including its package URL, version, license, integrity and a dependency relation to another component. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/software_component.",
+  "meta-category": "misc",
+  "name": "software-component",
+  "requiredOneOf": [
+    "name",
+    "purl"
+  ],
+  "uuid": "3e3e3d98-98da-443f-8751-db8703abd30e",
+  "version": 1
+}
