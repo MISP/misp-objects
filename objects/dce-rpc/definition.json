@@ -3,14 +3,14 @@
     "ack-reason": {
       "description": "Source numeric bind acknowledgement reason.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
     "ack-result": {
       "description": "Source numeric bind acknowledgement result.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -46,7 +46,7 @@
     "operation-number": {
       "description": "RPC operation number identifying the invoked method within its interface.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -67,5 +67,5 @@
     "command"
   ],
   "uuid": "dc7970a3-8a28-476e-a767-0649afa3e688",
-  "version": 1
+  "version": 2
 }
