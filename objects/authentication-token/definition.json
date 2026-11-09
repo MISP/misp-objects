@@ -1,0 +1,102 @@
+{
+  "attributes": {
+    "created": {
+      "description": "Token issuance or creation time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "encryption-algorithm": {
+      "description": "Algorithm protecting a protocol-specific token.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "encryption-key-length": {
+      "description": "Encryption key length in bits, when reported.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "expires": {
+      "description": "Token expiration time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "kerberos-flags": {
+      "description": "Kerberos ticket flags in the source's hexadecimal or decimal bitmask notation; only for a Kerberos token.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "modified": {
+      "description": "Last token metadata update time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Human-readable token or key name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "renewable": {
+      "description": "Whether the token is renewable.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "tenant-id": {
+      "description": "Tenant owning the token or defining its authorization scope.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "token-id": {
+      "description": "Non-secret token or key identifier, such as a secret ID or token ID; exclude bearer values and client secrets.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Token kind; preserve distinctions between API or client tokens and Kerberos, OIDC, or SAML tokens.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "zone": {
+      "description": "Authorized network zone or geographic restriction reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Metadata identifying an authentication or API token, including type, tenant, lifetime and optional Kerberos properties. Records identifiers rather than reusable token values. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/token, https://schema.ocsf.io/1.9.0/objects/authentication_token.",
+  "meta-category": "misc",
+  "name": "authentication-token",
+  "requiredOneOf": [
+    "token-id",
+    "name",
+    "type",
+    "kerberos-flags",
+    "encryption-algorithm",
+    "created",
+    "expires"
+  ],
+  "uuid": "2d75ac40-d1b2-4e50-9b5e-d13b5bad4b0e",
+  "version": 2
+}
