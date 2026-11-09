@@ -45,7 +45,7 @@
     "subnet-prefix": {
       "description": "Prefix length associated with ip-address, using the correct IPv4 or IPv6 width.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -63,8 +63,10 @@
   "requiredOneOf": [
     "interface-id",
     "name",
-    "mac-address"
+    "mac-address",
+    "ip-address",
+    "hostname"
   ],
   "uuid": "6fef748d-a4c5-4b13-8c1e-8dbc1e1f7a92",
-  "version": 1
+  "version": 2
 }
