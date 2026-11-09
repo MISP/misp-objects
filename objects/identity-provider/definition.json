@@ -1,0 +1,77 @@
+{
+  "attributes": {
+    "domain": {
+      "description": "Primary domain associated with the identity provider.",
+      "disable_correlation": false,
+      "misp-attribute": "domain",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "issuer": {
+      "description": "Issuer identifier exactly as supplied, which may be a URL or another identifier.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "metadata-url": {
+      "description": "Provider configuration or metadata endpoint.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "mfa-enforced": {
+      "description": "Whether this provider enforces multi-factor authentication.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Identity provider display name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "protocol": {
+      "description": "Federation or authentication protocol, such as SAML, OIDC, or OAuth2.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "provider-id": {
+      "description": "Source identity provider identifier.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "state": {
+      "description": "Observed provider configuration state, such as Active or Suspended.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "tenant-id": {
+      "description": "Tenant identifier within the provider.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An identity provider used for federation or authentication, including issuer, tenant, protocol and configuration state. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/idp.",
+  "meta-category": "misc",
+  "name": "identity-provider",
+  "requiredOneOf": [
+    "provider-id",
+    "name",
+    "issuer"
+  ],
+  "uuid": "548e9ec9-f752-43b8-b582-a38275329376",
+  "version": 1
+}
