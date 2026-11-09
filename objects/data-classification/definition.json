@@ -80,7 +80,7 @@
     "size": {
       "description": "Size of the classified data in the source's units; OCSF does not specify a unit for this field.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -105,8 +105,11 @@
   "requiredOneOf": [
     "category",
     "confidentiality",
-    "pattern-match"
+    "pattern-match",
+    "detection-pattern",
+    "lifecycle-state",
+    "detection-system"
   ],
   "uuid": "3d140214-abf3-46cd-b38a-f5660716e53f",
-  "version": 1
+  "version": 2
 }
