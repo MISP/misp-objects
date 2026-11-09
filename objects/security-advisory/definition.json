@@ -1,0 +1,108 @@
+{
+  "attributes": {
+    "advisory-id": {
+      "description": "Identifier assigned by the advisory publisher, for example a GHSA identifier or KB article number.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "bulletin": {
+      "description": "Publisher bulletin identifier or label.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "classification": {
+      "description": "Publisher classification of this advisory or update.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "created": {
+      "description": "Publication or creation time provided by the source in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Advisory summary or description.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "installation-state": {
+      "description": "Installation state of the referenced update for the observed system, when supplied.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "modified": {
+      "description": "Advisory modification time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "One supporting reference URL per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "superseded": {
+      "description": "Whether a later advisory or update supersedes this one.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "title": {
+      "description": "Published advisory title.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "Canonical advisory URL.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "vulnerability": {
+      "description": "One associated CVE identifier per attribute.",
+      "disable_correlation": false,
+      "misp-attribute": "vulnerability",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "weakness": {
+      "description": "One associated CWE identifier per attribute.",
+      "disable_correlation": false,
+      "misp-attribute": "weakness",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A vendor or community security advisory that may address several vulnerabilities, products or updates. Keep advisory identity separate from individual CVE records. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/advisory, https://schema.ocsf.io/1.9.0/objects/kb_article.",
+  "meta-category": "vulnerability",
+  "name": "security-advisory",
+  "requiredOneOf": [
+    "advisory-id",
+    "title",
+    "url"
+  ],
+  "uuid": "b0a254a8-833e-4a63-8a2a-25cf3323b2ce",
+  "version": 1
+}
