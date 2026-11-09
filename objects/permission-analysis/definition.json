@@ -51,8 +51,10 @@
   "requiredOneOf": [
     "privilege",
     "analyzed-privileges-count",
-    "unused-privileges-count"
+    "unused-privileges-count",
+    "unused-services-count",
+    "potential-attacks-count"
   ],
   "uuid": "849d7f31-05cd-43db-b100-4ffe52f8c691",
-  "version": 1
+  "version": 2
 }
