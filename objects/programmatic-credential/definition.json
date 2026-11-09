@@ -1,0 +1,33 @@
+{
+  "attributes": {
+    "credential-id": {
+      "description": "Identifier of the issued credential, for example an AWS Access Key ID or GCP service account key ID; exclude the secret key value.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "last-used": {
+      "description": "Last observed use in ISO 8601; convert source epoch milliseconds when necessary.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Credential category, for example API Key, Service Account Key, or Client Certificate.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A service credential identifier and its observed usage, for API key and service account investigations. Record credential metadata rather than secret values. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/programmatic_credential.",
+  "meta-category": "misc",
+  "name": "programmatic-credential",
+  "requiredOneOf": [
+    "credential-id"
+  ],
+  "uuid": "7cf5d9bd-5e67-40a5-bd5f-039ab2750d6c",
+  "version": 1
+}
