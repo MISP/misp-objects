@@ -1,0 +1,105 @@
+{
+  "attributes": {
+    "alternate-id": {
+      "description": "Alternate session identifier, such as an assumed-role session ARN.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "count": {
+      "description": "Number of identical sessions aggregated by the source; omit for an unreported count.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "created": {
+      "description": "Session creation time in ISO 8601; convert source epoch milliseconds when necessary.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "credential-id": {
+      "description": "Identifier of the credential used, such as an access key ID; exclude secret key material.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "expiration-reason": {
+      "description": "Source explanation of why the session ended or expired.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "expires": {
+      "description": "Session expiry time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "issuer": {
+      "description": "Identity or identifier of the session issuer.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "mfa": {
+      "description": "Whether multi-factor authentication was used for this session.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "remote": {
+      "description": "Whether this is a remote session.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "session-id": {
+      "description": "Session identifier scoped to its issuer; this is metadata rather than a bearer cookie or token value.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "session-uuid": {
+      "description": "Universally unique session identifier, when the source supplies a UUID.",
+      "disable_correlation": true,
+      "misp-attribute": "uuid",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "terminal": {
+      "description": "Associated terminal, for example a tty or pts identifier.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "vpn": {
+      "description": "Whether this is a VPN session.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An authenticated session and its issuer, credential identifier, lifetime and authentication properties. One object describes one session or an explicitly aggregated session observation. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/session.",
+  "meta-category": "misc",
+  "name": "authentication-session",
+  "requiredOneOf": [
+    "session-id",
+    "session-uuid",
+    "alternate-id"
+  ],
+  "uuid": "56bba649-4afa-4866-8163-226e68e04f2b",
+  "version": 1
+}
