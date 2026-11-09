@@ -3,14 +3,14 @@
     "end-column": {
       "description": "Last source column of the affected span, retaining the source numbering convention.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
     "end-line": {
       "description": "Last source line of the affected span, retaining the source numbering convention.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
@@ -52,14 +52,14 @@
     "start-column": {
       "description": "First source column of the affected span, retaining the source numbering convention.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     },
     "start-line": {
       "description": "First source line of the affected span, retaining the source numbering convention.",
       "disable_correlation": true,
-      "misp-attribute": "integer",
+      "misp-attribute": "counter",
       "to_ids": false,
       "ui-priority": 1
     }
@@ -72,5 +72,5 @@
     "file-sha256"
   ],
   "uuid": "5c7ff3ec-750d-497b-9185-408c4aa3b7d3",
-  "version": 1
+  "version": 2
 }
