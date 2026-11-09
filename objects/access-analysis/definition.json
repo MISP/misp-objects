@@ -1,0 +1,44 @@
+{
+  "attributes": {
+    "access-level": {
+      "description": "General access level, such as Read, Write, or Admin.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "access-type": {
+      "description": "Access relationship type, such as Public, Cross-Account, or Federated.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "condition": {
+      "description": "One complete policy condition serialized as a JSON name/value or name/values object per attribute, preserving value types and grouping.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "privilege": {
+      "description": "One specific granted action or privilege per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "One resource-centric access analysis result describing an access level, access type, granted privileges and policy conditions. Link the resource and accessor identities explicitly. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/access_analysis_result.",
+  "meta-category": "misc",
+  "name": "access-analysis",
+  "requiredOneOf": [
+    "access-level",
+    "access-type",
+    "privilege"
+  ],
+  "uuid": "e2d061b1-b9fa-4799-b85c-7c6b296050f9",
+  "version": 1
+}
