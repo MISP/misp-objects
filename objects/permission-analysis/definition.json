@@ -1,0 +1,58 @@
+{
+  "attributes": {
+    "analyzed-privileges-count": {
+      "description": "Number of privileges evaluated by this analysis.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "condition": {
+      "description": "One complete policy condition serialized as a JSON name/value or name/values object per attribute, retaining grouping and types.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "potential-attacks-count": {
+      "description": "Number of privilege-to-attack mappings reported by the analyzer; this is not a count of observed attacks.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "privilege": {
+      "description": "One granted action or privilege per attribute.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "unused-privileges-count": {
+      "description": "Number of evaluated privileges unused within the source analysis timeframe.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "unused-services-count": {
+      "description": "Number of services or resource types not used within the source analysis timeframe.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "One identity-centric permission analysis result with granted actions and counts of unused permissions, unused services and potential attack mappings. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/permission_analysis_result.",
+  "meta-category": "misc",
+  "name": "permission-analysis",
+  "requiredOneOf": [
+    "privilege",
+    "analyzed-privileges-count",
+    "unused-privileges-count"
+  ],
+  "uuid": "849d7f31-05cd-43db-b100-4ffe52f8c691",
+  "version": 1
+}
