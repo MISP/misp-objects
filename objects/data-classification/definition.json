@@ -1,0 +1,115 @@
+{
+  "attributes": {
+    "category": {
+      "description": "Source category of discovered data, such as financial or personal information.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "classification-id": {
+      "description": "Identifier of this classification record or definition.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "classifier-id": {
+      "description": "Identifier of the classifier that produced the observation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "classifier-name": {
+      "description": "Name of the classifier that produced the observation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "classifier-type": {
+      "description": "Source classifier type.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "confidentiality": {
+      "description": "Source confidentiality label assigned to the data.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "detection-pattern": {
+      "description": "Pattern used by the source to identify the data.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "detection-system": {
+      "description": "Source detection system label.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "lifecycle-state": {
+      "description": "Data lifecycle state in the source DLP observation.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "pattern-match": {
+      "description": "Matched content reported by the source; include only when appropriate for the event's sharing scope.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "reference": {
+      "description": "Source documentation or details URL for the classification.",
+      "disable_correlation": true,
+      "misp-attribute": "link",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "size": {
+      "description": "Size of the classified data in the source's units; OCSF does not specify a unit for this field.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "status": {
+      "description": "Observed classification or inspection status.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "total": {
+      "description": "Total number of entities discovered by the classification job.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "One data classification or DLP observation, including source category, confidentiality, classifier, lifecycle and detection context. It records source labels without imposing a universal classification vocabulary. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/data_classification, https://schema.ocsf.io/1.9.0/objects/data_security.",
+  "meta-category": "misc",
+  "name": "data-classification",
+  "requiredOneOf": [
+    "category",
+    "confidentiality",
+    "pattern-match",
+    "detection-pattern",
+    "lifecycle-state",
+    "detection-system"
+  ],
+  "uuid": "3d140214-abf3-46cd-b38a-f5660716e53f",
+  "version": 2
+}
