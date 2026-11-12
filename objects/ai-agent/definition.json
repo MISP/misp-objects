@@ -1,0 +1,76 @@
+{
+  "attributes": {
+    "agent-id": {
+      "description": "Stable agent identity assigned by its authoritative source, scoped to that source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "framework": {
+      "description": "Agent framework, for example LangChain, AutoGen, or CrewAI.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "instance-id": {
+      "description": "Identifier of the particular running agent instance or session.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "model-id": {
+      "description": "Model identifier observed for this agent at the time of the activity.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "model-name": {
+      "description": "Name of the model backing this agent.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "model-provider": {
+      "description": "Provider of the backing model.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "model-version": {
+      "description": "Version of the backing model.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Agent display name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "version": {
+      "description": "Agent code or configuration revision, distinct from the model version.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An autonomous AI agent with a stable logical identifier and an optional runtime instance identifier, framework, revision and model context. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/ai_agent.",
+  "meta-category": "misc",
+  "name": "ai-agent",
+  "requiredOneOf": [
+    "agent-id",
+    "name"
+  ],
+  "uuid": "452b5cf3-7163-4e3c-8edb-2b019cd176ae",
+  "version": 1
+}
