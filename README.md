@@ -350,6 +350,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/network-traffic](https://github.com/MISP/misp-objects/blob/main/objects/network-traffic/definition.json) - Generic network traffic that originates from a source and is addressed to a destination.
 - [objects/news-agency](https://github.com/MISP/misp-objects/blob/main/objects/news-agency/definition.json) - News agencies compile news and disseminate news in bulk.
 - [objects/news-media](https://github.com/MISP/misp-objects/blob/main/objects/news-media/definition.json) - News media are forms of mass media delivering news to the general public.
+- [objects/nmea](https://github.com/MISP/misp-objects/blob/main/objects/nmea/definition.json) - An NMEA 0183 receiver log with original sentences, file provenance, sentence and position counts, talker identifiers and derived spatial and temporal bounds.
 - [objects/nova-rule](https://github.com/MISP/misp-objects/blob/main/objects/nova-rule/definition.json) - NOVA prompt detection rule metadata and logic for a single NOVA rule.
 - [objects/nse](https://github.com/MISP/misp-objects/blob/main/objects/nse/definition.json) - An object describing an Nmap NSE script using the standard NSE script format fields.
 - [objects/ocrized-image](https://github.com/MISP/misp-objects/blob/main/objects/ocrized-image/definition.json) - Object describing an OCRized image, including the original image, extracted text, and contextual description.
