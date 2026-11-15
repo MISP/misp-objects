@@ -503,6 +503,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 - [objects/user-account](https://github.com/MISP/misp-objects/blob/main/objects/user-account/definition.json) - User-account object, defining aspects of user identification, authentication, privileges and other relevant data points.
 - [objects/user-action](https://github.com/MISP/misp-objects/blob/main/objects/user-action/definition.json) - Represent an user action.
 - [objects/vehicle](https://github.com/MISP/misp-objects/blob/main/objects/vehicle/definition.json) - Vehicle object template to describe a vehicle information and registration.
+- [objects/velociraptor-result](https://github.com/MISP/misp-objects/blob/main/objects/velociraptor-result/definition.json) - A Velociraptor artifact result row with collection provenance and original row context. Link to the source export and to derived process, file, network-socket or service objects. An observation does not by itself establish malicious activity.
 - [objects/victim](https://github.com/MISP/misp-objects/blob/main/objects/victim/definition.json) - Victim object describes the target of an attack or abuse.
 - [objects/virustotal-graph](https://github.com/MISP/misp-objects/blob/main/objects/virustotal-graph/definition.json) - VirusTotal graph.
 - [objects/virustotal-report](https://github.com/MISP/misp-objects/blob/main/objects/virustotal-report/definition.json) - VirusTotal report.
