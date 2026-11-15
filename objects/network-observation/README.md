@@ -36,8 +36,9 @@ attachment if it would disclose excluded records, while retaining selected raw
 records and the original externally retained export's hash/size/name.
 
 Following the relationship catalogue, capture metadata and source exports point
-to derived observations with `derived-from`; observations point to derived
-connections and can also `describe` them. Source sensor signatures, notices,
-severities and actions remain unreviewed observations, distinct from analyst
-conclusions. A blocked/allowed action does not independently prove maliciousness
-or remediation. All fields default to non-IDS and non-correlating.
+to derived observations with `derived-from`. Observations point to derived
+connections with `derived-from` and may also reference them using `describes`.
+Source sensor signatures, notices, severities and actions remain unreviewed
+observations, distinct from analyst conclusions. A blocked/allowed action does not
+independently prove maliciousness or remediation. All fields default to non-IDS
+and non-correlating.
