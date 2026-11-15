@@ -29,9 +29,14 @@ record ordinal, excluding CSV headers and blank JSONL lines.
 
 Keep the original export in a `file` or `original-imported-file` object, then:
 
-- Link this row to that source with `derived-from`.
-- Link this row to mapped observations with `describes`.
-- Link mapped observations back to the row with `derived-from`.
+- Link the source export to this row with `derived-from`.
+- Link this row to mapped observations with `derived-from`.
+- Optionally also link this row to mapped observations with `describes`.
+
+The [relationship catalogue](../../relationships/definition.json) defines the
+target's information as being based on the source's information. Consequently,
+the `derived-from` chain runs from source export to result row to mapped
+observation, rather than back toward the original evidence.
 
 The `row` is normalized JSON, not a byte-preserving replacement for the source
 export. It may retain fields that the importer cannot map. Original bytes and
