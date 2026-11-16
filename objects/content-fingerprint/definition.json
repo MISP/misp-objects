@@ -1,0 +1,41 @@
+{
+  "attributes": {
+    "content-type": {
+      "description": "text, image or video.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "fingerprint": {
+      "description": "Algorithm/version-qualified normalised or approximate fingerprint. Exact equality supports correlation; approximate distance requires comparison.",
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "metadata": {
+      "description": "JSON report with algorithm versions, preprocessing parameters, decoder version, timestamps and coverage limits.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "sha256": {
+      "description": "SHA-256 of original input bytes (UTF-8 for text attributes).",
+      "misp-attribute": "sha256",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "Exact and versioned approximate content fingerprints with reproducible parameters and source provenance. Approximate matches are similarity candidates, not identity or attribution proof.",
+  "meta-category": "misc",
+  "name": "content-fingerprint",
+  "required": [
+    "sha256",
+    "content-type",
+    "metadata"
+  ],
+  "uuid": "0836fb06-f9d1-4b62-9d52-b96793a9a4fb",
+  "version": 1
+}
