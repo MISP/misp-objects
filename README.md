@@ -107,6 +107,7 @@ for a specific attribute. An optional **to_ids** boolean field to disable the ID
 
 - [objects/ADS](https://github.com/MISP/misp-objects/blob/main/objects/ADS/definition.json) - An object defining ADS - Alerting and Detection Strategy by PALANTIR. Can be used for detection engineering.
 - [objects/abuseipdb](https://github.com/MISP/misp-objects/blob/main/objects/abuseipdb/definition.json) - AbuseIPDB checks an ip address, domain name, or subnet against a central blacklist.
+- [objects/ad-replication-metadata](https://github.com/MISP/misp-objects/blob/main/objects/ad-replication-metadata/definition.json) - An Active Directory replication metadata observation, including attribute or linked-value changes, server-scoped counters and source provenance. Replication metadata is partial last-change evidence, not a complete audit trail or actor attribution.
 - [objects/administrative-decision](https://github.com/MISP/misp-objects/blob/main/objects/administrative-decision/definition.json) - Administrative Decision.
 - [objects/ai-chat-prompt](https://github.com/MISP/misp-objects/blob/main/objects/ai-chat-prompt/definition.json) - Object describing an AI prompt such as ChatGPT.
 - [objects/ail-leak](https://github.com/MISP/misp-objects/blob/main/objects/ail-leak/definition.json) - An information leak as defined by the AIL Analysis Information Leak framework.
