@@ -1,12 +1,29 @@
 {
   "attributes": {
+    "bot-description": {
+      "description": "Bot description / about text as returned by getMyDescription (often contains seller handles, wallets or service ads)",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "chat-description": {
+      "description": "Description of the chat (bio for private chats) as returned by getChat",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "chat-id": {
-      "description": "Telegram chat id",
+      "description": "Telegram chat id the bot sends to (e.g. exfiltration chat hard-coded in malware)",
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "chat-name": {
+      "description": "Title of the chat (first name for private chats) as returned by getChat",
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
     "comment": {
-      "description": "Phone associated with the telegram user",
+      "description": "Free-text comment about the bot (e.g. status or context of the observation)",
       "disable_correlation": true,
       "misp-attribute": "text",
       "ui-priority": 1
@@ -16,10 +33,28 @@
       "misp-attribute": "text",
       "ui-priority": 1
     },
+    "relay": {
+      "description": "Relay host the malware uses instead of api.telegram.org to reach the Bot API (e.g. a Cloudflare Worker)",
+      "misp-attribute": "hostname",
+      "multiple": true,
+      "ui-priority": 0
+    },
+    "sha256": {
+      "description": "SHA-256 of a malware sample in which this bot token (and chat id) is hard-coded",
+      "misp-attribute": "sha256",
+      "multiple": true,
+      "ui-priority": 1
+    },
     "token": {
       "description": "Telegram Token",
       "misp-attribute": "text",
       "ui-priority": 1
+    },
+    "url": {
+      "description": "URL configured for the bot, e.g. webhook (getWebhookInfo) or menu button WebApp URL",
+      "misp-attribute": "url",
+      "multiple": true,
+      "ui-priority": 0
     },
     "username": {
       "description": "Telegram bot username, must end with \"bot\"",
@@ -27,7 +62,7 @@
       "ui-priority": 1
     }
   },
-  "description": "Information related to a telegram bot",
+  "description": "Information related to a Telegram bot, e.g. a bot abused by malware as exfiltration channel (token, chat, samples, bot infrastructure)",
   "meta-category": "misc",
   "name": "telegram-bot",
   "requiredOneOf": [
@@ -35,8 +70,9 @@
     "chat-id",
     "name",
     "username",
-    "comment"
+    "comment",
+    "sha256"
   ],
   "uuid": "e2cb6c8f-45fa-429d-9cdb-05298ab21f46",
-  "version": 2
+  "version": 3
 }
