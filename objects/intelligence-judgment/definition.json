@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "alternative": {
+      "description": "One alternative explanation and, where available, the evidence or reasoning used to assess it.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
+      "to_ids": false,
+      "ui-priority": 8
+    },
+    "confidence": {
+      "description": "Analyst confidence in this key judgment.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 9,
+      "values_list": [
+        "low",
+        "moderate",
+        "high"
+      ]
+    },
+    "confidence-rationale": {
+      "description": "Basis for the stated confidence, including uncertainty or material evidence gaps.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 8
+    },
+    "judgment": {
+      "description": "Analyst-authored key judgment or assessment.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 10
+    },
+    "title": {
+      "description": "Short title for the key judgment.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 8
+    }
+  },
+  "description": "One analyst-authored intelligence judgment with a confidence level, rationale and alternatives. Object and Analyst Relationships can link it to supporting or contrary evidence.",
+  "meta-category": "misc",
+  "name": "intelligence-judgment",
+  "required": [
+    "judgment"
+  ],
+  "uuid": "79562e38-cc69-4580-a382-16f5c8d157c8",
+  "version": 1
+}
