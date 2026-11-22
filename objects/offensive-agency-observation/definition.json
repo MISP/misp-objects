@@ -1,9 +1,9 @@
 {
   "attributes": {
     "asn": {
-      "description": "The autonomous system identifier reported for the address.",
+      "description": "The autonomous system number reported for the address.",
       "disable_correlation": true,
-      "misp-attribute": "text",
+      "misp-attribute": "AS",
       "to_ids": false,
       "ui-priority": 7
     },
