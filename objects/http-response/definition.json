@@ -8,14 +8,31 @@
       "ui-priority": 1
     },
     "content-type": {
-      "description": "Media type of the response body.",
+      "categories": [
+        "Network activity"
+      ],
+      "description": "The MIME type of the response body.",
       "disable_correlation": true,
-      "misp-attribute": "mime-type",
+      "misp-attribute": "other",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "cookie": {
+      "categories": [
+        "Network activity"
+      ],
+      "description": "One Set-Cookie response header value, including any cookie attributes.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "multiple": true,
       "to_ids": false,
       "ui-priority": 1
     },
     "header": {
-      "description": "One complete HTTP response header per attribute in name: value form; retain duplicate header lines as separate attributes.",
+      "categories": [
+        "Network activity"
+      ],
+      "description": "One complete HTTP response header line per attribute in name: value form. Record repeated header lines as separate attributes.",
       "disable_correlation": true,
       "misp-attribute": "text",
       "multiple": true,
@@ -64,6 +81,7 @@
   "requiredOneOf": [
     "status-code",
     "header",
+    "cookie",
     "content-type",
     "status",
     "message"
