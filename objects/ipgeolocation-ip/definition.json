@@ -187,6 +187,18 @@
       "misp-attribute": "integer",
       "ui-priority": 0
     },
+    "proxy-days-seen-30d": {
+      "description": "Number of days in the last 30 days the IP address was seen acting as a proxy",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
+    "proxy-days-seen-7d": {
+      "description": "Number of days in the last 7 days the IP address was seen acting as a proxy",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
+    },
     "proxy-last-seen": {
       "description": "Last time the IP address was seen as a proxy",
       "disable_correlation": true,
@@ -199,6 +211,12 @@
       "misp-attribute": "text",
       "multiple": true,
       "ui-priority": 1
+    },
+    "proxy-provider-count-30d": {
+      "description": "Number of distinct proxy providers seen on the IP address in the last 30 days",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "ui-priority": 0
     },
     "relay-provider": {
       "description": "Name of the relay provider",
@@ -239,5 +257,5 @@
     "ip"
   ],
   "uuid": "e1bde989-c8dd-49b1-a45b-b63698dbfcaa",
-  "version": 1
+  "version": 2
 }
