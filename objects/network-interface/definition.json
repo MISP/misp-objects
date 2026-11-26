@@ -1,0 +1,72 @@
+{
+  "attributes": {
+    "hostname": {
+      "description": "Hostname associated with the interface.",
+      "disable_correlation": false,
+      "misp-attribute": "hostname",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "interface-id": {
+      "description": "Source identifier of this interface, scoped to its host or provider.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "ip-address": {
+      "description": "Address associated with the interface; the attribute type does not imply traffic direction. Use a separate observation for each address/prefix pair.",
+      "disable_correlation": false,
+      "misp-attribute": "ip-src",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "mac-address": {
+      "description": "Interface hardware address.",
+      "disable_correlation": false,
+      "misp-attribute": "mac-address",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Interface name, such as eth0 or a provider-assigned interface label.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "namespace": {
+      "description": "Namespace that distinguishes this interface from similarly named interfaces.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "subnet-prefix": {
+      "description": "Prefix length associated with ip-address, using the correct IPv4 or IPv6 width.",
+      "disable_correlation": true,
+      "misp-attribute": "counter",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Interface kind such as Wired, Wireless, Mobile, or Tunnel.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A physical or virtual network interface with its own identity, namespace and addressing, separate from the host and connections using it. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/network_interface.",
+  "meta-category": "network",
+  "name": "network-interface",
+  "requiredOneOf": [
+    "interface-id",
+    "name",
+    "mac-address",
+    "ip-address",
+    "hostname"
+  ],
+  "uuid": "6fef748d-a4c5-4b13-8c1e-8dbc1e1f7a92",
+  "version": 2
+}
