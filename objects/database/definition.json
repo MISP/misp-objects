@@ -1,0 +1,69 @@
+{
+  "attributes": {
+    "created": {
+      "description": "Database creation time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "database-id": {
+      "description": "Database identifier within the source system.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "description": {
+      "description": "Source description of the database.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "embedding-model": {
+      "description": "Embedding model associated with a vector datastore, when supplied.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "modified": {
+      "description": "Database modification time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Database or datastore name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "size-in-bytes": {
+      "description": "Database size in bytes as reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "size-in-bytes",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "type": {
+      "description": "Database type as reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "An identified database or datastore, including type, lifecycle, size and optional embedding model context. Use separate objects for servers, queries and data classification. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/database.",
+  "meta-category": "misc",
+  "name": "database",
+  "requiredOneOf": [
+    "database-id",
+    "name"
+  ],
+  "uuid": "5d3330cd-6511-4332-addd-383e30795749",
+  "version": 1
+}
