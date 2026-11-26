@@ -1,0 +1,119 @@
+{
+  "attributes": {
+    "alternate-id": {
+      "description": "Alternate identifier for this connector.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "authentication-protocol": {
+      "description": "Authentication protocol used by this connector.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "configuration-id": {
+      "description": "SCIM resource or connector identifier assigned by the service provider.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "created": {
+      "description": "Connector creation time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "error-message": {
+      "description": "Provisioning error message as reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "group-provisioning-enabled": {
+      "description": "Whether group provisioning is enabled.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "last-run": {
+      "description": "Last provisioning run time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "modified": {
+      "description": "Connector modification time in ISO 8601.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "name": {
+      "description": "Provisioning connector display name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "protocol": {
+      "description": "Provisioning protocol name.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "state": {
+      "description": "Observed provisioning configuration state.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "url": {
+      "description": "SCIM provisioning service endpoint.",
+      "disable_correlation": false,
+      "misp-attribute": "url",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "user-provisioning-enabled": {
+      "description": "Whether user provisioning is enabled.",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "vendor": {
+      "description": "SCIM implementation vendor.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    },
+    "version": {
+      "description": "SCIM configuration or implementation version reported by the source.",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "to_ids": false,
+      "ui-priority": 1
+    }
+  },
+  "description": "A SCIM identity provisioning configuration and its observed state, including endpoint, provisioning switches and synchronization times. Based on OCSF 1.9.0: https://schema.ocsf.io/1.9.0/objects/scim.",
+  "meta-category": "misc",
+  "name": "scim-configuration",
+  "requiredOneOf": [
+    "configuration-id",
+    "name",
+    "url"
+  ],
+  "uuid": "aaa79036-645d-492c-b502-e4bc8ef2dd92",
+  "version": 1
+}
