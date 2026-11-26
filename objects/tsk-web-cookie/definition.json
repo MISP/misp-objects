@@ -1,7 +1,7 @@
 {
   "attributes": {
     "URL": {
-      "description": "The website URL that created the cookie.",
+      "description": "Reported HTTP(S) URL associated with the cookie.",
       "misp-attribute": "link",
       "ui-priority": 0
     },
@@ -27,6 +27,12 @@
       ],
       "ui-priority": 0
     },
+    "datetime-accessed": {
+      "description": "Date and time when the cookie was last accessed.",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
     "datetime-created": {
       "description": "date and time when the cookie was created.",
       "disable_correlation": true,
@@ -39,7 +45,7 @@
       "ui-priority": 0
     },
     "domain-name": {
-      "description": "Domain of the URL that created the cookie.",
+      "description": "Reported domain or host to which the cookie applies.",
       "misp-attribute": "text",
       "ui-priority": 0
     },
@@ -58,10 +64,13 @@
   "meta-category": "misc",
   "name": "tsk-web-cookie",
   "required": [
-    "URL",
     "name",
     "value"
   ],
+  "requiredOneOf": [
+    "URL",
+    "domain-name"
+  ],
   "uuid": "40d23a4f-43be-4c9e-8328-382a2188eb1d",
-  "version": 1
+  "version": 2
 }
