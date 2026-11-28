@@ -1,0 +1,368 @@
+{
+  "attributes": {
+    "abuse-email": {
+      "description": "Email address of the abuse contact for the network the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "email",
+      "ui-priority": 1
+    },
+    "abuse-name": {
+      "description": "Name of the abuse contact for the network the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "carrier-name": {
+      "description": "Name of the mobile carrier the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "cdn-confidence": {
+      "description": "Confidence in the CDN detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "cdn-last-seen": {
+      "description": "Date the IP address was last seen as a content delivery network",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "cdn-provider": {
+      "description": "Name of the CDN provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company-domain": {
+      "description": "Domain of the organization the IP address is registered to",
+      "disable_correlation": true,
+      "misp-attribute": "domain",
+      "ui-priority": 0
+    },
+    "company-name": {
+      "description": "Name of the organization the IP address is registered to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "company-type": {
+      "description": "Type of the organization the IP address is registered to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 0
+    },
+    "dcproxy-confidence": {
+      "description": "Confidence in the datacenter proxy detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "dcproxy-last-seen": {
+      "description": "Date the IP address was last seen as a datacenter proxy",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "dcproxy-provider": {
+      "description": "Name of the datacenter proxy provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hosting-confidence": {
+      "description": "Confidence in the hosting detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "hosting-last-seen": {
+      "description": "Date the IP address was last seen as a hosting address",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "hosting-provider": {
+      "description": "Name of the hosting provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "hostname": {
+      "description": "Reverse DNS hostname of the IP address",
+      "disable_correlation": true,
+      "misp-attribute": "hostname",
+      "ui-priority": 1
+    },
+    "ip": {
+      "description": "The IP address looked up",
+      "misp-attribute": "ip-src",
+      "ui-priority": 1
+    },
+    "is-anycast": {
+      "description": "The IP address is announced from more than one location (anycast)",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-bittorrent": {
+      "description": "The IP address is seen in the BitTorrent DHT",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-carrier": {
+      "description": "The IP address is on a mobile carrier network",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-cdn": {
+      "description": "The IP address is on a content delivery network",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-dcproxy": {
+      "description": "The IP address is a datacenter proxy",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-dns-resolver": {
+      "description": "The IP address is an open DNS resolver",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-hosting": {
+      "description": "The IP address is on a hosting network",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-mobproxy": {
+      "description": "The IP address is a mobile proxy",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-pubproxy": {
+      "description": "The IP address is a public proxy",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-relay": {
+      "description": "The IP address is a privacy relay egress",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-resproxy": {
+      "description": "The IP address is a residential proxy",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-satellite": {
+      "description": "The IP address is on a satellite internet network",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-smtp": {
+      "description": "The IP address is running an SMTP server",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-ssh": {
+      "description": "The IP address is running an SSH server",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-tor": {
+      "description": "The IP address is a Tor exit node",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-vpn": {
+      "description": "The IP address is a VPN server",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "is-web": {
+      "description": "The IP address is running a web server",
+      "disable_correlation": true,
+      "misp-attribute": "boolean",
+      "ui-priority": 1
+    },
+    "mobproxy-confidence": {
+      "description": "Confidence in the mobile proxy detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "mobproxy-last-seen": {
+      "description": "Date the IP address was last seen as a mobile proxy",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "mobproxy-provider": {
+      "description": "Name of the mobile proxy provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "pubproxy-confidence": {
+      "description": "Confidence in the public proxy detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "pubproxy-last-seen": {
+      "description": "Date the IP address was last seen as a public proxy",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "pubproxy-provider": {
+      "description": "Name of the public proxy provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "relay-confidence": {
+      "description": "Confidence in the relay detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "relay-last-seen": {
+      "description": "Date the IP address was last seen as a privacy relay egress",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "relay-provider": {
+      "description": "Name of the relay provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "resproxy-confidence": {
+      "description": "Confidence in the residential proxy detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "resproxy-last-seen": {
+      "description": "Date the IP address was last seen as a residential proxy",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "resproxy-provider": {
+      "description": "Name of the residential proxy provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "satellite-provider": {
+      "description": "Name of the satellite internet provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    },
+    "tor-confidence": {
+      "description": "Confidence in the Tor detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "tor-last-seen": {
+      "description": "Date the IP address was last seen as a Tor exit node",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "vpn-confidence": {
+      "description": "Confidence in the VPN detection",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "sane_default": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "ui-priority": 0
+    },
+    "vpn-last-seen": {
+      "description": "Date the IP address was last seen as a VPN server",
+      "disable_correlation": true,
+      "misp-attribute": "datetime",
+      "ui-priority": 0
+    },
+    "vpn-provider": {
+      "description": "Name of the VPN provider the IP address belongs to",
+      "disable_correlation": true,
+      "misp-attribute": "text",
+      "ui-priority": 1
+    }
+  },
+  "description": "IP address intelligence from InternetData: VPN, privacy relay, Tor, hosting, CDN and residential, datacenter, mobile and public proxy detection, each with the provider where one is known, a confidence and the date the address was last seen as such; anycast, mobile carrier, satellite and the services it runs; its reverse DNS hostname, the organization it is registered to and its abuse contact.",
+  "meta-category": "network",
+  "name": "internetdata-ip",
+  "required": [
+    "ip"
+  ],
+  "uuid": "c73f5bf4-2c49-44c2-a38c-301718fff3db",
+  "version": 1
+}
